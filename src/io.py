@@ -5,6 +5,7 @@ from pandas import DataFrame
 from src.consts import COL_MC, COL_WEIGHT, PATH_INDEXES
 
 PATH_INDEX_T50M2 = PATH_INDEXES / "top50min2"
+PATH_INDEX_T50M2.mkdir(parents=True, exist_ok=True)
 
 
 def save_index(df: DataFrame):

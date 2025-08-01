@@ -1,7 +1,4 @@
-from pathlib import Path
-
 import pandas as pd
-from dotenv import load_dotenv
 
 from src.clients.cmc import get_mega_crypto
 from src.clients.fmp import get_mega_stock
@@ -9,12 +6,9 @@ from src.consts import COL_SYMBOL, COL_MC, COL_WEIGHT
 from src.index import get_index
 from src.io import save_index
 
-DOTENV_PATH = Path(__file__).resolve().parent.parent / ".env"
 PROD_API_CALL = True
 EXCLUDE_SYMBOLS = ["BRK.A", "BRK-A", "TCEHY"]
 LIMIT_FIDELITY = 50
-
-load_dotenv(DOTENV_PATH)
 
 # Configure for displaying on console
 pd.set_option("display.max_columns", None)
