@@ -8,7 +8,7 @@ from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN
 
 BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
 DEV_PATH_API_MEGA_STOCK = PATH_DATA / "api_mega_stock.pkl"
-EXCHANGES = ["NYSE", "NASDAQ", "AMEX", "OTC"]
+EXCHANGES = ["NYSE", "NASDAQ", "AMEX"]
 
 
 def get_mega_stock(from_cache=False) -> DataFrame:
