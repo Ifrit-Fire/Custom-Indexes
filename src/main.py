@@ -4,10 +4,9 @@ from src.clients.cmc import get_mega_crypto
 from src.clients.fmp import get_mega_stock
 from src.consts import COL_SYMBOL, COL_MC, COL_WEIGHT
 from src.index import get_index
-from src.io import save_index
+from src.io import save_index, load_config
 
-PROD_API_CALL = True
-EXCLUDE_SYMBOLS = ["BRK.A", "BRK-A", "TCEHY"]
+PROD_API_CALL = False
 LIMIT_FIDELITY = 50
 
 # API Calls
@@ -18,7 +17,19 @@ print(f"Retrieved {len(df_crypto)} megacap crypto")
 
 # Generate final Dataframe for processing
 df_limit = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
-df_limit = df_limit[~df_limit[COL_SYMBOL].isin(EXCLUDE_SYMBOLS)]
+
+config = load_config()
+for merge, into in config.items():
+    merge_row = df_limit.loc[df_limit[COL_SYMBOL] == merge, COL_MC]
+    if merge_row.empty: continue
+    df_limit = df_limit[df_limit[COL_SYMBOL] != merge]
+    print(f"Removed {merge} Symbol")
+
+    mask = df_limit[COL_SYMBOL] == into
+    if mask.any():
+        df_limit.loc[mask, COL_MC] += merge_row.iat[0]
+        print(f"Added {merge} market cap into {into}")
+
 df_limit = df_limit.sort_values(by=COL_MC, ascending=False)
 df_limit = df_limit.head(LIMIT_FIDELITY)
 print("Combined megacap:")
