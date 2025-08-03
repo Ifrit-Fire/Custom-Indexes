@@ -10,11 +10,6 @@ PROD_API_CALL = True
 EXCLUDE_SYMBOLS = ["BRK.A", "BRK-A", "TCEHY"]
 LIMIT_FIDELITY = 50
 
-# Configure for displaying on console
-pd.set_option("display.max_columns", None)
-pd.set_option("display.max_colwidth", None)
-pd.set_option("display.width", 0)  # auto-size to fit screen
-
 # API Calls
 df_stock = get_mega_stock(from_cache=not PROD_API_CALL)
 df_crypto = get_mega_crypto(from_cache=not PROD_API_CALL)
