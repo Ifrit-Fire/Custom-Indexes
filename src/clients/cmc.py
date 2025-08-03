@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
-from src.consts import COL_NAME, COL_SYMBOL, COL_MC, MIN_MEGA_CAP, CMC_API_TOKEN, PATH_DATA
+from src.consts import COL_NAME, COL_SYMBOL, COL_MC, MIN_MEGA_CAP, CMC_API_TOKEN, PATH_DATA, COL_PRICE
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
@@ -27,8 +27,8 @@ def get_mega_crypto(from_cache=False) -> DataFrame:
 
 
 def _clean_mega(df: DataFrame) -> DataFrame:
-    df.rename(columns={"quote.USD.market_cap": COL_MC}, inplace=True)
-    df = df[[COL_NAME, COL_SYMBOL, COL_MC]]
+    df.rename(columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE}, inplace=True)
+    df = df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE]]
     df = df[df[COL_MC] > MIN_MEGA_CAP]
     df.to_pickle(DEV_PATH_API_MEGA_CRYPTO)
     return df

@@ -5,6 +5,7 @@ COL_NAME = "name"
 COL_MC = "market_cap"
 COL_SYMBOL = "symbol"
 COL_WEIGHT = "weighted"
+COL_PRICE = "price"
 
 MIN_MEGA_CAP = 200_000_000_000
 

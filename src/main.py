@@ -6,7 +6,7 @@ from src.consts import COL_SYMBOL, COL_MC, COL_WEIGHT
 from src.index import get_index
 from src.io import save_index, load_config
 
-PROD_API_CALL = False
+PROD_API_CALL = True
 LIMIT_FIDELITY = 50
 
 # API Calls
