@@ -15,6 +15,7 @@ FMP_API_TOKEN = os.getenv("FMP_API_TOKEN")
 
 PATH_DATA = Path("../data/").resolve()
 PATH_INDEXES = Path("../indexes/").resolve()
+PATH_PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 PATH_DATA.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES.mkdir(parents=True, exist_ok=True)
