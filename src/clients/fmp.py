@@ -16,7 +16,7 @@ def get_mega_stock(from_cache=False) -> DataFrame:
         return pd.read_pickle(DEV_PATH_API_MEGA_STOCK)
 
     params = {"marketCapMoreThan": MIN_MEGA_CAP, "isEtf": False, "isFund": False, "isActivelyTrading": True,
-              "apikey": FMP_API_TOKEN, "volumeMoreThan": 10000, "exchange": EXCHANGES}
+              "apikey": FMP_API_TOKEN, "exchange": EXCHANGES}
     response = requests.get(BASE_URL, params=params)
     if response.status_code == 200:
         df = pd.DataFrame(response.json())
