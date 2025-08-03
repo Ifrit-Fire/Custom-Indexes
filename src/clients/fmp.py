@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
-from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, PATH_DATA
+from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, PATH_DATA, COL_PRICE
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
 
@@ -29,7 +29,7 @@ def get_mega_stock(from_cache=False) -> DataFrame:
 
 def _clean(df: DataFrame) -> DataFrame:
     df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
-    df = df[[COL_NAME, COL_SYMBOL, COL_MC]]
+    df = df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE]]
     df = df[df[COL_MC].notnull()]
     df.to_pickle(DEV_PATH_API_MEGA_STOCK)
     return df
