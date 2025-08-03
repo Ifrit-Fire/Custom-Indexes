@@ -1,2 +1,3 @@
-# Force config.py to be imported early, so that env is loaded right away
-from . import config
+# Force load_env.py to be imported early, so that env is loaded right away
+from .init import load_env
+from .init import config_pd
