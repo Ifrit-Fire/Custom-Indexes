@@ -2,11 +2,12 @@ import pandas as pd
 
 from src.clients.cmc import get_mega_crypto
 from src.clients.fmp import get_mega_stock
+from src.config_handler import config
 from src.consts import COL_SYMBOL, COL_MC, COL_WEIGHT
 from src.index import get_index
-from src.io import save_index, load_config
+from src.io import save_index
 
-PROD_API_CALL = True
+PROD_API_CALL = False
 LIMIT_FIDELITY = 50
 
 # API Calls
@@ -18,8 +19,7 @@ print(f"Retrieved {len(df_crypto)} megacap crypto")
 # Generate final Dataframe for processing
 df_limit = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
 
-config = load_config()
-for merge, into in config.items():
+for merge, into in config.symbol_merge.items():
     merge_row = df_limit.loc[df_limit[COL_SYMBOL] == merge, COL_MC]
     if merge_row.empty: continue
     df_limit = df_limit[df_limit[COL_SYMBOL] != merge]
