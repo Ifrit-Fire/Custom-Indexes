@@ -33,10 +33,7 @@ class ConfigHandler:
     def volume_limit_min(self) -> int:
         return self._default[_KEY_VOLUME]["limit_min"]
 
-    def get_index_config(self, name: str) -> dict[str, Any]:
-        return self._indexes[name]
-
-    def get_all_indexes(self) -> list[dict[str, Any]]:
+    def get_all_indexes(self) -> dict[str, dict[str, Any]]:
         return self._indexes
 
 
