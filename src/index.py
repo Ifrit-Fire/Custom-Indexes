@@ -5,12 +5,13 @@ from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL, LIMIT_MIN_WEIGHT
 
 
 def get_index(df: DataFrame) -> DataFrame:
+    print("\tCreating weighted column...")
     df_index = df.copy()
     df_index[COL_WEIGHT] = round(df_index[COL_MC] / df_index[COL_MC].sum() * 100, 2)
     while df_index[COL_WEIGHT].min() < LIMIT_MIN_WEIGHT:
         symbol = df_index.iloc[-1][COL_SYMBOL]
         weight = df_index.iloc[-1][COL_WEIGHT]
-        print(f"Dropping {symbol} with {weight:.2f}%")
+        print(f"\t...dropping {symbol} with {weight:.2f}%")
 
         df_index = df_index.iloc[:-1]
         df_index[COL_WEIGHT] = round(df_index[COL_MC] / df_index[COL_MC].sum() * 100, 2)
