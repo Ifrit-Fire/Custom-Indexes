@@ -2,12 +2,12 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
-from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, PATH_DATA, COL_PRICE
+from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, PATH_DATA_ROOT, COL_PRICE
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
 
 BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
-DEV_PATH_API_MEGA_STOCK = PATH_DATA / "api_mega_stock.pkl"
+DEV_PATH_API_MEGA_STOCK = PATH_DATA_ROOT / "api_mega_stock.pkl"
 EXCHANGES = ["NYSE", "NASDAQ", "AMEX"]
 
 

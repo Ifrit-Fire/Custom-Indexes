@@ -2,12 +2,12 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
-from src.consts import COL_NAME, COL_SYMBOL, COL_MC, MIN_MEGA_CAP, CMC_API_TOKEN, PATH_DATA, COL_PRICE
+from src.consts import COL_NAME, COL_SYMBOL, COL_MC, MIN_MEGA_CAP, CMC_API_TOKEN, PATH_DATA_ROOT, COL_PRICE
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
-DEV_PATH_API_MEGA_CRYPTO = PATH_DATA / "api_mega_crypto.pkl"
+DEV_PATH_API_MEGA_CRYPTO = PATH_DATA_ROOT / "api_mega_crypto.pkl"
 
 
 def get_mega_crypto(from_cache=False) -> DataFrame:

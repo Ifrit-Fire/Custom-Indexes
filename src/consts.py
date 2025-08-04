@@ -14,9 +14,10 @@ LIMIT_MIN_WEIGHT = 2
 CMC_API_TOKEN = os.getenv("CMC_API_TOKEN")
 FMP_API_TOKEN = os.getenv("FMP_API_TOKEN")
 
-PATH_DATA = Path("../data/").resolve()
-PATH_INDEXES = Path("../indexes/").resolve()
 PATH_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PATH_DATA_ROOT = PATH_PROJECT_ROOT / "data"
+PATH_INDEXES_ROOT = PATH_PROJECT_ROOT / "indexes"
+PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
 
-PATH_DATA.mkdir(parents=True, exist_ok=True)
-PATH_INDEXES.mkdir(parents=True, exist_ok=True)
+PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
+PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
