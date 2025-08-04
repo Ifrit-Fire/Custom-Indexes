@@ -1,49 +1,35 @@
 import pandas as pd
 
-from src.clients.cmc import get_mega_crypto
-from src.clients.fmp import get_mega_stock
-from src.config_handler import config
-from src.consts import COL_SYMBOL, COL_MC, COL_WEIGHT
+from src.clients.cmc import get_crypto
+from src.clients.fmp import get_stock
+from src.config_handler import config, KEY_INDEX_TOP
+from src.consts import COL_MC, COL_WEIGHT
 from src.index import get_index
 from src.io import save_index
+from src.symbol_merger import merge_symbols
 
 PROD_API_CALL = False
-LIMIT_FIDELITY = 50
 
-# API Calls
-df_stock = get_mega_stock(from_cache=not PROD_API_CALL)
-df_crypto = get_mega_crypto(from_cache=not PROD_API_CALL)
-print(f"Retrieved {len(df_stock)} megacap stocks")
-print(f"Retrieved {len(df_crypto)} megacap crypto")
+for index, criteria in config.get_all_indexes().items():
+    print(f"{index} - Creating Index")
+    df_stock = get_stock(top=criteria[KEY_INDEX_TOP], from_cache=True)
+    print(f"\tRetrieved {len(df_stock)} stocks")
+    df_crypto = get_crypto(top=criteria[KEY_INDEX_TOP], from_cache=True)
+    print(f"\tRetrieved {len(df_crypto)} crypto")
 
-# Generate final Dataframe for processing
-df_limit = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
+    print(f"\tMerging all security types...")
+    df_securities = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
+    df_securities = merge_symbols(df_securities)
+    df_securities = df_securities.sort_values(by=COL_MC, ascending=False)
+    df_securities = df_securities.head(criteria[KEY_INDEX_TOP])
+    print(f"\t...trimmed down to {len(df_securities)} securities")
 
-for merge, into in config.symbol_merge.items():
-    merge_row = df_limit.loc[df_limit[COL_SYMBOL] == merge, COL_MC]
-    if merge_row.empty: continue
-    df_limit = df_limit[df_limit[COL_SYMBOL] != merge]
-    print(f"Removed {merge} Symbol")
-
-    mask = df_limit[COL_SYMBOL] == into
-    if mask.any():
-        df_limit.loc[mask, COL_MC] += merge_row.iat[0]
-        print(f"Added {merge} market cap into {into}")
-
-df_limit = df_limit.sort_values(by=COL_MC, ascending=False)
-df_limit = df_limit.head(LIMIT_FIDELITY)
-print("Combined megacap:")
-print(df_limit)
-
-# Index contains final weights
-df_index = get_index(df_limit).reset_index(drop=True)
-
-count = len(df_limit) - len(df_index)
-print(f"Dropped {count} symbols")
-print(f"Remaining {len(df_index)} symbols")
-print(f"Index weighted results:")
-print(df_index)
-print(f"Final weighted sum: {df_index[COL_WEIGHT].sum():.2f}")
-
-if PROD_API_CALL:
-    save_index(df_index)
+    df_index = get_index(df_securities).reset_index(drop=True)
+    count = len(df_securities) - len(df_index)
+    print(f"\tDropped {count} symbols with {len(df_index)} remaining.")
+    print(f"\tIndex weighted results:")
+    print(df_index)
+    print(f"\tFinal weighted sum: {df_index[COL_WEIGHT].sum():.2f}")
+    print()
+    if PROD_API_CALL:
+        save_index(df_index)
