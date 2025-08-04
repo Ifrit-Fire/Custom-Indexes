@@ -4,11 +4,12 @@ from pandas import DataFrame
 from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL, LIMIT_MIN_WEIGHT
 
 
-def get_index(df: DataFrame) -> DataFrame:
+def get_index(df: DataFrame, min_weight: int) -> DataFrame:
+    # TODO: Figure out how to adjust index weighting based off min weight
     print("\tCreating weighted column...")
     df_index = df.copy()
     df_index[COL_WEIGHT] = round(df_index[COL_MC] / df_index[COL_MC].sum() * 100, 2)
-    while df_index[COL_WEIGHT].min() < LIMIT_MIN_WEIGHT:
+    while df_index[COL_WEIGHT].min() < min_weight:
         symbol = df_index.iloc[-1][COL_SYMBOL]
         weight = df_index.iloc[-1][COL_WEIGHT]
         print(f"\t...dropping {symbol} with {weight:.2f}%")
