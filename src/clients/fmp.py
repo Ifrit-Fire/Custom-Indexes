@@ -1,40 +1,45 @@
+from pathlib import Path
+
 import pandas as pd
 import requests
 from pandas import DataFrame
 
-from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, PATH_DATA_ROOT, COL_PRICE, \
-    MIN_LARGE_CAP, MIN_MID_CAP, MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP
+from src.clients import cache
+from src.config_handler import KEY_INDEX_TOP
+from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, COL_PRICE, MIN_LARGE_CAP, MIN_MID_CAP, \
+    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
-
-DEV_PATH_API_MEGA_STOCK = PATH_DATA_ROOT / "api_mega_stock.pkl"
-
 _BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
+_BASE_FILENAME = Path(__file__).name
 _EXCHANGES = ["NYSE", "NASDAQ", "AMEX"]
 _DEFAULT_PARAM = {"isEtf": False, "isFund": False, "isActivelyTrading": True, "apikey": FMP_API_TOKEN,
                   "exchange": _EXCHANGES}
 
 
-def get_stock(top: int, from_cache=False) -> DataFrame:
+def get_stock(criteria: dict) -> DataFrame:
     """
-    Stock-screener can not pre-sort the values. All queries limited to 1000 results.  Results are in no particular
-    order. Need to use market cap limits to restrict return count.
+    API call which retrieves a DataFrame of stock specified by the criteria configurations. Automatically pulls from
+    cache when available and cache data is recent.
 
-    :param top: How many of the top stocks to return
-    :param from_cache: Pull from cache instead of hitting API
-    :return: DataFrame stripped of unused columns and standardized column names.
+    :param criteria: Configuration criteria for an index
+    :return: Dataframe consisting of all needed columns with standardized column names.
     """
-    if from_cache and DEV_PATH_API_MEGA_STOCK.exists():
-        df = pd.read_pickle(DEV_PATH_API_MEGA_STOCK)
-    else:
-        params = _DEFAULT_PARAM | {"marketCapMoreThan": _get_cap_restriction(top)}
+
+    df = cache.grab_api_cache(_BASE_FILENAME, criteria)
+    source = "cache"
+
+    if df.empty:
+        source = "API"
+        params = _DEFAULT_PARAM | {"marketCapMoreThan": _get_cap_restriction(criteria[KEY_INDEX_TOP])}
         response = requests.get(_BASE_URL, params=params)
         response.raise_for_status()
 
         df = pd.DataFrame(response.json())
         df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
-        df.to_pickle(DEV_PATH_API_MEGA_STOCK)
+        cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
+    print(f"\tRetrieved {len(df)} stocks from {source}")
     return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME]]
 
 

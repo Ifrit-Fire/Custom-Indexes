@@ -13,14 +13,11 @@ PROD_API_CALL = False
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
     # TODO: Implement SORT_BY...right now it's all hard coded
-    # TODO: Have caching be automatic.  Based on date and criteria
     # TODO: Add volume limit logic
     # TODO: Test by adding another index: top100-min1, top20-min5, top10-min10
     # TODO: Test by adding top250-min0.4, top500-min0.25
-    df_stock = get_stock(top=criteria[KEY_INDEX_TOP], from_cache=True)
-    df_crypto = get_crypto(top=criteria[KEY_INDEX_TOP], from_cache=True)
-    print(f"\tRetrieved {len(df_stock)} stocks")
-    print(f"\tRetrieved {len(df_crypto)} crypto")
+    df_stock = get_stock(criteria)
+    df_crypto = get_crypto(criteria)
 
     print(f"\tMerging all security types...")
     df_securities = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
@@ -34,7 +31,7 @@ for index, criteria in config.get_all_indexes().items():
     print(f"\tDropped {count} symbols with {len(df_index)} remaining.")
     print(f"\tIndex weighted results:")
     print(df_index)
-    print(f"\tFinal weighted sum: {df_index[COL_WEIGHT].sum():.2f}")
+    print(f"\tFinal weighted sum: {df_index[COL_WEIGHT].sum():.2f}%")
     print()
 
     if PROD_API_CALL:

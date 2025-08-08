@@ -21,8 +21,10 @@ FMP_API_TOKEN = os.getenv("FMP_API_TOKEN")
 
 PATH_PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PATH_DATA_ROOT = PATH_PROJECT_ROOT / "data"
+PATH_DATA_CACHE_ROOT = PATH_DATA_ROOT / "cache"
 PATH_INDEXES_ROOT = PATH_PROJECT_ROOT / "indexes"
 PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
 
 PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
+PATH_DATA_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
