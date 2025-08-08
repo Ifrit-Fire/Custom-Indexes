@@ -3,7 +3,7 @@ from pandas import DataFrame
 
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC
+from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME
 
 
 def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
@@ -15,6 +15,10 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     print(f"\t...sorting by {using[KEY_INDEX_SORTBY]}")
     col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
     df = df.sort_values(by=col, ascending=False)
+
+    count = len(df)
+    df = df[df[COL_VOLUME] > config.volume_limit_min()]
+    print(f"\t...removed {count - len(df)} securities for volume limit restriction.")
 
     df = df.head(using[KEY_INDEX_TOP])
     print(f"\t...trimmed down to {len(df)} securities")
