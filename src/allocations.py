@@ -4,7 +4,7 @@ from pandas import DataFrame
 from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL, LIMIT_MIN_WEIGHT
 
 
-def get_index(df: DataFrame, min_weight: int) -> DataFrame:
+def add_weightings(df: DataFrame, min_weight: int) -> DataFrame:
     # TODO: Figure out how to adjust index weighting based off min weight
     print("\tCreating weighted column...")
     df_index = df.copy()

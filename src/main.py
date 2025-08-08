@@ -1,38 +1,28 @@
-import pandas as pd
-
-from src.clients.cmc import get_crypto
-from src.clients.fmp import get_stock
-from src.config_handler import config, KEY_INDEX_TOP, KEY_INDEX_WEIGHT_MIN
-from src.consts import COL_MC, COL_WEIGHT
-from src.index import get_index
+import src.data_processing as dp
+from src import allocations
+from src.clients import fmp, cmc
+from src.config_handler import config, KEY_INDEX_WEIGHT_MIN
+from src.consts import COL_WEIGHT
 from src.io import save_index
-from src.symbol_merger import merge_symbols
 
 PROD_API_CALL = False
 
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
-    # TODO: Implement SORT_BY...right now it's all hard coded
     # TODO: Add volume limit logic
     # TODO: Test by adding another index: top100-min1, top20-min5, top10-min10
     # TODO: Test by adding top250-min0.4, top500-min0.25
-    df_stock = get_stock(criteria)
-    df_crypto = get_crypto(criteria)
+    df_stock = fmp.get_stock(criteria)
+    df_crypto = cmc.get_crypto(criteria)
+    df_refined = dp.refine_data(using=criteria, dfs=[df_stock, df_crypto])
+    df_weights = allocations.add_weightings(df_refined, criteria[KEY_INDEX_WEIGHT_MIN]).reset_index(drop=True)
 
-    print(f"\tMerging all security types...")
-    df_securities = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
-    df_securities = merge_symbols(df_securities)
-    df_securities = df_securities.sort_values(by=COL_MC, ascending=False)
-    df_securities = df_securities.head(criteria[KEY_INDEX_TOP])
-    print(f"\t...trimmed down to {len(df_securities)} securities")
-
-    df_index = get_index(df_securities, criteria[KEY_INDEX_WEIGHT_MIN]).reset_index(drop=True)
-    count = len(df_securities) - len(df_index)
-    print(f"\tDropped {count} symbols with {len(df_index)} remaining.")
+    count = len(df_refined) - len(df_weights)
+    print(f"\tDropped {count} symbols with {len(df_weights)} remaining.")
     print(f"\tIndex weighted results:")
-    print(df_index)
-    print(f"\tFinal weighted sum: {df_index[COL_WEIGHT].sum():.2f}%")
+    print(df_weights)
+    print(f"\tFinal weighted sum: {df_weights[COL_WEIGHT].sum():.2f}%")
     print()
 
     if PROD_API_CALL:
-        save_index(df_index)
+        save_index(df_weights)
