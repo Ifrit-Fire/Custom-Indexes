@@ -9,6 +9,16 @@ default:
 
 
 indexes:
+  top10-min10:
+    sort_by: market_cap
+    top: 10
+    weight_min: 10
+
+  top20-min5:
+    sort_by: market_cap
+    top: 20
+    weight_min: 5
+
   top50-min2:
     sort_by: market_cap
     top: 50
