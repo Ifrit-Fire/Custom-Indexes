@@ -11,7 +11,7 @@ for index, criteria in config.get_all_indexes().items():
     df_stock = fmp.get_stock(criteria)
     df_crypto = cmc.get_crypto(criteria)
     df_refined = dp.refine_data(using=criteria, dfs=[df_stock, df_crypto])
-    df_weights = allocations.add_weightings(df_refined, criteria[KEY_INDEX_WEIGHT_MIN]).reset_index(drop=True)
+    df_weights = allocations.add_weightings(df_refined, criteria).reset_index(drop=True)
 
     count = len(df_refined) - len(df_weights)
     print(f"\tDropped {count} symbols with {len(df_weights)} remaining.")
