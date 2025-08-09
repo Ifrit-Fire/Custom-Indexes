@@ -1,18 +1,34 @@
 # Custom Indexes
 
-Creates a custom index comprising the top securities by market cap, limited to 50 constituents, each with a minimum
-weight of 2%.
+Builds custom indexes of the top-ranked securities by market cap — across both stocks and cryptocurrencies — with
+configurable size and minimum weighting rules.
 
-## Background
+## Overview
 
-This is a quick solution I built to manage a custom index
-using [Fidelity Basket Portfolios](https://www.fidelity.com/etf/overview/basket-portfolios).  
-It supports building an index using both stocks and cryptocurrencies — treating them equivalently during index
-construction.
+This project generates multiple index variants, each defined by:
+
+- Number of constituents (_top_)
+- Minimum weighting per constituent (_weight_min_)
+- Sort criteria (_currently market_cap_)
+
+All indexes are generated from combined stock + crypto market data and treat both asset classes equivalently during
+index construction.
+
+| Name          | Constituents | Min Weight (%) |
+|---------------|--------------|----------------| 
+| top10-min10   | 10           | 10%            |
+| top20-min5    | 20           | 5%             |
+| top50-min2    | 50           | 2%             |
+| top100-min1   | 100          | 1%             |
+| top250-min0.4 | 250          | 0.4%           |
+| top500-min0.2 | 500          | 0.2%           |
+
+The configuration also supports symbol consolidation (_e.g., merging BRK.A into BRK.B_) and a global minimum daily
+volume threshold.
 
 ## Requirements
 
-- Python 3.12 or greater
+- Python 3.12+
 - macOS _(tested)_ or Linux _(untested)_
 - API key from [CoinMarketCap](https://coinmarketcap.com/api/) _(free)_
 - API key from [Financial Modeling Prep](https://site.financialmodelingprep.com) _(free)_
@@ -27,14 +43,22 @@ CMC_API_TOKEN=your_coinmarketcap_api_key
 FMP_API_TOKEN=your_financial_modeling_api_key
 ```
 
+3. Optionally modify `config.yaml` to customize existing or to create new indexes.
+
 ## Running
 
-Run `main.py` to start.
+1. Run `build.sh` to setup the virtual environment.
+2. Then run `main.py` to start.
 
-- By default, each run fetches fresh data from the APIs and stores results in the `data/` directory.
-- Results are printed to the console and saved locally in the `indexes/` directory.
-- To avoid unnecessary API calls while developing, set `PROD_API_CALL = False` in `main.py`. This will use locally
-  cached data instead.
+- Each run fetches fresh data from the APIs if no cache is available.
+- Cached data is stored in the `data/` directory and is refreshed daily.
+- Results are printed to the console and written locally in the `indexes/` directory.
+
+## Background
+
+Originally built as a quick solution for managing a custom index
+via [Fidelity Basket Portfolios](https://www.fidelity.com/direct-indexing/customized-investing/overview), the project
+now supports multiple index definitions from a single YAML configuration.
 
 ## Future
 

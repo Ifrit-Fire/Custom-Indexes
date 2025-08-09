@@ -4,6 +4,8 @@ from src.clients import fmp, cmc
 from src.config_handler import config, KEY_INDEX_WEIGHT_MIN
 from src.consts import COL_WEIGHT
 
+# TODO: FMP API returns notes like TBB, SOJE, SOJD, DUKB. Need to figure out how to prune those out.
+
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
 
