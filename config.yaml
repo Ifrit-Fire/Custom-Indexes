@@ -28,3 +28,13 @@ indexes:
     sort_by: market_cap
     top: 100
     weight_min: 1
+
+  top250-min0.4:
+    sort_by: market_cap
+    top: 250
+    weight_min: 0.4
+
+  top500-min0.2:
+    sort_by: market_cap
+    top: 500
+    weight_min: 0.2

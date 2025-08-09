@@ -6,7 +6,7 @@ from src.consts import COL_WEIGHT
 
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
-    # TODO: Test by adding top250-min0.4, top500-min0.25
+
     df_stock = fmp.get_stock(criteria)
     df_crypto = cmc.get_crypto(criteria)
     df_refined = dp.refine_data(using=criteria, dfs=[df_stock, df_crypto])
