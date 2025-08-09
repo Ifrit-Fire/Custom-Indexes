@@ -1,49 +1,24 @@
-import pandas as pd
+import src.data_processing as dp
+from src import allocations, io
+from src.clients import fmp, cmc
+from src.config_handler import config, KEY_INDEX_WEIGHT_MIN
+from src.consts import COL_WEIGHT
 
-from src.clients.cmc import get_mega_crypto
-from src.clients.fmp import get_mega_stock
-from src.consts import COL_SYMBOL, COL_MC, COL_WEIGHT
-from src.index import get_index
-from src.io import save_index, load_config
+# TODO: FMP API returns notes like TBB, SOJE, SOJD, DUKB. Need to figure out how to prune those out.
 
-PROD_API_CALL = True
-LIMIT_FIDELITY = 50
+for index, criteria in config.get_all_indexes().items():
+    print(f"{index} - Creating Index")
 
-# API Calls
-df_stock = get_mega_stock(from_cache=not PROD_API_CALL)
-df_crypto = get_mega_crypto(from_cache=not PROD_API_CALL)
-print(f"Retrieved {len(df_stock)} megacap stocks")
-print(f"Retrieved {len(df_crypto)} megacap crypto")
+    df_stock = fmp.get_stock(criteria)
+    df_crypto = cmc.get_crypto(criteria)
+    df_refined = dp.refine_data(using=criteria, dfs=[df_stock, df_crypto])
+    df_weights = allocations.add_weightings(df_refined, criteria).reset_index(drop=True)
 
-# Generate final Dataframe for processing
-df_limit = pd.concat([df_stock, df_crypto], axis=0, ignore_index=True)
+    count = len(df_refined) - len(df_weights)
+    print(f"\tDropped {count} symbols with {len(df_weights)} remaining.")
+    print(f"\tIndex weighted results:")
+    print(df_weights)
+    print(f"\tFinal weighted sum: {df_weights[COL_WEIGHT].sum():.2f}%")
 
-config = load_config()
-for merge, into in config.items():
-    merge_row = df_limit.loc[df_limit[COL_SYMBOL] == merge, COL_MC]
-    if merge_row.empty: continue
-    df_limit = df_limit[df_limit[COL_SYMBOL] != merge]
-    print(f"Removed {merge} Symbol")
-
-    mask = df_limit[COL_SYMBOL] == into
-    if mask.any():
-        df_limit.loc[mask, COL_MC] += merge_row.iat[0]
-        print(f"Added {merge} market cap into {into}")
-
-df_limit = df_limit.sort_values(by=COL_MC, ascending=False)
-df_limit = df_limit.head(LIMIT_FIDELITY)
-print("Combined megacap:")
-print(df_limit)
-
-# Index contains final weights
-df_index = get_index(df_limit).reset_index(drop=True)
-
-count = len(df_limit) - len(df_index)
-print(f"Dropped {count} symbols")
-print(f"Remaining {len(df_index)} symbols")
-print(f"Index weighted results:")
-print(df_index)
-print(f"Final weighted sum: {df_index[COL_WEIGHT].sum():.2f}")
-
-if PROD_API_CALL:
-    save_index(df_index)
+    io.save_index(index, df_weights)
+    print()
