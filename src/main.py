@@ -20,3 +20,4 @@ for index, criteria in config.get_all_indexes().items():
     print(f"\tFinal weighted sum: {df_weights[COL_WEIGHT].sum():.2f}%")
 
     io.save_index(index, df_weights)
+    print()

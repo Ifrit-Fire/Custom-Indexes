@@ -17,6 +17,10 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     df = df.sort_values(by=col, ascending=False)
 
     count = len(df)
+    df = df[df[COL_MC] > 0]
+    print(f"\t...removed {count - len(df)} securities for having no market cap.")
+
+    count = len(df)
     df = df[df[COL_VOLUME] > config.volume_limit_min()]
     print(f"\t...removed {count - len(df)} securities for volume limit restriction.")
 

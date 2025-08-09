@@ -13,3 +13,8 @@ indexes:
     sort_by: market_cap
     top: 50
     weight_min: 2
+
+  top100-min1:
+    sort_by: market_cap
+    top: 100
+    weight_min: 1
