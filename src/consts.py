@@ -27,4 +27,5 @@ PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
 
 PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
-PATH_DATA_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
+
+_SYMBOL_NORMALIZE = {"BRK-A": "BRK.A", "BRK/A": "BRK.A", "BRK-B": "BRK.B", "BRK/B": "BRK.B"}
