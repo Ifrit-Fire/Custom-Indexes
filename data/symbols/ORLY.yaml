@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 233 S PATTERSON AVE
+    city: SPRINGFIELD
+    postal_code: '65802'
+    state: MO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/b3JlaWxseWF1dG8uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b3JlaWxseWF1dG8uY29t/images/2025-04-04_logo.svg
+cik: 0000898173
+composite_figi: BBG000BGYWY6
+currency_name: usd
+description: O'Reilly is an aftermarket automotive parts retailer in the United States
+    and Mexico with more than $16 billion in annual sales. The company operates over
+    6,000 domestic stores and serves both the do-it-yourself (about 50% of sales)
+    and professional (47% of sales) end markets. O'Reilly differentiates itself by
+    providing quality service to its customers throughout the entirety of the vehicle
+    diagnosis and purchasing process. Furthermore, the firm boasts an impressive hub-and-spoke
+    distribution network designed to provide its localized store base with ample aftermarket
+    part availability across a variety of vehicle makes and models.
+homepage_url: https://www.oreillyauto.com
+list_date: '1993-04-22'
+locale: us
+market: stocks
+market_cap: 86453326725.2
+name: O'Reilly Automotive, Inc.
+phone_number: 417-829-5878
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S78TL6
+share_class_shares_outstanding: 56989455
+sic_code: '5531'
+sic_description: RETAIL-AUTO & HOME SUPPLY STORES
+ticker: ORLY
+ticker_root: ORLY
+total_employees: 93047
+type: CS
+weighted_shares_outstanding: 848496680
