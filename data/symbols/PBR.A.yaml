@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGV0cm9icmFzLmNvbS5icg/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGV0cm9icmFzLmNvbS5icg/images/2025-04-04_logo.svg
+cik: 0001119639
+composite_figi: BBG000BVNV22
+currency_name: usd
+description: Petrobras is a Brazil-based integrated energy company controlled by the
+    Brazilian government. The company focuses on exploration and production of oil
+    and gas in Brazilian offshore fields. Production in 2024 was 2.7 million barrels
+    of oil equivalent a day (80% oil production), and reserves stood at 10.9 billion
+    boe (85% oil). At end-2023, Petrobras operated 10 refineries in Brazil with capacity
+    of 1.8 million barrels a day and distributes refined products and natural gas
+    throughout Brazil.
+homepage_url: https://www.petrobras.com.br
+list_date: '1899-12-30'
+locale: us
+market: stocks
+market_cap: 73143558424.34999
+name: Petroleo Brasileiro S.A.-Petrobras
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SFJFD5
+share_class_shares_outstanding: 2723250690
+ticker: PBR.A
+ticker_root: PBR
+ticker_suffix: A
+total_employees: 41778
+type: ADRC
+weighted_shares_outstanding: 6444366381

@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 240 GREENWICH STREET
+    city: NEW YORK
+    postal_code: '10286'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Ym55LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Ym55LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001390777
+composite_figi: BBG000BD8PN9
+currency_name: usd
+description: Bank of New York Mellon is a global investment company involved in managing
+    and servicing financial assets throughout the investment lifecycle. The bank provides
+    financial services for institutions, corporations, and individual investors and
+    delivers investment management and investment services in 35 countries and more
+    than 100 markets. BNY is the largest global custody bank in the world, with $52.1
+    trillion in under custody or administration (as of December 2024), and can act
+    as a single point of contact for clients looking to create, trade, hold, manage,
+    service, distribute, or restructure investments. BNY's asset-management division
+    manages about $2.0 trillion in assets.
+homepage_url: https://www.bny.com
+list_date: '1969-12-04'
+locale: us
+market: stocks
+market_cap: 71871091558.56
+name: Bank of New York Mellon Corporation
+phone_number: 212-495-1784
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P6Q6
+share_class_shares_outstanding: 705240816
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: BK
+ticker_root: BK
+total_employees: 49900
+type: CS
+weighted_shares_outstanding: 705240816
