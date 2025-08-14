@@ -21,7 +21,6 @@ def save_index(name: str, df: DataFrame):
 
 
 def console_countdown(msg: str, seconds: int):
-    # print(f"Rate limit hit. Waiting {seconds} seconds...", end="", flush=True)
     for remaining in range(seconds, 0, -1):
         sys.stdout.write(f"\r{msg} in {remaining:02d} seconds...")
         sys.stdout.flush()

@@ -16,12 +16,15 @@ _BASE_FILENAME = Path(__file__).name
 
 def get_crypto(criteria: dict) -> DataFrame:
     """
-    API call which retrieves a DataFrame of crypto specified by the criteria configurations.  Automatically pulls from
-    cache when available and cache data is recent.
+    Retrieve a DataFrame of cryptocurrencies matching the given index criteria.
 
-    :param criteria: Configuration criteria for an index
-    :return: Dataframe consisting of all needed columns with standardized column names.
+    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API. The 
+    results are normalized and cached for future use.
+
+    :param criteria: Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
+    :return: DataFrame containing standardized columns: COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME.
     """
+
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 

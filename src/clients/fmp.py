@@ -20,13 +20,14 @@ _DEFAULT_PARAM = {"isEtf": False, "isFund": False, "isActivelyTrading": True, "a
 
 def get_stock(criteria: dict) -> DataFrame:
     """
-    API call which retrieves a DataFrame of stock specified by the criteria configurations. Automatically pulls from
-    cache when available and cache data is recent.
+    Retrieve a DataFrame of stocks matching the given index criteria.
 
-    :param criteria: Configuration criteria for an index
-    :return: Dataframe consisting of all needed columns with standardized column names.
+    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API. The
+    results are normalized, filtered to allowed asset types, and cached for future use.
+
+    :param criteria: Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
+    :return: DataFrame containing standardized columns: COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME.
     """
-
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -48,10 +49,13 @@ def get_stock(criteria: dict) -> DataFrame:
 
 def _get_cap_restriction(top: int):
     """
-    Based on how many of the top stocks are desired, we return an estimate of which cap category that will entail.
+    Determine the minimum market capitalization threshold based on the desired number of top-ranked stocks.
 
-    :param top: Top number of stocks desired
-    :return: Estimated market cap that will ensure at least top number of stocks will be returned.
+    This function maps a requested "top N" count to an estimated market cap category constant (e.g., MIN_ULTRA_CAP,
+    MIN_MEGA_CAP, etc.) that should yield at least that many securities.
+
+    :param top: Number of top stocks to include.
+    :return: Market cap threshold constant for the appropriate category.
     """
     if top <= 5:
         return MIN_ULTRA_CAP
