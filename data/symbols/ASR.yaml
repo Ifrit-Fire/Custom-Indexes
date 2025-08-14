@@ -1,0 +1,29 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXN1ci5jb20ubXg/images/2024-08-01_logo.svg
+cik: '0001123452'
+composite_figi: BBG000B9XWX4
+currency_name: usd
+description: Grupo Aeroportuario del Sureste SAB de CV and its subsidiaries hold concessions
+    to operate, maintain, and develop airports in the southeast region of Mexico.
+    As an operator of airports, it charges airlines, passengers, and other users fees
+    for using the airports' facilities. The group also derives rental and other income
+    from commercial activities conducted at its airports, such as the leasing of space
+    to restaurants and retailers. The group's operating segments are Cancun, which
+    generates maximum revenue, Aerostar, Airplan, Merida, Villahermosa, Holding and
+    Services, and Others.
+homepage_url: https://www.asur.com.mx
+list_date: '2000-09-28'
+locale: us
+market: stocks
+market_cap: 9753900000.0
+name: Grupo Aeroportuario del Sureste, S.A. de C.V. American Depositary Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5NWT8
+share_class_shares_outstanding: 27705000
+ticker: ASR
+ticker_root: ASR
+total_employees: 1936
+type: ADRC
+weighted_shares_outstanding: 30000000

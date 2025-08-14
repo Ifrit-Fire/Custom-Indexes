@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 50 NORTHERN AVENUE
+    city: BOSTON
+    postal_code: '02210'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dnJ0eC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dnJ0eC5jb20/images/2025-04-04_logo.svg
+cik: 0000875320
+composite_figi: BBG000C1S2X2
+currency_name: usd
+description: Vertex Pharmaceuticals is a global biotechnology company that discovers
+    and develops small-molecule drugs for the treatment of serious diseases. Its key
+    drugs are Kalydeco, Orkambi, Symdeko, and Trikafta/Kaftrio, and Alyftrek for cystic
+    fibrosis, where Vertex therapies remain the standard of care globally. Vertex
+    has diversified its portfolio through Casgevy, a gene-editing therapy for beta
+    thalassemia and sickle-cell disease, and Journavx, a non-opioid pain medication
+    approved for the treatment of moderate-to-severe acute pain in adults. Additionally,
+    Vertex is evaluating small-molecule inhibitors of APOL1-mediated kidney diseases.
+    Vertex is also investigating cell therapies to deliver a potential functional
+    cure for type 1 diabetes.
+homepage_url: https://www.vrtx.com
+list_date: '1991-07-31'
+locale: us
+market: stocks
+market_cap: 99420602738.26999
+name: Vertex Pharmaceuticals Inc
+phone_number: (617) 341-6393
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S68LJ8
+share_class_shares_outstanding: 256390651
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: VRTX
+ticker_root: VRTX
+total_employees: 6100
+type: CS
+weighted_shares_outstanding: 256390651

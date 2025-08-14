@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 4650 CUSHING BLVD
+    city: FREMONT
+    postal_code: '94538'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGFtcmVzZWFyY2guY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGFtcmVzZWFyY2guY29t/images/2025-04-04_logo.svg
+cik: 0000707549
+composite_figi: BBG000BNFLM9
+currency_name: usd
+description: Lam Research is one of the largest semiconductor wafer fabrication equipment
+    manufacturers in the world. It specializes in deposition and etch, which entail
+    the buildup of layers on a semiconductor and the subsequent selective removal
+    of patterns from each layer. Lam holds the top market share in etch and holds
+    the clear second share in deposition. It is more exposed to memory chipmakers
+    for DRAM and NAND chips. It counts as top customers the largest chipmakers in
+    the world, including TSMC, Samsung, Intel, and Micron.
+homepage_url: https://www.lamresearch.com
+list_date: '1984-05-04'
+locale: us
+market: stocks
+market_cap: 133244578880.0
+name: Lam Research Corp
+phone_number: (510) 659-0200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5SW40
+share_class_shares_outstanding: 1279118000
+sic_code: '3559'
+sic_description: SPECIAL INDUSTRY MACHINERY, NEC
+ticker: LRCX
+ticker_root: LRCX
+total_employees: 18600
+type: CS
+weighted_shares_outstanding: 1265621000

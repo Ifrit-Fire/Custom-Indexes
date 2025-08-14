@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 2200 PENNSYLVANIA AVE. N.W.
+    address2: SUITE 800W
+    city: WASHINGTON
+    postal_code: 20037-1701
+    state: DC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGFuYWhlci5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGFuYWhlci5jb20/images/2025-04-04_logo.svg
+cik: '0000313616'
+composite_figi: BBG000BH3JF8
+currency_name: usd
+description: In 1984, Danaher's founders transformed a real estate organization into
+    an industrial-focused manufacturing company. Then, through a series of mergers,
+    acquisitions, and divestitures, Danaher now focuses primarily on manufacturing
+    scientific instruments and consumables in the life sciences and diagnostic industries
+    after the late 2023 divestiture of its environmental and applied solutions group,
+    Veralto.
+homepage_url: https://www.danaher.com
+list_date: '1978-12-29'
+locale: us
+market: stocks
+market_cap: 147306133094.8
+name: Danaher Corporation
+phone_number: (202) 828-0850
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QGT0
+share_class_shares_outstanding: 716051590
+sic_code: '3823'
+sic_description: INDUSTRIAL INSTRUMENTS FOR MEASUREMENT, DISPLAY, AND CONTROL
+ticker: DHR
+ticker_root: DHR
+total_employees: 63000
+type: CS
+weighted_shares_outstanding: 716051590

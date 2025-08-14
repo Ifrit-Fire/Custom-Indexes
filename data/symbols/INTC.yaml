@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 2200 MISSION COLLEGE BLVD
+    address2: RNB-4-151
+    city: SANTA CLARA
+    postal_code: '95054'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW50ZWwuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW50ZWwuY29t/images/2025-04-04_logo.svg
+cik: 0000050863
+composite_figi: BBG000C0G1D1
+currency_name: usd
+description: Intel is a leading digital chipmaker, focused on the design and manufacturing
+    of microprocessors for the global personal computer and data center markets. Intel
+    pioneered the x86 architecture for microprocessors and was the prime proponent
+    of Moore's law for advances in semiconductor manufacturing. Intel remains the
+    market share leader in central processing units in both the PC and server end
+    markets. Intel has also been expanding into new adjacencies, such as communications
+    infrastructure, automotive, and the Internet of Things. Further, Intel expects
+    to leverage its chip manufacturing capabilities into an outsourced foundry model
+    where it constructs chips for others.
+homepage_url: https://www.intel.com
+list_date: '1971-10-13'
+locale: us
+market: stocks
+market_cap: 95462370000.0
+name: Intel Corp
+phone_number: (408) 765-8080
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5SF65
+share_class_shares_outstanding: 4377000000
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: INTC
+ticker_root: INTC
+total_employees: 108900
+type: CS
+weighted_shares_outstanding: 4377000000

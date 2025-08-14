@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXJtLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXJtLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001973239
+composite_figi: BBG01J1GXZF0
+currency_name: usd
+description: Arm Holdings is the IP owner and developer of the ARM architecture, which
+    is used in 99% of the world's smartphone CPU cores, and it also has high market
+    share in other battery-powered devices like wearables, tablets, or sensors. Arm
+    licenses its architecture for a fee, offering different types of licenses depending
+    on the flexibility the customer needs. Customers like Apple or Qualcomm buy architectural
+    licenses, which allow them to modify the architecture and add or delete instructions
+    to tailor the chips to their specific needs. Other clients directly buy off-the-shelf
+    designs from Arm. Both off-the-shelf and architectural customers pay a royalty
+    fee per chip shipped.
+homepage_url: https://www.arm.com
+list_date: '2023-09-14'
+locale: us
+market: stocks
+market_cap: 150828600817.61
+name: Arm Holdings plc American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01J1GY084
+share_class_shares_outstanding: 1056513738
+ticker: ARM
+ticker_root: ARM
+total_employees: 8330
+type: ADRC
+weighted_shares_outstanding: 1059263999

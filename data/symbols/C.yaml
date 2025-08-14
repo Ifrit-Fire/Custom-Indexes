@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 388 GREENWICH STREET
+    city: NEW YORK
+    postal_code: '10013'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2l0aWdyb3VwLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2l0aWdyb3VwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000831001
+composite_figi: BBG000FY4S11
+currency_name: usd
+description: 'Citigroup is a global financial-services company doing business in more
+    than 100 countries and jurisdictions. Citigroup''s operations are organized into
+    five primary segments: services, markets, banking, US personal banking, and wealth
+    management. The bank''s primary services include cross-border banking needs for
+    multinational corporates, investment banking and trading, and credit card services
+    in the United States.'
+homepage_url: https://www.citigroup.com
+list_date: '1986-06-02'
+locale: us
+market: stocks
+market_cap: 176247564754.52
+name: Citigroup Inc.
+phone_number: (212) 559-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S72ZG4
+share_class_shares_outstanding: 1840897898
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: C
+ticker_root: C
+total_employees: 229000
+type: CS
+weighted_shares_outstanding: 1840897898

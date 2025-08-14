@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE AMGEN CENTER DRIVE
+    city: THOUSAND OAKS
+    postal_code: '91320'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1nZW4uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1nZW4uY29t/images/2025-04-04_logo.svg
+cik: 0000318154
+composite_figi: BBG000BBS2Y0
+currency_name: usd
+description: Amgen is a leader in biotechnology-based human therapeutics. Flagship
+    drugs include red blood cell boosters Epogen and Aranesp, immune system boosters
+    Neupogen and Neulasta, and Enbrel and Otezla for inflammatory diseases. Amgen
+    introduced its first cancer therapeutic, Vectibix, in 2006 and markets bone-strengthening
+    drugs Prolia/Xgeva (approved 2010) and Evenity (2019). The acquisition of Onyx
+    Pharmaceuticals bolstered the firm's therapeutic oncology portfolio with Kyprolis.
+    Recent launches include Repatha (cholesterol-lowering), Aimovig (migraine), Lumakras
+    (lung cancer), and Tezspire (asthma). The 2023 Horizon acquisition brought several
+    rare-disease drugs, including thyroid eye disease drug Tepezza. Amgen also has
+    a growing biosimilar portfolio.
+homepage_url: https://www.amgen.com
+list_date: '1983-06-17'
+locale: us
+market: stocks
+market_cap: 153422360297.98
+name: Amgen Inc
+phone_number: (805)447-1000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5NNL6
+share_class_shares_outstanding: 538361851
+sic_code: '2836'
+sic_description: BIOLOGICAL PRODUCTS, (NO DISGNOSTIC SUBSTANCES)
+ticker: AMGN
+ticker_root: AMGN
+total_employees: 28000
+type: CS
+weighted_shares_outstanding: 538361851

@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGQuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGQuY29t/images/2025-04-04_logo.svg
+cik: 0000947263
+composite_figi: BBG000BXBHJ4
+currency_name: usd
+description: 'Toronto-Dominion is one of Canada''s two largest banks with over CAD
+    2 trillion in assets. TD Bank operates four business segments: Canadian personal
+    and commercial banking, US retail banking, wealth management and insurance, and
+    wholesale banking. The bank derives more than 55% of its revenue from Canada and
+    has dominant market share in nearly all banking products and services. TD has
+    around 40% of its revenue from its US operations. Its US footprint spans from
+    Maine to Florida, with a strong presence in the Northeast.'
+homepage_url: https://www.td.com
+list_date: '1996-08-30'
+locale: us
+market: stocks
+market_cap: 126102614379.99998
+name: Toronto Dominion Bank
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S60L15
+share_class_shares_outstanding: 1715175915
+ticker: TD
+ticker_root: TD
+total_employees: 101272
+type: CS
+weighted_shares_outstanding: 1722478000

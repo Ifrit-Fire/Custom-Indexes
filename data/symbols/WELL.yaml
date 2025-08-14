@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 4500 DORR STREET
+    city: TOLEDO
+    postal_code: '43615'
+    state: OH
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2VsbHRvd2VyLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000766704'
+composite_figi: BBG000BKY1G5
+currency_name: usd
+description: Welltower owns a diversified healthcare portfolio of 2,336 in-place properties
+    spread across the senior housing, medical office, and skilled nursing/postacute
+    care sectors. The portfolio includes over 100 properties in Canada and the United
+    Kingdom as the company looks for additional investment opportunities in countries
+    with mature healthcare systems that operate similarly to that of the United States.
+homepage_url: https://www.welltower.com
+list_date: '1978-02-17'
+locale: us
+market: stocks
+market_cap: 110215826982.18
+name: Welltower Inc.
+phone_number: 419-247-2800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RTQ4
+share_class_shares_outstanding: 667943885
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: WELL
+ticker_root: WELL
+total_employees: 685
+type: CS
+weighted_shares_outstanding: 668825942

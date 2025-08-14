@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: BUILDING TWO PARKMORE BUSINESS PARK WEST
+    city: GALWAY
+    postal_code: H91 4K49
+    state: L2
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWVkdHJvbmljLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWVkdHJvbmljLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001613103'
+currency_name: usd
+description: One of the largest medical-device companies, Medtronic develops and manufactures
+    therapeutic medical devices for chronic diseases. Its portfolio includes pacemakers,
+    defibrillators, transcatheter heart valves, stents, insulin pumps, spinal fixation
+    devices, neurovascular products, advanced energy, ablation laser therapy, and
+    surgical tools. The company primarily markets its products to healthcare institutions
+    and physicians in the United States, Western Europe, and Japan. Foreign sales
+    account for roughly 50% of the company's total sales.
+homepage_url: https://www.medtronic.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 117978853852.23999
+name: Medtronic plc
+phone_number: 01135314381700
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 1281804701
+sic_code: '3845'
+sic_description: ELECTROMEDICAL & ELECTROTHERAPEUTIC APPARATUS
+ticker: MDT
+ticker_root: MDT
+total_employees: 95000
+type: CS
+weighted_shares_outstanding: 1281264703

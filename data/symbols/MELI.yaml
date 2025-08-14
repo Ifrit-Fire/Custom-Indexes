@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: DR. LUIS BONAVITA 1294 OF. 1733 TOWER II
+    city: MONTEVIDEO
+    postal_code: '11300'
+    state: X3
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWVyY2Fkb2xpYnJlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWVyY2Fkb2xpYnJlLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001099590
+composite_figi: BBG000GQPB11
+currency_name: usd
+description: MercadoLibre runs the largest e-commerce marketplace in Latin America,
+    with more than 218 million active users and 1 million active sellers across 18
+    countries stitching into its commerce network or fintech solutions when last reported.
+    The company operates a host of complementary businesses to its core online shop,
+    with shipping solutions (Mercado Envios), a payment and financing operation (Mercado
+    Pago and Mercado Credito), advertisements (Mercado Clics), classifieds, and a
+    turnkey e-commerce solution (Mercado Shops) rounding out its arsenal. MercadoLibre
+    generates revenue from final value fees, advertising royalties, payment processing,
+    insertion fees, subscription fees, and interest income from consumer and small-business
+    lending.
+homepage_url: https://www.mercadolibre.com
+list_date: '2007-08-10'
+locale: us
+market: stocks
+market_cap: 119180910071.25
+name: Mercado Libre, Inc
+phone_number: 598-2-2927-2770
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SM32G3
+share_class_shares_outstanding: 50697375
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: MELI
+ticker_root: MELI
+total_employees: 84207
+type: CS
+weighted_shares_outstanding: 50697375

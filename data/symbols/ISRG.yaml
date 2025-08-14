@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1020 KIFER ROAD
+    city: SUNNYVALE
+    postal_code: '94086'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW50dWl0aXZlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW50dWl0aXZlLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001035267'
+composite_figi: BBG000BJPDZ1
+currency_name: usd
+description: Intuitive Surgical develops, produces, and markets a robotic system for
+    assisting minimally invasive surgery. It also provides the instrumentation, disposable
+    accessories, and warranty services for the system. The company has placed more
+    than 9,500 da Vinci systems in hospitals worldwide, with more than 5,500 installations
+    in the US and a growing number in emerging markets.
+homepage_url: https://www.intuitive.com
+list_date: '2000-06-13'
+locale: us
+market: stocks
+market_cap: 171419880404.13998
+name: Intuitive Surgical Inc.
+phone_number: (408) 523-2100
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S7XR78
+share_class_shares_outstanding: 358476506
+sic_code: '3842'
+sic_description: ORTHOPEDIC, PROSTHETIC & SURGICAL APPLIANCES & SUPPLIES
+ticker: ISRG
+ticker_root: ISRG
+total_employees: 15638
+type: CS
+weighted_shares_outstanding: 358476506

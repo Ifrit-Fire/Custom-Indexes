@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 7 WORLD TRADE CENTER
+    address2: AT 250 GREENWICH STREET
+    city: NEW YORK
+    postal_code: '10007'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9vZHlzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9vZHlzLmNvbQ/images/2025-04-04_logo.png
+cik: 0001059556
+composite_figi: BBG000F86GP6
+currency_name: usd
+description: Moody's, along with S&P Ratings, is a leading provider of credit ratings
+    on fixed-income securities. The ratings segment, Moody's Investors Service, includes
+    corporates, structured finance, financial institutions, and public finance ratings.
+    MIS represents a majority of the firm's profit and about half of the firm's revenue.
+    The other segment, Moody's Analytics, consists of decision solutions, research
+    and insights, and data and information.
+homepage_url: https://www.moodys.com
+list_date: '1984-11-05'
+locale: us
+market: stocks
+market_cap: 92558027204.09999
+name: Moody's Corporation
+phone_number: (212) 553-0300
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VP87
+share_class_shares_outstanding: 179000000
+sic_code: '7320'
+sic_description: SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES
+ticker: MCO
+ticker_root: MCO
+total_employees: 4800
+type: CS
+weighted_shares_outstanding: 179358642

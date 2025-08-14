@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 5660 NEW NORTHSIDE DRIVE,
+    address2: THIRD FLOOR
+    city: ATLANTA
+    postal_code: '30328'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGhlaWNlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGhlaWNlLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001571949
+composite_figi: BBG000C1FB75
+currency_name: usd
+description: Intercontinental Exchange is a vertically integrated operator of financial
+    exchanges and provides ancillary data products. Though the company is probably
+    best known for its ownership of the New York Stock Exchange, which it acquired
+    in 2013, ICE operates a large derivatives exchange, too. The company's largest
+    commodity futures product is the ICE Brent crude futures contract. In addition
+    to the exchanges business, which is about 54% of net revenue, Intercontinental
+    Exchange has used a series of acquisitions to create its mortgage technology business
+    (22% of net revenue) and fixed-income and data services segment (24% of net revenue).
+homepage_url: https://www.theice.com
+list_date: '2005-11-16'
+locale: us
+market: stocks
+market_cap: 104604595101.12001
+name: Intercontinental Exchange  Inc.
+phone_number: 770-857-4700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDJ4R0
+share_class_shares_outstanding: 572423088
+sic_code: '6200'
+sic_description: SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES
+ticker: ICE
+ticker_root: ICE
+total_employees: 12806
+type: CS
+weighted_shares_outstanding: 572423088

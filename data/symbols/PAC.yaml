@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWVyb3B1ZXJ0b3NnYXAuY29tLm14/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWVyb3B1ZXJ0b3NnYXAuY29tLm14/images/2025-04-04_logo.png
+cik: '0001347557'
+composite_figi: BBG000R2NRT9
+currency_name: usd
+description: Grupo Aeroportuario del Pacifico SAB de CV is engaged in the construction,
+    development, and operation of airports in Mexico. The company's segment includes
+    Guadalajara; Tijuana; Puerto Vallarta; San Jose del Cabo; Montego Bay; Hermosillo;
+    Guanajuato and Other Airports. It generates maximum revenue from the Guadalajara
+    segment.
+homepage_url: https://www.aeropuertosgap.com.mx
+list_date: '2006-02-24'
+locale: us
+market: stocks
+market_cap: 12636989274.6
+name: Grupo Aeroportuario del Pacifico, S.A.B. de C.V. Amer. Dep. Shares (each rep.
+    10 Ser. B shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SJ6FD1
+share_class_shares_outstanding: 42948585
+ticker: PAC
+ticker_root: PAC
+total_employees: 3275
+type: ADRC
+weighted_shares_outstanding: 50527746

@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YnJvb2tmaWVsZC5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YnJvb2tmaWVsZC5jb20/images/2025-04-04_logo.svg
+cik: 0001001085
+composite_figi: BBG000C9KL89
+currency_name: usd
+description: 'Brookfield Corp is an investment firm focused on building long-term
+    wealth for institutions and individuals. It has seven operating segments: Asset
+    Management, Wealth Solutions, Renewable Power and Transition, Infrastructure,
+    Private Equity, Real Estate and Corporate Activities. It invests in real assets
+    that form the backbone of the economy to deliver risk-adjusted returns to stakeholders.
+    The company generates the majority of its revenue from Asset Management. It has
+    a geographic presence in the UK, the United States, Australia, Canada, Brazil,
+    India, Colombia, Germany, Other Europe, Other Asia, and other countries.'
+homepage_url: https://www.brookfield.com
+list_date: '2000-12-20'
+locale: us
+market: stocks
+market_cap: 98068669843.76001
+name: Brookfield Corporation
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SF86D7
+share_class_shares_outstanding: 1648740598
+ticker: BN
+ticker_root: BN
+total_employees: 250000
+type: CS
+weighted_shares_outstanding: 1495861346

@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 3000 TANNERY WAY
+    city: SANTA CLARA
+    postal_code: '95054'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGFsb2FsdG9uZXR3b3Jrcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGFsb2FsdG9uZXR3b3Jrcy5jb20/images/2025-04-04_logo.svg
+cik: '0001327567'
+composite_figi: BBG0014GJCT9
+currency_name: usd
+description: Palo Alto Networks is a platform-based cybersecurity vendor with product
+    offerings covering network security, cloud security, and security operations.
+    The California-based firm has more than 80,000 enterprise customers across the
+    world, including more than three fourths of the Global 2000.
+homepage_url: https://www.paloaltonetworks.com
+list_date: '2012-07-20'
+locale: us
+market: stocks
+market_cap: 117155929146.8
+name: Palo Alto Networks, Inc. Common Stock
+phone_number: 408-753-4000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T9NWN5
+share_class_shares_outstanding: 666800000
+sic_code: '3577'
+sic_description: COMPUTER PERIPHERAL EQUIPMENT, NEC
+ticker: PANW
+ticker_root: PANW
+total_employees: 15866
+type: CS
+weighted_shares_outstanding: 667935742

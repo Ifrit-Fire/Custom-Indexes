@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: P.O. BOX 660199
+    city: DALLAS
+    postal_code: '75266'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGkuY29t/images/2025-04-04_logo.svg
+cik: 0000097476
+composite_figi: BBG000BVV7G1
+currency_name: usd
+description: Dallas-based Texas Instruments generates over 95% of its revenue from
+    semiconductors and the remainder from its well-known calculators. Texas Instruments
+    is the world's largest maker of analog chips, which are used to process real-world
+    signals such as sound and power. Texas Instruments also has a leading market share
+    position in processors and microcontrollers used in a wide variety of electronics
+    applications.
+homepage_url: https://www.ti.com
+list_date: '1953-10-01'
+locale: us
+market: stocks
+market_cap: 175436199501.93
+name: Texas Instruments Incorporated
+phone_number: (972) 995-3773
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5WYZ7
+share_class_shares_outstanding: 909137169
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: TXN
+ticker_root: TXN
+total_employees: 34000
+type: CS
+weighted_shares_outstanding: 909137169

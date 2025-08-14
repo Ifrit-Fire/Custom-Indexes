@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2VtZXguY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2VtZXguY29t/images/2025-04-04_logo.png
+cik: 0001076378
+composite_figi: BBG000BPCTB2
+currency_name: usd
+description: Cemex SAB de CV is a ready-mix concrete company that mainly engaged in
+    activities that are oriented to the construction industry, mainly through the
+    production, marketing, sale, and distribution of cement, ready-mix concrete, aggregates,
+    urbanization solutions, and other construction materials and also provide related
+    services and reliable construction-related services to customers and communities
+    and maintain business relationships in more than 60 countries throughout the world.
+    The company operates in different parts of the world, with operations in Mexico,
+    the United States, the EMEA region and the SCA&C region.
+homepage_url: https://www.cemex.com
+list_date: '1999-09-15'
+locale: us
+market: stocks
+market_cap: 12723803866.48
+name: Cemex S.A.B. de C.V.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SD8F15
+share_class_shares_outstanding: 1513745991
+ticker: CX
+ticker_root: CX
+total_employees: 42587
+type: ADRC
+weighted_shares_outstanding: 1450832824

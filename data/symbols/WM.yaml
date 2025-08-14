@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 800 CAPITOL STREET, STE 3000
+    city: HOUSTON
+    postal_code: '77002'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d20uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d20uY29t/images/2025-04-04_logo.svg
+cik: 0000823768
+composite_figi: BBG000BWVSR1
+currency_name: usd
+description: WM ranks as the largest integrated provider of traditional solid waste
+    and medical waste services in the United States, operating 262 active landfills,
+    about 506 solid and medical waste transfer stations, and 105 recycling facilities.
+    The company serves residential, commercial, industrial, and medical end markets
+    and is also a leading recycler in North America.
+homepage_url: https://www.wm.com
+list_date: '1988-09-30'
+locale: us
+market: stocks
+market_cap: 93851406788.7
+name: Waste Management, Inc.
+phone_number: (713) 512-6200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XH47
+share_class_shares_outstanding: 402830315
+sic_code: '4953'
+sic_description: REFUSE SYSTEMS
+ticker: WM
+ticker_root: WM
+total_employees: 61700
+type: CS
+weighted_shares_outstanding: 402830315

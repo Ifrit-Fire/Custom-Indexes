@@ -1,0 +1,31 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aHdvcmxkLmNvbQ/images/2025-04-04_logo.png
+cik: 0001483994
+composite_figi: BBG000QFPM65
+currency_name: usd
+description: 'H World Group Ltd is a multi-brand hotel group in China with international
+    operations. It operates in the leased, managed, and franchised models. The company
+    has two operating segments: legacy Huazhu and legacy DH. Its brand and product
+    offering includes Economy hotel brands: HanTing Hotel, Ni Hao Hotel, Hi Inn, Elan
+    Hotel, Zleep Hotels, and Ibis Hotel, Midscale hotel brands: JI Hotel, Orange Hotel,
+    Starway Hotel and Ibis Styles Hotel, Upper midscale hotel brands: Crystal Orange
+    Hotel, IntercityHotel, Manxin Hotel, Mercure Hotel, Madison Hotel, Novotel Hotel,
+    CitiGO Hotel and MAXX by Steigenberger, Upscale hotel brands: Joya Hotel, Blossom
+    House, Steigenberger Hotels & Resorts, Jaz in the City, and Grand Mercure; and
+    Luxury hotel brand: Steigenberger Icon and Song Hotels.'
+homepage_url: https://www.hworld.com
+list_date: '2010-03-26'
+locale: us
+market: stocks
+market_cap: 9895715713.52
+name: H World Group Limited American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T6Y5T2
+share_class_shares_outstanding: 306939073
+ticker: HTHT
+ticker_root: HTHT
+total_employees: 28502
+type: ADRC
+weighted_shares_outstanding: 306939073

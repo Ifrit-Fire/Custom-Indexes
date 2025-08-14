@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1310 POINT STREET
+    city: BALTIMORE
+    postal_code: '21231'
+    state: MD
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29uc3RlbGxhdGlvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29uc3RlbGxhdGlvbi5jb20/images/2025-04-04_logo.png
+cik: 0001868275
+composite_figi: BBG014KFRNP7
+currency_name: usd
+description: Constellation Energy Corp producer of carbon-free energy and a supplier
+    of energy products and services. The company offers generating capacity that includes
+    nuclear, wind, solar, natural gas, and hydroelectric assets. It sells electricity,
+    natural gas, and other energy-related products and sustainable solutions to various
+    types of customers, including distribution utilities, municipalities, cooperatives,
+    and commercial, industrial, public sector, and residential customers in markets
+    across multiple geographic regions. Its operating segments and reporting units
+    are Mid-Atlantic, Midwest, New York, ERCOT, and Other Power Regions.
+homepage_url: https://www.constellation.com
+list_date: '2022-01-19'
+locale: us
+market: stocks
+market_cap: 105771156882.03
+name: Constellation Energy Corporation Common Stock
+phone_number: 833-883-0162
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG014KFRPJ9
+share_class_shares_outstanding: 312405579
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: CEG
+ticker_root: CEG
+total_employees: 14264
+type: CS
+weighted_shares_outstanding: 312405579

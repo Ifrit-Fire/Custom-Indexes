@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 1850 TOWERS CRESCENT PLAZA
+    city: TYSONS CORNER
+    postal_code: '22182'
+    state: VA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RyYXRlZ3kuY29t/images/2025-04-04_logo.svg
+cik: '0001050446'
+composite_figi: BBG000GQJPZ0
+currency_name: usd
+description: Strategy Inc is a bitcoin treasury company and a provider of business
+    intelligence services. It is designed to provide investors varying degrees of
+    economic exposure to Bitcoin by offering a range of securities, including equity
+    and fixed-income instruments. The company also provides industry AI-powered enterprise
+    analytics software.
+homepage_url: https://www.strategy.com
+list_date: '1998-06-11'
+locale: us
+market: stocks
+market_cap: 111830446767.33
+name: Strategy Inc Common Stock Class A
+phone_number: 703-848-8600
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SC7PX1
+share_class_shares_outstanding: 263912697
+sic_code: '6199'
+sic_description: FINANCE SERVICES
+ticker: MSTR
+ticker_root: MSTR
+total_employees: 1512
+type: CS
+weighted_shares_outstanding: 283552947

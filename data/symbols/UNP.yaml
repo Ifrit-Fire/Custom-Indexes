@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1400 DOUGLAS STREET
+    address2: STOP 0310
+    city: OMAHA
+    postal_code: '68179'
+    state: NE
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dXAuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dXAuY29t/images/2025-04-04_logo.svg
+cik: 0000100885
+composite_figi: BBG000BW3299
+currency_name: usd
+description: Omaha, Nebraska-based Union Pacific is the largest public railroad in
+    North America. Operating on more than 30,000 miles of track in the western two
+    thirds of the US, Union Pacific generated $24 billion of revenue in 2024 by hauling
+    coal, industrial products, intermodal containers, agriculture goods, chemicals,
+    fertilizers, and automotive goods. Union Pacific owns about one fourth of Mexican
+    railroad Ferromex and historically derives roughly 10% of its revenue hauling
+    freight to and from Mexico.
+homepage_url: https://www.up.com
+list_date: '1969-06-20'
+locale: us
+market: stocks
+market_cap: 129757117429.6
+name: Union Pacific Corp.
+phone_number: 402 544 6763
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5X2M0
+share_class_shares_outstanding: 593043666
+sic_code: '4011'
+sic_description: RAILROADS, LINE-HAUL OPERATING
+ticker: UNP
+ticker_root: UNP
+total_employees: 29711
+type: CS
+weighted_shares_outstanding: 593039842

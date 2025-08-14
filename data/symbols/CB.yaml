@@ -1,0 +1,32 @@
+active: true
+address:
+    address1: BARENGASSE 32
+    city: ZURICH
+    postal_code: CH-8001
+    state: V8
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2h1YmIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2h1YmIuY29t/images/2025-04-04_logo.svg
+cik: 0000896159
+currency_name: usd
+description: ACE acquired Chubb in the first quarter of 2016 and assumed the Chubb
+    name. The combination made the new Chubb one of the largest domestic property
+    and casualty insurers, with operations in 54 countries spanning commercial and
+    personal P&C insurance, reinsurance, and life insurance.
+homepage_url: https://www.chubb.com
+list_date: '1984-02-29'
+locale: us
+market: stocks
+market_cap: 107554680342.60999
+name: Chubb Limited
+phone_number: 41 0 43 456 7600
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 398690293
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: CB
+ticker_root: CB
+total_employees: 43000
+type: CS
+weighted_shares_outstanding: 398690293

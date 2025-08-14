@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1100 PAGE MILL RD
+    city: PALO ALTO
+    postal_code: 94304-1047
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXBwbG92aW4uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXBwbG92aW4uY29t/images/2025-04-04_logo.svg
+cik: 0001751008
+composite_figi: BBG006HFPX77
+currency_name: usd
+description: AppLovin is a vertically integrated advertising technology company that
+    acts as a demand-side platform for advertisers, a supply-side platform for publishers,
+    and an exchange facilitating transactions between the two. About 80% of AppLovin's
+    revenue comes from the DSP, AppDiscovery, while the remainder comes from the SSP,
+    Max. AppLovin's primary tool for future growth is AXON 2, which is an ad optimizer
+    operating within the DSP that allows advertisers to place ads according to specified
+    return thresholds.
+homepage_url: https://www.applovin.com
+list_date: '2021-04-15'
+locale: us
+market: stocks
+market_cap: 157962709838.0
+name: Applovin Corporation Class A Common Stock
+phone_number: (800) 839-9646
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG006HFPX86
+share_class_shares_outstanding: 307636373
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: APP
+ticker_root: APP
+total_employees: 1563
+type: CS
+weighted_shares_outstanding: 338249914

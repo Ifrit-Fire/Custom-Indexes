@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 929 LONG BRIDGE DRIVE
+    city: ARLINGTON
+    postal_code: '22202'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Ym9laW5nLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Ym9laW5nLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000012927
+composite_figi: BBG000BCSST7
+currency_name: usd
+description: 'Boeing is a major aerospace and defense firm. It operates in three segments:
+    commercial airplanes; defense, space, and security; and global services. Boeing''s
+    commercial airplanes segment competes with Airbus in the production of aircraft
+    that can carry more than 130 passengers. Boeing''s defense, space, and security
+    segment competes with defense contractors such as Lockheed Martin and Northrop
+    Grumman to create military aircraft, satellites, and weaponry. Global services
+    provides aftermarket support to airlines.'
+homepage_url: https://www.boeing.com
+list_date: '1952-05-23'
+locale: us
+market: stocks
+market_cap: 175889841433.95
+name: Boeing Company
+phone_number: (703) 414-6338
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P0V3
+share_class_shares_outstanding: 756157695
+sic_code: '3721'
+sic_description: AIRCRAFT
+ticker: BA
+ticker_root: BA
+total_employees: 172000
+type: CS
+weighted_shares_outstanding: 756157695

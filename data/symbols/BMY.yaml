@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: ROUTE 206 AND PROVINCE LINE ROAD
+    city: PRINCETON
+    postal_code: 08543
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Ym1zLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Ym1zLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000014272'
+composite_figi: BBG000DQLV23
+currency_name: usd
+description: Bristol-Myers Squibb discovers, develops, and markets drugs for various
+    therapeutic areas, such as cardiovascular, cancer, and immune disorders. A key
+    focus for Bristol is immuno-oncology, where the firm is a leader in drug development.
+    Bristol derives close to 70% of total sales from the US, showing a higher dependence
+    on the US market than most of its peer group.
+homepage_url: https://www.bms.com
+list_date: '1952-06-23'
+locale: us
+market: stocks
+market_cap: 94749538258.9
+name: Bristol-Myers Squibb Co.
+phone_number: (609) 252-4621
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8N8J6
+share_class_shares_outstanding: 2035435838
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: BMY
+ticker_root: BMY
+total_employees: 34100
+type: CS
+weighted_shares_outstanding: 2035435838

@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1680 CAPITAL ONE DRIVE
+    city: MCLEAN
+    postal_code: '22102'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FwaXRhbG9uZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FwaXRhbG9uZS5jb20/images/2025-04-04_logo.svg
+cik: 0000927628
+composite_figi: BBG000BGKTF9
+currency_name: usd
+description: Capital One is a diversified financial services holding company headquartered
+    in McLean, Virginia. Originally a spinoff of Signet Financial's credit card division
+    in 1994, the company is now primarily involved in credit card lending, auto loans,
+    and commercial lending. Following the acquisition of Discover in 2025, the firm
+    also has a modest personal loan business, though credit card lending still provides
+    the majority of the bank's revenue.
+homepage_url: https://www.capitalone.com
+list_date: '1994-11-16'
+locale: us
+market: stocks
+market_cap: 138602585729.38
+name: Capital One Financial
+phone_number: (703) 720-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S65PV8
+share_class_shares_outstanding: 639517306
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: COF
+ticker_root: COF
+total_employees: 76500
+type: CS
+weighted_shares_outstanding: 639517306

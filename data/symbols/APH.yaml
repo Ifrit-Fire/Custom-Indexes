@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 358 HALL AVE
+    city: WALLINGFORD
+    postal_code: 06492
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1waGVub2wuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1waGVub2wuY29t/images/2025-04-04_logo.svg
+cik: 0000820313
+composite_figi: BBG000B9YJ35
+currency_name: usd
+description: Amphenol is a global supplier of connectors, sensors, and interconnect
+    systems. Amphenol holds the second-largest connector market share globally and
+    sells into the end markets of automotive, broadband, commercial air, industrial,
+    IT and data communications, military, mobile devices, and mobile networks. Amphenol
+    is diversified geographically, with operations in 40 countries.
+homepage_url: https://www.amphenol.com
+list_date: '1991-11-08'
+locale: us
+market: stocks
+market_cap: 136560026265.34999
+name: Amphenol Corporation
+phone_number: (203) 265-8900
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5NSK6
+share_class_shares_outstanding: 1220921111
+sic_code: '3678'
+sic_description: ELECTRONIC CONNECTORS
+ticker: APH
+ticker_root: APH
+total_employees: 125000
+type: CS
+weighted_shares_outstanding: 1220921111

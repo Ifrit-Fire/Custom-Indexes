@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 675 ALMANOR AVE
+    city: SUNNYVALE
+    postal_code: '94085'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3lub3BzeXMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3lub3BzeXMuY29t/images/2025-04-04_logo.svg
+cik: 0000883241
+composite_figi: BBG000BSFRF3
+currency_name: usd
+description: Synopsys is a provider of electronic design automation software and intellectual
+    property products. EDA software automates and aids in the chip design process,
+    enhancing design accuracy, productivity, and complexity in a full-flow end-to-end
+    solution. Synopsys' comprehensive portfolio is benefiting from a convergence of
+    semiconductor companies moving up the stack of technologies toward systems-like
+    companies, and systems companies moving down-stack toward in-house chip design.
+    The resulting expansion in EDA customers alongside secular digitalization of various
+    end markets benefits EDA vendors like Synopsys.
+homepage_url: https://www.synopsys.com
+list_date: '1992-03-03'
+locale: us
+market: stocks
+market_cap: 115800306782.99998
+name: Synopsys Inc
+phone_number: (650) 584-5000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5VTR8
+share_class_shares_outstanding: 155160938
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: SNPS
+ticker_root: SNPS
+total_employees: 20000
+type: CS
+weighted_shares_outstanding: 185043635

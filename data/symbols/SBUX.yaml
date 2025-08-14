@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: P O BOX 34067
+    city: SEATTLE
+    postal_code: 98124-1067
+    state: WA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3RhcmJ1Y2tzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RhcmJ1Y2tzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000829224
+composite_figi: BBG000CTQBF3
+currency_name: usd
+description: 'Starbucks is one of the most widely recognized restaurant brands in
+    the world, operating more than 40,000 stores across more than 80 countries at
+    the end of March 2025. The firm operates in three segments: North America, international
+    markets, and channel development (grocery and ready-to-drink beverage). The coffee
+    chain generates revenue from company-operated stores, royalties, sales of equipment
+    and products to license partners, ready-to-drink beverages, packaged coffee sales,
+    and single-serve products.'
+homepage_url: https://www.starbucks.com
+list_date: '1992-06-26'
+locale: us
+market: stocks
+market_cap: 106133679000.0
+name: Starbucks Corp
+phone_number: (206) 447-1575
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S72KH6
+share_class_shares_outstanding: 1136700000
+sic_code: '5810'
+sic_description: RETAIL-EATING & DRINKING PLACES
+ticker: SBUX
+ticker_root: SBUX
+total_employees: 361000
+type: CS
+weighted_shares_outstanding: 1136700000
