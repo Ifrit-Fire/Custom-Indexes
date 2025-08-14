@@ -10,7 +10,7 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     print(f"\tRefining data based on configurations...")
     print(f"\t...merging all security DataFrames...")
     df = pd.concat(dfs, axis=0, ignore_index=True)
-    df = merge_symbols(df)
+    df = _merge_symbols(df)
 
     print(f"\t...sorting by {using[KEY_INDEX_SORTBY]}")
     col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
@@ -29,7 +29,7 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     return df
 
 
-def merge_symbols(df: DataFrame) -> DataFrame:
+def _merge_symbols(df: DataFrame) -> DataFrame:
     for merge, into in config.symbol_merge.items():
         merge_row = df.loc[df[COL_SYMBOL] == merge, COL_MC]
         if merge_row.empty: continue
