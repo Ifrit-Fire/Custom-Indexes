@@ -1,0 +1,31 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGF0YW1haXJsaW5lc2dyb3VwLm5ldA/images/2025-04-04_logo.png
+cik: '0001047716'
+composite_figi: BBG01PDH58Y1
+currency_name: usd
+description: LATAM Airlines Group SA operates as a passenger airline group. The company
+    and its affiliates provide domestic services in Brazil, Chile, Peru, Colombia,
+    and Ecuador, as well as regional flights and long-haul operations. LATAM group
+    carries out cargo operations using both belly space on passenger flights and dedicated
+    freighter aircraft. In addition, it also offers complementary services, such as
+    ground handling, courier, logistics, and maintenance. Geographically, the group
+    generates maximum revenue from Brazil, followed by Chile, the United States of
+    America, Peru, Europe, Colombia, Ecuador, Asia Pacific, and the rest of Latin
+    America.
+homepage_url: https://www.latamairlinesgroup.net
+list_date: '1997-11-07'
+locale: us
+market: stocks
+market_cap: 12916837452.86
+name: LATAM Airlines Group S.A. American Depositary Shares (each representing two
+    thousand (2,000) shares of Common Stock)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG01PDH59W1
+share_class_shares_outstanding: 302218939
+ticker: LTM
+ticker_root: LTM
+total_employees: 38827
+type: ADRC
+weighted_shares_outstanding: 302218939

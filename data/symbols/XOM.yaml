@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 22777 SPRINGWOODS VILLAGE PARKWAY
+    city: SPRING
+    postal_code: 77389-1425
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXh4b25tb2JpbC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXh4b25tb2JpbC5jb20/images/2025-04-04_logo.svg
+cik: 0000034088
+composite_figi: BBG000GZQ728
+currency_name: usd
+description: ExxonMobil is an integrated oil and gas company that explores for, produces,
+    and refines oil worldwide. In 2023, it produced 2.4 million barrels of liquids
+    and 7.7 billion cubic feet of natural gas per day. At the end of 2023, reserves
+    were 16.9 billion barrels of oil equivalent, 66% of which were liquids. The company
+    is one of the world's largest refiners, with a total global refining capacity
+    of 4.5 million barrels of oil per day, and is one of the world's largest manufacturers
+    of commodity and specialty chemicals.
+homepage_url: https://www.exxonmobil.com
+list_date: '1920-03-25'
+locale: us
+market: stocks
+market_cap: 451179432232.43
+name: Exxon Mobil Corporation
+phone_number: (972) 940-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S69V32
+share_class_shares_outstanding: 4263247021
+sic_code: '2911'
+sic_description: PETROLEUM REFINING
+ticker: XOM
+ticker_root: XOM
+total_employees: 60900
+type: CS
+weighted_shares_outstanding: 4263247021

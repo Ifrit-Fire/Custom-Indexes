@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1 NEW ORCHARD ROAD
+    city: ARMONK
+    postal_code: '10504'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aWJtLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aWJtLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000051143'
+composite_figi: BBG000BLNNH6
+currency_name: usd
+description: Incorporated in 1911, International Business Machines, or IBM, is one
+    of the oldest technology companies in the world. It provides software, IT consulting
+    services, and hardware to help business customers modernize their technology workflows.
+    IBM operates in 175 countries and employs approximately 300,000 people. The company
+    has a robust roster of business partners to service its clients, which includes
+    95% of all Fortune 500 companies. IBM's products, including Red Hat, watsonx,
+    and mainframes, handle some of the world's most important data workloads in areas
+    like finance and retail.
+homepage_url: https://www.ibm.com
+list_date: '1949-01-28'
+locale: us
+market: stocks
+market_cap: 218692772444.34
+name: International Business Machines Corporation
+phone_number: (914) 499-1900
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5S399
+share_class_shares_outstanding: 929396575
+sic_code: '3570'
+sic_description: COMPUTER & OFFICE EQUIPMENT
+ticker: IBM
+ticker_root: IBM
+total_employees: 270300
+type: CS
+weighted_shares_outstanding: 931519242

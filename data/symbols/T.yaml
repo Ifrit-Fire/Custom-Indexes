@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 208 S. AKARD ST
+    city: DALLAS
+    postal_code: '75202'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXR0LmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXR0LmNvbQ/images/2025-04-04_logo.svg
+cik: '0000732717'
+composite_figi: BBG000BSJK37
+currency_name: usd
+description: The wireless business contributes nearly 70% of AT&T's revenue. The company
+    is the third-largest US wireless carrier, connecting 73 million postpaid and 17
+    million prepaid phone customers. Fixed-line enterprise services, which account
+    for about 14% of revenue, include internet access, private networking, security,
+    voice, and wholesale network capacity. Residential fixed-line services, about
+    12% of revenue, primarily consist of broadband internet access, serving 14 million
+    customers. AT&T also has a sizable presence in Mexico, with 24 million customers,
+    but this business only accounts for 3% of revenue. The company recently sold its
+    70% equity stake in satellite television provider DirecTV to its partner, private
+    equity firm TPG.
+homepage_url: https://www.att.com
+list_date: '1946-11-01'
+locale: us
+market: stocks
+market_cap: 203642978470.4
+name: AT&T Inc.
+phone_number: (210) 821-4105
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VWH2
+share_class_shares_outstanding: 7150385480
+sic_code: '4813'
+sic_description: TELEPHONE COMMUNICATIONS (NO RADIOTELEPHONE)
+ticker: T
+ticker_root: T
+total_employees: 140990
+type: CS
+weighted_shares_outstanding: 7150385480

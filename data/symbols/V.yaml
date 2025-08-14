@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: P.O. BOX 8999
+    city: SAN FRANCISCO
+    postal_code: 94128-8999
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dXNhLnZpc2EuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dXNhLnZpc2EuY29t/images/2025-04-04_logo.svg
+cik: '0001403161'
+composite_figi: BBG000PSKYX7
+currency_name: usd
+description: Visa is the largest payment processor in the world. In fiscal 2024, it
+    processed almost $16 trillion in total volume. Visa operates in over 200 countries
+    and processes transactions in over 160 currencies. Its systems are capable of
+    processing over 65,000 transactions per second.
+homepage_url: https://www.usa.visa.com
+list_date: '2008-03-19'
+locale: us
+market: stocks
+market_cap: 651962382530.5
+name: VISA Inc.
+phone_number: 650-432-3200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SRCFY3
+share_class_shares_outstanding: 1698682527
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: V
+ticker_root: V
+total_employees: 31600
+type: CS
+weighted_shares_outstanding: 1940941895

@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 2485 AUGUSTINE DRIVE
+    city: SANTA CLARA
+    postal_code: '95054'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1kLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1kLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000002488
+composite_figi: BBG000BBQCY0
+currency_name: usd
+description: Advanced Micro Devices designs a variety of digital semiconductors for
+    markets such as PCs, gaming consoles, data centers, industrial, and automotive
+    applications. AMD's traditional strength was in central processing units and graphics
+    processing units used in PCs and data centers. Additionally, the firm supplies
+    the chips found in prominent game consoles such as the Sony PlayStation and Microsoft
+    Xbox. In 2022, the firm acquired field-programmable gate array leader Xilinx to
+    diversify its business and augment its opportunities in key end markets such as
+    data center and automotive.
+homepage_url: https://www.amd.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 279583510740.92
+name: Advanced Micro Devices
+phone_number: (408) 749-4000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5NN36
+share_class_shares_outstanding: 1622843689
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: AMD
+ticker_root: AMD
+total_employees: 28000
+type: CS
+weighted_shares_outstanding: 1622843689

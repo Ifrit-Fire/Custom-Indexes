@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 700 ANDERSON HILL RD
+    city: PURCHASE
+    postal_code: '10577'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGVwc2ljby5jb20/images/2025-03-20_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGVwc2ljby5jb20/images/2025-03-20_logo.svg
+cik: '0000077476'
+composite_figi: BBG000DH7JK6
+currency_name: usd
+description: PepsiCo is a global leader in snacks and beverages, owning well-known
+    household brands including Pepsi, Mountain Dew, Gatorade, Lay's, Cheetos, and
+    Doritos, among others. The company dominates the global savory snacks market and
+    also ranks as the second-largest beverage provider in the world (behind Coca-Cola)
+    with diversified exposure to carbonated soft drinks, or CSD, as well as water,
+    sports, and energy drink offerings. Convenience foods account for approximately
+    55% of its total revenue, with beverages making up the rest. Pepsi owns the bulk
+    of its manufacturing and distribution capacity in the US, but uses bottlers overseas
+    for beverages. International markets made up 40% of both total sales and operating
+    profits in 2024.
+homepage_url: https://www.pepsico.com
+list_date: '1919-12-18'
+locale: us
+market: stocks
+market_cap: 201076368951.48
+name: PepsiCo, Inc.
+phone_number: (914) 253-2000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S695T1
+share_class_shares_outstanding: 1369077204
+sic_code: '2080'
+sic_description: BEVERAGES
+ticker: PEP
+ticker_root: PEP
+total_employees: 319000
+type: CS
+weighted_shares_outstanding: 1369077204

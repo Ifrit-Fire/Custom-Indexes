@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aHNiYy5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aHNiYy5jb20/images/2025-04-04_logo.svg
+cik: 0001089113
+composite_figi: BBG000C1K7N0
+currency_name: usd
+description: Established in 1865 in Hong Kong, London-based HSBC is one of the largest
+    banks in the world, with assets of USD 3 trillion and 40 million customers worldwide.
+    It operates in more than 50 countries with more than 200,000 full-time staff.
+    The United Kingdom and Hong Kong are its two largest markets. The bank offers
+    retail, commercial and institutional banking, global banking and markets, wealth
+    management, and private banking.
+homepage_url: https://www.hsbc.com
+list_date: '1995-05-11'
+locale: us
+market: stocks
+market_cap: 223135490169.6
+name: HSBC Holdings PLC
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SCZVC0
+share_class_shares_outstanding: 3479974963
+ticker: HSBC
+ticker_root: HSBC
+total_employees: 211130
+type: ADRC
+weighted_shares_outstanding: 3475630688

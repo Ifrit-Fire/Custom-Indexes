@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1 NEUMANN WAY
+    city: EVENDALE
+    postal_code: '45215'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2VhZXJvc3BhY2UuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2VhZXJvc3BhY2UuY29t/images/2025-04-04_logo.png
+cik: '0000040545'
+composite_figi: BBG000BK6MB5
+currency_name: usd
+description: GE Aerospace is the global leader in designing, manufacturing, and servicing
+    commercial aircraft engines, along with partner Safran in their CFM joint venture.
+    With its massive global installed base of nearly 70,000 commercial and military
+    engines, GE Aerospace earns most of its profits on recurring service revenue of
+    that equipment, which operates for decades. GE Aerospace is the remaining core
+    business of the company formed in 1892 with historical ties to American inventor
+    Thomas Edison; that company became a storied conglomerate with peak revenue of
+    $130 billion in 2000 until GE spun off its appliance, finance, healthcare, and
+    wind and power businesses between 2016 and 2024.
+homepage_url: https://www.geaerospace.com
+list_date: '1892-06-23'
+locale: us
+market: stocks
+market_cap: 291832919302.39996
+name: GE Aerospace
+phone_number: 617-443-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5PVD5
+share_class_shares_outstanding: 1060439387
+sic_code: '3600'
+sic_description: ELECTRONIC & OTHER ELECTRICAL EQUIPMENT (NO COMPUTER EQUIP)
+ticker: GE
+ticker_root: GE
+total_employees: 53000
+type: CS
+weighted_shares_outstanding: 1060439387

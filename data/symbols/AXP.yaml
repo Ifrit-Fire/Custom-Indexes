@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 200 VESEY STREET
+    address2: 50TH FLOOR
+    city: NEW YORK
+    postal_code: '10285'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1lcmljYW5leHByZXNzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1lcmljYW5leHByZXNzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000004962
+composite_figi: BBG000BCQZS4
+currency_name: usd
+description: 'American Express is a global financial institution, operating in about
+    130 countries, that provides consumers and businesses charge and credit card payment
+    products. The company also operates a highly profitable merchant payment network.
+    The firm operates in four segments: US consumer services, US commercial services,
+    international card services, and global merchant and network services. In addition
+    to payment products, the company''s commercial business offers expense management
+    tools, consulting services, and business loans.'
+homepage_url: https://www.americanexpress.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 210998450048.66998
+name: American Express Company
+phone_number: (212) 640-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P034
+share_class_shares_outstanding: 695882227
+sic_code: '6199'
+sic_description: FINANCE SERVICES
+ticker: AXP
+ticker_root: AXP
+total_employees: 75100
+type: CS
+weighted_shares_outstanding: 695882227

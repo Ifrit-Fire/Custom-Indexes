@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmF0aW9uYWxncmlkLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmF0aW9uYWxncmlkLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001004315'
+composite_figi: BBG000L4Y5K6
+currency_name: usd
+description: National Grid owns and operates the electric transmission system in England
+    and Wales. It sold the bulk of its UK gas transmission business in fiscal 2023
+    to fund the acquisition of PPL's UK power distribution assets. In the Northeastern
+    United States, it serves electricity and gas customers combined in three states.
+    It also owns regulated transmission and electricity generation in the United States,
+    metering services, merchant transmission lines in the UK, and the Grain (UK) liquefied
+    natural gas facility.
+homepage_url: https://www.nationalgrid.com
+list_date: '1999-06-08'
+locale: us
+market: stocks
+market_cap: 70677684075.83
+name: National Grid PLC
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SD9VH2
+share_class_shares_outstanding: 992246021
+ticker: NGG
+ticker_root: NGG
+total_employees: 31645
+type: ADRC
+weighted_shares_outstanding: 992246021

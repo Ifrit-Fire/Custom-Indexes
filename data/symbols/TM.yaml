@@ -1,0 +1,33 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2xvYmFsLnRveW90YQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2xvYmFsLnRveW90YQ/images/2025-04-04_logo.svg
+cik: 0001094517
+composite_figi: BBG000BPH299
+currency_name: usd
+description: Founded in 1937, Toyota is one of the world's largest automakers, with
+    11.0 million units sold at retail in fiscal 2025, including 10.3 million across
+    the Toyota and Lexus brands. Brands include Toyota, Lexus, Daihatsu, and truck
+    maker Hino; market share in Japan is about 50% excluding mini-vehicles, while
+    US share is around 14%. The firm also owns stakes in Denso, a parts supplier,
+    about 20% of Subaru, and holds investments in many other firms, including shares
+    of Uber Technologies, Joby Aviation, Aurora Innovation, Isuzu Motors, and about
+    5% in each of Mazda and Suzuki. Fiscal 2025 sales excluding financial services
+    were JPY 43.8 trillion. Toyota also has a financing arm and manufactures homes
+    and boats.
+homepage_url: https://www.global.toyota
+list_date: '1976-08-18'
+locale: us
+market: stocks
+market_cap: 246500518119.97
+name: Toyota Motor Corporation American Depositary Shares (Each representing ten Ordinary
+    Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDB327
+share_class_shares_outstanding: 1579498746
+ticker: TM
+ticker_root: TM
+total_employees: 383853
+type: ADRC
+weighted_shares_outstanding: 1303339069

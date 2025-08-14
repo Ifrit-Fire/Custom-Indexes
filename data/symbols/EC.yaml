@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZWNvcGV0cm9sLmNvbS5jbw/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZWNvcGV0cm9sLmNvbS5jbw/images/2025-04-04_logo.svg
+cik: '0001444406'
+composite_figi: BBG000RJ1Y75
+currency_name: usd
+description: 'Ecopetrol SA is engaged in commercial and industrial activities related
+    to the exploration, exploitation, refining, transportation, storage, distribution,
+    and marketing of hydrocarbons, their derivatives, and products, as well as the
+    electric power transmission services, design, development, construction, operation,
+    and maintenance of road and energy infrastructure projects and the provision of
+    information technology and telecommunications services. The operations of the
+    company are performed through four business segments: Exploration and Production,
+    Transport and Logistics, Refining and Petrochemical, and Electric Power Transmission
+    and Toll Roads Concessions. The majority of the company''s revenue is generated
+    from the Refining and Petrochemical segment.'
+homepage_url: https://www.ecopetrol.com.co
+list_date: '2008-09-18'
+locale: us
+market: stocks
+market_cap: 17536270289.55
+name: Ecopetrol S.A
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T3G3D1
+share_class_shares_outstanding: 2055834735
+ticker: EC
+ticker_root: EC
+total_employees: 19581
+type: ADRC
+weighted_shares_outstanding: 2055834735

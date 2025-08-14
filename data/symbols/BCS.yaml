@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmFyY2xheXMuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmFyY2xheXMuY29t/images/2025-04-04_logo.svg
+cik: 0000312069
+composite_figi: BBG000BCZ341
+currency_name: usd
+description: Barclays is a universal bank headquartered in the United Kingdom. It
+    operates via five principal segments; UK (retail), UK corporate bank, private
+    bank and wealth management, investment bank, and US consumer bank. In its UK segment,
+    the bank provides current accounts, mortgages, savings and investment management
+    services, credit cards, and business banking services to retail clients and small
+    and medium-size enterprises. The international segment includes a corporate bank
+    offering banking solutions to large corporates, a bulge-bracket global investment
+    bank, and a credit card and payments business.
+homepage_url: https://www.barclays.com
+list_date: '1986-09-09'
+locale: us
+market: stocks
+market_cap: 70590360211.0
+name: Barclays PLC
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P2T2
+share_class_shares_outstanding: 3530616128
+ticker: BCS
+ticker_root: BCS
+total_employees: 91500
+type: ADRC
+weighted_shares_outstanding: 3520716220

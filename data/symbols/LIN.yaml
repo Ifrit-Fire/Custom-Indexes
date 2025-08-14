@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: FORGE, 43 CHURCH STREET WEST
+    city: WOKING SURREY
+    postal_code: GU216HT
+    state: X0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGluZGUuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGluZGUuY29t/images/2025-04-04_logo.png
+cik: 0001707925
+currency_name: usd
+description: Linde is the largest industrial gas supplier in the world, with operations
+    in over 100 countries. The firm's main products are atmospheric gases (including
+    oxygen, nitrogen, and argon) and process gases (including hydrogen, carbon dioxide,
+    and helium), as well as equipment used in industrial gas production. Linde serves
+    a wide variety of end markets, including chemicals, manufacturing, healthcare,
+    and steelmaking. Linde generated approximately $33 billion in revenue in 2024.
+homepage_url: https://www.linde.com
+list_date: '1992-06-01'
+locale: us
+market: stocks
+market_cap: 221902057828.36002
+name: Linde plc Ordinary Share
+phone_number: 00441483242200
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 468909532
+sic_code: '2810'
+sic_description: INDUSTRIAL INORGANIC CHEMICALS
+ticker: LIN
+ticker_root: LIN
+total_employees: 64842
+type: CS
+weighted_shares_outstanding: 468909532

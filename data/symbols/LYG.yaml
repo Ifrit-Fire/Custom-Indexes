@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGxveWRzYmFua2luZ2dyb3VwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGxveWRzYmFua2luZ2dyb3VwLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001160106'
+composite_figi: BBG000C3VPQ1
+currency_name: usd
+description: 'Lloyds is a retail and commercial bank headquartered in the United Kingdom.
+    The bank operates via three business segments: retail, commercial banking, and
+    insurance and wealth. In retail, Lloyds offers primarily mortgages (66% of loan
+    portfolio), credit cards, and current accounts to its customers. Its commercial
+    banking operation provides lending, transaction banking, working capital management,
+    and debt capital market services to large companies and financial institutions
+    in the UK. Insurance and wealth round out the product lineup with life and property
+    insurance as well as pension solutions and high-net-worth asset management services.'
+homepage_url: https://www.lloydsbankinggroup.com
+list_date: '2000-04-17'
+locale: us
+market: stocks
+market_cap: 66353937362.0
+name: Lloyds Banking Group PLC
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDX252
+share_class_shares_outstanding: 14966072705
+ticker: LYG
+ticker_root: LYG
+total_employees: 61228
+type: ADRC
+weighted_shares_outstanding: 14910997160

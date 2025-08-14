@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 420 MONTGOMERY STREET
+    city: SAN FRANCISCO
+    postal_code: '94104'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2VsbHNmYXJnby5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2VsbHNmYXJnby5jb20/images/2025-04-04_logo.svg
+cik: 0000072971
+composite_figi: BBG000BWQFY7
+currency_name: usd
+description: 'Wells Fargo is one of the largest banks in the United States, with approximately
+    $1.9 trillion in balance-sheet assets. The company has four primary segments:
+    consumer banking, commercial banking, corporate and investment banking, and wealth
+    and investment management. It is almost entirely focused on the US.'
+homepage_url: https://www.wellsfargo.com
+list_date: '1962-12-10'
+locale: us
+market: stocks
+market_cap: 248555003406.31
+name: Wells Fargo & Co.
+phone_number: (800) 869-3557
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XF23
+share_class_shares_outstanding: 3203441209
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: WFC
+ticker_root: WFC
+total_employees: 212804
+type: CS
+weighted_shares_outstanding: 3203441209

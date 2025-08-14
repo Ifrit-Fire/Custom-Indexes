@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: ONE COCA COLA PLAZA
+    city: ATLANTA
+    postal_code: '30313'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29jYS1jb2xhY29tcGFueS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29jYS1jb2xhY29tcGFueS5jb20/images/2025-04-04_logo.svg
+cik: '0000021344'
+composite_figi: BBG000BMX289
+currency_name: usd
+description: Founded in 1886, Atlanta-headquartered Coca-Cola is the world's largest
+    nonalcoholic beverage company, with a strong portfolio of 200 brands covering
+    key categories including carbonated soft drinks, water, sports, energy, juice,
+    and coffee. Together with bottlers and distribution partners, the company sells
+    finished beverage products bearing Coca-Cola and licensed brands through retailers
+    and food-service locations in more than 200 countries and regions globally. Coca-Cola
+    generates around two thirds of its total revenue overseas, with a significant
+    portion from emerging economies in Latin America and Asia-Pacific.
+homepage_url: https://www.coca-colacompany.com
+list_date: '1924-09-26'
+locale: us
+market: stocks
+market_cap: 304484458079.0
+name: Coca-Cola Company
+phone_number: 404-676-2121
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5SMQ8
+share_class_shares_outstanding: 4303667252
+sic_code: '2080'
+sic_description: BEVERAGES
+ticker: KO
+ticker_root: KO
+total_employees: 69700
+type: CS
+weighted_shares_outstanding: 4303667252

@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 383 MADISON AVENUE
+    city: NEW YORK
+    postal_code: '10017'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/anBtb3JnYW5jaGFzZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/anBtb3JnYW5jaGFzZS5jb20/images/2025-04-04_logo.svg
+cik: 0000019617
+composite_figi: BBG000DMBXR2
+currency_name: usd
+description: 'JPMorgan Chase is one of the largest and most complex financial institutions
+    in the United States, with nearly $4 trillion in assets. It is organized into
+    four major segments: consumer and community banking, corporate and investment
+    banking, commercial banking, and asset and wealth management. JPMorgan operates,
+    and is subject to regulation, in multiple countries.'
+homepage_url: https://www.jpmorganchase.com
+list_date: '1969-03-05'
+locale: us
+market: stocks
+market_cap: 796218725964.24
+name: JPMorgan Chase & Co.
+phone_number: (212) 270-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8CRC3
+share_class_shares_outstanding: 2749753854
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: JPM
+ticker_root: JPM
+total_employees: 317233
+type: CS
+weighted_shares_outstanding: 2749753854

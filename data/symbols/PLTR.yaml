@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1200 17TH STREET
+    address2: FLOOR 15
+    city: DENVER
+    postal_code: '80202'
+    state: CO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGFsYW50aXIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGFsYW50aXIuY29t/images/2025-04-04_logo.svg
+cik: '0001321655'
+composite_figi: BBG000N7QR55
+currency_name: usd
+description: Palantir is an analytical software company that focuses on leveraging
+    data to create efficiencies in its clients' organizations. The firm serves commercial
+    and government clients via its Foundry and Gotham platforms, respectively. Palantir
+    works only with entities in Western-allied nations and reserves the right not
+    to work with anyone that is antithetical to Western values. The Denver-based company
+    was founded in 2003 and went public in 2020.
+homepage_url: https://www.palantir.com
+list_date: '2020-09-30'
+locale: us
+market: stocks
+market_cap: 433379513468.28
+name: Palantir Technologies Inc. Class A Common Stock
+phone_number: 720-358-3679
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T53796
+share_class_shares_outstanding: 2274261581
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: PLTR
+ticker_root: PLTR
+total_employees: 4164
+type: CS
+weighted_shares_outstanding: 2372342421
