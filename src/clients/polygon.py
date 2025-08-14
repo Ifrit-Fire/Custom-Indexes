@@ -1,7 +1,7 @@
 import json
 
 import yaml
-from polygon import RESTClient
+from polygon import RESTClient, BadResponse
 from polygon.rest.models import TickerDetails
 from urllib3.exceptions import MaxRetryError
 
@@ -89,6 +89,10 @@ def get_stock(symbol: str) -> TickerDetails:
             print(f"\t{e.reason}")
             print(f"\tPossibly exceeded your accounts API limit. Attempt {attempt + 1} of {retries}")
             io.console_countdown("\tRetrying", 60)
+        except BadResponse as e:
+            print(f"\t{str(e)}")
+            print(f"\tBadResponse for ticker {symbol}")
+
 
     if attempt >= retries - 1:
         raise ConnectionError("Unknown issue with API end point.")

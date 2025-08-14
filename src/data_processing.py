@@ -24,7 +24,11 @@ def prune_asset_type(df: DataFrame) -> DataFrame:
 
     def _is_allowed(symbol: str) -> bool:
         td = get_stock(symbol)
-        return td.type in {"CS", "ADRC", "OS"}
+        if td.type in {"CS", "ADRC", "OS"}:
+            return True
+        else:
+            print(f"\t...pruned {symbol} in exchange {td.type}")
+            return False
 
     mask = df[COL_SYMBOL].map(_is_allowed)
     print(f"\tPruned {(~mask).sum()} assets by type")
