@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZmVycmFyaS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmVycmFyaS5jb20/images/2025-04-04_logo.svg
+cik: 0001648416
+currency_name: usd
+description: Ferrari designs, engineers, and manufactures some of the world's most
+    expensive luxury cars. With supply carefully controlled to be below demand and
+    a brand steeped in decades of motor racing history, a Ferrari is viewed as a status
+    symbol. In 2024, the company sold 13,752 vehicles at an average price over EUR
+    480,000 with more than 70% of its vehicles being sold to existing Ferrari clients.
+    Eighty-six percent of revenue is generated from the sale of cars and spare parts
+    and 10% from sponsorship, commercial, and brand activities including racing and
+    lifestyle activities. In 2024, the Europe, Middle East, and Africa region accounted
+    for 47% of revenue, the Americas was 33%, mainland China, Hong Kong, and Taiwan
+    was 8%, and the rest of Asia was 12%.
+homepage_url: https://www.ferrari.com
+list_date: '2015-10-21'
+locale: us
+market: stocks
+market_cap: 79513530507.84001
+name: Ferrari N.V.
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 179044331
+ticker: RACE
+ticker_root: RACE
+total_employees: 5465
+type: CS
+weighted_shares_outstanding: 178217524

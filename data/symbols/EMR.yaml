@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 8027 FORSYTH BLVD
+    city: ST LOUIS
+    postal_code: '63105'
+    state: MO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZW1lcnNvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZW1lcnNvbi5jb20/images/2025-04-04_logo.svg
+cik: '0000032604'
+composite_figi: BBG000BHX7N2
+currency_name: usd
+description: Founded in 1890 as the first manufacturer of electric fans in North America,
+    Emerson Electric has become a leading industrial automation player through the
+    acquisition of established brands. Emerson organizes its business into seven segments
+    that sell a wide range of automation software, power tools, and automation hardware
+    such as valves, gauges, and switches. In recent years, Emerson divested its climate
+    technology and consumer businesses to become more of a pure-play industrial automation
+    company. The automation of a factory is an enticing long-term proposition for
+    manufacturers, helping reduce accident rates and raise uptime and productivity.
+homepage_url: https://www.emerson.com
+list_date: '1953-04-23'
+locale: us
+market: stocks
+market_cap: 74824260000.0
+name: Emerson Electric Co.
+phone_number: (314) 553-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QVT7
+share_class_shares_outstanding: 562800000
+sic_code: '3600'
+sic_description: ELECTRONIC & OTHER ELECTRICAL EQUIPMENT (NO COMPUTER EQUIP)
+ticker: EMR
+ticker_root: EMR
+total_employees: 73000
+type: CS
+weighted_shares_outstanding: 562800000

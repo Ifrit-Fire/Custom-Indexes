@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 900 COTTAGE GROVE ROAD
+    city: BLOOMFIELD
+    postal_code: '06002'
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2lnbmEuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2lnbmEuY29t/images/2025-04-04_logo.svg
+cik: 0001739940
+composite_figi: BBG00KXRCDP0
+currency_name: usd
+description: Cigna primarily provides pharmacy benefit management and health insurance
+    services. Its PBM and specialty pharmacy services, which were greatly expanded
+    by its 2018 merger with Express Scripts, are mostly sold to health insurance plans
+    and employers. Its largest PBM contract is with the Department of Defense (current
+    contract through 2029), and it recently won a multiyear deal with top-tier insurer
+    Centene. In health insurance and other benefits, Cigna primarily serves employers
+    through self-funding arrangements, and the company operates mostly in the US with
+    17 million US and 2 million international medical members covered as of December
+    2024.
+homepage_url: https://www.cigna.com
+list_date: '1982-04-01'
+locale: us
+market: stocks
+market_cap: 74865317195.25
+name: The Cigna Group
+phone_number: (860) 226-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00KXRCDQ9
+share_class_shares_outstanding: 266928075
+sic_code: '6324'
+sic_description: HOSPITAL & MEDICAL SERVICE PLANS
+ticker: CI
+ticker_root: CI
+total_employees: 73500
+type: CS
+weighted_shares_outstanding: 266928075

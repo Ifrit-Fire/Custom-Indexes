@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: THE TOWER AT PNC PLAZA
+    address2: 300 FIFTH AVENUE
+    city: PITTSBURGH
+    postal_code: 15222-2401
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cG5jLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cG5jLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000713676'
+composite_figi: BBG000BRD0D8
+currency_name: usd
+description: PNC Financial Services Group is a diversified financial services company
+    offering retail banking, corporate and institutional banking, asset management,
+    and residential mortgage banking across the United States.
+homepage_url: https://www.pnc.com
+list_date: '1975-02-18'
+locale: us
+market: stocks
+market_cap: 75307785659.86
+name: PNC Financial Services Group
+phone_number: 888-762-2265
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5V947
+share_class_shares_outstanding: 393807382
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: PNC
+ticker_root: PNC
+total_employees: 55184
+type: CS
+weighted_shares_outstanding: 393807382

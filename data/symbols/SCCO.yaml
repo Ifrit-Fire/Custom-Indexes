@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 7310 NORTH 16TH ST.
+    address2: SUITE 135
+    city: PHOENIX
+    postal_code: '85020'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c291dGhlcm5jb3BwZXJjb3JwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c291dGhlcm5jb3BwZXJjb3JwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001001838
+composite_figi: BBG000BSHH72
+currency_name: usd
+description: 'Southern Copper Corp is an integrated producer of copper and other minerals
+    and operates the mining, smelting, and refining facilities in Peru and Mexico.
+    Its production includes copper, molybdenum, zinc, and silver. The company operates
+    through the following segments: Peruvian operations, Mexican open-pit operations,
+    and Mexican underground mining operations. It generates the majority of its revenue
+    from the sale of copper and the rest from the sale of non-copper products, such
+    as molybdenum, silver, zinc, lead, and gold. The company''s geographical segments
+    are The Americas, Europe, and Asia.'
+homepage_url: https://www.southerncoppercorp.com
+list_date: '1996-01-05'
+locale: us
+market: stocks
+market_cap: 78999673631.25
+name: Southern Copper Corporation
+phone_number: 602-264-1375
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6ZM88
+share_class_shares_outstanding: 804067925
+sic_code: '1000'
+sic_description: METAL MINING
+ticker: SCCO
+ticker_root: SCCO
+total_employees: 16133
+type: CS
+weighted_shares_outstanding: 804067925

@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 55 GLENLAKE PARKWAY NE
+    city: ATLANTA
+    postal_code: '30328'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dXBzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dXBzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001090727
+composite_figi: BBG000L9CV04
+currency_name: usd
+description: As the world's largest parcel delivery company, UPS manages a massive
+    fleet of more than 500 planes and 100,000 vehicles, along with many hundreds of
+    sorting facilities, to deliver an average of about 22 million packages per day
+    to residences and businesses across the globe. UPS' domestic US package operations
+    generate around 65% of total revenue, while international package makes up 20%.
+    Air and ocean freight forwarding and contract logistics make up the remainder.
+homepage_url: https://www.ups.com
+list_date: '1999-11-10'
+locale: us
+market: stocks
+market_cap: 74103013800.06001
+name: United Parcel Service, Inc. Class B
+phone_number: (404) 828-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDGSH1
+share_class_shares_outstanding: 736042904
+sic_code: '4210'
+sic_description: TRUCKING & COURIER SERVICES (NO AIR)
+ticker: UPS
+ticker_root: UPS
+total_employees: 490000
+type: CS
+weighted_shares_outstanding: 847569642

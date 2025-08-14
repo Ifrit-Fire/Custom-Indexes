@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 500 W. MONROE ST.
+    city: CHICAGO
+    postal_code: '60661'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW90b3JvbGFzb2x1dGlvbnMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW90b3JvbGFzb2x1dGlvbnMuY29t/images/2025-04-04_logo.svg
+cik: 0000068505
+composite_figi: BBG000BP8Z50
+currency_name: usd
+description: Motorola Solutions is a leading provider of communications and analytics,
+    primarily serving public safety departments as well as schools, hospitals, and
+    businesses. The bulk of the firm's revenue comes from sales of land mobile radios
+    and radio network infrastructure, but the firm also sells surveillance equipment
+    and dispatch software. Most of Motorola's revenue comes from government agencies,
+    while roughly 25% comes from schools and private businesses. Motorola has customers
+    in over 100 countries and in every state in the United States.
+homepage_url: https://www.motorolasolutions.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 78503754852.8
+name: Motorola Solutions, Inc. New
+phone_number: (847) 576-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5T9L1
+share_class_shares_outstanding: 166603894
+sic_code: '3663'
+sic_description: RADIO & TV BROADCASTING & COMMUNICATIONS EQUIPMENT
+ticker: MSI
+ticker_root: MSI
+total_employees: 21000
+type: CS
+weighted_shares_outstanding: 166603894
