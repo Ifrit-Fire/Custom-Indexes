@@ -2,8 +2,20 @@ import pandas as pd
 from pandas import DataFrame
 
 from src import transform
+from src.clients.polygon import get_stock
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME
+
+
+def _is_allowed(symbol: str) -> bool:
+    td = get_stock(symbol)
+    return td.type in {"CS", "ADRC", "OS"}
+
+
+def prune_asset_type(df: DataFrame) -> DataFrame:
+    mask = df[COL_SYMBOL].map(_is_allowed)
+    print(f"\tPruned {(~mask).sum()} assets by type")
+    return df[mask].reset_index(drop=True)
 
 
 def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:

@@ -18,14 +18,18 @@ LIMIT_MIN_WEIGHT = 2
 
 CMC_API_TOKEN = os.getenv("CMC_API_TOKEN")
 FMP_API_TOKEN = os.getenv("FMP_API_TOKEN")
+POLY_API_TOKEN = os.getenv("POLY_API_TOKEN")
 
 PATH_PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PATH_DATA_ROOT = PATH_PROJECT_ROOT / "data"
 PATH_DATA_CACHE_ROOT = PATH_DATA_ROOT / "cache"
+PATH_DATA_SYMBOLS_ROOT = PATH_DATA_ROOT / "symbols"
 PATH_INDEXES_ROOT = PATH_PROJECT_ROOT / "indexes"
 PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
 
 PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
+PATH_DATA_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
+PATH_DATA_SYMBOLS_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
 
 _SYMBOL_NORMALIZE = {"BRK-A": "BRK.A", "BRK/A": "BRK.A", "BRK-B": "BRK.B", "BRK/B": "BRK.B"}

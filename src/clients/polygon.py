@@ -34,9 +34,11 @@ def _save_ticker_details(symbol: str, data: dict):
 
 
 def get_stock(symbol: str) -> TickerDetails:
+    # Try loading from disk first
     ticker = _load_ticker_details(symbol)
     if ticker: return ticker
 
+    # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
     client = RESTClient(api_key=POLY_API_TOKEN)
     for attempt in range(retries := 3):
@@ -53,6 +55,7 @@ def get_stock(symbol: str) -> TickerDetails:
     if attempt >= retries - 1:
         raise ConnectionError("Unknown issue with API end point.")
 
+    # Save to disk
     raw = raw.data.decode("utf-8")
     raw = json.loads(raw)["results"]
     ticker = TickerDetails.from_dict(raw)
