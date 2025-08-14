@@ -4,8 +4,13 @@ from src.clients import fmp, cmc
 from src.config_handler import config
 from src.consts import COL_WEIGHT
 
-# TODO: FMP API returns notes like TBB, SOJE, SOJD, DUKB. Need to figure out how to prune those out.
 # TODO: Symbol Normalization mapping move to a yaml file
+# TODO: Switch all/most prints to logging
+# TODO: Better way to execute tasks....make?
+# TODO: Setup GitHub actions to recurringly update indexes
+# TODO: Add ability to clean old cache
+# TODO: Update Indexes with historical data to run performance metrics on
+# TODO: Make static page displaying performance and composition over time
 
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
