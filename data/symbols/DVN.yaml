@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 333 W. SHERIDAN AVENUE
+    city: OKLAHOMA CITY
+    postal_code: '73102'
+    state: OK
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGV2b25lbmVyZ3kuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGV2b25lbmVyZ3kuY29t/images/2025-04-04_logo.svg
+cik: 0001090012
+composite_figi: BBG000BBVJZ8
+currency_name: usd
+description: Devon Energy is an oil and gas producer with acreage in several top US
+    shale plays. While roughly two thirds of its production comes from the Permian
+    Basin, it also holds a meaningful presence in the Anadarko, Eagle Ford, and Bakken
+    basins. At the end of 2024, Devon reported net proved reserves of 2.2 billion
+    barrels of oil equivalent. Net production averaged roughly 848,000 barrels of
+    oil equivalent per day in 2024 at a ratio of 73% oil and natural gas liquids and
+    27% natural gas.
+homepage_url: https://www.devonenergy.com
+list_date: '1988-09-30'
+locale: us
+market: stocks
+market_cap: 21341976000.0
+name: Devon Energy Corporation
+phone_number: (405) 552-8183
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S63VG4
+share_class_shares_outstanding: 634800000
+sic_code: '1311'
+sic_description: CRUDE PETROLEUM & NATURAL GAS
+ticker: DVN
+ticker_root: DVN
+total_employees: 2300
+type: CS
+weighted_shares_outstanding: 634800000

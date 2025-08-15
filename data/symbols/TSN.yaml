@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 2200 DON TYSON PARKWAY
+    city: SPRINGDALE
+    postal_code: 72762-6999
+    state: AR
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHlzb25mb29kcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHlzb25mb29kcy5jb20/images/2025-04-04_logo.svg
+cik: 0000100493
+composite_figi: BBG000DKCC19
+currency_name: usd
+description: Tyson Foods is a protein-focused food producer, selling raw chicken,
+    beef, pork, and prepared foods. Chicken and beef are its two largest segments,
+    each composing about one third of US sales. Prepared foods constituted 18% of
+    fiscal 2024 sales and include brands like Tyson, Jimmy Dean, Hillshire Farm, Ball
+    Park, and Sara Lee. However, most of these are in product categories rife with
+    competition where Tyson does not have a massive market share lead. Tyson sells
+    some products overseas, but the international segment accounts for just 4% of
+    total revenue. The company is an active acquirer, with more recent years' purchases
+    focused on international and food-service markets.
+homepage_url: https://www.tysonfoods.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 20524335936.03
+name: Tyson Foods, Inc.
+phone_number: 479-290-5799
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S871D5
+share_class_shares_outstanding: 285760382
+sic_code: '2015'
+sic_description: POULTRY SLAUGHTERING AND PROCESSING
+ticker: TSN
+ticker_root: TSN
+total_employees: 138000
+type: CS
+weighted_shares_outstanding: 355769387

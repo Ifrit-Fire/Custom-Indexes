@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1700 PACIFIC AVENUE
+    address2: SUITE 2900
+    city: DALLAS
+    postal_code: '75201'
+    state: TX
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGV4YXNwYWNpZmljLmNvbQ/images/2025-04-04_logo.png
+cik: 0001811074
+composite_figi: BBG00YRJXKB1
+currency_name: usd
+description: Texas Pacific Land Corp is mainly engaged in the sales and leases of
+    land owned, retaining oil and gas royalties, and the overall management of the
+    land owned. It operates its business in two reportable segments; Land and Resource
+    Management and Water Service and Operations. The Land and Resource Management
+    segment focuses on managing surface acres of land and its oil and gas royalty
+    interests, principally concentrated in the Permian Basin. The Water Services and
+    Operations segment encompasses the business of providing full-service water offerings
+    to operators, produced-water treatment, infrastructure development, and disposal
+    solutions. The company generates the majority of its revenue from the Land and
+    Resource Management segment.
+homepage_url: https://www.texaspacific.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 20283786589.14
+name: Texas Pacific Land Corporation
+phone_number: 214-969-5530
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00YRJXKC0
+share_class_shares_outstanding: 22987326
+sic_code: '6792'
+sic_description: OIL ROYALTY TRADERS
+ticker: TPL
+ticker_root: TPL
+total_employees: 111
+type: CS
+weighted_shares_outstanding: 22987326

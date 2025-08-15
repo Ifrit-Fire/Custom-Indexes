@@ -1,0 +1,26 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z3J1cG9jcmVkaWNvcnAuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z3J1cG9jcmVkaWNvcnAuY29t/images/2025-04-04_logo.png
+cik: 0001001290
+currency_name: usd
+description: Credicorp Ltd is a Peruvian financial services company. It operates in
+    four business lines, including Universal Banking, Insurance and Pensions, Microfinance,
+    and Investment Management & Advisory. Its subsidiaries include Banco de Credito
+    del Peru, Prima AFP, and Credicorp Capital. Geographically, the company operates
+    in Peru, Colombia, Bolivia, Chile, Panama, the USA, and Mexico; the majority of
+    its revenue is generated from Peru.
+homepage_url: https://www.grupocredicorp.com
+list_date: '1995-10-25'
+locale: us
+market: stocks
+market_cap: 19791578470.29
+name: Credicorp LTD
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 94382317
+ticker: BAP
+ticker_root: BAP
+total_employees: 46621
+type: CS
+weighted_shares_outstanding: 79366317

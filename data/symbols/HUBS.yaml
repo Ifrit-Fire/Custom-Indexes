@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 2 CANAL PARK
+    city: CAMBRIDGE
+    postal_code: '02141'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aHVic3BvdC5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aHVic3BvdC5jb20/images/2025-04-04_logo.svg
+cik: '0001404655'
+composite_figi: BBG000N7MZ06
+currency_name: usd
+description: HubSpot provides a cloud-based marketing, sales, and customer service
+    software platform referred to as the growth platform. The applications are available
+    ala carte or packaged together. HubSpot's mission is to help companies grow better
+    and has expanded from its initial focus on inbound marketing to embrace marketing,
+    sales, and service more broadly. The company was founded in 2006, completed its
+    initial public offering in 2014, and is headquartered in Cambridge, Massachusetts.
+homepage_url: https://www.hubspot.com
+list_date: '2014-10-09'
+locale: us
+market: stocks
+market_cap: 23066408902.5
+name: HUBSPOT, INC.
+phone_number: (888) 482-7768
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T53670
+share_class_shares_outstanding: 52693110
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: HUBS
+ticker_root: HUBS
+total_employees: 8723
+type: CS
+weighted_shares_outstanding: 52693110

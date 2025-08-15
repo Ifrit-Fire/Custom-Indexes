@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGdzLmNvbS5hcg/images/2024-01-01_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGdzLmNvbS5hcg/images/2024-01-01_logo.svg
+cik: 0000931427
+composite_figi: BBG000DQX5M5
+currency_name: usd
+description: Transportadora de Gas del Sur SA is a transporters of natural gas in
+    Latin America. The company's operating segments include Natural Gas Transportation,
+    Midstream, Telecommunications, Production and Commercialization Liquids, Other
+    Services, and Telecommunications. It generates maximum revenue from the Production
+    and Commercialization of the Liquids segment. Geographically, it derives the majority
+    of its revenue from Argentina.
+homepage_url: https://www.tgs.com.ar
+list_date: '1994-11-17'
+locale: us
+market: stocks
+market_cap: 4314826395.92
+name: Transportadora de Gas del Sur S.A. ADS
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S80GV9
+share_class_shares_outstanding: 77860538
+ticker: TGS
+ticker_root: TGS
+total_employees: 1207
+type: ADRC
+weighted_shares_outstanding: 150552212

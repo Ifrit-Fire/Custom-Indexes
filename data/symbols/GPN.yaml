@@ -1,0 +1,33 @@
+active: true
+address:
+    address1: 3550 LENOX ROAD
+    city: ATLANTA
+    postal_code: '30326'
+    state: GA
+cik: '0001123360'
+composite_figi: BBG000CX0P89
+currency_name: usd
+description: Global Payments is a leading provider of payment processing and software
+    solutions and focuses on serving small and midsize merchants. The company operates
+    in 30 countries and generates about one fourth of its revenue from outside North
+    America, primarily in Europe and Asia. In 2019, Global Payments merged with Total
+    System Services in an all-stock deal that gave Total System Services shareholders
+    48% of the combined company's shares. The merger added issuer processing operations.
+homepage_url: https://www.globalpayments.com
+list_date: '2001-01-26'
+locale: us
+market: stocks
+market_cap: 20975810384.76
+name: Global Payments, Inc.
+phone_number: (770) 829-8030
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SGS2Z8
+share_class_shares_outstanding: 242607106
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: GPN
+ticker_root: GPN
+total_employees: 27000
+type: CS
+weighted_shares_outstanding: 242607106

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 80 LAMBERTON RD
+    city: WINDSOR
+    postal_code: 06095
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3NjdGVjaC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3NjdGVjaC5jb20/images/2025-04-04_logo.svg
+cik: '0001402436'
+composite_figi: BBG000RJ2J04
+currency_name: usd
+description: SS&C Technologies provides software products and software-enabled services
+    to a variety of customers primarily in financial services but also healthcare
+    firms. Acquisitions are a large part of SS&C's history. SS&C GlobeOp provides
+    fund administration services to alternative and traditional asset managers. In
+    addition, SS&C provides portfolio accounting, portfolio management, trading, banking/lending,
+    and other software to asset managers, banks, and financial advisors. SS&C's purchase
+    of Intralinks makes it a leading player in virtual deal room solutions. With its
+    2018 purchase of DST Systems, SS&C gained a foothold in the healthcare industry
+    with pharmacy health management solutions and medical claim administration services.
+    In 2022, SS&C completed the acquisition of Blue Prism.
+homepage_url: https://www.ssctech.com
+list_date: '2010-03-31'
+locale: us
+market: stocks
+market_cap: 21471878756.72
+name: SS&C Technologies Inc
+phone_number: 860-298-4500
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001STPPK8
+share_class_shares_outstanding: 244220641
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: SSNC
+ticker_root: SSNC
+total_employees: 26000
+type: CS
+weighted_shares_outstanding: 244220641

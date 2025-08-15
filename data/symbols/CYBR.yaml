@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y3liZXJhcmsuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y3liZXJhcmsuY29t/images/2025-04-04_logo.svg
+cik: 0001598110
+currency_name: usd
+description: CyberArk is a cybersecurity vendor focused on the identity market. The
+    company's core privileged access management offering is a market leader in that
+    subsegment, with more than half of the Fortune 500 as CyberArk customers. The
+    identity security vendor was founded in 1999 and has around 9,000 customers across
+    various industries. While CyberArk historically sold its security solutions primarily
+    via on-premises licenses, over the past few years it has transitioned to a subscription
+    recurring-revenue model.
+homepage_url: https://www.cyberark.com
+list_date: '2014-09-24'
+locale: us
+market: stocks
+market_cap: 21313173995.28
+name: CyberArk Software Ltd.
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 49426711
+ticker: CYBR
+ticker_root: CYBR
+total_employees: 3793
+type: CS
+weighted_shares_outstanding: 50407204

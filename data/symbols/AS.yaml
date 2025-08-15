@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1lcnNwb3J0cy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1lcnNwb3J0cy5jb20/images/2025-04-04_logo.svg
+cik: 0001988894
+currency_name: usd
+description: Amer Sports manages a diverse portfolio of 10 outdoor and action sports
+    brands that collectively generated revenue of $5.2 billion in 2024. Although primarily
+    owned by the Chinese conglomerate Anta Sports, Amer operates with a degree of
+    autonomy. In its rapidly expanding China business, the company is subject to closer
+    oversight, but it manages its operations outside of China with relative independence.
+    In 2024, the firm generates 36% of its revenue from the Americas, 29% from Europe,
+    the Middle East, and Africa, 25% from China, and 10% from Asia-Pacific, excluding
+    China.
+homepage_url: https://www.amersports.com
+list_date: '2024-02-01'
+locale: us
+market: stocks
+market_cap: 21672652109.68
+name: Amer Sports, Inc.
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 554571446
+ticker: AS
+ticker_root: AS
+total_employees: 13400
+type: CS
+weighted_shares_outstanding: 554571446

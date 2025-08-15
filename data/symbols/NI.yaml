@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 801 EAST 86TH AVE
+    city: MERRILLVILLE
+    postal_code: 46410-6272
+    state: IN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmlzb3VyY2UuY29t/images/2025-03-20_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmlzb3VyY2UuY29t/images/2025-03-20_logo.svg
+cik: '0001111711'
+composite_figi: BBG000BPZBB6
+currency_name: usd
+description: NiSource is one of the nation's largest natural gas distribution companies
+    with 3.2 million customers in Indiana, Kentucky, Maryland, Ohio, Pennsylvania,
+    and Virginia. NiSource's electric utility transmits and distributes electricity
+    in northern Indiana to about 500,000 customers. The regulated electric utility
+    also owns more than 3,000 megawatts of generation capacity, including coal, natural
+    gas, and renewable energy.
+homepage_url: https://www.nisource.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 20096091784.12
+name: NiSource Inc.
+phone_number: (219) 647-5200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5TMF9
+share_class_shares_outstanding: 470855009
+sic_code: '4931'
+sic_description: ELECTRIC & OTHER SERVICES COMBINED
+ticker: NI
+ticker_root: NI
+total_employees: 7746
+type: CS
+weighted_shares_outstanding: 470855009

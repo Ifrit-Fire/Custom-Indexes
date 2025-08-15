@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 5707 BLUE LAGOON DRIVE
+    city: MIAMI
+    postal_code: '33126'
+    state: FL
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmJpLmNvbQ/images/2025-04-04_logo.png
+cik: 0001618756
+composite_figi: BBG0076WG2V1
+currency_name: usd
+description: Restaurant Brands International is one of the largest restaurant companies
+    in the world, with approximately $44 billion in 2024 systemwide sales across a
+    footprint that spanned more than 32,000 restaurants and more than 100 countries.
+    The firm generates revenue primarily from retail sales at its company-owned restaurants,
+    royalty fees and lease income from franchised stores, and from its Tim Hortons
+    supply chain operations. Formed in 2014 after 3G Capital's acquisition of Tim
+    Hortons International, the RBI portfolio is split among Burger King (7,082 units),
+    Tim Hortons (4,539 units), Popeyes Louisiana Kitchen (3,520 units), Firehouse
+    Subs (1,345 units), and international franchise units of those banners (15,639)
+    as of year-end 2024.
+homepage_url: https://www.rbi.com
+list_date: '2014-12-10'
+locale: us
+market: stocks
+market_cap: 21477578063.76
+name: Restaurant Brands International Inc.
+phone_number: (905) 845-6511
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0076WG2T4
+share_class_shares_outstanding: 327801863
+sic_code: '5812'
+sic_description: RETAIL-EATING PLACES
+ticker: QSR
+ticker_root: QSR
+total_employees: 37600
+type: CS
+weighted_shares_outstanding: 327801863

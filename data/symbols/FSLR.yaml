@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 350 WEST WASHINGTON STREET
+    address2: SUITE 600
+    city: TEMPE
+    postal_code: '85288'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zmlyc3Rzb2xhci5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zmlyc3Rzb2xhci5jb20/images/2025-04-04_logo.svg
+cik: 0001274494
+composite_figi: BBG000BFL116
+currency_name: usd
+description: First Solar designs and manufactures solar photovoltaic panels, modules,
+    and systems for use in utility-scale development projects. The company's solar
+    modules use cadmium telluride to convert sunlight into electricity. This is commonly
+    called thin-film technology. First Solar is the world's largest thin-film solar
+    module manufacturer. It has production lines in Vietnam, Malaysia, the United
+    States, and India.
+homepage_url: https://www.firstsolar.com
+list_date: '2006-11-17'
+locale: us
+market: stocks
+market_cap: 19823655810.84
+name: First Solar, Inc.
+phone_number: (602) 414-9300
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S991Z7
+share_class_shares_outstanding: 107247651
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: FSLR
+ticker_root: FSLR
+total_employees: 8100
+type: CS
+weighted_shares_outstanding: 107247651

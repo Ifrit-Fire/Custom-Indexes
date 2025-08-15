@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bm9raWEuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bm9raWEuY29t/images/2025-04-04_logo.svg
+cik: 0000924613
+composite_figi: BBG000BNGBW9
+currency_name: usd
+description: Nokia provides telecom equipment and services that are used to build
+    wireless and fixed-line networks. It operates in four segments. The mobile networks
+    segment, which sells equipment and services to telecom carriers to power public
+    wireless networks, is the largest. Network infrastructure focuses on fixed networks,
+    including infrastructure, solutions, and components for IP networks, optical networks,
+    and submarine networks. Cloud and network services is a nascent segment catering
+    to enterprises, offering as-a-service platforms. Nokia also has a sizable research
+    division and patent business, where it licenses technology used by handset providers,
+    consumer electronics firms, and other firms making electronic and Internet of
+    Things products.
+homepage_url: https://www.nokia.com
+list_date: '1994-07-01'
+locale: us
+market: stocks
+market_cap: 22538409093.31
+name: Nokia Corporation
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SCPCG9
+share_class_shares_outstanding: 5455850345
+ticker: NOK
+ticker_root: NOK
+total_employees: 78434
+type: ADRC
+weighted_shares_outstanding: 5379095249

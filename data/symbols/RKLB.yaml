@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 3881 MCGOWEN STREET
+    city: LONG BEACH
+    postal_code: '90808'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cm9ja2V0bGFidXNhLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm9ja2V0bGFidXNhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001819994
+composite_figi: BBG01V7JN3F3
+currency_name: usd
+description: Rocket Lab Corp is engaged in space, building rockets, and spacecraft.
+    It provides end-to-end mission services that provide frequent and reliable access
+    to space for civil, defense, and commercial markets. It designs and manufactures
+    the Electron and Neutron launch vehicles and Photon satellite platform. Rocket
+    Lab's Electron launch vehicle has delivered multiple satellites to orbit for private
+    and public sector organizations, enabling operations in national security, scientific
+    research, space debris mitigation, Earth observation, climate monitoring, and
+    communications. The business operates in two segments Launch Services and Space
+    Systems. Geographically it serves Japan, Germany, and rest of the world and earns
+    key revenue from the United States.
+homepage_url: https://www.rocketlabusa.com
+list_date: '2021-08-25'
+locale: us
+market: stocks
+market_cap: 20743771943.0
+name: Rocket Lab Corporation Common Stock
+phone_number: 714-465-5737
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01V7JN489
+share_class_shares_outstanding: 479355713
+sic_code: '3760'
+sic_description: GUIDED MISSILES & SPACE VEHICLES & PARTS
+ticker: RKLB
+ticker_root: RKLB
+total_employees: 2100
+type: CS
+weighted_shares_outstanding: 482413301

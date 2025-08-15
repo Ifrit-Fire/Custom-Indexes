@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 358 S MAIN ST
+    city: BURLINGTON
+    postal_code: '27215'
+    state: NC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGFiY29ycC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGFiY29ycC5jb20/images/2025-04-04_logo.svg
+cik: 0000920148
+composite_figi: BBG01MMT6PL7
+currency_name: usd
+description: Labcorp is one of the nation's two largest independent clinical laboratories,
+    with roughly 20% of the independent lab market. The company operates approximately
+    2,000 patient-service centers, offering a broad range of 5,000 clinical lab tests,
+    ranging from routine blood and urine screens to complex oncology and genomic testing.
+homepage_url: https://www.labcorp.com
+list_date: '1988-07-07'
+locale: us
+market: stocks
+market_cap: 22648074000.0
+name: Labcorp Holdings Inc.
+phone_number: (336) 229-1127
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG01MMT6PQ2
+share_class_shares_outstanding: 83100000
+sic_code: '8071'
+sic_description: SERVICES-MEDICAL LABORATORIES
+ticker: LH
+ticker_root: LH
+total_employees: 70000
+type: CS
+weighted_shares_outstanding: 83100000
