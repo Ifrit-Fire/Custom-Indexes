@@ -49,3 +49,5 @@ symbol_normalize:
     MS/PQ: MS.PQ
     PBR-A: PBR.A
     PBR/A: PBR.A
+    RF-PF: RF.PF
+    RF/PF: RF.PF

@@ -14,7 +14,8 @@ _EXCHANGES = {"XNYS",  # NY stock exchange
               "XASE"}  # NYSE American (formerly AMEX)
 # @formatter:off
 _SYMBOL_MAPPINGS = {"MS.PQ": "MSpQ",
-                    "KIM.PN": "KIMpN"}
+                    "KIM.PN": "KIMpN",
+                    "RF.PF": "RFpF"}
 # @formatter:on
 
 def _get_ticker_filename(symbol: str):
