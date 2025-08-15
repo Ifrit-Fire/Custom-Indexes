@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZmVycm92aWFsLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmVycm92aWFsLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001468522
+currency_name: usd
+description: 'Ferrovial SE is a Spanish industrial company. The company organizes
+    itself into four segments: Toll Roads, Airports, Construction, and Energy. The
+    Toll Roads segment develops and operates toll roads globally. The Airports segment
+    includes the development, financing and operation of airports. The Construction
+    segment designs and executes all public and private works, including most notably
+    the construction of public infrastructures. The Energy segment focuses on innovative
+    solutions for promoting, constructing and operating energy generation and transmission
+    infrastructures.'
+homepage_url: https://www.ferrovial.com
+list_date: '2004-11-17'
+locale: us
+market: stocks
+market_cap: 39004647553.32
+name: Ferrovial SE Ordinary Shares
+primary_exchange: XNAS
+round_lot: 100
+ticker: FER
+ticker_root: FER
+total_employees: 25501
+type: CS
+weighted_shares_outstanding: 718185372

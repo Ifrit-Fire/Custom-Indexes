@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1201 SOUTH 2ND STREET
+    city: MILWAUKEE
+    postal_code: '53204'
+    state: WI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cm9ja3dlbGxhdXRvbWF0aW9uLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm9ja3dlbGxhdXRvbWF0aW9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001024478
+composite_figi: BBG000BBCDZ2
+currency_name: usd
+description: With roots tracing back to the early 1900s, Rockwell Automation is the
+    successor to Rockwell International, which spun off its avionics segment in 2001.
+    It is a pure-play industrial automation company that operates through three segments.
+    Its largest segment by revenue, intelligent devices, sells factory floor-level
+    devices such as motors, drives, sensors, relays, and actuators. Its software and
+    control segment sells visualization, simulation, and human-machine interface software
+    and control products such as programmable controllers, computers, and operator
+    terminals. Its smallest segment, lifecycle services, offers digital consulting,
+    engineered-to-order services, and other outsourced services such as remote monitoring,
+    cybersecurity, and asset and plant maintenance and optimization.
+homepage_url: https://www.rockwellautomation.com
+list_date: '1956-08-29'
+locale: us
+market: stocks
+market_cap: 39240728896.97
+name: Rockwell Automation, Inc.
+phone_number: 414-382-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VRF5
+share_class_shares_outstanding: 112434397
+sic_code: '3829'
+sic_description: MEASURING & CONTROLLING DEVICES, NEC
+ticker: ROK
+ticker_root: ROK
+total_employees: 27000
+type: CS
+weighted_shares_outstanding: 112434397

@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGhpbGlwcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGhpbGlwcy5jb20/images/2025-04-04_logo.svg
+cik: '0000313216'
+composite_figi: BBG000BR4QW0
+currency_name: usd
+description: 'Koninklijke Philips is a diversified global healthcare company operating
+    in three segments: diagnosis and treatment, connected care, and personal health.
+    Nearly 50% of the company''s revenue comes from the diagnosis and treatment segment,
+    which features imaging systems, ultrasound equipment, and image-guided therapy
+    solutions. The connected care segment (under 30% of revenue) encompasses monitoring
+    and analytics systems for hospitals, informatics business, and also houses the
+    sleep and respiratory care segment. Personal health business (remainder of revenue)
+    is mainly oral health and personal care product lines, which include electric
+    toothbrushes and men''s grooming and personal-care products.'
+homepage_url: https://www.philips.com
+list_date: '1976-08-18'
+locale: us
+market: stocks
+market_cap: 25941177531.91
+name: KONINKLIJKE PHILIPS  N.V.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5V5G2
+share_class_shares_outstanding: 962920132
+ticker: PHG
+ticker_root: PHG
+total_employees: 67823
+type: CS
+weighted_shares_outstanding: 950574479

@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 234 1ST STREET
+    city: SAN FRANCISCO
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c29maS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c29maS5jb20/images/2025-04-04_logo.svg
+cik: 0001818874
+composite_figi: BBG00YB1ZD58
+currency_name: usd
+description: SoFi is a financial-services company that was founded in 2011 and is
+    based in San Francisco. Initially known for its student loan refinancing business,
+    the company has expanded its product offerings to include personal loans, credit
+    cards, mortgages, investment accounts, banking services, and financial planning.
+    The company intends to be a one-stop shop for its clients' finances and operates
+    solely through its mobile app and website. Through its acquisition of Galileo
+    in 2020, the company also offers payment and account services for debit cards
+    and digital banking.
+homepage_url: https://www.sofi.com
+list_date: '2021-06-01'
+locale: us
+market: stocks
+market_cap: 28511286881.0
+name: SoFi Technologies, Inc. Common Stock
+phone_number: (855) 456-7634
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00YB1ZF08
+share_class_shares_outstanding: 1197450100
+sic_code: '6199'
+sic_description: FINANCE SERVICES
+ticker: SOFI
+ticker_root: SOFI
+total_employees: 5000
+type: CS
+weighted_shares_outstanding: 1197450100

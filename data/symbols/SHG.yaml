@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2hpbmhhbmdyb3VwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2hpbmhhbmdyb3VwLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001263043'
+composite_figi: BBG000BF95M8
+currency_name: usd
+description: Shinhan Financial Group Co Ltd is a Korean banking group. Along with
+    its subsidiaries the company provides, comprehensive financial services which
+    consist of commercial banking services, credit card services, securities services,
+    insurance, credit services, and asset management services, including securities
+    investment trust management, investment advisory, call transaction, domestic and
+    foreign private equity fund business, and other services. The majority of the
+    revenue is generated from its Banking business which includes retail, corporate,
+    international, and other banking services the company offers.
+homepage_url: http://www.shinhangroup.com
+list_date: '2003-09-16'
+locale: us
+market: stocks
+market_cap: 24488364470.96
+name: Shinhan Financial Group Co Ltd
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7BMC7
+share_class_shares_outstanding: 485494934
+ticker: SHG
+ticker_root: SHG
+total_employees: 173
+type: ADRC
+weighted_shares_outstanding: 485494934

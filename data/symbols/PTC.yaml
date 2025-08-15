@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 121 SEAPORT BOULEVARD
+    city: BOSTON
+    postal_code: '02210'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cHRjLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cHRjLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000857005
+composite_figi: BBG000C2VBB0
+currency_name: usd
+description: PTC offers high-end computer-assisted design (Creo) and product lifecycle
+    management (Windchill) software as well as Internet of Things and AR industrial
+    solutions. Founded in 1985, PTC has 28,000 customers, with revenue stemming mostly
+    from North America and Europe.
+homepage_url: https://www.ptc.com
+list_date: '1989-12-07'
+locale: us
+market: stocks
+market_cap: 24961205732.48
+name: PTC, INC
+phone_number: (781) 370-5000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S6DNK6
+share_class_shares_outstanding: 119792704
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: PTC
+ticker_root: PTC
+total_employees: 7501
+type: CS
+weighted_shares_outstanding: 119792704

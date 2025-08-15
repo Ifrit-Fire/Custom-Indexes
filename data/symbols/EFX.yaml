@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1550 PEACHTREE ST NW
+    city: ATLANTA
+    postal_code: '30302'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXF1aWZheC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXF1aWZheC5jb20/images/2025-04-04_logo.svg
+cik: 0000033185
+composite_figi: BBG000BHPL78
+currency_name: usd
+description: Along with Experian and TransUnion, Equifax is one of the leading credit
+    bureaus in the United States. Equifax's credit reports provide credit histories
+    on millions of consumers, and the firm's services are critical to lenders' credit
+    decisions. In addition, over 40% of the firm's revenue comes from workforce solutions,
+    which provides income verification and employer human resources services. Equifax
+    generates about 20%-25% of its revenue from outside the United States.
+homepage_url: https://www.equifax.com
+list_date: '1971-05-11'
+locale: us
+market: stocks
+market_cap: 31205896354.0
+name: Equifax, Incorporated
+phone_number: (404) 885-8000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QSK3
+share_class_shares_outstanding: 123797380
+sic_code: '7320'
+sic_description: SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES
+ticker: EFX
+ticker_root: EFX
+total_employees: 14700
+type: CS
+weighted_shares_outstanding: 123197380

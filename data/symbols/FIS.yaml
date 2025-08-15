@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 347 RIVERSIDE AVENUE
+    city: JACKSONVILLE
+    postal_code: '32202'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZmlzZ2xvYmFsLmNvbQ/images/2024-10-01_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmlzZ2xvYmFsLmNvbQ/images/2024-10-01_logo.svg
+cik: 0001136893
+composite_figi: BBG000BK2F42
+currency_name: usd
+description: Fidelity National Information Services provides core processing and ancillary
+    services to banks, but its business has expanded over time. By acquiring SunGard
+    in 2015, the company now provides record-keeping and other services to investment
+    firms. With the acquisition of Worldpay in 2019, FIS was providing payment processing
+    services for merchants and holding leading positions in the United States and
+    United Kingdom. But the company sold off a majority interest in Worldpay and now
+    has only a minority stake.
+homepage_url: https://www.fisglobal.com
+list_date: '2001-06-20'
+locale: us
+market: stocks
+market_cap: 38013489048.29
+name: Fidelity National Information Services, Inc.
+phone_number: 407-551-8315
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8SWQ0
+share_class_shares_outstanding: 522378577
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: FIS
+ticker_root: FIS
+total_employees: 50000
+type: CS
+weighted_shares_outstanding: 522378577

@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1177 AVENUE OF THE AMERICAS
+    city: NEW YORK
+    postal_code: '10036'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHJhZGV3ZWIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHJhZGV3ZWIuY29t/images/2025-04-04_logo.png
+cik: 0001758730
+composite_figi: BBG00NK8H8T2
+currency_name: usd
+description: Founded in 1998 and headquartered in New York City, Tradeweb Markets
+    is a leading fixed-income trading platform. While it does offer electronic processing
+    for some voice-negotiated trades, the company focuses primarily on providing electronic
+    trading networks that connect broker/dealers, institutional clients, and retail
+    customers. While the company offers trading in a wide variety of products, the
+    bulk of its business is in U.S. and European government debt, mortgage-backed
+    securities, interest-rate swaps, and U.S. and international corporate bonds. The
+    firm also sells fixed-income trading and price data, primarily through a deal
+    with Refinitiv's Eikon service.
+homepage_url: https://www.tradeweb.com
+list_date: '2019-04-04'
+locale: us
+market: stocks
+market_cap: 27885396955.68
+name: Tradeweb Markets Inc. Class A Common Stock
+phone_number: 646-430-6000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00NK8H9M7
+share_class_shares_outstanding: 116453684
+sic_code: '6200'
+sic_description: SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES
+ticker: TW
+ticker_root: TW
+total_employees: 1412
+type: CS
+weighted_shares_outstanding: 213386876

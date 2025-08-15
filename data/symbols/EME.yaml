@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: 301 MERRITT SEVEN CORPORATE PK
+    address2: 6TH FLOOR
+    city: NORWALK
+    postal_code: 06851
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZW1jb3Jncm91cC5jb20/images/2025-03-20_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZW1jb3Jncm91cC5jb20/images/2025-03-20_logo.svg
+cik: '0000105634'
+composite_figi: BBG000BBRPL4
+currency_name: usd
+description: 'EMCOR Group Inc is a specialty contractor in the United States and a
+    provider of electrical and mechanical construction and facilities services, building
+    services, and industrial services. Its services are provided to a broad range
+    of commercial, technology, manufacturing, industrial, healthcare, utility, and
+    institutional customers through approximately 100 operating subsidiaries. The
+    company''s operating subsidiaries are organized into reportable segments: United
+    States mechanical construction and facilities services, which derives key revenue;
+    United States electrical construction and facilities services; United States building
+    services; United States industrial services; and United Kingdom building services.
+    Geographically, its key revenue is derived from the United States.'
+homepage_url: https://www.emcorgroup.com
+list_date: '1994-10-28'
+locale: us
+market: stocks
+market_cap: 27606560617.5
+name: EMCOR Group, Inc.
+phone_number: 203-849-7800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QVG1
+share_class_shares_outstanding: 44764250
+sic_code: '1731'
+sic_description: ELECTRICAL WORK
+ticker: EME
+ticker_root: EME
+total_employees: 40400
+type: CS
+weighted_shares_outstanding: 44764250

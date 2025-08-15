@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 500 VOLVO PARKWAY
+    address2: N/A
+    city: CHESAPEAKE
+    postal_code: '23320'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZG9sbGFydHJlZS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZG9sbGFydHJlZS5jb20/images/2025-04-04_logo.svg
+cik: 0000935703
+composite_figi: BBG000BSC0K9
+currency_name: usd
+description: Dollar Tree operates discount stores across the United States and Canada,
+    with over 8,800 shops under its namesake banner. About 50% of Dollar Tree's sales
+    in fiscal 2024 were consumables (including food, health and beauty, and cleaning
+    products), around 45% variety items (including toys and homewares), and 5% seasonal
+    items. Dollar Tree sells most of its merchandise at the $1.25 price point and
+    positions its stores in well-populated suburban markets. The retailer has agreed
+    to sell Family Dollar (with about 7,000 stores) to private equity investors for
+    $1 billion.
+homepage_url: https://www.dollartree.com
+list_date: '1995-03-06'
+locale: us
+market: stocks
+market_cap: 24083497397.2
+name: Dollar Tree Inc.
+phone_number: (757) 321-5000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S6ZGL6
+share_class_shares_outstanding: 208695818
+sic_code: '5331'
+sic_description: RETAIL-VARIETY STORES
+ticker: DLTR
+ticker_root: DLTR
+total_employees: 214710
+type: CS
+weighted_shares_outstanding: 208695818

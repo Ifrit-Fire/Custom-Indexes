@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d3BwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d3BwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000806968
+composite_figi: BBG000BBVP39
+currency_name: usd
+description: Headquartered in the United Kingdom, WPP is the world's largest ad holding
+    company based on annual revenue. Its services, which include traditional and digital
+    advertising, public relations, and consulting, are provided worldwide, with over
+    70% of its revenue coming from more developed regions such as North America, the
+    UK, and Western Europe. WPP is the largest media buying entity in the world.
+homepage_url: https://www.wpp.com
+list_date: '1990-03-26'
+locale: us
+market: stocks
+market_cap: 5417545726.98
+name: WPP PLC
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XJ89
+share_class_shares_outstanding: 215760472
+ticker: WPP
+ticker_root: WPP
+total_employees: 104000
+type: ADRC
+weighted_shares_outstanding: 215752518

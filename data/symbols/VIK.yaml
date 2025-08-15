@@ -1,0 +1,29 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmlraW5nLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001745201'
+currency_name: usd
+description: Viking Holdings Ltd is a travel company, with a fleet of 92 small ships,
+    which view as floating hotels. It offers travel experiences on all seven continents
+    in all three categories of the cruise industry river, ocean, and expedition cruising.
+    The Group defines its products based on the type of cruise offering and language
+    of the cruise service. The River segment provides river cruises outside the United
+    States to English-speaking passengers. The Ocean segment offers ocean cruises
+    to English-speaking passengers. Other include operating segments that are not
+    individually reportable, consisting of expedition cruises for English-speaking
+    passengers (Expedition), Mississippi River cruises for English-speaking passengers,
+    and Viking China, which includes cruises for Mandarin.
+homepage_url: https://www.viking.com
+list_date: '2024-05-01'
+locale: us
+market: stocks
+market_cap: 26585072655.96
+name: Viking Holdings Ltd
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 315371680
+ticker: VIK
+ticker_root: VIK
+total_employees: 12000
+type: CS
+weighted_shares_outstanding: 443158404

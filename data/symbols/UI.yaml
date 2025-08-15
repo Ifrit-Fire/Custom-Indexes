@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 685 THIRD AVENUE, 27TH FLOOR
+    city: NEW YORK
+    postal_code: '10017'
+    state: NY
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dWkuY29t/images/2025-04-04_logo.svg
+cik: '0001511737'
+composite_figi: BBG001R72SR9
+currency_name: usd
+description: Ubiquiti Inc is a wireless and wireline network equipment provider for
+    small Internet service providers and small- and midsize-business integrators.
+    Its product is based on two primary categories namely Service Provider Technology
+    and Enterprise Technology. The company generates maximum revenue from Enterprise
+    Technology. Geographically, it derives a majority of revenue from North America
+    and also has a presence in Europe, the Middle East and Africa; Asia Pacific and
+    South America.
+homepage_url: https://www.ui.com
+list_date: '2011-10-14'
+locale: us
+market: stocks
+market_cap: 29306193465.15
+name: Ubiquiti Inc. Common Stock
+phone_number: 646-780-7958
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T1WDF3
+share_class_shares_outstanding: 60491245
+sic_code: '3663'
+sic_description: RADIO & TV BROADCASTING & COMMUNICATIONS EQUIPMENT
+ticker: UI
+ticker_root: UI
+total_employees: 1515
+type: CS
+weighted_shares_outstanding: 60491245

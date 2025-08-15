@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 651 BRANNAN STREET
+    city: SAN FRANCISCO
+    postal_code: '94107'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGludGVyZXN0LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGludGVyZXN0LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001506293
+composite_figi: BBG002583CV8
+currency_name: usd
+description: Pinterest is a social media platform with a focus on product and idea
+    discovery. Pinterest users, or pinners, can leverage the platform as they go about
+    gathering ideas on topics such as home improvement, fashion, cooking, and travel.
+    The company has more than 500 million monthly active users, two thirds of whom
+    are female. Pinterest generates revenue by selling digital ads on its platform.
+    While the platform's user base spans the globe, the vast majority of its revenue
+    stems from ads shown to North American users.
+homepage_url: https://www.pinterest.com
+list_date: '2019-04-18'
+locale: us
+market: stocks
+market_cap: 24327883914.62
+name: Pinterest, Inc. Class A Common Stock
+phone_number: (415) 762-7100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG002583CW7
+share_class_shares_outstanding: 599264132
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: PINS
+ticker_root: PINS
+total_employees: 4666
+type: CS
+weighted_shares_outstanding: 679929679

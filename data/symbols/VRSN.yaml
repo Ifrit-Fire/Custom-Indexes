@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 12061 BLUEMONT WAY
+    address2: 'ATTN: GENERAL COUNSEL'
+    city: RESTON
+    postal_code: '20190'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmVyaXNpZ24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmVyaXNpZ24uY29t/images/2025-04-04_logo.svg
+cik: '0001014473'
+composite_figi: BBG000BGKHZ3
+currency_name: usd
+description: VeriSign is the sole authorized registry for several generic top-level
+    domains, including the widely utilized .com and .net top-level domains. The company
+    operates critical internet infrastructure to support the domain name system, including
+    operating two of the world's 13 root servers that are used to route internet traffic.
+    In 2018, the firm sold off its Security Services business, signalling a renewed
+    focus on the core registry business.
+homepage_url: https://www.verisign.com
+list_date: '1998-01-30'
+locale: us
+market: stocks
+market_cap: 24986798895.0
+name: VeriSign Inc
+phone_number: (703) 948-3200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S7BCF6
+share_class_shares_outstanding: 93408594
+sic_code: '7371'
+sic_description: SERVICES-COMPUTER PROGRAMMING SERVICES
+ticker: VRSN
+ticker_root: VRSN
+total_employees: 932
+type: CS
+weighted_shares_outstanding: 93408594

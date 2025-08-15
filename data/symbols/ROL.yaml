@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 2170 PIEDMONT RD NE
+    city: ATLANTA
+    postal_code: '30324'
+    state: GA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm9sbGlucy5jb20/images/2025-04-04_logo.svg
+cik: 0000084839
+composite_figi: BBG000BSBBP1
+currency_name: usd
+description: Rollins is a global leader in route-based pest control services, with
+    operations primarily in the United States, as well as in North, Central, and South
+    America, Europe, the Middle East, Africa, and Australia. Its portfolio of pest-control
+    brands includes the prominent Orkin brand, a market leader in the US, which boasts
+    near national coverage, and in Canada. Residential pest and termite prevention
+    dominates the services provided by Rollins, owing to the group's ongoing focus
+    on the US and Canadian markets.
+homepage_url: https://www.rollins.com
+list_date: '1968-08-12'
+locale: us
+market: stocks
+market_cap: 28167276974.36
+name: Rollins, Inc.
+phone_number: (404) 888-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VRG4
+share_class_shares_outstanding: 484640003
+sic_code: '7340'
+sic_description: SERVICES-TO DWELLINGS & OTHER BUILDINGS
+ticker: ROL
+ticker_root: ROL
+total_employees: 20265
+type: CS
+weighted_shares_outstanding: 484640003

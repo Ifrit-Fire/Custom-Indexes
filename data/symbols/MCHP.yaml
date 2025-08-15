@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 2355 W CHANDLER BLVD
+    city: CHANDLER
+    postal_code: 85224-6199
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWljcm9jaGlwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWljcm9jaGlwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000827054
+composite_figi: BBG000BHCP19
+currency_name: usd
+description: Microchip Technology became an independent company in 1989 when it was
+    spun off from General Instrument. More than half of revenue comes from MCUs, which
+    are used in a wide array of electronic devices from remote controls to garage
+    door openers to power windows in autos. The company's strength lies in lower-end
+    8-bit MCUs that are suitable for a wider range of less technologically advanced
+    devices, but the firm has expanded its presence in higher-end MCUs and analog
+    chips as well.
+homepage_url: https://www.microchip.com
+list_date: '1993-03-26'
+locale: us
+market: stocks
+market_cap: 35483938105.25
+name: Microchip Technology Inc
+phone_number: 480-792-7200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S787B5
+share_class_shares_outstanding: 539679667
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: MCHP
+ticker_root: MCHP
+total_employees: 19400
+type: CS
+weighted_shares_outstanding: 539679667

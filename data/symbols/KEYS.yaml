@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1400 FOUNTAINGROVE PARKWAY
+    city: SANTA ROSA
+    postal_code: '95403'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/a2V5c2lnaHQuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/a2V5c2lnaHQuY29t/images/2025-04-04_logo.svg
+cik: '0001601046'
+composite_figi: BBG0059FN811
+currency_name: usd
+description: Keysight Technologies is a leader in the field of testing and measurement,
+    helping electronics OEMs and suppliers alike bring products to market to fit industry
+    standards and specifications. Keysight specializes in the communications market,
+    but also supplies into the government, automotive, industrial, and semiconductor
+    manufacturing markets. Keysight's solutions include testing tools, analytical
+    software, and services. The firm's stated objective is to reduce time to market
+    and improve efficiency at its more than 30,000 customers.
+homepage_url: https://www.keysight.com
+list_date: '2014-10-20'
+locale: us
+market: stocks
+market_cap: 29296369978.98
+name: Keysight Technologies, Inc.
+phone_number: (877) 424-4536
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0059FN820
+share_class_shares_outstanding: 172108859
+sic_code: '3823'
+sic_description: INDUSTRIAL INSTRUMENTS FOR MEASUREMENT, DISPLAY, AND CONTROL
+ticker: KEYS
+ticker_root: KEYS
+total_employees: 15400
+type: CS
+weighted_shares_outstanding: 172108859

@@ -1,0 +1,28 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/eGlhb3BlbmcuY29t/images/2025-04-04_logo.svg
+cik: 0001810997
+composite_figi: BBG00WKJG3M7
+currency_name: usd
+description: Founded in 2015, XPeng is a leading Chinese smart electric vehicle company
+    that designs, develops, manufactures, and markets EVs in China. Its products primarily
+    target the growing base of technology-savvy middle-class consumers in the midrange
+    to high-end segment in China's passenger vehicle market. The company sold over
+    190,000 EVs in 2024, accounting for about 2% of China's passenger new energy vehicle
+    market. It is also a leader in autonomous driving technology.
+homepage_url: https://www.xiaopeng.com
+list_date: '2020-08-27'
+locale: us
+market: stocks
+market_cap: 19203837919.18
+name: XPeng Inc. American depositary shares, each representing two Class A ordinary
+    shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00WKJG3N6
+share_class_shares_outstanding: 778897356
+ticker: XPEV
+ticker_root: XPEV
+total_employees: 15364
+type: ADRC
+weighted_shares_outstanding: 952099054

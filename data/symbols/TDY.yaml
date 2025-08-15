@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1049 CAMINO DOS RIOS
+    city: THOUSAND OAKS
+    postal_code: '91360'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGVsZWR5bmUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGVsZWR5bmUuY29t/images/2025-04-04_logo.svg
+cik: 0001094285
+composite_figi: BBG000BMT9T6
+currency_name: usd
+description: 'Teledyne Technologies Inc sells technologies for industrial markets.
+    Roughly a fourth of Teledyne''s revenue comes from contracts with the United States
+    government. The firm operates in four segments: instrumentation, digital imaging,
+    aerospace and defense electronics, and engineered systems. The instrumentation
+    segment provides monitoring instruments primarily for marine and environmental
+    applications. The digital imaging segment contributes majority of proportion of
+    revenue and includes image sensors and cameras for industrial, government, and
+    medical customers. The aerospace and defense electronics segment provides electronic
+    components and communication products for aircraft. The engineered systems segment
+    provides solutions for defense, space, environmental, and energy applications.'
+homepage_url: https://www.teledyne.com
+list_date: '1999-11-23'
+locale: us
+market: stocks
+market_cap: 25794300519.76
+name: Teledyne Technologies Incorporated
+phone_number: 805-373-4545
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDK336
+share_class_shares_outstanding: 46888498
+sic_code: '3812'
+sic_description: SEARCH, DETECTION, NAVAGATION, GUIDANCE, AERONAUTICAL SYS
+ticker: TDY
+ticker_root: TDY
+total_employees: 14900
+type: CS
+weighted_shares_outstanding: 46888498

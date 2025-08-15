@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/a3N5dW4uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/a3N5dW4uY29t/images/2025-04-04_logo.png
+cik: 0001795589
+composite_figi: BBG00R6T4PQ2
+currency_name: usd
+description: Kingsoft Cloud Holdings Ltd is an independent cloud service provider
+    in China. It provides integrated cloud-based services including cloud computing,
+    storage, and delivery. Its products and services are Security, Database, Data
+    Analysis, Networking, and others. Its solutions are medical, government affairs,
+    finance, media, education, gaming, Vehicle solutions, and others.
+homepage_url: https://www.ksyun.com
+list_date: '2020-05-08'
+locale: us
+market: stocks
+market_cap: 3758247885.33
+name: Kingsoft Cloud Holdings Limited American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00R6T4QG1
+share_class_shares_outstanding: 279585653
+ticker: KC
+ticker_root: KC
+total_employees: 12335
+type: ADRC
+weighted_shares_outstanding: 271746051

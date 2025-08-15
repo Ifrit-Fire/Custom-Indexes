@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 300 FRANK W. BURR BLVD., STE. 36, 6 FL.
+    city: TEANECK
+    postal_code: '07666'
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29nbml6YW50LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29nbml6YW50LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001058290
+composite_figi: BBG000BBDV81
+currency_name: usd
+description: Cognizant is a global IT services provider, offering consulting and outsourcing
+    services to some of the world's largest enterprises spanning the financial services,
+    media and communications, healthcare, natural resources, and consumer products
+    industries. Cognizant employs nearly 350,000 people globally, roughly 70% of whom
+    are in India, although the company's headquarters are in Teaneck, New Jersey.
+homepage_url: https://www.cognizant.com
+list_date: '1998-06-19'
+locale: us
+market: stocks
+market_cap: 34392841883.54
+name: Cognizant Technology Solutions
+phone_number: (201) 801-0233
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5STN6
+share_class_shares_outstanding: 488395937
+sic_code: '7371'
+sic_description: SERVICES-COMPUTER PROGRAMMING SERVICES
+ticker: CTSH
+ticker_root: CTSH
+total_employees: 343800
+type: CS
+weighted_shares_outstanding: 488395937

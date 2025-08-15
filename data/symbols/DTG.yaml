@@ -1,0 +1,20 @@
+active: true
+address:
+    address1: ONE ENERGY PLAZA
+    city: DETROIT
+    postal_code: '48226'
+    state: MI
+cik: 0000936340
+currency_name: usd
+list_date: '2021-11-29'
+locale: us
+market: stocks
+name: DTE Energy Company 2021 Series E 4.375% Junior Subordinated Debentures
+phone_number: (313) 235-4000
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: DTG
+ticker_root: DTG
+type: SP

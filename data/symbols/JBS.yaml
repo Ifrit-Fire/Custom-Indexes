@@ -1,0 +1,26 @@
+active: true
+cik: 0001791942
+currency_name: usd
+description: JBS NV is a protein food company, selling protein products, which include
+    fresh and frozen cuts of beef, pork, lamb, fish, whole chickens, and chicken parts,
+    to retailers (such as supermarkets, club stores and other retail distributors),
+    and foodservice companies (such as restaurants, hotels, foodservice distributors
+    and additional processors). The food products are marketed under different brands
+    such as Swift, Just Bare, Pilgrim's Pride, Sunnyvalley, Reserva Friboi, Great
+    Southern, etc., globally. The company's reportable segments are Beef North America,
+    which generates maximum revenue, Brazil, Seara, Pork USA, Pilgrim's Pride, Australia,
+    and Others. Geographically, it derives key revenue from North and Central America,
+    followed by South America, Australia, Europe, and other regions.
+homepage_url: https://www.jbs.com.br
+list_date: '2008-11-26'
+locale: us
+market: stocks
+market_cap: 32273593183.5
+name: JBS N.V.
+primary_exchange: XNYS
+round_lot: 100
+ticker: JBS
+ticker_root: JBS
+total_employees: 280000
+type: CS
+weighted_shares_outstanding: 2218116370

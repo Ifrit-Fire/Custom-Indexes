@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 535 MADISON AVENUE,  28TH FLOOR
+    city: NEW YORK
+    postal_code: '10022'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmljaXByb3BlcnRpZXMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmljaXByb3BlcnRpZXMuY29t/images/2025-04-04_logo.svg
+cik: 0001705696
+composite_figi: BBG00HVVB499
+currency_name: usd
+description: VICI Properties Inc is a real estate investment trust based in the United
+    States. It engaged in the business of owning and acquiring gaming, hospitality,
+    wellness, entertainment and leisure destinations, subject to long-term triple
+    net leases. It own nearly 93 experiential assets across a geographically portfolio
+    consisting of nearly 54 gaming properties and nearly 39 other experiential properties
+    across the United States and Canada, including Caesars Palace Las Vegas, MGM Grand
+    and the Venetian Resort Las Vegas.
+homepage_url: https://www.viciproperties.com
+list_date: '2017-10-17'
+locale: us
+market: stocks
+market_cap: 35190202674.0
+name: VICI Properties Inc. Common Stock
+phone_number: (646) 949-4631
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00HVVB4B6
+share_class_shares_outstanding: 1066369778
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: VICI
+ticker_root: VICI
+total_employees: 27
+type: CS
+weighted_shares_outstanding: 1066369778

@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1000 DARDEN CENTER DRIVE
+    city: ORLANDO
+    postal_code: '32837'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGFyZGVuLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGFyZGVuLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000940944
+composite_figi: BBG000BBNYF6
+currency_name: usd
+description: 'Darden Restaurants is the largest restaurant operator in the US full-service
+    space, with consolidated revenue of $12.1 billion in fiscal 2025. The company
+    maintains a portfolio of 11 restaurant brands: Olive Garden, LongHorn Steakhouse,
+    Cheddar''s Scratch Kitchen, Ruth''s Chris, Yard House, The Capital Grille, Seasons
+    52, Eddie V''s, Bahama Breeze, The Capital Burger, and most recently, Chuy''s.
+    Darden generates revenue almost exclusively from company-owned restaurants, though
+    a small network of franchised restaurants and consumer-packaged goods sales through
+    the traditional grocery channel contribute modestly. As of the end of its fiscal
+    2025, the company operated 2,159 restaurants in the US.'
+homepage_url: https://www.darden.com
+list_date: '1995-05-15'
+locale: us
+market: stocks
+market_cap: 24125817328.76
+name: Darden Restaurants, Inc.
+phone_number: (407) 245-4000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QM08
+share_class_shares_outstanding: 116594903
+sic_code: '5812'
+sic_description: RETAIL-EATING PLACES
+ticker: DRI
+ticker_root: DRI
+total_employees: 197924
+type: CS
+weighted_shares_outstanding: 116594903

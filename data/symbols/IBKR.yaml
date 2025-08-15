@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE PICKWICK PLAZA
+    city: GREENWICH
+    postal_code: 06830
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW50ZXJhY3RpdmVicm9rZXJzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW50ZXJhY3RpdmVicm9rZXJzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001381197
+composite_figi: BBG000LV0836
+currency_name: usd
+description: Interactive Brokers is a large, automated, retail and institutional brokerage
+    that boasted nearly $570 billion in customer equity at the end of 2024. The company
+    cut its teeth as a market maker, introducing US financial markets to automated
+    and algorithmic training before expanding into brokerage services in 1993. The
+    firm has a wide-ranging client base, with its best-in-class order execution and
+    extremely low margin lending rates catering to a sophisticated audience of hedge
+    funds, proprietary traders, and introducing brokers that account for about 45%
+    of the firm's commissions. With operations spanning more than 160 electronic exchanges,
+    36 countries, and 28 currencies, Interactive Brokers caters to a global clientele,
+    with more than 80% of active accounts sitting outside the US.
+homepage_url: https://www.interactivebrokers.com
+list_date: '2007-05-04'
+locale: us
+market: stocks
+market_cap: 28268755902.24
+name: Interactive Brokers Group, Inc. Class A Common Stock
+phone_number: 203-618-5800
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SQ4YC7
+share_class_shares_outstanding: 445246976
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: IBKR
+ticker_root: IBKR
+total_employees: 3087
+type: CS
+weighted_shares_outstanding: 445247376

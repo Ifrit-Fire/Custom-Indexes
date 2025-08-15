@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1501 PAGE MILL ROAD
+    city: PALO ALTO
+    postal_code: '94304'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aHAuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aHAuY29t/images/2025-04-04_logo.svg
+cik: '0000047217'
+composite_figi: BBG000KHWT55
+currency_name: usd
+description: HP (formerly Hewlett-Packard) is a behemoth in the PC and printing markets.
+    It has focused on these markets since it exited IT infrastructure in 2015 with
+    the split from Hewlett Packard Enterprise. HP focuses on the commercial market,
+    but maintains sales of consumer devices and printers. The firm has a broad and
+    global customer base, with only one third of sales coming from the US. HP completely
+    outsources manufacturing and relies heavily on channel partners for its sales
+    and marketing.
+homepage_url: https://www.hp.com
+list_date: '1957-11-06'
+locale: us
+market: stocks
+market_cap: 25491865908.920002
+name: HP Inc.
+phone_number: (650) 857-1501
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6W7N7
+share_class_shares_outstanding: 939272878
+sic_code: '3570'
+sic_description: COMPUTER & OFFICE EQUIPMENT
+ticker: HPQ
+ticker_root: HPQ
+total_employees: 58000
+type: CS
+weighted_shares_outstanding: 939272878

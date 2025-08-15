@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: HARTSFIELD-JACKSON ATLANTA INTL AIRPORT
+    address2: 1030 DELTA BOULEVARD
+    city: ATLANTA
+    postal_code: 30354-1989
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGVsdGEuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGVsdGEuY29t/images/2025-04-04_logo.svg
+cik: 0000027904
+composite_figi: BBG000R7Z112
+currency_name: usd
+description: Atlanta-based Delta Air Lines is one of the world's largest airlines,
+    with a network of over 300 destinations in more than 50 countries. Delta operates
+    a hub-and-spoke network, where it gathers and distributes passengers across the
+    globe through its biggest hubs in Atlanta, New York, Salt Lake City, Detroit,
+    Seattle, and Minneapolis-St. Paul. Delta has historically earned most of its international
+    revenue and profits from flying passengers over the Atlantic Ocean.
+homepage_url: https://www.delta.com
+list_date: '1967-07-03'
+locale: us
+market: stocks
+market_cap: 38798194046.840004
+name: Delta Air Lines, Inc.
+phone_number: (404) 715-2600
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SPT759
+share_class_shares_outstanding: 652948402
+sic_code: '4512'
+sic_description: AIR TRANSPORTATION, SCHEDULED
+ticker: DAL
+ticker_root: DAL
+total_employees: 103000
+type: CS
+weighted_shares_outstanding: 652948402

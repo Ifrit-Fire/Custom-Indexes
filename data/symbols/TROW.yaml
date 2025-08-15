@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: HARBOR POINT
+    address2: 1307 POINT STREET
+    city: BALTIMORE
+    postal_code: '21231'
+    state: MD
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHJvd2VwcmljZS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHJvd2VwcmljZS5jb20/images/2025-04-04_logo.svg
+cik: 0001113169
+composite_figi: BBG000BVMPN3
+currency_name: usd
+description: T. Rowe Price provides asset management services for individual and institutional
+    investors. It offers a broad range of no-load US and international stock, hybrid,
+    bond, and money market funds. At the end of June 2025, the firm had $1.667 trillion
+    in managed assets, composed of equity (50%), balanced (35%), fixed-income and
+    money market (12%), and alternative (3%) offerings. Approximately two thirds of
+    managed assets are held in retirement-based accounts, which provides T. Rowe Price
+    with a somewhat stickier client base than most of its peers. The firm also manages
+    private accounts, provides retirement planning advice, and offers discount brokerage
+    and trust services. The company is primarily a US-based asset manager, deriving
+    less than 10% of its AUM from overseas.
+homepage_url: https://www.troweprice.com
+list_date: '1986-04-09'
+locale: us
+market: stocks
+market_cap: 24157690747.95
+name: T Rowe Price Group Inc
+phone_number: (410) 345-2000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5WW18
+share_class_shares_outstanding: 219715241
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: TROW
+ticker_root: TROW
+total_employees: 8063
+type: CS
+weighted_shares_outstanding: 219715241
