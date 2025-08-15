@@ -4,12 +4,13 @@ from src.clients import fmp, cmc
 from src.config_handler import config
 from src.consts import COL_WEIGHT
 
+# TODO: Add type (Stock, ADR, Crypto) to index DataFrame
 # TODO: Switch all/most prints to logging
 # TODO: Better way to execute running program....make?
 # TODO: Setup GitHub actions to recurringly update indexes
 # TODO: Add ability to clean old cache
-# TODO: Update Indexes with historical data to run performance metrics on
 # TODO: Make static page displaying performance and composition over time
+# TODO: Update Indexes with historical data to run performance metrics on
 
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
