@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 13995 PASTEUR BOULEVARD
+    city: PALM BEACH GARDENS
+    postal_code: '33418'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29ycG9yYXRlLmNhcnJpZXIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29ycG9yYXRlLmNhcnJpZXIuY29t/images/2025-04-04_logo.svg
+cik: 0001783180
+composite_figi: BBG00RP5HYS8
+currency_name: usd
+description: Carrier Global provides HVAC and refrigeration products and services
+    that serve the global residential, commercial, and transportation markets. The
+    company's HVAC businesses account for approximately 85% of consolidated revenue,
+    with residential and light commercial HVAC and commercial HVAC representing about
+    60% and 25% of total revenue, respectively. Carrier's refrigeration segment, which
+    accounts for approximately 15% of consolidated revenue, consists of its transportation
+    refrigeration and Sensitech supply chain monitoring products and services.
+homepage_url: https://www.corporate.carrier.com
+list_date: '2020-03-18'
+locale: us
+market: stocks
+market_cap: 57061081220.85
+name: Carrier Global Corporation
+phone_number: (561) 365-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00RP5HZM1
+share_class_shares_outstanding: 851022837
+sic_code: '3585'
+sic_description: AIR-COND & WARM AIR HEATG EQUIP & COMM & INDL REFRIG EQUIP
+ticker: CARR
+ticker_root: CARR
+total_employees: 48000
+type: CS
+weighted_shares_outstanding: 851022837

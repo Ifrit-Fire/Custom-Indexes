@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 214 NORTH TRYON STREET
+    city: CHARLOTTE
+    postal_code: '28202'
+    state: NC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHJ1aXN0LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHJ1aXN0LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000092230
+composite_figi: BBG000BYYLS8
+currency_name: usd
+description: Based in Charlotte, North Carolina, Truist is the combination of BB&T
+    and SunTrust. Truist is a regional bank with a presence primarily in the Southeastern
+    United States. In addition to commercial banking, retail banking, and investment
+    banking operations, the company operates several nonbank segments.
+homepage_url: https://www.truist.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 57779589833.270004
+name: Truist Financial Corporation
+phone_number: (844) 487-8478
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5YYC0
+share_class_shares_outstanding: 1289435167
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: TFC
+ticker_root: TFC
+total_employees: 38335
+type: CS
+weighted_shares_outstanding: 1289435167

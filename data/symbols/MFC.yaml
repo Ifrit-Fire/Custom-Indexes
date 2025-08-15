@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWFudWxpZmUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWFudWxpZmUuY29t/images/2025-04-04_logo.svg
+cik: 0001086888
+composite_figi: BBG000C0Q0K4
+currency_name: usd
+description: Manulife Financial is one of the Big Three Canadian life insurers. The
+    firm provides life insurance, annuities, and asset management products to individuals
+    and group customers in Canada, the United States, and Asia. The Canadian business
+    segment contributes approximately 22% of adjusted earnings. The Asia segment operates
+    across 12 countries and contributes around 36% of earnings, with a significant
+    presence in Hong Kong and Singapore. The US business, which primarily operates
+    under the John Hancock brand, contributes about 23% of earnings and is one of
+    the top 20 life insurers in the US. Manulife's global asset and wealth management
+    business contributes approximately 20% of its earnings and had around CAD 1.03
+    trillion in assets under management and administration as of the end of 2024.
+homepage_url: https://www.manulife.com
+list_date: '1999-09-24'
+locale: us
+market: stocks
+market_cap: 51771375816.96
+name: Manulife Financial Corp.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S76KD6
+share_class_shares_outstanding: 1698535952
+ticker: MFC
+ticker_root: MFC
+total_employees: 37000
+type: CS
+weighted_shares_outstanding: 1698535952

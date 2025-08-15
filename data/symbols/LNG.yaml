@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 845 TEXAS AVENUE
+    address2: SUITE 1250
+    city: HOUSTON
+    postal_code: '77002'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2hlbmllcmUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2hlbmllcmUuY29t/images/2025-04-04_logo.svg
+cik: '0000003570'
+composite_figi: BBG000C3HSR0
+currency_name: usd
+description: Cheniere Energy is a liquified natural gas, or LNG, producer with two
+    facilities in Corpus Christi, Texas and Sabine Pass, Louisiana. It generates most
+    of its revenue through long-term contracts with customers on a fixed and variable
+    fee payout structure. It also generates revenue by selling uncontracted LNG to
+    customers on a short or one-time basis. A subsidiary, Cheniere Energy Partners,
+    owns the Sabine Pass facility and trades as a master limited partnership.
+homepage_url: https://www.cheniere.com
+list_date: '1994-04-04'
+locale: us
+market: stocks
+market_cap: 50830164774.159996
+name: Cheniere Energy Inc
+phone_number: (713) 375-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7W158
+share_class_shares_outstanding: 219768104
+sic_code: '4924'
+sic_description: NATURAL GAS DISTRIBUTION
+ticker: LNG
+ticker_root: LNG
+total_employees: 1714
+type: CS
+weighted_shares_outstanding: 219768104

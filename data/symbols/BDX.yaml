@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: ONE BECTON DR
+    city: FRANKLIN LAKES
+    postal_code: 07417-1880
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmQuY29t/images/2025-03-20_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmQuY29t/images/2025-03-20_logo.svg
+cik: 0000010795
+composite_figi: BBG000BCZYD3
+currency_name: usd
+description: Becton Dickinson is the world's largest manufacturer and distributor
+    of medical surgical products, such as needles, syringes, and sharps-disposal units.
+    The company also manufactures prefilled devices, diagnostic instruments, and reagents,
+    as well as flow cytometry and cell-imaging systems. BD Medical is nearly half
+    of the total business, while BD Life Sciences (26% of 2024 revenue) and BD Interventional
+    (25%) account for the remainder. International revenue accounts for 43% of the
+    company's business.
+homepage_url: https://www.bd.com
+list_date: '1963-09-25'
+locale: us
+market: stocks
+market_cap: 56167518825.240005
+name: Becton, Dickinson and Co.
+phone_number: (201) 847-6800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P374
+share_class_shares_outstanding: 286627469
+sic_code: '3841'
+sic_description: SURGICAL & MEDICAL INSTRUMENTS & APPARATUS
+ticker: BDX
+ticker_root: BDX
+total_employees: 74000
+type: CS
+weighted_shares_outstanding: 286627469

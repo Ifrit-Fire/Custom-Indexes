@@ -1,0 +1,24 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bnViYW5rLmNvbS5icg/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bnViYW5rLmNvbS5icg/images/2025-04-04_logo.svg
+cik: 0001691493
+currency_name: usd
+description: Nu Holdings Ltd provides digital banking services. It offers several
+    financial services such as Credit cards, Personal accounts, Investments, Personal
+    Loans, Insurance, Mobile payments, Business Accounts, and Rewards. The company
+    earns the majority of its revenue in Brazil.
+homepage_url: https://www.nubank.com.br
+list_date: '2021-12-09'
+locale: us
+market: stocks
+market_cap: 59677908541.07
+name: Nu Holdings Ltd.
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 3768057942
+ticker: NU
+ticker_root: NU
+total_employees: 8716
+type: CS
+weighted_shares_outstanding: 4824406511

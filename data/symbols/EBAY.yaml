@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 2025 HAMILTON AVENUE
+    city: SAN JOSE
+    postal_code: '95125'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZWJheS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZWJheS5jb20/images/2025-04-04_logo.svg
+cik: 0001065088
+composite_figi: BBG000C43RR5
+currency_name: usd
+description: EBay operates one of the largest e-commerce marketplaces in the world,
+    with $75 billion in 2024 gross merchandise volume, rendering the firm a top 10
+    global e-commerce company. It generates revenue from listing fees, advertising,
+    revenue-sharing arrangements with service providers, and managed payments, with
+    its platform connecting more than 130 million buyers and roughly 20 million sellers
+    across almost 190 global markets at the end of 2024. EBay generates just north
+    of 50% of its GMV in international markets, with a large presence in the UK, Germany,
+    and Australia.
+homepage_url: https://www.ebay.com
+list_date: '1998-09-24'
+locale: us
+market: stocks
+market_cap: 46051890000.0
+name: eBay Inc
+phone_number: 408-376-7400
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S9B9J5
+share_class_shares_outstanding: 457000000
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: EBAY
+ticker_root: EBAY
+total_employees: 11500
+type: CS
+weighted_shares_outstanding: 457000000

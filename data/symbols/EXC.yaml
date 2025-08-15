@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 10 S. DEARBORN STREET
+    address2: PO BOX 805379
+    city: CHICAGO
+    postal_code: 60680-5379
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXhlbG9uY29ycC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXhlbG9uY29ycC5jb20/images/2025-04-04_logo.svg
+cik: 0001109357
+composite_figi: BBG000J6XT05
+currency_name: usd
+description: Exelon serves approximately 10 million power and gas customers at its
+    six regulated utilities in Illinois, Pennsylvania, Maryland, New Jersey, Delaware,
+    and Washington, D.C.
+homepage_url: https://www.exeloncorp.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 45681725307.619995
+name: Exelon Corporation
+phone_number: (800) 483-3220
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SBJMT2
+share_class_shares_outstanding: 1009987294
+sic_code: '4931'
+sic_description: ELECTRIC & OTHER SERVICES COMBINED
+ticker: EXC
+ticker_root: EXC
+total_employees: 20014
+type: CS
+weighted_shares_outstanding: 1009987294

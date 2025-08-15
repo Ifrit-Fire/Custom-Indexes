@@ -1,0 +1,29 @@
+active: true
+branding: {}
+cik: '0001355444'
+composite_figi: BBG000BG3TV0
+currency_name: usd
+description: Embraer SA based in Sao Paulo, Brazil, manufacturer of jets. Its focus
+    is to achieve customer satisfaction with and services addressing the commercial
+    airline, executive jets, and defense and security markets. It has developed a
+    customer-centric technology-driven portfolio of commercial aviation products and
+    services that allows it to build long-term relationships with clients in the commercial
+    aviation, executive jets, and defense and security markets. It operates through
+    the various segments namely Commercial Aviation, Defense and Security, Executive
+    Aviation, Service and Support, and Other Segments. The company generates maximum
+    revenue from the Commercial Aviation segment.
+homepage_url: https://ri.embraer.com.br
+list_date: '2000-07-21'
+locale: us
+market: stocks
+market_cap: 10766917019.85
+name: Embraer S.A.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S63XQ9
+share_class_shares_outstanding: 185116261
+ticker: ERJ
+ticker_root: ERJ
+total_employees: 20744
+type: ADRC
+weighted_shares_outstanding: 183391535

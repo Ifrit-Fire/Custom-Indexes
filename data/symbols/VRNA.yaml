@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 3 MORE LONDON RIVERSIDE
+    city: LONDON
+    postal_code: SE1 2RE
+    state: X0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmVyb25hcGhhcm1hLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmVyb25hcGhhcm1hLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001657312'
+composite_figi: BBG00GD4KBL1
+currency_name: usd
+description: Verona Pharma PLC is a clinical-stage biopharmaceutical company focused
+    on developing and commercializing therapeutics for the treatment of respiratory
+    diseases with unmet medical needs. The company is currently focusing on developing
+    its Ensifentrine product candidate, which will treat chronic obstructive pulmonary
+    disease (COPD), cystic fibrosis (CF), and other respiratory diseases, including
+    asthma.
+homepage_url: https://www.veronapharma.com
+list_date: '2017-04-27'
+locale: us
+market: stocks
+market_cap: 9067411129.2
+name: Verona Pharma plc
+phone_number: 011-44-0-2032834200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00GD4KBM0
+share_class_shares_outstanding: 85132003
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: VRNA
+ticker_root: VRNA
+total_employees: 209
+type: ADRC
+weighted_shares_outstanding: 86192121

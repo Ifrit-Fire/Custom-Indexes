@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1800 AVE OF THE STARS
+    address2: SUITE 1400
+    city: LOS ANGELES
+    postal_code: '90067'
+    state: CA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXJlc21nbXQuY29t/images/2025-04-04_logo.svg
+cik: 0001176948
+composite_figi: BBG0068KVV91
+currency_name: usd
+description: Ares Management Corp is an asset management company. It offers investors
+    investment-related advice and strategies for capital growth. The company's operating
+    segments include Credit Group, Private Equity Group, Real Assets, Secondaries
+    Group, and Others. Its Credit Group generates maximum revenue and manages credit
+    strategies across the liquid and illiquid spectrum. Private Equity Group manages
+    investment strategies categorized as corporate private equity, infrastructure
+    and power, and special opportunities, Real Estate Group manages comprehensive
+    equity and debt strategies across real estate & infrastructure investments. The
+    Secondaries Group invests in secondary markets across a range of alternative asset
+    class strategies, including private equity, real estate, infrastructure, & credit.
+homepage_url: https://www.aresmgmt.com
+list_date: '2014-05-02'
+locale: us
+market: stocks
+market_cap: 41896933887.76
+name: Ares Management Corporation Class A Common Stock
+phone_number: (310) 201-4100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0068KVVC7
+share_class_shares_outstanding: 214973552
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: ARES
+ticker_root: ARES
+total_employees: 3200
+type: CS
+weighted_shares_outstanding: 219424604

@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmVudG9raWwtaW5pdGlhbC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmVudG9raWwtaW5pdGlhbC5jb20/images/2025-04-04_logo.svg
+cik: 0000930157
+composite_figi: BBG000BVPG41
+currency_name: usd
+description: Rentokil Initial is the largest global provider of route-based pest control
+    and commercial hygiene services, operating in 89 countries. The group also offers
+    a range of specialist route-based services, including office and commercial space
+    plant care, property care, and workwear rentals. The group serves a diverse client
+    base of global food producers, hotel chains, industrial goods companies, restaurants,
+    and individual residential customers.
+homepage_url: https://www.rentokil-initial.com
+list_date: '1994-10-31'
+locale: us
+market: stocks
+market_cap: 12749224216.95
+name: Rentokil Initial plc American Depositary Shares (each representing five (5)
+    Ordinary Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S80721
+share_class_shares_outstanding: 505207977
+ticker: RTO
+ticker_root: RTO
+total_employees: 65632
+type: ADRC
+weighted_shares_outstanding: 502927977

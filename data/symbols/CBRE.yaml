@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 2121 NORTH PEARL STREET
+    address2: SUITE 300
+    city: DALLAS
+    postal_code: '75201'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2JyZS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2JyZS5jb20/images/2025-04-04_logo.svg
+cik: 0001138118
+composite_figi: BBG000C04224
+currency_name: usd
+description: CBRE Group provides a wide range of real estate services to owners, occupants,
+    and investors worldwide, including leasing, property and project management, and
+    capital markets advisory. CBRE's investment management arm manages over $140 billion
+    for clients across diverse public and private real estate strategies.
+homepage_url: https://www.cbre.com
+list_date: '2004-06-10'
+locale: us
+market: stocks
+market_cap: 47507523529.5
+name: CBRE GROUP, INC.
+phone_number: 214-979-6100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SC2D27
+share_class_shares_outstanding: 297554325
+sic_code: '6500'
+sic_description: REAL ESTATE
+ticker: CBRE
+ticker_root: CBRE
+total_employees: 140000
+type: CS
+weighted_shares_outstanding: 297554325

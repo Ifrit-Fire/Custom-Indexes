@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 11995 EL CAMINO REAL
+    city: SAN DIEGO
+    postal_code: '92130'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmVhbHR5aW5jb21lLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmVhbHR5aW5jb21lLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000726728
+composite_figi: BBG000DHPN63
+currency_name: usd
+description: Realty Income owns roughly 15,600 properties, most of which are freestanding,
+    single-tenant, triple-net-leased retail properties. Its properties are located
+    in 49 states and Puerto Rico and are leased to 250 tenants from 47 industries.
+    Recent acquisitions have added industrial, gaming, office, manufacturing, and
+    distribution properties, which make up roughly 20% of revenue.
+homepage_url: https://www.realtyincome.com
+list_date: '1994-10-18'
+locale: us
+market: stocks
+market_cap: 52929179376.43
+name: Realty Income Corporation
+phone_number: 858-284-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S884K0
+share_class_shares_outstanding: 914306087
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: O
+ticker_root: O
+total_employees: 468
+type: CS
+weighted_shares_outstanding: 914306087

@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 7550 OGDEN DALE ROAD S.E.
+    city: CALGARY ALBERTA
+    postal_code: T2C 4X9
+    state: A0
+cik: 0000016875
+composite_figi: BBG000BCVMH9
+currency_name: usd
+description: Canadian Pacific Kansas City is a Class I railroad operating on track
+    that spans across most of Canada and into parts of the Midwestern and Northeastern
+    United States. Following the April 2023 Kansas City Southern merger, CPKC operates
+    new single-linehaul services from Canada and the Upper Midwest down through Texas,
+    the Gulf of Mexico, and into Mexico. It also hauls cross-border and intra-Mexico
+    freight via operating concessions on more than 3,000 miles of rail in Mexico.
+    CPKC hauls shipments of grain, intermodal containers, energy products (like crude
+    and frac sand), chemicals, plastics, coal, fertilizer and potash, automotive products,
+    and a diverse mix of other merchandise.
+homepage_url: https://www.cpkcr.com
+list_date: '1952-04-02'
+locale: us
+market: stocks
+market_cap: 69426550518.56999
+name: Canadian Pacific Kansas City Limited
+phone_number: 403-319-3591
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7F4Z8
+share_class_shares_outstanding: 913625670
+sic_code: '4011'
+sic_description: RAILROADS, LINE-HAUL OPERATING
+ticker: CP
+ticker_root: CP
+total_employees: 19749
+type: CS
+weighted_shares_outstanding: 917976339

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 4280 HACIENDA DRIVE
+    city: PLEASANTON
+    postal_code: '94588'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmVldmEuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmVldmEuY29t/images/2025-04-04_logo.svg
+cik: 0001393052
+composite_figi: BBG001CGB489
+currency_name: usd
+description: Veeva is the global leading supplier of cloud-based software solutions
+    for the life sciences industry. The company's best-of-breed offerings address
+    operating and regulatory requirements for customers ranging from small, emerging
+    biotechnology companies to departments of global pharmaceutical manufacturers.
+    The company leverages its domain expertise to improve the efficiency and compliance
+    of the underserved life sciences industry, displacing large, highly customized
+    and dated enterprise resource planning systems that have limited flexibility.
+    Its two main products are Veeva CRM, a customer relationship management platform
+    for companies with a salesforce, and Veeva Vault, a content management platform
+    that tackles various functions within any life sciences company.
+homepage_url: https://www.veeva.com
+list_date: '2013-10-16'
+locale: us
+market: stocks
+market_cap: 45621438376.14
+name: Veeva Systems Inc.
+phone_number: 925-452-6500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001TX0CB4
+share_class_shares_outstanding: 163412273
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: VEEV
+ticker_root: VEEV
+total_employees: 7291
+type: CS
+weighted_shares_outstanding: 163412273

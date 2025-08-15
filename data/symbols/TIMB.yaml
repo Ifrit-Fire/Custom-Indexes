@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmkudGltLmNvbS5icg/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmkudGltLmNvbS5icg/images/2025-04-04_logo.svg
+cik: 0001826168
+composite_figi: BBG00XS5M9S1
+currency_name: usd
+description: TIM, which is 67%-owned by Telecom Italia, is the third largest wireless
+    carrier in Brazil, with 62 million subscribers, equal to about 24% of the market.
+    The firm also owns 49% of I-Systems, an infrastructure partnership that is expanding
+    its network footprint across Brazil. I-Systems can provide broadband service to
+    about 9 million locations, equal to 10%-15% of the country. TIM leases capacity
+    on the venture's network to serve retail broadband customers under the UltraFibra
+    brand. TIM also resells fiber network access from other providers, including Oi's
+    former infrastructure business V.tal.
+homepage_url: https://ri.tim.com.br
+list_date: '1998-11-16'
+locale: us
+market: stocks
+market_cap: 9879717324.869999
+name: TIM S.A. American Depositary Shares (Each representing 5 Common Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00XS5MBP9
+share_class_shares_outstanding: 484160880
+ticker: TIMB
+ticker_root: TIMB
+total_employees: 9127
+type: ADRC
+weighted_shares_outstanding: 483588709

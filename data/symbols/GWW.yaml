@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 100 GRAINGER PARKWAY
+    city: LAKE FOREST
+    postal_code: 60045-5201
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z3JhaW5nZXIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z3JhaW5nZXIuY29t/images/2025-04-04_logo.svg
+cik: '0000277135'
+composite_figi: BBG000BKR1D6
+currency_name: usd
+description: Founded in 1927, W.W. Grainger originally distributed various motors
+    via a mail-order catalogue. Over the course of the 20th century, the firm expanded
+    into new industrial product categories and launched its first digital catalogue
+    in 1995. Today, the company organizes itself into two segments focused on different
+    customer bases. Its larger segment, high-touch solutions, offers a vast array
+    of maintenance, repair, and operations, or MRO, supplies and bespoke inventory
+    management services to larger businesses. Its smaller segment, endless assortment,
+    operates two online platforms, Zoro and MonotaRO, that offer comprehensive catalogues
+    of MRO supplies to smaller businesses. Grainger has operations throughout the
+    world but primarily generates sales within the US.
+homepage_url: https://www.grainger.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 46974611865.08
+name: W.W. Grainger, Inc.
+phone_number: 847-535-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RRD2
+share_class_shares_outstanding: 47832244
+sic_code: '5000'
+sic_description: WHOLESALE-DURABLE GOODS
+ticker: GWW
+ticker_root: GWW
+total_employees: 26500
+type: CS
+weighted_shares_outstanding: 47832244

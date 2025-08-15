@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 200 E. HARDIN STREET
+    city: FINDLAY
+    postal_code: '45840'
+    state: OH
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bXBseC5jb20/images/2025-04-04_logo.png
+cik: '0001552000'
+composite_figi: BBG0035TJGV4
+currency_name: usd
+description: MPLX is a partnership that owns pipelines and gathering and processing
+    assets with extensive holdings in the Appalachian and Permian regions. The asset
+    base is made up of crude oil and refined products assets dropped down from Marathon
+    Petroleum, its sponsor, and natural gas and natural gas liquids gathering and
+    processing assets that were purchased or built.
+homepage_url: https://www.mplx.com
+list_date: '2012-10-26'
+locale: us
+market: stocks
+market_cap: 50647575428.8
+name: MPLX LP
+phone_number: (419) 422-2121
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0035TJHL3
+share_class_shares_outstanding: 1019065904
+sic_code: '4610'
+sic_description: PIPE LINES (NO NATURAL GAS)
+ticker: MPLX
+ticker_root: MPLX
+total_employees: 5560
+type: CS
+weighted_shares_outstanding: 1019065904

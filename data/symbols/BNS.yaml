@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 44 KING STREET WEST
+    address2: SCOTIA PLAZA 8TH FL.
+    city: TORONTO
+    postal_code: M5H 1H1
+    state: A6
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2NvdGlhYmFuay5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2NvdGlhYmFuay5jb20/images/2025-04-04_logo.svg
+cik: 0000009631
+composite_figi: BBG000C2RV03
+currency_name: usd
+description: 'Bank of Nova Scotia is a global financial services provider with over
+    CAD 1.4 trillion in assets. The bank has four major business segments: Canadian
+    banking, international banking, global wealth management, and global banking and
+    markets. It offers a range of advice, products, and services, including personal
+    and commercial banking, wealth management and private banking, corporate and investment
+    banking, and capital markets. The bank''s international operations span numerous
+    countries and are more concentrated in the Latin America region.'
+homepage_url: https://www.scotiabank.com
+list_date: '1969-01-27'
+locale: us
+market: stocks
+market_cap: 70574444323.94
+name: Bank of Nova Scotia
+phone_number: (416) 866-3672
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Y2B1
+share_class_shares_outstanding: 1243294073
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: BNS
+ticker_root: BNS
+total_employees: 86746
+type: CS
+weighted_shares_outstanding: 1245577909

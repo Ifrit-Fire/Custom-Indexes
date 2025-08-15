@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 2001 THEURER BLVD
+    city: WINONA
+    postal_code: '55987'
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZmFzdGVuYWwuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmFzdGVuYWwuY29t/images/2025-04-04_logo.svg
+cik: 0000815556
+composite_figi: BBG000BJ8YN7
+currency_name: usd
+description: Fastenal began as an industrial retailer, expanding its product portfolio
+    from nuts and bolts to cutting tools, safety equipment, and janitorial supplies.
+    It transitioned into a distributor by building out a dense network of branches
+    close to its business customers. Once a customer becomes large enough, Fastenal
+    installs vending machines and its own personnel on-site. Today, these on-site
+    locations exceed Fastenal's branch count and remain the firm's main focus for
+    expansion. Fastenal acts as a one-stop outsourcing partner for its industrial
+    customers, offering value-added services along with a wide breadth of maintenance,
+    repair, and operations supplies.
+homepage_url: https://www.fastenal.com
+list_date: '1987-08-20'
+locale: us
+market: stocks
+market_cap: 56475197922.57
+name: Fastenal Co
+phone_number: (507) 454-5374
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5R1F7
+share_class_shares_outstanding: 1147636617
+sic_code: '5200'
+sic_description: RETAIL-BUILDING MATERIALS, HARDWARE, GARDEN SUPPLY
+ticker: FAST
+ticker_root: FAST
+total_employees: 21807
+type: CS
+weighted_shares_outstanding: 1147636617

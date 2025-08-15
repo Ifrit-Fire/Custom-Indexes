@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1100 CASSATT ROAD
+    city: BERWYN
+    postal_code: '19312'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1ldGVrLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1ldGVrLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001037868
+composite_figi: BBG000B9XG87
+currency_name: usd
+description: 'Founded in 1930 and transformed over the decades through the acquisition
+    of dozens of esteemed brands, Ametek owns a collection of over 40 autonomous industrial
+    businesses operating within the research, aerospace, energy, medical, and manufacturing
+    industries. Ametek segments its business into two operating groups: the electronic
+    instruments group and the electromechanical group. The EIG sells a broad portfolio
+    of analytical, test, and measurement instruments, while the EMG sells highly engineered
+    components, interconnects, and specialty metals. The company emphasizes product
+    differentiation and market leadership in the niche markets where it operates.'
+homepage_url: https://www.ametek.com
+list_date: '1930-07-01'
+locale: us
+market: stocks
+market_cap: 43167604663.6
+name: Ametek, Inc.
+phone_number: 610-647-2121
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5NN54
+share_class_shares_outstanding: 230953960
+sic_code: '3823'
+sic_description: INDUSTRIAL INSTRUMENTS FOR MEASUREMENT, DISPLAY, AND CONTROL
+ticker: AME
+ticker_root: AME
+total_employees: 21500
+type: CS
+weighted_shares_outstanding: 230953960

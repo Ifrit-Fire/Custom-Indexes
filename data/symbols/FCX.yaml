@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 333 NORTH CENTRAL AVENUE
+    city: PHOENIX
+    postal_code: '85004'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZmN4LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmN4LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000831259
+composite_figi: BBG000BJDB15
+currency_name: usd
+description: Freeport-McMoRan owns stakes in 10 copper mines, led by its 49% ownership
+    of the Grasberg copper and gold operations in Indonesia, 55% of the Cerro Verde
+    mine in Peru, and 72% of Morenci in Arizona. It sold around 1.2 million metric
+    tons of copper (its share) in 2024, making it the one of the world's largest copper
+    miners by volume. It also sold about 900,000 ounces of gold, mostly from Grasberg,
+    and 70 million pounds of molybdenum. It had about 25 years of copper reserves
+    at the end of December 2024. We expect it to sell similar amounts of copper midcycle
+    in 2029, though we expect gold volumes to decline to about 650,000 ounces then
+    due to falling production at Grasberg.
+homepage_url: https://www.fcx.com
+list_date: '1995-08-01'
+locale: us
+market: stocks
+market_cap: 61364986487.16
+name: Freeport-McMoran Inc.
+phone_number: (602) 366-8100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5R3F3
+share_class_shares_outstanding: 1436200253
+sic_code: '1000'
+sic_description: METAL MINING
+ticker: FCX
+ticker_root: FCX
+total_employees: 28500
+type: CS
+weighted_shares_outstanding: 1435774134

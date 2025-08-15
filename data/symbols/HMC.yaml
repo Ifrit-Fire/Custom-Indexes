@@ -1,0 +1,29 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2xvYmFsLmhvbmRh/images/2025-04-04_logo.svg
+cik: '0000715153'
+composite_figi: BBG000BL6B45
+currency_name: usd
+description: Incorporated in 1948, Honda Motor was originally a motorcycle manufacturer.
+    Today, the firm makes automobiles, motorcycles, and power products such as boat
+    engines, generators, and lawnmowers. Including joint ventures, Honda sold 3.7
+    million light vehicles and 20.6 million motorcycles in fiscal 2025, and consolidated
+    sales were JPY 21.7 trillion. Automobiles constitute 65% of revenue and motorcycles
+    17%, with the rest split between power products and financial services. Honda
+    also makes robots and private jets.
+homepage_url: https://global.honda
+list_date: '1977-02-11'
+locale: us
+market: stocks
+market_cap: 44448180556.6
+name: Honda Motor Co., Ltd. American Depositary Share, each representing three (3)
+    shares of Common Stock
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RXR4
+share_class_shares_outstanding: 1760000000
+ticker: HMC
+ticker_root: HMC
+total_employees: 215320
+type: ADRC
+weighted_shares_outstanding: 1330783849

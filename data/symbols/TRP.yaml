@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGNlbmVyZ3kuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGNlbmVyZ3kuY29t/images/2025-04-04_logo.svg
+cik: 0001232384
+composite_figi: BBG000BVN235
+currency_name: usd
+description: TC Energy operates natural gas transmission assets across North America.
+    Segments are determined by country of operation, but both Canadian and US operations
+    are interconnected. Mexican operations are disconnected from the US and only have
+    one customer, the state utility CFE. They also operate power generation assets,
+    with the largest being the Bruce Power nuclear plant.
+homepage_url: https://www.tcenergy.com
+list_date: '1985-05-30'
+locale: us
+market: stocks
+market_cap: 53052083447.58
+name: TC Energy Corporation
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5WW27
+share_class_shares_outstanding: 1039952343
+ticker: TRP
+ticker_root: TRP
+total_employees: 6668
+type: CS
+weighted_shares_outstanding: 1039625386

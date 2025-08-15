@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 18500 N. ALLIED WAY
+    city: PHOENIX
+    postal_code: '85054'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmVwdWJsaWNzZXJ2aWNlcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmVwdWJsaWNzZXJ2aWNlcy5jb20/images/2025-04-04_logo.svg
+cik: 0001060391
+composite_figi: BBG000BPXVJ6
+currency_name: usd
+description: Republic Services is the second-largest integrated provider of traditional
+    solid waste services in the United States, operating roughly 208 active landfills
+    and 248 transfer stations. The company serves residential, commercial, and industrial
+    end markets. It also runs sizable recycling and hazardous waste collection and
+    disposal operations in North America.
+homepage_url: https://www.republicservices.com
+list_date: '1998-07-01'
+locale: us
+market: stocks
+market_cap: 72665109946.8
+name: Republic Services Inc.
+phone_number: 480 627 2700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S9DL33
+share_class_shares_outstanding: 312215820
+sic_code: '4953'
+sic_description: REFUSE SYSTEMS
+ticker: RSG
+ticker_root: RSG
+total_employees: 42000
+type: CS
+weighted_shares_outstanding: 312215820

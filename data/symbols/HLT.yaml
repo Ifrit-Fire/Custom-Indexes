@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 7930 JONES BRANCH DRIVE, SUITE 1100
+    city: MCLEAN
+    postal_code: '22102'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aGlsdG9uLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aGlsdG9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001585689
+composite_figi: BBG0058KMH30
+currency_name: usd
+description: Hilton Worldwide Holdings operates 1.3 million rooms across its more
+    than 20 brands serving the premium economy through luxury segments. Hampton and
+    Hilton are the two largest brands, representing 27% and 18%, respectively, of
+    the company's total rooms, as of Dec. 31, 2024. Recent brands launched over the
+    last few years include Home2, Curio, Canopy, Spark, Tru, Tempo, and LivSmart,
+    as well as a partnership with Small Luxury Hotels of the World and acquisitions
+    of NoMad and Graduate Hotels. Managed and franchised hotels represent the vast
+    majority of adjusted EBITDA, predominantly from the Americas.
+homepage_url: https://www.hilton.com
+list_date: '2013-12-12'
+locale: us
+market: stocks
+market_cap: 64172615506.05
+name: Hilton Worldwide Holdings Inc.
+phone_number: 703-883-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0058KMH49
+share_class_shares_outstanding: 235193753
+sic_code: '7011'
+sic_description: HOTELS & MOTELS
+ticker: HLT
+ticker_root: HLT
+total_employees: 181000
+type: CS
+weighted_shares_outstanding: 235193753

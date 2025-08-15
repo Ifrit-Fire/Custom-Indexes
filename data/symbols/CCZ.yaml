@@ -1,0 +1,21 @@
+active: true
+address:
+    address1: ONE COMCAST CENTER
+    city: PHILADELPHIA
+    postal_code: 19103-2838
+    state: PA
+cik: 0001166691
+currency_name: usd
+list_date: '1999-11-24'
+locale: us
+market: stocks
+name: Comcast Holdings Corp. 2.0% Exchangeable Subordinated Debentures due October
+    15, 2029 (ZONES)
+phone_number: 215-286-1700
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '4841'
+sic_description: CABLE & OTHER PAY TELEVISION SERVICES
+ticker: CCZ
+ticker_root: CCZ
+type: SP

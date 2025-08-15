@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXNlZ2xvYmFsLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXNlZ2xvYmFsLmNvbQ/images/2025-04-04_logo.png
+cik: '0001122411'
+composite_figi: BBG00KLHL9W6
+currency_name: usd
+description: 'ASE Technology Holding Co Ltd is a semiconductor assembly and testing
+    firm. The company operates in segments: Packaging, Testing, and Electronic Manufacturing
+    Services. Of these, Packaging segment contribute the maximum revenue. The packaging
+    segment involves packaging bare semiconductors into completed semiconductors with
+    improved electrical and thermal characteristics. The Testing Segment includes
+    front-end engineering testing, wafer probing, and final testing services. In the
+    EMS segment, the company designs manufactures, and sells electronic components
+    and telecommunication equipment motherboards. The company is based in Taiwan but
+    garners over half its sales from firms in the United States.'
+homepage_url: https://www.aseglobal.com
+list_date: '2000-10-02'
+locale: us
+market: stocks
+market_cap: 21811409673.48
+name: ASE Technology Holding Co., Ltd.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00KLHLBL3
+share_class_shares_outstanding: 2211087500
+ticker: ASX
+ticker_root: ASX
+total_employees: 100450
+type: ADRC
+weighted_shares_outstanding: 2174617116

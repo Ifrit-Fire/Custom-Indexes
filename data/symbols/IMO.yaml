@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 505 QUARRY PARK BOULEVARD S.E.
+    city: CALGARY
+    postal_code: T2C 5N1
+    state: A0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW1wZXJpYWxvaWwuY2E/images/2024-09-01_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW1wZXJpYWxvaWwuY2E/images/2024-09-01_logo.svg
+cik: 0000049938
+composite_figi: BBG000C32XT3
+currency_name: usd
+description: Imperial Oil Ltd is an integrated oil company active in all phases of
+    the petroleum industry in Canada, including the exploration for, and production
+    and sale of, crude oil, natural gas, petroleum products, and petrochemicals. It
+    also pursues lower-emission business opportunities, including carbon capture and
+    storage, hydrogen, lower-emission fuels, and lithium. The company's reportable
+    segments are Upstream, Downstream, and Chemical. Maximum revenue for the company
+    is generated from its Downstream segment, which refines crude oil into petroleum
+    products and distributes and market these products. The Upstream segment explores
+    and produces crude oil, its equivalents, and natural gas, and the Chemical segment
+    manufactures and markets hydrocarbon-based chemicals and chemical products.
+homepage_url: https://www.imperialoil.ca
+list_date: '1986-07-16'
+locale: us
+market: stocks
+market_cap: 42479802162.35
+name: Imperial Oil Limited
+phone_number: 1-800-567-3776
+primary_exchange: XASE
+round_lot: 100
+share_class_figi: BBG001S5T1N6
+share_class_shares_outstanding: 509044963
+sic_code: '2911'
+sic_description: PETROLEUM REFINING
+ticker: IMO
+ticker_root: IMO
+total_employees: 5100
+type: CS
+weighted_shares_outstanding: 509044963

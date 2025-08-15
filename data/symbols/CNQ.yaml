@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y25ybC5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y25ybC5jb20/images/2025-04-04_logo.svg
+cik: '0001017413'
+composite_figi: BBG000HW5GX3
+currency_name: usd
+description: Canadian Natural Resources Ltd is an independent crude oil and natural
+    gas exploration, development, and production company. The company's exploration
+    and production operations are focused in North America, largely in Western Canada;
+    the United Kingdom (UK) portion of the North Sea; and Cote d'Ivoire in Offshore
+    Africa. Its operating segments include North America, North Sea, Offshore Africa,
+    Oil Sands Mining and Upgrading, and Midstream and Refining. Maximum revenue is
+    generated from its Oil Sands Mining and Upgrading segment, which produces synthetic
+    crude oil through bitumen mining and upgrading operations at Horizon Oil Sands
+    (Horizon) and the company's direct and indirect interest in the Athabasca Oil
+    Sands Project.
+homepage_url: https://www.cnrl.com
+list_date: '2000-07-31'
+locale: us
+market: stocks
+market_cap: 62293044240.0
+name: Canadian Natural Resources Limited
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5YC56
+share_class_shares_outstanding: 2090719457
+ticker: CNQ
+ticker_root: CNQ
+total_employees: 10640
+type: CS
+weighted_shares_outstanding: 2080596000

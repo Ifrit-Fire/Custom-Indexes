@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 200 PARK AVENUE
+    city: NEW YORK
+    postal_code: '10166'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWV0bGlmZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWV0bGlmZS5jb20/images/2025-04-04_logo.svg
+cik: 0001099219
+composite_figi: BBG000BB6KF5
+currency_name: usd
+description: 'MetLife is one of the largest life insurers in the US by assets and
+    provides a variety of life insurance and annuity products. It is organized into
+    six segments: Group Benefits, Retirement and Income Solutions, Asia, Latin America,
+    Europe/Middle East/Africa (EMEA), and MetLife Holdings (products in run-off).
+    Group Benefits and RIS are US-based, contributing to around 48% of the firm''s
+    2024 adjusted earnings. The Asia segment contributes around 25% of earnings, mainly
+    tied to Japan. The company also holds leading market positions in Mexico and Chile,
+    with the Latin America segment contributing around 13% of 2024 earnings. The EMEA
+    and MetLife Holdings segments contributed around 4% and 10% of 2024 earnings,
+    respectively.'
+homepage_url: https://www.metlife.com
+list_date: '2000-04-05'
+locale: us
+market: stocks
+market_cap: 51446415537.44
+name: MetLife, Inc.
+phone_number: 212-578-5500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5T3R8
+share_class_shares_outstanding: 671297826
+sic_code: '6311'
+sic_description: LIFE INSURANCE
+ticker: MET
+ticker_root: MET
+total_employees: 45000
+type: CS
+weighted_shares_outstanding: 665026054

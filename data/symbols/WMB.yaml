@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: ONE WILLIAMS CTR
+    city: TULSA
+    postal_code: '74172'
+    state: OK
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2lsbGlhbXMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2lsbGlhbXMuY29t/images/2025-04-04_logo.svg
+cik: '0000107263'
+composite_figi: BBG000BWVCP8
+currency_name: usd
+description: Williams Companies is a midstream energy company that owns and operates
+    the large Transco and Northwest pipeline systems and associated natural gas gathering,
+    processing, and storage assets. In August 2018, the firm acquired the remaining
+    26% ownership of its limited partner, Williams Partners.
+homepage_url: https://www.williams.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 70657325926.22
+name: Williams Companies Inc.
+phone_number: (918) 573-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XH10
+share_class_shares_outstanding: 1219369295
+sic_code: '4922'
+sic_description: NATURAL GAS TRANSMISSION
+ticker: WMB
+ticker_root: WMB
+total_employees: 5601
+type: CS
+weighted_shares_outstanding: 1221177427

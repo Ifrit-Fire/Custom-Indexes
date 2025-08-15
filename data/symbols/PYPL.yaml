@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 2211 NORTH FIRST STREET
+    city: SAN JOSE
+    postal_code: '95131'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGF5cGFsLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGF5cGFsLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001633917
+composite_figi: BBG0077VNXV6
+currency_name: usd
+description: PayPal was spun off from eBay in 2015 and provides electronic payment
+    solutions to merchants and consumers, with a focus on online transactions. The
+    company had 434 million active accounts at the end of 2024. The company also owns
+    Venmo, a person-to-person payment platform.
+homepage_url: https://www.paypal.com
+list_date: '2015-07-20'
+locale: us
+market: stocks
+market_cap: 67478376745.149994
+name: PayPal Holdings, Inc. Common Stock
+phone_number: (408) 967-1000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG0077VNXW5
+share_class_shares_outstanding: 955378405
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: PYPL
+ticker_root: PYPL
+total_employees: 24400
+type: CS
+weighted_shares_outstanding: 955378405

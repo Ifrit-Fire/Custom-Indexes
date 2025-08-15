@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: 123 SOUTH FRONT ST
+    address2: DEPT 8074
+    city: MEMPHIS
+    postal_code: '38103'
+    state: TN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXV0b3pvbmUuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXV0b3pvbmUuY29t/images/2025-04-04_logo.svg
+cik: 0000866787
+composite_figi: BBG000C7LMS8
+currency_name: usd
+description: AutoZone operates as a leading retailer of aftermarket automotive parts
+    in the United States. The firm operates more than 6,500 stores domestically, serving
+    the do-it-yourself and commercial (do-it-for-me) end markets. Through its vast
+    store footprint and distribution network, AutoZone manages a wide array of stock-keeping
+    units applicable to numerous vehicle makes and models, providing its consumers
+    with ample product availability. The firm drives traffic by providing superior
+    and convenient customer service as AutoZone's team of knowledgeable staff assists
+    consumers with diagnosing a vehicle's problem, selecting the necessary part for
+    replacement, and occasionally, installation. The company also operates internationally,
+    with more than 800 stores in Mexico and over 100 in Brazil.
+homepage_url: https://www.autozone.com
+list_date: '1991-04-02'
+locale: us
+market: stocks
+market_cap: 67524283051.02
+name: AutoZone, Inc.
+phone_number: (901) 495-6500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6Q5D9
+share_class_shares_outstanding: 16728714
+sic_code: '5531'
+sic_description: RETAIL-AUTO & HOME SUPPLY STORES
+ticker: AZO
+ticker_root: AZO
+total_employees: 126000
+type: CS
+weighted_shares_outstanding: 16728714

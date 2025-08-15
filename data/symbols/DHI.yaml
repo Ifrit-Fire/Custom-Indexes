@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1341 HORTON CIRCLE
+    city: ARLINGTON
+    postal_code: '76011'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHJob3J0b24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHJob3J0b24uY29t/images/2025-04-04_logo.svg
+cik: 0000882184
+composite_figi: BBG000DQTXY6
+currency_name: usd
+description: With operations in 126 markets across 36 states D.R. Horton is the leading
+    homebuilder in the United States. D.R. Horton mainly builds single-family detached
+    homes (87% of home sales revenue) and offers products to entry-level, move-up,
+    luxury buyers, and active adults. The company offers homebuyers mortgage financing
+    and title agency services through its financial services segment. D.R. Horton's
+    headquarters are in Arlington, Texas, and it manages six regional segments across
+    the United States.
+homepage_url: https://www.drhorton.com
+list_date: '1992-06-12'
+locale: us
+market: stocks
+market_cap: 49354350225.950005
+name: D.R. Horton Inc.
+phone_number: (817) 390-8200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8M692
+share_class_shares_outstanding: 298123529
+sic_code: '1531'
+sic_description: OPERATIVE BUILDERS
+ticker: DHI
+ticker_root: DHI
+total_employees: 14766
+type: CS
+weighted_shares_outstanding: 298123529

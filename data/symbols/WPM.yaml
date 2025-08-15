@@ -1,0 +1,26 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2hlYXRvbnBtLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2hlYXRvbnBtLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001323404'
+composite_figi: BBG000PVRDL2
+currency_name: usd
+description: 'Wheaton Precious Metals Corp is a precious metal streaming company.
+    The company metal streaming company which generates its revenue primarily from
+    the sale of precious metals (gold, silver and palladium) and cobalt. Its reportable
+    segment includes: Gold, Silver, Palladium, Platinum, Cobalt, and Other.'
+homepage_url: https://www.wheatonpm.com
+list_date: '2004-12-29'
+locale: us
+market: stocks
+market_cap: 43180229848.16
+name: Wheaton Precious Metals Corp. Common Stock
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6DSP0
+share_class_shares_outstanding: 453955318
+ticker: WPM
+ticker_root: WPM
+total_employees: 42
+type: CS
+weighted_shares_outstanding: 453955318

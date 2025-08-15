@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 6110 STONERIDGE MALL ROAD
+    city: PLEASANTON
+    postal_code: '94588'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d29ya2RheS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d29ya2RheS5jb20/images/2025-04-04_logo.svg
+cik: 0001327811
+composite_figi: BBG000VC0T95
+currency_name: usd
+description: Workday is a software company that offers human capital management, or
+    HCM, financial management, and business planning solutions for enterprises. Known
+    for being a cloud-only software provider, Workday was founded in 2005 and is headquartered
+    in Pleasanton, California.
+homepage_url: https://www.workday.com
+list_date: '2012-10-12'
+locale: us
+market: stocks
+market_cap: 59469569720.0
+name: Workday, Inc. Class A Common Stock
+phone_number: 925-951-9000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T21KQ7
+share_class_shares_outstanding: 216000000
+sic_code: '7374'
+sic_description: SERVICES-COMPUTER PROCESSING & DATA PREPARATION
+ticker: WDAY
+ticker_root: WDAY
+total_employees: 20400
+type: CS
+weighted_shares_outstanding: 266596000

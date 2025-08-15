@@ -1,0 +1,31 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c21mZy5jby5qcA/images/2025-04-04_logo.png
+cik: 0001022837
+composite_figi: BBG000PMKCQ6
+currency_name: usd
+description: Sumitomo Mitsui Financial Group is roughly tied with Mizuho Financial
+    Group for the status of Japan's second-largest bank after Mitsubishi UFJ Financial
+    Group. As of March 2024, its market share of domestic loans was 7.2%, compared
+    with 8.0% for MUFG. It has a larger consumer finance business than the other two
+    megabanks, owning 100% of the Promise business and SMBC Card. It also controls
+    one of Japan's largest leasing companies and SMBC Aviation Capital, one of the
+    top five aircraft lessors globally. In securities, its SMBC Nikko unit is Japan's
+    third-largest retail broker, although SMFG has lagged somewhat in institutional
+    securities business and asset management.
+homepage_url: https://www.smfg.co.jp
+list_date: '1999-09-13'
+locale: us
+market: stocks
+market_cap: 104456818375.0
+name: Sumitomo Mitsui Financial Group, Inc American Depositary Shares (each representing
+    3/5th of a share of common stock)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SLH608
+share_class_shares_outstanding: 6474931233
+ticker: SMFG
+ticker_root: SMFG
+total_employees: 132000
+type: ADRC
+weighted_shares_outstanding: 6428111900

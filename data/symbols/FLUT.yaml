@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: ONE MADISON AVENUE
+    city: NEW YORK
+    postal_code: '10010'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zmx1dHRlci5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zmx1dHRlci5jb20/images/2025-04-04_logo.svg
+cik: '0001635327'
+currency_name: usd
+description: In 2016, Irish company Paddy Power merged with UK firm Betfair to form
+    online gaming operator Flutter Entertainment. Today, Flutter has the top digital
+    revenue share in the US, UK and Ireland, Australia, and many other countries.
+    Some of its main brands are FanDuel in the US, Sky Betting & Gaming and Paddy
+    Power in the UK and Ireland, Sportsbet (acquired by Paddy Power in 2009) in Australia,
+    and Sisal in Italy. As of Dec. 31, 2024, the company offered products in over
+    100 countries and had 13.9 million average monthly users. In 2024, sports betting
+    was 56% of revenue, online gaming 40%, and fantasy sports, horse racing, and other
+    4%.
+homepage_url: https://www.flutter.com
+list_date: '2024-01-29'
+locale: us
+market: stocks
+market_cap: 51636718524.16
+name: Flutter Entertainment plc
+phone_number: '353872641566'
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 176099559
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: FLUT
+ticker_root: FLUT
+total_employees: 27345
+type: CS
+weighted_shares_outstanding: 175802528

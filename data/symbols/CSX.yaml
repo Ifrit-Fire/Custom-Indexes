@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 500 WATER STREET
+    address2: 15TH FLOOR
+    city: JACKSONVILLE
+    postal_code: '32202'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y3N4LmNvbQ/images/2024-09-01_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y3N4LmNvbQ/images/2024-09-01_logo.svg
+cik: 0000277948
+composite_figi: BBG000BGJRC8
+currency_name: usd
+description: Operating in the Eastern United States, Class I railroad CSX generated
+    revenue near $14.5 billion in 2024. On its more than 21,000 miles of track, CSX
+    hauls shipments of coal (16% of consolidated revenue), chemicals (17%), intermodal
+    containers (16%), automotive cargo (7%), and a diverse mix of other bulk and industrial
+    merchandise.
+homepage_url: https://www.csx.com
+list_date: '1980-11-03'
+locale: us
+market: stocks
+market_cap: 67263114665.119995
+name: CSX Corporation
+phone_number: (904) 359-3200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5Q7Q3
+share_class_shares_outstanding: 1864277014
+sic_code: '4011'
+sic_description: RAILROADS, LINE-HAUL OPERATING
+ticker: CSX
+ticker_root: CSX
+total_employees: 23500
+type: CS
+weighted_shares_outstanding: 1864277014
