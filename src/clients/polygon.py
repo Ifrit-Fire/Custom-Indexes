@@ -12,8 +12,10 @@ from src.consts import POLY_API_TOKEN, PATH_DATA_SYMBOLS_ROOT
 _EXCHANGES = {"XNYS",  # NY stock exchange
               "XNAS",  # NASDAQ
               "XASE"}  # NYSE American (formerly AMEX)
-_SYMBOL_MAPPINGS = {"MS.PQ": "MSpQ"}
-
+# @formatter:off
+_SYMBOL_MAPPINGS = {"MS.PQ": "MSpQ",
+                    "KIM.PN": "KIMpN"}
+# @formatter:on
 
 def _get_ticker_filename(symbol: str):
     """

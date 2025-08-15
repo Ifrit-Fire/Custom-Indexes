@@ -36,5 +36,6 @@ PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
 _SYMBOL_NORMALIZE = {"BRK-A": "BRK.A", "BRK/A": "BRK.A",
                      "BRK-B": "BRK.B", "BRK/B": "BRK.B",
                      "PBR-A": "PBR.A", "PBR/A": "PBR.A",
-                     "MS-PQ": "MS.PQ", "MS/PQ": "MS.PQ"}
+                     "MS-PQ": "MS.PQ", "MS/PQ": "MS.PQ",
+                     "KIM-PN": "KIM.PN", "KIM/PN": "KIM.PN"}
 # @formatter:on
