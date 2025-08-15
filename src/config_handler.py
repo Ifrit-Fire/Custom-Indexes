@@ -10,8 +10,9 @@ KEY_INDEX_TOP = "top"
 KEY_INDEX_WEIGHT_MIN = "weight_min"
 
 _KEY_BASE_DEFAULT = "default"
-_KEY_INDEXES = "indexes"
 _KEY_CONSOLIDATE = "symbol_consolidate"
+_KEY_INDEXES = "indexes"
+_KEY_NORM_SYM = "symbol_normalize"
 _KEY_VOLUME = "volume"
 
 
@@ -20,6 +21,7 @@ class ConfigHandler:
         self._raw = self._read_config()
         self._default = self._raw.get(_KEY_BASE_DEFAULT)
         self._indexes = self._raw.get(_KEY_INDEXES)
+        self._norm_sym = self._raw.get(_KEY_NORM_SYM)
 
     @staticmethod
     def _read_config() -> Any:
@@ -29,6 +31,9 @@ class ConfigHandler:
     @cached_property
     def symbol_merge(self) -> dict[str, str]:
         return {item["merge"]: item["into"] for item in self._default[_KEY_CONSOLIDATE]}
+
+    def symbol_normalize(self) -> dict[str, str]:
+        return self._norm_sym
 
     def volume_limit_min(self) -> int:
         return self._default[_KEY_VOLUME]["limit_min"]
