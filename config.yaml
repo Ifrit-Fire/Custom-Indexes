@@ -43,6 +43,8 @@ symbol_normalize:
     BRK/A: BRK.A
     BRK-B: BRK.B
     BRK/B: BRK.B
+    EBR-B: EBR.B
+    EBR/B: EBR.B
     KIM-PN: KIM.PN
     KIM/PN: KIM.PNs
     MS-PQ: MS.PQ
