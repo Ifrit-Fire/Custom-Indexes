@@ -47,6 +47,8 @@ symbol_normalize:
     EBR/B: EBR.B
     KIM-PN: KIM.PN
     KIM/PN: KIM.PNs
+    MKC-V: MKC.V
+    MKC/V: MKC.V
     MS-PQ: MS.PQ
     MS/PQ: MS.PQ
     PBR-A: PBR.A
