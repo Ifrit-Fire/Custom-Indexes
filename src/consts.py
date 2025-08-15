@@ -33,6 +33,8 @@ PATH_DATA_SYMBOLS_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
 
 # @formatter:off
-_SYMBOL_NORMALIZE = {"BRK-A": "BRK.A", "BRK/A": "BRK.A", "BRK-B": "BRK.B", "BRK/B": "BRK.B",
-                     "PBR-A": "PBR.A", "PBR/A": "PBR.A"}
+_SYMBOL_NORMALIZE = {"BRK-A": "BRK.A", "BRK/A": "BRK.A",
+                     "BRK-B": "BRK.B", "BRK/B": "BRK.B",
+                     "PBR-A": "PBR.A", "PBR/A": "PBR.A",
+                     "MS-PQ": "MS.PQ", "MS/PQ": "MS.PQ"}
 # @formatter:on

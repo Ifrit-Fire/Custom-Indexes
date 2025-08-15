@@ -12,6 +12,7 @@ from src.consts import POLY_API_TOKEN, PATH_DATA_SYMBOLS_ROOT
 _EXCHANGES = {"XNYS",  # NY stock exchange
               "XNAS",  # NASDAQ
               "XASE"}  # NYSE American (formerly AMEX)
+_SYMBOL_MAPPINGS = {"MS.PQ": "MSpQ"}
 
 
 def _get_ticker_filename(symbol: str):
@@ -69,7 +70,7 @@ def get_stock(symbol: str) -> TickerDetails:
 
     Notes:
         - On API failure due to rate limits or network issues, the function waits 60 seconds
-          between retries..
+          between retries.
     """
 
     # Try loading from disk first
@@ -77,11 +78,12 @@ def get_stock(symbol: str) -> TickerDetails:
     if ticker: return ticker
 
     # Gotta pull down from the API
-    attempt = raw = None  # Suppresses references before bound warning
+    attempt = raw = norm_sym = None  # Suppresses references before bound warning
     client = RESTClient(api_key=POLY_API_TOKEN)
     for attempt in range(retries := 3):
         try:
-            raw = client.get_ticker_details(ticker=symbol, raw=True)  # Grab raw so we can save json to disk
+            norm_sym = _SYMBOL_MAPPINGS.get(symbol, symbol)
+            raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk
             if attempt > 0: print("\tSuccess!")
             attempt = 0
             break
@@ -91,8 +93,7 @@ def get_stock(symbol: str) -> TickerDetails:
             io.console_countdown("\tRetrying", 60)
         except BadResponse as e:
             print(f"\t{str(e)}")
-            print(f"\tBadResponse for ticker {symbol}")
-
+            print(f"\tBadResponse for ticker {symbol} (normalized: {norm_sym})")
 
     if attempt >= retries - 1:
         raise ConnectionError("Unknown issue with API end point.")
