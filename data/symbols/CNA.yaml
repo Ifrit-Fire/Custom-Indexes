@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: CNA
+    address2: 151 N. FRANKLIN
+    city: CHICAGO
+    postal_code: '60606'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y25hLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y25hLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000021175'
+composite_figi: BBG000BFYB47
+currency_name: usd
+description: 'CNA Financial Corporation (CNAF) is an insurance holding company that
+    provides commercial property and casualty insurance. The company operates under
+    five segments: Specialty, Commercial and International being its core business,
+    and two segments for its non-core businesses, which are Life and Group and Corporate
+    and Other. CNAF, through its segments, provides professional, financial, specialty
+    property, and casualty products to small businesses and medium-scale organizations.
+    It has its business spread across Continental Europe, United Kingdom, and Canada.
+    The majority of the revenues are generated from the Specialty and Commercial segment
+    of the business.'
+homepage_url: https://www.cna.com
+list_date: '1969-02-03'
+locale: us
+market: stocks
+market_cap: 12983819190.029999
+name: CNA Financial Corporation
+phone_number: (312) 822-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5PYX7
+share_class_shares_outstanding: 270665399
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: CNA
+ticker_root: CNA
+total_employees: 6500
+type: CS
+weighted_shares_outstanding: 270665399

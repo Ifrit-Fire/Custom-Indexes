@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1830 CRAIG PARK COURT
+    city: ST. LOUIS
+    postal_code: '63146'
+    state: MO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29yZWFuZG1haW4uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29yZWFuZG1haW4uY29t/images/2025-04-04_logo.svg
+cik: 0001856525
+composite_figi: BBG01163K2X0
+currency_name: usd
+description: 'Core & Main Inc is a specialty distributor focusing on water, wastewater,
+    storm drainage, and fire protection products and services. Catering to municipalities,
+    private water companies, and contractors, it serves municipal, non-residential,
+    and residential markets nationwide. Its diverse product line includes pipes, valves,
+    fittings, storm drainage products, fire protection products, and meter products.
+    Revenue is principally generated from pipes, valves, and fittings. The company
+    operates across three construction sectors: municipal, non-residential, and residential,
+    contributing to reliable infrastructure development nationwide.'
+homepage_url: https://www.coreandmain.com
+list_date: '2021-07-23'
+locale: us
+market: stocks
+market_cap: 12452712697.18
+name: Core & Main, Inc.
+phone_number: 314-432-4700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG01163K3R5
+share_class_shares_outstanding: 189654473
+sic_code: '5099'
+sic_description: WHOLESALE-DURABLE GOODS, NEC
+ticker: CNM
+ticker_root: CNM
+total_employees: 5700
+type: CS
+weighted_shares_outstanding: 189654473

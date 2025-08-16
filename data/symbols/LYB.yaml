@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 1221 MCKINNEY ST
+    address2: SUITE 300
+    city: HOUSTON
+    postal_code: '77010'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bHlvbmRlbGxiYXNlbGwuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bHlvbmRlbGxiYXNlbGwuY29t/images/2025-04-04_logo.svg
+cik: 0001489393
+currency_name: usd
+description: LyondellBasell is a petrochemical producer with operations in the United
+    States, Europe, and Asia. The company is the world's largest producer of polypropylene
+    and also a major producer of polyethylene and propylene oxide. Its chemicals are
+    used in various consumer and industrial end products. Well over half of LyondellBasell's
+    production comes from its North American operations.
+homepage_url: https://www.lyondellbasell.com
+list_date: '2010-04-28'
+locale: us
+market: stocks
+market_cap: 17024851346.97
+name: LyondellBasell Industries N.V. Class A
+phone_number: 713-309-7603
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 321648429
+sic_code: '2860'
+sic_description: INDUSTRIAL ORGANIC CHEMICALS
+ticker: LYB
+ticker_root: LYB
+total_employees: 20000
+type: CS
+weighted_shares_outstanding: 321648429

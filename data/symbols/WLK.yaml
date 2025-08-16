@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 2801 POST OAK BLVD
+    address2: SUITE 600
+    city: HOUSTON
+    postal_code: '77056'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2VzdGxha2UuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2VzdGxha2UuY29t/images/2025-04-04_logo.svg
+cik: 0001262823
+composite_figi: BBG000PXZFW2
+currency_name: usd
+description: Westlake Corp is a manufacturer and supplier of chemicals, polymers,
+    and building products. Its Performance and Essential Materials segment offers
+    a wide range of essential building blocks for making products utilized in everyday
+    living, including olefins, vinyl chemicals, polyethylene, and epoxies. Its Housing
+    and Infrastructure Products segment produces key finished goods for building products,
+    pipe and fittings, and global compounds businesses.
+homepage_url: https://www.westlake.com
+list_date: '2004-08-11'
+locale: us
+market: stocks
+market_cap: 10906062460.640001
+name: Westlake Corporation
+phone_number: 713-960-9111
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SHVYF4
+share_class_shares_outstanding: 128246266
+sic_code: '2860'
+sic_description: INDUSTRIAL ORGANIC CHEMICALS
+ticker: WLK
+ticker_root: WLK
+total_employees: 15540
+type: CS
+weighted_shares_outstanding: 128246266

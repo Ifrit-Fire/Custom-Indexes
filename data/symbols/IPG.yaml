@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 909 THIRD AVENUE
+    city: NEW YORK
+    postal_code: '10022'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW50ZXJwdWJsaWMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW50ZXJwdWJsaWMuY29t/images/2025-04-04_logo.svg
+cik: '0000051644'
+composite_figi: BBG000C90DH9
+currency_name: usd
+description: Interpublic Group is among the world's largest advertising holding companies
+    based on annual revenue. It provides traditional advertising services along with
+    digital and other services, such as public relations, through various acquisitions.
+    IPG has made these services available in over 100 countries. The company generates
+    about 65% of revenue in the US and 17% in the UK and Europe.
+homepage_url: https://www.interpublic.com
+list_date: '1971-08-23'
+locale: us
+market: stocks
+market_cap: 9596179418.0
+name: The Interpublic Group of Companies, Inc.
+phone_number: 212-704-1200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6RLK5
+share_class_shares_outstanding: 366266390
+sic_code: '7311'
+sic_description: SERVICES-ADVERTISING AGENCIES
+ticker: IPG
+ticker_root: IPG
+total_employees: 51300
+type: CS
+weighted_shares_outstanding: 366266390

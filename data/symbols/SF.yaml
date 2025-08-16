@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 'ATTN: JAMES G. LASCHOBER'
+    address2: 501 N. BROADWAY
+    city: ST. LOUIS
+    postal_code: 63102-2102
+    state: MO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3RpZmVsLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RpZmVsLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000720672'
+composite_figi: BBG000BSS5C0
+currency_name: usd
+description: Stifel Financial Corp is a middle-market-focused investment bank that
+    produces more than 90% of its revenue in the United States. Approximately 67%
+    of the company's net revenue is derived from its world-wide wealth management
+    division, which supports over 2,000 financial advisors, with the remainder coming
+    from its institutional securities business. Stifel has a history of being an active
+    acquirer of other financial-services firms.
+homepage_url: https://www.stifel.com
+list_date: '1983-07-19'
+locale: us
+market: stocks
+market_cap: 11876636713.439999
+name: Stifel Financial Corp.
+phone_number: 314-342-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5W081
+share_class_shares_outstanding: 102173406
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: SF
+ticker_root: SF
+total_employees: 9000
+type: CS
+weighted_shares_outstanding: 102173406

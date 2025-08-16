@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 105 DIGITAL DRIVE
+    city: NOVATO
+    postal_code: '94949'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmlvbWFyaW4uY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmlvbWFyaW4uY29t/images/2025-04-04_logo.svg
+cik: 0001048477
+composite_figi: BBG000CZWZ05
+currency_name: usd
+description: BioMarin is a global biotechnology company focused on developing and
+    commercializing therapies for rare genetic diseases. BioMarin specializes in enzyme
+    replacement therapies, gene therapies, and other advanced treatments aimed at
+    addressing complex genetic disorders. The company has eight approved therapies
+    for conditions including achondroplasia, phenylketonuria (PKU), hemophilia, and
+    mucopolysaccharidosis. BioMarin has an expanding, yet relatively early-stage,
+    pipeline of treatments in development.
+homepage_url: https://www.biomarin.com
+list_date: '1999-07-23'
+locale: us
+market: stocks
+market_cap: 11194451238.3
+name: BioMarin Pharmaceuticals Inc
+phone_number: (415) 506-6700
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S76R05
+share_class_shares_outstanding: 192014601
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: BMRN
+ticker_root: BMRN
+total_employees: 3040
+type: CS
+weighted_shares_outstanding: 192014601

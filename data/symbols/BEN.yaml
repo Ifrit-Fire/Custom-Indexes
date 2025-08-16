@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: ONE FRANKLIN PARKWAY
+    address2: BUILDING 920/2, LEGAL-FRI SECRETARY
+    city: SAN MATEO
+    postal_code: '94403'
+    state: CA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZnJhbmtsaW5yZXNvdXJjZXMuY29t/images/2025-04-04_logo.png
+cik: 0000038777
+composite_figi: BBG000BD0TF8
+currency_name: usd
+description: Franklin Resources provides investment services for individual and institutional
+    investors. At the end of June 2025, Franklin had $1.606 trillion in managed assets,
+    composed primarily of equity (41%), fixed-income (28%), multi-asset/balanced (11%)
+    funds, alternatives (16%) and money market funds (4%). Distribution tends to be
+    weighted between retail investors (55% of AUM) and institutional accounts (42%),
+    with high-net-worth clients accounting for the remainder. Franklin is one of the
+    more global of the US-based asset managers we cover, with 30% of its assets under
+    management invested in global/international strategies and just as much sourced
+    from clients domiciled outside the United States.
+homepage_url: https://www.franklinresources.com
+list_date: '1983-09-23'
+locale: us
+market: stocks
+market_cap: 13514658214.25
+name: Franklin Resources, Inc.
+phone_number: 650-312-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P3W6
+share_class_shares_outstanding: 519195475
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: BEN
+ticker_root: BEN
+total_employees: 10100
+type: CS
+weighted_shares_outstanding: 519195475

@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 221 MAIN ST., SUITE 1550
+    city: SAN FRANCISCO
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZG9jdXNpZ24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZG9jdXNpZ24uY29t/images/2025-04-04_logo.svg
+cik: '0001261333'
+composite_figi: BBG000N7KJX8
+currency_name: usd
+description: Docusign offers Agreement Cloud, a broad cloud-based software suite that
+    enables users to automate the agreement process and provide legally binding e-signatures
+    from nearly any device. The company was founded in 2003 and completed its initial
+    public offering in 2018.
+homepage_url: https://www.docusign.com
+list_date: '2018-04-27'
+locale: us
+market: stocks
+market_cap: 14287858608.119999
+name: DocuSign, Inc. Common Stock
+phone_number: 415-489-4940
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T535D5
+share_class_shares_outstanding: 202062772
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: DOCU
+ticker_root: DOCU
+total_employees: 6838
+type: CS
+weighted_shares_outstanding: 202062772

@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1 NORTH FIELD CT
+    city: LAKE FOREST
+    postal_code: '60045'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGFja2FnaW5nY29ycC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGFja2FnaW5nY29ycC5jb20/images/2025-04-04_logo.svg
+cik: '0000075677'
+composite_figi: BBG000BB8SW7
+currency_name: usd
+description: Packaging Corp. of America is the third-largest containerboard and corrugated
+    packaging manufacturer in the United States. It produces over 5 million tons of
+    containerboard annually. The company's share of the domestic containerboard market
+    is roughly 10%. PCA differentiates itself from larger competitors by focusing
+    on smaller customers and operating with a high degree of flexibility.
+homepage_url: https://www.packagingcorp.com
+list_date: '2000-01-28'
+locale: us
+market: stocks
+market_cap: 18066839838.57
+name: Packaging Corp of America
+phone_number: (847) 482-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5V741
+share_class_shares_outstanding: 89978783
+sic_code: '2650'
+sic_description: PAPERBOARD CONTAINERS & BOXES
+ticker: PKG
+ticker_root: PKG
+total_employees: 15400
+type: CS
+weighted_shares_outstanding: 89978783

@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 2801 N CENTRAL EXPRESSWAY
+    address2: SUITE 1600
+    city: DALLAS
+    postal_code: '75204'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2luZ3N0b3AuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2luZ3N0b3AuY29t/images/2025-04-04_logo.svg
+cik: '0001636222'
+composite_figi: BBG008N298Y8
+currency_name: usd
+description: Founded in 1994 in Garland, Texas, Wingstop is a restaurant operator
+    specializing in indulgent bone-in and boneless chicken wings, chicken tenders,
+    fries, and, recently, chicken sandwiches. The firm's footprint has grown quickly
+    since its inception, expanding to 2,689 global stores by the end of the first
+    quarter of 2025. With a 98% franchised model, Wingstop generates the lion's share
+    of its revenue from franchise royalties and advertising fees, with the remainder
+    derived from a small footprint of company-owned stores.
+homepage_url: https://www.wingstop.com
+list_date: '2015-06-12'
+locale: us
+market: stocks
+market_cap: 9570307865.69
+name: Wingstop Inc
+phone_number: 972-686-6500
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG008N298X9
+share_class_shares_outstanding: 27923753
+sic_code: '5812'
+sic_description: RETAIL-EATING PLACES
+ticker: WING
+ticker_root: WING
+total_employees: 1335
+type: CS
+weighted_shares_outstanding: 27923753

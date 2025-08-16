@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWxhbW9zZ29sZC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWxhbW9zZ29sZC5jb20/images/2025-04-04_logo.svg
+cik: 0001178819
+composite_figi: BBG009HT6BL4
+currency_name: usd
+description: 'Alamos Gold Inc acquires, explores, and produces gold and other precious
+    metals, and operates in two principal geographic areas: Canada and Mexico. The
+    company has four operating segments being Young-Davidson, Island Gold and Magino
+    mines operate in Canada, and the Mulatos mine operates in Sonora, Mexico. The
+    company generates maximum revenue from the Mulatos mines.'
+homepage_url: https://www.alamosgold.com
+list_date: '1996-10-11'
+locale: us
+market: stocks
+market_cap: 10775597576.699999
+name: Alamos Gold Inc. Class A Common Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG009HT65S0
+share_class_shares_outstanding: 420429165
+ticker: AGI
+ticker_root: AGI
+total_employees: 2288
+type: CS
+weighted_shares_outstanding: 420429090

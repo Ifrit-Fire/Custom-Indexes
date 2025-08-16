@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: FIVE AMERICAN LANE
+    city: GREENWICH
+    postal_code: 06831
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cXhvLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cXhvLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001236275'
+composite_figi: BBG000BV5627
+currency_name: usd
+description: QXO Inc provides technology solutions, primarily to clients in the manufacturing,
+    distribution, and service sectors. It provides consulting and professional services,
+    specialized programming, training, and technical support. It also offers solutions
+    for accounting, financial reporting, enterprise resource planning, warehouse management
+    systems, customer relationship management, business intelligence, and other applications.
+homepage_url: https://www.qxo.com
+list_date: '2004-03-05'
+locale: us
+market: stocks
+market_cap: 14117220519.48
+name: QXO, Inc.
+phone_number: 888-998-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SCBW07
+share_class_shares_outstanding: 580445718
+sic_code: '7374'
+sic_description: SERVICES-COMPUTER PROCESSING & DATA PREPARATION
+ticker: QXO
+ticker_root: QXO
+total_employees: 211
+type: CS
+weighted_shares_outstanding: 670333358

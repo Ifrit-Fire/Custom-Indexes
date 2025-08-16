@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 625 WESTPORT PARKWAY
+    city: GRAPEVINE
+    postal_code: '76051'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2FtZXN0b3AuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2FtZXN0b3AuY29t/images/2025-04-04_logo.svg
+cik: 0001326380
+composite_figi: BBG000BB5BF6
+currency_name: usd
+description: 'GameStop Corp is a U.S. multichannel video game, consumer electronics,
+    and services retailer. The company operates across Europe, Canada, Australia,
+    and the United States. The company sells new and second-hand video game hardware,
+    physical and digital video game software, and video game accessories, mainly through
+    GameStop, EB Games, and Micromania stores and international e-commerce sites.
+    The majority of sales are from the United States. The company categorizes its
+    products in three categories: Hardware and accessories, Software, and Collectibles.
+    The company generates the majority of its revenue from the sale of Hardware and
+    accessories products.'
+homepage_url: https://www.gamestop.com
+list_date: '2002-02-13'
+locale: us
+market: stocks
+market_cap: 10297681764.119999
+name: GameStop Corp. Class A
+phone_number: 817-424-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RLR0
+share_class_shares_outstanding: 447336306
+sic_code: '5734'
+sic_description: RETAIL-COMPUTER & COMPUTER SOFTWARE STORES
+ticker: GME
+ticker_root: GME
+total_employees: 6000
+type: CS
+weighted_shares_outstanding: 447336306

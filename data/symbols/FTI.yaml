@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: HADRIAN HOUSE
+    address2: WINCOMBLEE ROAD
+    city: NEWCASTLE UPON TYNE
+    postal_code: NE6 3PL
+    state: X0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGVjaG5pcGZtYy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGVjaG5pcGZtYy5jb20/images/2025-04-04_logo.svg
+cik: 0001681459
+currency_name: usd
+description: TechnipFMC is the largest provider of offshore oilfield services, offering
+    integrated deep-water offshore oil and gas development solutions that span the
+    full spectrum of subsea equipment and subsea construction services. The company
+    also provides various pieces of surface equipment used with onshore oil and gas
+    wells. TechnipFMC originated with the 2017 merger of Technip and FMC Technologies.
+homepage_url: https://www.technipfmc.com
+list_date: '2009-09-10'
+locale: us
+market: stocks
+market_cap: 14393796884.460001
+name: TechnipFMC plc Ordinary Share
+phone_number: 44 191 295 0303
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 411016473
+sic_code: '3533'
+sic_description: OIL & GAS FIELD MACHINERY & EQUIPMENT
+ticker: FTI
+ticker_root: FTI
+total_employees: 22848
+type: CS
+weighted_shares_outstanding: 411016473

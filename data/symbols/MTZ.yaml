@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 800 S. DOUGLAS ROAD
+    address2: 10TH FLOOR
+    city: CORAL GABLES
+    postal_code: '33134'
+    state: FL
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWFzdGVjLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000015615'
+composite_figi: BBG000DYXD23
+currency_name: usd
+description: 'MasTec is a leading infrastructure construction company operating mainly
+    in North America across a range of industries. The company''s primary activities
+    include engineering, building, installing, maintaining, and upgrading communications,
+    oil and gas, utility, renewable energy, and other infrastructure. MasTec reports
+    its results under five segments: communications; clean energy and infrastructure;
+    oil and gas; power delivery; and other.'
+homepage_url: https://www.mastec.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 14328895366.86
+name: MasTec, Inc.
+phone_number: (305) 599-1800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S95HF8
+share_class_shares_outstanding: 78907954
+sic_code: '1623'
+sic_description: WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION
+ticker: MTZ
+ticker_root: MTZ
+total_employees: 36000
+type: CS
+weighted_shares_outstanding: 78907954

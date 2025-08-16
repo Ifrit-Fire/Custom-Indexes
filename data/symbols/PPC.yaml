@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1770 PROMONTORY CIRCLE
+    city: GREELEY
+    postal_code: '80634'
+    state: CO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGlsZ3JpbXMuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGlsZ3JpbXMuY29t/images/2025-04-04_logo.svg
+cik: 0000802481
+composite_figi: BBG000BFLXV3
+currency_name: usd
+description: Pilgrim's Pride is the second-largest poultry producer in the US (59%
+    of 2024 sales), the UK (29% including other European sales), and Mexico (12%).
+    Its UK and European arm also includes pork operations from the 2019 acquisition
+    of Tulip. Pilgrim's sells to chain restaurants, food processors, food distributors,
+    and retail chains. Most of its US and Mexican sales come from fresh chicken, while
+    prepared chicken and pork constitute most of its UK and European sales. JBS owns
+    more than 80% of Pilgrim's Pride's outstanding shares, though it failed to acquire
+    the remaining stake in 2021 after a special board committee deemed that JBS' offer
+    undervalued Pilgrim's Pride.
+homepage_url: https://www.pilgrims.com
+list_date: '1986-11-14'
+locale: us
+market: stocks
+market_cap: 11789479794.61
+name: Pilgrims Pride Corporation
+phone_number: (970) 506-8000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5PSN1
+share_class_shares_outstanding: 237547447
+sic_code: '2015'
+sic_description: POULTRY SLAUGHTERING AND PROCESSING
+ticker: PPC
+ticker_root: PPC
+total_employees: 62200
+type: CS
+weighted_shares_outstanding: 237547447

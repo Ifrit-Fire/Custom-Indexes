@@ -1,0 +1,25 @@
+active: true
+cik: 0001819580
+composite_figi: BBG00Y1STTN2
+currency_name: usd
+description: Yatsen Holding Ltd is engaged in the retail business of beauty products,
+    skincare items, and other cosmetic products. The group's principal operations
+    are currently organized into three segments on a product category basis, namely
+    Color Cosmetics Brands, Skincare Brands, and others. The company's majority of
+    revenue is generated from sales of Color Cosmetics Brands.
+homepage_url: https://www.yatsenglobal.com
+list_date: '2020-11-19'
+locale: us
+market: stocks
+market_cap: 857638578.6
+name: Yatsen Holding Limited American Depositary Shares, each representing twenty
+    (20) Class A Ordinary Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00Y1STVH4
+share_class_shares_outstanding: 62190558
+ticker: YSG
+ticker_root: YSG
+total_employees: 1350
+type: ADRC
+weighted_shares_outstanding: 92219202

@@ -1,0 +1,28 @@
+active: true
+cik: 0001691445
+composite_figi: BBG00HZ6P0P5
+currency_name: usd
+description: FinVolution Group is a provider of online consumer finance in China.
+    The company offers various loan products, making financial services available
+    to borrowers anytime, anywhere; designs a loan transaction process, and offers
+    tailored risk-based pricing. It offers short-term loans to borrowers to meet immediate
+    credit needs while allowing them to gradually establish their credit history through
+    activities on the company's platform. The company generates revenues from fees
+    charged to borrowers. The Group's long-lived assets are located in the PRC, and
+    its revenues are derived from within the PRC.
+homepage_url: https://www.finvgroup.com
+list_date: '2017-11-10'
+locale: us
+market: stocks
+market_cap: 2290861303.4399996
+name: FinVolution Group American depositary shares, each representing five Class A
+    ordinary shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00HZ6P0Q4
+share_class_shares_outstanding: 140073861
+ticker: FINV
+ticker_root: FINV
+total_employees: 3623
+type: ADRC
+weighted_shares_outstanding: 253413861

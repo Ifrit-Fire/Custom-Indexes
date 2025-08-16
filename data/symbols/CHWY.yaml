@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 7700 WEST SUNRISE BOULEVARD
+    city: PLANTATION
+    postal_code: '33322'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2hld3kuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2hld3kuY29t/images/2025-04-04_logo.svg
+cik: '0001766502'
+composite_figi: BBG00P19DKZ6
+currency_name: usd
+description: Chewy is the largest e-commerce petcare retailer in the US, generating
+    $11.9 billion in fiscal 2024 sales across pet food, treats, hard goods, and pharmacy
+    categories. The firm was founded in 2011, acquired by PetSmart in 2017, and tapped
+    public markets as a stand-alone company in 2019 after spending a couple of years
+    developing under the aegis of the pet superstore chain. The firm generates sales
+    from pet food, treats, over-the-counter medications, medical prescription fulfillment,
+    and hard goods like crates, leashes, and bowls.
+homepage_url: https://www.chewy.com
+list_date: '2019-06-14'
+locale: us
+market: stocks
+market_cap: 16269031031.539999
+name: Chewy, Inc.
+phone_number: 786-320-7111
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00P19DLQ4
+share_class_shares_outstanding: 195511443
+sic_code: '5961'
+sic_description: RETAIL-CATALOG & MAIL-ORDER HOUSES
+ticker: CHWY
+ticker_root: CHWY
+total_employees: 18000
+type: CS
+weighted_shares_outstanding: 412814794

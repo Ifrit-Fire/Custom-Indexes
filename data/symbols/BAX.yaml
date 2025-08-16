@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: ONE BAXTER PARKWAY
+    city: DEERFIELD
+    postal_code: '60015'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmF4dGVyLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmF4dGVyLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000010456'
+composite_figi: BBG000BCVJ77
+currency_name: usd
+description: Baxter offers a variety of medical supplies and equipment to providers.
+    From its legacy operations, Baxter sells injectable therapies for use in care
+    settings, including IV pumps, administrative sets, and solutions; nutritional
+    products; and surgical sealants and hemostatic agents. Baxter expanded its portfolio
+    of hospital-focused offerings by acquiring Hillrom in late 2021, which added basic
+    equipment like hospital beds, operating room equipment, and patient monitoring
+    tools to the portfolio. Baxter also sold its kidney care tools in early 2025.
+homepage_url: https://www.baxter.com
+list_date: '1961-05-15'
+locale: us
+market: stocks
+market_cap: 12383403780.71
+name: Baxter International Inc.
+phone_number: (224) 948-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P1K3
+share_class_shares_outstanding: 513621061
+sic_code: '3841'
+sic_description: SURGICAL & MEDICAL INSTRUMENTS & APPARATUS
+ticker: BAX
+ticker_root: BAX
+total_employees: 38000
+type: CS
+weighted_shares_outstanding: 513621061

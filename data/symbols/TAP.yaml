@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: P.O. BOX 4030
+    address2: BC555
+    city: GOLDEN
+    postal_code: '80401'
+    state: CO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9sc29uY29vcnMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9sc29uY29vcnMuY29t/images/2025-04-04_logo.svg
+cik: '0000024545'
+composite_figi: BBG000BS7KS3
+currency_name: usd
+description: Molson Coors owns well-known beer brands including Miller, Coors, Blue
+    Moon, and Carling and ranks as the second-largest beer maker in both value and
+    volume terms in the US, Canada, and the United Kingdom. Through licensing agreements,
+    the firm also brews and distributes beer and hard seltzer under partner brands
+    from Heineken, Anheuser-Busch InBev, Asahi, and Coca-Cola. The brewer uses independent
+    distributors in the US, given the three-tier distribution requirements, while
+    using a combination of distributors and an in-house sales team in Canada and Europe.
+    North America remains its largest market, contributing over 80% of total revenue.
+homepage_url: https://www.molsoncoors.com
+list_date: '1975-06-10'
+locale: us
+market: stocks
+market_cap: 10224282288.42
+name: Molson Coors Beverage Company Class B
+phone_number: 303-279-6565
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VQ21
+share_class_shares_outstanding: 189837546
+sic_code: '2082'
+sic_description: MALT BEVERAGES
+ticker: TAP
+ticker_root: TAP
+total_employees: 16800
+type: CS
+weighted_shares_outstanding: 197723502

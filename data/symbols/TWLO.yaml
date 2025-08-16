@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 101 SPEAR STREET
+    address2: SUITE 500
+    city: San Francisco
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHdpbGlvLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHdpbGlvLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001447669
+composite_figi: BBG0029ZX840
+currency_name: usd
+description: Twilio is a cloud-based communications platform-as-a-service company
+    offering communication building blocks that allow for a fully customized customer
+    engagement experience spanning voice, video, chat, and SMS messaging. It does
+    this through various application programming interfaces and prebuilt solution
+    applications aimed at improving customer engagement. The company leverages its
+    Super Network, a global network of carrier relationships, to facilitate high-speed,
+    cost-effective communication.
+homepage_url: https://www.twilio.com
+list_date: '2016-06-23'
+locale: us
+market: stocks
+market_cap: 15605732066.259998
+name: Twilio Inc.
+phone_number: 415-390-2337
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0029ZX859
+share_class_shares_outstanding: 152674214
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: TWLO
+ticker_root: TWLO
+total_employees: 5535
+type: CS
+weighted_shares_outstanding: 153433606

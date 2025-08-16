@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 4100 COCA COLA PLZ
+    city: CHARLOTTE
+    postal_code: '28211'
+    state: NC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29rZWNvbnNvbGlkYXRlZC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29rZWNvbnNvbGlkYXRlZC5jb20/images/2025-04-04_logo.png
+cik: '0000317540'
+composite_figi: BBG000BG1SX2
+currency_name: usd
+description: 'Coca-Cola Consolidated Inc distributes, markets and manufactures nonalcoholic
+    beverages. It offer a range of nonalcoholic beverage products and flavors, including
+    both sparkling and still beverages. Sparkling beverages are carbonated beverages
+    and the Company''s principal sparkling beverage is Coca Cola. Still beverages
+    include energy products and noncarbonated beverages such as bottled water, ready-to-drink
+    tea, ready-to-drink coffee, enhanced water, juices and sports drinks. The Company
+    has three operating segments: Nonalcoholic Beverages, All Other and Eliminations.
+    key revenue is generated from Nonalcoholic Beverages.'
+homepage_url: https://www.cokeconsolidated.com
+list_date: '1972-09-21'
+locale: us
+market: stocks
+market_cap: 10000567665.5
+name: Coca-Cola Consolidated, Inc. Common Stock
+phone_number: (980) 392-8298
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5Q0W1
+share_class_shares_outstanding: 76838945
+sic_code: '2086'
+sic_description: BOTTLED & CANNED SOFT DRINKS & CARBONATED WATERS
+ticker: COKE
+ticker_root: COKE
+total_employees: 17000
+type: CS
+weighted_shares_outstanding: 86885905

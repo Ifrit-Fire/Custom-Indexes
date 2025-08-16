@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 3475 EAST FOOTHILL BOULEVARD
+    city: PASADENA
+    postal_code: '91107'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGV0cmF0ZWNoLmNvbQ/images/2024-10-01_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGV0cmF0ZWNoLmNvbQ/images/2024-10-01_logo.svg
+cik: 0000831641
+composite_figi: BBG000BYZ0Q5
+currency_name: usd
+description: Tetra Tech Inc provides consulting and engineering services for environmental,
+    infrastructure, resource management, energy, and international development markets.
+    It specializes in providing water-related services for public and private clients.
+    It designs infrastructure, facilities, and other structures with complex plans
+    and resource management. Tetra Tech has two reportable segments. Its Government
+    Services Group (GSG) segment includes activities with U.S. government clients
+    (federal, state and local) and activities with development agencies world-wide.
+    Commercial/International Services Group (CIG) segment, which derives maximum revenue,
+    includes activities with U.S. commercial clients and international clients other
+    than development agencies.
+homepage_url: https://www.tetratech.com
+list_date: '1991-12-01'
+locale: us
+market: stocks
+market_cap: 9756776787.560001
+name: Tetra Tech Inc
+phone_number: (626) 351-4664
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5YYH5
+share_class_shares_outstanding: 262773412
+sic_code: '8711'
+sic_description: SERVICES-ENGINEERING SERVICES
+ticker: TTEK
+ticker_root: TTEK
+total_employees: 30000
+type: CS
+weighted_shares_outstanding: 262773412

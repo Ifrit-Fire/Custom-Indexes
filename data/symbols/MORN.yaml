@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 22 WEST WASHINGTON STREET
+    city: CHICAGO
+    postal_code: '60602'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9ybmluZ3N0YXIuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9ybmluZ3N0YXIuY29t/images/2025-04-04_logo.svg
+cik: 0001289419
+composite_figi: BBG000CGQ4F7
+currency_name: usd
+description: 'Morningstar Inc is a provider of independent investment research to
+    financial advisers, asset managers, and investors. The company focuses its operations
+    on two core sectors: data and research. It offers data on investments such as
+    mutual funds, stocks, exchange-traded funds, closed-end funds, separate accounts,
+    and variable annuities. Further, the company tracks real-time market data of equity,
+    derivative, currency exchanges, and other investments. In its research operation,
+    Morningstar offers analyst research on passive and active mutual funds, alternative
+    funds, and college saving plans. Morningstar''s majority of the revenue is generated
+    in the United States of America.'
+homepage_url: https://www.morningstar.com
+list_date: '2005-05-03'
+locale: us
+market: stocks
+market_cap: 11010498243.85
+name: Morningstar, Inc.
+phone_number: (312) 696-6000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SC6FV6
+share_class_shares_outstanding: 42177737
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: MORN
+ticker_root: MORN
+total_employees: 11085
+type: CS
+weighted_shares_outstanding: 42177737

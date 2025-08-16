@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1929 ALLEN PKWY
+    address2: P O BOX 130548
+    city: HOUSTON
+    postal_code: '77019'
+    state: TX
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2NpLWNvcnAuY29t/images/2025-04-04_logo.png
+cik: 0000089089
+composite_figi: BBG000BTHH16
+currency_name: usd
+description: Service Corp International is a personal services company that provides
+    funeral and cemetery services and products from its locations throughout the United
+    States and Canada. The company segments its operations into funeral service and
+    cemetery business functions. At its funeral service locations, Service Corp. provides
+    all professional services, facilities, vehicles, and merchandise related to funerals
+    and cremations. Cemetery locations provide cemetery property, memorial markers,
+    and graveyard services to customers. Service Corp. derives the majority of its
+    revenue from its funeral services segment. Geographically, the company derives
+    a majority of its revenue from the United States.
+homepage_url: https://www.sci-corp.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 11506693476.9
+name: Service Corporation International
+phone_number: (713) 522-5141
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5WBJ5
+share_class_shares_outstanding: 140240018
+sic_code: '7200'
+sic_description: SERVICES-PERSONAL SERVICES
+ticker: SCI
+ticker_root: SCI
+total_employees: 24953
+type: CS
+weighted_shares_outstanding: 140240018

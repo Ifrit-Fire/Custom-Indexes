@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 711 HIGH STREET
+    city: DES MOINES
+    postal_code: '50392'
+    state: IA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cHJpbmNpcGFsLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cHJpbmNpcGFsLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001126328
+composite_figi: BBG000NSCNT7
+currency_name: usd
+description: Principal Financial Group Inc is a financial services provider. It offers
+    various financial products and services including retirement, asset management,
+    and workplace benefits and protection solutions to individuals and institutional
+    clients. The company, along with its subsidiaries, operates in the following reportable
+    segments; Retirement and Income Solutions, Principal Asset Management, and Benefits
+    and Protection. Maximum revenue is generated from the Retirement and Income Solutions
+    segment which provides workplace savings and retirement solutions, banking, trust
+    and custodial services, individual variable annuities (including RILAs), pension
+    risk transfer, and investment services to businesses, their employees, and other
+    individuals.
+homepage_url: https://www.principal.com
+list_date: '2001-10-23'
+locale: us
+market: stocks
+market_cap: 17451679667.940002
+name: Principal Financial Group, Inc.
+phone_number: (515) 247-5111
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SD3148
+share_class_shares_outstanding: 222768441
+sic_code: '6321'
+sic_description: ACCIDENT & HEALTH INSURANCE
+ticker: PFG
+ticker_root: PFG
+total_employees: 19700
+type: CS
+weighted_shares_outstanding: 222768441

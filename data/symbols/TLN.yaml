@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 2929 ALLEN PKWY, SUITE 2200
+    city: HOUSTON
+    postal_code: '77019'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGFsZW5lbmVyZ3kuY29t/images/2025-04-04_icon.jpeg
+cik: '0001622536'
+composite_figi: BBG01GWQVVD3
+currency_name: usd
+description: Talen Energy Corp is an independent power producer and energy infrastructure
+    company. The company owns and operates approximately 10.7 gigawatts of power infrastructure
+    in the United States. The group produces and sells electricity, capacity, and
+    ancillary services into wholesale U.S. power markets, including PJM and WECC,
+    with its generation fleet located in the Mid-Atlantic and Montana.
+homepage_url: https://www.talenenergy.com
+list_date: '2023-06-01'
+locale: us
+market: stocks
+market_cap: 17371841409.0
+name: Talen Energy Corporation Common Stock
+phone_number: 888-211-6011
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01GWQVW78
+share_class_shares_outstanding: 45685316
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: TLN
+ticker_root: TLN
+total_employees: 1894
+type: CS
+weighted_shares_outstanding: 45685316

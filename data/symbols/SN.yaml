@@ -1,0 +1,28 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2hhcmtuaW5qYS5jb20/images/2025-04-04_logo.svg
+cik: 0001957132
+currency_name: usd
+description: SharkNinja Inc is a product design and technology company that creates
+    5-star-rated lifestyle solutions through inventive products for consumers around
+    the world. Its product categories include Cleaning, Cooking, Food Preparation,
+    Home Environment and Beauty products. It sells vacuum cleaners, cooking pots,
+    fryers, hair dryers, etc. The SharkNinja Group is expected to carry on the design,
+    production, marketing, and distribution of the Shark and Ninja brands of small
+    household appliances in North America, Europe and other selected international
+    markets (excluding the Asia Pacific Region and Greater China). Currently, the
+    majority of the revenue is derived from the U.S. market.
+homepage_url: https://www.sharkninja.com
+list_date: '2023-07-31'
+locale: us
+market: stocks
+market_cap: 17065776339.689999
+name: SharkNinja, Inc.
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 141041197
+ticker: SN
+ticker_root: SN
+total_employees: 3688
+type: CS
+weighted_shares_outstanding: 141051131

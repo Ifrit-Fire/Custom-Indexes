@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 13355 NOEL ROAD
+    address2: SUITE 400
+    city: DALLAS
+    postal_code: '75240'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWVjb20uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWVjb20uY29t/images/2025-04-04_logo.svg
+cik: 0000868857
+composite_figi: BBG000F61RJ8
+currency_name: usd
+description: Aecom is one of the largest global providers of design, engineering,
+    construction, and management services. It serves a broad spectrum of end markets
+    including infrastructure, water, transportation, and energy. Based in Los Angeles,
+    Aecom has a presence in over 150 countries and employs 51,000. The company generated
+    $16.1 billion in sales in fiscal 2024.
+homepage_url: https://www.aecom.com
+list_date: '2007-05-10'
+locale: us
+market: stocks
+market_cap: 16161073244.019999
+name: Aecom
+phone_number: (972) 788-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SKTTF1
+share_class_shares_outstanding: 132446101
+sic_code: '8711'
+sic_description: SERVICES-ENGINEERING SERVICES
+ticker: ACM
+ticker_root: ACM
+total_employees: 51000
+type: CS
+weighted_shares_outstanding: 132446101

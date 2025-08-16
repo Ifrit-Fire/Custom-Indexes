@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1801 AUGUSTINE CUT-OFF
+    city: WILMINGTON
+    postal_code: '19803'
+    state: DE
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW5jeXRlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW5jeXRlLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000879169
+composite_figi: BBG000BNPSQ9
+currency_name: usd
+description: Incyte focuses on the discovery and development of small-molecule drugs.
+    The firm's leading drug, Jakafi, treats two types of rare blood cancer and graft
+    versus host disease and is partnered with Novartis. Incyte's other marketed drugs
+    include rheumatoid arthritis treatment Olumiant (licensed to Lilly), and oncology
+    drugs Iclusig (chronic myeloid leukemia), Pemazyre (cholangiocarcinoma), Tabrecta
+    (lung cancer), and Monjuvi (diffuse large B-cell lymphoma). The firm's first dermatology
+    product, Opzelura, was approved in 2021 for atopic dermatitis and 2022 for vitiligo.
+    Incyte's pipeline includes a broad array of oncology and dermatology programs.
+homepage_url: https://www.incyte.com
+list_date: '1993-11-03'
+locale: us
+market: stocks
+market_cap: 16764457048.249998
+name: Incyte Genomics Inc
+phone_number: (302) 498-6700
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S8Q6N2
+share_class_shares_outstanding: 195276145
+sic_code: '8731'
+sic_description: SERVICES-COMMERCIAL PHYSICAL & BIOLOGICAL RESEARCH
+ticker: INCY
+ticker_root: INCY
+total_employees: 2617
+type: CS
+weighted_shares_outstanding: 195276145

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 200 FIFTH AVE
+    city: NEW YORK
+    postal_code: '10010'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGtvZ3JwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGtvZ3JwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001973266
+composite_figi: BBG01G9JKWV5
+currency_name: usd
+description: 'TKO Group Holdings Inc is a sports and sports entertainment company
+    that operates combat sports and sports entertainment companies. It owns and manages
+    valuable sports and entertainment intellectual property. The company distributes
+    content and monetizes its intellectual property through four principal activities:
+    Media Rights and Content, Live Events, Sponsorship, and Consumer Products Licensing.
+    The company has two reportable segments, UFC and WWE. The company generates majority
+    of revenue from the UFC segment. The UFC segment revenue consists of media rights
+    fees associated with the distribution of its programming content, ticket sales,
+    and site fees associated with the business''s international live events, sponsorship,
+    and consumer products licensing agreements of UFC-branded products.'
+homepage_url: https://www.tkogrp.com
+list_date: '2023-09-12'
+locale: us
+market: stocks
+market_cap: 15711143554.08
+name: TKO Group Holdings, Inc.
+phone_number: 646-558-8333
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG01G9JKWW4
+share_class_shares_outstanding: 82136886
+sic_code: '7900'
+sic_description: SERVICES-AMUSEMENT & RECREATION SERVICES
+ticker: TKO
+ticker_root: TKO
+total_employees: 1300
+type: CS
+weighted_shares_outstanding: 82136886

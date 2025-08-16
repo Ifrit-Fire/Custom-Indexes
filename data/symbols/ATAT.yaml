@@ -1,0 +1,26 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aXIueWFkdW8uY29t/images/2025-04-04_logo.png
+cik: 0001853717
+composite_figi: BBG011C6KJG8
+currency_name: usd
+description: Atour Lifestyle Holdings Ltd is an upper-midscale hotel chain in China.
+    The company derives revenues from franchise and management fees from its manachised
+    hotels and sales of hotel supplies to manachised hotels, Operations of leased
+    hotels, and sales of retail products. The company has one operating segment, which
+    is the Atour Group.
+homepage_url: https://ir.yaduo.com
+list_date: '2022-11-11'
+locale: us
+market: stocks
+market_cap: 4875200351.28
+name: Atour Lifestyle Holdings Limited American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG011C6KK93
+share_class_shares_outstanding: 113625646
+ticker: ATAT
+ticker_root: ATAT
+total_employees: 5488
+type: ADRC
+weighted_shares_outstanding: 138185951

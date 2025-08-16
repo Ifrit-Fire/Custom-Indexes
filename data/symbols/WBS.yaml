@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 200 ELM STREET
+    city: STAMFORD
+    postal_code: 06902
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2Vic3RlcmJhbmsuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2Vic3RlcmJhbmsuY29t/images/2025-04-04_logo.svg
+cik: 0000801337
+composite_figi: BBG000BWMX63
+currency_name: usd
+description: Webster Financial Corp is a full-service provider of financial services,
+    offering commercial and consumer banking, mortgages, and investment advisory along
+    with trust and wealth management services in Connecticut, New York, Rhode Island,
+    Massachusetts, and Pennsylvania. The company's segment includes Commercial Banking,
+    HSA Bank, and Consumer Banking. It generates maximum revenue from the Commercial
+    Banking segment.
+homepage_url: https://www.websterbank.com
+list_date: '1986-12-12'
+locale: us
+market: stocks
+market_cap: 9678826859.52
+name: Webster Financial Corporation Waterbury
+phone_number: 203-578-2202
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XCP5
+share_class_shares_outstanding: 168229092
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: WBS
+ticker_root: WBS
+total_employees: 4407
+type: CS
+weighted_shares_outstanding: 166188648

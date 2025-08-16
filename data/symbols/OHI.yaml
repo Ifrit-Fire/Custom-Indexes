@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 303 INTERNATIONAL CIRCLE,
+    address2: SUITE 200
+    city: HUNT VALLEY
+    postal_code: '21030'
+    state: MD
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b21lZ2FoZWFsdGhjYXJlLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000888491
+composite_figi: BBG000BGBTC2
+currency_name: usd
+description: Omega Healthcare Investors Inc is a healthcare facility real estate investment
+    trust that invests in the United States real estate markets. Omega's portfolio
+    focuses on long-term healthcare facilities. Omega has one reportable segment consisting
+    of investments in healthcare-related real estate properties located in the United
+    States and the United Kingdom. Its core business is to provide financing and capital
+    to the long-term healthcare industry with a particular focus on skilled nursing
+    facilities (SNFs), assisted living facilities (ALFs), and to a lesser extent,
+    independent living facilities (ILFs), rehabilitation and acute care facilities
+    (specialty facilities) and medical office buildings (MOBs).
+homepage_url: https://www.omegahealthcare.com
+list_date: '1992-08-07'
+locale: us
+market: stocks
+market_cap: 11918000000.0
+name: Omega Healthcare Investors Inc.
+phone_number: 410-427-1700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S736L1
+share_class_shares_outstanding: 295000
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: OHI
+ticker_root: OHI
+total_employees: 60
+type: CS
+weighted_shares_outstanding: 295000000

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 2628 PEARL RD
+    address2: P O BOX 777
+    city: MEDINA
+    postal_code: '44258'
+    state: OH
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cnBtaW5jLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000110621'
+composite_figi: BBG000DCNK80
+currency_name: usd
+description: RPM International Inc manufactures and sells a variety of paints, coatings,
+    and adhesives. The firm organizes itself into four segments based on product type.
+    The construction products group sells coatings, roofing, insulation, and other
+    products to distributors, contractors, and end consumers globally. The performance
+    coatings group produces coatings that are used in construction and industrial
+    applications like floorings and corrosion control. The consumer group sells paint,
+    finishes, and similar products to individual consumers through hardware and craft
+    stores. The specialty products group sells a line of products ranging from niche
+    applications of the other groups to marine finishes, to edible food colorings.
+    The majority of revenue is from the construction products and North America.
+homepage_url: https://www.rpminc.com
+list_date: '1972-08-21'
+locale: us
+market: stocks
+market_cap: 16117640070.75
+name: RPM International, Inc.
+phone_number: (330) 273-5090
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7X317
+share_class_shares_outstanding: 128376265
+sic_code: '2851'
+sic_description: PAINTS, VARNISHES, LACQUERS, ENAMELS & ALLIED PRODS
+ticker: RPM
+ticker_root: RPM
+total_employees: 17778
+type: CS
+weighted_shares_outstanding: 128376265

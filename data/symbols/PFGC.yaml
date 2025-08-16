@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 12500 WEST CREEK PARKWAY
+    city: RICHMOND
+    postal_code: '23238'
+    state: VA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGZnYy5jb20/images/2025-04-04_logo.svg
+cik: 0001618673
+composite_figi: BBG009XW2WB8
+currency_name: usd
+description: "Performance Food Group Co , markets and distributes national and company-branded\
+    \ food and food-related products. The company also specializes in distributing\
+    \ candy, snacks, beverages, cigarettes, other tobacco products, health and beauty\
+    \ care products and other items to vending distributors,\_box retailers, theaters,\
+    \ convenience stores, drug stores, grocery stores, travel providers, and hospitality\
+    \ providers. The company has three reportable segments: Foodservice, Vistar, and\
+    \ Convenience."
+homepage_url: https://www.pfgc.com
+list_date: '2015-10-01'
+locale: us
+market: stocks
+market_cap: 15807325645.539999
+name: Performance Food Group Company
+phone_number: (804) 484-7700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG009XW2WC7
+share_class_shares_outstanding: 156090902
+sic_code: '5141'
+sic_description: WHOLESALE-GROCERIES, GENERAL LINE
+ticker: PFGC
+ticker_root: PFGC
+total_employees: 37000
+type: CS
+weighted_shares_outstanding: 156090902

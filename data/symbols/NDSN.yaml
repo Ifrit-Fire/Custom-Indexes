@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 28601 CLEMENS RD
+    city: WESTLAKE
+    postal_code: '44145'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bm9yZHNvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bm9yZHNvbi5jb20/images/2025-04-04_logo.svg
+cik: '0000072331'
+composite_figi: BBG000BPWGR1
+currency_name: usd
+description: 'Nordson manufactures equipment (including pumps, valves, dispensers,
+    applicators, filters, and pelletizers) used for dispensing adhesives, coatings,
+    sealants, and other materials. The firm serves a diverse range of end markets
+    including packaging, medical, electronics, and industrial. Nordson''s business
+    is organized into three segments: industrial precision solutions, medical and
+    fluid solutions, and advanced technology solutions. The company generated approximately
+    $2.7 billion in revenue in its fiscal 2024.'
+homepage_url: https://www.nordson.com
+list_date: '1979-12-13'
+locale: us
+market: stocks
+market_cap: 12521252254.68
+name: Nordson Corp
+phone_number: (440) 892-1580
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5TKK7
+share_class_shares_outstanding: 56508946
+sic_code: '3569'
+sic_description: GENERAL INDUSTRIAL MACHINERY & EQUIPMENT, NEC
+ticker: NDSN
+ticker_root: NDSN
+total_employees: 7800
+type: CS
+weighted_shares_outstanding: 56508946

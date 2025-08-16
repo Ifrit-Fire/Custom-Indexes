@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 367 S GULPH RD
+    city: KING OF PRUSSIA
+    postal_code: '19406'
+    state: PA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dWhzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000352915
+composite_figi: BBG000CB8Q50
+currency_name: usd
+description: 'Universal Health Services Inc owns and operates acute care hospitals,
+    behavior health centers, surgical hospitals, ambulatory surgery centers, and radiation
+    oncology centers. The firm operates in two segments: Acute Care Hospital Services
+    and Behavioral Health Services. The company generates the majority of its revenue
+    from the Acute Care Hospital Services segment. The Acute Care Hospital Services
+    segment includes the firm''s acute care hospitals, surgical hospitals, and surgery
+    and oncology centers.'
+homepage_url: https://www.uhs.com
+list_date: '1981-07-09'
+locale: us
+market: stocks
+market_cap: 11360142551.9
+name: Universal Health Services, Inc. Class B
+phone_number: (610) 768-3300
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6S976
+share_class_shares_outstanding: 57951938
+sic_code: '8062'
+sic_description: SERVICES-GENERAL MEDICAL & SURGICAL HOSPITALS, NEC
+ticker: UHS
+ticker_root: UHS
+total_employees: 99000
+type: CS
+weighted_shares_outstanding: 63638690

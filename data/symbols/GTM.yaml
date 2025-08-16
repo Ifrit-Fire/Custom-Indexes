@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 330 W COLUMBIA WAY
+    address2: FLOOR 8
+    city: VANCOUVER
+    postal_code: '98660'
+    state: WA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/em9vbWluZm8uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/em9vbWluZm8uY29t/images/2025-04-04_logo.svg
+cik: 0001794515
+composite_figi: BBG00S1HJ3M8
+currency_name: usd
+description: ZoomInfo Technologies Inc provides a go-to-market intelligence platform
+    for sales and marketing teams. Its cloud-based go-to-market data and insights
+    platform deliver comprehensive and high-quality intelligence and analytics to
+    provide sales and marketing professionals with accurate information and insights
+    on the organizations and professionals. Nearly all of its revenue is derived from
+    the United States.
+homepage_url: https://www.zoominfo.com
+list_date: '2020-06-04'
+locale: us
+market: stocks
+market_cap: 3214984600.47
+name: ZoomInfo Technologies Inc Common Stock
+phone_number: 800-914-1220
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00S1HJ4F4
+share_class_shares_outstanding: 318630783
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: GTM
+ticker_root: GTM
+total_employees: 3508
+type: CS
+weighted_shares_outstanding: 318630783

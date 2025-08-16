@@ -1,0 +1,32 @@
+active: true
+address:
+    address1: 16100 N. 71ST STREET, SUITE 400
+    city: SCOTTSDALE
+    postal_code: '85254'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmVsaWFuY2UuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmVsaWFuY2UuY29t/images/2025-04-04_logo.png
+cik: 0000861884
+composite_figi: BBG000CJ2181
+currency_name: usd
+description: Reliance Inc is a diversified metal solutions provider and metals service
+    center company. It provides value-added metals processing services and distributes.
+homepage_url: https://www.reliance.com
+list_date: '1994-09-22'
+locale: us
+market: stocks
+market_cap: 15444619837.380001
+name: Reliance, Inc.
+phone_number: 213-687-7700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S81M27
+share_class_shares_outstanding: 52593543
+sic_code: '5051'
+sic_description: WHOLESALE-METALS SERVICE CENTERS & OFFICES
+ticker: RS
+ticker_root: RS
+total_employees: 16200
+type: CS
+weighted_shares_outstanding: 52593543

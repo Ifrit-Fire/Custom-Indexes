@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 12515-8 RESEARCH BLVD
+    address2: SUITE 300
+    city: AUSTIN
+    postal_code: '78759'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZmxleC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmxleC5jb20/images/2025-04-04_logo.svg
+cik: 0000866374
+currency_name: usd
+description: Flex Ltd is a contract manufacturing company providing comprehensive
+    electronics design, manufacturing, and product management services to electronics
+    and technology companies. The company's operating segments include Flex Agility
+    Solutions (FAS) and Flex Reliability Solutions (FRS). Flex Agility Solutions segment
+    includes markets such as Communications, Enterprise and Cloud; Lifestyle; and
+    Consumer Devices. Flex Reliability Solutions segment includes markets such as
+    Automotive, Health Solutions, and Industrial.
+homepage_url: https://www.flex.com
+list_date: '1987-09-28'
+locale: us
+market: stocks
+market_cap: 18897605845.05
+name: Flex Ltd. Ordinary Shares
+phone_number: (512) 425-7929
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 375324843
+sic_code: '3672'
+sic_description: PRINTED CIRCUIT BOARDS
+ticker: FLEX
+ticker_root: FLEX
+total_employees: 147979
+type: CS
+weighted_shares_outstanding: 375324843

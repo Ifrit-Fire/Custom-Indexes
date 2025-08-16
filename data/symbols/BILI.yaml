@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmlsaWJpbGkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmlsaWJpbGkuY29t/images/2025-04-04_logo.svg
+cik: 0001723690
+composite_figi: BBG00K7T3037
+currency_name: usd
+description: Bilibili is a Chinese online entertainment platform best known for its
+    YouTube-like video-sharing site. Founded in 2009, it initially focused on long-form
+    content centered around anime, comics, and gaming, catering primarily to Gen Z
+    users. Over time, the platform has broadened its content offerings to include
+    a wider range of interests, successfully attracting a more diverse audience beyond
+    the Gen Z demographic.
+homepage_url: https://www.bilibili.com
+list_date: '2018-03-28'
+locale: us
+market: stocks
+market_cap: 10059457519.42
+name: Bilibili Inc. American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00K7T30T9
+share_class_shares_outstanding: 331680356
+ticker: BILI
+ticker_root: BILI
+total_employees: 8088
+type: ADRC
+weighted_shares_outstanding: 412780366

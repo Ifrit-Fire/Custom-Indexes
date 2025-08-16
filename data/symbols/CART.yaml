@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 50 BEALE STREET, SUITE 600
+    city: SAN FRANCISCO
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW5zdGFjYXJ0LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW5zdGFjYXJ0LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001579091
+composite_figi: BBG00KG5VJF4
+currency_name: usd
+description: Maplebear (Instacart) operates a leading grocery delivery platform in
+    the United States and Canada. The company partners with various regional and national
+    grocers, which offer their selection of food and other goods to customers through
+    Instacart's ubiquitous platform. Once an item is ordered through Instacart's site,
+    the item is picked and delivered to the customer's home by one of the platform's
+    600,000 shoppers, who are classified as independent contractors. Instacart earns
+    fees based on average order value and leverages its platform's high usage to sell
+    advertising, mainly to consumer-packaged goods companies. Instacart currently
+    has about 8 million monthly active users (or orderers) on its platform.
+homepage_url: https://www.instacart.com
+list_date: '2023-09-19'
+locale: us
+market: stocks
+market_cap: 11883700540.14
+name: Maplebear Inc. Common Stock
+phone_number: (888) 246-7822
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00KG5VJG3
+share_class_shares_outstanding: 262517137
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: CART
+ticker_root: CART
+total_employees: 3265
+type: CS
+weighted_shares_outstanding: 263438274

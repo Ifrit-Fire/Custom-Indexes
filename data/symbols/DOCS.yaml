@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 500 THIRD STREET, SUITE 510
+    city: SAN FRANCISCO
+    postal_code: '94107'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZG94aW1pdHkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZG94aW1pdHkuY29t/images/2025-04-04_logo.svg
+cik: '0001516513'
+composite_figi: BBG0026ZJQX7
+currency_name: usd
+description: Doximity Inc is a digital platform for U.S. medical professionals. The
+    cloud-based platform provides members with tools specifically built for medical
+    professionals, enabling them to collaborate with their colleagues, securely coordinate
+    patient care, conduct virtual patient visits, stay up-to-date with the latest
+    medical news and research, and manage their careers and on-call schedules.
+homepage_url: https://www.doximity.com
+list_date: '2021-06-24'
+locale: us
+market: stocks
+market_cap: 11990911365.179998
+name: Doximity, Inc.
+phone_number: (650) 549-4330
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0026ZJQY6
+share_class_shares_outstanding: 136906542
+sic_code: '7371'
+sic_description: SERVICES-COMPUTER PROGRAMMING SERVICES
+ticker: DOCS
+ticker_root: DOCS
+total_employees: 830
+type: CS
+weighted_shares_outstanding: 187299459

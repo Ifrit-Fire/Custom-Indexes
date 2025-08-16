@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1745 SHEA CENTER DRIVE
+    address2: SUITE 200
+    city: HIGHLANDS RANCH
+    postal_code: '80129'
+    state: CO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dWRyLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dWRyLmNvbQ/images/2025-04-04_logo.png
+cik: 0000074208
+composite_figi: BBG000C41023
+currency_name: usd
+description: UDR Inc is a real estate investment trust that owns, operates, acquires,
+    renovates, develops, redevelops, disposes of, and manages multifamily apartment
+    communities in targeted markets located in the United States. The company has
+    two reportable segments; Same-Store Communities segment represents those communities
+    acquired, developed, and stabilized; and Non-Mature Communities/Other segment
+    represents those communities that do not meet the criteria to be included in Same-Store
+    Communities, including, but not limited to, recently acquired, developed and redeveloped
+    communities, and the non-apartment components of mixed-use properties. It generates
+    key revenue from Same-Store Communities.
+homepage_url: https://www.udr.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 12756866969.0
+name: UDR, Inc.
+phone_number: 720-283-6120
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6KCT3
+share_class_shares_outstanding: 331347194
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: UDR
+ticker_root: UDR
+total_employees: 1410
+type: CS
+weighted_shares_outstanding: 331347194

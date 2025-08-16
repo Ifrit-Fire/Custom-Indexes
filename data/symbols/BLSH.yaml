@@ -1,0 +1,23 @@
+active: true
+cik: 0001872195
+currency_name: usd
+description: Bullish is an institutionally focused global digital asset platform focused
+    on providing market infrastructure and information services. Its objective is
+    to provide mission critical products and services that are designed to help institutions
+    grow their businesses, empower individual investors, and drive the adoption of
+    stablecoins, digital assets, and blockchain technology. It expanded its product
+    offering to provide trusted insights, authoritative news, data, indices and transparent
+    analysis to the digital assets industry while facilitating partnerships, investment
+    opportunities, and community engagement through its flagship Consensus conference.
+homepage_url: https://www.bullish.com
+list_date: '2025-08-13'
+locale: us
+market: stocks
+market_cap: 9940494252.0
+name: Bullish
+primary_exchange: XNYS
+round_lot: 100
+ticker: BLSH
+ticker_root: BLSH
+type: CS
+weighted_shares_outstanding: 146183739

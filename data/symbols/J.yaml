@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1999 BRYAN STREET, SUITE 3500
+    city: DALLAS
+    postal_code: '75201'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/amFjb2JzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/amFjb2JzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000052988
+composite_figi: BBG019C1BQR4
+currency_name: usd
+description: Jacobs Solutions is a global provider of engineering, design, procurement,
+    construction, and maintenance services as well as cyber engineering and security
+    solutions. The firm serves industrial, commercial, and government clients in a
+    wide variety of sectors, including water, transportation, healthcare, technology,
+    and chemicals. Jacobs Solutions employs approximately 60,000 workers. The company
+    generated $11.5 billion in revenue in fiscal 2024.
+homepage_url: https://www.jacobs.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 18191059852.420002
+name: Jacobs Solutions Inc.
+phone_number: 214-583-8500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG019C1BQS3
+share_class_shares_outstanding: 119536469
+sic_code: '1600'
+sic_description: HEAVY CONSTRUCTION OTHER THAN BLDG CONST - CONTRACTORS
+ticker: J
+ticker_root: J
+total_employees: 45000
+type: CS
+weighted_shares_outstanding: 119536469

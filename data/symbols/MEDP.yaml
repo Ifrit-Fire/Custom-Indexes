@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 5375 MEDPACE WAY
+    city: CINCINNATI
+    postal_code: '45227'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWVkcGFjZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWVkcGFjZS5jb20/images/2025-04-04_logo.svg
+cik: 0001668397
+composite_figi: BBG0065B7K59
+currency_name: usd
+description: Medpace is a late-stage contract research organization that provides
+    full-service drug-development and clinical trial services to small and midsize
+    biotechnology, pharmaceutical, and medical device firms. It also offers ancillary
+    services, including bioanalytical laboratory services and imaging capabilities.
+    The company was founded over 30 years ago and has more than 5,400 employees across
+    40 countries. Medpace is headquartered in Cincinnati, Ohio, and its operations
+    are primarily based in the US, with additional presence in Europe, Asia, South
+    America, Africa, and Australia. Cinven, a global private equity firm, acquired
+    Medpace for $915 million in 2014 and exited its investment in 2018.
+homepage_url: https://www.medpace.com
+list_date: '2016-08-11'
+locale: us
+market: stocks
+market_cap: 13147536168.0
+name: Medpace Holdings, Inc. Common Stock
+phone_number: (513) 579-9911
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG0065B7K40
+share_class_shares_outstanding: 28093026
+sic_code: '8731'
+sic_description: SERVICES-COMMERCIAL PHYSICAL & BIOLOGICAL RESEARCH
+ticker: MEDP
+ticker_root: MEDP
+total_employees: 6000
+type: CS
+weighted_shares_outstanding: 28093026

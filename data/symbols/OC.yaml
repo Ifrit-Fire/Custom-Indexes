@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: ONE OWENS CORNING PARKWAY
+    city: TOLEDO
+    postal_code: '43659'
+    state: OH
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b3dlbnNjb3JuaW5nLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001370946
+composite_figi: BBG000M44VW8
+currency_name: usd
+description: 'Owens-Corning Inc is a manufacturer of glass fiber utilized in composites
+    and building materials. It has an integrated business model with four reportable
+    segments: Composites, Insulation, Doors, and Roofing. It generates maximum revenue
+    from the Roofing segment. Its Roofing segment laminate and strip asphalt roofing
+    shingles, roofing components, synthetic packaging materials, and oxidized asphalt.
+    It meets the growing demand for longer-lasting, aesthetically attractive laminate
+    products with modest capital investment. Geographically the company generates
+    the majority of its revenue from the United States.'
+homepage_url: https://www.owenscorning.com
+list_date: '2006-11-01'
+locale: us
+market: stocks
+market_cap: 12996558788.779999
+name: Owens Corning
+phone_number: 419-248-8000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SQ7PD2
+share_class_shares_outstanding: 83627558
+sic_code: '3290'
+sic_description: ABRASIVE, ASBESTOS & MISC NONMETALLIC MINERAL PRODS
+ticker: OC
+ticker_root: OC
+total_employees: 25000
+type: CS
+weighted_shares_outstanding: 83627558

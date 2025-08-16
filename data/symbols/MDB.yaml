@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1633 BROADWAY
+    address2: 38TH FLOOR
+    city: NEW YORK
+    postal_code: '10019'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9uZ29kYi5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9uZ29kYi5jb20/images/2025-04-04_logo.svg
+cik: 0001441816
+composite_figi: BBG0022FDRY8
+currency_name: usd
+description: Founded in 2007, MongoDB is a vendor of a document-oriented database
+    that accelerates development processes of new applications. Enterprise customers
+    can choose between the fully managed offering, MongoDB Atlas, or the self-managed
+    version, MongoDB Enterprise Advanced. MongoDB is a popular tool among developers,
+    and its free Community Server has recorded over 500 million downloads since 2009.
+homepage_url: https://www.mongodb.com
+list_date: '2017-10-19'
+locale: us
+market: stocks
+market_cap: 16949999945.59
+name: MongoDB, Inc. Class A
+phone_number: 866-237-8815
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG0022FDRZ7
+share_class_shares_outstanding: 81714313
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: MDB
+ticker_root: MDB
+total_employees: 5558
+type: CS
+weighted_shares_outstanding: 81714313

@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2lsaWNvbm1vdGlvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2lsaWNvbm1vdGlvbi5jb20/images/2025-04-04_logo.svg
+cik: 0001329394
+composite_figi: BBG000GT7XY1
+currency_name: usd
+description: Silicon Motion Technology Corp is engaged in developing NAND flash controllers
+    for SSDs and other solid state storage devices. Its only operating segment is
+    to develop NAND flash controllers and SSDs solutions. The company derives revenue
+    from product categories such as Mobile Storage, Mobile Communications, and others.
+    Silicon's geographical segments are Taiwan, the United States, Korea, China, Singapore,
+    Malaysia, and others. The company products are used in Personal Computing, Smartphone/Tablet/CE,
+    Flash Card/USB Flash Drive, Industrial and Embedded, Automotive, and Enterprise
+    and Data centers.
+homepage_url: https://www.siliconmotion.com
+list_date: '2005-06-30'
+locale: us
+market: stocks
+market_cap: 2604338550.4500003
+name: Silicon Motion Technology Corporation
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SP0YQ8
+share_class_shares_outstanding: 33983670
+ticker: SIMO
+ticker_root: SIMO
+total_employees: 1819
+type: ADRC
+weighted_shares_outstanding: 33983670

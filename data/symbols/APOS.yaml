@@ -1,0 +1,21 @@
+active: true
+address:
+    address1: 9 WEST 57TH STREET, 42ND FLOOR
+    city: NEW YORK
+    postal_code: '10019'
+    state: NY
+cik: 0001858681
+currency_name: usd
+list_date: '2023-08-29'
+locale: us
+market: stocks
+name: Apollo Global Management, Inc. 7.625% Fixed-Rate Resettable Junior Subordinated
+    Notes due 2053
+phone_number: 212-515-3200
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: APOS
+ticker_root: APOS
+type: SP

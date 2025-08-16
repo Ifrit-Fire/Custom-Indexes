@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 108 WILMOT ROAD
+    city: DEERFIELD
+    postal_code: '60015'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2FsZ3JlZW5zYm9vdHNhbGxpYW5jZS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2FsZ3JlZW5zYm9vdHNhbGxpYW5jZS5jb20/images/2025-04-04_logo.svg
+cik: 0001618921
+composite_figi: BBG000BWLMJ4
+currency_name: usd
+description: Walgreens Boots Alliance is one of the largest retail pharmacy chains
+    in the US, with over 8,000 locations. Nearly three quarters of Americans live
+    within five miles of a Walgreens location. Roughly two thirds of revenue is generated
+    from prescription drug sales; Walgreens makes up 20% of total prescription revenue
+    in the US. Walgreens also generates sales from retail products (general wellness
+    consumables and its own branded merchandise), European drug wholesale, and healthcare.
+    With more locations incorporating additional services like Health Corner and Village
+    Medical, Walgreens creates an omnichannel experience for patients and positions
+    itself as a one-stop healthcare provider.
+homepage_url: https://www.walgreensbootsalliance.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 10291516425.75
+name: Walgreens Boots Alliance, Inc
+phone_number: (847) 315-2500
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5XBY7
+share_class_shares_outstanding: 865560675
+sic_code: '5912'
+sic_description: RETAIL-DRUG STORES AND PROPRIETARY STORES
+ticker: WBA
+ticker_root: WBA
+total_employees: 312000
+type: CS
+weighted_shares_outstanding: 865560675

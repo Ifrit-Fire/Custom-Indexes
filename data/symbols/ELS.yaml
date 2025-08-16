@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: TWO N RIVERSIDE PLZ
+    address2: STE 800
+    city: CHICAGO
+    postal_code: '60606'
+    state: IL
+cik: 0000895417
+composite_figi: BBG000BB7SX7
+currency_name: usd
+description: Equity Lifestyle Properties is a residential REIT that focuses on owning
+    manufactured housing, residential vehicle communities, and marinas. The company
+    currently has a portfolio of 455 properties across the U.S. with a higher concentration
+    in the Sunbelt region with 38% of the company's properties located in Florida,
+    12% in Arizona, and 8% in California. Equity Lifestyle targets owning properties
+    in attractive retirement destinations with over 70% of the company's properties
+    either being age-restricted or having an average resident age over 55.
+homepage_url: https://www.equitylifestyleproperties.com
+list_date: '1993-02-25'
+locale: us
+market: stocks
+market_cap: 11807609406.57
+name: Equity Lifestyle Properties, Inc.
+phone_number: (312) 279-1400
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5T5G5
+share_class_shares_outstanding: 193789749
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: ELS
+ticker_root: ELS
+total_employees: 3800
+type: CS
+weighted_shares_outstanding: 193789749

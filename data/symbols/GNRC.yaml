@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: S45 W29290 HIGHWAY 59
+    city: WAUKESHA
+    postal_code: '53187'
+    state: WI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2VuZXJhYy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2VuZXJhYy5jb20/images/2025-04-04_logo.png
+cik: '0001474735'
+composite_figi: BBG000PQ4W72
+currency_name: usd
+description: Generac designs and manufactures power generation equipment serving residential,
+    commercial, and industrial markets. It offers standby generators, portable generators,
+    lighting, outdoor power equipment, and a suite of clean energy products. Sales
+    generated in the United States account for the majority of total sales.
+homepage_url: https://www.generac.com
+list_date: '2010-02-11'
+locale: us
+market: stocks
+market_cap: 11902416660.35
+name: GENERAC HOLDINGS INC
+phone_number: 888 436-3722
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T5VGH6
+share_class_shares_outstanding: 58675951
+sic_code: '3621'
+sic_description: MOTORS & GENERATORS
+ticker: GNRC
+ticker_root: GNRC
+total_employees: 9239
+type: CS
+weighted_shares_outstanding: 58675951

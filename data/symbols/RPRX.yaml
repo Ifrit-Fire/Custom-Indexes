@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 110 EAST 59TH STREET
+    city: NEW YORK
+    postal_code: '10022'
+    state: NY
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm95YWx0eXBoYXJtYS5jb20/images/2025-04-04_logo.svg
+cik: 0001802768
+currency_name: usd
+description: Royalty Pharma PLC is the largest buyer of biopharmaceutical royalties.
+    The firm has a portfolio of royalties that entitles it to payments based on the
+    sales of biopharma products. Royalty Pharma receives royalties on more than 35
+    commercial products, including AbbVie and Johnson & Johnson's Imbruvica (for chronic
+    lymphocytic leukemia and other blood cancers), Biogen's Tysabri (for relapsing
+    forms of multiple sclerosis), Vertex's cystic fibrosis franchise, and 10 development-stage
+    product candidates.
+homepage_url: https://www.royaltypharma.com
+list_date: '2020-06-16'
+locale: us
+market: stocks
+market_cap: 15761404603.0
+name: Royalty Pharma plc Class A Ordinary Shares
+phone_number: (212) 883-0200
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 432293050
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: RPRX
+ticker_root: RPRX
+total_employees: 99
+type: CS
+weighted_shares_outstanding: 432293050

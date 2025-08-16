@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 4 COPLEY PLACE
+    city: BOSTON
+    postal_code: '02116'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2F5ZmFpci5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2F5ZmFpci5jb20/images/2025-04-04_logo.svg
+cik: '0001616707'
+composite_figi: BBG001B17MV2
+currency_name: usd
+description: Wayfair engages in e-commerce in the United States (88% of 2024 sales),
+    Canada, the United Kingdom, and Ireland. It's also embarked on expansion into
+    the brick-and-mortar landscape, with a handful of stores between the AllModern,
+    Birch Lane, Joss & Main, and Wayfair banners. At the end of 2024, the firm offered
+    more than 30 million products from more than 20,000 suppliers under the brands
+    Wayfair, Joss & Main, AllModern, Birch Lane, and Perigold. Its offerings include
+    furniture, everyday and seasonal decor, decorative accents, housewares, as well
+    as advertising and logistics services. Wayfair was founded in 2002 and began trading
+    publicly in 2014.
+homepage_url: https://www.wayfair.com
+list_date: '2014-10-02'
+locale: us
+market: stocks
+market_cap: 10203019053.84
+name: Wayfair Inc.
+phone_number: 617 532 6100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001THKQ26
+share_class_shares_outstanding: 105002641
+sic_code: '5961'
+sic_description: RETAIL-CATALOG & MAIL-ORDER HOUSES
+ticker: W
+ticker_root: W
+total_employees: 13500
+type: CS
+weighted_shares_outstanding: 129660936

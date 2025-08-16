@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 2300 WINDY RIDGE PARKWAY TENTH FLOOR
+    city: ATLANTA
+    postal_code: '30339'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWFuaC5jb20/images/2024-10-01_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWFuaC5jb20/images/2024-10-01_logo.svg
+cik: 0001056696
+composite_figi: BBG000BFV758
+currency_name: usd
+description: Manhattan Associates provides software that helps users manage their
+    supply chains, inventory, and omnichannel operations. Customers are generally
+    retailers, wholesalers, manufacturers, and logistics providers. The company was
+    founded in 1990 and serves more than 1,200 customers around the world.
+homepage_url: https://www.manh.com
+list_date: '1998-04-23'
+locale: us
+market: stocks
+market_cap: 13314579712.86
+name: Manhattan Associates Inc
+phone_number: (770) 955-7070
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S71S35
+share_class_shares_outstanding: 60468594
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: MANH
+ticker_root: MANH
+total_employees: 4480
+type: CS
+weighted_shares_outstanding: 60468594

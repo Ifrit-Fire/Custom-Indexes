@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 40 WESTMINSTER ST
+    city: PROVIDENCE
+    postal_code: 02903
+    state: RI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGV4dHJvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGV4dHJvbi5jb20/images/2025-04-04_logo.svg
+cik: '0000217346'
+composite_figi: BBG000BVVQQ8
+currency_name: usd
+description: Textron is a conglomerate that designs, manufactures, and services a
+    range of specialty aircraft including small jets, propeller-driven airplanes,
+    helicopters, and tilt-rotor aircraft. Textron Aviation manufactures and services
+    Cessna and Beechcraft planes. Bell is a helicopter and tilt-rotor manufacturer
+    and servicer for both commercial and military customers. Textron Systems produces
+    uncrewed aircraft and armored vehicles for the military market as well as aircraft
+    simulators and training for the commercial and military markets. Textron Industrial
+    contains the Kautex business, which manufactures plastic fuel tanks for conventional
+    and hybrid motor vehicles, and other subsidiaries that produce specialized vehicles
+    such as golf carts and all-terrain vehicles.
+homepage_url: https://www.textron.com
+list_date: '1968-01-02'
+locale: us
+market: stocks
+market_cap: 14497000748.249998
+name: Textron, Inc.
+phone_number: (401) 421-2800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5WZ39
+share_class_shares_outstanding: 178205295
+sic_code: '3720'
+sic_description: AIRCRAFT & PARTS
+ticker: TXT
+ticker_root: TXT
+total_employees: 34000
+type: CS
+weighted_shares_outstanding: 178205295

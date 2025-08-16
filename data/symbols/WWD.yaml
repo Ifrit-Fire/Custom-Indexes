@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1081 WOODWARD WAY
+    city: FORT COLLINS
+    postal_code: '80524'
+    state: CO
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d29vZHdhcmQuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d29vZHdhcmQuY29t/images/2025-04-04_logo.svg
+cik: 0000108312
+composite_figi: BBG000BD53V2
+currency_name: usd
+description: Woodward Inc is an independent designer, manufacturer, and service provider
+    of control solutions for the aerospace and industrial markets. It designs, produces,
+    and services reliable, efficient, low-emission, and high-performance energy control
+    products for diverse applications in challenging environments. The company operates
+    in two segments, Aerospace and Industrial. The Aerospace segment provides fuel
+    pumps, actuators, air valves, specialty valves, fuel nozzles, and thrust reverser
+    actuation systems for turbine engines and nacelles, and flight deck controls,
+    actuators, servo controls, motors, and sensors for aircraft. The Industrial segment
+    offers actuators, valves, pumps, fuel injection systems, solenoids, ignition systems,
+    speed controls, electronics and software, and sensors.
+homepage_url: https://www.woodward.com
+list_date: '1996-05-30'
+locale: us
+market: stocks
+market_cap: 14803261316.060001
+name: Woodward, Inc.
+phone_number: 970-482-5811
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S6YZC5
+share_class_shares_outstanding: 59966221
+sic_code: '3620'
+sic_description: ELECTRICAL INDUSTRIAL APPARATUS
+ticker: WWD
+ticker_root: WWD
+total_employees: 9300
+type: CS
+weighted_shares_outstanding: 59966221

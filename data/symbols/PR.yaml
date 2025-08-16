@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 300 N. MARIENFELD ST.
+    address2: SUITE 1000
+    city: MIDLAND
+    postal_code: '79701'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGVybWlhbnJlcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGVybWlhbnJlcy5jb20/images/2025-04-04_logo.png
+cik: 0001658566
+composite_figi: BBG00CNYBQ76
+currency_name: usd
+description: Permian Resources Corp is an independent oil and natural gas company
+    focused on generating outsized returns to stakeholders through the responsible
+    acquisition, optimization and development of oil and liquids-rich natural gas
+    assets. The Company's assets and operations are concentrated in the core of the
+    Permian Basin, and its properties consist of large, contiguous acreage blocks
+    located in West Texas and New Mexico.
+homepage_url: https://www.permianres.com
+list_date: '2016-04-15'
+locale: us
+market: stocks
+market_cap: 9458749111.16
+name: Permian Resources Corporation
+phone_number: 432-695-4222
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00D61Y2G3
+share_class_shares_outstanding: 703899117
+sic_code: '1311'
+sic_description: CRUDE PETROLEUM & NATURAL GAS
+ticker: PR
+ticker_root: PR
+total_employees: 482
+type: CS
+weighted_shares_outstanding: 702730246

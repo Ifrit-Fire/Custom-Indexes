@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXNjZW5kaXNwaGFybWEuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXNjZW5kaXNwaGFybWEuY29t/images/2025-04-04_logo.png
+cik: '0001612042'
+composite_figi: BBG007R7VNC1
+currency_name: usd
+description: Ascendis Pharma AS is a biopharmaceutical company that applies its TransCon
+    technology platform to make a meaningful difference for patients. The firm's product
+    pipeline includes Endocrinology and Oncology which includes TransCon PTH, TransCon
+    CNP, and others. It operates in North America, Europe, and Rest of the world and
+    derives the majority of its revenue from North America.
+homepage_url: https://www.ascendispharma.com
+list_date: '2015-01-28'
+locale: us
+market: stocks
+market_cap: 11570736280.640001
+name: Ascendis Pharma A/S American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG007R7VP72
+share_class_shares_outstanding: 61151463
+ticker: ASND
+ticker_root: ASND
+total_employees: 1017
+type: ADRC
+weighted_shares_outstanding: 60554408

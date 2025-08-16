@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 7601 PENN AVE SOUTH
+    city: RICHFIELD
+    postal_code: '55423'
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmVzdGJ1eS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmVzdGJ1eS5jb20/images/2025-04-04_logo.svg
+cik: 0000764478
+composite_figi: BBG000BCWCG1
+currency_name: usd
+description: With over $41 billion in consolidated 2024 sales, Best Buy is the largest
+    pure-play consumer electronics retailer in the US, boasting roughly 8% share of
+    the North American market and around 33% share of offline sales in the region,
+    per our calculations, CTA, and Euromonitor data. The firm generates the bulk of
+    its sales in-store, with mobile phones and tablets, computers, and appliances
+    representing its three largest categories. Recent investments in e-commerce fulfillment,
+    accelerated by the covid pandemic, have seen the US e-commerce channel roughly
+    double from prepandemic levels, with management estimating that it will represent
+    a mid-30% proportion of sales moving forward.
+homepage_url: https://www.bestbuy.com
+list_date: '1985-04-18'
+locale: us
+market: stocks
+market_cap: 15371245054.62
+name: Best Buy Company, Inc.
+phone_number: (612) 291-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5P285
+share_class_shares_outstanding: 211346694
+sic_code: '5731'
+sic_description: RETAIL-RADIO, TV & CONSUMER ELECTRONICS STORES
+ticker: BBY
+ticker_root: BBY
+total_employees: 85000
+type: CS
+weighted_shares_outstanding: 211346694

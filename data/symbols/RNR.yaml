@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: RENAISSANCE HOUSE
+    address2: 12 CROW LANE
+    city: PEMBROKE
+    postal_code: HM19
+    state: D0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmVucmUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmVucmUuY29t/images/2025-04-04_logo.svg
+cik: 0000913144
+currency_name: usd
+description: 'RenaissanceRe Holdings Ltd provides reinsurance and insurance solutions
+    and related services. The company''s core products include property, casualty
+    and specialty reinsurance. Revenue is derived from three sources: net premiums
+    earned from the insurance and insurance products sold; net investment income from
+    the investment of capital funds and cash; and other income from the company''s
+    joint ventures, advisory services, and other items. The reportable segments of
+    the company are the Property segment which includes catastrophe and other property
+    reinsurance, and the Casualty and Specialty segment which is comprised of casualty
+    and specialty reinsurance. It derives a majority of its revenue from the Casualty
+    and specialty segment.'
+homepage_url: https://www.renre.com
+list_date: '1995-07-27'
+locale: us
+market: stocks
+market_cap: 11486980188.84
+name: RenaissanceRe Holdings Ltd.
+phone_number: (441) 295-4513
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 47066214
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: RNR
+ticker_root: RNR
+total_employees: 925
+type: CS
+weighted_shares_outstanding: 47066214

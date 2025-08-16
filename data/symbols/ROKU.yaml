@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1173 COLEMAN AVENUE
+    city: SAN JOSE
+    postal_code: '95110'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cm9rdS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm9rdS5jb20/images/2025-04-04_logo.svg
+cik: 0001428439
+composite_figi: BBG001ZZPQJ6
+currency_name: usd
+description: Roku enables consumers to stream television programming. It has more
+    than 90 million streaming households and provided 127 billion streaming hours
+    in 2024. Roku is the top streaming operating system in the US, reaching more than
+    half of broadband households, according to the company. Roku's OS is built into
+    streaming devices and televisions that Roku sells and on connected televisions
+    from other manufacturers that license Roku's name and software. Roku also operates
+    the Roku Channel, a free, ad-supported streaming television platform that offers
+    a mix of on-demand and live television programming. Roku generates revenue primarily
+    from selling devices, licensing, and advertising, and it receives fees from subscription
+    streaming platforms that sell subscriptions through Roku.
+homepage_url: https://www.roku.com
+list_date: '2017-09-28'
+locale: us
+market: stocks
+market_cap: 12978355460.970001
+name: Roku, Inc. Class A Common Stock
+phone_number: (408) 556-9040
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001ZZPQM2
+share_class_shares_outstanding: 130251569
+sic_code: '4841'
+sic_description: CABLE & OTHER PAY TELEVISION SERVICES
+ticker: ROKU
+ticker_root: ROKU
+total_employees: 3340
+type: CS
+weighted_shares_outstanding: 147330633

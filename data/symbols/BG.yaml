@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: ROUTE DE FLORISSANT 13
+    city: GENEVA
+    postal_code: '1206'
+    state: V8
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YnVuZ2UuY29t/images/2025-04-04_logo.svg
+cik: 0001996862
+currency_name: usd
+description: Bunge Global SA formerly Bunge Ltd is an agribusiness and food company
+    with operations along the farm-to-consumer food chain. The company segments include
+    Agribusiness; Refined and Specialty Oils; Milling; Sugar and Bioenergy and Corporate
+    and Other. It generates maximum revenue from the Agribusiness segment. The company
+    is an oilseed processor and producer of vegetable oils and protein meals, based
+    on processing capacity, a grain processor, the seller of packaged plant-based
+    oils, producer and seller of wheat flour, bakery mixes and corn-based products
+    in North and South America.
+homepage_url: https://www.bunge.com
+list_date: '2001-08-02'
+locale: us
+market: stocks
+market_cap: 16653162378.32
+name: Bunge Global SA
+phone_number: 41 22 592 91 00
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 200062018
+sic_code: '2070'
+sic_description: FATS & OILS
+ticker: BG
+ticker_root: BG
+total_employees: 23000
+type: CS
+weighted_shares_outstanding: 200062018

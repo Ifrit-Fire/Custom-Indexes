@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 620 EIGHTH AVENUE
+    city: NEW YORK
+    postal_code: '10018'
+    state: NY
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bnl0Y28uY29t/images/2025-04-04_logo.svg
+cik: 0000071691
+composite_figi: BBG000FFC0B3
+currency_name: usd
+description: 'New York Times Co is an American media company known for publishing
+    its flagship newspaper, The New York Times. The company also operates the International
+    New York Times newspaper, as well as digital properties such as NYTimes and various
+    smartphone applications. The company has two segments: New York Times Group and
+    The Athletic. The company generates the majority of its revenue from the NYTG
+    segment. The NYTG and The Athletic segments derive revenue from subscriptions,
+    Advertising, and others, where the majority source of revenue for both segments
+    is subscription.'
+homepage_url: https://www.nytco.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 9870076989.64
+name: New York Times Co.
+phone_number: (212) 556-1234
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S90X31
+share_class_shares_outstanding: 162038098
+sic_code: '2711'
+sic_description: 'NEWSPAPERS: PUBLISHING OR PUBLISHING & PRINTING'
+ticker: NYT
+ticker_root: NYT
+total_employees: 5900
+type: CS
+weighted_shares_outstanding: 162818822

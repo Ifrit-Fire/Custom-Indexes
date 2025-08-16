@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: BLOCK D IVEAGH COURT
+    address2: HARCOURT ROAD
+    city: DUBLIN 2
+    postal_code: '00000'
+    state: L2
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWxsZWdpb24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWxsZWdpb24uY29t/images/2025-04-04_logo.svg
+cik: 0001579241
+currency_name: usd
+description: Allegion is a global security products company with a portfolio of leading
+    brands such as Schlage, Von Duprin, and LCN. The Ireland-domiciled company was
+    created via a spinoff transaction from Ingersoll-Rand in December 2013. In fiscal
+    2024, Allegion generated over 75% of sales in the United States. The company primarily
+    competes with Sweden-based Assa Abloy, Switzerland-based Dormakaba, and US-based
+    Fortune Brands Innovations.
+homepage_url: https://www.allegion.com
+list_date: '2013-11-18'
+locale: us
+market: stocks
+market_cap: 14561286722.4
+name: Allegion Public Limited Company
+phone_number: (317) 810-3700
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 85846520
+sic_code: '7381'
+sic_description: SERVICES-DETECTIVE, GUARD & ARMORED CAR SERVICES
+ticker: ALLE
+ticker_root: ALLE
+total_employees: 14400
+type: CS
+weighted_shares_outstanding: 85846520

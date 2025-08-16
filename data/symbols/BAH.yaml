@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 8283 GREENSBORO DRIVE
+    city: MCLEAN
+    postal_code: '22102'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Ym9vemFsbGVuLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Ym9vemFsbGVuLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001443646'
+composite_figi: BBG000R2YFG7
+currency_name: usd
+description: Booz Allen Hamilton Holding Corp provides technology solutions in areas
+    such as artificial intelligence, cybersecurity, and related fields. The company
+    serves U.S. federal government agencies, commercial clients, and select international
+    customers. It also provides technologies to evolve defense missions and delivers
+    solutions to warfighters in the digital battlespace.
+homepage_url: https://www.boozallen.com
+list_date: '2010-11-17'
+locale: us
+market: stocks
+market_cap: 13758250818.18
+name: Booz Allen Hamilton Holding Corporation
+phone_number: 703-902-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T91S76
+share_class_shares_outstanding: 123248686
+sic_code: '8742'
+sic_description: SERVICES-MANAGEMENT CONSULTING SERVICES
+ticker: BAH
+ticker_root: BAH
+total_employees: 33400
+type: CS
+weighted_shares_outstanding: 123248686

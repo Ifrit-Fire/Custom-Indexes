@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1400 AMERICAN LANE
+    city: SCHAUMBURG
+    postal_code: '60173'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGF5bG9jaXR5LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGF5bG9jaXR5LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001591698
+composite_figi: BBG006598YS8
+currency_name: usd
+description: Founded in 1997, Paylocity is a cloud-based human capital management
+    and payroll platform servicing midmarket customers. The company's average client
+    size is around 150 employees. Its products help with recruiting and onboarding,
+    payroll, time and labor, human resources, benefits, learning, and performance
+    and compensation workflows. In fiscal 2025, the company generated over $1.5 billion
+    in revenue across more than 41,000 customers.
+homepage_url: https://www.paylocity.com
+list_date: '2014-03-19'
+locale: us
+market: stocks
+market_cap: 9583229458.71
+name: Paylocity Holding Corporation Common Stock
+phone_number: 800-520-2687
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG006598YZ0
+share_class_shares_outstanding: 55161627
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: PCTY
+ticker_root: PCTY
+total_employees: 6700
+type: CS
+weighted_shares_outstanding: 55161627

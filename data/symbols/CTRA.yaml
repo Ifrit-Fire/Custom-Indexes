@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 840 GESSNER ROAD, SUITE 1400
+    city: HOUSTON
+    postal_code: '77024'
+    state: TX
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y290ZXJyYS5jb20/images/2025-04-04_logo.svg
+cik: 0000858470
+composite_figi: BBG000C3GN47
+currency_name: usd
+description: Coterra Energy Inc is an independent oil and gas company engaged in the
+    development, exploration, and production of oil, natural gas, and natural gas
+    liquids (NGLs). Its operations are mainly concentrated in areas with hydrocarbon
+    resources, which are conducive to multi-well, repeatable development programs,
+    and include the Permian Basin located in Texas and New Mexico, the Marcellus Shale
+    in northeast Pennsylvania, and the Anadarko Basin located in the mid-continent
+    region in Oklahoma. The company operates in one segment, oil and natural gas development,
+    exploration, and production, in the continental U.S.
+homepage_url: https://www.coterra.com
+list_date: '1990-02-08'
+locale: us
+market: stocks
+market_cap: 18483250121.84
+name: Coterra Energy Inc.
+phone_number: (281) 589-4600
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6H6Y4
+share_class_shares_outstanding: 763139972
+sic_code: '1311'
+sic_description: CRUDE PETROLEUM & NATURAL GAS
+ticker: CTRA
+ticker_root: CTRA
+total_employees: 957
+type: CS
+weighted_shares_outstanding: 763139972

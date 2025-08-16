@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 11 GREENWAY PLAZA
+    address2: SUITE 2400
+    city: HOUSTON
+    postal_code: '77046'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FtZGVubGl2aW5nLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FtZGVubGl2aW5nLmNvbQ/images/2025-04-04_logo.png
+cik: 0000906345
+composite_figi: BBG000BB0V03
+currency_name: usd
+description: Camden Property Trust is a real estate investment trust engaged in the
+    ownership, management, development, reposition, redevelopment, acquisition, and
+    construction of multifamily apartment communities. It owned interests in, operated,
+    or developing nearly 177 multifamily properties comprised of nearly 59,996 apartment
+    homes across the United States.
+homepage_url: https://www.camdenliving.com
+list_date: '1993-07-22'
+locale: us
+market: stocks
+market_cap: 11433241789.0
+name: Camden Property Trust
+phone_number: (713) 354-2500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Q6V9
+share_class_shares_outstanding: 106852727
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: CPT
+ticker_root: CPT
+total_employees: 1660
+type: CS
+weighted_shares_outstanding: 106852727

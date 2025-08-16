@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 4300 WILSON BOULEVARD
+    city: ARLINGTON
+    postal_code: '22203'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWVzLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWVzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000874761
+composite_figi: BBG000C23KJ3
+currency_name: usd
+description: AES is a global power company that operates in 15 countries. Its generation
+    portfolio as of year-end 2024 totals over 32 gigawatts, including renewable energy
+    (50%), gas (32%), coal (16%), and oil (2%). AES has majority ownership and operates
+    six electric utilities distributing power to more than 2.5 million customers.
+homepage_url: https://www.aes.com
+list_date: '1991-06-27'
+locale: us
+market: stocks
+market_cap: 9292246810.2
+name: AES Corporation
+phone_number: (703) 522-1315
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6B1L5
+share_class_shares_outstanding: 712049564
+sic_code: '4991'
+sic_description: COGENERATION SERVICES & SMALL POWER PRODUCERS
+ticker: AES
+ticker_root: AES
+total_employees: 9100
+type: CS
+weighted_shares_outstanding: 712049564

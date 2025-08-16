@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 520 MADISON AVENUE
+    city: NEW YORK
+    postal_code: '10022'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/amVmZmVyaWVzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/amVmZmVyaWVzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000096223
+composite_figi: BBG000BNHSP9
+currency_name: usd
+description: Jefferies is a full-service investment banking and capital markets firm
+    that was founded in 1962. After nearly 30 years of focusing on institutional trading
+    services, it entered the investment banking industry in the early 1990s, which
+    ultimately grew into the core business. In 2013, Jefferies merged with Leucadia,
+    a manufacturing-focused holding company. Since merging, Jefferies became the bedrock
+    of the business as the bulk of the legacy portfolio was sold off and the parent
+    company was renamed to match the subsidiary. Within the investment banking landscape,
+    Jefferies predominately serves the North American middle market and has captured
+    considerable market share over the past decade.
+homepage_url: https://www.jefferies.com
+list_date: '1968-10-07'
+locale: us
+market: stocks
+market_cap: 12993591120.79
+name: Jefferies Financial Group Inc.
+phone_number: (212) 460-1900
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5SX02
+share_class_shares_outstanding: 206280221
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: JEF
+ticker_root: JEF
+total_employees: 7671
+type: CS
+weighted_shares_outstanding: 206280221

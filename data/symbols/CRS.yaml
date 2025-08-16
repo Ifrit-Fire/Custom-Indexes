@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: BNY MELLON BUILDING
+    address2: 1735 MARKET STREET, 15TH FL
+    city: PHILADELPHIA
+    postal_code: '19103'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FycGVudGVydGVjaG5vbG9neS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FycGVudGVydGVjaG5vbG9neS5jb20/images/2025-04-04_logo.svg
+cik: 0000017843
+composite_figi: BBG000BGCQT9
+currency_name: usd
+description: "Carpenter Technology Corp supplies specialty metals to a variety of\
+    \ end markets, including aerospace and defense, industrial machinery and consumer\
+    \ durables, medical, and energy, among others. The company's reportable segments\
+    \ include; Specialty Alloys Operations and Performance Engineered Products. It\
+    \ generates maximum revenue from the Specialty Alloys Operations segment. The\
+    \ SAO segment is comprised of the company's alloy and stainless steel manufacturing\
+    \ operations. This includes operations performed at mills predominantly\_in Reading\
+    \ and Latrobe, Pennsylvania, and surrounding areas as well as South Carolina and\
+    \ Alabama. Geographically, the company derives its maximum revenue from the United\
+    \ States and the rest from Europe, Asia Pacific, Mexico, Canada, and other regions."
+homepage_url: https://www.carpentertechnology.com
+list_date: '1968-11-06'
+locale: us
+market: stocks
+market_cap: 12471496767.1
+name: Carpenter Technology Corp
+phone_number: (610) 208-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Q5M1
+share_class_shares_outstanding: 49779343
+sic_code: '3312'
+sic_description: STEEL WORKS, BLAST FURNACES & ROLLING MILLS (COKE OVENS)
+ticker: CRS
+ticker_root: CRS
+total_employees: 4600
+type: CS
+weighted_shares_outstanding: 49850095

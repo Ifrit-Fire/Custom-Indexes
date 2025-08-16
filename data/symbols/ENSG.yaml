@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 29222 RANCHO VIEJO RD.
+    address2: SUITE 127
+    city: SAN JUAN CAPISTRANO
+    postal_code: '92675'
+    state: CA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZW5zaWduZ3JvdXAubmV0/images/2025-04-04_logo.png
+cik: '0001125376'
+composite_figi: BBG000K1T9L0
+currency_name: usd
+description: Ensign Group Inc provides post-acute healthcare services in the United
+    States. Its regional subsidiaries oversee skilled nursing, assisted living, home
+    health and hospice, mobile ancillary, and urgent care operations. Medicare and
+    Medicaid programs contribute majority of revenue received for Ensign's services.
+    The firm operates through two segments, Skilled services, and Standard Bearer.
+    The skilled services segment includes the operation of skilled nursing facilities
+    and rehabilitation therapy services. The Standard Bearer segment comprises of
+    properties owned by the company through its captive REIT and leased to skilled
+    nursing and assisted living operations. The majority of the revenue is generated
+    from the skilled services segment.
+homepage_url: https://www.ensigngroup.net
+list_date: '2007-11-09'
+locale: us
+market: stocks
+market_cap: 9593805104.390001
+name: The Ensign Group, Inc.
+phone_number: (949) 487-9500
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SPNL09
+share_class_shares_outstanding: 57700157
+sic_code: '8051'
+sic_description: SERVICES-SKILLED NURSING CARE FACILITIES
+ticker: ENSG
+ticker_root: ENSG
+total_employees: 39300
+type: CS
+weighted_shares_outstanding: 57700157

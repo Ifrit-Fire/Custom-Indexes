@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 845 BERKSHIRE BLVD, SUITE 200
+    city: WYOMISSING
+    postal_code: '19610'
+    state: PA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2xwcm9waW5jLmNvbQ/images/2025-04-04_logo.png
+cik: 0001575965
+composite_figi: BBG003MSMCS6
+currency_name: usd
+description: Gaming and Leisure Properties Inc, or GLP, is a self-administered and
+    self-managed Pennsylvania real estate investment trust (REIT). It is engaged in
+    acquiring, financing, and owning real estate property to be leased to gaming operators
+    in triple-net lease arrangements. Its portfolio consists of gaming and related
+    facilities and amenities such as Ameristar Black Hawk, Bally's Casino, Argosy
+    Casino Alton, Bally's Chicago, Hollywood Casino Aurora, and others located across
+    different states in the United States.
+homepage_url: https://www.glpropinc.com
+list_date: '2013-10-14'
+locale: us
+market: stocks
+market_cap: 13089131747.5
+name: Gaming and Leisure Properties, Inc.
+phone_number: 610-401-2900
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG003MSMCT5
+share_class_shares_outstanding: 283008254
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: GLPI
+ticker_root: GLPI
+total_employees: 19
+type: CS
+weighted_shares_outstanding: 283008254
