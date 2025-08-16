@@ -37,21 +37,3 @@ indexes:
         sort_by: market_cap
         top: 500
         weight_min: 0.2
-
-symbol_normalize:
-    BRK-A: BRK.A
-    BRK/A: BRK.A
-    BRK-B: BRK.B
-    BRK/B: BRK.B
-    EBR-B: EBR.B
-    EBR/B: EBR.B
-    KIM-PN: KIM.PN
-    KIM/PN: KIM.PNs
-    MKC-V: MKC.V
-    MKC/V: MKC.V
-    MS-PQ: MS.PQ
-    MS/PQ: MS.PQ
-    PBR-A: PBR.A
-    PBR/A: PBR.A
-    RF-PF: RF.PF
-    RF/PF: RF.PF

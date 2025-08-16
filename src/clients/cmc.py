@@ -5,7 +5,7 @@ import requests
 from pandas import DataFrame
 
 from src.clients import cache
-from src.config_handler import KEY_INDEX_TOP, config
+from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, COL_VOLUME
 
 # Coin Market Cap: https://coinmarketcap.com/api/
@@ -41,7 +41,7 @@ def get_crypto(criteria: dict) -> DataFrame:
         df.rename(
             columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME},
             inplace=True)
-        df[COL_SYMBOL] = df[COL_SYMBOL].str.upper().replace(config.symbol_normalize())
+        df[COL_SYMBOL] = df[COL_SYMBOL].str.upper().str.replace("-", ".", regex=False)
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
     print(f"\tRetrieved {len(df)} crypto from {source}")

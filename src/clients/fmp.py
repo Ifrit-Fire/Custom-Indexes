@@ -28,6 +28,7 @@ def get_stock(criteria: dict) -> DataFrame:
     :param criteria: Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
     :return: DataFrame containing standardized columns: COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME.
     """
+    print(f"\tRetrieving stocks...")
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -39,11 +40,11 @@ def get_stock(criteria: dict) -> DataFrame:
 
         df = pd.DataFrame(response.json())
         df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
-        df[COL_SYMBOL] = df[COL_SYMBOL].str.upper().replace(config.symbol_normalize())
+        df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
         df = data_processing.prune_asset_type(df)
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
-    print(f"\tRetrieved {len(df)} stocks from {source}")
+    print(f"\t...Retrieved {len(df)} stocks from {source}")
     return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME]]
 
 

@@ -13,7 +13,6 @@ from src.consts import COL_WEIGHT
 # TODO: Make static page displaying performance and composition over time
 # TODO: Update Indexes with historical data to run performance metrics on
 
-
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")
 

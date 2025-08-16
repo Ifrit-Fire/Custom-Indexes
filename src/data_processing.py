@@ -6,8 +6,17 @@ from src.clients.polygon import get_stock
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME
 
+def normalize_symbols(series: pd.Series) -> pd.Series:
+    """
+    Normalize ticker symbols to a standard format.
 
-def prune_asset_type(df: DataFrame) -> DataFrame:
+    :param series: Pandas Series of ticker symbols.
+    :return: Series with normalized ticker symbols.
+    """
+    return series.str.upper().str.replace("-", ".", regex=False)
+
+
+def tag_prune_asset_type(df: DataFrame) -> DataFrame:
     """
     Filter the DataFrame to include only the following allowed asset types.
     - "CS"   (Common Stock)

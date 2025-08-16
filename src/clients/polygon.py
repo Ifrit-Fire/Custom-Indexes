@@ -1,4 +1,5 @@
 import json
+import re
 
 import yaml
 from polygon import RESTClient, BadResponse
@@ -12,11 +13,7 @@ from src.consts import POLY_API_TOKEN, PATH_DATA_SYMBOLS_ROOT
 _EXCHANGES = {"XNYS",  # NY stock exchange
               "XNAS",  # NASDAQ
               "XASE"}  # NYSE American (formerly AMEX)
-# @formatter:off
-_SYMBOL_MAPPINGS = {"MS.PQ": "MSpQ",
-                    "KIM.PN": "KIMpN",
-                    "RF.PF": "RFpF"}
-# @formatter:on
+
 
 def _get_ticker_filename(symbol: str):
     """
@@ -57,6 +54,17 @@ def _save_ticker_details(symbol: str, data: dict):
         yaml.safe_dump(data, file, indent=4)  # Save as yaml to be more human-readable.
 
 
+def _fix_dot_p(symbol: str) -> str:
+    """
+    Convert patterns like 'MS.PQ' to 'MSpQ':
+      - Remove the dot before 'P'
+      - Lowercase the 'P'
+    """
+    norm = re.sub(r'\.P', 'p', symbol)
+    if norm != symbol: print(f"\t...normalized {symbol} to {norm}")
+    return norm
+
+
 def get_stock(symbol: str) -> TickerDetails:
     """
     Retrieve ticker details for a given stock symbol, using cached data if available.
@@ -81,11 +89,11 @@ def get_stock(symbol: str) -> TickerDetails:
     if ticker: return ticker
 
     # Gotta pull down from the API
-    attempt = raw = norm_sym = None  # Suppresses references before bound warning
+    attempt = raw = None  # Suppresses references before bound warning
+    norm_sym = _fix_dot_p(symbol)
     client = RESTClient(api_key=POLY_API_TOKEN)
     for attempt in range(retries := 3):
         try:
-            norm_sym = _SYMBOL_MAPPINGS.get(symbol, symbol)
             raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk
             if attempt > 0: print("\tSuccess!")
             attempt = 0
@@ -96,7 +104,7 @@ def get_stock(symbol: str) -> TickerDetails:
             io.console_countdown("\tRetrying", 60)
         except BadResponse as e:
             print(f"\t{str(e)}")
-            print(f"\tBadResponse for ticker {symbol} (normalized: {norm_sym})")
+            print(f"\tBadResponse for ticker {symbol} normalized {norm_sym}")
 
     if attempt >= retries - 1:
         raise ConnectionError("Unknown issue with API end point.")
@@ -105,6 +113,7 @@ def get_stock(symbol: str) -> TickerDetails:
     raw = raw.data.decode("utf-8")
     raw = json.loads(raw)["results"]
     ticker = TickerDetails.from_dict(raw)
+    ticker.ticker = symbol
     _save_ticker_details(ticker.ticker, raw)
 
     return ticker

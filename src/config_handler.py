@@ -32,9 +32,6 @@ class ConfigHandler:
     def symbol_merge(self) -> dict[str, str]:
         return {item["merge"]: item["into"] for item in self._default[_KEY_CONSOLIDATE]}
 
-    def symbol_normalize(self) -> dict[str, str]:
-        return self._norm_sym
-
     def volume_limit_min(self) -> int:
         return self._default[_KEY_VOLUME]["limit_min"]
 
