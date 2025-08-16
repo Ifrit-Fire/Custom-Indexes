@@ -11,25 +11,31 @@ def normalize_symbols(series: pd.Series) -> pd.Series:
     """
     Normalize ticker symbols to a standard format.
 
-    :param series: Pandas Series of ticker symbols.
-    :return: Series with normalized ticker symbols.
+    Args:
+        series (pd.Series): Pandas Series of ticker symbols.
+
+    Returns:
+        pd.Series: Series with normalized ticker symbols.
     """
     return series.str.upper().str.replace("-", ".", regex=False)
 
 
 def tag_prune_stock_asset_type(df: DataFrame) -> DataFrame:
     """
-    Tags each security in the DataFrame with its asset type, then filters to include only
-    allowed stock asset types.
+    Tags each security in the DataFrame with its asset type, then filters to include only allowed stock asset types.
 
     ⚠️ This function will raise an error if a non-stock (e.g., crypto) symbol is provided.
 
-    :param df: Pandas DataFrame containing at least the `COL_SYMBOL` column.
-    :return: DataFrame filtered to only rows with allowed asset types, with `COL_TYPE` added
-         and the index reset to start at 0.
+    Args:
+        df (pd.DataFrame): Pandas DataFrame containing at least the `COL_SYMBOL` column.
 
-    Note:
-        This function will make an API call once per symbol if it cannot find the stored information on disk.
+    Returns:
+        pd.DataFrame: DataFrame filtered to only rows with allowed asset types, with `COL_TYPE`
+        added and the index reset to start at 0.
+
+    Notes:
+        This function will make an API call once per symbol if it cannot find the stored
+        information on disk.
     """
     df = df.copy()
     df[COL_TYPE] = df[COL_SYMBOL].map(lambda sym: get_stock(sym).type)
@@ -43,12 +49,16 @@ def tag_prune_stock_asset_type(df: DataFrame) -> DataFrame:
 
 def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     """
-    Merge, sort, prune, and filter multiple security DataFrames into a final refined list based on configuration
-    settings.
+    Merge, sort, prune, and filter multiple security DataFrames into a final refined list
+    based on configuration settings.
 
-    :param using: Configuration dictionary containing at least `KEY_INDEX_SORTBY` and `KEY_INDEX_TOP`.
-    :param dfs: List of Pandas DataFrames containing security data.
-    :return: A new DataFrame meeting all filter and sorting criteria.
+    Args:
+        using (dict): Configuration dictionary containing at least
+            `KEY_INDEX_SORTBY` and `KEY_INDEX_TOP`.
+        dfs (list[DataFrame]): List of Pandas DataFrames containing security data.
+
+    Returns:
+        DataFrame: A new DataFrame meeting all filter and sorting criteria.
     """
     print(f"\tRefining data based on configurations...")
     print(f"\t...merging all security DataFrames...")
@@ -79,8 +89,11 @@ def _merge_symbols(df: DataFrame) -> DataFrame:
 
     Works on a copy of `df` and returns the merged result.
 
-    :param df: Pandas DataFrame containing at least the `COL_SYMBOL`, `COL_MC` columns
-    :return: A new DataFrame with merged symbols and adjusted market cap values.
+    Args:
+        df (DataFrame): Pandas DataFrame containing at least the `COL_SYMBOL` and `COL_MC` columns.
+
+    Returns:
+        DataFrame: A new DataFrame with merged symbols and adjusted market cap values.
     """
     df = df.copy()
     for merge, into in config.symbol_merge.items():

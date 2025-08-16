@@ -19,9 +19,11 @@ def _get_ticker_filename(symbol: str):
     """
     Construct the full file path for storing or retrieving ticker details.
 
-    :param symbol: Stock ticker symbol.
-    :return: Path object pointing to the YAML file for the given symbol,
-             located under `PATH_DATA_SYMBOLS_ROOT`.
+    Args:
+        symbol (str): Stock ticker symbol.
+
+    Returns:
+        Path: Path object pointing to the YAML file for the given symbol, located under `PATH_DATA_SYMBOLS_ROOT`.
     """
     return PATH_DATA_SYMBOLS_ROOT / f"{symbol}.yaml"
 
@@ -30,8 +32,11 @@ def _load_ticker_details(symbol: str) -> TickerDetails | None:
     """
     Load ticker details for a given symbol from local YAML storage.
 
-    :param symbol: Stock ticker symbol to load.
-    :return: A `TickerDetails` object if the file exists, otherwise None.
+    Args:
+        symbol (str): Stock ticker symbol to load.
+
+    Returns:
+        TickerDetails | None: A `TickerDetails` object if the file exists, otherwise None.
     """
     filename = _get_ticker_filename(symbol)
     if filename.exists():
@@ -46,8 +51,9 @@ def _save_ticker_details(symbol: str, data: dict):
     """
     Save ticker details for a given symbol to local YAML storage.
 
-    :param symbol: Stock ticker symbol to save.
-    :param data: Dictionary of ticker details to write.
+    Args:
+        symbol (str): Stock ticker symbol to save.
+        data (dict): Dictionary of ticker details to write.
     """
     filename = _get_ticker_filename(symbol)
     with open(filename, "w") as file:
@@ -56,9 +62,17 @@ def _save_ticker_details(symbol: str, data: dict):
 
 def _fix_dot_p(symbol: str) -> str:
     """
-    Convert patterns like 'MS.PQ' to 'MSpQ':
-      - Remove the dot before 'P'
-      - Lowercase the 'P'
+    Convert patterns like 'MS.PQ' to 'MSpQ'.
+
+    Rules:
+        - Remove the dot before 'P'
+        - Lowercase the 'P'
+
+    Args:
+        symbol (str): Ticker symbol string to normalize.
+
+    Returns:
+        str: Normalized ticker symbol.
     """
     norm = re.sub(r'\.P', 'p', symbol)
     if norm != symbol: print(f"\t...normalized {symbol} to {norm}")
@@ -73,15 +87,18 @@ def get_stock(symbol: str) -> TickerDetails:
     it queries the Polygon.io API (up to three retries on failure) and saves the retrieved
     data to disk for future use.
 
-    :param symbol: Stock ticker symbol to retrieve.
-    :return: A `TickerDetails` object containing the symbol's details.
+    Args:
+        symbol (str): Stock ticker symbol to retrieve.
+
+    Returns:
+        TickerDetails: Object containing the symbol's details.
 
     Raises:
         ConnectionError: If the API call fails after the maximum number of retries.
 
     Notes:
-        - On API failure due to rate limits or network issues, the function waits 60 seconds
-          between retries.
+        - On API failure due to rate limits or network issues, the function waits
+          60 seconds between retries.
     """
 
     # Try loading from disk first

@@ -25,8 +25,12 @@ def get_stock(criteria: dict) -> DataFrame:
     Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API. The
     results are normalized, filtered to allowed asset types, and cached for future use.
 
-    :param criteria: Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
-    :return: DataFrame containing standardized columns: `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`.
+    Args:
+        criteria (dict): Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
+
+    Returns:
+        DataFrame: DataFrame containing standardized columns: `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`,
+        `COL_VOLUME`, `COL_TYPE`.
     """
     print(f"\tRetrieving stocks...")
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
@@ -55,8 +59,11 @@ def _get_cap_restriction(top: int):
     This function maps a requested "top N" count to an estimated market cap category constant (e.g., MIN_ULTRA_CAP,
     MIN_MEGA_CAP, etc.) that should yield at least that many securities.
 
-    :param top: Number of top stocks to include.
-    :return: Market cap threshold constant for the appropriate category.
+    Args:
+        top (int): Number of top stocks to include.
+
+    Returns:
+        int: Market cap threshold constant for the appropriate category.
     """
     if top <= 5:
         return MIN_ULTRA_CAP
