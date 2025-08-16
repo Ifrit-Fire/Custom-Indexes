@@ -23,7 +23,8 @@ def get_crypto(criteria: dict) -> DataFrame:
     results are normalized and cached for future use.
 
     :param criteria: Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
-    :return: DataFrame containing standardized columns: COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME.
+    :return: DataFrame containing standardized columns: `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`,
+    `COL_TYPE`.
     """
 
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)

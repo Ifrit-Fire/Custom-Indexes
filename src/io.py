@@ -21,6 +21,13 @@ def save_index(name: str, df: DataFrame):
 
 
 def console_countdown(msg: str, seconds: int):
+    """
+        Display a countdown timer in the console with a custom message, overwriting the same line each second until it
+        reaches zero.
+
+        :param msg: Message prefix displayed before the countdown.
+        :param seconds: Number of seconds to count down from.
+        """
     for remaining in range(seconds, 0, -1):
         sys.stdout.write(f"\r{msg} in {remaining:02d} seconds...")
         sys.stdout.flush()

@@ -113,7 +113,7 @@ def get_stock(symbol: str) -> TickerDetails:
     raw = raw.data.decode("utf-8")
     raw = json.loads(raw)["results"]
     ticker = TickerDetails.from_dict(raw)
-    ticker.ticker = symbol
+    ticker.ticker = symbol  # Ensure our symbol is used so lookups remain consistent
     _save_ticker_details(ticker.ticker, raw)
 
     return ticker

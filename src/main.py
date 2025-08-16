@@ -8,7 +8,9 @@ from src.consts import COL_WEIGHT
 # TODO: Filter crypto by date listed (5 year?)
 # TODO: Switch all/most prints to logging
 # TODO: Add ability to clean old cache
+# TODO: Can we run main loop in parallel?
 # TODO: Better way to execute running program....make?
+# TODO: Research including ETVs holding physical commodities
 # TODO: Setup GitHub actions to recurringly update indexes
 # TODO: Unit tests?
 # TODO: Make static page displaying performance and composition over time
