@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 3131 LAS VEGAS BOULEVARD SOUTH
+    city: LAS VEGAS
+    postal_code: '89109'
+    state: NV
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d3lubnJlc29ydHMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d3lubnJlc29ydHMuY29t/images/2025-04-04_logo.svg
+cik: 0001174922
+composite_figi: BBG000LD9JQ8
+currency_name: usd
+description: 'Wynn Resorts operates luxury casinos and resorts. The company was founded
+    in 2002 by Steve Wynn, the former CEO. The company operates four megaresorts:
+    Wynn Macau and Encore in Macao and Wynn Las Vegas and Encore in Las Vegas. Cotai
+    Palace opened in August 2016 in Macao, and Encore Boston Harbor in Massachusetts
+    opened June 2019. We expect the company to continue to build nongaming attractions
+    in Macao over the next few years. We model Wynn''s managed integrated resort in
+    the United Arab Emirates to open in 2027. The company also operates Wynn Interactive,
+    a digital sports betting and iGaming platform. The company received 76% and 24%
+    of its 2019 prepandemic EBITDA from Macao and the US, respectively. In 2024, both
+    the US and Macao were each 50% of total EBITDA.'
+homepage_url: https://www.wynnresorts.com
+list_date: '2002-10-25'
+locale: us
+market: stocks
+market_cap: 11626655696.42
+name: Wynn Resorts Ltd
+phone_number: (702) 770-7555
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SJZ2V8
+share_class_shares_outstanding: 103976531
+sic_code: '7011'
+sic_description: HOTELS & MOTELS
+ticker: WYNN
+ticker_root: WYNN
+total_employees: 28000
+type: CS
+weighted_shares_outstanding: 103976531

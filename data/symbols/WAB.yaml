@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 30 ISABELLA STREET
+    city: PITTSBURGH
+    postal_code: '15212'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2FidGVjY29ycC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2FidGVjY29ycC5jb20/images/2025-04-04_logo.svg
+cik: 0000943452
+composite_figi: BBG000BDD940
+currency_name: usd
+description: 'Westinghouse Air Brake Technologies Corp provides value-added, technology-based
+    products and services for the freight rail and passenger transit industries and
+    the mining, marine, and industrial markets. It provides its products and services
+    through two main business segments: Freight and Transit. The company generates
+    maximum revenue from the Freight segment, which manufactures new and modernized
+    locomotives, provides aftermarket parts and services to existing locomotives,
+    provides components to new and existing freight cars; builds new commuter locomotives;
+    supplies rail control and infrastructure products, including electronics, positive
+    train control equipment, signal design, and engineering services. Geographically,
+    it generates a majority of its revenue from the United States.'
+homepage_url: https://www.wabteccorp.com
+list_date: '1995-06-15'
+locale: us
+market: stocks
+market_cap: 33233297608.8
+name: Wabtec Inc.
+phone_number: (412) 825-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XBT3
+share_class_shares_outstanding: 170953177
+sic_code: '3743'
+sic_description: RAILROAD EQUIPMENT
+ticker: WAB
+ticker_root: WAB
+total_employees: 29500
+type: CS
+weighted_shares_outstanding: 170953177

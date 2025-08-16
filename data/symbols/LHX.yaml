@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1025 W NASA BLVD
+    city: MELBOURNE
+    postal_code: '32919'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bDNoYXJyaXMuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bDNoYXJyaXMuY29t/images/2025-04-04_logo.svg
+cik: 0000202058
+composite_figi: BBG000BLGFJ9
+currency_name: usd
+description: In addition to its legacy software-defined radio franchise, L3Harris
+    Technologies has through a series of acquisitions established franchises producing
+    uncrewed aerial vehicles, sensors, avionics, space-based systems, missiles, and
+    solid rocket motors. It also adapts civilian aircraft for military use and provides
+    military and commercial training services, and maintains the US Federal Aviation
+    Administration's communications infrastructure.
+homepage_url: https://www.l3harris.com
+list_date: '1955-07-13'
+locale: us
+market: stocks
+market_cap: 50556756315.560005
+name: L3Harris Technologies, Inc.
+phone_number: (321) 727-9100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5S0N9
+share_class_shares_outstanding: 187094798
+sic_code: '3812'
+sic_description: SEARCH, DETECTION, NAVAGATION, GUIDANCE, AERONAUTICAL SYS
+ticker: LHX
+ticker_root: LHX
+total_employees: 47000
+type: CS
+weighted_shares_outstanding: 187094798

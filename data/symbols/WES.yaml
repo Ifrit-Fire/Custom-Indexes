@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 9950 WOODLOCH FOREST DRIVE, SUITE 2800
+    city: THE WOODLANDS
+    postal_code: 77380-7046
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2VzdGVybm1pZHN0cmVhbS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2VzdGVybm1pZHN0cmVhbS5jb20/images/2025-04-04_logo.svg
+cik: 0001423902
+composite_figi: BBG003M3V230
+currency_name: usd
+description: Western Midstream Partners LP is a USA-based company which own, operate,
+    acquire and develop midstream energy assets. The company through its subsidiary
+    is engaged in the business of gathering, processing, compressing, treating and
+    transporting natural gas, condensate, NGLs and crude oil. It owns or has investments
+    in assets located in the Rocky Mountains (Colorado, Utah, and Wyoming), the Mid-Continent
+    (Kansas and Oklahoma), North-central Pennsylvania and Texas.
+homepage_url: https://www.westernmidstream.com
+list_date: '2012-12-07'
+locale: us
+market: stocks
+market_cap: 14753603688.759998
+name: Western Midstream Partners, LP
+phone_number: 346-786-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG003M3V2V9
+share_class_shares_outstanding: 381328604
+sic_code: '4922'
+sic_description: NATURAL GAS TRANSMISSION
+ticker: WES
+ticker_root: WES
+total_employees: 1511
+type: CS
+weighted_shares_outstanding: 381328604

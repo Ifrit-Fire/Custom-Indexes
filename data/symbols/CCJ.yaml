@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FtZWNvLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FtZWNvLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001009001
+composite_figi: BBG000DSZTN6
+currency_name: usd
+description: Cameco Corp is a provider of uranium needed to generate clean, reliable
+    baseload electricity around the globe. one of those uranium producers. It has
+    three reportable segments, Uranium, Fuel Services, and Westinghouse. It derives
+    maximum revenue from the Westinghouse Segment. It has some projects namely; Millennium,
+    Yeelirrie, Kintyre, and Exploration. The company operates in Canada, Kazakhstan,
+    Germany, Australia, and the United States.
+homepage_url: https://www.cameco.com
+list_date: '1996-03-14'
+locale: us
+market: stocks
+market_cap: 32915291068.8
+name: Cameco Corporation
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Y5S6
+share_class_shares_outstanding: 435387448
+ticker: CCJ
+ticker_root: CCJ
+total_employees: 2884
+type: CS
+weighted_shares_outstanding: 435387448

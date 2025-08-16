@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z3JhYi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z3JhYi5jb20/images/2025-04-04_logo.svg
+cik: 0001855612
+currency_name: usd
+description: Founded in 2012, Grab provides ride-sharing services, food and grocery
+    delivery, and financial services (payments, consumer loans, and enterprise offerings)
+    in eight Southeast-Asian countries through its mobile platform. The company partners
+    with merchants and riders, connecting them with consumers while charging commission
+    to both sides. Grab has a leading market share in and derives 89% of its revenue
+    from its core businesses, ride-sharing and food delivery. Singapore, Indonesia,
+    and Malaysia contributed more than 70% of revenue in 2024. Grab's main competitors
+    in Southeast Asia are Line Man and Goto. Its financial services business is still
+    in its nascent stage and provides minimal revenue currently. The company now also
+    generates advertising revenue.
+homepage_url: https://www.grab.com
+list_date: '2021-12-02'
+locale: us
+market: stocks
+market_cap: 20869120000.0
+name: Grab Holdings Limited Class A Ordinary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 3909000000
+ticker: GRAB
+ticker_root: GRAB
+total_employees: 11267
+type: CS
+weighted_shares_outstanding: 4076000000

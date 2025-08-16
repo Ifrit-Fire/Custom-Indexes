@@ -1,0 +1,20 @@
+active: true
+address:
+    address1: 30 HUDSON YARDS
+    city: NEW YORK
+    postal_code: '10001'
+    state: NY
+cik: 0001404912
+currency_name: usd
+list_date: '2021-04-21'
+locale: us
+market: stocks
+name: KKR Group Finance Co. IX LLC 4.625% Subordinated Notes due 2061
+phone_number: 212-750-8300
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: KKRS
+ticker_root: KKRS
+type: SP

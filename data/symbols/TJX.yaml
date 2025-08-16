@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 770 COCHITUATE RD
+    city: FRAMINGHAM
+    postal_code: '01701'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGp4LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGp4LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000109198
+composite_figi: BBG000BV8DN6
+currency_name: usd
+description: TJX Companies is the leading off-price retailer of apparel, accessories,
+    and home merchandise in the United States. The firm leverages its more than 20,000
+    global vendor relationships to procure and sell brand-name merchandise at prices
+    20%-60% cheaper than conventional retail channels. TJX opportunistically purchases
+    excess inventory that stems from manufacturing overruns and retail closeout sales.
+    The retailer disperses its vast and disparate merchandise across its 5,000 global
+    stores, creating a treasure-hunt shopping experience for consumers. Over three
+    quarters of TJX's sales are derived from the United States, primarily via the
+    T.J. Maxx, Marshalls, and HomeGoods banners. About 10% of sales come from Canada
+    and 12% from Europe and Australia.
+homepage_url: https://www.tjx.com
+list_date: '1965-11-17'
+locale: us
+market: stocks
+market_cap: 148811968085.36
+name: TJX Companies, Inc. (The)
+phone_number: 508-390-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5WQ93
+share_class_shares_outstanding: 1115615624
+sic_code: '5651'
+sic_description: RETAIL-FAMILY CLOTHING STORES
+ticker: TJX
+ticker_root: TJX
+total_employees: 364000
+type: CS
+weighted_shares_outstanding: 1115615624

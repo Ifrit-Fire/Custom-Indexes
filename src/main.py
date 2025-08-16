@@ -1,10 +1,20 @@
 import src.data_processing as dp
 from src import allocations, io
 from src.clients import fmp, cmc
-from src.config_handler import config, KEY_INDEX_WEIGHT_MIN
+from src.config_handler import config
 from src.consts import COL_WEIGHT
 
-# TODO: FMP API returns notes like TBB, SOJE, SOJD, DUKB. Need to figure out how to prune those out.
+# TODO: Filter stock by date listed (1 year)
+# TODO: Filter crypto by date listed (5 year?)
+# TODO: Switch all/most prints to logging
+# TODO: Add ability to clean old cache
+# TODO: Can we run main loop in parallel?
+# TODO: Better way to execute running program....make?
+# TODO: Research including ETVs holding physical commodities
+# TODO: Setup GitHub actions to recurringly update indexes
+# TODO: Unit tests?
+# TODO: Make static page displaying performance and composition over time
+# TODO: Update Indexes with historical data to run performance metrics on
 
 for index, criteria in config.get_all_indexes().items():
     print(f"{index} - Creating Index")

@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3BvdGlmeS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3BvdGlmeS5jb20/images/2025-04-04_logo.png
+cik: 0001639920
+currency_name: usd
+description: Spotify is the leading global music streaming service provider, with
+    nearly 700 million monthly active users and over 250 million paying subscribers,
+    with the latter constituting the firm's premium segment. Most of the firm's revenue
+    and nearly all its gross profit come from the subscribers, who pay a monthly fee
+    to access a music library that consists of most of the most popular songs ever
+    recorded, including all from the major record labels. The firm also sells separate
+    audiobook subscriptions and integrates podcasts within its standard music app.
+    Podcast content is not exclusive and is typically free to access on other platforms.
+    Ad-supported users can access a similar music catalog but cannot customize a similar
+    on-demand experience.
+homepage_url: https://www.spotify.com
+list_date: '2018-04-03'
+locale: us
+market: stocks
+market_cap: 141852899545.35
+name: Spotify Technology S.A.
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 204707084
+ticker: SPOT
+ticker_root: SPOT
+total_employees: 7691
+type: CS
+weighted_shares_outstanding: 205777761

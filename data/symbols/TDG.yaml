@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1350 EUCLID AVENUE
+    address2: SUITE 1600
+    city: CLEVELAND
+    postal_code: '44115'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHJhbnNkaWdtLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHJhbnNkaWdtLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001260221'
+composite_figi: BBG000L8CBX4
+currency_name: usd
+description: 'TransDigm manufactures and services a broad set of specialized parts
+    for commercial and military aircraft. The firm organizes itself in three segments:
+    power and control, airframes, and a small non-aviation segment, which serves mostly
+    off-road vehicles and mining equipment. It operates as an acquisitive holding
+    company that focuses its portfolio on firms that make proprietary aerospace products
+    with substantial aftermarket demand. TransDigm regularly employs financial leverage
+    to amplify its operating results.'
+homepage_url: https://www.transdigm.com
+list_date: '2006-03-15'
+locale: us
+market: stocks
+market_cap: 79493347049.5
+name: TransDigm Group Incorporated
+phone_number: 216 706 2960
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SPV1C1
+share_class_shares_outstanding: 56350285
+sic_code: '3728'
+sic_description: AIRCRAFT PARTS & AUXILIARY EQUIPMENT, NEC
+ticker: TDG
+ticker_root: TDG
+total_employees: 16600
+type: CS
+weighted_shares_outstanding: 56350285

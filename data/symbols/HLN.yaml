@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aGFsZW9uLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aGFsZW9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001900304
+composite_figi: BBG018GZNCH6
+currency_name: usd
+description: Haleon is one of the largest consumer health companies in the world.
+    Formed by a combination of consumer health divisions of GSK, Pfizer, and Novartis,
+    Haleon separated from GSK and went public in July 2022. The firm generates 60%
+    of sales from global power brands including Sensodyne, Advil, Centrum, and Poligrip,
+    that play in many geographies and are often leaders in their respective categories.
+    It also has a number of local brands, including Emergen-C, Eno, Tums, and Caltrate,
+    that are more tailored to regional needs and have strong local brand equity. Overall,
+    Haleon's brands tackle a variety of silos within consumer health including oral
+    care, digestive health, pain relief, and nutrition.
+homepage_url: https://www.haleon.com
+list_date: '2022-07-18'
+locale: us
+market: stocks
+market_cap: 42985968362.7
+name: Haleon plc American Depositary Shares (Each representing two Ordinary Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG018GZNDB0
+share_class_shares_outstanding: 4491885678
+ticker: HLN
+ticker_root: HLN
+total_employees: 24622
+type: ADRC
+weighted_shares_outstanding: 4487053065

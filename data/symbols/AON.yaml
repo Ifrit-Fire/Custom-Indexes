@@ -1,0 +1,32 @@
+active: true
+address:
+    address1: 15 GEORGES QUAY
+    city: DUBLIN 2
+    postal_code: D02 VR98
+    state: L2
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW9uLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000315293
+currency_name: usd
+description: Aon is a leading global provider of insurance and reinsurance brokerage
+    and human resources solutions. Its operations are tilted toward its brokerage
+    operations. Headquartered in London, Aon has about 50,000 employees and operations
+    in over 120 countries.
+homepage_url: https://www.aon.com
+list_date: '1975-02-18'
+locale: us
+market: stocks
+market_cap: 78447112254.57
+name: Aon plc Class A
+phone_number: '35312666000'
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 215626597
+sic_code: '6411'
+sic_description: INSURANCE AGENTS, BROKERS & SERVICE
+ticker: AON
+ticker_root: AON
+total_employees: 60000
+type: CS
+weighted_shares_outstanding: 215626597

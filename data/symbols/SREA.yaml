@@ -1,0 +1,20 @@
+active: true
+address:
+    address1: 488 8TH AVENUE
+    city: SAN DIEGO
+    postal_code: '92101'
+    state: CA
+cik: 0001032208
+currency_name: usd
+list_date: '2019-06-27'
+locale: us
+market: stocks
+name: Sempra 5.750% Junior Subordinated Notes due 2079
+phone_number: (619) 696-2000
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '4932'
+sic_description: GAS & OTHER SERVICES COMBINED
+ticker: SREA
+ticker_root: SREA
+type: SP

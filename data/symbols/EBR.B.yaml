@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZWxldHJvYnJhcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZWxldHJvYnJhcy5jb20/images/2025-04-04_logo.svg
+cik: 0001439124
+composite_figi: BBG000BL63W2
+currency_name: usd
+description: Centrais Eletricas Brasileiras SA is engaged in the generation, transmission,
+    and commercialization of electricity in Brazil. The company operates a portfolio
+    of wind, thermal, hydro, and nuclear power plants located throughout the country.
+    Its segments are Generation which consists of the generation of electric energy
+    and the sale of energy to distribution companies and free consumers, and commercialization;
+    Transmission which consists of the transmission of electric energy; and Administration
+    activities mainly represent the Company's cash management, the management of the
+    compulsory loan, and the management of business in SPEs, and others.
+homepage_url: https://www.eletrobras.com
+list_date: '1899-12-30'
+locale: us
+market: stocks
+market_cap: 20123002279.85
+name: "Centrais El\xE9tricas Brasileiras S.A.- Eletrobr\xE1s American Depositary Shares\
+    \ (Each representing one Preferred Share)"
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8FGV3
+share_class_shares_outstanding: 280088314
+ticker: EBR.B
+ticker_root: EBR
+ticker_suffix: B
+total_employees: 7710
+type: ADRC
+weighted_shares_outstanding: 2248380143

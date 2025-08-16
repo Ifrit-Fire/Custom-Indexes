@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 12300 LIBERTY BOULEVARD
+    city: ENGLEWOOD
+    postal_code: '80112'
+    state: CO
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGliZXJ0eW1lZGlhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001560385
+composite_figi: BBG01HLMBCG3
+currency_name: usd
+description: Liberty Media Corp along with its subsidiaries is engaged in the media
+    and entertainment industries in North America and the United Kingdom. The company
+    owns interests in a high-quality portfolio of assets across the media, entertainment
+    and sports industries. The company derives its maximum revenue from United Kingdom.
+homepage_url: https://www.libertymedia.com
+list_date: '2014-07-08'
+locale: us
+market: stocks
+market_cap: 25017159428.55
+name: Liberty Media Corporation Series C Liberty Formula One Common Stock
+phone_number: 720-875-5400
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01HLMBDC5
+share_class_shares_outstanding: 223627028
+sic_code: '4833'
+sic_description: TELEVISION BROADCASTING STATIONS
+ticker: FWONK
+ticker_root: FWON
+ticker_suffix: K
+total_employees: 1100
+type: CS
+weighted_shares_outstanding: 250046571

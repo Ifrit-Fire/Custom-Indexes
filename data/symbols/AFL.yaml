@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1932 WYNNTON RD
+    city: COLUMBUS
+    postal_code: '31999'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWZsYWMuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWZsYWMuY29t/images/2025-04-04_logo.png
+cik: 0000004977
+composite_figi: BBG000BBBNC6
+currency_name: usd
+description: Aflac Inc offers supplemental health insurance and life insurance in
+    the United States and Japan. In addition to its cancer policies, the company has
+    broadened its product offerings to include accident, dental and vision, disability,
+    and long-term-care insurance. It markets its products through independent distributors,
+    selling the majority of its policies directly to consumers at their places of
+    work, and also reaches out to its customers outside of their worksite through
+    digital mediums. The company has two reportable business segments; Aflac Japan
+    which generates the majority of the revenue, and Aflac U.S.
+homepage_url: https://www.aflac.com
+list_date: '1973-08-27'
+locale: us
+market: stocks
+market_cap: 56531688493.0
+name: Aflac Inc.
+phone_number: (706) 323-3431
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5NGJ4
+share_class_shares_outstanding: 534831490
+sic_code: '6321'
+sic_description: ACCIDENT & HEALTH INSURANCE
+ticker: AFL
+ticker_root: AFL
+total_employees: 12694
+type: CS
+weighted_shares_outstanding: 534831490

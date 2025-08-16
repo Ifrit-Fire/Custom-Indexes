@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 5140 YONGE STREET, SUITE 1900
+    city: TORONTO
+    postal_code: M2N 6L7
+    state: A6
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2VsZXN0aWNhLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2VsZXN0aWNhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001030894
+composite_figi: BBG000BPS2C3
+currency_name: usd
+description: 'Celestica Inc offers supply chain solutions. The company has two operating
+    and reportable segments: Advanced Technology Solutions (ATS) and Connectivity
+    & Cloud Solutions (CCS). The ATS segment consists of the ATS end market and is
+    comprised of the Aerospace and Defense, Industrial, health tech, and Capital Equipment
+    businesses. Its Capital Equipment business is comprised of the semiconductor,
+    display, and robotics equipment businesses, and the CCS segment consists of Communications
+    and Enterprise end markets, The Enterprise end market is comprised of its servers
+    and storage businesses. The company generates a majority of its revenue from the
+    Connectivity & Cloud Solutions segment.'
+homepage_url: https://www.celestica.com
+list_date: '1998-06-30'
+locale: us
+market: stocks
+market_cap: 23491975134.92
+name: Celestica, Inc.
+phone_number: 416-448-5800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S9CXM7
+share_class_shares_outstanding: 115032308
+sic_code: '3672'
+sic_description: PRINTED CIRCUIT BOARDS
+ticker: CLS
+ticker_root: CLS
+total_employees: 26865
+type: CS
+weighted_shares_outstanding: 115032686

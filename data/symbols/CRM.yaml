@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: SALESFORCE TOWER
+    address2: 415 MISSION STREET 3RD FL
+    city: SAN FRANCISCO
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2FsZXNmb3JjZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2FsZXNmb3JjZS5jb20/images/2025-04-04_logo.svg
+cik: 0001108524
+composite_figi: BBG000BN2DC2
+currency_name: usd
+description: Salesforce provides enterprise cloud computing solutions. The company
+    offers customer relationship management technology that brings companies and customers
+    together. Its Customer 360 platform helps the group to deliver a single source
+    of truth, connecting customer data across systems, apps, and devices to help companies
+    sell, service, market, and conduct commerce. It also offers Service Cloud for
+    customer support, Marketing Cloud for digital marketing campaigns, Commerce Cloud
+    as an e-commerce engine, the Salesforce Platform, which allows enterprises to
+    build applications, and other solutions, such as MuleSoft for data integration.
+homepage_url: https://www.salesforce.com
+list_date: '2004-06-23'
+locale: us
+market: stocks
+market_cap: 221466960000.0
+name: Salesforce, Inc.
+phone_number: 415-901-7000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDLP09
+share_class_shares_outstanding: 956000000
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: CRM
+ticker_root: CRM
+total_employees: 76453
+type: CS
+weighted_shares_outstanding: 956000000

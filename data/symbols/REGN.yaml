@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 777 OLD SAW MILL RIVER ROAD
+    city: TARRYTOWN
+    postal_code: '10591'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmVnZW5lcm9uLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmVnZW5lcm9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000872589
+composite_figi: BBG000C734W3
+currency_name: usd
+description: Regeneron Pharmaceuticals discovers, develops, and commercializes products
+    that fight eye disease, cardiovascular disease, cancer, and inflammation. The
+    company has several marketed products, including low-dose Eylea and Eylea HD,
+    approved for wet age-related macular degeneration and other eye diseases; Dupixent
+    in immunology; Praluent for LDL cholesterol lowering; Libtayo in oncology; and
+    Kevzara in rheumatoid arthritis. Regeneron is also developing monoclonal and bispecific
+    antibodies with Sanofi, other collaborators, and independently, and has earlier-stage
+    partnerships that bring new technology to the pipeline, including RNAi (Alnylam)
+    and Crispr-based gene editing (Intellia).
+homepage_url: https://www.regeneron.com
+list_date: '1991-04-02'
+locale: us
+market: stocks
+market_cap: 59517248055.1
+name: Regeneron Pharmaceuticals Inc
+phone_number: (914) 847-7000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S6PX49
+share_class_shares_outstanding: 104170296
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: REGN
+ticker_root: REGN
+total_employees: 15207
+type: CS
+weighted_shares_outstanding: 105987442

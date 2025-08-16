@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE MADISON AVENUE
+    address2: SUITE 2400
+    city: NEW YORK
+    postal_code: '10010'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29pbmJhc2UuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29pbmJhc2UuY29t/images/2025-04-04_logo.svg
+cik: 0001679788
+composite_figi: BBG00ZGF7771
+currency_name: usd
+description: Founded in 2012, Coinbase is the leading cryptocurrency exchange platform
+    in the United States. The company intends to be the safe and regulation-compliant
+    point of entry for retail investors and institutions into the cryptocurrency economy.
+    Users can establish an account directly with the firm, instead of using an intermediary,
+    and many choose to allow Coinbase to act as a custodian for their cryptocurrency,
+    giving the company breadth beyond that of a traditional financial exchange. While
+    the company still generates the majority of its revenue from transaction fees
+    charged to its retail customers, Coinbase uses internal investment and acquisitions
+    to expand into adjacent businesses, such as prime brokerage and data analytics.
+homepage_url: https://www.coinbase.com
+list_date: '2021-04-14'
+locale: us
+market: stocks
+market_cap: 82893388211.34
+name: Coinbase Global, Inc. Class A Common Stock
+phone_number: (302) 636-5401
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00ZGF7799
+share_class_shares_outstanding: 215159125
+sic_code: '6199'
+sic_description: FINANCE SERVICES
+ticker: COIN
+ticker_root: COIN
+total_employees: 3772
+type: CS
+weighted_shares_outstanding: 256938157

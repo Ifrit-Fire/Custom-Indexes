@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: C/O LEGAL
+    address2: ONE M&T PLAZA
+    city: BUFFALO
+    postal_code: '14203'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d3d3My5tdGIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d3d3My5tdGIuY29t/images/2025-04-04_logo.svg
+cik: '0000036270'
+composite_figi: BBG000D9KWL9
+currency_name: usd
+description: M&T Bank is one of the largest regional banks in the United States, with
+    branches in New York, Pennsylvania, West Virginia, Virginia, Maryland, Delaware,
+    Massachusetts, New Hampshire, Vermont, Maine, Connecticut, and New Jersey. The
+    bank was founded to serve manufacturing and trading businesses around the Erie
+    Canal and is primarily focused on commercial real estate and commercial-related
+    lending, with some retail operations also present.
+homepage_url: https://www3.mtb.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 30192789714.11
+name: M&T Bank Corp.
+phone_number: (716) 559-3172
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7S2B4
+share_class_shares_outstanding: 156269291
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: MTB
+ticker_root: MTB
+total_employees: 22590
+type: CS
+weighted_shares_outstanding: 156269291

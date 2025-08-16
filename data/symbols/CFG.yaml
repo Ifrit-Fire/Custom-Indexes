@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1 CITIZENS PLAZA
+    city: PROVIDENCE
+    postal_code: 02903
+    state: RI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2l0aXplbnNiYW5rLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2l0aXplbnNiYW5rLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000759944
+composite_figi: BBG006Q0HY77
+currency_name: usd
+description: Citizens Financial Group Inc is a bank holding company headquartered
+    in Providence, Rhode Island. Through the bank, it offers various retail and commercial
+    banking products and services to individuals, small businesses, middle-market
+    companies, large corporations, and institutions. The company's reportable segments
+    are; Commercial Banking, Consumer Banking, Non-Core, and Others. A majority of
+    its revenue is generated from the Consumer Banking segment, which serves consumer
+    customers and small businesses, offering traditional banking products and services
+    including deposits, mortgage and home equity lending, credit cards, small business
+    loans, education loans, point-of-sale finance loans, and wealth management and
+    investment services.
+homepage_url: https://www.citizensbank.com
+list_date: '2014-09-24'
+locale: us
+market: stocks
+market_cap: 20941993415.949997
+name: Citizens Financial Group, Inc.
+phone_number: (203) 900-6715
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG006Q0HZT0
+share_class_shares_outstanding: 431348989
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: CFG
+ticker_root: CFG
+total_employees: 17287
+type: CS
+weighted_shares_outstanding: 431348989

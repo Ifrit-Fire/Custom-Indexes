@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 77 W. WACKER DR.
+    city: CHICAGO
+    postal_code: '60601'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWRtLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWRtLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000007084
+composite_figi: BBG000BB6WG8
+currency_name: usd
+description: Archer-Daniels-Midland is a major processor of oilseeds, corn, wheat,
+    and other agricultural commodities. The company is also one of the largest grain
+    merchandisers through its extensive network of logistical assets to store and
+    transport crops around the globe. ADM also runs a nutrition business that focuses
+    on both human and animal ingredients and is a large producer of corn-based sweeteners,
+    starches, and ethanol.
+homepage_url: https://www.adm.com
+list_date: '1945-09-10'
+locale: us
+market: stocks
+market_cap: 28741385373.06
+name: Archer Daniels Midland Company
+phone_number: 312-634-8233
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5ND74
+share_class_shares_outstanding: 480464483
+sic_code: '2070'
+sic_description: FATS & OILS
+ticker: ADM
+ticker_root: ADM
+total_employees: 44043
+type: CS
+weighted_shares_outstanding: 480464483

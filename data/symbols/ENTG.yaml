@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 129 CONCORD ROAD
+    city: BILLERICA
+    postal_code: 01821
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZW50ZWdyaXMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZW50ZWdyaXMuY29t/images/2025-04-04_logo.svg
+cik: '0001101302'
+composite_figi: BBG000CTV4N4
+currency_name: usd
+description: Entegris is a leading supplier of purification solutions and advanced
+    materials. The vast majority of sales are to the semiconductor industry. The majority
+    of revenue comes from semiconductor fabricators, but the company sells to all
+    areas of the semiconductor manufacturing supply chain including equipment and
+    engineering, chemicals and materials, and distributors. Entegris specializes in
+    materials science and materials purity, both of which are crucial in the semiconductor
+    manufacturing process.
+homepage_url: https://www.entegris.com
+list_date: '2000-07-11'
+locale: us
+market: stocks
+market_cap: 12093832000.0
+name: Entegris Inc
+phone_number: (978) 436-6500
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SF9YL6
+share_class_shares_outstanding: 151600000
+sic_code: '3089'
+sic_description: PLASTICS PRODUCTS, NEC
+ticker: ENTG
+ticker_root: ENTG
+total_employees: 8200
+type: CS
+weighted_shares_outstanding: 151400000

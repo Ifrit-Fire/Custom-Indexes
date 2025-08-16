@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE CARRIER PLACE
+    city: FARMINGTON
+    postal_code: '06032'
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/b3Rpcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b3Rpcy5jb20/images/2025-04-04_logo.svg
+cik: 0001781335
+composite_figi: BBG00RP60KV0
+currency_name: usd
+description: Otis is the largest global elevator and escalator supplier by revenue
+    with around 18% global market share. In 1854 Otis' founder and namesake Elisha
+    Graves Otis, invented a safety mechanism that prevented elevators from falling
+    if the hoisting cable failed. The company's product and service lifecycle begins
+    with installations of elevator units in new buildings, later selling maintenance
+    services on the units, and eventually replacement of the units after the average
+    15- to 20-year useful life of an elevator. As the largest global OEM, Otis has
+    amassed an installed base under service that exceeds 2 million elevators. Its
+    business model is similar to that of its closest competitors Kone, Schindler,
+    and TK Elevator.
+homepage_url: https://www.otis.com
+list_date: '2020-03-18'
+locale: us
+market: stocks
+market_cap: 35020564683.67
+name: Otis Worldwide Corporation
+phone_number: (860) 674-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00RP60LN7
+share_class_shares_outstanding: 392475229
+sic_code: '3600'
+sic_description: ELECTRONIC & OTHER ELECTRICAL EQUIPMENT (NO COMPUTER EQUIP)
+ticker: OTIS
+ticker_root: OTIS
+total_employees: 72000
+type: CS
+weighted_shares_outstanding: 392475229

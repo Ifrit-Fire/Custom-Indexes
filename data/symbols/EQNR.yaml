@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXF1aW5vci5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXF1aW5vci5jb20/images/2025-04-04_logo.svg
+cik: '0001140625'
+composite_figi: BBG000NT0ZZ4
+currency_name: usd
+description: Equinor is a Norway-based integrated oil and gas company. It has been
+    publicly listed since 2001, but the government retains a 67% stake. Operating
+    primarily on the Norwegian Continental Shelf, the firm produced 2.1 million barrels
+    of oil equivalent per day in 2023 (53% liquids) and ended 2023 with 5.2 billion
+    barrels of proven reserves (49% liquids). Operations also include offshore wind,
+    solar, oil refineries and natural gas processing, marketing, and trading.
+homepage_url: https://www.equinor.com
+list_date: '2001-06-18'
+locale: us
+market: stocks
+market_cap: 62167893577.4
+name: Equinor ASA American Depositary Shares (Each Representing One Ordinary Share,
+    nominal value NOK 2.50 per share)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SJ3R93
+share_class_shares_outstanding: 2556807512
+ticker: EQNR
+ticker_root: EQNR
+total_employees: 25155
+type: ADRC
+weighted_shares_outstanding: 2528177860

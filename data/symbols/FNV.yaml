@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZnJhbmNvLW5ldmFkYS5jb20/images/2024-10-01_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZnJhbmNvLW5ldmFkYS5jb20/images/2024-10-01_logo.svg
+cik: '0001456346'
+composite_figi: BBG000RD3CL8
+currency_name: usd
+description: Franco-Nevada Corp is a precious-metals-focused royalty and investment
+    company. The company owns a diversified portfolio of precious metals and royalty
+    streams, which is actively managed to generate the bulk of its revenue from gold,
+    silver, and platinum. The company does not operate mines, develop projects, or
+    conduct exploration. Franco-Nevada's short-term financial performance is linked
+    to the price of commodities and the amount of production from its portfolio of
+    producing assets. Its long-term performance is affected by the availability of
+    exploration and development capital. The company holds a portfolio of assets,
+    diversified by commodity, revenue type, and stage of a project, located in the
+    U.S, Canada, and Australia.
+homepage_url: https://www.franco-nevada.com
+list_date: '2007-12-06'
+locale: us
+market: stocks
+market_cap: 34520472904.32
+name: Franco-Nevada Corporation
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001STGSR5
+share_class_shares_outstanding: 192648281
+ticker: FNV
+ticker_root: FNV
+total_employees: 40
+type: CS
+weighted_shares_outstanding: 192701088

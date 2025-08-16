@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1654 SMALLMAN ST.
+    city: PITTSBURGH
+    postal_code: '15222'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXVyb3JhLnRlY2g/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXVyb3JhLnRlY2g/images/2025-04-04_logo.svg
+cik: 0001828108
+composite_figi: BBG00Z92Y6X1
+currency_name: usd
+description: Aurora Innovation Inc delivers self-driving technology safely, quickly,
+    and broadly. The Aurora Driver is a self-driving system designed to operate multiple
+    vehicle types, from freight-hauling trucks to ride-hailing passenger vehicles.
+    It underpins Aurora Horizon and Aurora Connect, its driver-as-a-service products
+    for trucking and ride-hailing. The Company is developing the Aurora Driver, a
+    scalable suite of self-driving hardware, software, and data services designed
+    as a platform to adapt and interoperate among vehicle types and applications.
+homepage_url: https://www.aurora.tech
+list_date: '2021-11-04'
+locale: us
+market: stocks
+market_cap: 11920846502.96
+name: Aurora Innovation, Inc. Class A Common Stock
+phone_number: (888) 583-9506
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00Z92Y6Y0
+share_class_shares_outstanding: 1506035025
+sic_code: '7373'
+sic_description: SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN
+ticker: AUR
+ticker_root: AUR
+total_employees: 1800
+type: CS
+weighted_shares_outstanding: 1845332276

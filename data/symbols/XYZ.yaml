@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 1955 BROADWAY
+    address2: SUITE 600
+    city: OAKLAND
+    postal_code: '94612'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmxvY2sueHl6/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmxvY2sueHl6/images/2025-04-04_logo.svg
+cik: '0001512673'
+composite_figi: BBG0018SLC07
+currency_name: usd
+description: Founded in 2009, Block provides payment services to merchants, along
+    with related services. The company also launched Cash App, a person-to-person
+    payment network. In 2024, Square's payment volume was almost USD 250 million.
+homepage_url: https://www.block.xyz
+list_date: '2015-11-19'
+locale: us
+market: stocks
+market_cap: 46907488800.0
+name: Block, Inc.
+phone_number: 415-375-3176
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001TFLWL5
+share_class_shares_outstanding: 555001000
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: XYZ
+ticker_root: XYZ
+total_employees: 11372
+type: CS
+weighted_shares_outstanding: 609584000

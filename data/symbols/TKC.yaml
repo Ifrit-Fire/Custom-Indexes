@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHVya2NlbGwuY29tLnRy/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHVya2NlbGwuY29tLnRy/images/2025-04-04_logo.svg
+cik: '0001071321'
+composite_figi: BBG000F0XHJ8
+currency_name: usd
+description: 'Turkcell Iletisim Hizmetleri AS provides mobile telephone services in
+    Turkey. The firm''s services portfolio includes high-quality mobile and fixed
+    voice, data, TV, and digital services over its network. The firm also operates
+    in the Turkish Republic of Northern Cyprus, Belarus, the Netherlands, and Ukraine.
+    It has three main reportable segments: Turkcell Turkiye, Turkcell International,
+    and Techfin. The Turkcell Turkiye segment, which derives the majority of revenue,
+    comprises mainly telecommunication and technology services activities.'
+homepage_url: https://www.turkcell.com.tr
+list_date: '2000-07-11'
+locale: us
+market: stocks
+market_cap: 5280772476.0
+name: TURKCELL ILETISIM HIZMETLERI A.S. ADS
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SFMFS5
+share_class_shares_outstanding: 880000000
+ticker: TKC
+ticker_root: TKC
+total_employees: 22228
+type: ADRC
+weighted_shares_outstanding: 871414600

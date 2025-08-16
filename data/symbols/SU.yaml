@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3VuY29yLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3VuY29yLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000311337'
+composite_figi: BBG000BRK7L6
+currency_name: usd
+description: Suncor Energy Inc is an integrated energy company. The company's operations
+    include oil sands development, production and upgrading, offshore oil production,
+    petroleum refining in Canada and the U.S., and the company's Petro-Canada retail
+    and wholesale distribution networks. The company is developing petroleum resources
+    while advancing the transition to a low-emissions future through investment in
+    power, and renewable fuels. It also conducts energy trading activities focused
+    principally on the marketing and trading of crude oil, natural gas, byproducts,
+    refined products and power. The company's operating segments include Oil Sands,
+    Exploration & Production, Refining & Marketing (R&M), and Corporate & eliminations.
+    Geographically, the company generates a majority of its revenue from Canada.
+homepage_url: https://www.suncor.com
+list_date: '1993-12-01'
+locale: us
+market: stocks
+market_cap: 47243823850.079994
+name: Suncor Energy, Inc.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5YSF0
+share_class_shares_outstanding: 1217884227
+ticker: SU
+ticker_root: SU
+total_employees: 15010
+type: CS
+weighted_shares_outstanding: 1213246632

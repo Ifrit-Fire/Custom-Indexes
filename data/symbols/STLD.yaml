@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 7575 W JEFFERSON BLVD
+    city: FORT WAYNE
+    postal_code: '46804'
+    state: IN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3RlZWxkeW5hbWljcy5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RlZWxkeW5hbWljcy5jb20/images/2025-04-04_logo.svg
+cik: '0001022671'
+composite_figi: BBG000HGYNZ9
+currency_name: usd
+description: Steel Dynamics Inc operates as a domestic steel producer and metal recycler
+    in the United States. The company's product portfolio comprises hot rolled sheet,
+    hot rolled plate, painted sheet products, cold rolled sheet, and others. Its reportable
+    segments are steel operations, metals recycling operations, steel fabrication
+    operations, and aluminum operations. Maximum revenue is generated from its steel
+    operations segment, which consists of manufacturing various steel products and
+    numerous coating operations. Its primary sources of revenue are currently from
+    the manufacture and sale of steel products, the processing and sale of recycled
+    ferrous and nonferrous metals, and the fabrication and sale of steel joists and
+    deck products.
+homepage_url: https://www.steeldynamics.com
+list_date: '1996-11-22'
+locale: us
+market: stocks
+market_cap: 19024721082.36
+name: Steel Dynamics Inc
+phone_number: 260 459 3553
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S98JK5
+share_class_shares_outstanding: 148453876
+sic_code: '3312'
+sic_description: STEEL WORKS, BLAST FURNACES & ROLLING MILLS (COKE OVENS)
+ticker: STLD
+ticker_root: STLD
+total_employees: 13000
+type: CS
+weighted_shares_outstanding: 147204589

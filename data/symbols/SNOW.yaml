@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 106 EAST BABCOCK STREET
+    address2: SUITE 3A
+    city: BOZEMAN
+    postal_code: '59715'
+    state: MT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c25vd2ZsYWtlLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c25vd2ZsYWtlLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001640147'
+composite_figi: BBG007DHGNJ4
+currency_name: usd
+description: Founded in 2012, Snowflake is a fully managed platform that consolidates
+    data hosted on different public clouds for centralized analytics and governance.
+    Snowflake's cloud-native architecture allows users to independently scale the
+    compute and storage layers, providing customers with optimized performance at
+    lower costs. The company's data lake and data warehouse products support a variety
+    of use cases, including business analytics, data engineering, and artificial intelligence.
+    Snowflake is widely used by Fortune 2000 companies in financial services, media,
+    and retail sectors.
+homepage_url: https://www.snowflake.com
+list_date: '2020-09-16'
+locale: us
+market: stocks
+market_cap: 65687249081.91
+name: Snowflake Inc.
+phone_number: 844-766-9355
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG007DHGNK2
+share_class_shares_outstanding: 333700000
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: SNOW
+ticker_root: SNOW
+total_employees: 8240
+type: CS
+weighted_shares_outstanding: 333657993

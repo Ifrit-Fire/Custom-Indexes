@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 100 FIRST STREET
+    address2: SUITE 600
+    city: SAN FRANCISCO
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/b2t0YS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b2t0YS5jb20/images/2025-04-04_logo.svg
+cik: '0001660134'
+composite_figi: BBG001YV1SM4
+currency_name: usd
+description: 'Okta is a cloud-native security company that focuses on identity and
+    access management. The San Francisco-based firm went public in 2017 and focuses
+    on two key client stakeholder groups: workforces and customers. Okta''s workforce
+    offerings enable a company''s employees to securely access its cloud-based and
+    on-premises resources. The firm''s customer offerings allow its clients'' customers
+    to securely access the client''s applications.'
+homepage_url: https://www.okta.com
+list_date: '2017-04-07'
+locale: us
+market: stocks
+market_cap: 15928168015.18
+name: Okta, Inc. Class A Common Stock
+phone_number: 888-722-7871
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001YV1SN3
+share_class_shares_outstanding: 167163429
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: OKTA
+ticker_root: OKTA
+total_employees: 5914
+type: CS
+weighted_shares_outstanding: 175073291

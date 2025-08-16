@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 3005 HIGHLAND PARKWAY
+    address2: SUITE 200
+    city: DOWNERS GROVE
+    postal_code: '60515'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZG92ZXJjb3Jwb3JhdGlvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZG92ZXJjb3Jwb3JhdGlvbi5jb20/images/2025-04-04_logo.svg
+cik: 0000029905
+composite_figi: BBG000BHB3M6
+currency_name: usd
+description: Founded in 1955 by George Ohrstrom, Dover has become an industrial behemoth
+    through the acquisition of dozens of esteemed brands. The company is organized
+    into five segments through which it designs and manufactures highly engineered
+    components, such as vehicle repair, factory automation, welding, aerospace, fuel
+    dispensing, printing, liquid handling, refrigeration, and can-making equipment.
+    It has operations around the globe but generates over half of its revenue in the
+    United States.
+homepage_url: https://www.dovercorporation.com
+list_date: '1956-12-03'
+locale: us
+market: stocks
+market_cap: 25072292041.99
+name: Dover Corporation
+phone_number: (630) 541-1540
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QL46
+share_class_shares_outstanding: 137134453
+sic_code: '3530'
+sic_description: CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP
+ticker: DOV
+ticker_root: DOV
+total_employees: 24000
+type: CS
+weighted_shares_outstanding: 137134453

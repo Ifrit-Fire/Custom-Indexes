@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 9001 LIBERTY PARKWAY
+    city: BIRMINGHAM
+    postal_code: '35242'
+    state: AL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZW5jb21wYXNzaGVhbHRoLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZW5jb21wYXNzaGVhbHRoLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000785161
+composite_figi: BBG000BGBRG2
+currency_name: usd
+description: Encompass Health Corp provides post-acute healthcare services in the
+    United States through a network of inpatient rehabilitation hospitals. Inpatient
+    rehabilitation contributes the majority of the firm's revenue and provides specialized
+    rehabilitative treatment through a network of inpatient hospitals. These hospitals
+    are concentrated in the eastern half of the United States and Texas.
+homepage_url: https://www.encompasshealth.com
+list_date: '1989-09-13'
+locale: us
+market: stocks
+market_cap: 11999229629.64
+name: Encompass Health Corporation Common Stock
+phone_number: 205-967-7116
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Q5B3
+share_class_shares_outstanding: 100723828
+sic_code: '8060'
+sic_description: SERVICES-HOSPITALS
+ticker: EHC
+ticker_root: EHC
+total_employees: 29163
+type: CS
+weighted_shares_outstanding: 100723828

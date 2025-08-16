@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1301 SECOND AVENUE, FLOOR 36
+    city: SEATTLE
+    postal_code: '98101'
+    state: WA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/emlsbG93Z3JvdXAuY29t/images/2025-04-04_icon.jpeg
+cik: '0001617640'
+composite_figi: BBG000D13GN8
+currency_name: usd
+description: Zillow Group Inc is an Internet-based real estate company that offers
+    its customers an on-demand experience for selling, buying, renting, or financing
+    with transparency and ease The group works with real estate agents, brokers, builders,
+    property managers, and landlords to pair technology with top-notch service. The
+    group has brands such as Zillow, Trulia, StreetEasy, Hotpads, Zillow Rentals,
+    Zillow Premier Agent and others.
+homepage_url: https://www.zillowgroup.com
+list_date: '2011-07-20'
+locale: us
+market: stocks
+market_cap: 19689458687.01
+name: ZILLOW GROUP INC CLASS A
+phone_number: (206) 470-7000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T0LC50
+share_class_shares_outstanding: 50089971
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: ZG
+ticker_root: ZG
+total_employees: 6944
+type: CS
+weighted_shares_outstanding: 242272163

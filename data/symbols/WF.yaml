@@ -1,0 +1,28 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d29vcmlmZy5jb20/images/2025-04-04_logo.png
+cik: '0001264136'
+composite_figi: BBG00MYXJJ27
+currency_name: usd
+description: Woori Financial Group Inc is a banking and financial services holding
+    company that offers a wide range of services, including corporate banking, consumer
+    banking, credit card operations, investment banking, capital markets activities,
+    international banking, asset management, and other businesses. The operating segments
+    of the company include Banking, Credit card, Capital, Investment banking, and
+    others.
+homepage_url: https://www.woorifg.com
+list_date: '2019-01-11'
+locale: us
+market: stocks
+market_cap: 13572073713.75
+name: Woori Financial Group Inc. American Depositary Shares (each representing three
+    (3) shares of Common Stock)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00MYXJJT8
+share_class_shares_outstanding: 247530500
+ticker: WF
+ticker_root: WF
+total_employees: 13279
+type: ADRC
+weighted_shares_outstanding: 244674125

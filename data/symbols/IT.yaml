@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 56 TOP GALLANT RD
+    address2: P O BOX 10212
+    city: STAMFORD
+    postal_code: 06904-2212
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2FydG5lci5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2FydG5lci5jb20/images/2025-04-04_logo.svg
+cik: 0000749251
+composite_figi: BBG000BB65D0
+currency_name: usd
+description: Gartner Inc provides independent research and analysis on information
+    technology and other related technology industries. Its research is delivered
+    to clients' desktops in the form of reports, briefings, and updates. Typical clients
+    are chief information officers and other business executives who help plan companies'
+    IT budgets. Gartner also provides consulting services. The company operates through
+    three business segments, namely Research, Conferences and Consulting. The company
+    generates majority of the revenue from Research segment.
+homepage_url: https://www.gartner.com
+list_date: '1993-10-29'
+locale: us
+market: stocks
+market_cap: 18378048014.7
+name: Gartner, Inc.
+phone_number: (203) 964-0096
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5SD60
+share_class_shares_outstanding: 75735795
+sic_code: '8741'
+sic_description: SERVICES-MANAGEMENT SERVICES
+ticker: IT
+ticker_root: IT
+total_employees: 20994
+type: CS
+weighted_shares_outstanding: 75735795

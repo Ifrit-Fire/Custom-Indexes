@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW5mb3N5cy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW5mb3N5cy5jb20/images/2025-04-04_logo.svg
+cik: 0001067491
+composite_figi: BBG000BSGQL7
+currency_name: usd
+description: 'Infosys is a leading global IT services provider, with over 320,000
+    employees. Based in Bengaluru, the Indian IT services firm leverages its offshore
+    outsourcing model to derive 60% of its revenue from North America. The company
+    offers traditional IT services offerings: consulting, managed services and cloud
+    infrastructure services, and business process outsourcing as a service.'
+homepage_url: https://www.infosys.com
+list_date: '1999-03-11'
+locale: us
+market: stocks
+market_cap: 67899553230.6
+name: Infosys Limited American Depositary Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6ZLV4
+share_class_shares_outstanding: 4154272628
+ticker: INFY
+ticker_root: INFY
+total_employees: 323788
+type: ADRC
+weighted_shares_outstanding: 4145271870

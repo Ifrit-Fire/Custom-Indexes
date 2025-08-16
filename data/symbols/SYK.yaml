@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1941 STRYKER WAY
+    city: PORTAGE
+    postal_code: '49002'
+    state: MI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3RyeWtlci5jb20/images/2024-10-01_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RyeWtlci5jb20/images/2024-10-01_logo.svg
+cik: '0000310764'
+composite_figi: BBG000DN7P92
+currency_name: usd
+description: Stryker designs, manufactures, and markets an array of medical equipment,
+    instruments, consumable supplies, and implantable devices. The product portfolio
+    includes hip and knee replacements, extremities, endoscopy systems, operating
+    room equipment, embolic coils, hospital beds and gurneys, and orthopedic robotics.
+    Stryker remains one of the three largest competitors in reconstructive orthopedic
+    implants and holds the leadership position in operating room equipment. Roughly
+    one-fourth of Stryker's total revenue currently comes from outside the United
+    States.
+homepage_url: https://www.stryker.com
+list_date: '1979-05-02'
+locale: us
+market: stocks
+market_cap: 143980751499.78
+name: Stryker Corporation
+phone_number: (269) 385-2600
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8FR03
+share_class_shares_outstanding: 382307298
+sic_code: '3841'
+sic_description: SURGICAL & MEDICAL INSTRUMENTS & APPARATUS
+ticker: SYK
+ticker_root: SYK
+total_employees: 53000
+type: CS
+weighted_shares_outstanding: 382307298

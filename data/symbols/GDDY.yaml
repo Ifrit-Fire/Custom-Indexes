@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 100 S. MILL AVE
+    address2: SUITE 1600
+    city: TEMPE
+    postal_code: '85281'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z29kYWRkeS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z29kYWRkeS5jb20/images/2025-04-04_logo.svg
+cik: 0001609711
+composite_figi: BBG006MDLY05
+currency_name: usd
+description: GoDaddy provides domain registration and aftermarket services, website
+    hosting, security, design, and business productivity tools, commerce solutions,
+    and domain registry services. The company primarily targets micro to small businesses,
+    website design professionals, registrar peers, and domain investors. Since acquiring
+    payment processing platform Poynt in 2021, the company has expanded into omnicommerce
+    solutions, including offering an online payment gateway and offline point-of-sale
+    devices.
+homepage_url: https://www.godaddy.com
+list_date: '2015-04-01'
+locale: us
+market: stocks
+market_cap: 19842513116.44
+name: GoDaddy Inc
+phone_number: (480) 505-8800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG006MDLXZ9
+share_class_shares_outstanding: 142488191
+sic_code: '7373'
+sic_description: SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN
+ticker: GDDY
+ticker_root: GDDY
+total_employees: 5518
+type: CS
+weighted_shares_outstanding: 138449017

@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 5808 LAKE WASHINGTON BLVD. NE
+    city: KIRKLAND
+    postal_code: '98033'
+    state: WA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9ub2xpdGhpY3Bvd2VyLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9ub2xpdGhpY3Bvd2VyLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001280452
+composite_figi: BBG000C30L48
+currency_name: usd
+description: Monolithic Power Systems is an analog and mixed-signal chipmaker specializing
+    in power management solutions. Its mission is to reduce total energy consumption
+    in end systems. It serves the computing, automotive, industrial, communications,
+    and consumer end markets. MPS uses a fabless manufacturing model, partnering with
+    third-party chip foundries to host its proprietary BCD process technology.
+homepage_url: https://www.monolithicpower.com
+list_date: '2004-11-19'
+locale: us
+market: stocks
+market_cap: 41273325600.0
+name: Monolithic Power Systems, Inc.
+phone_number: 425-296-9956
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SDRGP6
+share_class_shares_outstanding: 47892000
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: MPWR
+ticker_root: MPWR
+total_employees: 4017
+type: CS
+weighted_shares_outstanding: 47892000

@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2VudHJhbHB1ZXJ0by5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2VudHJhbHB1ZXJ0by5jb20/images/2025-04-04_logo.png
+cik: '0001717161'
+composite_figi: BBG00JNMX8W5
+currency_name: usd
+description: Central Puerto SA is a power generation company. It is mainly engaged
+    in electric power generation and commercialization. The company is also involved
+    in the natural gas distribution public sector service in the Cuyo and Centro regions
+    in Argentina. The Group has four reporting segments which includes electric power
+    generation from conventional sources, electric power generation from renewable
+    sources, natural gas transport and distribution, and forest activity.. The company
+    derives maximum revenue from Electric Power Generation from conventional sources
+    segment.
+homepage_url: https://www.centralpuerto.com
+list_date: '2018-02-02'
+locale: us
+market: stocks
+market_cap: 1863953546.58
+name: Central Puerto S.A. American Depositary Shares (each represents ten Common Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00JNMX9L5
+share_class_shares_outstanding: 3540239
+ticker: CEPU
+ticker_root: CEPU
+total_employees: 1324
+type: CS
+weighted_shares_outstanding: 151172226

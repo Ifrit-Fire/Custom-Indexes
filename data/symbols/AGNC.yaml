@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 7373 WISCONSIN AVENUE, 22ND FLOOR
+    city: BETHESDA
+    postal_code: '20814'
+    state: MD
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWduYy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWduYy5jb20/images/2025-04-04_logo.svg
+cik: 0001423689
+composite_figi: BBG000TJ8XZ7
+currency_name: usd
+description: AGNC Investment Corp is a real estate investment trust that invests in
+    agency residential mortgage-backed securities. The firm's asset portfolio is comprised
+    of residential mortgage pass-through securities and collateralized mortgage obligations
+    for which the principal and interest payments are guaranteed by a U.S. Government-sponsored
+    enterprise, such as the Federal National Mortgage Association and the Federal
+    Home Loan Mortgage Corporation, or by a U.S. Government agency, such as the Government
+    National Mortgage Association. It also invests in other types of mortgage and
+    mortgage-related residential and commercial mortgage-backed securities or other
+    investments in or related to, the housing, mortgage, or real estate markets.
+homepage_url: https://www.agnc.com
+list_date: '2008-05-15'
+locale: us
+market: stocks
+market_cap: 10063136577.9
+name: AGNC Investment Corp. Common Stock
+phone_number: 301 968 9300
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T074G2
+share_class_shares_outstanding: 1041732565
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: AGNC
+ticker_root: AGNC
+total_employees: 53
+type: CS
+weighted_shares_outstanding: 1041732565

@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 100 FIRST STAMFORD PLACE, SUITE 700
+    city: STAMFORD
+    postal_code: 06902
+    state: CT
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dW5pdGVkcmVudGFscy5jb20/images/2025-04-04_logo.svg
+cik: '0001067701'
+composite_figi: BBG000BXMFC3
+currency_name: usd
+description: United Rentals is the world's largest equipment rental company, principally
+    operating in the US and Canada. It has 16% share in a highly fragmented market
+    serving general industrial (49%), commercial construction (46%), and residential
+    construction (5%). The company operates a $21 billion fleet of equipment, including
+    aerial platforms, forklifts, excavators, trucks, power generators, and various
+    other materials serving local and national accounts from nearly 1,600 locations
+    in North America and 100 abroad. It has pursued a strategy of bundling specialty
+    rental capabilities to offer its customers more advanced solutions in addition
+    to its core equipment rental business, supporting its ambitions to become a one-stop
+    shop for customers and enhance and maintain its margin profile.
+homepage_url: https://www.unitedrentals.com
+list_date: '1997-12-18'
+locale: us
+market: stocks
+market_cap: 59980817385.06
+name: United Rentals, Inc.
+phone_number: (203) 622-3131
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SBGZ25
+share_class_shares_outstanding: 64341222
+sic_code: '7359'
+sic_description: SERVICES-EQUIPMENT RENTAL & LEASING, NEC
+ticker: URI
+ticker_root: URI
+total_employees: 27900
+type: CS
+weighted_shares_outstanding: 64341222

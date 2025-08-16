@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: ONE ALBERT QUAY
+    address2: ALBERT QUAY
+    city: CORK
+    postal_code: '00000'
+    state: L2
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/am9obnNvbmNvbnRyb2xzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/am9obnNvbmNvbnRyb2xzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000833444
+currency_name: usd
+description: Johnson Controls manufactures, installs, and services commercial HVAC
+    systems, building management platforms and controls, fire and security solutions,
+    and industrial refrigeration units. Commercial HVAC and fire and security each
+    account for approximately 45% of sales, while industrial refrigeration and other
+    solutions account for the remaining 10% of revenue. In fiscal 2024, Johnson Controls
+    generated nearly $23 billion in pro forma revenue.
+homepage_url: https://www.johnsoncontrols.com
+list_date: '1965-10-11'
+locale: us
+market: stocks
+market_cap: 69214347988.8
+name: Johnson Controls International plc
+phone_number: 414-524-1200
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 654385440
+sic_code: '3585'
+sic_description: AIR-COND & WARM AIR HEATG EQUIP & COMM & INDL REFRIG EQUIP
+ticker: JCI
+ticker_root: JCI
+total_employees: 94000
+type: CS
+weighted_shares_outstanding: 654385440

@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 58 CHARLES STREET
+    city: CAMBRIDGE
+    postal_code: '02141'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2V2ZXJub3ZhLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2V2ZXJub3ZhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001996810
+composite_figi: BBG013G17W31
+currency_name: usd
+description: 'GE Vernova is a global leader in the electric power industry, with products
+    and services that generate, transfer, convert, and store electricity. The company
+    has three business segments: power, wind, and electrification. Power includes
+    gas, nuclear, hydroelectric, and steam technologies, providing dispatchable power.
+    The wind segment includes wind generation technologies, inclusive of onshore and
+    offshore wind turbines and blades. Electrification includes grid solutions, power
+    conversion, electrification software, and solar and storage solutions technologies
+    required for the transmission, distribution, conversion, and storage of electricity
+    from the point of generation to point of consumption.'
+homepage_url: https://www.gevernova.com
+list_date: '2024-03-27'
+locale: us
+market: stocks
+market_cap: 178970907113.6
+name: GE Vernova Inc.
+phone_number: 617-674-7555
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG013G17W77
+share_class_shares_outstanding: 272223940
+sic_code: '3600'
+sic_description: ELECTRONIC & OTHER ELECTRICAL EQUIPMENT (NO COMPUTER EQUIP)
+ticker: GEV
+ticker_root: GEV
+total_employees: 75000
+type: CS
+weighted_shares_outstanding: 272223940

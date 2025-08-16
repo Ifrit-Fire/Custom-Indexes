@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 165 MADISON AVENUE
+    city: MEMPHIS
+    postal_code: '38103'
+    state: TN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zmlyc3Rob3Jpem9uLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zmlyc3Rob3Jpem9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000036966
+composite_figi: BBG000GHZSZ6
+currency_name: usd
+description: 'First Horizon Corp is the parent company of First Tennessee Bank, a
+    prominent regional bank with about 200 branches around Tennessee. The company''s
+    reportable segments are: Commercial, Consumer & Wealth, Wholesale, and Corporate.
+    The majority of its revenue is generated from Commercial, Consumer & Wealth. The
+    Commercial, Consumer & Wealth segment offers financial products and services,
+    including traditional lending and deposit taking, to commercial and consumer clients
+    in the southern USA and other selected markets.'
+homepage_url: https://www.firsthorizon.com
+list_date: '1973-01-31'
+locale: us
+market: stocks
+market_cap: 11261842300.32
+name: First Horizon Corporation
+phone_number: (901) 818-6232
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SCW8R8
+share_class_shares_outstanding: 507233437
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: FHN
+ticker_root: FHN
+total_employees: 7200
+type: CS
+weighted_shares_outstanding: 507747624

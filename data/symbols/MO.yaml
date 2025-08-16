@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 6601 WEST BROAD STREET
+    city: RICHMOND
+    postal_code: '23230'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWx0cmlhLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWx0cmlhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000764180
+composite_figi: BBG000BP6LJ8
+currency_name: usd
+description: Altria comprises Philip Morris USA, US Smokeless Tobacco, John Middleton,
+    Horizon Innovations, and Helix Innovations. Through its tobacco subsidiaries,
+    Altria maintains the leading position in cigarettes and smokeless tobacco in the
+    United States and the number-two spot in machine-made cigars. The company's Marlboro
+    brand is the leading cigarette brand in the US with 42% annual share in 2024.
+    Beyond its core business, it holds an 8% interest in the world's largest brewer,
+    Anheuser-Busch InBev and a 41% stake in cannabis manufacturer Cronos. It also
+    acquired vaping company Njoy Holdings in 2023 and operates a joint venture with
+    Japan Tobacco in the heated tobacco category for the US.
+homepage_url: https://www.altria.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 110889601807.53001
+name: Altria Group, Inc.
+phone_number: (804) 274-2200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5T8T5
+share_class_shares_outstanding: 1679890953
+sic_code: '2111'
+sic_description: CIGARETTES
+ticker: MO
+ticker_root: MO
+total_employees: 6200
+type: CS
+weighted_shares_outstanding: 1679890953

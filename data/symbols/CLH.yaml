@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 42 LONGWATER DRIVE
+    address2: P.O. BOX 9149
+    city: NORWELL
+    postal_code: 02061-9149
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2xlYW5oYXJib3JzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2xlYW5oYXJib3JzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000822818
+composite_figi: BBG000BFRRX8
+currency_name: usd
+description: Clean Harbors Inc is an environmental and industrial services provider.
+    It provides parts cleaning and related environmental services to commercial, industrial,
+    and automotive customers. Its business segments are Environmental Services and
+    Safety-Kleen Sustainability Solutions. The company generates the majority of its
+    revenues from the Environmental Services segment.
+homepage_url: https://www.cleanharbors.com
+list_date: '1987-11-24'
+locale: us
+market: stocks
+market_cap: 13431213771.01
+name: Clean Harbors, Inc
+phone_number: 781-792-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5PW98
+share_class_shares_outstanding: 53632607
+sic_code: '4955'
+sic_description: HAZARDOUS WASTE MANAGEMENT
+ticker: CLH
+ticker_root: CLH
+total_employees: 25232
+type: CS
+weighted_shares_outstanding: 53632607

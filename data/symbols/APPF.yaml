@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 70 CASTILIAN DRIVE
+    city: SANTA BARBARA
+    postal_code: '93117'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXBwZm9saW9pbmMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXBwZm9saW9pbmMuY29t/images/2025-04-04_logo.svg
+cik: 0001433195
+composite_figi: BBG008GC8CP6
+currency_name: usd
+description: AppFolio Inc provides cloud-based software solutions for the real estate
+    industry. Its property management software offers property managers an end-to-end
+    solution to their business needs. The group's products include cloud-based property
+    management software (Appfolio Property Manager). Its solutions are AppFolio Property
+    Manager Core, AppFolio Property Manager Plus, and AppFolio Property Manager Max.
+    It also offers value-added services, such as screening, risk mitigation, and electronic
+    payment services. Its markets are Single-Family, Multifamily, Student Housing,
+    Affordable Housing, Community Associations, Commercial, and Investment Management.
+    The business activity of the firm predominantly functions in the United States
+    and it generates revenue in the form of subscription fees.
+homepage_url: https://www.appfolioinc.com
+list_date: '2015-06-26'
+locale: us
+market: stocks
+market_cap: 9634425684.160002
+name: AppFolio, Inc. Class A
+phone_number: (805) 364-6047
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG008GC8CS3
+share_class_shares_outstanding: 22871704
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: APPF
+ticker_root: APPF
+total_employees: 1634
+type: CS
+weighted_shares_outstanding: 35853028

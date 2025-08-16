@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zm9ydGlzaW5jLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zm9ydGlzaW5jLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001666175'
+composite_figi: BBG000K9SSS5
+currency_name: usd
+description: Fortis owns and operates eight utility transmission and distribution
+    subsidiaries in Canada and the United States, serving more than 3.4 million electricity
+    and gas customers. The company has smaller stakes in electricity generation and
+    several Caribbean utilities. Subsidiary ITC operates electric transmission in
+    seven US states, with more than 16,000 miles of high-voltage transmission lines
+    in operation.
+homepage_url: https://www.fortisinc.com
+list_date: '2001-06-08'
+locale: us
+market: stocks
+market_cap: 25416692000.0
+name: Fortis Inc. Common Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5YVM5
+share_class_shares_outstanding: 503607374
+ticker: FTS
+ticker_root: FTS
+total_employees: 9800
+type: CS
+weighted_shares_outstanding: 503600000

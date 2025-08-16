@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 7665 CORPORATE DRIVE
+    city: MIAMI
+    postal_code: '33126'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmNsaGx0ZGludmVzdG9yLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmNsaGx0ZGludmVzdG9yLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001513761'
+currency_name: usd
+description: "Norwegian Cruise Line is the world's third-largest publicly traded cruise\
+    \ company by berths (around 71,000). It operates 34 ships across three brands\u2014\
+    Norwegian, Oceania, and Regent Seven Seas\u2014offering both freestyle and luxury\
+    \ cruising. The company redeployed its entire fleet as of May 2022. With 13 passenger\
+    \ vessels on order among its brands through 2036, representing 38,400 incremental\
+    \ berths, Norwegian is increasing capacity faster than its peers, expanding its\
+    \ brand globally. Norwegian sails to around 700 global destinations."
+homepage_url: https://www.nclhltdinvestor.com
+list_date: '2013-01-18'
+locale: us
+market: stocks
+market_cap: 11189962199.84
+name: Norwegian Cruise Line Holdings Ltd. Ordinary Shares
+phone_number: 305-436-4000
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 451937084
+sic_code: '4400'
+sic_description: WATER TRANSPORTATION
+ticker: NCLH
+ticker_root: NCLH
+total_employees: 41700
+type: CS
+weighted_shares_outstanding: 451937084

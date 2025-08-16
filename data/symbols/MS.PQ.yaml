@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1585 BROADWAY
+    city: NEW YORK
+    postal_code: '10036'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9yZ2Fuc3RhbmxleS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9yZ2Fuc3RhbmxleS5jb20/images/2025-04-04_logo.svg
+cik: 0000895421
+currency_name: usd
+description: Morgan Stanley is a massive global financial services firm, with offices
+    in 42 countries and more than 80,000 employees as of year-end 2024. The firm cut
+    its teeth in investment banking and institutional trading, where it maintains
+    a strong presence today, but generates the lion share of its income from wealth
+    and asset management franchises, where it boasted $7.9 trillion in client assets
+    at the end of its most recent fiscal year. After reincorporation as a bank holding
+    company in the wake of the great financial crisis, Morgan Stanley also boasts
+    a top 10 banking franchise by deposits, with nearly $400 billion in customer deposits,
+    predominately attributable to cash sweeps from its wealth management and brokerage
+    businesses.
+homepage_url: https://www.morganstanley.com
+list_date: '2024-08-01'
+locale: us
+market: stocks
+name: Morgan Stanley Depositary Shares, each representing 1/1,000th of a share of
+    6.625% Non-Cumulative Preferred Stock, Series Q
+phone_number: 212-761-4000
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: MSpQ
+ticker_root: MS
+ticker_suffix: PRQ
+total_employees: 81000
+type: PFD

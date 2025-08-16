@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 2323 BRYAN STREET
+    address2: SUITE 1800
+    city: DALLAS
+    postal_code: '75201'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGlnaXRhbHJlYWx0eS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGlnaXRhbHJlYWx0eS5jb20/images/2025-04-04_logo.svg
+cik: 0001297996
+composite_figi: BBG000Q5ZRM7
+currency_name: usd
+description: Digital Realty owns and operates over 300 data centers worldwide. It
+    has nearly 40 million rentable square feet across five continents. Digital's offerings
+    range from retail co-location, where an enterprise may rent a single cabinet and
+    rely on Digital to provide all the accommodations, to "cold shells," where hyperscale
+    cloud service providers can simply rent much, or all, of a barren, power-connected
+    building. In recent years, Digital Realty has de-emphasized cold shells and now
+    primarily provides higher-level service to tenants, which outsource their related
+    IT needs to Digital. The company operates as a real estate investment trust.
+homepage_url: https://www.digitalrealty.com
+list_date: '2004-10-29'
+locale: us
+market: stocks
+market_cap: 57494282332.3
+name: Digital Realty Trust, Inc.
+phone_number: (214) 231-1350
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SM0K30
+share_class_shares_outstanding: 341050435
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: DLR
+ticker_root: DLR
+total_employees: 3936
+type: CS
+weighted_shares_outstanding: 341050435

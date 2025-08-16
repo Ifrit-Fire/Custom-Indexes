@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 700 UNIVERSE BLVD
+    city: JUNO BEACH
+    postal_code: '33408'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmV4dGVyYWVuZXJneS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmV4dGVyYWVuZXJneS5jb20/images/2025-04-04_logo.svg
+cik: 0000753308
+composite_figi: BBG000BJSBJ0
+currency_name: usd
+description: NextEra Energy's regulated utility, Florida Power & Light, is the largest
+    rate-regulated utility in Florida. The utility distributes power to over 6 million
+    customer accounts in Florida and owns 36 gigawatts of generation. FP&L contributes
+    roughly 70% of NextEra's consolidated operating earnings. NextEra Energy Resources,
+    the renewable energy segment, generates and sells power throughout the United
+    States and Canada with more than 37 GW of generation capacity, including natural
+    gas, nuclear, wind, and solar.
+homepage_url: https://www.nexteraenergy.com
+list_date: '1972-06-30'
+locale: us
+market: stocks
+market_cap: 147980765373.68
+name: NextEra Energy, Inc.
+phone_number: 561-694-4697
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RB29
+share_class_shares_outstanding: 2059292588
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: NEE
+ticker_root: NEE
+total_employees: 16800
+type: CS
+weighted_shares_outstanding: 2059292588

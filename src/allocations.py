@@ -8,6 +8,23 @@ from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL
 
 
 def add_weightings(df: DataFrame, criteria: dict) -> DataFrame:
+    """
+    Calculate and add a weighting column to the DataFrame based on market capitalization, ensuring all weights meet a
+    minimum threshold.
+
+    The function:
+      1. Calculates weights as a percentage of total market cap.
+      2. Drops the smallest-weighted securities until the minimum weight requirement is met.
+      3. Recalculates weights after each drop.
+      4. Applies rounding adjustments using the Largest Remainder Method.
+
+    Args:
+        df (DataFrame): DataFrame containing security data, including `COL_MC` (market cap) and `COL_SYMBOL`.
+        criteria (dict): Dictionary containing at least `KEY_INDEX_WEIGHT_MIN` (minimum allowed weight).
+
+    Returns:
+        DataFrame: A new DataFrame with the `COL_WEIGHT` column added, meeting the weight constraints.
+    """
     min_weight = criteria[KEY_INDEX_WEIGHT_MIN]
     precision = _decimal_places(min_weight) + 2
 
@@ -26,12 +43,20 @@ def add_weightings(df: DataFrame, criteria: dict) -> DataFrame:
 
 def _fix_rounding(df: DataFrame, precision: int) -> DataFrame:
     """
-    Fixes rounding errors by using "Largest Remainder Method". Further, to avoid floating point representation issues,
-    all values are moved into integer space. Precision controls how much of a given number needs moving into an integer.
+    Correct percentage rounding errors using the Largest Remainder Method.
 
-    :param df: DataFrame reference for marketcap
-    :param precision: How many decimals to include, though calculated results will be precision - 1
-    :return: DataFrame with new weight column added.
+    This method:
+      1. Converts percentages into integer units based on the given precision to avoid floating-point inaccuracies.
+      2. Floors each value to a base integer unit.
+      3. Distributes any remaining units to the rows with the largest remainders until the total equals exactly 100%.
+      4. Converts back to a decimal percentage with minimal floating-point error.
+
+    Args:
+        df (DataFrame): DataFrame containing at least the `COL_MC` (market cap) and `COL_WEIGHT` column.
+        precision (int): Number of decimal places to preserve; actual calculation uses `precision - 1` to determine scaling.
+
+    Returns:
+        DataFrame: `COL_WEIGHT` column with corrected weights.
     """
     scale = 10 ** (precision - 1)
     s_exact_units = df[COL_MC] / df[COL_MC].sum() * 100 * scale  # Scale moves exact % to integer space
@@ -54,6 +79,18 @@ def _fix_rounding(df: DataFrame, precision: int) -> DataFrame:
 
 
 def _decimal_places(num: float) -> int:
+    """
+    Determine the number of decimal places in a given number.
+
+    Uses Python's `Decimal` to avoid floating-point representation errors and
+    correctly count decimal places, even for values like `1.2300`.
+
+    Args:
+        num (float): The number to evaluate.
+
+    Returns:
+        int: The count of decimal places (0 if the number is integral).
+    """
     d = Decimal(str(num)).normalize()
     if d == d.to_integral():
         return 0

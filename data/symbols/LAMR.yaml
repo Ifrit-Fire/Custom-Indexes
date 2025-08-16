@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: C/O LAMAR ADVERTISING COMPANY
+    address2: 5321 CORPORATE BOULEVARD
+    city: BATON ROUGE
+    postal_code: '70808'
+    state: LA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGFtYXIuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGFtYXIuY29t/images/2025-04-04_logo.svg
+cik: 0001090425
+composite_figi: BBG000FGMKY1
+currency_name: usd
+description: 'Lamar Advertising Co is an outdoor advertising companies in the United
+    States and operates as a Real Estate Investment Trust. It rent space for advertising
+    on billboards, buses, shelters, benches, logo plates and in airport terminals
+    and also offer customers a fully integrated service with all aspects of their
+    display requirements from ad copy production to placement and maintenance. It
+    has two operating segments: billboard and Others. Key revenue is generated from
+    Billboard segment.'
+homepage_url: https://www.lamar.com
+list_date: '1996-08-02'
+locale: us
+market: stocks
+market_cap: 12298070713.5
+name: Lamar Advertising Co
+phone_number: (225) 926-1000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S8KJC2
+share_class_shares_outstanding: 87969955
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: LAMR
+ticker_root: LAMR
+total_employees: 3500
+type: CS
+weighted_shares_outstanding: 101218689

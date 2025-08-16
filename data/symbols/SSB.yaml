@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1101 FIRST STREET SOUTH, SUITE 202
+    city: WINTER HAVEN
+    postal_code: '33880'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c291dGhzdGF0ZWJhbmsuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c291dGhzdGF0ZWJhbmsuY29t/images/2025-04-04_logo.svg
+cik: 0000764038
+composite_figi: BBG000BNPYN9
+currency_name: usd
+description: SouthState Corp is a United States-based bank holding company. It provides
+    a wide range of services and products to its customers through a wholly-owned
+    bank subsidiary, South State Bank. The Bank provides retail and commercial banking
+    services, mortgage lending services, trust and investment services, and consumer
+    finance loans through financial centers in Alabama, Florida, Georgia, North Carolina,
+    South Carolina, and Virginia. These services include demand, time and savings
+    deposits, lending and credit card servicing, ATM processing, and wealth management
+    and trust services.
+homepage_url: https://www.southstatebank.com
+list_date: '1996-04-01'
+locale: us
+market: stocks
+market_cap: 9884069768.08
+name: SouthState Corporation
+phone_number: (863) 293-4710
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S9J7Z3
+share_class_shares_outstanding: 101208988
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: SSB
+ticker_root: SSB
+total_employees: 6306
+type: CS
+weighted_shares_outstanding: 101208988

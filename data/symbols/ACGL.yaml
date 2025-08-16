@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: WATERLOO HOUSE, GROUND FLOOR
+    address2: 100 PITTS BAY ROAD
+    city: PEMBROKE
+    postal_code: HM 08
+    state: D0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXJjaGdyb3VwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXJjaGdyb3VwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000947484
+currency_name: usd
+description: 'Arch Capital Group Ltd is a Bermuda company that writes insurance and
+    reinsurance with operations in the United States, Canada, Europe, Australia, and
+    the United Kingdom. The business operates through three underwriting segments:
+    insurance, reinsurance, and mortgage. The insurance segment provides specialty
+    risk solutions to clients across various industries. The reinsurance segment provides
+    reinsurance services which cover property catastrophe, property, liability, marine,
+    aviation and space, trade credit and surety, agriculture, accident, life and health,
+    and political risk. The mortgage business provides risk management and risk financing
+    products to the mortgage insurance sectors through platforms in the U.S., Europe
+    and Bermuda.'
+homepage_url: https://www.archgroup.com
+list_date: '1995-09-14'
+locale: us
+market: stocks
+market_cap: 33571165535.25
+name: Arch Capital Group Ltd
+phone_number: 441-278-9250
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 373220295
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: ACGL
+ticker_root: ACGL
+total_employees: 5800
+type: CS
+weighted_shares_outstanding: 373220295

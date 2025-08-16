@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 9500 GLENLYON PARKWAY
+    city: BURNABY
+    postal_code: V5J 0C6
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmJnbG9iYWwuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmJnbG9iYWwuY29t/images/2025-04-04_logo.svg
+cik: '0001046102'
+composite_figi: BBG000C1DF05
+currency_name: usd
+description: RB Global has evolved into a leading global marketplace that connects
+    buyers and sellers of commercial assets and vehicles. It is the result of the
+    2023 combination of Ritchie Bros. and IAA. Ritchie Bros.' roots were as an auctioneer
+    facilitating transactions of commercial, construction, and transportation equipment
+    (excavators, bulldozers, forklifts, and commercial trucks and trailers). However,
+    it has evolved into an omnichannel marketplace. IAA has similar roots, though
+    primarily focused on the salvage auction segment for consumer automobiles. The
+    group provides ancillary services including title processing, transportation/towing,
+    financing, data and appraisal, and so on. Its activities are international, though
+    skewing approximately two-thirds to North America.
+homepage_url: https://www.rbglobal.com
+list_date: '1998-03-10'
+locale: us
+market: stocks
+market_cap: 21904438237.5
+name: RB Global, Inc.
+phone_number: (778) 331-5300
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SBQWW8
+share_class_shares_outstanding: 185533806
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: RBA
+ticker_root: RBA
+total_employees: 7900
+type: CS
+weighted_shares_outstanding: 185599375

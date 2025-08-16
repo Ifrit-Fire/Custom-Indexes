@@ -1,0 +1,21 @@
+active: true
+address:
+    address1: GREAT AMERICAN INSURANCE GROUP TOWER
+    address2: 301 E. 4TH STREET
+    city: CINCINNATI
+    postal_code: '45202'
+    state: OH
+cik: '0001042046'
+currency_name: usd
+list_date: '2019-12-04'
+locale: us
+market: stocks
+name: American Financial Group, Inc. 5.125% Subordinated Debentures due 2059
+phone_number: (513) 579-2121
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: AFGC
+ticker_root: AFGC
+type: SP

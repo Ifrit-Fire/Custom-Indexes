@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1700 S. PAVILION CENTER DR.
+    address2: SUITE 800
+    city: LAS VEGAS
+    postal_code: '89135'
+    state: NV
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bXBtYXRlcmlhbHMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bXBtYXRlcmlhbHMuY29t/images/2025-04-04_logo.svg
+cik: 0001801368
+composite_figi: BBG00TJGL0F0
+currency_name: usd
+description: 'MP Materials Corp is the producer of rare earth materials in the Western
+    Hemisphere. The company owns and operates the Mountain Pass Rare Earth Mine and
+    Processing Facility, the only rare earth mining and processing site of scale in
+    North America. The company is also developing a rare earth metal, alloy, and magnet
+    manufacturing facility in Fort Worth, Texas. The company''s operations are organized
+    into two reportable segments: Materials and Magnetics.'
+homepage_url: https://www.mpmaterials.com
+list_date: '2020-11-18'
+locale: us
+market: stocks
+market_cap: 13353212875.6
+name: MP Materials Corp.
+phone_number: (702) 844-6111
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00TJGL0T5
+share_class_shares_outstanding: 163477816
+sic_code: '1000'
+sic_description: METAL MINING
+ticker: MP
+ticker_root: MP
+total_employees: 804
+type: CS
+weighted_shares_outstanding: 177098314

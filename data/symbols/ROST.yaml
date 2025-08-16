@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 5130 HACIENDA DRIVE
+    city: DUBLIN
+    postal_code: '94568'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cm9zc3N0b3Jlcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm9zc3N0b3Jlcy5jb20/images/2025-04-04_logo.svg
+cik: '0000745732'
+composite_figi: BBG000BSBZH7
+currency_name: usd
+description: Ross Stores operates as an off-price apparel and accessories retailer
+    with the majority of its sales derived from its Ross Dress for Less banner. The
+    company opportunistically procures excess brand-name merchandise made available
+    via manufacturing overruns and retail liquidation sales at a 20%-60% discount
+    to full prices. As such, its stores are often filled with a vast array of stock-keeping
+    units, each with minimal product depth that creates a treasure hunt shopping experience.
+    The firm's more than 1,800 Ross Dress for Less stores are primarily located in
+    densely populated suburban communities and typically serve middle-income consumers.
+    Ross also operates around 350 DD's Discounts chains targeting lower-income shoppers.
+homepage_url: https://www.rossstores.com
+list_date: '1985-08-08'
+locale: us
+market: stocks
+market_cap: 49152157895.88
+name: Ross Stores Inc
+phone_number: (925) 965-4400
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5VRS1
+share_class_shares_outstanding: 327070521
+sic_code: '5651'
+sic_description: RETAIL-FAMILY CLOTHING STORES
+ticker: ROST
+ticker_root: ROST
+total_employees: 107000
+type: CS
+weighted_shares_outstanding: 327070521

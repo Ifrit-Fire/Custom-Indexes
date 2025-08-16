@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1200 MAIN STREET
+    city: KANSAS CITY
+    postal_code: '64105'
+    state: MO
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXZlcmd5LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001711269
+composite_figi: BBG00H433CR2
+currency_name: usd
+description: Evergy is a regulated electric utility serving eastern Kansas and western
+    Missouri. Major operating subsidiaries include Evergy Metro, Evergy Kansas Central,
+    Evergy Missouri West, and Evergy Transmission Co. The utility has a combined rate
+    base of approximately $20 billion, about half in Kansas and the rest split between
+    Missouri and federal jurisdiction. Evergy is one of the largest wind energy suppliers
+    in the US.
+homepage_url: https://www.evergy.com
+list_date: '1949-09-01'
+locale: us
+market: stocks
+market_cap: 16863479856.779999
+name: Evergy, Inc.
+phone_number: (816) 556-2200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00H433CS1
+share_class_shares_outstanding: 230155314
+sic_code: '4931'
+sic_description: ELECTRIC & OTHER SERVICES COMBINED
+ticker: EVRG
+ticker_root: EVRG
+total_employees: 4731
+type: CS
+weighted_shares_outstanding: 230155314

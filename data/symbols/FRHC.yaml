@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 40 WALL STREET, 58TH FLOOR
+    city: NEW YORK, NY
+    postal_code: '10005'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZnJlZWRvbWhvbGRpbmdjb3JwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZnJlZWRvbWhvbGRpbmdjb3JwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000924805
+composite_figi: BBG000N625H8
+currency_name: usd
+description: "Freedom Holding Corp is a holding company with its subsidiary it is\
+    \ engaged in securities brokerage, securities dealing for customers and\_account,\
+    \ market-making activities, investment research, investment counseling, investment\
+    \ banking services, retail and commercial banking, insurance products, payment\
+    \ services, and information processing services. It acts as a professional participant\
+    \ through its subsidiaries on the Kazakhstan Stock Exchange (KASE), Moscow Exchange\
+    \ (MOEX), Saint-Petersburg Exchange (SPB), the Ukrainian Exchange, the Uzbek Republican\
+    \ Currency Exchange (UZCE), and the Republican Stock Exchange of Tashkent (UZSE).\
+    \ Its segments are Brokerage, Banking, Insurance, and Others."
+homepage_url: https://www.freedomholdingcorp.com
+list_date: '1994-08-31'
+locale: us
+market: stocks
+market_cap: 10661756791.050001
+name: Freedom Holding Corp.
+phone_number: 1-212-980-4400
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SGRW38
+share_class_shares_outstanding: 61205640
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: FRHC
+ticker_root: FRHC
+total_employees: 10054
+type: CS
+weighted_shares_outstanding: 61221687

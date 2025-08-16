@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: HUNTINGTON CTR
+    address2: 41 S HIGH ST HC0917
+    city: COLUMBUS
+    postal_code: '43287'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aHVudGluZ3Rvbi5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aHVudGluZ3Rvbi5jb20/images/2025-04-04_logo.svg
+cik: 0000049196
+composite_figi: BBG000BKWSR6
+currency_name: usd
+description: Huntington is a regional US bank with around $208 billion in assets and
+    has a large presence, particularly in the Midwestern market. It offers a full
+    suite of consumer deposit and lending services, along with commercial services
+    focused on payments, investment management, capital markets, equipment financing,
+    treasury management, and other common banking services.
+homepage_url: https://www.huntington.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 24393035592.64
+name: Huntington Bancshares Inc
+phone_number: (614) 480-2265
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5RSZ6
+share_class_shares_outstanding: 1458800042
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: HBAN
+ticker_root: HBAN
+total_employees: 20242
+type: CS
+weighted_shares_outstanding: 1458913612

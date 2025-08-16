@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 6920 SEAWAY BLVD.
+    city: EVERETT
+    postal_code: '98203'
+    state: WA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zm9ydGl2ZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zm9ydGl2ZS5jb20/images/2025-04-04_logo.svg
+cik: 0001659166
+composite_figi: BBG00BLVZ228
+currency_name: usd
+description: Fortive is a diversified industrial technology firm with a broad portfolio
+    of mission-critical products and services that include field solutions, product
+    realization, health, and sensing technologies. The company serves a wide range
+    of end markets, including manufacturing, utilities, medical, and electronics.
+    Fortive generated roughly $6.2 billion in revenue in 2024.
+homepage_url: https://www.fortive.com
+list_date: '2016-07-05'
+locale: us
+market: stocks
+market_cap: 16487130091.849998
+name: Fortive Corporation
+phone_number: (425) 446-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00BLVZ237
+share_class_shares_outstanding: 338336345
+sic_code: '3823'
+sic_description: INDUSTRIAL INSTRUMENTS FOR MEASUREMENT, DISPLAY, AND CONTROL
+ticker: FTV
+ticker_root: FTV
+total_employees: 18000
+type: CS
+weighted_shares_outstanding: 338336345

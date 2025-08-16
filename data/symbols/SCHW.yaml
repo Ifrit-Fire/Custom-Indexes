@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 3000 SCHWAB WAY
+    city: WESTLAKE
+    postal_code: '76262'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWJvdXRzY2h3YWIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWJvdXRzY2h3YWIuY29t/images/2025-04-04_logo.svg
+cik: 0000316709
+composite_figi: BBG000BSLZY7
+currency_name: usd
+description: Charles Schwab is one of the largest retail-oriented financial services
+    companies in the US, with $10.1 trillion in client assets across its brokerage,
+    banking, asset-management, custody, financial advisory, and wealth-management
+    businesses at year-end 2024. While best known for its retail brokerage offering,
+    Schwab generates the lion's share of its revenue and profits through its Charles
+    Schwab Bank and asset-management segments. The firm is a dominant player in registered
+    investment advisor custody, with over 40% market share, and has recently pushed
+    into wealth management with robo-advisory, direct indexing, and other managed-investment
+    solutions.
+homepage_url: https://www.aboutschwab.com
+list_date: '1987-09-30'
+locale: us
+market: stocks
+market_cap: 179143992717.0
+name: The Charles Schwab Corporation
+phone_number: 817-859-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VXD4
+share_class_shares_outstanding: 1816970383
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: SCHW
+ticker_root: SCHW
+total_employees: 32100
+type: CS
+weighted_shares_outstanding: 1815219300

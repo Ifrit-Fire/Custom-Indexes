@@ -1,0 +1,31 @@
+active: true
+address:
+    address1: 750 W JOHN CARPENTER FREEWAY
+    address2: SUITE 800
+    city: IRVING
+    postal_code: '75039'
+    state: TX
+cik: 0002019410
+composite_figi: BBG00255V2N4
+currency_name: usd
+description: Caris Life Sciences Inc is a patient-centric, next-generation AI TechBio
+    company. It develop and commercialize solutions to transform healthcare through
+    the use of comprehensive molecular information and artificial intelligence/machine
+    learning algorithms at scale.
+homepage_url: https://www.carislifesciences.com
+list_date: '2025-06-18'
+locale: us
+market: stocks
+market_cap: 9641857750.12
+name: Caris Life Sciences, Inc. Common Stock
+phone_number: (866) 771-8946
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00255V2P2
+share_class_shares_outstanding: 283555185
+sic_code: '8071'
+sic_description: SERVICES-MEDICAL LABORATORIES
+ticker: CAI
+ticker_root: CAI
+type: CS
+weighted_shares_outstanding: 281267729

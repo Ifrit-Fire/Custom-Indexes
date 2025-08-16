@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 855 S. MINT STREET
+    city: CHARLOTTE
+    postal_code: '28202'
+    state: NC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aG9uZXl3ZWxsLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aG9uZXl3ZWxsLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000773840
+composite_figi: BBG000H556T9
+currency_name: usd
+description: 'Honeywell traces its roots to 1885 with Albert Butz''s firm, Butz Thermo-Electric
+    Regulator, which produced a predecessor to the modern thermostat. Other inventions
+    by Honeywell include biodegradable detergent and autopilot. Today, Honeywell is
+    a global multi-industry behemoth with one of the largest installed bases of equipment.
+    It operates through four business segments: aerospace technologies (37% of 2023
+    company revenue), industrial automation (29%), energy and sustainability solutions
+    (17%), and building automation (17%). Recently, Honeywell has made several portfolio
+    changes to focus on fewer end markets and align with a set of secular growth trends.
+    The firm is working diligently to expand its installed base, deriving around 30%
+    of its revenue from recurring aftermarket services.'
+homepage_url: https://www.honeywell.com
+list_date: '1929-09-19'
+locale: us
+market: stocks
+market_cap: 137778902919.62
+name: Honeywell International, Inc.
+phone_number: 704-627-6200
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5X1N1
+share_class_shares_outstanding: 634896562
+sic_code: '3724'
+sic_description: AIRCRAFT ENGINES & ENGINE PARTS
+ticker: HON
+ticker_root: HON
+total_employees: 102000
+type: CS
+weighted_shares_outstanding: 634896562

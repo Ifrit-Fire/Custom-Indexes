@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWx0ZXJpdHl0aGVyYXBldXRpY3MuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWx0ZXJpdHl0aGVyYXBldXRpY3MuY29t/images/2025-04-04_logo.png
+cik: '0001131343'
+composite_figi: BBG000DK9TP0
+currency_name: usd
+description: "Alterity Therapeutics Ltd is active in the healthcare domain. The company\
+    \ is engaged in research collaborations for the treatment of Parkinsonian movement\
+    \ disorders, Alzheimer's disease, Huntington disease, and other neurodegenerative\
+    \ disorders. The company's drug candidate-PBT2 is being developed for the treatment\
+    \ of Alzheimer's and Huntington's diseases. It has a\_drug candidate for Parkinson's\
+    \ disease and other movement disorders (ATH434). The Group operated in one segment,\
+    \ being researching and developing Parkinsonian and other neurodegenerative disorders."
+homepage_url: https://www.alteritytherapeutics.com
+list_date: '1992-03-04'
+locale: us
+market: stocks
+market_cap: 76089316.66
+name: Alterity Therapeutics Limited American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SHP8H6
+share_class_shares_outstanding: 15345776
+ticker: ATHE
+ticker_root: ATHE
+total_employees: 10
+type: ADRC
+weighted_shares_outstanding: 14803369

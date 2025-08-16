@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 280 PILOT ROAD
+    city: LAS VEGAS
+    postal_code: '89119'
+    state: NV
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1oLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1oLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001562401'
+composite_figi: BBG003NXJNH6
+currency_name: usd
+description: American Homes 4 Rent is a real estate investment trust focused on acquiring,
+    operating, and leasing single-family homes as rental properties throughout the
+    United States. The company's real estate portfolio is largely comprised of single-family
+    properties in urban markets in the Southern and Midwestern regions of the U.S.
+    American Homes 4 Rent's land holdings also represent a sizable percentage of its
+    total assets in terms of value. The company derives the vast majority of its income
+    in the form of rental revenue from single-family properties through short-term
+    or annual leases. The firm's geographical markets include Dallas, Texas; Indianapolis,
+    Indiana; Atlanta, Georgia; and Charlotte, North Carolina in terms of the number
+    of properties in each.
+homepage_url: https://www.amh.com
+list_date: '2013-08-01'
+locale: us
+market: stocks
+market_cap: 12941062565.07
+name: AMERICAN HOMES 4 RENT
+phone_number: (805) 413-5300
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG003NXJNJ4
+share_class_shares_outstanding: 370275288
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: AMH
+ticker_root: AMH
+total_employees: 1730
+type: CS
+weighted_shares_outstanding: 370910363

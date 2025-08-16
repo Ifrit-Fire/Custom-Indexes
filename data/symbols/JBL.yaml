@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 10800 ROOSEVELT BOULEVARD NORTH
+    city: ST PETERSBURG
+    postal_code: '33716'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/amFiaWwuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/amFiaWwuY29t/images/2025-04-04_logo.svg
+cik: 0000898293
+composite_figi: BBG000BJNGN9
+currency_name: usd
+description: Jabil Inc is a United States-based company engaged in providing manufacturing
+    services and solutions. It provides comprehensive electronics design, production
+    and product management services to companies in various industries and end markets.The
+    Company derives its revenue from providing comprehensive electronics design, production
+    and product management services. It operates in two segments. The Electronics
+    Manufacturing Services (EMS) segment, which is the key revenue driver, is focused
+    on leveraging IT, supply chain design and engineering, technologies largely centered
+    on core electronics. The Diversified Manufacturing Services (DMS) segment is focused
+    on providing engineering solutions, with an emphasis on material sciences, technologies,
+    and healthcare.
+homepage_url: https://www.jabil.com
+list_date: '1993-04-29'
+locale: us
+market: stocks
+market_cap: 23511410809.960003
+name: Jabil Inc.
+phone_number: (727) 577-9749
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7RB70
+share_class_shares_outstanding: 107318837
+sic_code: '3672'
+sic_description: PRINTED CIRCUIT BOARDS
+ticker: JBL
+ticker_root: JBL
+total_employees: 138000
+type: CS
+weighted_shares_outstanding: 107318837

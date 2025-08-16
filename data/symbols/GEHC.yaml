@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 500 WEST MONROE STREET
+    city: CHICAGO
+    postal_code: '60661'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2VoZWFsdGhjYXJlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2VoZWFsdGhjYXJlLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001932393
+composite_figi: BBG01BFR8YV1
+currency_name: usd
+description: 'GE HealthCare Technologies is a leading medical technology firm with
+    leading market share in imaging and ultrasound equipment. The company reports
+    four major segments: imaging (45% of revenue), advanced visualization solutions
+    (26%), patient care solutions (16%), and pharmaceutical diagnostics (13%). The
+    company''s sales are geographically diverse, with the United States, EMEA, China,
+    and the rest of the world accounting for 46%, 26%, 12%, and 17% respectively.
+    We estimate approximately half of its revenue is recurring, which consists of
+    servicing (about one third of revenue), pharmaceutical diagnostics (about 10%-15%),
+    and digital solutions (just over 5%).'
+homepage_url: https://www.gehealthcare.com
+list_date: '2022-12-15'
+locale: us
+market: stocks
+market_cap: 34392818247.21
+name: GE HealthCare Technologies Inc. Common Stock
+phone_number: 833-735-1139
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01BFR8YW0
+share_class_shares_outstanding: 456562037
+sic_code: '3844'
+sic_description: X-RAY APPARATUS & TUBES & RELATED IRRADIATION APPARATUS
+ticker: GEHC
+ticker_root: GEHC
+total_employees: 53000
+type: CS
+weighted_shares_outstanding: 456562037

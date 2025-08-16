@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 55 EAST 52ND STREET
+    address2: 38TH FLOOR
+    city: NEW YORK
+    postal_code: '10055'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXZlcmNvcmUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXZlcmNvcmUuY29t/images/2025-04-04_logo.svg
+cik: 0001360901
+composite_figi: BBG000BP30Y0
+currency_name: usd
+description: Evercore Inc is an independent investment bank that derives the majority
+    of its revenue from financial advisory, including merger, acquisition, and restructuring
+    advisory. It also has institutional equities trading, equity underwriting, and
+    investment management businesses that account for around 20% of net revenue. The
+    company was founded in 1996 and went public in 2006. Evercore had approximately
+    2,380 employees at the end of 2024, and about 75% of its revenue is derived from
+    the United States.
+homepage_url: https://www.evercore.com
+list_date: '2006-08-11'
+locale: us
+market: stocks
+market_cap: 12153334312.41
+name: Evercore Inc.
+phone_number: 212-857-3100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SC3S41
+share_class_shares_outstanding: 38597943
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: EVR
+ticker_root: EVR
+total_employees: 2395
+type: CS
+weighted_shares_outstanding: 38597943

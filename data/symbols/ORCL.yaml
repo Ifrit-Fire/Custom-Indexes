@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 2300 ORACLE WAY
+    city: AUSTIN
+    postal_code: '78741'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/b3JhY2xlLmNvbQ/images/2025-03-20_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b3JhY2xlLmNvbQ/images/2025-03-20_logo.svg
+cik: 0001341439
+composite_figi: BBG000BQLTW7
+currency_name: usd
+description: Oracle provides enterprise applications and infrastructure offerings
+    around the world through a variety of flexible IT deployment models, including
+    on-premises, cloud-based, and hybrid. Founded in 1977, Oracle pioneered the first
+    commercial SQL-based relational database management system, which is commonly
+    used for running online transaction processing and data warehousing workloads.
+    Besides database systems, Oracle also sells enterprise resource planning, or ERP,
+    customer relationship management, or CRM, and human capital management, or HCM,
+    applications. Today, Oracle has more than 159,000 full-time employees in over
+    170 countries.
+homepage_url: https://www.oracle.com
+list_date: '1986-03-12'
+locale: us
+market: stocks
+market_cap: 709735922440.0
+name: Oracle Corp
+phone_number: (737) 867-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5SJG6
+share_class_shares_outstanding: 2808833000
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: ORCL
+ticker_root: ORCL
+total_employees: 162000
+type: CS
+weighted_shares_outstanding: 2808833000

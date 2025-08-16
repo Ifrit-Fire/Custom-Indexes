@@ -1,0 +1,33 @@
+active: true
+address:
+    address1: 341 WHITE POND DRIVE
+    city: AKRON
+    postal_code: '44320'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zmlyc3RlbmVyZ3ljb3JwLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zmlyc3RlbmVyZ3ljb3JwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001031296
+composite_figi: BBG000BB6M98
+currency_name: usd
+description: FirstEnergy is an investor-owned holding company with 10 regulated distribution
+    utilities across six mid-Atlantic and Midwestern states. FirstEnergy also owns
+    and operates one of the nation's largest electric transmission systems.
+homepage_url: https://www.firstenergycorp.com
+list_date: '1997-11-10'
+locale: us
+market: stocks
+market_cap: 25376902767.45
+name: FirstEnergy Corp.
+phone_number: 330-761-7837
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5R3N4
+share_class_shares_outstanding: 577403931
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: FE
+ticker_root: FE
+total_employees: 12294
+type: CS
+weighted_shares_outstanding: 577403931

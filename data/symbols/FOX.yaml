@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1211 AVENUE OF THE AMERICAS
+    city: NEW YORK
+    postal_code: '10036'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zm94Y29ycG9yYXRpb24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zm94Y29ycG9yYXRpb24uY29t/images/2025-04-04_logo.svg
+cik: '0001754301'
+composite_figi: BBG00JHNKJY8
+currency_name: usd
+description: 'Fox operates in two segments: cable networks and television. Cable networks
+    primarily includes Fox News, Fox Business, and several pay TV sports stations.
+    Television primarily includes the Fox broadcast network, 29 owned and operated
+    local television stations, of which 18 are affiliated with the Fox network, and
+    streaming platform Tubi, which is not subscription-based and is completely ad-supported.
+    Fox effectively sold most of its entertainment assets to Disney in 2019, so it
+    no longer creates entertainment content and relies heavily on live news and sports,
+    with nearly all tied to the pay TV bundle. The Murdoch family controls Fox.'
+homepage_url: https://www.foxcorporation.com
+list_date: '2019-02-27'
+locale: us
+market: stocks
+market_cap: 23960923875.02
+name: Fox Corporation Class B Common Stock
+phone_number: 212.852.7000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00JHNKKR3
+share_class_shares_outstanding: 235581025
+sic_code: '4833'
+sic_description: TELEVISION BROADCASTING STATIONS
+ticker: FOX
+ticker_root: FOX
+total_employees: 10400
+type: CS
+weighted_shares_outstanding: 445535959

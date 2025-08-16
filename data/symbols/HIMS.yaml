@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 2269 CHESTNUT ST
+    address2: '#523'
+    city: SAN FRANCISCO
+    postal_code: '94123'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Zm9yaGltcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Zm9yaGltcy5jb20/images/2025-04-04_logo.svg
+cik: '0001773751'
+composite_figi: BBG00Q53VYM7
+currency_name: usd
+description: Hims & Hers Health Inc is a multi-specialty telehealth platform that
+    connects consumers to licensed healthcare professionals, enabling them to access
+    high-quality medical care for numerous conditions related to mental health, sexual
+    health, dermatology, haircare and more.
+homepage_url: https://www.forhims.com
+list_date: '2021-01-21'
+locale: us
+market: stocks
+market_cap: 10923526349.73
+name: Hims & Hers Health, Inc.
+phone_number: 415-851-0195
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00Q5LQWK9
+share_class_shares_outstanding: 217641958
+sic_code: '8011'
+sic_description: SERVICES-OFFICES & CLINICS OF DOCTORS OF MEDICINE
+ticker: HIMS
+ticker_root: HIMS
+total_employees: 1637
+type: CS
+weighted_shares_outstanding: 226019581

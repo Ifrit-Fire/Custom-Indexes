@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1400 SMITH STREET
+    city: HOUSTON
+    postal_code: '77002'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2hldnJvbi5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2hldnJvbi5jb20/images/2025-04-04_logo.svg
+cik: 0000093410
+composite_figi: BBG000K4ND22
+currency_name: usd
+description: Chevron is an integrated energy company with exploration, production,
+    and refining operations worldwide. It is the second-largest oil company in the
+    United States with production of 3.0 million of barrels of oil equivalent a day,
+    including 7.7 million cubic feet a day of natural gas and 1.7 million of barrels
+    of liquids a day. Production activities take place in North America, South America,
+    Europe, Africa, Asia, and Australia. Its refineries are in the US and Asia for
+    total refining capacity of 1.8 million barrels of oil a day. Proven reserves at
+    year-end 2024 stood at 9.8 billion barrels of oil equivalent, including 5.1 billion
+    barrels of liquids and 28.4 trillion cubic feet of natural gas.
+homepage_url: https://www.chevron.com
+list_date: '1970-01-02'
+locale: us
+market: stocks
+market_cap: 309174493597.19995
+name: Chevron Corporation
+phone_number: 832-854-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S67ZC5
+share_class_shares_outstanding: 1727990376
+sic_code: '2911'
+sic_description: PETROLEUM REFINING
+ticker: CVX
+ticker_root: CVX
+total_employees: 45298
+type: CS
+weighted_shares_outstanding: 2014822376

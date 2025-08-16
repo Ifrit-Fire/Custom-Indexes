@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 100 HARBOUR PARADE
+    address2: CARNIVAL HOUSE
+    city: SOUTHAMPTON SO15 1ST
+    postal_code: '00000'
+    state: X0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2Fybml2YWxwbGMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2Fybml2YWxwbGMuY29t/images/2025-04-04_logo.svg
+cik: 0001125259
+composite_figi: BBG000CKYG71
+currency_name: usd
+description: Carnival is the largest global cruise company, with more than 90 ships
+    in service. Its portfolio of brands includes Carnival Cruise Lines, Holland America,
+    Princess Cruises, and Seabourn in North America; P&O Cruises and Cunard Line in
+    the United Kingdom; Aida in Germany; Costa Cruises in Southern Europe. It recently
+    folded its P&O Australia brand into Carnival. The firm also owns Holland America
+    Princess Alaska Tours in Alaska and the Canadian Yukon. Carnival's brands attracted
+    14 million guests in 2024.
+homepage_url: https://www.carnivalplc.com
+list_date: '2000-10-23'
+locale: us
+market: stocks
+market_cap: 36713613902.17
+name: Carnival PLC
+phone_number: 011 44 23 8065 5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SG8WT1
+share_class_shares_outstanding: 145601779
+sic_code: '4400'
+sic_description: WATER TRANSPORTATION
+ticker: CUK
+ticker_root: CUK
+total_employees: 87000
+type: ADRC
+weighted_shares_outstanding: 1312606861

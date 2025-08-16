@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 911 PANORAMA TRAIL S
+    city: ROCHESTER
+    postal_code: 14625-0397
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGF5Y2hleC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGF5Y2hleC5jb20/images/2025-04-04_logo.svg
+cik: '0000723531'
+composite_figi: BBG000BQSQ38
+currency_name: usd
+description: Paychex is a technology company providing human capital management solutions,
+    enabling clients to better implement payroll, talent, time, tax, and benefits
+    administration. It has a diverse set of product offerings addressing client needs.
+    Aside from its traditional cloud-based payroll and HCM software offering, which
+    accounts for close to half of total revenue, the company provides outsourcing
+    options. Paychex's administrative service organization and professional employer
+    organization accounts generate over 40% of sales. The balance of revenue is generated
+    through retirement services, insurance solutions, and other products. In fiscal
+    2025, the company had 800,000 clients and almost 2.5 million worksite employees
+    across its ASO and PEO.
+homepage_url: https://www.paychex.com
+list_date: '1983-08-26'
+locale: us
+market: stocks
+market_cap: 49933403790.97
+name: Paychex Inc
+phone_number: (585) 385-6666
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5V135
+share_class_shares_outstanding: 360243877
+sic_code: '8700'
+sic_description: SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT
+ticker: PAYX
+ticker_root: PAYX
+total_employees: 19000
+type: CS
+weighted_shares_outstanding: 360243877

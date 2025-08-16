@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 34 MAPLE ST
+    city: MILFORD
+    postal_code: '01757'
+    state: MA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2F0ZXJzLmNvbQ/images/2024-08-01_logo.svg
+cik: 0001000697
+composite_figi: BBG000FQRVM3
+currency_name: usd
+description: Water sells liquid chromatography, mass spectrometry, and thermal analysis
+    tools. These analytical instruments provide essential information on various products,
+    such as their molecular structures and physical properties, to help clients enhance
+    the health and well-being of end users. As a percentage of sales in 2024, Waters
+    generated 58% from biopharmaceutical customers, 31% from industrial clients, and
+    11% from academic/government institutions. In early 2026, Waters plans to merge
+    with BD's life science and diagnostics business, which will substantially change
+    those concentrations. Waters will wind up with more concentration in diagnostics
+    (versus none now) and discovery-related life science tools.
+homepage_url: https://www.waters.com
+list_date: '1995-11-17'
+locale: us
+market: stocks
+market_cap: 17668547507.899998
+name: Waters Corp
+phone_number: (508) 478-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8MDG9
+share_class_shares_outstanding: 59524130
+sic_code: '3826'
+sic_description: LABORATORY ANALYTICAL INSTRUMENTS
+ticker: WAT
+ticker_root: WAT
+total_employees: 7600
+type: CS
+weighted_shares_outstanding: 59524130

@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 30 HUDSON YARDS
+    city: NEW YORK
+    postal_code: '10001'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/a2tyLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/a2tyLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001404912
+composite_figi: BBG000BCQ6J8
+currency_name: usd
+description: "KKR is one of the world's largest alternative asset managers, with $664.3\
+    \ billion in total managed assets, including $526.0 billion in fee-earning AUM,\
+    \ at the end of March 2025. The company has two core segments: asset management\
+    \ (which includes private markets\u2014private equity, credit, infrastructure,\
+    \ energy, and real estate\u2014and public markets\u2014primarily credit and hedge/investment\
+    \ fund platforms) and insurance (following the firm's initial investment in, and\
+    \ then ultimate purchase of, Global Atlantic Financial Group, which is engaged\
+    \ in retirement/annuity and life insurance lines as well as reinsurance)."
+homepage_url: https://www.kkr.com
+list_date: '2010-07-15'
+locale: us
+market: stocks
+market_cap: 131183290269.00002
+name: KKR & Co. Inc.
+phone_number: 212-750-8300
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6PW05
+share_class_shares_outstanding: 890641903
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: KKR
+ticker_root: KKR
+total_employees: 4834
+type: CS
+weighted_shares_outstanding: 890948725

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE JOHN DEERE PLACE
+    city: MOLINE
+    postal_code: 61265-8098
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGVlcmUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGVlcmUuY29t/images/2025-04-04_logo.svg
+cik: 0000315189
+composite_figi: BBG000BH1NH9
+currency_name: usd
+description: 'Deere is the world''s leading manufacturer of agricultural equipment
+    and a major producer of construction machinery. The company is divided into four
+    reporting segments: production & precision agriculture (PPA), small agriculture
+    & turf (SAT), construction & forestry (CF), and financial services (FS), its captive
+    finance subsidiary. The core PPA business is the largest contributor to sales
+    and profits by far. Geographically, Deere sales are 60% US/Canada, 17% Europe,
+    14% Latin America, and 9% rest of world. Deere goes to market through a robust
+    dealer network that includes over 2,000 dealer locations in North America with
+    reach into over 100 countries. John Deere financial provides retail financing
+    for machinery to its customers and wholesale financing for dealers.'
+homepage_url: https://www.deere.com
+list_date: '1958-08-04'
+locale: us
+market: stocks
+market_cap: 136997865771.75
+name: Deere & Company
+phone_number: (309) 765-8000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QFF7
+share_class_shares_outstanding: 270827055
+sic_code: '3523'
+sic_description: FARM MACHINERY & EQUIPMENT
+ticker: DE
+ticker_root: DE
+total_employees: 75800
+type: CS
+weighted_shares_outstanding: 270827055

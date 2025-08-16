@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 650 CALIFORNIA STREET
+    city: SAN FRANCISCO
+    postal_code: '94108'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWZmaXJtLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWZmaXJtLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001820953
+composite_figi: BBG00Y7BP8Y1
+currency_name: usd
+description: "Affirm Holdings Inc offers a platform for digital and mobile-first commerce.\
+    \ It comprises a point-of-sale payment solution for consumers, merchant commerce\
+    \ solutions, and a consumer-focused app. The firm generates its revenue from merchant\
+    \ networks, and through virtual card networks among others. Geographically, it\
+    \ generates a majority\_share of its revenue from the United States."
+homepage_url: https://www.affirm.com
+list_date: '2021-01-13'
+locale: us
+market: stocks
+market_cap: 25069242813.89
+name: Affirm Holdings, Inc. Class A Common Stock
+phone_number: (415) 960-1518
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00Y7BP8Z0
+share_class_shares_outstanding: 281825613
+sic_code: '6141'
+sic_description: PERSONAL CREDIT INSTITUTIONS
+ticker: AFRM
+ticker_root: AFRM
+total_employees: 2006
+type: CS
+weighted_shares_outstanding: 322599959

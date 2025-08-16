@@ -4,10 +4,11 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
+from src import data_processing
 from src.clients import cache
 from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, COL_PRICE, MIN_LARGE_CAP, MIN_MID_CAP, \
-    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP
+    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP, COL_TYPE
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
 _BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
@@ -19,13 +20,19 @@ _DEFAULT_PARAM = {"isEtf": False, "isFund": False, "isActivelyTrading": True, "a
 
 def get_stock(criteria: dict) -> DataFrame:
     """
-    API call which retrieves a DataFrame of stock specified by the criteria configurations. Automatically pulls from
-    cache when available and cache data is recent.
+    Retrieve a DataFrame of stocks matching the given index criteria.
 
-    :param criteria: Configuration criteria for an index
-    :return: Dataframe consisting of all needed columns with standardized column names.
+    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API. The
+    results are normalized, filtered to allowed asset types, and cached for future use.
+
+    Args:
+        criteria (dict): Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
+
+    Returns:
+        DataFrame: DataFrame containing standardized columns: `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`,
+        `COL_VOLUME`, `COL_TYPE`.
     """
-
+    print(f"\tRetrieving stocks...")
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -37,18 +44,26 @@ def get_stock(criteria: dict) -> DataFrame:
 
         df = pd.DataFrame(response.json())
         df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
+        df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
+        df = data_processing.tag_prune_stock_asset_type(df)
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
-    print(f"\tRetrieved {len(df)} stocks from {source}")
-    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME]]
+    print(f"\t...retrieved {len(df)} stocks from {source}")
+    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE]]
 
 
 def _get_cap_restriction(top: int):
     """
-    Based on how many of the top stocks are desired, we return an estimate of which cap category that will entail.
+    Determine the minimum market capitalization threshold based on the desired number of top-ranked stocks.
 
-    :param top: Top number of stocks desired
-    :return: Estimated market cap that will ensure at least top number of stocks will be returned.
+    This function maps a requested "top N" count to an estimated market cap category constant (e.g., MIN_ULTRA_CAP,
+    MIN_MEGA_CAP, etc.) that should yield at least that many securities.
+
+    Args:
+        top (int): Number of top stocks to include.
+
+    Returns:
+        int: Market cap threshold constant for the appropriate category.
     """
     if top <= 5:
         return MIN_ULTRA_CAP

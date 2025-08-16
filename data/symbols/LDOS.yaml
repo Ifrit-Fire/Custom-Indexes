@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1750 PRESIDENTS STREET
+    city: RESTON
+    postal_code: '20190'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGVpZG9zLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGVpZG9zLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001336920
+composite_figi: BBG000C23PB0
+currency_name: usd
+description: Leidos Holdings Inc is a technology, engineering, and science company
+    that provides services and solutions in the defense, intelligence, civil, and
+    health markets, both domestically and internationally. Company customer includes
+    the U.S. Department of Defense ("DoD"), the U.S. Intelligence Community, the U.S.
+    Department of Homeland Security ("DHS"), the Federal Aviation Administration ("FAA"),
+    the Department of Veterans Affairs ("VA"), and many other U.S. civilian, state
+    and local government agencies, etc. The company is engaged in four reportable
+    segments; National Security & Digital, Health & Civil, Commercial & International
+    and Defense Systems. It provides a wide array of scientific, engineering and technical
+    services and solutions across these reportable segments.
+homepage_url: https://www.leidos.com
+list_date: '2006-10-13'
+locale: us
+market: stocks
+market_cap: 23343699557.399998
+name: Leidos Holdings, Inc.
+phone_number: 571-526-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SKW6M9
+share_class_shares_outstanding: 128297332
+sic_code: '7373'
+sic_description: SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN
+ticker: LDOS
+ticker_root: LDOS
+total_employees: 48000
+type: CS
+weighted_shares_outstanding: 128297332

@@ -1,0 +1,12 @@
+active: true
+cik: '0001406234'
+currency_name: usd
+list_date: '2022-01-26'
+locale: us
+market: stocks
+name: BIP Bermuda Holdings I Limited 5.125% Perpetual Subordinated Notes
+primary_exchange: XNYS
+round_lot: 100
+ticker: BIPI
+ticker_root: BIPI
+type: SP

@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 116 NEW MONTGOMERY STREET
+    city: SAN FRANCISCO
+    postal_code: 94105-3607
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dW5pdHkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dW5pdHkuY29t/images/2025-04-04_logo.svg
+cik: 0001810806
+composite_figi: BBG0056JW5G6
+currency_name: usd
+description: Unity Software Inc provides a software platform for creating and operating
+    interactive, real-time 3D content. The platform can be used to create, run, and
+    monetize interactive, real-time 2D and 3D content for mobile phones, tablets,
+    PCs, consoles, and augmented and virtual reality devices. The business is spread
+    across the United States, Greater China, EMEA, APAC, and other Americas, and key
+    revenue is derived from the EMEA region. The products are used in the gaming industry,
+    retail, automotive, architecture, engineering, and construction.
+homepage_url: https://www.unity.com
+list_date: '2020-09-18'
+locale: us
+market: stocks
+market_cap: 16030328670.72
+name: Unity Software Inc.
+phone_number: (415) 638-9950
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0056JW5H5
+share_class_shares_outstanding: 422517888
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: U
+ticker_root: U
+total_employees: 4987
+type: CS
+weighted_shares_outstanding: 422517888

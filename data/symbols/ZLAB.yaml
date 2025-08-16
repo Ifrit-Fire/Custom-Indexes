@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 4560 JINKE ROAD
+    address2: BLDG. 1, 4F, PUDONG
+    city: SHANGHAI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/emFpbGFib3JhdG9yeS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/emFpbGFib3JhdG9yeS5jb20/images/2025-04-04_logo.png
+cik: 0001704292
+composite_figi: BBG00HFX3N90
+currency_name: usd
+description: Zai Lab Ltd is a biopharmaceutical company focusing on discovering or
+    licensing, developing, and commercializing proprietary therapeutics that address
+    areas of unmet medical need including in the fields of oncology, autoimmune and
+    infectious diseases. The pipeline of proprietary drug candidates of the company
+    includes ZL-1218 (CCR8) Solid Tumors, ZL-1310 (DLL3 ADC) ES-SCLC Other NECs, ZL-6301
+    (ROR1 ADC) Solid Tumors, ZL 6201 (LRRC15 ADC) Solid Tumors.
+homepage_url: https://www.zailaboratory.com
+list_date: '2017-09-20'
+locale: us
+market: stocks
+market_cap: 3964578639.63
+name: Zai Lab Limited American Depositary Shares
+phone_number: '862161632588'
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00HFX3P04
+share_class_shares_outstanding: 111078374
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: ZLAB
+ticker_root: ZLAB
+total_employees: 1844
+type: ADRC
+weighted_shares_outstanding: 111270801

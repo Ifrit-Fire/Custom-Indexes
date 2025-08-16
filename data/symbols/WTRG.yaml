@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 762 W. LANCASTER AVE
+    city: BRYN MAWR
+    postal_code: 19010-3489
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXNzZW50aWFsLmNv/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXNzZW50aWFsLmNv/images/2025-04-04_logo.svg
+cik: 0000078128
+composite_figi: BBG000BRMJN6
+currency_name: usd
+description: Essential Utilities is a Pennsylvania-based holding company for US water,
+    wastewater, and natural gas distribution utilities. The company's water business
+    serves 3 million people in eight states. Its largest service territory is in Pennsylvania,
+    primarily suburban Philadelphia. Its Peoples subsidiary serves more than 740,000
+    gas distribution customers in Pennsylvania and Kentucky. It completed the sale
+    of its West Virginia gas utility and the bulk of its nonregulated assets in 2024.
+homepage_url: https://www.essential.co
+list_date: '1980-12-19'
+locale: us
+market: stocks
+market_cap: 10985957764.73
+name: Essential Utilities, Inc.
+phone_number: 610-527-8000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VFD3
+share_class_shares_outstanding: 280468669
+sic_code: '4941'
+sic_description: WATER SUPPLY
+ticker: WTRG
+ticker_root: WTRG
+total_employees: 3291
+type: CS
+weighted_shares_outstanding: 280468669

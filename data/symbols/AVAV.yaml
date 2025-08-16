@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 241 18TH STREET SOUTH, SUITE 650
+    city: ARLINGTON
+    postal_code: '22202'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXZpbmMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXZpbmMuY29t/images/2025-04-04_logo.svg
+cik: 0001368622
+composite_figi: BBG000GX14P2
+currency_name: usd
+description: AeroVironment Inc operates under a single business segment in which it
+    supplies unmanned aircraft systems, tactical missile systems, high-altitude pseudo-satellites,
+    and other related services to government agencies within the United States Department
+    of Defense as well as the United States allied international governments. The
+    systems can help with security, surveillance, or sensing, and provide eyes in
+    the sky without needing an actual person, or driver in the sky. The company is
+    a defense technology provider delivering integrated capabilities across air, land,
+    sea, space, and cyber. It develops and deploy autonomous systems, precision strike
+    systems, counter-UAS technologies, space-based platforms, directed energy systems,
+    and cyber and electronic warfare capabilities.
+homepage_url: https://www.avinc.com
+list_date: '2007-01-23'
+locale: us
+market: stocks
+market_cap: 12651390649.710001
+name: AeroVironment, Inc.
+phone_number: (703) 418-2828
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SPPWP6
+share_class_shares_outstanding: 49342501
+sic_code: '3721'
+sic_description: AIRCRAFT
+ticker: AVAV
+ticker_root: AVAV
+total_employees: 1475
+type: CS
+weighted_shares_outstanding: 49650291

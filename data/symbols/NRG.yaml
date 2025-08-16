@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 910 LOUISIANA STREET
+    city: HOUSTON
+    postal_code: '77002'
+    state: TX
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bnJnLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001013871
+composite_figi: BBG000D8RG11
+currency_name: usd
+description: NRG Energy is one of the largest retail energy providers in the US, with
+    6 million customers. Vivint Smart Home, which NRG acquired in 2023, has 2 million
+    home-services customers. NRG also is one of the largest US independent power producers,
+    with 13 gigawatts of coal, gas, and oil power generation capacity primarily in
+    Texas. The LS Power asset acquisition will add 13 GW of gas-fired power plants
+    mostly in the Eastern US. NRG exited Chapter 11 bankruptcy as a stand-alone entity
+    in December 2003.
+homepage_url: https://www.nrg.com
+list_date: '1993-10-20'
+locale: us
+market: stocks
+market_cap: 29981774310.0
+name: NRG Energy, Inc.
+phone_number: 713-537-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDD8F0
+share_class_shares_outstanding: 193430802
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: NRG
+ticker_root: NRG
+total_employees: 15637
+type: CS
+weighted_shares_outstanding: 193430802

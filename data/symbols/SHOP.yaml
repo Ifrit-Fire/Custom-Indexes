@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 151 O'CONNOR STREET
+    address2: GROUND FLOOR
+    city: OTTAWA
+    postal_code: K2P 2L8
+    state: A6
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2hvcGlmeS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2hvcGlmeS5jb20/images/2025-04-04_logo.svg
+cik: 0001594805
+composite_figi: BBG008HBD923
+currency_name: usd
+description: Shopify offers an e-commerce platform primarily to small and medium-size
+    businesses. The firm has two segments. The subscription solutions segment allows
+    Shopify merchants to conduct e-commerce on a variety of platforms, including the
+    company's website, physical stores, pop-up stores, kiosks, social networks (Facebook),
+    and Amazon. The merchant solutions segment offers add-on products for the platform
+    that facilitate e-commerce and include Shopify Payments, Shopify Shipping, and
+    Shopify Capital.
+homepage_url: https://www.shopify.com
+list_date: '2015-05-21'
+locale: us
+market: stocks
+market_cap: 194039349975.0
+name: Shopify Inc. Class A subordinate voting shares
+phone_number: 613-241-2828
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG004DW5NC7
+share_class_shares_outstanding: 1220477577
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: SHOP
+ticker_root: SHOP
+total_employees: 8100
+type: CS
+weighted_shares_outstanding: 1299660750

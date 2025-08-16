@@ -1,0 +1,26 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cWlhZ2VuLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cWlhZ2VuLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001015820
+currency_name: usd
+description: Qiagen offers proprietary sample and assay technology to extract, purify,
+    amplify, and interpret DNA, RNA, and proteins. The company's sales are split almost
+    evenly between applications in life sciences and molecular diagnostics. Qiagen
+    generates nearly 90% of its revenue from consumables with the balance coming from
+    instrumentation and related services. The Americas account for the largest portion
+    of the firm's revenue (52% of 2023 sales), followed by EMEA (32%), and the Asia-Pacific
+    (16%).
+homepage_url: https://www.qiagen.com
+list_date: '1996-06-28'
+locale: us
+market: stocks
+market_cap: 10674751062.869999
+name: QIAGEN N.V.
+primary_exchange: XNYS
+round_lot: 100
+ticker: QGEN
+ticker_root: QGEN
+total_employees: 5700
+type: CS
+weighted_shares_outstanding: 216834269

@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 500 PLAZA DRIVE
+    city: SECAUCUS
+    postal_code: 07094
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cXVlc3RkaWFnbm9zdGljcy5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cXVlc3RkaWFnbm9zdGljcy5jb20/images/2025-04-04_logo.png
+cik: 0001022079
+composite_figi: BBG000BN84F3
+currency_name: usd
+description: Quest Diagnostics is a leading independent provider of diagnostic testing,
+    information, and services in the US. The company generates over 95% of its revenue
+    through clinical testing, anatomic pathology, esoteric testing, and substance
+    abuse testing with specimens collected at its national network of roughly 2,300
+    patient service centers, as well as multiple doctors offices and hospitals. The
+    firm also runs a much smaller diagnostic solutions segment that provides clinical
+    trials testing, risk-assessment services, and information technology solutions.
+homepage_url: https://www.questdiagnostics.com
+list_date: '1996-12-17'
+locale: us
+market: stocks
+market_cap: 20020868876.64
+name: Quest Diagnostics Inc.
+phone_number: (973) 520-2700
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S9GX43
+share_class_shares_outstanding: 111823441
+sic_code: '8071'
+sic_description: SERVICES-MEDICAL LABORATORIES
+ticker: DGX
+ticker_root: DGX
+total_employees: 56000
+type: CS
+weighted_shares_outstanding: 111823441

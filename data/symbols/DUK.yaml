@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 525 SOUTH TRYON STREET
+    city: CHARLOTTE
+    postal_code: 28202-1803
+    state: NC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHVrZS1lbmVyZ3kuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHVrZS1lbmVyZ3kuY29t/images/2025-04-04_logo.svg
+cik: '0001326160'
+composite_figi: BBG000BHGDH5
+currency_name: usd
+description: Duke Energy is one of the largest US utilities, with regulated utilities
+    in the Carolinas, Indiana, Florida, Ohio, and Kentucky that deliver electricity
+    to more than 8 million customers. Its natural gas utilities serve more than 1.6
+    million customers.
+homepage_url: https://www.duke-energy.com
+list_date: '1964-06-16'
+locale: us
+market: stocks
+market_cap: 96790917407.49
+name: Duke Energy Corporation
+phone_number: 800-488-3853
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5QNR7
+share_class_shares_outstanding: 777624467
+sic_code: '4931'
+sic_description: ELECTRIC & OTHER SERVICES COMBINED
+ticker: DUK
+ticker_root: DUK
+total_employees: 26413
+type: CS
+weighted_shares_outstanding: 777624467

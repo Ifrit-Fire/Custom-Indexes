@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 60 E RIO SALADO PARKWAY
+    address2: SUITE 1000
+    city: TEMPE
+    postal_code: '85281'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2VuZGlnaXRhbC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2VuZGlnaXRhbC5jb20/images/2025-04-04_logo.svg
+cik: 0000849399
+composite_figi: BBG000BH2JM1
+currency_name: usd
+description: Gen is a cybersecurity pure-play that offers security, identity protection,
+    and privacy solutions to individual consumers. The firm's cyber safety offerings,
+    via brands such as Norton, Avast, and LifeLock, have long maintained their positions
+    as some of the most recognizable consumer-focused security and identity-protection
+    products.
+homepage_url: https://www.gendigital.com
+list_date: '1989-06-23'
+locale: us
+market: stocks
+market_cap: 19800145080.48
+name: Gen Digital Inc. Common Stock
+phone_number: 650-527-2900
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5QG38
+share_class_shares_outstanding: 615676153
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: GEN
+ticker_root: GEN
+total_employees: 3500
+type: CS
+weighted_shares_outstanding: 615676153

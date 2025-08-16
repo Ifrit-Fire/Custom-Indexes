@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 500 CHARLES EWING BOULEVARD
+    city: EWING
+    postal_code: 08628
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2h1cmNoZHdpZ2h0LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2h1cmNoZHdpZ2h0LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000313927
+composite_figi: BBG000BFJT36
+currency_name: usd
+description: Church & Dwight is the leading global producer of baking soda. Its portfolio
+    extends beyond its legacy category to include laundry products, cat litter, oral
+    care, deodorant, and nasal care, all sold under the Arm & Hammer brand. Its brands
+    also include Batiste, OxiClean, Vitafusion, Hero, and TheraBreath, which together
+    with Arm & Hammer constitute around 70% of its annual sales and profits. Most
+    recently, the firm added Touchland and its hand sanitizer business to its fold.
+    Even as it works to expand its product reach, Church & Dwight still derives around
+    80% of its sales from its home market in the US.
+homepage_url: https://www.churchdwight.com
+list_date: '1976-12-30'
+locale: us
+market: stocks
+market_cap: 22823698634.55
+name: Church & Dwight Co., Inc.
+phone_number: 609-806-1200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5PR99
+share_class_shares_outstanding: 243608695
+sic_code: '2840'
+sic_description: SOAP, DETERGENTS, CLEANG PREPARATIONS, PERFUMES, COSMETICS
+ticker: CHD
+ticker_root: CHD
+total_employees: 5750
+type: CS
+weighted_shares_outstanding: 243608695

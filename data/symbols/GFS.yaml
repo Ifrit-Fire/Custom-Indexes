@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2YuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2YuY29t/images/2025-04-04_logo.svg
+cik: 0001709048
+currency_name: usd
+description: GlobalFoundries is a top-five contract semiconductor manufacturer globally.
+    It was originally the manufacturing arm of Advanced Micro Devices before it was
+    spun out in 2009. The foundry sells chips into a range of end markets including
+    smartphones, PCs, Internet of Things, data centers, automotive, industrial, and
+    so on, but primarily focuses on more mature process technologies. Until 2021,
+    the firm was privately held by Mubadala Investment, the sovereign wealth fund
+    of the United Arab Emirates, which remains its controlling shareholder today.
+    GlobalFoundries merged with Chartered Semiconductor Manufacturing in 2009 and
+    acquired IBM's chipmaking business in 2015. GF is headquartered in Malta, New
+    York, and employs about 13,000 people.
+homepage_url: https://www.gf.com
+list_date: '2021-10-28'
+locale: us
+market: stocks
+market_cap: 18569351409.0
+name: GlobalFoundries Inc. Ordinary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 552912823
+ticker: GFS
+ticker_root: GFS
+total_employees: 13000
+type: CS
+weighted_shares_outstanding: 554971650

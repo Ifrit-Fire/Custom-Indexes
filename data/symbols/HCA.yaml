@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: ONE PARK PLZ
+    city: NASHVILLE
+    postal_code: '37203'
+    state: TN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aGNhaGVhbHRoY2FyZS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aGNhaGVhbHRoY2FyZS5jb20/images/2025-04-04_logo.svg
+cik: 0000860730
+composite_figi: BBG000QW7VC1
+currency_name: usd
+description: HCA Healthcare is a Nashville-based healthcare provider organization
+    operating the largest collection of acute-care hospitals in the United States.
+    As of December 2024, the firm owned and operated 190 hospitals, 124 freestanding
+    outpatient surgery centers, and a broad network of physician offices, urgent-care
+    clinics, and freestanding emergency rooms across 20 states and a small foothold
+    in England.
+homepage_url: https://www.hcahealthcare.com
+list_date: '2011-03-10'
+locale: us
+market: stocks
+market_cap: 91330002985.0
+name: HCA Healthcare, Inc.
+phone_number: (615) 344-9551
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T8NTY2
+share_class_shares_outstanding: 233993500
+sic_code: '8062'
+sic_description: SERVICES-GENERAL MEDICAL & SURGICAL HOSPITALS, NEC
+ticker: HCA
+ticker_root: HCA
+total_employees: 316000
+type: CS
+weighted_shares_outstanding: 233993500

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 3000 TAFT ST
+    city: HOLLYWOOD
+    postal_code: '33021'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aGVpY28uY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aGVpY28uY29t/images/2025-04-04_logo.svg
+cik: 0000046619
+composite_figi: BBG000BL16Q7
+currency_name: usd
+description: 'Heico is an aerospace and defense supplier that focuses on creating
+    replacement parts for commercial aircraft and components for defense products.
+    In commercial aerospace, Heico is the largest independent producer of replacement
+    aircraft parts. In the defense market, the company produces niche subcomponents
+    used in targeting technology as well as simulation equipment, among other categories.
+    It operates as two segments: the flight support group,or FSG, and the electronic
+    technologies group, or ETG, both of which supply the aerospace and defense sectors
+    to different degrees. The company is persistently acquisitive, focusing on companies
+    in similar or adjacent markets that offer strong cash flow and profitable growth
+    potential.'
+homepage_url: https://www.heico.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 43529849768.16
+name: HEICO Corporation
+phone_number: 954-987-4000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RVC4
+share_class_shares_outstanding: 55048774
+sic_code: '3724'
+sic_description: AIRCRAFT ENGINES & ENGINE PARTS
+ticker: HEI
+ticker_root: HEI
+total_employees: 10000
+type: CS
+weighted_shares_outstanding: 139104112

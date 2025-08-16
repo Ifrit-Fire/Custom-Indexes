@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1 RIVERSIDE PLAZA
+    city: COLUMBUS
+    postal_code: '43215'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWVwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWVwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000004904
+composite_figi: BBG000BB9KF2
+currency_name: usd
+description: American Electric Power is one of the largest regulated utilities in
+    the United States, providing electricity generation, transmission, and distribution
+    to more than 5 million customers in 11 states. About 42% of AEP's of capacity
+    is coal, with the remainder from a mix of natural gas (27%), renewable energy
+    and hydro (21%), nuclear (8%), and demand response (2%). Vertically integrated
+    utilities, transmission and distribution, and generation and marketing support
+    earnings.
+homepage_url: https://www.aep.com
+list_date: '1949-09-01'
+locale: us
+market: stocks
+market_cap: 60490635642.93
+name: American Electric Power Company, Inc.
+phone_number: 614-716-1000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5NFD2
+share_class_shares_outstanding: 534794763
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: AEP
+ticker_root: AEP
+total_employees: 16330
+type: CS
+weighted_shares_outstanding: 534794763

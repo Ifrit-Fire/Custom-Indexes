@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 88 11TH AVENUE NE
+    city: MINNEAPOLIS
+    postal_code: 55413-1894
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z3JhY28uY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z3JhY28uY29t/images/2025-04-04_logo.svg
+cik: 0000042888
+composite_figi: BBG000BK9W84
+currency_name: usd
+description: 'Graco manufactures equipment used for managing fluids, coatings, and
+    adhesives, specializing in difficult-to-handle materials. Graco''s business is
+    organized into three segments: industrial, process, and contractor. The Minnesota-based
+    firm serves a wide range of end markets, including industrial, automotive, and
+    construction, and its broad array of products include pumps, valves, meters, sprayers,
+    and equipment used to apply coatings, sealants, and adhesives. The firm generated
+    roughly $2.1 billion in sales in 2024.'
+homepage_url: https://www.graco.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 14501555858.88
+name: Graco Inc
+phone_number: (612) 623-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RK56
+share_class_shares_outstanding: 165694194
+sic_code: '3561'
+sic_description: PUMPS & PUMPING EQUIPMENT
+ticker: GGG
+ticker_root: GGG
+total_employees: 4300
+type: CS
+weighted_shares_outstanding: 165694194

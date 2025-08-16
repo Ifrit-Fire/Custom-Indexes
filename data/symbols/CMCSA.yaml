@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE COMCAST CENTER
+    city: PHILADELPHIA
+    postal_code: 19103-2838
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29tY2FzdGNvcnBvcmF0aW9uLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29tY2FzdGNvcnBvcmF0aW9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001166691
+composite_figi: BBG000BFT2L4
+currency_name: usd
+description: Comcast is made up of three parts. The core cable business owns networks
+    capable of providing television, internet access, and phone services to 64 million
+    US homes and businesses, or nearly half of the country. The firm provides services
+    to about half of the locations in this territory. Comcast acquired NBCUniversal
+    from General Electric in 2011. NBCU owns several cable networks, including CNBC,
+    MSNBC, and USA, the NBC network, the Peacock streaming platform, several local
+    NBC affiliates, Universal Studios, and several theme parks. The firm plans to
+    spin off most of its cable networks later in 2025. Finally, Sky, acquired in 2018,
+    is a large television provider in the UK and Italy.
+homepage_url: https://www.comcastcorporation.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 118519828714.20001
+name: Comcast Corp
+phone_number: 215-286-1700
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5PXL2
+share_class_shares_outstanding: 3682762127
+sic_code: '4841'
+sic_description: CABLE & OTHER PAY TELEVISION SERVICES
+ticker: CMCSA
+ticker_root: CMCS
+ticker_suffix: A
+total_employees: 182000
+type: CS
+weighted_shares_outstanding: 3692206502

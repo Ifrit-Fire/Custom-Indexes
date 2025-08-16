@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1 GRAND CANAL SQUARE
+    address2: GRAND CANAL HARBOUR
+    city: DUBLIN
+    postal_code: D2
+    state: L2
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWNjZW50dXJlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWNjZW50dXJlLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001467373'
+currency_name: usd
+description: Accenture is a leading IT services firm that provides consulting, system
+    integration, and business process outsourcing to enterprises around the world.
+    Customers of Accenture come from a variety of sectors, including communications,
+    media and technology, financial services, health and public services, consumer
+    products, and resources. Accenture is the world's largest professional services
+    company by headcount with around 800,000 employees in over 120 countries.
+homepage_url: https://www.accenture.com
+list_date: '2001-07-19'
+locale: us
+market: stocks
+market_cap: 148157971035.39
+name: Accenture PLC
+phone_number: 353-1-646-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 680343350
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: ACN
+ticker_root: ACN
+total_employees: 774000
+type: CS
+weighted_shares_outstanding: 622852697

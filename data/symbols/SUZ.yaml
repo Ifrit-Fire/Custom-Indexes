@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3V6YW5vLmNvbS5icg/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3V6YW5vLmNvbS5icg/images/2025-04-04_logo.png
+cik: 0000909327
+composite_figi: BBG000PLJG90
+currency_name: usd
+description: 'Suzano SA produces and sells pulp and a variety of paper products. The
+    company organizes itself into two segments based on product type: Pulp and Paper.
+    The Pulp segment generates the majority of revenue. The firm''s product portfolio
+    includes printing and writing paper, paperboard, diapers, and sanitary napkins.
+    The company owns forest land and plants in Brazil, where it harvests timber and
+    turns the timber into pulp and paper in its plants.'
+homepage_url: https://www.suzano.com.br
+list_date: '1993-10-01'
+locale: us
+market: stocks
+market_cap: 12359087880.0
+name: Suzano S.A. American Depositary Shares (each representing one Ordinary Share
+    ) representing one Ordinary Share)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SKWHM5
+share_class_shares_outstanding: 1264117615
+ticker: SUZ
+ticker_root: SUZ
+total_employees: 23980
+type: ADRC
+weighted_shares_outstanding: 1235908788

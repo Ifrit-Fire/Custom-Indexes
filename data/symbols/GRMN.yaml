@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: MUHLENTALSTRASSE 2
+    city: SCHAFFHAUSEN
+    postal_code: CH-8200
+    state: V8
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2FybWluLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2FybWluLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001121788
+currency_name: usd
+description: 'Garmin produces GPS-enabled hardware and software for five sectors:
+    fitness, outdoors, automotive, aviation, and marine. Garmin has built a strong
+    reputation for durable, high-precision devices through a vertically integrated
+    design and manufacturing approach. The company''s product lines include smartwatches,
+    fitness trackers, communication equipment, and a comprehensive suite of systems
+    for marine and aviation navigation. Garmin operates globally, with its business
+    focused primarily on North America and Europe.'
+homepage_url: https://www.garmin.com
+list_date: '2000-12-08'
+locale: us
+market: stocks
+market_cap: 45540217508.100006
+name: Garmin Ltd
+phone_number: 41 52 630 1600
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '3812'
+sic_description: SEARCH, DETECTION, NAVAGATION, GUIDANCE, AERONAUTICAL SYS
+ticker: GRMN
+ticker_root: GRMN
+total_employees: 21800
+type: CS
+weighted_shares_outstanding: 192493945

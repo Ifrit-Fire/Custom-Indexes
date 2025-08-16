@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWxjb24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWxjb24uY29t/images/2025-04-04_logo.svg
+cik: 0001167379
+currency_name: usd
+description: 'Alcon is one of the leading visioncare companies in the world. Following
+    nine years as a Novartis subsidiary, it was spun off as a public company in April
+    2019. Alcon operates in two segments: visioncare and surgical. Visioncare comprises
+    contact lenses, lenscare solutions, and a suite of ocular health products. With
+    brands like Dailies, Total1, and Air Optix, Alcon controls about one fourth of
+    the US contact lens market. Surgical comprises intraocular lenses, ophthalmic
+    surgical equipment, and consumables used during surgeries. Its main products include
+    Centurion, a phacoemulsification device used during cataract surgeries, and a
+    portfolio of IOLs including PanOptix and Vivity. Alcon has one of the largest
+    installed bases of eye surgical equipment in the world.'
+homepage_url: https://www.alcon.com
+list_date: '2019-04-09'
+locale: us
+market: stocks
+market_cap: 42774419699.520004
+name: Alcon Inc. Ordinary Shares
+primary_exchange: XNYS
+round_lot: 100
+ticker: ALC
+ticker_root: ALC
+total_employees: 25599
+type: CS
+weighted_shares_outstanding: 494616324

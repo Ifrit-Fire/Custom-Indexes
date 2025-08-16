@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: ONE MARKET, STE. 400.
+    city: SAN FRANCISCO
+    postal_code: '94105'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXV0b2Rlc2suY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXV0b2Rlc2suY29t/images/2025-04-04_logo.svg
+cik: 0000769397
+composite_figi: BBG000BM7HL0
+currency_name: usd
+description: Founded in 1982, Autodesk is an application software company that serves
+    industries in architecture, engineering, and construction; product design and
+    manufacturing; and media and entertainment. Autodesk software enables design,
+    modeling, and rendering needs of these industries. The company has over 4 million
+    paid subscribers across 180 countries.
+homepage_url: https://www.autodesk.com
+list_date: '1985-07-01'
+locale: us
+market: stocks
+market_cap: 61404220990.35
+name: Autodesk Inc
+phone_number: (415) 507-5000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5SCD4
+share_class_shares_outstanding: 214000000
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: ADSK
+ticker_root: ADSK
+total_employees: 15300
+type: CS
+weighted_shares_outstanding: 213944535

@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 2700 COAST AVENUE
+    city: MOUNTAIN VIEW
+    postal_code: '94043'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW50dWl0LmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW50dWl0LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000896878
+composite_figi: BBG000BH5DV1
+currency_name: usd
+description: Intuit serves small and midsize businesses with accounting software QuickBooks
+    and online marketing platform Mailchimp. The company also operates retail tax
+    filing tool TurboTax, personal finance platform Credit Karma, and a suite of professional
+    tax offerings for accountants. Founded in the mid-1980s, Intuit enjoys a dominant
+    market share for small business accounting and do-it-yourself tax filing in the
+    US.
+homepage_url: https://www.intuit.com
+list_date: '1993-03-12'
+locale: us
+market: stocks
+market_cap: 199023105560.0
+name: Intuit Inc
+phone_number: 650-944-6000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S6TWR2
+share_class_shares_outstanding: 278947000
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: INTU
+ticker_root: INTU
+total_employees: 18800
+type: CS
+weighted_shares_outstanding: 278947000

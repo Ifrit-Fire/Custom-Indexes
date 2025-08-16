@@ -10,8 +10,8 @@ KEY_INDEX_TOP = "top"
 KEY_INDEX_WEIGHT_MIN = "weight_min"
 
 _KEY_BASE_DEFAULT = "default"
-_KEY_INDEXES = "indexes"
 _KEY_CONSOLIDATE = "symbol_consolidate"
+_KEY_INDEXES = "indexes"
 _KEY_VOLUME = "volume"
 
 

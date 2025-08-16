@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 3100 SANDERS ROAD
+    city: NORTHBROOK
+    postal_code: '60062'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWxsc3RhdGUuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWxsc3RhdGUuY29t/images/2025-04-04_logo.svg
+cik: 0000899051
+composite_figi: BBG000BVMGF2
+currency_name: usd
+description: Allstate is one of the largest US property-casualty insurers in the US.
+    Personal auto represents the largest percentage of revenue, but the company offers
+    homeowners insurance and other insurance products. Allstate products are sold
+    in North America primarily by about 6,000 exclusive agents.
+homepage_url: https://www.allstate.com
+list_date: '1993-06-03'
+locale: us
+market: stocks
+market_cap: 55022548792.54
+name: The Allstate Corporation
+phone_number: (847) 402-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S9BM06
+share_class_shares_outstanding: 263505334
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: ALL
+ticker_root: ALL
+total_employees: 55400
+type: CS
+weighted_shares_outstanding: 263505334

@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2VhLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2VhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001703399
+composite_figi: BBG00HTBWMG5
+currency_name: usd
+description: Sea started as a gaming business, Garena, but in 2015 expanded into e-commerce.
+    Sea operates Southeast Asia's largest e-commerce company, Shopee, in terms of
+    gross merchandise value. Shopee is a hybrid C2C and B2C marketplace platform operating
+    in Indonesia, Taiwan, Vietnam, Thailand, Malaysia, the Philippines, and Brazil.
+    For Garena, Free Fire is the key revenue generating game. Sea's third business,
+    SeaMoney, provides lending, payment, digital banking, and insurance services.As
+    of March 31, 2024, Forrest Xiaodong Li, the founder, chairman and CEO, owned 59.8%
+    of voting power and 18.5% of issued shares. Tencent owned 18.2% of issued shares
+    with no voting power.
+homepage_url: https://www.sea.com
+list_date: '2017-10-20'
+locale: us
+market: stocks
+market_cap: 103082510908.08
+name: Sea Limited American Depositary Shares, each representing one Class A Ordinary
+    Share
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00HTBWMH4
+share_class_shares_outstanding: 543584213
+ticker: SE
+ticker_root: SE
+total_employees: 80700
+type: ADRC
+weighted_shares_outstanding: 592019934

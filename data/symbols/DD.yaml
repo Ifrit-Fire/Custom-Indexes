@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 974 CENTRE ROAD
+    address2: BUILDING 730
+    city: WILMINGTON
+    postal_code: '19805'
+    state: DE
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHVwb250LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHVwb250LmNvbQ/images/2025-04-04_logo.svg
+cik: '0001666700'
+composite_figi: BBG00BN961G4
+currency_name: usd
+description: DuPont is a diversified global specialty chemicals company created in
+    2019 as a result of the DowDuPont merger and subsequent separations. Its portfolio
+    includes specialty chemicals and downstream products that serve the electronics,
+    water, construction, safety and protection, automotive, and healthcare industries.
+    DuPont plans to spin off its electronics business by the end of 2025, which will
+    be named Qnity.
+homepage_url: https://www.dupont.com
+list_date: '1947-07-24'
+locale: us
+market: stocks
+market_cap: 30980847523.149998
+name: DuPont de Nemours, Inc. Common Stock
+phone_number: (302) 295-5783
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00BN961H3
+share_class_shares_outstanding: 418716685
+sic_code: '2821'
+sic_description: PLASTIC MATERIALS, SYNTH RESINS & NONVULCAN ELASTOMERS
+ticker: DD
+ticker_root: DD
+total_employees: 24000
+type: CS
+weighted_shares_outstanding: 418716685

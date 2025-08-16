@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 2555 AUGUSTINE DRIVE
+    city: SANTA CLARA
+    postal_code: '95054'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cHVyZXN0b3JhZ2UuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cHVyZXN0b3JhZ2UuY29t/images/2025-04-04_logo.svg
+cik: '0001474432'
+composite_figi: BBG00212PVZ5
+currency_name: usd
+description: 'Pure Storage Inc is a U.S.-based company that provides an enterprise
+    data storage platform that transforms business through a dramatic increase in
+    performance and reduction in complexity and costs. It generates revenue from two
+    sources: product revenue, which includes the sale of integrated storage hardware
+    and embedded operating system software; and subscription services revenue, which
+    includes Evergreen Storage subscriptions, a unified subscription that includes
+    Pure as-a-Service, Cloud Block Store, and Portworx. Subscription services revenue
+    also includes professional services offerings such as installation and implementation
+    consulting services.'
+homepage_url: https://www.purestorage.com
+list_date: '2015-10-07'
+locale: us
+market: stocks
+market_cap: 19462826424.899998
+name: Pure Storage, Inc. Class A
+phone_number: 800-379-7873
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00212PW10
+share_class_shares_outstanding: 326831678
+sic_code: '3572'
+sic_description: COMPUTER STORAGE DEVICES
+ticker: PSTG
+ticker_root: PSTG
+total_employees: 6000
+type: CS
+weighted_shares_outstanding: 326831678

@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 333 LAKESIDE DR
+    city: FOSTER CITY
+    postal_code: '94404'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z2lsZWFkLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2lsZWFkLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000882095
+composite_figi: BBG000CKGBP2
+currency_name: usd
+description: Gilead Sciences develops and markets therapies to treat and prevent life-threatening
+    infectious diseases, with the core of its portfolio focused on HIV and hepatitis
+    B and C. Gilead's acquisition of Pharmasset brought rights to hepatitis C drug
+    Sovaldi, which is also part of newer combination regimens that remain standards
+    of care. Gilead is also growing its presence in the oncology market via acquisitions,
+    led by CAR-T cell therapy Yescarta/Tecartus (from Kite) and breast and bladder
+    cancer therapy Trodelvy (from Immunomedics).
+homepage_url: https://www.gilead.com
+list_date: '1992-01-22'
+locale: us
+market: stocks
+market_cap: 148921646058.32
+name: Gilead Sciences Inc
+phone_number: (650) 574-3000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S6Y1X7
+share_class_shares_outstanding: 1240806916
+sic_code: '2836'
+sic_description: BIOLOGICAL PRODUCTS, (NO DISGNOSTIC SUBSTANCES)
+ticker: GILD
+ticker_root: GILD
+total_employees: 17600
+type: CS
+weighted_shares_outstanding: 1240806916

@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: C/O THE CARLYLE GROUP
+    address2: 1001 PENNSYLVANIA AVENUE, N.W.
+    city: WASHINGTON
+    postal_code: '20004'
+    state: DC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FybHlsZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FybHlsZS5jb20/images/2025-04-04_logo.svg
+cik: '0001527166'
+composite_figi: BBG000BH3F20
+currency_name: usd
+description: 'Carlyle Group is one of the world''s largest alternative-asset managers,
+    with $453 billion in total AUM, including $314 billion in fee-earning AUM, at
+    the end of March 2025. The company has three core business segments: global private
+    equity, which includes its private equity, real estate, infrastructure, and natural
+    resources offerings (with $164 billion in total AUM and $99 billion in fee-earning
+    AUM), global credit ($199 billion/$161 billion), and investment/fund solutions,
+    known as Carlyle AlphInvest ($89 billion/$54 billion). The firm primarily serves
+    institutional investors and high-net-worth individuals. Carlyle operates through
+    29 offices across five continents, serving more than 3,100 active carry fund investors
+    from 87 countries.'
+homepage_url: https://www.carlyle.com
+list_date: '2012-05-03'
+locale: us
+market: stocks
+market_cap: 23666352065.010002
+name: The Carlyle Group Inc. Common Stock
+phone_number: 202 729 5626
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S7JM84
+share_class_shares_outstanding: 361135881
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: CG
+ticker_root: CG
+total_employees: 2300
+type: CS
+weighted_shares_outstanding: 361704907

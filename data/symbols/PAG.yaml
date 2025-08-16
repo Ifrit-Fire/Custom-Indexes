@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 2555 TELEGRAPH RD
+    city: BLOOMFIELD HILLS
+    postal_code: 48302-0954
+    state: MI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGVuc2tlYXV0b21vdGl2ZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGVuc2tlYXV0b21vdGl2ZS5jb20/images/2025-04-04_logo.png
+cik: 0001019849
+composite_figi: BBG000H6K1B0
+currency_name: usd
+description: Penske Automotive Group operates in 19 US states and overseas. It has
+    over 150 US and Puerto Rico light-vehicle stores as well as 210 franchised dealerships
+    overseas, primarily in the United Kingdom but also in Australia, Germany, Italy,
+    and Japan. The company is the third-largest US publicly traded dealership in terms
+    of light-vehicle revenue and sells more than 40 brands, with over 90% of retail
+    automotive revenue coming from luxury and import names. Other segments are service
+    and finance and insurance. The firm's Premier Truck Group owns 45 truck dealerships
+    selling mostly Freightliner and Western Star brands, and Penske owns 16 used-vehicle
+    stores, mostly in the US and UK under the CarShop (US) and Sytner Select (UK)
+    brands. Penske is based in Bloomfield Hills, Michigan.
+homepage_url: https://www.penskeautomotive.com
+list_date: '1996-10-23'
+locale: us
+market: stocks
+market_cap: 12272365205.039999
+name: Penske Automotive Group, Inc.
+phone_number: 248-648-2500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S96493
+share_class_shares_outstanding: 66044372
+sic_code: '5500'
+sic_description: RETAIL-AUTO DEALERS & GASOLINE STATIONS
+ticker: PAG
+ticker_root: PAG
+total_employees: 28900
+type: CS
+weighted_shares_outstanding: 66044372

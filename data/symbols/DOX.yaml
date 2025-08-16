@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1kb2NzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1kb2NzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001062579
+currency_name: usd
+description: Amdocs Ltd is a provider of software and services to communications,
+    cable and satellite, entertainment, and media industry service providers. The
+    Company and its subsidiaries operate in one operating segment, providing software
+    products and services for the communications, entertainment and media industry
+    service being designed, develop, market, support, implement, and operate its open
+    and modular cloud offering. The company offers business support systems, operational
+    support systems, and managed services. Geographically, it derives a majority of
+    revenue from North America and also has a presence in Europe and the Rest of the
+    world.
+homepage_url: https://www.amdocs.com
+list_date: '1998-06-19'
+locale: us
+market: stocks
+market_cap: 9854003400.0
+name: Amdocs Limited
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 112890564
+ticker: DOX
+ticker_root: DOX
+total_employees: 29058
+type: CS
+weighted_shares_outstanding: 111219000

@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1 HEALTH DRIVE
+    city: EDEN PRAIRIE
+    postal_code: '55344'
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dW5pdGVkaGVhbHRoZ3JvdXAuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dW5pdGVkaGVhbHRoZ3JvdXAuY29t/images/2025-04-04_logo.svg
+cik: '0000731766'
+composite_figi: BBG000CH5208
+currency_name: usd
+description: UnitedHealth Group is one of the largest private health insurers and
+    provides medical benefits to about 51 million members globally, including 1 million
+    outside the US as of December 2024. As a leader in employer-sponsored, self-directed,
+    and government-backed insurance plans, UnitedHealth has obtained massive scale
+    in medical insurance. Along with its insurance assets, UnitedHealth's Optum franchises
+    help create a healthcare services colossus that spans everything from pharmaceutical
+    benefits to providing outpatient care and analytics to both affiliated and third-party
+    customers.
+homepage_url: https://www.unitedhealthgroup.com
+list_date: '1984-10-17'
+locale: us
+market: stocks
+market_cap: 236897050091.25
+name: UNITEDHEALTH GROUP INCORPORATED (Delaware)
+phone_number: 1-800-328-5979
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6WCJ1
+share_class_shares_outstanding: 907140441
+sic_code: '6324'
+sic_description: HOSPITAL & MEDICAL SERVICE PLANS
+ticker: UNH
+ticker_root: UNH
+total_employees: 400000
+type: CS
+weighted_shares_outstanding: 905673625

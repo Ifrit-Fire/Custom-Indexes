@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 126 EAST LINCOLN AVENUE
+    address2: P.O. BOX 2000
+    city: RAHWAY
+    postal_code: '07065'
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWVyY2suY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWVyY2suY29t/images/2025-04-04_logo.svg
+cik: 0000310158
+composite_figi: BBG000BPD168
+currency_name: usd
+description: Merck makes pharmaceutical products to treat several conditions in a
+    number of therapeutic areas, including cardiometabolic disease, cancer, and infections.
+    Within cancer, the firm's immuno-oncology platform is growing as a major contributor
+    to overall sales. The company also has a substantial vaccine business, with treatments
+    to prevent pediatric diseases as well as human papillomavirus, or HPV. Additionally,
+    Merck sells animal health-related drugs. From a geographical perspective, just
+    under half of the company's sales are generated in the United States.
+homepage_url: https://www.merck.com
+list_date: '1949-04-20'
+locale: us
+market: stocks
+market_cap: 200571991843.3
+name: Merck & Co., Inc.
+phone_number: 908-740-4000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5TC52
+share_class_shares_outstanding: 2497783211
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: MRK
+ticker_root: MRK
+total_employees: 75000
+type: CS
+weighted_shares_outstanding: 2497783211

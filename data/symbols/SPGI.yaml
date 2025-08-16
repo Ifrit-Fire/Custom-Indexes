@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 55 WATER STREET
+    city: NEW YORK
+    postal_code: '10041'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3BnbG9iYWwuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3BnbG9iYWwuY29t/images/2025-04-04_logo.svg
+cik: '0000064040'
+composite_figi: BBG000BP1Q11
+currency_name: usd
+description: S&P Global provides data and benchmarks to capital and commodity market
+    participants. Its ratings business is the largest credit rating agency in the
+    world and S&P's largest segment by profitability. S&P's largest segment by revenue
+    is market intelligence, which provides desktop, data and advisory solutions, enterprise
+    solutions, and credit/risk solutions mostly in the financial-services industry.
+    S&P's other segments include commodity insights (Platts and other data), mobility
+    (Carfax), and indexes.
+homepage_url: https://www.spglobal.com
+list_date: '1929-02-14'
+locale: us
+market: stocks
+market_cap: 170681017999.99997
+name: S&P Global Inc.
+phone_number: 212-438-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5T5M8
+share_class_shares_outstanding: 305300000
+sic_code: '7320'
+sic_description: SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES
+ticker: SPGI
+ticker_root: SPGI
+total_employees: 42350
+type: CS
+weighted_shares_outstanding: 305300000

@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 9348 CIVIC CENTER DRIVE
+    city: BEVERLY HILLS
+    postal_code: '90210'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGl2ZW5hdGlvbmVudGVydGFpbm1lbnQuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGl2ZW5hdGlvbmVudGVydGFpbm1lbnQuY29t/images/2025-04-04_logo.svg
+cik: 0001335258
+composite_figi: BBG000FQ7YR4
+currency_name: usd
+description: Live Nation is the largest live entertainment company in the world, serving
+    as a concert promoter, venue operator, and ticketing platform. In addition, the
+    firm generates revenue from sponsorships and advertising. With offices in 45 countries,
+    Live Nation promotes concerts globally and it owned, operated, or had exclusive
+    booking rights to nearly 400 venues worldwide at the end of 2024, which the firm
+    says makes it the second-largest operator of music venues globally. In 2024, Live
+    Nation promoted nearly 55,000 events, drawing more than 150 million fans. Ticketmaster
+    is a dominant global ticketing service, selling almost 640 million tickets in
+    2024.
+homepage_url: https://www.livenationentertainment.com
+list_date: '2005-12-14'
+locale: us
+market: stocks
+market_cap: 36849913657.96
+name: Live Nation Entertainment Inc.
+phone_number: 310-867-7200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SNP2B2
+share_class_shares_outstanding: 234472727
+sic_code: '7900'
+sic_description: SERVICES-AMUSEMENT & RECREATION SERVICES
+ticker: LYV
+ticker_root: LYV
+total_employees: 16200
+type: CS
+weighted_shares_outstanding: 231950108

@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1 WATER STREET
+    city: CAMDEN
+    postal_code: 08102-1658
+    state: NJ
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW13YXRlci5jb20/images/2025-04-04_logo.svg
+cik: '0001410636'
+composite_figi: BBG000TRJ294
+currency_name: usd
+description: American Water Works is the largest investor-owned US water and wastewater
+    utility, serving approximately 3.5 million customers in 16 states. It provides
+    water and wastewater services to residential, commercial, and industrial customers
+    and operates predominantly in regulated markets. The company's nonregulated business
+    is water services for military bases, which operates under long-term contracts
+    with regulated-like returns.
+homepage_url: https://www.amwater.com
+list_date: '1947-12-15'
+locale: us
+market: stocks
+market_cap: 28041516891.179996
+name: American Water Works Company, Inc
+phone_number: 856-955-4001
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SPHYW3
+share_class_shares_outstanding: 195098566
+sic_code: '4941'
+sic_description: WATER SUPPLY
+ticker: AWK
+ticker_root: AWK
+total_employees: 6700
+type: CS
+weighted_shares_outstanding: 195098566

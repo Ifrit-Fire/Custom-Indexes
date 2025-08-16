@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: '10845 GRIFFITH PEAK DR. #2'
+    city: LAS VEGAS
+    postal_code: '89135'
+    state: NV
+cik: 0001829311
+composite_figi: BBG000BWFL03
+currency_name: usd
+description: BitMine Immersion Technologies Inc is a blockchain technology company
+    that is building out industrial-scale digital asset mining, equipment sales, and
+    hosting operations. The company's primary business is data center focused, both
+    mining Bitcoin for its account as well as hosting third-party Bitcoin mining servers.
+    The Company's primary business is self-mining bitcoin for its own account, as
+    well as hosting third-party equipment used in mining of digital asset coins and
+    tokens, specifically bitcoin. Company's state of the art facilities will be specifically
+    designed and constructed for housing mining equipment. The data centers will provide
+    power, racks, proprietary thermodynamic management.
+homepage_url: https://www.bitminetech.io
+locale: us
+market: stocks
+market_cap: 10692617028.5
+name: BitMine Immersion Technologies, Inc.
+phone_number: 562-310-0160
+primary_exchange: XASE
+round_lot: 100
+share_class_figi: BBG001SBD1J5
+share_class_shares_outstanding: 103206975
+sic_code: '6199'
+sic_description: FINANCE SERVICES
+ticker: BMNR
+ticker_root: BMNR
+total_employees: 7
+type: CS
+weighted_shares_outstanding: 173496950

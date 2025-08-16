@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 300 CADWELL DRIVE
+    city: SPRINGFIELD
+    postal_code: '01104'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXZlcnNvdXJjZS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXZlcnNvdXJjZS5jb20/images/2025-04-04_logo.svg
+cik: '0000072741'
+composite_figi: BBG000BQ87N0
+currency_name: usd
+description: Eversource Energy is a diversified holding company with subsidiaries
+    that provide rate-regulated electric and gas distribution service to more than
+    4 million customers in the Northeast US. Eversource expanded its service territories
+    with acquisitions of NStar (2012), Aquarion (2017), and Columbia Gas (2020). In
+    2024 Eversource exited its 50% partnership with European utility Orsted to develop
+    2 gigawatts of offshore wind projects in the Northeast US. The company exited
+    most of its unregulated businesses in 2006.
+homepage_url: https://www.eversource.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 24604936500.3
+name: Eversource Energy
+phone_number: (860) 665-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5TRL1
+share_class_shares_outstanding: 371115181
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: ES
+ticker_root: ES
+total_employees: 10680
+type: CS
+weighted_shares_outstanding: 371115181

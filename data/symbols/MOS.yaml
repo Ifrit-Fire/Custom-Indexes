@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 101 EAST KENNEDY BLVD.
+    address2: SUITE 2500
+    city: TAMPA
+    postal_code: '33602'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9zYWljY28uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9zYWljY28uY29t/images/2025-04-04_logo.svg
+cik: 0001285785
+composite_figi: BBG000BFXHL6
+currency_name: usd
+description: Mosaic is one of the largest phosphate and potash producers in the world.
+    The company's assets include phosphate rock mines in Florida, Brazil, and Peru
+    and potash mines in Saskatchewan, New Mexico, and Brazil. Mosaic also runs a large
+    fertilizer distribution operation in Brazil through its Mosaic Fertilizantes business.
+homepage_url: https://www.mosaicco.com
+list_date: '1988-01-26'
+locale: us
+market: stocks
+market_cap: 10222755880.460001
+name: The Mosaic Company
+phone_number: 813-775-4200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7LJN1
+share_class_shares_outstanding: 317378326
+sic_code: '2870'
+sic_description: AGRICULTURAL CHEMICALS
+ticker: MOS
+ticker_root: MOS
+total_employees: 13765
+type: CS
+weighted_shares_outstanding: 317378326

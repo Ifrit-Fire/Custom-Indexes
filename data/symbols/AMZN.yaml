@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 410 TERRY AVENUE NORTH
+    city: SEATTLE
+    postal_code: '98109'
+    state: WA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW1hem9uLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW1hem9uLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001018724
+composite_figi: BBG000BVPV84
+currency_name: usd
+description: Amazon is the leading online retailer and marketplace for third party
+    sellers. Retail related revenue represents approximately 75% of total, followed
+    by Amazon Web Services' cloud computing, storage, database, and other offerings
+    (15%), advertising services (5% to 10%), and other the remainder. International
+    segments constitute 25% to 30% of Amazon's non-AWS sales, led by Germany, the
+    United Kingdom, and Japan.
+homepage_url: https://www.amazon.com
+list_date: '1997-05-15'
+locale: us
+market: stocks
+market_cap: 2360145047066.1
+name: Amazon.Com Inc
+phone_number: (206) 266-1000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5PQL7
+share_class_shares_outstanding: 10664912097
+sic_code: '5961'
+sic_description: RETAIL-CATALOG & MAIL-ORDER HOUSES
+ticker: AMZN
+ticker_root: AMZN
+total_employees: 1556000
+type: CS
+weighted_shares_outstanding: 10664912097

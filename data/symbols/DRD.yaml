@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHJkZ29sZC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHJkZ29sZC5jb20/images/2025-04-04_logo.png
+cik: '0001023512'
+composite_figi: BBG000BX8QF2
+currency_name: usd
+description: DRDGold Ltd is a South African gold mining company engaged in surface
+    gold tailings retreatment including exploration, extraction, processing, and smelting.
+    Its reportable operating segments are; Ergo, FWGR, and Corporate office and other
+    reconciling items. The Ergo is a surface gold retreatment operation that treats
+    old slime dams and sand dumps to the south of Johannesburg's central business
+    district as well as the East and Central Rand goldfields; and the FWGR which is
+    a surface gold retreatment operation and treats old slime dams in the West Rand
+    goldfields. The Ergo segment derives a vast majority of the company's revenue.
+homepage_url: https://www.drdgold.com
+list_date: '1996-08-01'
+locale: us
+market: stocks
+market_cap: 1295377985.82
+name: DRDGOLD Ltd.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S96F70
+share_class_shares_outstanding: 86458871
+ticker: DRD
+ticker_root: DRD
+total_employees: 2956
+type: ADRC
+weighted_shares_outstanding: 86243541

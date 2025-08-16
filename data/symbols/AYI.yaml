@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1170 PEACHTREE STREET NE
+    address2: SUITE 1200
+    city: ATLANTA
+    postal_code: '30309'
+    state: GA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bXlhY3VpdHkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bXlhY3VpdHkuY29t/images/2025-04-04_logo.svg
+cik: '0001144215'
+composite_figi: BBG000BJ5HK0
+currency_name: usd
+description: 'Acuity is a leading industrial technology company that offers lighting,
+    lighting controls, and intelligent building solutions. Acuity, Inc. designs, manufactures,
+    and brings to market products and services relating to these and other offerings.
+    Acuity, Inc. has two reportable segments: Acuity Brands Lighting and Acuity Intelligent
+    Spaces. ABL sells commercial, architectural, and specialty lighting, including
+    components and control systems. AIS offers building management and audio/visual
+    solutions to help make buildings intelligent.'
+homepage_url: https://www.myacuity.com
+list_date: '2001-11-28'
+locale: us
+market: stocks
+market_cap: 10045375929.6
+name: Acuity Inc.
+phone_number: 404-853-1400
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SBG656
+share_class_shares_outstanding: 30644832
+sic_code: '3640'
+sic_description: ELECTRIC LIGHTING & WIRING EQUIPMENT
+ticker: AYI
+ticker_root: AYI
+total_employees: 13200
+type: CS
+weighted_shares_outstanding: 30644832

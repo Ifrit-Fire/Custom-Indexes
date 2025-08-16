@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 505 N. CLEVELAND AVE.
+    city: WESTERVILLE
+    postal_code: '43082'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmVydGl2LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmVydGl2LmNvbQ/images/2025-04-04_logo.svg
+cik: '0001674101'
+composite_figi: BBG00L2B8KW8
+currency_name: usd
+description: Vertiv has roots tracing back to 1946 when its founder, Ralph Liebert,
+    developed an air-cooling system for mainframe data rooms. As computers started
+    making their way into commercial applications in 1965, Liebert developed one of
+    the first computer room air conditioning, or CRAC, units, enabling the precise
+    control of temperature and humidity. The firm has slowly expanded its data center
+    portfolio through internal product development and the acquisition of thermal
+    and power management products like condensers, busways, and switches. Vertiv has
+    global operations today; its products can be found in data centers in most regions
+    throughout the world.
+homepage_url: https://www.vertiv.com
+list_date: '2018-07-30'
+locale: us
+market: stocks
+market_cap: 52468479633.6
+name: Vertiv Holdings Co Class A Common Stock
+phone_number: (614) 888-0246
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00L2B8LM7
+share_class_shares_outstanding: 381866664
+sic_code: '3679'
+sic_description: ELECTRONIC COMPONENTS, NEC
+ticker: VRT
+ticker_root: VRT
+total_employees: 31000
+type: CS
+weighted_shares_outstanding: 381866664

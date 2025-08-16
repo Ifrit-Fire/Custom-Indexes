@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 300 VESEY STREET, 13TH FLOOR
+    city: NEW YORK
+    postal_code: '10282'
+    state: NY
+cik: 0001859392
+composite_figi: BBG0120SWLS0
+currency_name: usd
+description: Galaxy Digital Inc is engaged in digital assets and data center infrastructure,
+    delivering solutions that accelerate progress in finance and artificial intelligence.
+    Its digital assets platform offers institutional access to trading, advisory,
+    asset management, staking, self-custody, and tokenization technology. The company
+    invest in and operate cutting-edge data center infrastructure to power AI and
+    high-performance computing, meeting the growing demand for scalable energy and
+    compute solutions in the U.S. It has three operating business segments, Digital
+    Assets and Data Centers, along with a Treasury & Corporate segment.
+homepage_url: https://www.galaxy.com
+list_date: '2006-05-25'
+locale: us
+market: stocks
+market_cap: 4885851226.62
+name: Galaxy Digital Inc. Class A Common Stock
+phone_number: 212-390-9216
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG0120SWLT9
+share_class_shares_outstanding: 172401243
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: GLXY
+ticker_root: GLXY
+total_employees: 520
+type: CS
+weighted_shares_outstanding: 172401243

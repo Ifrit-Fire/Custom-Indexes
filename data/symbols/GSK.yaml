@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z3NrLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z3NrLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001131399
+composite_figi: BBG000BLB481
+currency_name: usd
+description: In the pharmaceutical industry, GSK ranks as one of the largest firms
+    by total sales. The company wields its might across several therapeutic classes,
+    including respiratory, antiviral, and vaccines, and has been growing its presence
+    in oncology and immunology, as well. GSK uses joint ventures to gain additional
+    scale in certain markets like HIV.
+homepage_url: https://www.gsk.com
+list_date: '1976-08-18'
+locale: us
+market: stocks
+market_cap: 77061945192.95999
+name: GSK plc American Depositary Shares (Each representing two Ordinary Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SD6SM6
+share_class_shares_outstanding: 2039170495
+ticker: GSK
+ticker_root: GSK
+total_employees: 68629
+type: ADRC
+weighted_shares_outstanding: 2016272768

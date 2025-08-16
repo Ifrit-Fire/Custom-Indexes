@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE STRAWBERRY LANE
+    city: ORRVILLE
+    postal_code: '44667'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/am1zbXVja2VyLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/am1zbXVja2VyLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000091419
+composite_figi: BBG000BT1715
+currency_name: usd
+description: J.M. Smucker is a packaged food company that primarily sells through
+    the US retail channel (73% of fiscal 2025 revenue came through its retail pet
+    foods, coffee, and frozen handheld/spreads segments), with the remaining share
+    consisting of sweet baked snacks (through the Hostess acquisition) and international
+    (primarily Canada). Retail coffee is its largest category (32% of sales) with
+    brands Folgers and Dunkin'. Pet foods (19% of sales) holds leading brands like
+    Milk-Bone and Meow Mix. Of its remaining, approximately 22% comes from frozen
+    handhelds and spreads, through brands Jif, Smucker's, and Uncrustables. The company
+    acquired Hostess Brands in fiscal 2024 to boost its snack and convenience store
+    presence.
+homepage_url: https://www.jmsmucker.com
+list_date: '1994-10-31'
+locale: us
+market: stocks
+market_cap: 12056322224.76
+name: The J.M. Smucker Company
+phone_number: (330) 682-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5W3H5
+share_class_shares_outstanding: 106508017
+sic_code: '2033'
+sic_description: CANNED, FRUITS, VEG, PRESERVES, JAMS & JELLIES
+ticker: SJM
+ticker_root: SJM
+total_employees: 8000
+type: CS
+weighted_shares_outstanding: 106683676

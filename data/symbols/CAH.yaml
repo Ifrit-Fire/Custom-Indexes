@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 7000 CARDINAL PLACE
+    city: DUBLIN
+    postal_code: '43017'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FyZGluYWxoZWFsdGguY29t/images/2025-03-20_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FyZGluYWxoZWFsdGguY29t/images/2025-03-20_logo.svg
+cik: '0000721371'
+composite_figi: BBG000D898T9
+currency_name: usd
+description: Cardinal Health is one of three leading pharmaceutical wholesalers in
+    the US, engaged in sourcing and distributing of branded, generic, and specialty
+    pharmaceutical products to pharmacies (retail chains, independent, and mail order),
+    hospital networks, and healthcare providers. Cardinal, Cencora, and McKesson hold
+    well over 90% of the US pharmaceutical wholesale industry. Cardinal Health also
+    supplies medical-surgical products and equipment to healthcare facilities in North
+    America, Europe, and Asia.
+homepage_url: https://www.cardinalhealth.com
+list_date: '1983-08-04'
+locale: us
+market: stocks
+market_cap: 35370114993.64
+name: Cardinal Health, Inc.
+phone_number: (614) 757-3033
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7PC34
+share_class_shares_outstanding: 238677005
+sic_code: '5122'
+sic_description: WHOLESALE-DRUGS, PROPRIETARIES & DRUGGISTS' SUNDRIES
+ticker: CAH
+ticker_root: CAH
+total_employees: 57700
+type: CS
+weighted_shares_outstanding: 238793647

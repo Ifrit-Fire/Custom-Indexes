@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: FABRINET WEST, INC.
+    address2: 4900 PATRICK HENRY DRIVE
+    city: SANTA CLARA
+    postal_code: '95054'
+    state: CA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZmFicmluZXQuY29t/images/2025-04-04_logo.png
+cik: 0001408710
+currency_name: usd
+description: Fabrinet provides advanced optical packaging and precision optical, electro-mechanical,
+    and electronic manufacturing services to original equipment manufacturers of complex
+    products, such as optical communication components, modules and sub-systems, industrial
+    lasers, automotive components, medical devices, and sensors. The company offers
+    a broad range of advanced optical and electro-mechanical capabilities across the
+    entire manufacturing process, including process design and engineering, supply
+    chain management, manufacturing, complex printed circuit board assembly, advanced
+    packaging, integration, final assembly, and testing. The company generates the
+    majority of its revenue from North America and Asia-Pacific, with the rest from
+    Europe.
+homepage_url: https://www.fabrinet.com
+list_date: '2010-06-25'
+locale: us
+market: stocks
+market_cap: 12086037900.74
+name: Fabrinet
+phone_number: (408) 748 0900
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 35830654
+sic_code: '3661'
+sic_description: TELEPHONE & TELEGRAPH APPARATUS
+ticker: FN
+ticker_root: FN
+total_employees: 14213
+type: CS
+weighted_shares_outstanding: 35830654

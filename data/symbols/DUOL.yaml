@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 5900 PENN AVE, SECOND FLOOR
+    city: PITTSBURGH
+    postal_code: '15206'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHVvbGluZ28uY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHVvbGluZ28uY29t/images/2025-04-04_logo.svg
+cik: 0001562088
+composite_figi: BBG003D4V951
+currency_name: usd
+description: 'Duolingo Inc is a technology company that develops a mobile learning
+    platform to learn languages and is the top-grossing app in the Education category
+    on both Google Play and the Apple App Store. Its products are powered by sophisticated
+    data analytics and artificial intelligence and delivered with class art, animation,
+    and design to make it easier for learners to stay motivated master new material,
+    and achieve their learning goals. Its solutions include the Duolingo Language
+    Learning App, Super Duolingo, Duolingo English Test: AI-Driven Language Assessment,
+    Duolingo For Schools, Duolingo ABC, and Duolingo Math. It has four predominant
+    sources of revenue; time-based subscriptions, in-app advertising placement by
+    third parties, and the Duolingo English Test, and In-App Purchases.'
+homepage_url: https://www.duolingo.com
+list_date: '2021-07-28'
+locale: us
+market: stocks
+market_cap: 15026377962.51
+name: Duolingo, Inc. Class A Common Stock
+phone_number: (412) 347-6116
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG003D4V960
+share_class_shares_outstanding: 39694545
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: DUOL
+ticker_root: DUOL
+total_employees: 830
+type: CS
+weighted_shares_outstanding: 45821907

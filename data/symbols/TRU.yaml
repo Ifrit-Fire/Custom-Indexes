@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 555 WEST ADAMS STREET
+    city: CHICAGO
+    postal_code: '60661'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dHJhbnN1bmlvbi5jb20/images/2024-09-01_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dHJhbnN1bmlvbi5jb20/images/2024-09-01_logo.svg
+cik: '0001552033'
+composite_figi: BBG002Q7J5Z1
+currency_name: usd
+description: TransUnion is one of the three leading credit bureaus in the United States,
+    providing the consumer information that is the basis for granting credit. The
+    company also provides fraud detection, marketing, and analytical services. TransUnion
+    operates in over 30 countries. About 20%-25% of its revenue comes from international
+    markets.
+homepage_url: https://www.transunion.com
+list_date: '2015-06-25'
+locale: us
+market: stocks
+market_cap: 18071596000.0
+name: TransUnion
+phone_number: (312) 985-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG002Q7J607
+share_class_shares_outstanding: 194800000
+sic_code: '7320'
+sic_description: SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES
+ticker: TRU
+ticker_root: TRU
+total_employees: 13400
+type: CS
+weighted_shares_outstanding: 194800000

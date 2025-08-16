@@ -1,0 +1,27 @@
+active: true
+cik: 0001862044
+composite_figi: BBG01FRPM871
+currency_name: usd
+description: ZKH Group Ltd engages in providing MRO procurement service platform in
+    China. It provides one-stop MRO procurement and management services for its customers,
+    and offers digital and fulfillment solutions for participants along the industry
+    value chain. It offers a broad range of MRO product offerings covering all MRO
+    product lines on its platform, including spare parts, chemicals, manufacturing
+    parts, general consumables, and office supplies. All of the Group's revenues are
+    derived from the PRC.
+homepage_url: https://www.zkh.com
+list_date: '2023-12-15'
+locale: us
+market: stocks
+market_cap: 475541991.0
+name: ZKH Group Limited American Depositary Shares, each representing thirty-five
+    (35) Class A Ordinary Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG01FRPM899
+share_class_shares_outstanding: 161905001
+ticker: ZKH
+ticker_root: ZKH
+total_employees: 3262
+type: ADRC
+weighted_shares_outstanding: 158513997

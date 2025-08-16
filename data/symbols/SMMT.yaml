@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 601 BRICKELL KEY DRIVE
+    address2: SUITE 1000
+    city: MIAMI
+    postal_code: '33131'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c21tdHR4LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c21tdHR4LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001599298
+composite_figi: BBG00X3GQL76
+currency_name: usd
+description: 'Summit Therapeutics Inc is a biopharmaceutical company that focuses
+    on the discovery, development, and commercialization of novel antibiotics for
+    serious infectious diseases. Its CDI (Clostridiodes difficile infection) product
+    candidate is ridinilazole, an orally administered small molecule antibiotic. It
+    has two geographical segments: the United States and the United Kingdom.'
+homepage_url: https://www.smmttx.com
+list_date: '2015-03-05'
+locale: us
+market: stocks
+market_cap: 19960290076.64
+name: Summit Therapeutics Inc. Common Stock
+phone_number: 305-203-2034
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00X3GQL94
+share_class_shares_outstanding: 742665924
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: SMMT
+ticker_root: SMMT
+total_employees: 159
+type: CS
+weighted_shares_outstanding: 742846672

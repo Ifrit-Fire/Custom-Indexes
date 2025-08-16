@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 85 WILLOW ROAD
+    city: MENLO PARK
+    postal_code: '94025'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cm9iaW5ob29kLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm9iaW5ob29kLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001783879
+composite_figi: BBG008NMBXN8
+currency_name: usd
+description: Robinhood Markets Inc is creating a modern financial services platform.
+    It designs its own products and services and delivers them through a single, app-based
+    cloud platform supported by proprietary technology. Its vertically integrated
+    platform has enabled the introduction of new products and services such as cryptocurrency
+    trading, dividend reinvestment, fraud detection, derivatives, fractional shares,
+    recurring investments, and others.
+homepage_url: https://www.robinhood.com
+list_date: '2021-07-29'
+locale: us
+market: stocks
+market_cap: 101388941360.37001
+name: Robinhood Markets, Inc. Class A Common Stock
+phone_number: 844-428-5411
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG008NMBXP6
+share_class_shares_outstanding: 773963666
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: HOOD
+ticker_root: HOOD
+total_employees: 2300
+type: CS
+weighted_shares_outstanding: 888675093

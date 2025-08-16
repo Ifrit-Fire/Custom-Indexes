@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1000 SPRING ST
+    city: SILVER SPRING
+    postal_code: '20910'
+    state: MD
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dW5pdGhlci5jb20/images/2025-04-04_logo.svg
+cik: 0001082554
+composite_figi: BBG000BV4XJ1
+currency_name: usd
+description: 'United Therapeutics Corp specializes in drug development for pulmonary
+    arterial hypertension (PAH), a rare and progressive disease marked by abnormally
+    high blood pressure in the arteries of the lungs. The company''s therapies for
+    PAH largely focus on the prostacyclin pathway, and many of its treatments are
+    based on the same molecule, treprostinil. The company markets and sells the following
+    commercial therapies in the United States to treat PAH: Tyvaso DPI (treprostinil)
+    Inhalation Powder, Remodulin Injection, Orenitram (treprostinil) Extended-Release
+    Tablets, Adcirca (tadalafil) Tablets, and Unituxin. In addition, it is developing
+    a pipeline of projects that includes new indications and delivery devices for
+    existing products and new products to treat PAH and other conditions.'
+homepage_url: https://www.unither.com
+list_date: '1999-06-17'
+locale: us
+market: stocks
+market_cap: 14007477866.640001
+name: United Therapeutics Corp
+phone_number: (301) 608-9292
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S8RV10
+share_class_shares_outstanding: 45106623
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: UTHR
+ticker_root: UTHR
+total_employees: 1305
+type: CS
+weighted_shares_outstanding: 45226262

@@ -1,0 +1,12 @@
+active: true
+cik: 0001001085
+currency_name: usd
+list_date: '2020-10-21'
+locale: us
+market: stocks
+name: Brookfield Finance Inc. 4.625% Subordinated Notes due October 16, 2080
+primary_exchange: XNYS
+round_lot: 100
+ticker: BNH
+ticker_root: BNH
+type: SP

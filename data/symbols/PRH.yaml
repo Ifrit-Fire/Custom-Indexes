@@ -1,0 +1,20 @@
+active: true
+address:
+    address1: 751 BROAD ST
+    city: NEWARK
+    postal_code: '07102'
+    state: NJ
+cik: '0001137774'
+currency_name: usd
+list_date: '2022-08-19'
+locale: us
+market: stocks
+name: Prudential Financial, Inc. 5.950% Junior Subordinated Notes due 2062
+phone_number: (973) 802-6000
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '6311'
+sic_description: LIFE INSURANCE
+ticker: PRH
+ticker_root: PRH
+type: SP

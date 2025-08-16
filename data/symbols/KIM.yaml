@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 500 NORTH BROADWAY
+    address2: SUITE 201, P.O. BOX 9010
+    city: JERICHO
+    postal_code: '11753'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/a2ltY29yZWFsdHkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/a2ltY29yZWFsdHkuY29t/images/2025-04-04_logo.png
+cik: 0000879101
+composite_figi: BBG000CN3S73
+currency_name: usd
+description: One of the oldest real estate investment trusts in the United States,
+    Kimco Realty owns interests in 567 shopping centers throughout major markets in
+    the US, representing roughly 101 million square feet.
+homepage_url: https://www.kimcorealty.com
+list_date: '1991-11-22'
+locale: us
+market: stocks
+market_cap: 14580126269.810001
+name: Kimco Realty Corp.
+phone_number: (516) 869-9000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S70279
+share_class_shares_outstanding: 677200477
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: KIM
+ticker_root: KIM
+total_employees: 717
+type: CS
+weighted_shares_outstanding: 677200477

@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 14201 DALLAS PARKWAY
+    city: DALLAS
+    postal_code: '75254'
+    state: TX
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGVuZXRoZWFsdGguY29t/images/2025-04-04_logo.png
+cik: 0000070318
+composite_figi: BBG000CPHYL4
+currency_name: usd
+description: Tenet Healthcare is a Dallas-based healthcare services organization.
+    It operates acute and specialty hospitals (47 as of December 2024) and over 500
+    ambulatory surgery centers and other outpatient facilities across the US, primarily
+    in the South. Through its Conifer segment, Tenet also provides revenue cycle management
+    solutions.
+homepage_url: https://www.tenethealth.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 15184886370.0
+name: Tenet Healthcare Corporation New
+phone_number: 469-893-2200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S70FY0
+share_class_shares_outstanding: 88351000
+sic_code: '8062'
+sic_description: SERVICES-GENERAL MEDICAL & SURGICAL HOSPITALS, NEC
+ticker: THC
+ticker_root: THC
+total_employees: 98000
+type: CS
+weighted_shares_outstanding: 88351000

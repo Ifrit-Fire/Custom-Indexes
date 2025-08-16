@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: HAR HOTZVIM, 13 HARTOM STREET
+    address2: P.O. BOX 45157
+    city: JERUSALEM
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bW9iaWxleWUuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bW9iaWxleWUuY29t/images/2025-04-04_logo.svg
+cik: 0001910139
+composite_figi: BBG019X46Z37
+currency_name: usd
+description: Mobileye Global Inc engages in the development and deployment of ADAS
+    and autonomous driving technologies and solutions. It is building a portfolio
+    of end-to-end ADAS and autonomous driving solutions to provide the capabilities
+    needed for the future of autonomous driving, leveraging a comprehensive suite
+    of purpose-built software and hardware technologies. The company's reportable
+    operating segment are Mobileye and Others. Its solutions comprise Driver Assist,
+    Cloud-Enhanced Driver Assist, Mobileye SuperVision Lite, Mobileye SuperVision,
+    Mobileye Chauffeur, Mobileye Drive, Self-Driving System & Vehicles. It derives
+    maximum revenue from Mobileye Segment.
+homepage_url: https://www.mobileye.com
+list_date: '2022-10-26'
+locale: us
+market: stocks
+market_cap: 11596278830.25
+name: Mobileye Global Inc. Class A Common Stock
+phone_number: 972 2 541 7333
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG019X46ZY3
+share_class_shares_outstanding: 216005938
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: MBLY
+ticker_root: MBLY
+total_employees: 3900
+type: CS
+weighted_shares_outstanding: 813773953

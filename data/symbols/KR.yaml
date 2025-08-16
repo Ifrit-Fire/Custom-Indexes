@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 1014 VINE ST
+    city: CINCINNATI
+    postal_code: '45201'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGhla3JvZ2VyY28uY29t/images/2025-03-20_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGhla3JvZ2VyY28uY29t/images/2025-03-20_logo.svg
+cik: 0000056873
+composite_figi: BBG000BMY992
+currency_name: usd
+description: Kroger is one of the largest grocery retailers in the United States with
+    about 2,700 stores across a portfolio of over 20 supermarket banners. The company
+    boasts an ingrained presence in US communities, citing that it is a top-two grocer
+    in most of its major market areas. Over one fourth of Kroger's roughly $110 billion
+    in nonperishable and fresh food sales (about 75% of revenue) stems from its private-label
+    portfolio, of which the company manufactures about 30% of units via its own food
+    production plants. The company also operates fuel stations and pharmacies at 60%
+    and 80% of its locations, respectively.
+homepage_url: https://www.thekrogerco.com
+list_date: '1951-01-12'
+locale: us
+market: stocks
+market_cap: 46499090086.54
+name: The Kroger Co.
+phone_number: (513) 762-4437
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5SN40
+share_class_shares_outstanding: 661155838
+sic_code: '5411'
+sic_description: RETAIL-GROCERY STORES
+ticker: KR
+ticker_root: KR
+total_employees: 409000
+type: CS
+weighted_shares_outstanding: 661155838

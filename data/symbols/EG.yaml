@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: SEON PLACE, 4TH FLOOR
+    address2: 141 FRONT STREET
+    city: HAMILTON
+    postal_code: HM 19
+    state: D0
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXZlcmVzdGdsb2JhbC5jb20/images/2025-04-04_icon.jpeg
+cik: 0001095073
+currency_name: usd
+description: Everest Group Ltd is a Bermuda-based reinsurance and insurance organization.
+    It operates in the Reinsurance and Insurance business. It is a financial services
+    institution focused on diversifying its portfolio and geographic presence. Through
+    direct and indirect subsidiaries operating in the U.S. and internationally. The
+    Insurance operation writes property and casualty insurance directly and through
+    brokers, surplus lines brokers, and general agents within the U.S., Bermuda, Canada,
+    Europe, and South America. The Company conducts business through two reportable
+    segments, Reinsurance and Insurance.
+homepage_url: https://www.everestglobal.com
+list_date: '1995-10-03'
+locale: us
+market: stocks
+market_cap: 14124822677.16
+name: Everest Group, Ltd.
+phone_number: (441) 295-0006
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 41943291
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: EG
+ticker_root: EG
+total_employees: 2428
+type: CS
+weighted_shares_outstanding: 41943291

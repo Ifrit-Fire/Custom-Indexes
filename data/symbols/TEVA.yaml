@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: TEVA PHARMACEUTICAL INDUSTRIES LIMITED
+    address2: 124 DVORA HANEVI'A ST.
+    city: TEL AVIV
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGV2YXBoYXJtLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGV2YXBoYXJtLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000818686
+composite_figi: BBG000C0CD58
+currency_name: usd
+description: 'Teva Pharmaceutical Industries, based in Israel, is the leading generic
+    drug manufacturer in the world. Teva derives half of its sales from North America
+    and makes up a high-single-digit percentage of the total number of generic prescriptions
+    in the US. It also has a significant presence in Europe, Japan, Russia, and Israel.
+    Besides generics, Teva has a portfolio of innovative medicines and biosimilars
+    in three main therapeutic areas: the central nervous system with Copaxone, Ajovy,
+    and Austedo; respiratory with Qvar and ProAir; and oncology with Truxima, Herzuma,
+    and Bendeka/Treanda. Teva also sells active pharmaceutical ingredients, offers
+    contract manufacturing services, and owns Anda, a US-based generic and specialty
+    drug distributor.'
+homepage_url: https://www.tevapharm.com
+list_date: '1982-02-16'
+locale: us
+market: stocks
+market_cap: 19742467281.57
+name: Teva Pharmaceutical Industries Limited American Depositary Shares
+phone_number: 972 (3) 914-8213
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S62NT9
+share_class_shares_outstanding: 1146838689
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: TEVA
+ticker_root: TEVA
+total_employees: 35686
+type: ADRC
+weighted_shares_outstanding: 1147150917

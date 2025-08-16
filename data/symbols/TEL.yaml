@@ -1,0 +1,33 @@
+active: true
+address:
+    address1: PARKMORE BUSINESS PARK WEST
+    address2: PARKMORE
+    city: GALWAY
+    postal_code: H91VN2T
+    state: L2
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGUuY29t/images/2025-04-04_icon.png
+cik: 0001385157
+currency_name: usd
+description: TE Connectivity is the largest electrical connector supplier in the world,
+    supplying interconnect and sensor solutions to the transportation, industrial,
+    and communications markets. With operations in 150 countries and over 500,000
+    stock-keeping units, TE has a broad portfolio that forms the electrical architecture
+    of its end customers' cutting-edge innovations.
+homepage_url: https://www.te.com
+list_date: '2007-06-14'
+locale: us
+market: stocks
+market_cap: 60954876778.39
+name: TE Connectivity plc
+phone_number: 353-91378040
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 295481491
+sic_code: '5065'
+sic_description: WHOLESALE-ELECTRONIC PARTS & EQUIPMENT, NEC
+ticker: TEL
+ticker_root: TEL
+total_employees: 87000
+type: CS
+weighted_shares_outstanding: 295481491

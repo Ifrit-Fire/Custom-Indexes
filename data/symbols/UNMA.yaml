@@ -1,0 +1,20 @@
+active: true
+address:
+    address1: 1 FOUNTAIN SQUARE
+    city: CHATTANOOGA
+    postal_code: '37402'
+    state: TN
+cik: '0000005513'
+currency_name: usd
+list_date: '2018-06-19'
+locale: us
+market: stocks
+name: Unum Group 6.250% Junior Subordinated Notes due 2058
+phone_number: 423-294-1011
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '6321'
+sic_description: ACCIDENT & HEALTH INSURANCE
+ticker: UNMA
+ticker_root: UNMA
+type: SP

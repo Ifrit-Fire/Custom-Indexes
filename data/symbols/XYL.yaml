@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 301 WATER STREET SE
+    city: WASHINGTON
+    postal_code: '20003'
+    state: DC
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/eHlsZW0uY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/eHlsZW0uY29t/images/2025-04-04_logo.svg
+cik: '0001524472'
+composite_figi: BBG001D8R5D0
+currency_name: usd
+description: Xylem is a global leader in water technology and offers a wide range
+    of solutions, including the transport, treatment, testing, and efficient use of
+    water for customers in the utility, industrial, commercial, and residential sectors.
+    Xylem was spun off from ITT in 2011. Based in Rye Brook, New York, Xylem has a
+    presence in over 150 countries and employs 16,200. The company generated $8.6
+    billion in revenue in 2024.
+homepage_url: https://www.xylem.com
+list_date: '2011-10-13'
+locale: us
+market: stocks
+market_cap: 34936592518.64
+name: Xylem Inc
+phone_number: 202-869-9150
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001V05C73
+share_class_shares_outstanding: 243409688
+sic_code: '3561'
+sic_description: PUMPS & PUMPING EQUIPMENT
+ticker: XYL
+ticker_root: XYL
+total_employees: 23000
+type: CS
+weighted_shares_outstanding: 243409688

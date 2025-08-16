@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1144 15TH STREET
+    address2: SUITE 2500
+    city: DENVER
+    postal_code: '80202'
+    state: CO
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cm95YWxnb2xkLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000085535
+composite_figi: BBG000BS5170
+currency_name: usd
+description: Royal Gold Inc enquires and manages precious metal royalties and streams
+    with a focus on gold. The company purchases a percentage of the metal produced
+    from a mineral property for an initial payment without assuming responsibility
+    for mining operations. Similarly, precious metal streams are purchase agreements
+    with mine operators providing the right to purchase all or a portion of one or
+    more metals produced from a mine in exchange for an upfront deposit payment. Generally,
+    Royal Gold does not work on the properties in which it holds royalty and streaming
+    assets. The company owns a portfolio of producing, development, evaluation, and
+    exploration royalties and streams, and the majority of group revenue is generated
+    from Canada, Mexico, Chile, and the United States.
+homepage_url: https://www.royalgold.com
+list_date: '1981-06-11'
+locale: us
+market: stocks
+market_cap: 11340057189.779999
+name: Royal Gold Inc
+phone_number: 303-573-1660
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5VNX4
+share_class_shares_outstanding: 65831053
+sic_code: '6795'
+sic_description: MINERAL ROYALTY TRADERS
+ticker: RGLD
+ticker_root: RGLD
+total_employees: 30
+type: CS
+weighted_shares_outstanding: 65831053

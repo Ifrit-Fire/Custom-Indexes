@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1027 NEWPORT AVENUE
+    address2: P O BOX 1059
+    city: PAWTUCKET
+    postal_code: 02861
+    state: RI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aGFzYnJvLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aGFzYnJvLmNvbQ/images/2025-04-04_logo.png
+cik: 0000046080
+composite_figi: BBG000BKVJK4
+currency_name: usd
+description: 'Hasbro is a branded play company providing children and families around
+    the world with entertainment offerings based on a world-class brand portfolio.
+    From toys and games to television programming, motion pictures, and a licensing
+    program, Hasbro reaches customers by leveraging its well-known brands such as
+    Transformers, Nerf, and Magic: The Gathering. The firm acquired EOne in 2019,
+    bolting on popular family properties like Peppa Pig and PJ Masks, and since has
+    divested noncore lines from the tie-up. Furthermore, the addition of Dungeons
+    & Dragons Beyond in 2022, offers the firm access to 19 million digital tabletop
+    players.'
+homepage_url: https://www.hasbro.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 11263477612.8
+name: Hasbro, Inc.
+phone_number: (401) 431-8697
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5RSQ6
+share_class_shares_outstanding: 140232540
+sic_code: '3944'
+sic_description: GAMES, TOYS & CHILDREN'S VEHICLES (NO DOLLS & BICYCLES)
+ticker: HAS
+ticker_root: HAS
+total_employees: 4985
+type: CS
+weighted_shares_outstanding: 140232540

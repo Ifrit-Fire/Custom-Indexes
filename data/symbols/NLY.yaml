@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1211 AVENUE OF THE AMERICAS
+    city: NEW YORK
+    postal_code: '10036'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YW5uYWx5LmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YW5uYWx5LmNvbQ/images/2025-04-04_logo.svg
+cik: 0001043219
+composite_figi: BBG000BJFJ98
+currency_name: usd
+description: Annaly Capital Management Inc is an American mortgage real estate investment
+    trust. Its business objective is to generate net income for distribution to its
+    stockholders and optimize its returns through prudent management of its diversified
+    investment strategies. The company's reportable operating segments are; the Agency
+    segment, which invests in Agency mortgage-backed securities collateralized by
+    residential mortgages; the Residential Credit segment, which invests in non-Agency
+    residential whole loans and securitized products within the residential and commercial
+    markets; the Mortgage Servicing Rights segment; and Corporate & Other. Maximum
+    revenue for the company is generated from its Agency segment.
+homepage_url: https://www.annaly.com
+list_date: '1997-10-08'
+locale: us
+market: stocks
+market_cap: 13393708009.22
+name: Annaly Capital Management. Inc.
+phone_number: 212 696 0100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8J4S0
+share_class_shares_outstanding: 642076127
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: NLY
+ticker_root: NLY
+total_employees: 191
+type: CS
+weighted_shares_outstanding: 642076127

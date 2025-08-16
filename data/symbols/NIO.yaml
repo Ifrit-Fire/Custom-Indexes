@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmlvLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmlvLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001736541'
+composite_figi: BBG00LPXZB46
+currency_name: usd
+description: Nio is a leading electric vehicle maker, targeting the premium segment.
+    Founded in November 2014, Nio designs, develops, jointly manufactures, and sells
+    premium smart electric vehicles. The company differentiates itself through continuous
+    technological breakthroughs and innovations such as battery swapping and autonomous
+    driving technologies. Nio launched its first model, its ES8 seven-seater electric
+    SUV, in December 2017, and began deliveries in June 2018. Its current model portfolio
+    includes midsize to large sedans and SUVs. It sold around 222,000 EVs in 2024,
+    accounting for about 2% of the China passenger new energy vehicle market.
+homepage_url: https://www.nio.com
+list_date: '2018-09-12'
+locale: us
+market: stocks
+market_cap: 10376476562.76
+name: NIO Inc. American depositary shares, each representing one Class A ordinary
+    share
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00LPXZBW5
+share_class_shares_outstanding: 1570605680
+ticker: NIO
+ticker_root: NIO
+total_employees: 45635
+type: ADRC
+weighted_shares_outstanding: 2245990598

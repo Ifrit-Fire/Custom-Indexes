@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 17450 COLLEGE PARKWAY
+    city: LIVONIA
+    postal_code: '48152'
+    state: MI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bWFzY28uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bWFzY28uY29t/images/2025-04-04_logo.svg
+cik: 0000062996
+composite_figi: BBG000BNNKG9
+currency_name: usd
+description: Masco manufactures a variety of home improvement and building products.
+    The company's $5-billion plumbing segment, led by the Delta and Hansgrohe brands,
+    sells faucets, showerheads, and other related plumbing fixtures and components.
+    The roughly $3-billion decorative architectural segment primarily sells paints
+    and other coatings under the Behr and Kilz brands, but it also sells builder hardware
+    products.
+homepage_url: https://www.masco.com
+list_date: '1969-05-05'
+locale: us
+market: stocks
+market_cap: 15626901791.04
+name: Masco Corporation
+phone_number: (313) 274-7400
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5SZ70
+share_class_shares_outstanding: 209363636
+sic_code: '3430'
+sic_description: HEATING EQUIP, EXCEPT ELEC & WARM AIR; & PLUMBING FIXTURES
+ticker: MAS
+ticker_root: MAS
+total_employees: 18000
+type: CS
+weighted_shares_outstanding: 209363636

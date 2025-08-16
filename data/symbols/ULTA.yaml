@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: 1000 REMINGTON BLVD
+    address2: SUITE 120
+    city: BOLINGBROOK
+    postal_code: '60440'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dWx0YS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dWx0YS5jb20/images/2025-04-04_logo.svg
+cik: 0001403568
+composite_figi: BBG00FWQ4VD6
+currency_name: usd
+description: With more than 1,400 freestanding stores and 600 Target shop-in-shops,
+    Ulta Beauty is the largest specialized beauty retailer in the US. The firm offers
+    cosmetics (39% of 2024 sales), fragrances (13%), skin care (23%), and hair care
+    products (19%). It also offers salon services, including hair, makeup, skin, and
+    brow, that account for about 4% of its revenue and drive traffic. In addition,
+    it collects royalties through its Target partnership and credit card revenue.
+    Most standalone Ulta stores are approximately 10,000 square feet and are in suburban
+    strip centers. The firm will soon open franchised stores in Mexico and has formed
+    a joint venture to expand into the Middle East. Ulta was founded in 1990 and is
+    based in Bolingbrook, Illinois.
+homepage_url: https://www.ulta.com
+list_date: '2007-10-25'
+locale: us
+market: stocks
+market_cap: 23942973239.550003
+name: Ulta Beauty, Inc. Common Stock
+phone_number: 630-410-4800
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00FWQ4W44
+share_class_shares_outstanding: 44945605
+sic_code: '5990'
+sic_description: RETAIL-RETAIL STORES, NEC
+ticker: ULTA
+ticker_root: ULTA
+total_employees: 58000
+type: CS
+weighted_shares_outstanding: 44945605

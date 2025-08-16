@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 600 WEST CHICAGO AVENUE
+    address2: SUITE 510
+    city: CHICAGO
+    postal_code: '60654'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGVtcHVzLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGVtcHVzLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001717115'
+composite_figi: BBG01MZQYJF9
+currency_name: usd
+description: Tempus AI Inc is a technology company. It has built the Tempus Platform,
+    which comprises both a technology platform to free healthcare data from silos
+    and an operating system to make the resulting data useful. Its Intelligent Diagnostics
+    use AI, including generative AI, to make laboratory tests more accurate, tailored,
+    and personal.
+homepage_url: https://www.tempus.com
+list_date: '2024-06-14'
+locale: us
+market: stocks
+market_cap: 12096649863.539999
+name: Tempus AI, Inc. Class A Common Stock
+phone_number: 800-976-5448
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01MZQYK84
+share_class_shares_outstanding: 168072456
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: TEM
+ticker_root: TEM
+total_employees: 2400
+type: CS
+weighted_shares_outstanding: 173727558

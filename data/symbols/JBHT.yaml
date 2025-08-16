@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 615 JB HUNT CORPORATE DR
+    address2: PO BOX 130
+    city: LOWELL
+    postal_code: '72745'
+    state: AR
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/amJodW50LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/amJodW50LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000728535
+composite_figi: BBG000BMDBZ1
+currency_name: usd
+description: J.B. Hunt Transport Services ranks among the top surface transportation
+    companies in North America by revenue. Its primary operating segments are intermodal
+    delivery, which uses the Class I rail carriers for the underlying line-haul movement
+    of its owned containers (48% of sales), dedicated trucking services that provide
+    customer-specific fleet needs (27%), for-hire truckload (6%), heavy goods final-mile
+    delivery (7%), and asset-light truck brokerage (12%).
+homepage_url: https://www.jbhunt.com
+list_date: '1983-11-22'
+locale: us
+market: stocks
+market_cap: 14118175133.85
+name: JB Hunt Transport Services Inc
+phone_number: 479-820-0000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5SFY4
+share_class_shares_outstanding: 96799281
+sic_code: '4213'
+sic_description: TRUCKING (NO LOCAL)
+ticker: JBHT
+ticker_root: JBHT
+total_employees: 33646
+type: CS
+weighted_shares_outstanding: 96799281

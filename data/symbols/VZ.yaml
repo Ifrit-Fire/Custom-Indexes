@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1095 AVENUE OF THE AMERICAS
+    city: NEW YORK
+    postal_code: '10036'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmVyaXpvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmVyaXpvbi5jb20/images/2025-04-04_logo.svg
+cik: '0000732712'
+composite_figi: BBG000HS77T5
+currency_name: usd
+description: Wireless services account for nearly 75% of Verizon Communications' total
+    service revenue and nearly all of its operating income. The firm serves about
+    93 million postpaid and 20 million prepaid phone customers via its nationwide
+    network, making it the largest US wireless carrier. Fixed-line telecom operations
+    include local networks in the Northeast, which reach about 30 million homes and
+    businesses, including about 20 million with the Fios fiber optic network. These
+    networks serve about 8 million broadband customers. Verizon also provides telecom
+    services nationwide to enterprise customers, often using a mixture of its own
+    and other carriers' networks. Verizon agreed to acquire Frontier Communications
+    in September 2024.
+homepage_url: https://www.verizon.com
+list_date: '1983-11-21'
+locale: us
+market: stocks
+market_cap: 182356047946.0
+name: Verizon Communications
+phone_number: 212-395-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S67QY1
+share_class_shares_outstanding: 4216324808
+sic_code: '4813'
+sic_description: TELEPHONE COMMUNICATIONS (NO RADIOTELEPHONE)
+ticker: VZ
+ticker_root: VZ
+total_employees: 99600
+type: CS
+weighted_shares_outstanding: 4216324808

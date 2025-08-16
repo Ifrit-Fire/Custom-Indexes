@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 17800 N. 85TH ST.
+    city: SCOTTSDALE
+    postal_code: '85255'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXhvbi5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXhvbi5jb20/images/2025-04-04_logo.svg
+cik: 0001069183
+composite_figi: BBG000BHJWG1
+currency_name: usd
+description: Axon Enterprise Inc is building a public safety operating system by integrating
+    a suite of hardware devices and cloud software solutions. The company's suite
+    includes cloud-hosted digital evidence management solutions, productivity and
+    real-time operations software, body cameras, in-car cameras, TASER energy devices,
+    drones and robotic security, and training solutions. The company's operation comprises
+    of two operating segments, Software and Sensors, and TASER. The company generates
+    the majority of its revenue from the Software and Sensors segment, which is engaged
+    in developing, manufacturing, and selling fully integrated hardware and cloud-based
+    software solutions that enable law enforcement to capture, securely store, manage,
+    share, and analyze video and other digital evidence.
+homepage_url: https://www.axon.com
+list_date: '2001-06-07'
+locale: us
+market: stocks
+market_cap: 60096718908.799995
+name: Axon Enterprise, Inc. Common Stock
+phone_number: 480-991-0797
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SB2HG5
+share_class_shares_outstanding: 78504440
+sic_code: '3480'
+sic_description: ORDNANCE & ACCESSORIES, (NO VEHICLES/GUIDED MISSILES)
+ticker: AXON
+ticker_root: AXON
+total_employees: 4970
+type: CS
+weighted_shares_outstanding: 78504440

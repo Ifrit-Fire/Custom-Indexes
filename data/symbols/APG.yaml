@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: C/O API GROUP, INC.
+    address2: 1100 OLD HIGHWAY 8 NW
+    city: NEW BRIGHTON
+    postal_code: '55112'
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXBpZ3JvdXBpbmMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXBpZ3JvdXBpbmMuY29t/images/2025-04-04_logo.svg
+cik: 0001796209
+composite_figi: BBG00HXKRGY9
+currency_name: usd
+description: 'APi Group Corp operates in two segments: Safety Services segment includes
+    providing safety services in North America, Asia Pacific, and Europe, focusing
+    on end-to-end integrated occupancy systems (fire protection solutions, Heating,
+    Ventilation, and Air Conditioning and entry systems), including design, installation,
+    inspection, and service of these integrated systems. These services are provided
+    in commercial, education, healthcare, high tech, industrial, and special-hazard
+    settings. Specialty Services segment includes providing a variety of infrastructure
+    services and specialized industrial plant services, which include maintenance
+    and repair of critical infrastructure such as underground electric, gas, water,
+    sewer, and telecommunications infrastructure.'
+homepage_url: https://www.apigroupinc.com
+list_date: '2017-10-05'
+locale: us
+market: stocks
+market_cap: 14905443015.680002
+name: APi Group Corporation
+phone_number: 651-636-4320
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00HVV7984
+share_class_shares_outstanding: 415888477
+sic_code: '7340'
+sic_description: SERVICES-TO DWELLINGS & OTHER BUILDINGS
+ticker: APG
+ticker_root: APG
+total_employees: 29000
+type: CS
+weighted_shares_outstanding: 415888477

@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1 FREEDOM VALLEY DRIVE
+    city: OAKS
+    postal_code: 19456-1100
+    state: PA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2VpYy5jb20/images/2025-04-04_logo.svg
+cik: 0000350894
+composite_figi: BBG000BSQLT9
+currency_name: usd
+description: 'SEI Investments provides investment processing, management, and operations
+    services to financial institutions, asset managers, asset owners, and financial
+    advisors in four material segments: private banks, investment advisors, institutional
+    investors, and investment managers. SEI also has a minority interest in LSV Asset
+    Management, a value equity asset manager with about $87 billion in assets under
+    management. As of December 2024, SEI (including LSV) manages, administers, or
+    advises about $1.6 trillion in assets.'
+homepage_url: https://www.seic.com
+list_date: '1981-03-25'
+locale: us
+market: stocks
+market_cap: 10945762812.400002
+name: SEI Investments Co
+phone_number: (610) 676-1000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5VZJ3
+share_class_shares_outstanding: 123625060
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: SEIC
+ticker_root: SEIC
+total_employees: 5098
+type: CS
+weighted_shares_outstanding: 123625060

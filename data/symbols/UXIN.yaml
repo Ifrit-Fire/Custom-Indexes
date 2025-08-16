@@ -1,0 +1,28 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/eGluLmNvbQ/images/2025-04-04_logo.png
+cik: 0001729173
+composite_figi: BBG00L1HXR44
+currency_name: usd
+description: Uxin Ltd is an investment holding company. Along with its subsidiaries,
+    the firm operates used car e-commerce platforms through its mobile applications
+    and websites. It facilitates used car transaction services and financing solutions
+    offered by third-party financing partners to buyers for their used car purchases.
+    The company generates revenue through sales of the commission of salvage car sales,
+    and interest income from the financial lease. The Group generates its revenues
+    in China, and assets of the company are also located in China Area.
+homepage_url: https://www.xin.com
+list_date: '2018-06-27'
+locale: us
+market: stocks
+market_cap: 789628177.71
+name: Uxin Limited ADS
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00L1HXRW3
+share_class_shares_outstanding: 206033204
+ticker: UXIN
+ticker_root: UXIN
+total_employees: 1045
+type: ADRC
+weighted_shares_outstanding: 206169237

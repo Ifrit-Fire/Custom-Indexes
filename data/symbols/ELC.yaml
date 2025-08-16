@@ -1,0 +1,20 @@
+active: true
+address:
+    address1: 4809 JEFFERSON HIGHWAY
+    city: JEFFERSON
+    postal_code: '70121'
+    state: LA
+cik: 0001348952
+currency_name: usd
+locale: us
+market: stocks
+name: Entergy Louisiana, LLC Collateral Trust Mortgage Bonds, 4.875 % Series due September
+    1, 2066
+phone_number: 504-576-4000
+primary_exchange: XNYS
+round_lot: 100
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: ELC
+ticker_root: ELC
+type: SP

@@ -1,0 +1,25 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZW5hYXMuY29t/images/2025-04-04_logo.png
+cik: 0001712178
+composite_figi: BBG00HTBYMW5
+currency_name: usd
+description: Naas Technology Inc is an electric vehicle charging service provider
+    in China, whose vision is to power the world with carbon-neutral energy. It offers
+    an integrated set of online solutions to charging station operators, a wide range
+    of offline services that simplify the daily operations of charging station operators,
+    and non-charging services such as food and beverage services to station operators.
+homepage_url: https://www.enaas.com
+list_date: '2022-06-10'
+locale: us
+market: stocks
+market_cap: 26251433.07
+name: NaaS Technology Inc. American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00HTBYMX4
+ticker: NAAS
+ticker_root: NAAS
+total_employees: 225
+type: ADRC
+weighted_shares_outstanding: 9342147

@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1 CONGRESS STREET
+    address2: SUITE 1
+    city: BOSTON
+    postal_code: '02114'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3RhdGVzdHJlZXQuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RhdGVzdHJlZXQuY29t/images/2025-04-04_logo.svg
+cik: 0000093751
+composite_figi: BBG000BKFBD7
+currency_name: usd
+description: State Street is a leading provider of financial services, including investment
+    servicing, investment management, and investment research and trading. With approximately
+    $49 trillion in assets under custody and administration, and $5.1 trillion in
+    assets under management, as of June 30, 2025, State Street operates globally in
+    more than 100 geographic markets and employs about 53,000 worldwide.
+homepage_url: https://www.statestreet.com
+list_date: '1975-02-18'
+locale: us
+market: stocks
+market_cap: 31632030633.0
+name: State Street Corporation
+phone_number: 617 786-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RLD5
+share_class_shares_outstanding: 283695342
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: STT
+ticker_root: STT
+total_employees: 52014
+type: CS
+weighted_shares_outstanding: 283695342

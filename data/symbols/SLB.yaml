@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 5599 SAN FELIPE
+    address2: 17TH FLOOR
+    city: HOUSTON
+    postal_code: '77056'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2xiLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2xiLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000087347
+composite_figi: BBG000BT41Q8
+currency_name: usd
+description: 'SLB is the world''s premier oilfield-services company as measured by
+    market share. While the industry is mostly fragmented, SLB holds the first or
+    second competitive position in many of the differentiated oligopolies it operates
+    in. Also known as Schlumberger, the company was founded in 1926 by two brothers
+    bearing the same last name. Today it''s most known as a global industry leader
+    in innovation, while it focuses its strategy on its three growth engines: its
+    core, digital, and new energy businesses. Over three fourths of its revenue base
+    is tied to international markets, while the company boasts roughly $3 billion
+    in digital-related revenue.'
+homepage_url: https://www.slb.com
+list_date: '1962-02-02'
+locale: us
+market: stocks
+market_cap: 50045445262.45
+name: Schlumberger Limited
+phone_number: (713) 513-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5W4C8
+share_class_shares_outstanding: 1351248823
+sic_code: '1389'
+sic_description: OIL & GAS FIELD SERVICES, NEC
+ticker: SLB
+ticker_root: SLB
+total_employees: 110000
+type: CS
+weighted_shares_outstanding: 1491667519

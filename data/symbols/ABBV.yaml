@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 1 NORTH WAUKEGAN ROAD
+    city: NORTH CHICAGO
+    postal_code: '60064'
+    state: IL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWJidmllLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWJidmllLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001551152'
+composite_figi: BBG0025Y4RY4
+currency_name: usd
+description: AbbVie is a pharmaceutical firm with a strong exposure to immunology
+    (with Humira, Skyrizi, and Rinvoq) and oncology (with Imbruvica and Venclexta).
+    The company was spun off from Abbott in early 2013. The 2020 acquisition of Allergan
+    added several new products and drugs in aesthetics (including Botox).
+homepage_url: https://www.abbvie.com
+list_date: '2012-12-10'
+locale: us
+market: stocks
+market_cap: 350909131375.92
+name: ABBVIE INC.
+phone_number: (847) 932-7900
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG0025Y4RZ3
+share_class_shares_outstanding: 1766558253
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: ABBV
+ticker_root: ABBV
+total_employees: 55000
+type: CS
+weighted_shares_outstanding: 1766558253

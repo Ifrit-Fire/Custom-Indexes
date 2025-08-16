@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: 2980 FAIRVIEW PARK DRIVE
+    address2: C/O NORTHROP GRUMMAN CORP
+    city: FALLS CHURCH
+    postal_code: '22042'
+    state: VA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bm9ydGhyb3BncnVtbWFuLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bm9ydGhyb3BncnVtbWFuLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001133421'
+composite_figi: BBG000BQ2C28
+currency_name: usd
+description: Northrop Grumman is a diversified defense contractor providing aeronautics,
+    defense, and space systems. The company's aerospace segment produces autonomous
+    and piloted aircraft such as Global Hawk drones and the new B-21 bomber, creates
+    the fuselage for the massive F-35 program, and maintains and upgrades numerous
+    other military aircraft. Defense systems makes artillery and missile ammunition
+    and guidance systems, long-range missiles, and missile defense systems. Mission
+    systems creates and integrates a variety of radar, navigation, and communication
+    systems for avionics, weapons control, and countermeasures on a range of platforms
+    from helicopters to destroyers. Space systems produces satellites, sensors, space
+    structures, and rocket motors.
+homepage_url: https://www.northropgrumman.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 83160675945.59999
+name: Northrop Grumman Corp.
+phone_number: 703-280-2900
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5TP26
+share_class_shares_outstanding: 143182982
+sic_code: '3812'
+sic_description: SEARCH, DETECTION, NAVAGATION, GUIDANCE, AERONAUTICAL SYS
+ticker: NOC
+ticker_root: NOC
+total_employees: 97000
+type: CS
+weighted_shares_outstanding: 143182982

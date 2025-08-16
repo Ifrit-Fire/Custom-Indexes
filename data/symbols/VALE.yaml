@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dmFsZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dmFsZS5jb20/images/2025-04-04_logo.svg
+cik: 0000917851
+composite_figi: BBG000BN5LG7
+currency_name: usd
+description: Vale is a large global miner and the world's largest producer of iron
+    ore and pellets. In recent years the company has sold noncore assets such as its
+    fertilizer, coal, and steel operations to concentrate on iron ore, nickel, and
+    copper. Earnings are dominated by the bulk materials division, primarily iron
+    ore and iron ore pellets. The base metals division is much smaller, consisting
+    of nickel mines and smelters along with copper mines producing copper in concentrate.
+    In 2024, Vale sold a minority 10% stake in energy transition metals, its base
+    metals business, likely the first step in separating base metals and iron ore.
+homepage_url: https://www.vale.com
+list_date: '2002-03-21'
+locale: us
+market: stocks
+market_cap: 43029290172.96
+name: VALE S.A.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SB54S8
+share_class_shares_outstanding: 4539007568
+ticker: VALE
+ticker_root: VALE
+total_employees: 64610
+type: ADRC
+weighted_shares_outstanding: 4268778787

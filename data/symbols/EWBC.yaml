@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 135 N. LOS ROBLES AVE. 7TH FLOOR
+    city: PASADENA
+    postal_code: '91101'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZWFzdHdlc3RiYW5rLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZWFzdHdlc3RiYW5rLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001069157
+composite_figi: BBG000CR20B1
+currency_name: usd
+description: East West Bancorp Inc operates in U.S. and Asia. The Bank provides range
+    of personal and commercial banking services to individuals and businesses. In
+    addition to offering traditional deposit products that include personal and business
+    checking and savings accounts, money market, and time deposits, the Bank also
+    offers foreign exchange, treasury management and wealth management services. The
+    Bank has three operating segments, (1) Consumer and Business Banking, (2) Commercial
+    Banking and (3) Treasury and Other. The company generates the majority of its
+    revenue from the Commercial banking segment.
+homepage_url: https://www.eastwestbank.com
+list_date: '1998-10-05'
+locale: us
+market: stocks
+market_cap: 14179103286.08
+name: East-West Bancorp Inc
+phone_number: (626) 768-6000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SCC7R2
+share_class_shares_outstanding: 137825192
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: EWBC
+ticker_root: EWBC
+total_employees: 3100
+type: CS
+weighted_shares_outstanding: 137821766

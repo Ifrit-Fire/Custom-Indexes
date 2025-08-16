@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c21pdGgtbmVwaGV3LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c21pdGgtbmVwaGV3LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000845982
+composite_figi: BBG000C2W4K5
+currency_name: usd
+description: Smith & Nephew designs, manufactures, and markets orthopedic devices,
+    sports medicine and arthroscopic technologies, and wound care solutions. Roughly
+    41% of the UK-based firm's revenue comes from orthopedic products, and another
+    30% is sports medicine and ENT. The remaining 29% of revenue is from the advanced
+    wound therapy segment. Over half of Smith & Nephew's total revenue comes from
+    the United States, just over 30% is from other developed markets, and emerging
+    markets account for the remainder.
+homepage_url: https://www.smith-nephew.com
+list_date: '1999-11-16'
+locale: us
+market: stocks
+market_cap: 16063120398.54
+name: Smith & Nephew plc
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SDCF10
+ticker: SNN
+ticker_root: SNN
+total_employees: 17349
+type: ADRC
+weighted_shares_outstanding: 436735193

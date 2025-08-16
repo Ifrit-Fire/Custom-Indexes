@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 400 NORTH FIFTH STREET
+    address2: MS 8695
+    city: PHOENIX
+    postal_code: '85004'
+    state: AZ
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGlubmFjbGV3ZXN0LmNvbQ/images/2025-04-04_logo.png
+cik: '0000764622'
+composite_figi: BBG000BRDSX5
+currency_name: usd
+description: Pinnacle West is a holding company whose principal subsidiary is Arizona
+    Public Service, a vertically integrated electric utility serving approximately
+    1.4 million customers across a 35,000-square-mile territory in central Arizona,
+    including the Phoenix area. APS owns or leases more than 6 gigawatts of power
+    generation capacity, including a 29% ownership stake in one of the largest nuclear
+    plants in the US, Palo Verde. Half of the electricity that APS supplies to customers
+    comes from clean energy sources, including nuclear.
+homepage_url: https://www.pinnaclewest.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 11113899326.64
+name: Pinnacle West Capital Corporation
+phone_number: 602 250 1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VB15
+share_class_shares_outstanding: 119427244
+sic_code: '4911'
+sic_description: ELECTRIC SERVICES
+ticker: PNW
+ticker_root: PNW
+total_employees: 6403
+type: CS
+weighted_shares_outstanding: 119427244

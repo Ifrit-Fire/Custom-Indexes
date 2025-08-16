@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: ONE EDWARDS WAY
+    city: IRVINE
+    postal_code: '92614'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZWR3YXJkcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZWR3YXJkcy5jb20/images/2025-04-04_logo.svg
+cik: 0001099800
+composite_figi: BBG000BRXP69
+currency_name: usd
+description: Spun off from Baxter International in 2000, Edwards Lifesciences designs,
+    manufactures, and markets a range of medical devices and equipment for advanced
+    stages of structural heart disease. It has established itself as a leader across
+    key products, including surgical tissue heart valves, transcatheter aortic valves,
+    and transcatheter mitral and tricuspid valve technologies. The firm derives about
+    60% of its total sales from outside the US.
+homepage_url: https://www.edwards.com
+list_date: '2000-04-03'
+locale: us
+market: stocks
+market_cap: 45605928000.00001
+name: Edwards Lifesciences Corp
+phone_number: (949) 250-2500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SF2288
+share_class_shares_outstanding: 587100000
+sic_code: '3842'
+sic_description: ORTHOPEDIC, PROSTHETIC & SURGICAL APPLIANCES & SUPPLIES
+ticker: EW
+ticker_root: EW
+total_employees: 15800
+type: CS
+weighted_shares_outstanding: 587100000

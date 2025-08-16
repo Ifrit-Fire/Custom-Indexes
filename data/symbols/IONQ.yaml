@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 4505 CAMPUS DRIVE
+    city: COLLEGE PARK
+    postal_code: '20740'
+    state: MD
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW9ucS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW9ucS5jb20/images/2025-04-04_logo.svg
+cik: 0001824920
+composite_figi: BBG00XZP0LB4
+currency_name: usd
+description: IonQ Inc sells access to several quantum computers of various qubit capacities
+    and is in the process of researching and developing technologies for quantum computers
+    with increasing computational capabilities. The company currently makes access
+    to its quantum computers available via cloud platforms and also to select customers
+    via its own cloud service. This cloud-based approach enables the broad availability
+    of quantum-computing-as-a-service (QCaaS). The company derives its revenue from
+    its quantum-computing-as-a-service arrangements, consulting services related to
+    co-developing algorithms on company's quantum computing systems and contracts
+    associated with the design, development, and construction of specialized quantum
+    computing systems together with related services.
+homepage_url: https://www.ionq.com
+list_date: '2021-01-04'
+locale: us
+market: stocks
+market_cap: 12232830302.68
+name: IonQ, Inc.
+phone_number: (301) 298-7997
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00XZP0LC3
+share_class_shares_outstanding: 296837796
+sic_code: '7373'
+sic_description: SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN
+ticker: IONQ
+ticker_root: IONQ
+total_employees: 407
+type: CS
+weighted_shares_outstanding: 296841308

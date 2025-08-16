@@ -1,0 +1,27 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z2Znc2EuY29t/images/2025-04-04_logo.svg
+cik: '0001114700'
+composite_figi: BBG000F646H3
+currency_name: usd
+description: Grupo Financiero Galicia SA is a financial service holding company. It
+    provides general banking services, proprietary brand credit card services, personal
+    loans, insurance, and other services. The company's operating business segments
+    are Banks, Ecosistema Naranja X, Insurance, Adjustments, and Other Businesses.
+    It generates maximum revenue from Banks. Geographically its operate in Argentina,
+    Uruguay, and the majority of its revenue comes from Argentina.
+homepage_url: https://www.gfgsa.com
+list_date: '2000-07-24'
+locale: us
+market: stocks
+market_cap: 8384644470.6
+name: Grupo Financiero Galicia SA
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SKXC54
+share_class_shares_outstanding: 132503208
+ticker: GGAL
+ticker_root: GGAL
+total_employees: 12440
+type: ADRC
+weighted_shares_outstanding: 160625373

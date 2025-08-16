@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 2345 NORTH FIRST STREET
+    city: SAN JOSE
+    postal_code: '95131'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXN0ZXJhbGFicy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXN0ZXJhbGFicy5jb20/images/2025-04-04_logo.png
+cik: 0001736297
+composite_figi: BBG00TDKHW99
+currency_name: usd
+description: Astera Labs Inc designs and delivers semiconductor-based connectivity
+    solutions for cloud and AI infrastructure. Its Intelligent Connectivity Platform
+    integrates semiconductor technology, microcontrollers, sensors, and software to
+    enhance performance, scalability, and data management. The company offers products
+    such as integrated circuits (ICs), boards, and modules, catering to hyperscalers
+    and system OEMs. The company's solutions focus on data, network, and memory management
+    in AI-driven platforms.
+homepage_url: https://www.asteralabs.com
+list_date: '2024-03-20'
+locale: us
+market: stocks
+market_cap: 32186674269.6
+name: Astera Labs, Inc. Common Stock
+phone_number: 408-242-7319
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00TDKHWK6
+share_class_shares_outstanding: 166219140
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: ALAB
+ticker_root: ALAB
+total_employees: 440
+type: CS
+weighted_shares_outstanding: 166219140

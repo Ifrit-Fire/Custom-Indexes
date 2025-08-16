@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmFycmljay5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmFycmljay5jb20/images/2025-04-04_logo.svg
+cik: 0000756894
+composite_figi: BBG000BB07P9
+currency_name: usd
+description: Based in Toronto, Barrick Gold is one of the world's largest gold miners.
+    In 2024, the firm produced nearly 3.9 million attributable ounces of gold and
+    about 430 million pounds of copper. At year-end 2024, Barrick had about two decades
+    of gold reserves along with significant copper reserves. After buying Randgold
+    in 2019 and combining its Nevada mines in a joint venture with competitor Newmont
+    later that year, it operates mines in 19 countries in the Americas, Africa, the
+    Middle East, and Asia. The company also has growing copper exposure. Its potential
+    Reko Diq project in Pakistan, if developed, could double copper production by
+    the end of the decade.
+homepage_url: https://www.barrick.com
+list_date: '1985-02-01'
+locale: us
+market: stocks
+market_cap: 40705011829.4
+name: Barrick Mining Corporation
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5N9P3
+share_class_shares_outstanding: 1705993790
+ticker: B
+ticker_root: B
+total_employees: 26800
+type: CS
+weighted_shares_outstanding: 1705993790

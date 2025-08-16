@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1200 URBAN CENTER DRIVE
+    city: BIRMINGHAM
+    postal_code: '35242'
+    state: AL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dnVsY2FubWF0ZXJpYWxzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dnVsY2FubWF0ZXJpYWxzLmNvbQ/images/2025-04-04_logo.png
+cik: 0001396009
+composite_figi: BBG000BWGYF8
+currency_name: usd
+description: Vulcan Materials is the United States' largest producer of construction
+    aggregates (crushed stone, sand, and gravel). Its largest markets include Texas,
+    California, Virginia, Tennessee, Georgia, Florida, North Carolina, and Alabama.
+    In 2024, Vulcan sold 219.9 million tons of aggregates, 13.6 million tons of asphalt
+    mix, and 3.6 million cubic yards of ready-mix. As of Dec. 31, 2024, the company
+    had 16.5 billion tons of aggregates reserves.
+homepage_url: https://www.vulcanmaterials.com
+list_date: '1957-01-02'
+locale: us
+market: stocks
+market_cap: 39061186071.119995
+name: Vulcan Materials Company(Holding Company)
+phone_number: (205) 298-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5X8R2
+share_class_shares_outstanding: 132124158
+sic_code: '1400'
+sic_description: MINING & QUARRYING OF NONMETALLIC MINERALS (NO FUELS)
+ticker: VMC
+ticker_root: VMC
+total_employees: 11436
+type: CS
+weighted_shares_outstanding: 132124158

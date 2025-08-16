@@ -1,0 +1,28 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXNtbC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXNtbC5jb20/images/2025-04-04_logo.svg
+cik: 0000937966
+currency_name: usd
+description: ASML is the leader in photolithography systems used in manufacturing
+    semiconductors. Photolithography is the process in which a light source is used
+    to expose circuit patterns from a photo mask onto a semiconductor wafer. The latest
+    technological advances in this segment allow chipmakers to continually increase
+    the number of transistors on the same area of silicon, with lithography historically
+    representing a high portion of the cost of making cutting-edge chips. ASML outsources
+    the manufacturing of most of its parts, acting like an assembler. ASML's main
+    clients are TSMC, Samsung, and Intel.
+homepage_url: https://www.asml.com
+list_date: '1995-03-15'
+locale: us
+market: stocks
+market_cap: 283619257901.3
+name: ASML Holding NV
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 393830692
+ticker: ASML
+ticker_root: ASML
+total_employees: 44127
+type: ADRC
+weighted_shares_outstanding: 393200230

@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 101 TOWNSEND ST.
+    city: SAN FRANCISCO
+    postal_code: '94107'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2xvdWRmbGFyZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2xvdWRmbGFyZS5jb20/images/2025-04-04_logo.svg
+cik: '0001477333'
+composite_figi: BBG001WMKHH5
+currency_name: usd
+description: Cloudflare is a software company based in San Francisco, California,
+    that offers security and web performance offerings by utilizing a distributed,
+    serverless content delivery network, or CDN. The firm's edge computing platform,
+    Workers, leverages this network by providing clients the ability to deploy, and
+    execute code without maintaining servers.
+homepage_url: https://www.cloudflare.com
+list_date: '2019-09-13'
+locale: us
+market: stocks
+market_cap: 69466319552.58
+name: Cloudflare, Inc. Class A common stock, par value $0.001 per share
+phone_number: 888.993.5273
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001WMKHJ3
+share_class_shares_outstanding: 312872178
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: NET
+ticker_root: NET
+total_employees: 4616
+type: CS
+weighted_shares_outstanding: 348481587

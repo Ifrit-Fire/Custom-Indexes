@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 42 N. CHESTNUT STREET
+    city: VENTURA
+    postal_code: '93001'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGhldHJhZGVkZXNrLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGhldHJhZGVkZXNrLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001671933
+composite_figi: BBG00629NGT2
+currency_name: usd
+description: The Trade Desk provides a self-service platform that helps advertisers
+    and ad agencies programmatically find and purchase digital ad inventory (display,
+    video, audio, and social) on devices like computers, smartphones, and connected
+    TVs. It uses data in an iterative manner to optimize the performance of ad impressions
+    purchased. The firm's platform is referred to as a demand-side platform in the
+    digital ad industry, and it generates revenue from fees based on a percentage
+    of what its clients spend on advertising.
+homepage_url: https://www.thetradedesk.com
+list_date: '2016-09-21'
+locale: us
+market: stocks
+market_cap: 26578934358.84
+name: The Trade Desk, Inc.
+phone_number: (805) 585-3434
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00629NGW8
+share_class_shares_outstanding: 445666933
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: TTD
+ticker_root: TTD
+total_employees: 3522
+type: CS
+weighted_shares_outstanding: 488942869

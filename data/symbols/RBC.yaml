@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE TRIBOLOGY CENTER
+    city: OXFORD
+    postal_code: 06478
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmJjYmVhcmluZ3MuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmJjYmVhcmluZ3MuY29t/images/2025-04-04_logo.png
+cik: 0001324948
+composite_figi: BBG000GMGNB3
+currency_name: usd
+description: 'RBC Bearings Inc is an international manufacturer and marketer of engineered
+    precision bearings, components, and essential systems for the industrial, defense,
+    and aerospace industries. The offering includes plain bearings, roller bearings,
+    ball bearings, and engineered products. The company has two reportable segments:
+    Industrial, which derives maximum revenue, and Aerospace/Defense. The Aerospace/Defense
+    segment represents the end markets for the company''s engineered bearings and
+    precision components used in commercial aerospace, defense aerospace, and sea
+    and ground defense applications; and the Industrial segment represents the end
+    markets for its products used in various industrial applications. Geographically,
+    the company generates a majority of its revenue from the United States.'
+homepage_url: https://www.rbcbearings.com
+list_date: '2005-08-10'
+locale: us
+market: stocks
+market_cap: 12959918364.78
+name: RBC Bearings Incorporated
+phone_number: (203) 267 7001
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SNYTV1
+share_class_shares_outstanding: 31562598
+sic_code: '3562'
+sic_description: BALL & ROLLER BEARINGS
+ticker: RBC
+ticker_root: RBC
+total_employees: 5334
+type: CS
+weighted_shares_outstanding: 31562598

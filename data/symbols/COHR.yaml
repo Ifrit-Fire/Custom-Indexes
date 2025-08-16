@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 375 SAXONBURG BLVD
+    city: SAXONBURG
+    postal_code: '16056'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aWktdmkuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aWktdmkuY29t/images/2025-04-04_logo.svg
+cik: 0000820318
+composite_figi: BBG000BLW102
+currency_name: usd
+description: Coherent Corp engaged in materials, networking, and lasers, is a vertically
+    integrated manufacturing company that develops, manufactures, and markets engineered
+    materials, optoelectronic components and devices, and lasers for use in the industrial,
+    communications, electronics and instrumentation markets. The firm operates in
+    three segments Networking, Materials, and Lasers Segment. It generates maximum
+    revenue from Networking segment. The company geographically operates in North
+    America. Europe, China, Japan and Rest of the world.
+homepage_url: https://www.ii-vi.com
+list_date: '1987-10-02'
+locale: us
+market: stocks
+market_cap: 17721784060.11
+name: Coherent Corp.
+phone_number: 724-352-4455
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5S6N6
+share_class_shares_outstanding: 155440611
+sic_code: '3827'
+sic_description: OPTICAL INSTRUMENTS & LENSES
+ticker: COHR
+ticker_root: COHR
+total_employees: 26157
+type: CS
+weighted_shares_outstanding: 155440611

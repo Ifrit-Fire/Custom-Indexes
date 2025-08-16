@@ -1,0 +1,28 @@
+active: true
+cik: '0001161125'
+composite_figi: BBG000D5HVG9
+currency_name: usd
+description: Operating under three separate brand names (Banco de Chile, Banco Edwards-Citi,
+    and Banco CrediChile) Banco de Chile is the second largest in the country by loans
+    and third largest by deposits. Banco de Chile generates most of its net interest
+    income (roughly 60% of total revenue) from its mortgage, unsecured consumer credit
+    lines, and commercial loans, with 25% of its outstanding loans being made to firms
+    with more than 10,000 million CLP in revenue. Outside of its banking business,
+    Banco de Chile is the largest asset manager in the country and one of the largest
+    security brokerages, supporting its substantial fee-based revenue.
+homepage_url: https://sitiospublicos.bancochile.cl
+list_date: '2002-01-02'
+locale: us
+market: stocks
+market_cap: 14511103714.380001
+name: Banco de ChileAmerican Depositary Shares (Each representing 200 shares of Common
+    Stock)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SF8LP1
+share_class_shares_outstanding: 505085406
+ticker: BCH
+ticker_root: BCH
+total_employees: 11152
+type: ADRC
+weighted_shares_outstanding: 505085406

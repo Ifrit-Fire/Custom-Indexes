@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: ONE BOWERMAN DR
+    city: BEAVERTON
+    postal_code: 97005-6453
+    state: OR
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmlrZS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmlrZS5jb20/images/2025-04-04_logo.svg
+cik: 0000320187
+composite_figi: BBG000C5HS04
+currency_name: usd
+description: Nike is the largest athletic footwear and apparel brand in the world.
+    Key categories include basketball, running, and football (soccer). Footwear generates
+    about two thirds of its sales. Its brands include Nike, Jordan (premium athletic
+    footwear and clothing), and Converse (casual footwear). Nike sells products worldwide
+    through company-owned stores, franchised stores, and third-party retailers. The
+    firm also operates e-commerce platforms in more than 40 countries. Nearly all
+    its production is outsourced to contract manufacturers in more than 30 countries.
+    Nike was founded in 1964 and is based in Beaverton, Oregon.
+homepage_url: https://www.nike.com
+list_date: '1980-12-02'
+locale: us
+market: stocks
+market_cap: 110620071550.8
+name: Nike, Inc.
+phone_number: (503) 671-3173
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6NTK2
+share_class_shares_outstanding: 1188015740
+sic_code: '3021'
+sic_description: RUBBER & PLASTICS FOOTWEAR
+ticker: NKE
+ticker_root: NKE
+total_employees: 77800
+type: CS
+weighted_shares_outstanding: 1476903492

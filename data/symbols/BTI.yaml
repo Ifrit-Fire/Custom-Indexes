@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YmF0LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YmF0LmNvbQ/images/2025-04-04_logo.svg
+cik: '0001303523'
+composite_figi: BBG000BWPXQ8
+currency_name: usd
+description: The third-largest tobacco company by volume, British American Tobacco
+    sold 518 billion cigarettes in 2024. Its leading brands are Dunhill, Kent, Pall
+    Mall, Lucky Strike, and Rothmans in cigarettes. Its ownership of the Camel, Natural
+    American Spirit, and Newport brands are limited to the US. In next-generation
+    products, the company has the Vuse brand in vaping, Glo in heated tobacco, and
+    Velo in modern oral tobacco. The company also owns a 22.9% stake in ITC limited,
+    the largest Indian cigarette company.
+homepage_url: https://www.bat.com
+list_date: '1980-04-14'
+locale: us
+market: stocks
+market_cap: 126536486916.8
+name: British American Tobacco p.l.c. American Depositary Shares, American Depositary
+    Shares, each representing one Ordinary Share
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6VV46
+share_class_shares_outstanding: 2192479635
+ticker: BTI
+ticker_root: BTI
+total_employees: 48989
+type: ADRC
+weighted_shares_outstanding: 2184676915

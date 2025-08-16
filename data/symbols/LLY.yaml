@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: LILLY CORPORATE CTR
+    address2: DROP CODE 1094
+    city: INDIANAPOLIS
+    postal_code: '46285'
+    state: IN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bGlsbHkuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bGlsbHkuY29t/images/2025-04-04_logo.svg
+cik: 0000059478
+composite_figi: BBG000BNBDC2
+currency_name: usd
+description: Eli Lilly is a drug firm with a focus on neuroscience, cardiometabolic,
+    cancer, and immunology. Lilly's key products include Verzenio for cancer; Mounjaro,
+    Zepbound, Jardiance, Trulicity, Humalog, and Humulin for cardiometabolic; and
+    Taltz and Olumiant for immunology.
+homepage_url: https://www.lilly.com
+list_date: '1970-07-09'
+locale: us
+market: stocks
+market_cap: 569447262451.98
+name: Eli Lilly & Co.
+phone_number: (317) 276-2000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5STL8
+share_class_shares_outstanding: 946456759
+sic_code: '2834'
+sic_description: PHARMACEUTICAL PREPARATIONS
+ticker: LLY
+ticker_root: LLY
+total_employees: 47000
+type: CS
+weighted_shares_outstanding: 896456759

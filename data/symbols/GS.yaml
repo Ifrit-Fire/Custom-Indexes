@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 200 WEST STREET
+    city: NEW YORK
+    postal_code: '10282'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z29sZG1hbnNhY2hzLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z29sZG1hbnNhY2hzLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000886982
+composite_figi: BBG000C6CFJ5
+currency_name: usd
+description: Goldman Sachs is a storied financial institution, founded in 1869 and
+    best known for its role as a leading global investment bank. The firm has a sprawling
+    reach across global financial centers and has been the leading provider of global
+    merger and acquisition advisory services, by revenue, for the past 20 years. Since
+    the global financial crisis, Goldman has expanded its offerings into more stable
+    fee-based businesses like asset and wealth management, which comprised roughly
+    30% of post-provision revenue at the end of 2024. The bank holding company generates
+    revenue from investment banking, global market making and trading, lending, asset
+    management, wealth management, and a small and declining portfolio of consumer
+    credit card loans.
+homepage_url: https://www.goldmansachs.com
+list_date: '1999-05-04'
+locale: us
+market: stocks
+market_cap: 225036805370.96
+name: Goldman Sachs Group Inc.
+phone_number: 212-902-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SC07Z6
+share_class_shares_outstanding: 302721092
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: GS
+ticker_root: GS
+total_employees: 46500
+type: CS
+weighted_shares_outstanding: 302721092

@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 970 PARK PL, SUITE 200
+    city: SAN MATEO
+    postal_code: '94403'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Z3VpZGV3aXJlLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Z3VpZGV3aXJlLmNvbQ/images/2025-04-04_logo.png
+cik: 0001528396
+composite_figi: BBG001C7PM75
+currency_name: usd
+description: Guidewire Software provides software solutions for property and casualty
+    insurers. Flagship product InsuranceSuite is an on-premises system of record and
+    comprises ClaimCenter, a claims management system; PolicyCenter, a policy management
+    system including policy definitions, quotas, issuance, maintenance, and renewal;
+    and BillingCenter, for billing management, payment plans, and agent commissions.
+    The company also offers InsuranceNow, a cloud-based offering, as well as a variety
+    of other add-on applications.
+homepage_url: https://www.guidewire.com
+list_date: '2012-01-25'
+locale: us
+market: stocks
+market_cap: 17597643559.23
+name: GUIDEWIRE SOFTWARE, INC.
+phone_number: 650-357-9100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001TWHGX5
+share_class_shares_outstanding: 84195223
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: GWRE
+ticker_root: GWRE
+total_employees: 1427
+type: CS
+weighted_shares_outstanding: 84195223

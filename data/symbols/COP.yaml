@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 925 N. ELDRIDGE PARKWAY
+    city: HOUSTON
+    postal_code: '77079'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29ub2NvcGhpbGxpcHMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29ub2NvcGhpbGxpcHMuY29t/images/2025-04-04_logo.svg
+cik: '0001163165'
+composite_figi: BBG000BQQH30
+currency_name: usd
+description: ConocoPhillips is a US-based independent exploration and production firm.
+    In 2024, it produced 2.0 million barrels per day of oil and natural gas liquids
+    and 3.4 billion cubic feet per day of natural gas, primarily from Alaska and the
+    Lower 48 in the United States and Norway in Europe and several countries in Asia-Pacific
+    and the Middle East. Proven reserves at year-end 2024 were 7.8 billion barrels
+    of oil equivalent.
+homepage_url: https://www.conocophillips.com
+list_date: '1972-06-30'
+locale: us
+market: stocks
+market_cap: 118137453197.49
+name: ConocoPhillips
+phone_number: 281-293-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5TZM2
+share_class_shares_outstanding: 1248942311
+sic_code: '2911'
+sic_description: PETROLEUM REFINING
+ticker: COP
+ticker_root: COP
+total_employees: 11800
+type: CS
+weighted_shares_outstanding: 1248942311

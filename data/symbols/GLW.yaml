@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: ONE RIVERFRONT PLAZA
+    city: CORNING
+    postal_code: '14831'
+    state: NY
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29ybmluZy5jb20/images/2025-04-04_logo.svg
+cik: '0000024741'
+composite_figi: BBG000BKFZM4
+currency_name: usd
+description: Corning is a leader in materials science, specializing in the production
+    of glass, ceramics, and optical fiber. The firm supplies its products for a wide
+    range of applications, from flat-panel displays in televisions to gasoline particulate
+    filters in automobiles to optical fiber for broadband access, with a leading share
+    in many of its end markets.
+homepage_url: https://www.corning.com
+list_date: '1945-05-21'
+locale: us
+market: stocks
+market_cap: 56314114061.14
+name: Corning Incorporated
+phone_number: (607) 974-9000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5RLH1
+share_class_shares_outstanding: 856618711
+sic_code: '3357'
+sic_description: DRAWING & INSULATING OF NONFERROUS WIRE
+ticker: GLW
+ticker_root: GLW
+total_employees: 56300
+type: CS
+weighted_shares_outstanding: 856618711

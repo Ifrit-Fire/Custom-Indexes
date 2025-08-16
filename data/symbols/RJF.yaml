@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 880 CARILLON PKWY
+    city: ST PETERSBURG
+    postal_code: '33716'
+    state: FL
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmF5bW9uZGphbWVzLmNvbQ/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmF5bW9uZGphbWVzLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000720005'
+composite_figi: BBG000BS73J1
+currency_name: usd
+description: Raymond James Financial is a diversified financial services firm that
+    provides wealth management, investment banking, asset management, and capital
+    markets services to individuals, corporations, and municipalities. The firm maintains
+    an extensive catalogue of products and services across its business lines. However,
+    the wealth management franchise generates the bulk of its revenues and earnings
+    through a vast network of nearly 8,800 independent and employee-affiliated advisors,
+    who collectively manage over $1.5 trillion in client assets as of fiscal year-end
+    2024. While Raymond James maintains a global footprint, the company derives over
+    90% of its revenue, and an even larger percentage of its operating income, from
+    the United States.
+homepage_url: https://www.raymondjames.com
+list_date: '1983-07-01'
+locale: us
+market: stocks
+market_cap: 32667070627.84
+name: Raymond James Financial, Inc.
+phone_number: 727-567-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VQ03
+share_class_shares_outstanding: 199383976
+sic_code: '6211'
+sic_description: SECURITY BROKERS, DEALERS & FLOTATION COMPANIES
+ticker: RJF
+ticker_root: RJF
+total_employees: 8787
+type: CS
+weighted_shares_outstanding: 199383976

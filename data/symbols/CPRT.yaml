@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: 14185 DALLAS PARKWAY
+    address2: SUITE 300
+    city: DALLAS
+    postal_code: '75254'
+    state: TX
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29wYXJ0LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29wYXJ0LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000900075
+composite_figi: BBG000BM9RH1
+currency_name: usd
+description: Based in Dallas, Copart operates an online salvage vehicle auction with
+    operations in 11 countries across North America, Europe, and the Middle East,
+    facilitating over 3.5 million transactions annually. The company utilizes its
+    virtual bidding platform, VB3, to connect vehicle sellers with over 750,000 registered
+    buyers around the world. Buyers primarily consist of vehicle dismantlers, rebuilders,
+    individuals and used vehicle retailers. About 80% of Copart's vehicle volume is
+    supplied by auto insurance companies holding vehicles deemed a total loss. Copart
+    also offers services such as vehicle transportation, storage, title transfer,
+    and salvage value estimation. The company primarily operates on a consignment
+    basis and collects fees based on the vehicle's final selling price.
+homepage_url: https://www.copart.com
+list_date: '1994-03-17'
+locale: us
+market: stocks
+market_cap: 46074510597.1
+name: Copart Inc
+phone_number: 972-391-5000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S7MTB1
+share_class_shares_outstanding: 966936214
+sic_code: '5500'
+sic_description: RETAIL-AUTO DEALERS & GASOLINE STATIONS
+ticker: CPRT
+ticker_root: CPRT
+total_employees: 11700
+type: CS
+weighted_shares_outstanding: 966936214

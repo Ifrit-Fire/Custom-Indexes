@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 1 WEST FIRST AVENUE
+    city: CONSHOHOCKEN
+    postal_code: '19428'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2VuY29yYS5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2VuY29yYS5jb20/images/2025-04-04_logo.png
+cik: 0001140859
+composite_figi: BBG000MDCQC2
+currency_name: usd
+description: Cencora is one of three leading domestic pharmaceutical wholesalers.
+    It sources and distributes branded, generic, and specialty pharmaceutical products
+    to pharmacies (retail chains, independent, and mail order), hospital networks,
+    and healthcare providers. It and McKesson and Cardinal Health constitute over
+    90% of the US pharmaceutical wholesale industry. Cencora also provides commercialization
+    services for manufacturers of pharmaceuticals and medical devices, global specialty
+    drug logistics (World Courier), and animal health product distribution (MWI Animal
+    Health). Cencora expanded its international presence in 2021 by purchasing Alliance
+    Healthcare, one of the leading drug wholesalers in Europe.
+homepage_url: https://www.cencora.com
+list_date: '1995-04-04'
+locale: us
+market: stocks
+market_cap: 56426218486.240005
+name: Cencora, Inc.
+phone_number: 610-727-7000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8X7P0
+share_class_shares_outstanding: 193877881
+sic_code: '5122'
+sic_description: WHOLESALE-DRUGS, PROPRIETARIES & DRUGGISTS' SUNDRIES
+ticker: COR
+ticker_root: COR
+total_employees: 46000
+type: CS
+weighted_shares_outstanding: 193877881

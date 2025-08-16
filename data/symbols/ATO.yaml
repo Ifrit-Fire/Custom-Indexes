@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 1800 THREE LINCOLN CTR
+    address2: 5430 LBJ FREEWAY
+    city: DALLAS
+    postal_code: '75240'
+    state: TX
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXRtb3NlbmVyZ3kuY29t/images/2025-04-04_logo.svg
+cik: 0000731802
+composite_figi: BBG000BRNGM2
+currency_name: usd
+description: Atmos Energy is the largest publicly traded, fully regulated, pure-play
+    natural gas utility in the United States, serving more than 3.3 million customers
+    in Texas, Colorado, Kansas, Kentucky, Louisiana, Mississippi, Tennessee, and Virginia.
+    About two thirds of its earnings come from Texas, where it distributes natural
+    gas in northern Texas and owns an intrastate gas pipeline spanning several key
+    shale gas formations and interconnected with five storage facilities.
+homepage_url: https://www.atmosenergy.com
+list_date: '1983-12-28'
+locale: us
+market: stocks
+market_cap: 26804225885.579998
+name: Atmos Energy Corporation
+phone_number: (972) 934-9227
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5VG05
+share_class_shares_outstanding: 160523571
+sic_code: '4924'
+sic_description: NATURAL GAS DISTRIBUTION
+ticker: ATO
+ticker_root: ATO
+total_employees: 5260
+type: CS
+weighted_shares_outstanding: 160523571

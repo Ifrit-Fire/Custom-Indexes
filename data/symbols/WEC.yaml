@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 231 W MICHIGAN ST
+    address2: P O BOX 1331
+    city: MILWAUKEE
+    postal_code: '53201'
+    state: WI
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2VjZW5lcmd5Z3JvdXAuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2VjZW5lcmd5Z3JvdXAuY29t/images/2025-04-04_logo.svg
+cik: 0000783325
+composite_figi: BBG000BWP7D9
+currency_name: usd
+description: WEC Energy Group's electric and gas utility businesses serve electric
+    and gas customers in Illinois, Michigan, Minnesota, and Wisconsin service territories.
+    The company also owns a 60% stake in American Transmission Co. WEC's asset mix
+    is approximately 49% electric generation and distribution, 32% gas distribution,
+    10% electric transmission, 7% unregulated renewable energy and 2% LNG distribution
+    and generation.
+homepage_url: https://www.wecenergygroup.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 35385991466.3
+name: WEC Energy Group, Inc.
+phone_number: 414-221-2345
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XDC7
+share_class_shares_outstanding: 321866395
+sic_code: '4931'
+sic_description: ELECTRIC & OTHER SERVICES COMBINED
+ticker: WEC
+ticker_root: WEC
+total_employees: 7017
+type: CS
+weighted_shares_outstanding: 321866395

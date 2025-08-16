@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 400 WASHINGTON BLVD.
+    city: STAMFORD
+    postal_code: 06902
+    state: CT
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29ycG9yYXRlLmNoYXJ0ZXIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29ycG9yYXRlLmNoYXJ0ZXIuY29t/images/2025-04-04_logo.svg
+cik: 0001091667
+composite_figi: BBG000VPGNR2
+currency_name: usd
+description: 'Charter is the product of the 2016 merger of three cable companies,
+    each with a decades-long history in the business: Legacy Charter, Time Warner
+    Cable, and Bright House Networks. The firm now holds networks capable of providing
+    television, internet access, and phone services to roughly 58 million US homes
+    and businesses, around 35% of the country. Across this footprint, Charter serves
+    29 million residential and 2 million commercial customer accounts under the Spectrum
+    brand, making it the second-largest US cable company behind Comcast. The firm
+    also owns, in whole or in part, sports and news networks, including Spectrum SportsNet
+    (Los Angeles Lakers), SportsNet LA (Los Angeles Dodgers), SportsNet New York (New
+    York Mets), and Spectrum News NY1. Charter plans to acquire cable peer Cox.'
+homepage_url: https://corporate.charter.com
+list_date: '1999-11-08'
+locale: us
+market: stocks
+market_cap: 36742974965.0
+name: Charter Comm Inc Del CL A New
+phone_number: 203-905-7801
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001T3TDG2
+share_class_shares_outstanding: 136590984
+sic_code: '4841'
+sic_description: CABLE & OTHER PAY TELEVISION SERVICES
+ticker: CHTR
+ticker_root: CHTR
+total_employees: 94500
+type: CS
+weighted_shares_outstanding: 136590985

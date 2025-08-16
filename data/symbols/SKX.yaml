@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 228 MANHATTAN BEACH BLVD
+    city: MANHATTAN BEACH
+    postal_code: '90266'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2tlY2hlcnMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2tlY2hlcnMuY29t/images/2025-04-04_logo.svg
+cik: 0001065837
+composite_figi: BBG000C4HKK2
+currency_name: usd
+description: Skechers USA Inc is a lifestyle footwear company under the Skechers GO
+    brand name. Products offered include various styles of women's shoes, men's shoes,
+    girl's shoes, boy's shoes, performance shoes, and work shoes. Allied products
+    offered are apparel, bags, eyewear, toys, and more. Its products are available
+    for sale at department and specialty stores, athletic and independent retailers,
+    boutiques, and internet retailers. The company's operating segments includes Wholesale
+    and Direct-to-Consumer. It generates maximum revenue from the Wholesale segment.
+homepage_url: https://www.skechers.com
+list_date: '1999-06-09'
+locale: us
+market: stocks
+market_cap: 9470392700.74
+name: Skechers U.S.A., Inc.
+phone_number: (310) 318-3100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5XTG8
+share_class_shares_outstanding: 130329968
+sic_code: '3140'
+sic_description: FOOTWEAR, (NO RUBBER)
+ticker: SKX
+ticker_root: SKX
+total_employees: 20100
+type: CS
+weighted_shares_outstanding: 150275987

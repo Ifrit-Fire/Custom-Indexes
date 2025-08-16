@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: BROOKFIELD PLACE
+    address2: 250 VESEY STREET, 15TH FLOOR
+    city: NEW YORK
+    postal_code: 10281-0221
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YnJvb2tmaWVsZC5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YnJvb2tmaWVsZC5jb20/images/2025-04-04_logo.svg
+cik: 0001937926
+composite_figi: BBG01BPHNXZ3
+currency_name: usd
+description: Brookfield Asset Management Ltd engages in providing alternative asset
+    management services through an ownership interest in a alternative asset management
+    business. It offers a range of alternative investment products to investors around
+    the world including public and private pension plans, endowments and foundations,
+    sovereign wealth funds, financial institutions, insurance companies, and private
+    wealth investors.
+homepage_url: https://www.brookfield.com
+list_date: '2022-12-01'
+locale: us
+market: stocks
+market_cap: 101078659192.42
+name: Brookfield Asset Management Ltd.
+phone_number: 416-363-9491
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG019Z17GF9
+share_class_shares_outstanding: 1637684375
+sic_code: '6282'
+sic_description: INVESTMENT ADVICE
+ticker: BAM
+ticker_root: BAM
+total_employees: 2500
+type: CS
+weighted_shares_outstanding: 1613128937

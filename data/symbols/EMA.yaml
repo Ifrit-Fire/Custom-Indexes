@@ -1,0 +1,22 @@
+active: true
+cik: 0001127248
+composite_figi: BBG000CX7YD7
+currency_name: usd
+description: Emera is a geographically diverse energy and services company investing
+    in electricity generation, transmission, and distribution as well as gas transmission
+    and utility energy services. Emera has operations throughout North America and
+    the Caribbean countries.
+homepage_url: https://www.emera.com
+locale: us
+market: stocks
+market_cap: 14100023000.0
+name: Emera Incorporated
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8TF95
+share_class_shares_outstanding: 299253403
+ticker: EMA
+ticker_root: EMA
+total_employees: 7600
+type: CS
+weighted_shares_outstanding: 299300000

@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHJyZWRkeXMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHJyZWRkeXMuY29t/images/2025-04-04_logo.svg
+cik: 0001135951
+composite_figi: BBG000NJ96L6
+currency_name: usd
+description: Dr. Reddy's is one of the largest generic drug manufacturers in the world.
+    It has a significant presence in North America, a region that makes up roughly
+    half of its generics sales, and it services India (about 20% of its generics sales),
+    Russia (10%), and certain European and Latin American countries. Beyond simple
+    generics, Dr. Reddy's also has a solid portfolio of injectables which make up
+    25% of its North America sales. In branded generic markets like India, Dr. Reddy's
+    has established a compelling presence with its strong brand name and earned a
+    top five spot in key therapeutic areas including oncology and gastroenterology.
+    Dr. Reddy's also has an active pharmaceutical ingredient business that manufactures
+    over 150 APIs and sells in over 75 countries.
+homepage_url: https://www.drreddys.com
+list_date: '2001-04-11'
+locale: us
+market: stocks
+market_cap: 11869608321.0
+name: Dr. Reddy's Laboratories Limited American Depositary Shares
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SHMCN3
+share_class_shares_outstanding: 834898140
+ticker: RDY
+ticker_root: RDY
+total_employees: 27811
+type: ADRC
+weighted_shares_outstanding: 832370850

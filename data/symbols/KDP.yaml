@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 53 SOUTH AVENUE
+    city: BURLINGTON
+    postal_code: 01803
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/a2V1cmlnZHJwZXBwZXIuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/a2V1cmlnZHJwZXBwZXIuY29t/images/2025-04-04_logo.svg
+cik: 0001418135
+composite_figi: BBG000TJM7F0
+currency_name: usd
+description: Keurig Dr Pepper was established in 2018 following a merger between Keurig
+    Green Mountain Coffee and Dr Pepper Snapple. The company manufactures and distributes
+    coffee systems (including coffee brewers and single-serve coffee pods) under the
+    Keurig and Green Mountain brands, as well as ready-to-drink beverages including
+    flavored (non-cola) sparkling soft drinks under well-known brands such as Dr Pepper,
+    Snapple, and Canada Dry. The company controls production and route to market for
+    its own brands through in-house manufacturing plants and distribution infrastructure
+    and leverages these facilities to manufacture and distribute for third-party coffee
+    and beverage brands via licensing and partnership agreements. The US and Canada
+    make up 95% of revenue, with the rest from Mexico.
+homepage_url: https://www.keurigdrpepper.com
+list_date: '2008-05-07'
+locale: us
+market: stocks
+market_cap: 47300716414.78
+name: Keurig Dr Pepper Inc.
+phone_number: 877-208-9991
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001ST5W34
+share_class_shares_outstanding: 1358435279
+sic_code: '2080'
+sic_description: BEVERAGES
+ticker: KDP
+ticker_root: KDP
+total_employees: 29400
+type: CS
+weighted_shares_outstanding: 1358435279

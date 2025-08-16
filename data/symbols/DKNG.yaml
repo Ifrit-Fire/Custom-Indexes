@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 222 BERKELEY STREET
+    city: BOSTON
+    postal_code: '02116'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZHJhZnRraW5ncy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZHJhZnRraW5ncy5jb20/images/2025-04-04_logo.svg
+cik: 0001883685
+composite_figi: BBG0134WCM78
+currency_name: usd
+description: DraftKings got its start in 2012 as an innovator in daily fantasy sports.
+    Then, following a Supreme Court ruling in 2018 that allowed states to legalize
+    online sports wagering, the company expanded into online sports and casino gambling,
+    where it generally holds the number two or three revenue share position across
+    states in which it competes. DraftKings is now live with online or retail sports
+    betting in 28 states and iGaming in five states, with both products available
+    to around 40% of Canada's population. In 2024, sports revenue was 61% of total
+    sales, i-gaming 32%, and fantasy and lottery 7%. The company also operates a non-fungible
+    token commissioned-based marketplace and develops and licenses online gaming products.
+homepage_url: https://www.draftkings.com
+list_date: '2020-04-24'
+locale: us
+market: stocks
+market_cap: 21427648264.359997
+name: DraftKings Inc. Class A Common Stock
+phone_number: (617) 986-6744
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG0134WCMB3
+share_class_shares_outstanding: 496470071
+sic_code: '7990'
+sic_description: SERVICES-MISCELLANEOUS AMUSEMENT & RECREATION
+ticker: DKNG
+ticker_root: DKNG
+total_employees: 5100
+type: CS
+weighted_shares_outstanding: 496470071

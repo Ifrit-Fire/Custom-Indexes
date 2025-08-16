@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXJjZWxvcm1pdHRhbC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXJjZWxvcm1pdHRhbC5jb20/images/2025-04-04_logo.svg
+cik: 0001243429
+composite_figi: BBG000BJH5W0
+currency_name: usd
+description: ArcelorMittal SA is involved in the steel industry. The company's operating
+    segments include North America, Brazil, Europe, India and JVs, Sustainable Solutions,
+    Mining and Other . It generates maximum revenue from the Europe segment. Europe
+    segment produces hot-rolled coil, cold-rolled coil, coated products, tinplate,
+    plate, and slab. These products are sold to customers in the automotive, general,
+    and packaging sectors as well as also produce long products consisting of sections,
+    wire rods, rebar, billets, blooms and wire drawing, and tubular products. Geographically,
+    it derives a majority of its revenue from United States.
+homepage_url: http://www.arcelormittal.com
+list_date: '1997-08-07'
+locale: us
+market: stocks
+market_cap: 25841433719.699997
+name: ArcelorMittal
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S8JFB3
+share_class_shares_outstanding: 852809772
+ticker: MT
+ticker_root: MT
+total_employees: 125416
+type: CS
+weighted_shares_outstanding: 760489515

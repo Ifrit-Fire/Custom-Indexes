@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 800 BOYLSTON STREET
+    address2: SUITE 1900
+    city: BOSTON
+    postal_code: 02199
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YnhwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YnhwLmNvbQ/images/2025-04-04_logo.png
+cik: '0001037540'
+composite_figi: BBG000BS5CM9
+currency_name: usd
+description: BXP Inc. owns over 180 properties consisting of approximately 53 million
+    rentable square feet of space. The portfolio is dominated by office buildings
+    and is spread across major cities such as New York, Boston, San Francisco, Los
+    Angeles, Seattle, and the Washington, D.C., region. The real estate investment
+    trust also owns limited retail, hotel, and residential properties.
+homepage_url: https://www.bxp.com
+list_date: '1997-06-18'
+locale: us
+market: stocks
+market_cap: 10373596232.5
+name: BXP, Inc.
+phone_number: (617) 236-3300
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S9TWV1
+share_class_shares_outstanding: 158375515
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: BXP
+ticker_root: BXP
+total_employees: 836
+type: CS
+weighted_shares_outstanding: 158375515

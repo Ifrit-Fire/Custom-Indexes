@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: ONE TECHNOLOGY DRIVE
+    city: MILPITAS
+    postal_code: '95035'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/a2xhLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/a2xhLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000319201
+composite_figi: BBG000BMTFR4
+currency_name: usd
+description: KLA is one of the largest semiconductor wafer fabrication equipment,
+    or WFE, manufacturers in the world. It specializes in the market segment of semiconductor
+    process control, wherein machines inspect semiconductor wafers during research
+    and development and manufacturing for defects and verify precise measurements.
+    In this section of the market, KLA holds a majority share. It also has a small
+    exposure to the etch and deposition segments of the WFE market. It counts as top
+    customers the largest chipmakers in the world, including TSMC and Samsung.
+homepage_url: https://www.kla.com
+list_date: '1980-10-08'
+locale: us
+market: stocks
+market_cap: 123453820476.09999
+name: KLA Corporation Common Stock
+phone_number: (408) 875-3000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5SLM4
+share_class_shares_outstanding: 132241430
+sic_code: '3827'
+sic_description: OPTICAL INSTRUMENTS & LENSES
+ticker: KLAC
+ticker_root: KLAC
+total_employees: 15200
+type: CS
+weighted_shares_outstanding: 131961370

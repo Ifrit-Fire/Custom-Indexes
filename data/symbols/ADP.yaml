@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE ADP BOULVARD
+    city: ROSELAND
+    postal_code: 07068
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWRwLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWRwLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000008670
+composite_figi: BBG000JG0547
+currency_name: usd
+description: 'Automatic Data Processing is a global technology company providing cloud-based
+    human capital management solutions, enabling clients to better implement payroll,
+    talent, time, tax, and benefits administration. Additionally, ADP provides human
+    resource outsourcing solutions that permit customers to offload some of their
+    traditional HR tasks. The company operates through two segments: employer services
+    and professional employer organization services. Employer services consist of
+    the company''s HCM products as well as a la carte HRO solutions. PEO services
+    contain ADP''s comprehensive HRO solution, where it acts as a co-employer with
+    its customer. As of fiscal 2025, ADP serves over 1.1 million clients and pays
+    over 42 million workers across 140 countries.'
+homepage_url: https://www.adp.com
+list_date: '1968-01-31'
+locale: us
+market: stocks
+market_cap: 121363076637.45999
+name: Automatic Data Processing
+phone_number: (973) 974-5000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S82KF6
+share_class_shares_outstanding: 405043142
+sic_code: '7374'
+sic_description: SERVICES-COMPUTER PROCESSING & DATA PREPARATION
+ticker: ADP
+ticker_root: ADP
+total_employees: 67000
+type: CS
+weighted_shares_outstanding: 405043142

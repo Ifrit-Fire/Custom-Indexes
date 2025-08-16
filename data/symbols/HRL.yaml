@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 1 HORMEL PL
+    city: AUSTIN
+    postal_code: 55912-3680
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aG9ybWVsZm9vZHMuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aG9ybWVsZm9vZHMuY29t/images/2025-04-04_logo.svg
+cik: 0000048465
+composite_figi: BBG000BLF8D2
+currency_name: usd
+description: Historically meat-focused, Hormel Foods broadened its lineup to include
+    other protein offerings and become a branded food company. The firm sells its
+    wares through multiple channels, including US retail (62% of fiscal 2024 sales),
+    US food service (32%), and international (6%). By product, 72% of fiscal 2024
+    sales were from perishable food and 28% from shelf-stable. Major brands include
+    Hormel, Spam, Jennie-O, Columbus, Applegate, Planters, and Skippy. Many of these
+    hold the number one or two market share in their respective categories.
+homepage_url: https://www.hormelfoods.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 15930446243.33
+name: Hormel Foods Corporation
+phone_number: (507) 437-5611
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5S0D0
+share_class_shares_outstanding: 549894589
+sic_code: '2011'
+sic_description: MEAT PACKING PLANTS
+ticker: HRL
+ticker_root: HRL
+total_employees: 20000
+type: CS
+weighted_shares_outstanding: 549894589

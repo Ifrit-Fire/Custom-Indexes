@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 2400 MARKET STREET
+    city: PHILADELPHIA
+    postal_code: '19103'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXJhbWFyay5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXJhbWFyay5jb20/images/2025-04-04_logo.svg
+cik: 0001584509
+composite_figi: BBG001KY4N87
+currency_name: usd
+description: Aramark provides food, facilities, and uniform services to a variety
+    of clients and institutions. The majority of company revenue comes from its North
+    American food and support services segment. Smaller but substantial segments include
+    food and support services international, food and support services united states
+    and uniform and career apparel. The food and support services segments provide
+    food for school districts; colleges; healthcare facilities; correctional institutions;
+    and business, sports, and entertainment venues. The uniform segment rents, delivers,
+    cleans, and maintains work clothes and ancillary items like towels and mats to
+    customers in North America and Japan. The company has hundreds of service locations
+    and distribution centers across the United States and Canada.
+homepage_url: https://www.aramark.com
+list_date: '2013-12-12'
+locale: us
+market: stocks
+market_cap: 10708545991.92
+name: ARAMARK
+phone_number: 215-238-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001V0NR70
+share_class_shares_outstanding: 262850908
+sic_code: '5812'
+sic_description: RETAIL-EATING PLACES
+ticker: ARMK
+ticker_root: ARMK
+total_employees: 266680
+type: CS
+weighted_shares_outstanding: 262850908

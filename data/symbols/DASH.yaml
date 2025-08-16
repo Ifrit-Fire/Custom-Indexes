@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 303 2ND STREET
+    address2: SOUTH TOWER, 8TH FLOOR
+    city: SAN FRANCISCO
+    postal_code: '94107'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZG9vcmRhc2guY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZG9vcmRhc2guY29t/images/2025-04-04_logo.svg
+cik: 0001792789
+composite_figi: BBG005D7QCJ3
+currency_name: usd
+description: Founded in 2013 and headquartered in San Francisco, DoorDash is an online
+    delivery demand aggregator. Consumers can use its app to order food items on-demand
+    for delivery or in-store from merchants. Through the acquisition of Wolt in 2022,
+    the firm also provides this service in Europe and Asia. DoorDash creates a marketplace
+    for merchants to establish a presence online, market their offerings, and meet
+    demand through delivery. The firm provides similar service to nonrestaurant businesses,
+    such as grocery, retail, and pet supplies. Dash is also rolling out nascent technology
+    like drone delivery in an effort to continually innovate and provide the best
+    possible service to supply-side and demand-side contingents of its marketplace.
+homepage_url: https://www.doordash.com
+list_date: '2020-12-09'
+locale: us
+market: stocks
+market_cap: 112916137994.23999
+name: DoorDash, Inc. Class A Common Stock
+phone_number: 650-487-3970
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG005D7QCK1
+share_class_shares_outstanding: 402361247
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: DASH
+ticker_root: DASH
+total_employees: 23700
+type: CS
+weighted_shares_outstanding: 427194832

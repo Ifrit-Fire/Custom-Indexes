@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 7035 RIDGE ROAD
+    city: HANOVER
+    postal_code: '21076'
+    state: MD
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2llbmEuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2llbmEuY29t/images/2025-04-04_logo.svg
+cik: 0000936395
+composite_figi: BBG000BP1152
+currency_name: usd
+description: Ciena is a telecommunications equipment provider focused on optical transport
+    technologies, with clients in a number of industries such as communication services
+    providers, web-scale providers, cable operators, government, and large enterprises
+    worldwide. The company provides equipment, software, and services that support
+    transport, switching, aggregation, service delivery, and data traffic management.
+homepage_url: https://www.ciena.com
+list_date: '1997-02-07'
+locale: us
+market: stocks
+market_cap: 13381820855.88
+name: Ciena Corporation
+phone_number: (410) 865-8500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S61J73
+share_class_shares_outstanding: 141367218
+sic_code: '3661'
+sic_description: TELEPHONE & TELEGRAPH APPARATUS
+ticker: CIEN
+ticker_root: CIEN
+total_employees: 8657
+type: CS
+weighted_shares_outstanding: 141367218

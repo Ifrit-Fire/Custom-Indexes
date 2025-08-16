@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: STONEMASON'S WAY, RATHFARNHAM
+    city: DUBLIN 16
+    postal_code: D16 KH51
+    state: L2
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y3JoLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000849395
+currency_name: usd
+description: CRH is a global manufacturer of a range of building products used in
+    construction projects, operating via a vertically integrated business model. The
+    past decade has seen CRH transform into a leading building materials business,
+    with increasing exposure to upstream building activities such as aggregates and
+    cement. CRH's geographic footprint is mostly across developed markets. North America
+    is CRH's largest market and accounts for 75% of EBITDA. The company is the largest
+    producer of aggregates and asphalt in the US.
+homepage_url: https://www.crh.com
+list_date: '2009-09-10'
+locale: us
+market: stocks
+market_cap: 75303185382.72
+name: CRH Public Limited Company
+phone_number: 353 1 404 1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 672659283
+sic_code: '3241'
+sic_description: CEMENT, HYDRAULIC
+ticker: CRH
+ticker_root: CRH
+total_employees: 79800
+type: CS
+weighted_shares_outstanding: 672169824

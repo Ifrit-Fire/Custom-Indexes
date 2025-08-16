@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 300 NORTH COMMONS BLVD.
+    city: MAYFIELD VILLAGE
+    postal_code: '44143'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cHJvZ3Jlc3NpdmUuY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cHJvZ3Jlc3NpdmUuY29t/images/2025-04-04_logo.svg
+cik: 0000080661
+composite_figi: BBG000BR37X2
+currency_name: usd
+description: Progressive underwrites private and commercial auto insurance and specialty
+    lines; it has almost 24 million personal auto policies in force and is one of
+    the largest auto insurers in the United States. Progressive markets its policies
+    through independent insurance agencies in the US and Canada and directly via the
+    internet and telephone. Its premiums are split roughly equally between the agent
+    and the direct channel. The company also offers commercial auto policies and entered
+    homeowners insurance through an acquisition in 2015.
+homepage_url: https://www.progressive.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 142472110680.47998
+name: Progressive Corporation
+phone_number: (440) 461-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5V509
+share_class_shares_outstanding: 586208487
+sic_code: '6331'
+sic_description: FIRE, MARINE & CASUALTY INSURANCE
+ticker: PGR
+ticker_root: PGR
+total_employees: 66300
+type: CS
+weighted_shares_outstanding: 586208487

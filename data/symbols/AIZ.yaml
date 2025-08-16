@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 260 INTERSTATE NORTH CIRCLE S.E.
+    city: ATLANTA
+    postal_code: '30339'
+    state: GA
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXNzdXJhbnQuY29t/images/2025-04-04_logo.svg
+cik: 0001267238
+composite_figi: BBG000BZX1N5
+currency_name: usd
+description: 'Assurant Inc is a protection company that partners with the brands to
+    safeguard and service connected devices, homes and automobiles. It operate in
+    North America, Latin America, Europe and Asia Pacific through two operating segments:
+    Global Lifestyle and Global Housing. Global Lifestyle: includes mobile device
+    solutions (including extended service contracts, insurance policies and related
+    services), extended service contracts and related services for consumer electronics
+    and appliances, and financial services and other insurance products. Global Housing:
+    includes lender-placed homeowners, manufactured housing and flood insurance, as
+    well as voluntary manufactured housing, condominium and homeowners insurance.
+    Key revenue is generated from Global Lifestyle segment.'
+homepage_url: https://www.assurant.com
+list_date: '2004-02-05'
+locale: us
+market: stocks
+market_cap: 10777582877.49
+name: Assurant, Inc.
+phone_number: 770-763-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SD9DW5
+share_class_shares_outstanding: 50867939
+sic_code: '6399'
+sic_description: INSURANCE CARRIERS, NEC
+ticker: AIZ
+ticker_root: AIZ
+total_employees: 14200
+type: CS
+weighted_shares_outstanding: 50459211

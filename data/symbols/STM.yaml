@@ -1,0 +1,27 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3QuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3QuY29t/images/2025-04-04_logo.svg
+cik: 0000932787
+composite_figi: BBG000BD4GX2
+currency_name: usd
+description: A merger between Italian firm SGS Microelettronica and the nonmilitary
+    business of Thomson Semiconducteurs in France formed STMicroelectronics in 1987.
+    STMicroelectronics is a leader in a variety of semiconductor products, including
+    analog chips, discrete power semiconductors, microcontrollers, and sensors. It
+    is an especially prominent chip supplier to the industrial and automotive industries.
+homepage_url: https://www.st.com
+list_date: '1994-12-08'
+locale: us
+market: stocks
+market_cap: 23358262688.449997
+name: STMicroelectronics N.V.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5WDM7
+share_class_shares_outstanding: 911281920
+ticker: STM
+ticker_root: STM
+total_employees: 49602
+type: CS
+weighted_shares_outstanding: 893241403

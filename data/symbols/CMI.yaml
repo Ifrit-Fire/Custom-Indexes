@@ -1,0 +1,41 @@
+active: true
+address:
+    address1: 500 JACKSON ST
+    address2: BOX 3005 MAIL CODE 93050
+    city: COLUMBUS
+    postal_code: 47202-3005
+    state: IN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y3VtbWlucy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y3VtbWlucy5jb20/images/2025-04-04_logo.svg
+cik: '0000026172'
+composite_figi: BBG000BGPTV6
+currency_name: usd
+description: Cummins is a leading manufacturer of diesel and other engines used in
+    heavy- and medium-duty commercial trucks, off-highway equipment, and locomotives,
+    in addition to prime power and standby generators. The company also sells powertrain
+    components, which include filtration products, transmissions, turbochargers, aftertreatment
+    systems, and fuel systems. Sales are approximately 60% US and Canada and 40% rest
+    of the world. Much of Cummins' foreign sales (China, India, and so forth) are
+    through joint ventures. The company operates 650 distributors and over 19,000
+    dealer locations across 190 countries. Cummins' business model is unique as it
+    competes with many of its heavy-duty truck manufacturer customers, which also
+    make their own engines.
+homepage_url: https://www.cummins.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 56051360258.4
+name: Cummins Inc.
+phone_number: (812) 377-3842
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Q9M3
+share_class_shares_outstanding: 137786038
+sic_code: '3510'
+sic_description: ENGINES & TURBINES
+ticker: CMI
+ticker_root: CMI
+total_employees: 69600
+type: CS
+weighted_shares_outstanding: 137786038

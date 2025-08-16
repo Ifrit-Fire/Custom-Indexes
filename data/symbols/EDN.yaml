@@ -1,0 +1,26 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZWRlbm9yLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZWRlbm9yLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001395213
+composite_figi: BBG000PMM892
+currency_name: usd
+description: Empresa Distribuidora y Comercializadora Norte SA is engaged in the distribution
+    and sale of electricity. The firm's concession area covers the northern portion
+    of the city of Buenos Aires mainly to residential, commercial, industrial, and
+    public service.
+homepage_url: https://www.edenor.com
+list_date: '2007-04-26'
+locale: us
+market: stocks
+market_cap: 1274117775.6000001
+name: Empresa Distribuidora Y Comercializadora Norte S.A. (Edenor)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SL6WF7
+share_class_shares_outstanding: 22128317
+ticker: EDN
+ticker_root: EDN
+total_employees: 4642
+type: ADRC
+weighted_shares_outstanding: 43784116

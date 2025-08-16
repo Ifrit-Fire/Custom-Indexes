@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 3050 BOWERS AVE
+    city: SANTA CLARA
+    postal_code: 95054-3299
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXBwbGllZG1hdGVyaWFscy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXBwbGllZG1hdGVyaWFscy5jb20/images/2025-04-04_logo.svg
+cik: 0000006951
+composite_figi: BBG000BBPFB9
+currency_name: usd
+description: Applied Materials is the largest semiconductor wafer fabrication equipment,
+    or WFE, manufacturer in the world. Applied Materials has a broad portfolio spanning
+    nearly every corner of the WFE ecosystem. Specifically, Applied Materials holds
+    a market share leadership position in deposition, which entails the layering of
+    new materials on semiconductor wafers. It is more exposed to general-purpose logic
+    chips made at integrated device manufacturers and foundries. It counts the largest
+    chipmakers in the world as customers, including TSMC, Intel, and Samsung.
+homepage_url: https://www.appliedmaterials.com
+list_date: '1972-10-12'
+locale: us
+market: stocks
+market_cap: 151230788993.65
+name: Applied Materials Inc
+phone_number: (408) 563-5300
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5NMM7
+share_class_shares_outstanding: 802498217
+sic_code: '3674'
+sic_description: SEMICONDUCTORS & RELATED DEVICES
+ticker: AMAT
+ticker_root: AMAT
+total_employees: 35700
+type: CS
+weighted_shares_outstanding: 802498217

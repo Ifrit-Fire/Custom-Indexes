@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 8080 NORTON PARKWAY
+    city: MENTOR
+    postal_code: '44060'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YXZlcnlkZW5uaXNvbi5jb20/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YXZlcnlkZW5uaXNvbi5jb20/images/2025-04-04_logo.svg
+cik: 0000008818
+composite_figi: BBG000BCQ4P6
+currency_name: usd
+description: Avery Dennison manufactures pressure-sensitive materials, merchandise
+    tags, and labels. The company also runs a specialty converting business that produces
+    radio-frequency identification inlays and labels. Avery Dennison draws a significant
+    amount of revenue from outside the United States, with international operations
+    accounting for the majority of total sales.
+homepage_url: https://www.averydennison.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 13992237411.42
+name: Avery Dennison Corp.
+phone_number: 440-534-6000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5NZM8
+share_class_shares_outstanding: 77981594
+sic_code: '2670'
+sic_description: CONVERTED PAPER & PAPERBOARD PRODS (NO CONTANERS/BOXES)
+ticker: AVY
+ticker_root: AVY
+total_employees: 35000
+type: CS
+weighted_shares_outstanding: 77981594

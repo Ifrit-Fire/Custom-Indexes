@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1600 AMPHITHEATRE PARKWAY
+    city: MOUNTAIN VIEW
+    postal_code: '94043'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWJjLnh5eg/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWJjLnh5eg/images/2025-04-04_logo.svg
+cik: '0001652044'
+composite_figi: BBG009S3NB30
+currency_name: usd
+description: Alphabet is a holding company that wholly owns internet giant Google.
+    The California-based company derives slightly less than 90% of its revenue from
+    Google services, the vast majority of which is advertising sales. Alongside online
+    ads, Google services houses sales stemming from Google's subscription services
+    (YouTube TV, YouTube Music among others), platforms (sales and in-app purchases
+    on Play Store), and devices (Chromebooks, Pixel smartphones, and smart home products
+    such as Chromecast). Google's cloud computing platform, or GCP, accounts for roughly
+    10% of Alphabet's revenue with the firm's investments in up-and-coming technologies
+    such as self-driving cars (Waymo), health (Verily), and internet access (Google
+    Fiber) making up the rest.
+homepage_url: https://www.abc.xyz
+list_date: '2004-08-19'
+locale: us
+market: stocks
+market_cap: 2438513220000.0
+name: Alphabet Inc. Class C Capital Stock
+phone_number: 650-253-0000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG009S3NB21
+share_class_shares_outstanding: 5430000000
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: GOOG
+ticker_root: GOOG
+total_employees: 187103
+type: CS
+weighted_shares_outstanding: 12094000000

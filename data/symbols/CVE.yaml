@@ -1,0 +1,30 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2Vub3Z1cy5jb20/images/2025-04-04_logo.svg
+cik: '0001475260'
+composite_figi: BBG000PSJP22
+currency_name: usd
+description: Cenovus Energy Inc is an integrated oil company, focused on creating
+    value through the development of its oil sands assets. The company also engages
+    in production of conventional crude oil, natural gas liquids, and natural gas
+    in Alberta, Canada, with refining operations in the U.S. Net upstream production
+    averaged 786 thousand barrels of oil equivalent per day in 2022. The company had
+    upstream projects across Western Canada; crude oil production and natural gas
+    and NGLs production offshore China and Indonesia. The downstream operations include
+    upgrading and refining operations in Canada and the U.S., and commercial fuel
+    operations across Canada.
+homepage_url: https://www.cenovus.com
+list_date: '2009-11-02'
+locale: us
+market: stocks
+market_cap: 27086252550.0
+name: Cenovus Energy Inc.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001T2PJV8
+share_class_shares_outstanding: 1805850647
+ticker: CVE
+ticker_root: CVE
+total_employees: 7150
+type: CS
+weighted_shares_outstanding: 1799751000

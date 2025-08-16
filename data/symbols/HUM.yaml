@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 500 W MAIN ST
+    city: LOUISVILLE
+    postal_code: '40202'
+    state: KY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aHVtYW5hLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aHVtYW5hLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000049071
+composite_figi: BBG000BLKK03
+currency_name: usd
+description: Humana is one of the largest private health insurers in the US, and the
+    firm has built a niche specializing in government-sponsored programs, with nearly
+    all its medical membership stemming from Medicare, Medicaid, and the military's
+    Tricare program. Beyond medical insurance, the company provides other healthcare
+    services, including primary-care services, at-home services, and pharmacy benefit
+    management.
+homepage_url: https://www.humana.com
+list_date: '1971-05-18'
+locale: us
+market: stocks
+market_cap: 33915450239.81
+name: Humana Inc.
+phone_number: (502) 580-1000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5S1X6
+share_class_shares_outstanding: 120271819
+sic_code: '6324'
+sic_description: HOSPITAL & MEDICAL SERVICE PLANS
+ticker: HUM
+ticker_root: HUM
+total_employees: 65680
+type: CS
+weighted_shares_outstanding: 120271819

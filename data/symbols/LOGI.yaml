@@ -1,0 +1,32 @@
+active: true
+address:
+    address1: 3930 NORTH FIRST STREET
+    address2: C/O LOGITECH INC
+    city: SAN JOSE
+    postal_code: '95134'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bG9naXRlY2guY29t/images/2025-04-04_icon.png
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bG9naXRlY2guY29t/images/2025-04-04_logo.svg
+cik: 0001032975
+currency_name: usd
+description: Logitech was founded in 1981 and is headquartered in Lausanne, Switzerland.
+    The company specializes in designing and manufacturing computer peripherals such
+    as mice, keyboards, webcams, conference room cameras, headsets, and music-related
+    products like wireless speakers.
+homepage_url: https://www.logitech.com
+list_date: '1997-03-27'
+locale: us
+market: stocks
+market_cap: 14583814187.76
+name: Logitech International SA
+phone_number: (510) 795-8500
+primary_exchange: XNAS
+round_lot: 100
+sic_code: '3577'
+sic_description: COMPUTER PERIPHERAL EQUIPMENT, NEC
+ticker: LOGI
+ticker_root: LOGI
+total_employees: 7300
+type: CS
+weighted_shares_outstanding: 147296376

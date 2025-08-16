@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: 300 E. RIO SALADO PARKWAY
+    city: TEMPE
+    postal_code: '85281'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2FydmFuYS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FydmFuYS5jb20/images/2025-04-04_logo.svg
+cik: 0001690820
+composite_figi: BBG00GCTWDJ3
+currency_name: usd
+description: Carvana Co is an e-commerce platform for buying and selling used cars.
+    The company derives revenue from used vehicle sales, wholesale vehicle sales and
+    other sales and revenues. The other sales and revenues include sales of loans
+    originated and sold in securitization transactions or to financing partners, commissions
+    received on VSCs and sales of GAP waiver coverage. The foundation of the business
+    is retail vehicle unit sales. This drives the majority of the revenue and allows
+    the company to capture additional revenue streams associated with financing, VSCs,
+    auto insurance and GAP waiver coverage, as well as trade-in vehicles.
+homepage_url: https://www.carvana.com
+list_date: '2017-04-28'
+locale: us
+market: stocks
+market_cap: 48311272745.520004
+name: Carvana Co.
+phone_number: (480) 719-8809
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00GCTWF71
+share_class_shares_outstanding: 138083496
+sic_code: '5500'
+sic_description: RETAIL-AUTO DEALERS & GASOLINE STATIONS
+ticker: CVNA
+ticker_root: CVNA
+total_employees: 17400
+type: CS
+weighted_shares_outstanding: 138083496

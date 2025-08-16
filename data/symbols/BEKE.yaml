@@ -1,0 +1,31 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW52ZXN0b3JzLmtlLmNvbQ/images/2025-04-04_logo.png
+cik: 0001809587
+composite_figi: BBG00W9L9LX1
+currency_name: usd
+description: KE Holdings, or Beike, is a large residential real estate sales and rental
+    brokerage company in China. Founded in 2001, the company operates through self-owned
+    Lianjia stores in Beijing and Shanghai and connected third-party agencies including
+    franchise brand Deyou in other cities, with commissions charged on existing-home
+    and new-home transactions. Leveraging an online-offline hybrid model, Beike also
+    attract clients through its namesake online marketplace. The company tapped into
+    home renovation services by acquiring Shengdu Home Decoration in 2022. As of the
+    end of 2024, Beike's cofounders collectively control the company, while Tencent
+    and its affiliates share 8% of voting power.
+homepage_url: https://investors.ke.com
+list_date: '2020-08-13'
+locale: us
+market: stocks
+market_cap: 21767603647.399998
+name: KE Holdings Inc. American Depositary Shares (each representing three Class A
+    Ordinary Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00W9L9N03
+share_class_shares_outstanding: 1143377431
+ticker: BEKE
+ticker_root: BEKE
+total_employees: 135072
+type: ADRC
+weighted_shares_outstanding: 1184309230

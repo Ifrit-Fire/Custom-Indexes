@@ -1,0 +1,30 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c29ueS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c29ueS5jb20/images/2025-04-04_logo.svg
+cik: 0000313838
+composite_figi: BBG000BT7ZK6
+currency_name: usd
+description: Sony Group is a conglomerate with consumer electronics roots, which not
+    only designs, develops, produces, and sells electronic equipment and devices,
+    but also is engaged in content businesses, such as console and mobile games, music,
+    and movies. Sony is a global top company of CMOS image sensors, game consoles,
+    professional broadcasting cameras, and music publishing, and is one of the top
+    players on digital cameras, wireless earphones, recorded music, movies, and so
+    on. Sony's business portfolio is well diversified with six major business segments.
+homepage_url: https://www.sony.com
+list_date: '1970-09-10'
+locale: us
+market: stocks
+market_cap: 162940473390.35
+name: Sony Group Corporation American Depositary Shares (Each Representing One Share
+    of Dollar Validated Common Stock)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5W6H8
+share_class_shares_outstanding: 6149810645
+ticker: SONY
+ticker_root: SONY
+total_employees: 112300
+type: ADRC
+weighted_shares_outstanding: 5992661765

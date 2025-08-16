@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 145 BROADWAY
+    city: CAMBRIDGE
+    postal_code: '02142'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/YWthbWFpLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/YWthbWFpLmNvbQ/images/2025-04-04_logo.svg
+cik: 0001086222
+composite_figi: BBG000BJQWD2
+currency_name: usd
+description: Akamai operates a content delivery network, which entails locating servers
+    at the edges of networks so its customers, which store content on Akamai servers,
+    can reach their own customers faster, more securely, and with better quality.
+    Akamai has over 325,000 servers distributed over 4,100 points of presence in more
+    than 1,000 cities worldwide. The firm also offers security and cloud computing
+    for its customers, and those businesses have grown to be bigger than the legacy
+    CDN.
+homepage_url: https://www.akamai.com
+list_date: '1999-10-29'
+locale: us
+market: stocks
+market_cap: 10817004232.32
+name: Akamai Technologies Inc
+phone_number: (617) 444-3000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S7YHX0
+share_class_shares_outstanding: 146206374
+sic_code: '7389'
+sic_description: SERVICES-BUSINESS SERVICES, NEC
+ticker: AKAM
+ticker_root: AKAM
+total_employees: 10700
+type: CS
+weighted_shares_outstanding: 143385528

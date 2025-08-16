@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c3RhbnRlYy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c3RhbnRlYy5jb20/images/2025-04-04_logo.svg
+cik: 0001131383
+composite_figi: BBG000BNHRC5
+currency_name: usd
+description: Stantec Inc is a sustainable engineering, architecture, and environmental
+    consulting company. It offers services through the following business operating
+    units; Environmental Services, Infrastructure, Water, Buildings, and Energy &
+    Resources. Maximum revenue is derived from its Infrastructure business unit, which
+    is engaged in evaluating, planning, and designing infrastructure solutions for
+    transportation, community development, and urban spaces. The company's reportable
+    segments are the United States, which derives maximum revenue, Canada, and Global.
+    These segments provide consulting in engineering, architecture, interior design,
+    landscape architecture, surveying, environmental sciences, project management,
+    and project economics services in the area of infrastructure and facilities.
+homepage_url: https://www.stantec.com
+list_date: '1996-09-06'
+locale: us
+market: stocks
+market_cap: 12403645036.3
+name: Stantec, Inc.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6JJQ3
+share_class_shares_outstanding: 114066995
+ticker: STN
+ticker_root: STN
+total_employees: 32000
+type: CS
+weighted_shares_outstanding: 114066995

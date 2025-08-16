@@ -4,9 +4,10 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
+from src import data_processing
 from src.clients import cache
 from src.config_handler import KEY_INDEX_TOP
-from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, COL_VOLUME
+from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, ASSET_CRYPTO
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
@@ -16,12 +17,19 @@ _BASE_FILENAME = Path(__file__).name
 
 def get_crypto(criteria: dict) -> DataFrame:
     """
-    API call which retrieves a DataFrame of crypto specified by the criteria configurations.  Automatically pulls from
-    cache when available and cache data is recent.
+    Retrieve a DataFrame of cryptocurrencies matching the given index criteria.
 
-    :param criteria: Configuration criteria for an index
-    :return: Dataframe consisting of all needed columns with standardized column names.
+    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API.
+    The results are normalized and cached for future use.
+
+    Args:
+        criteria (dict): Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
+
+    Returns:
+        DataFrame: DataFrame containing standardized columns:
+            `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`.
     """
+
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -38,7 +46,9 @@ def get_crypto(criteria: dict) -> DataFrame:
         df.rename(
             columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME},
             inplace=True)
+        df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
+        df[COL_TYPE] = ASSET_CRYPTO
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
     print(f"\tRetrieved {len(df)} crypto from {source}")
-    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME]]
+    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE]]

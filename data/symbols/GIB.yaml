@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y2dpLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2dpLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001061574'
+composite_figi: BBG000FWZL89
+currency_name: usd
+description: CGI is a Canada-based IT-services provider with an embedded position
+    in North America and Europe. The company generates more than CAD 14 billion in
+    annual revenue, employs over 90,000 personnel, and operates across 400 offices
+    in 40 countries. CGI offers a broad portfolio of services such as consulting,
+    systems integration, application maintenance, and business process services. Its
+    largest vertical market is government, which contributes more than a third of
+    group revenue.
+homepage_url: https://www.cgi.com
+list_date: '1998-10-07'
+locale: us
+market: stocks
+market_cap: 21324347741.84
+name: CGI Inc.
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5YY67
+share_class_shares_outstanding: 198654078
+ticker: GIB
+ticker_root: GIB
+total_employees: 90250
+type: CS
+weighted_shares_outstanding: 222918124

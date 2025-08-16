@@ -1,0 +1,32 @@
+active: true
+address:
+    address1: THE MILLE
+    address2: 1000  GREAT WEST ROAD, 8TH FLOOR (EAST)
+    city: LONDON
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bnZlbnQuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bnZlbnQuY29t/images/2025-04-04_logo.svg
+cik: '0001720635'
+currency_name: usd
+description: NVent is a leading global provider of electrical connection and protection
+    solutions that touch a broad range of end markets, including infrastructure, industrial,
+    commercial, and residential. NVent designs, manufactures, markets, installs, and
+    services a portfolio of electrical enclosures and electrical fastening solutions.
+    North America accounts for the majority of sales.
+homepage_url: https://www.nvent.com
+list_date: '2018-04-16'
+locale: us
+market: stocks
+market_cap: 14583434399.95
+name: nVent Electric plc Ordinary Shares
+phone_number: 763-204-7700
+primary_exchange: XNYS
+round_lot: 100
+share_class_shares_outstanding: 160947295
+sic_code: '3550'
+sic_description: SPECIAL INDUSTRY MACHINERY (NO METALWORKING MACHINERY)
+ticker: NVT
+ticker_root: NVT
+total_employees: 12100
+type: CS
+weighted_shares_outstanding: 160947295

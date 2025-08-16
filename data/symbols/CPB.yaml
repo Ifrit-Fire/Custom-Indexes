@@ -1,0 +1,38 @@
+active: true
+address:
+    address1: CAMPBELL PL
+    city: CAMDEN
+    postal_code: 08103
+    state: NJ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGhlY2FtcGJlbGxzY29tcGFueS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGhlY2FtcGJlbGxzY29tcGFueS5jb20/images/2025-04-04_logo.svg
+cik: '0000016732'
+composite_figi: BBG000BG4202
+currency_name: usd
+description: Over the past 150-plus years, Campbell's has evolved into a leading domestic
+    packaged food manufacturer, with a portfolio that extends beyond its iconic red-and-white
+    labeled canned soup. In fiscal 2024 (July year-end), snacks accounted for nearly
+    half of its revenue, followed by soup (28%), other simple meals (17%), and beverages
+    (7%). Outside its namesake, its brands include Pepperidge Farm, Goldfish, Snyder's
+    of Hanover, Swanson, Pacific Foods, Prego, Pace, V8, and recently acquired Rao's
+    (a deal that closed in March 2024). Around 90% of its revenue results from the
+    US and the remainder from Canada and Latin America.
+homepage_url: https://www.thecampbellscompany.com
+list_date: '1954-12-13'
+locale: us
+market: stocks
+market_cap: 9701149288.88
+name: The Campbell's Company Common Stock
+phone_number: (856) 342-4800
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001S5Q2B0
+share_class_shares_outstanding: 298129972
+sic_code: '2000'
+sic_description: FOOD AND KINDRED PRODUCTS
+ticker: CPB
+ticker_root: CPB
+total_employees: 14400
+type: CS
+weighted_shares_outstanding: 298129972

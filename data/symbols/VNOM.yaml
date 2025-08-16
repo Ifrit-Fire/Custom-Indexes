@@ -1,0 +1,30 @@
+active: true
+address:
+    address1: 500 WEST TEXAS AVENUE
+    address2: SUITE 100
+    city: MIDLAND
+    postal_code: '79701'
+    state: TX
+cik: '0001602065'
+composite_figi: BBG006G57XG0
+currency_name: usd
+description: Viper Energy Inc is focused on owning and acquiring mineral and royalty
+    interests in oil and natural gas properties in the Permian Basin. The Permian
+    Basin is known to have a number of zones of oil and natural gas-bearing rock throughout.
+homepage_url: https://www.viperenergy.com
+list_date: '2014-06-18'
+locale: us
+market: stocks
+market_cap: 5070273614.2
+name: Viper Energy, Inc. Class A Common Stock
+phone_number: 432-221-7400
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG006G57XH9
+share_class_shares_outstanding: 131082565
+sic_code: '1311'
+sic_description: CRUDE PETROLEUM & NATURAL GAS
+ticker: VNOM
+ticker_root: VNOM
+type: CS
+weighted_shares_outstanding: 131082565

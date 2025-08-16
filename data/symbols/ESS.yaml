@@ -1,0 +1,35 @@
+active: true
+address:
+    address1: 1100 PARK PLACE
+    address2: SUITE 200
+    city: SAN MATEO
+    postal_code: '94403'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXNzZXhhcGFydG1lbnRob21lcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXNzZXhhcGFydG1lbnRob21lcy5jb20/images/2025-04-04_logo.svg
+cik: 0000920522
+composite_figi: BBG000CGJMB9
+currency_name: usd
+description: Essex Property Trust owns a portfolio of 257 apartment communities with
+    over 62,000 units. The company focuses on owning large, high-quality properties
+    on the West Coast in the urban and suburban submarkets of Southern California,
+    Northern California, and Seattle.
+homepage_url: https://www.essexapartmenthomes.com
+list_date: '1994-06-06'
+locale: us
+market: stocks
+market_cap: 16663252612.060001
+name: Essex Property Trust, Inc
+phone_number: (650) 655-7800
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S81418
+share_class_shares_outstanding: 64404022
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: ESS
+ticker_root: ESS
+total_employees: 1715
+type: CS
+weighted_shares_outstanding: 64404022

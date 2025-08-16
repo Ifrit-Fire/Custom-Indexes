@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: U.S. BANCORP
+    address2: 800 NICOLLET MALL
+    city: MINNEAPOLIS
+    postal_code: 55402-7020
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dXNiYW5rLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dXNiYW5rLmNvbQ/images/2025-04-04_logo.svg
+cik: '0000036104'
+composite_figi: BBG000FFDM15
+currency_name: usd
+description: With assets of around $685 billion, U.S. Bancorp is one of the largest
+    regional banks in the US with its footprint in 26 states. The bank's branch network
+    is mostly in Midwestern and Western markets. U.S. Bancorp has a comprehensive
+    product set, with offerings in retail and commercial banking, credit cards, mortgages,
+    payment services, trust, and wealth services.
+homepage_url: https://www.usbank.com
+list_date: '1973-01-02'
+locale: us
+market: stocks
+market_cap: 72533990404.33
+name: U.S. Bancorp
+phone_number: 651-466-3000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S6T8C1
+share_class_shares_outstanding: 1556189453
+sic_code: '6021'
+sic_description: NATIONAL COMMERCIAL BANKS
+ticker: USB
+ticker_root: USB
+total_employees: 70263
+type: CS
+weighted_shares_outstanding: 1556189453

@@ -1,0 +1,30 @@
+active: true
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aXIuenRvLmNvbQ/images/2025-04-04_logo.svg
+cik: '0001677250'
+composite_figi: BBG00DY7QWH1
+currency_name: usd
+description: ZTO Express is China's largest express delivery company by parcel volume,
+    with a volume share of 22.1% in 2022. It operates a network partner model where
+    it provides line-haul transportation and sorting services, while its local network
+    partners provide first-mile pickup and last-mile delivery services under the ZTO
+    brand name. Headquartered in Shanghai, the company was founded in 2002 by Meisong
+    Lai, who remains chair, CEO, and its major shareholder with 77% voting rights
+    as of June 30, 2023. ZTO's strategic shareholder is leading China e-commerce company
+    Alibaba Group with around an 11.7% interest.
+homepage_url: https://ir.zto.com
+list_date: '2016-10-27'
+locale: us
+market: stocks
+market_cap: 16101104447.760002
+name: ZTO Express (Cayman) Inc. American Depositary Shares, each representing one
+    Class A ordinary share
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00DY7QWJ9
+share_class_shares_outstanding: 598368490
+ticker: ZTO
+ticker_root: ZTO
+total_employees: 24477
+type: ADRC
+weighted_shares_outstanding: 798269928

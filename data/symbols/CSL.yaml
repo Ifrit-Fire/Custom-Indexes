@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 16430 N. SCOTTSDALE RD.
+    address2: SUITE 400
+    city: SCOTTSDALE
+    postal_code: '85254'
+    state: AZ
+branding:
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y2FybGlzbGUuY29t/images/2025-03-20_logo.svg
+cik: 0000790051
+composite_figi: BBG000BGGBT8
+currency_name: usd
+description: Carlisle Companies Inc is a holding company. The company manufactures
+    and sells single-ply roofing products and warranted systems and accessories for
+    the commercial building industry. The company is organized into two segments including
+    Carlisle Construction Materials and Carlisle Weatherproofing Technologies. The
+    company's product portfolio includes moisture protection products, protective
+    roofing underlayments, integrated air and vapor barriers, spray polyurethane foam
+    and coating systems, and others. The majority of the company's revenue comes from
+    the Carlisle Construction Materials segment, and more than half of the total revenue
+    is earned in the United States.
+homepage_url: https://www.carlisle.com
+list_date: '1972-06-01'
+locale: us
+market: stocks
+market_cap: 17056688250.300001
+name: Carlisle Companies, Inc.
+phone_number: 480-781-5000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5Q6R4
+share_class_shares_outstanding: 42750735
+sic_code: '3060'
+sic_description: FABRICATED RUBBER PRODUCTS, NEC
+ticker: CSL
+ticker_root: CSL
+total_employees: 5500
+type: CS
+weighted_shares_outstanding: 42750735

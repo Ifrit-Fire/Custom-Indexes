@@ -1,0 +1,32 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/Y29wZWwuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/Y29wZWwuY29t/images/2025-04-04_logo.svg
+cik: 0001041792
+composite_figi: BBG000BHMXD8
+currency_name: usd
+description: Cia Paranaense De Energia Copel is engaged in the areas of generation,
+    transmission, commercialization and distribution of energy. It operates a comprehensive
+    and effective electrical system with its own generating plants, transmission lines,
+    substations, electrical lines and grids of the distribution system. The company's
+    reportable segments include Power generation and transmission, Power distribution,
+    GAS, Power sale, Services, and Holding. The majority of its revenue is generated
+    from the Power generation and transmission segment under which it produces electricity
+    from hydraulic, wind, and thermal projects and provides services of transmission
+    and transformation of electric power and other related services.
+homepage_url: https://www.copel.com
+list_date: '1997-07-30'
+locale: us
+market: stocks
+market_cap: 6688323904.98
+name: Companhia Paranaense de Energia - COPEL American Depositary Shares (each representing
+    four (4) Class B Preferred Shares)
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S69YL6
+share_class_shares_outstanding: 419065173
+ticker: ELP
+ticker_root: ELP
+total_employees: 3129
+type: ADRC
+weighted_shares_outstanding: 742322298

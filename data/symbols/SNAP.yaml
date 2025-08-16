@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 3000 31ST STREET
+    city: SANTA MONICA
+    postal_code: '90405'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c25hcC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c25hcC5jb20/images/2025-04-04_logo.svg
+cik: 0001564408
+composite_figi: BBG00441QMJ7
+currency_name: usd
+description: Snap is a technology company best known for its marquis social media
+    application. Snapchat, a visual messaging application that has amassed hundreds
+    of millions of users. The app was initially only used to communicate with family
+    and friends through photographs and short videos (known as "Snaps"). Users can
+    now enjoy augmented reality, or AR, lenses, content from famous creators and celebrities,
+    updates about local events, and more. Although the app offers a paid subscription
+    option with premium features, advertising sales produce most of the app's revenue.
+    The firm also sells wearable devices called AR Spectacles, which can capture photos
+    and videos overlayed with AR lenses, but these make up a small portion of Snap's
+    overall sales.
+homepage_url: https://www.snap.com
+list_date: '2017-03-02'
+locale: us
+market: stocks
+market_cap: 12369574383.12
+name: Snap Inc.
+phone_number: (310) 399-3339
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG00441QMK5
+share_class_shares_outstanding: 1435682333
+sic_code: '7370'
+sic_description: SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC.
+ticker: SNAP
+ticker_root: SNAP
+total_employees: 4911
+type: CS
+weighted_shares_outstanding: 1689832566

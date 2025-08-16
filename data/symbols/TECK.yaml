@@ -1,0 +1,31 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/dGVjay5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/dGVjay5jb20/images/2025-04-04_logo.svg
+cik: 0000886986
+composite_figi: BBG000BSJTT0
+currency_name: usd
+description: Teck is a base metals miner with copper and zinc operations in Canada,
+    the United States, Chile, and Peru. After selling its metallurgical coal business,
+    copper is now its major commodity by EBITDA contribution, followed by zinc. Teck
+    is a top-three zinc miner. Its major new copper mine in Chile at the majority-owned
+    Quebrada Blanca 2, in partnership with Sumitomo, will drive an increase in Teck's
+    attributable copper production by roughly 75%. Along with a number of additional
+    copper growth options, Teck's strategy is to rebalance its portfolio to low-carbon
+    metals such as copper. It sold its oil sands business in early 2023 and its coal
+    business in mid-2024.
+homepage_url: https://www.teck.com
+list_date: '1991-05-17'
+locale: us
+market: stocks
+market_cap: 16001681682.359999
+name: Teck Resources Limited
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S60LH8
+share_class_shares_outstanding: 483046012
+ticker: TECK
+ticker_root: TECK
+total_employees: 7200
+type: CS
+weighted_shares_outstanding: 488899532

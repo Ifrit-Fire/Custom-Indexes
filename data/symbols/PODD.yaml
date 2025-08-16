@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 100 NAGOG PARK
+    city: ACTON
+    postal_code: '01720'
+    state: MA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/aW5zdWxldC5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/aW5zdWxldC5jb20/images/2025-04-04_logo.svg
+cik: 0001145197
+composite_figi: BBG000R7XX87
+currency_name: usd
+description: Insulet was founded in 2000 with the goal of making continuous subcutaneous
+    insulin infusion therapy for diabetes easier to use. The result was the Omnipod
+    system, which consists of a small disposable insulin infusion device that can
+    be operated through a smartphone to control dosage. Since the Omnipod was approved
+    by the US Food and Drug Administration in 2005, approximately 500,000 insulin-dependent
+    diabetic patients are using it worldwide.
+homepage_url: https://www.insulet.com
+list_date: '2007-05-15'
+locale: us
+market: stocks
+market_cap: 21728767703.8
+name: Insulet Corporation
+phone_number: 978-600-7000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SRF439
+share_class_shares_outstanding: 70374923
+sic_code: '3841'
+sic_description: SURGICAL & MEDICAL INSTRUMENTS & APPARATUS
+ticker: PODD
+ticker_root: PODD
+total_employees: 3900
+type: CS
+weighted_shares_outstanding: 70392535

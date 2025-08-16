@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGlhZ2VvLmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGlhZ2VvLmNvbQ/images/2025-04-04_logo.svg
+cik: 0000835403
+composite_figi: BBG000BWZQL7
+currency_name: usd
+description: Formed in 1997 through the merger of Grand Metropolitan and Guinness,
+    Diageo is the largest distiller globally by sales. Diageo acquired some of the
+    Seagram assets in 2001, which gave it brands such as Captain Morgan rum and Crown
+    Royal Canadian whisky. Since then, mergers and acquisitions have mostly been bolt-on
+    in nature, plugging gaps in the company's product and geographic portfolio. The
+    firm has also shed noncore brands over the years, including the majority of its
+    wine assets in 2015.
+homepage_url: https://www.diageo.com
+list_date: '1994-10-31'
+locale: us
+market: stocks
+market_cap: 61975437254.35
+name: Diageo plc
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S7V596
+share_class_shares_outstanding: 556334377
+ticker: DEO
+ticker_root: DEO
+total_employees: 30092
+type: ADRC
+weighted_shares_outstanding: 555584377

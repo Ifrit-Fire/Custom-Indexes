@@ -1,0 +1,29 @@
+active: true
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/b21hLmFlcm8/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/b21hLmFlcm8/images/2025-04-04_logo.svg
+cik: 0001378239
+composite_figi: BBG000QCR193
+currency_name: usd
+description: Grupo Aeroportuario del Centro Norte SAB de CV operates airports in the
+    central region of Mexico. The airport is in Monterrey, which serves nearly half
+    of the company's total passengers. In addition, the company manages two hotels
+    and one industrial park. Its reportable segments include its airports, the Terminal
+    2 NH Collection Hotel, the Hilton Garden Inn Hotel and the OMA-VYNMSA Industrial
+    Park, individually, and information about its holding company and other companies
+    is combined in the Others.
+homepage_url: https://www.oma.aero
+list_date: '2006-11-29'
+locale: us
+market: stocks
+market_cap: 5053992336.6
+name: Grupo Aeroportuario del Centro Norte S.A.B. de C.V
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG001SQT2W8
+share_class_shares_outstanding: 42543195
+ticker: OMAB
+ticker_root: OMAB
+total_employees: 1326
+type: ADRC
+weighted_shares_outstanding: 48271178

@@ -1,0 +1,34 @@
+active: true
+address:
+    address1: 101 PROSPECT AVE NW
+    city: CLEVELAND
+    postal_code: '44115'
+    state: OH
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/c2hlcndpbi13aWxsaWFtcy5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/c2hlcndpbi13aWxsaWFtcy5jb20/images/2025-04-04_logo.png
+cik: 0000089800
+composite_figi: BBG000BSXQV7
+currency_name: usd
+description: Sherwin-Williams is the largest provider of architectural paint in the
+    United States. The company has over 5,000 stores and sells premium paint at higher
+    price points than most competitors. Sherwin-Williams also sells paint-related
+    products in big-box stores and provides coatings for original equipment manufacturers.
+homepage_url: https://www.sherwin-williams.com
+list_date: '1964-02-11'
+locale: us
+market: stocks
+market_cap: 89283767126.43999
+name: The Sherwin-Williams Company
+phone_number: (216) 566-2200
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001S5W2F9
+share_class_shares_outstanding: 249333316
+sic_code: '5200'
+sic_description: RETAIL-BUILDING MATERIALS, HARDWARE, GARDEN SUPPLY
+ticker: SHW
+ticker_root: SHW
+total_employees: 63890
+type: CS
+weighted_shares_outstanding: 249333316
