@@ -14,6 +14,8 @@ This project generates multiple index variants, each defined by:
 All indexes are generated from combined stock + crypto market data and treat both asset classes equivalently during
 index construction.
 
+For detailed construction rules, see the [Index Methodology](docs/methodology.md).
+
 | Name          | Constituents | Min Weight (%) |
 |---------------|--------------|----------------| 
 | top10-min10   | 10           | 10%            |
@@ -32,6 +34,7 @@ volume threshold.
 - macOS _(tested)_ or Linux _(untested)_
 - API key from [CoinMarketCap](https://coinmarketcap.com/api/) _(free)_
 - API key from [Financial Modeling Prep](https://site.financialmodelingprep.com) _(free)_
+- API key from [Polygon.io](https://polygon.io/docs/rest/quickstart) _(free, optional)_
 
 ## Setup
 
@@ -41,9 +44,11 @@ volume threshold.
 ```dotenv
 CMC_API_TOKEN=your_coinmarketcap_api_key
 FMP_API_TOKEN=your_financial_modeling_api_key
+POLY_API_TOKEN=your_polygon_api_key
 ```
 
-3. Optionally modify `config.yaml` to customize existing or to create new indexes.
+3. _(Optional)_ Add a Polygon API key to enable fetching detailed security information not already stored locally.
+4. _(Optional)_ Modify `config.yaml` to customize existing and/or create new indexes.
 
 ## Running
 
