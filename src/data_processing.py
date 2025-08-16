@@ -4,7 +4,8 @@ from pandas import DataFrame
 from src import transform
 from src.clients.polygon import get_stock
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME
+from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES
+
 
 def normalize_symbols(series: pd.Series) -> pd.Series:
     """
@@ -16,31 +17,27 @@ def normalize_symbols(series: pd.Series) -> pd.Series:
     return series.str.upper().str.replace("-", ".", regex=False)
 
 
-def tag_prune_asset_type(df: DataFrame) -> DataFrame:
+def tag_prune_stock_asset_type(df: DataFrame) -> DataFrame:
     """
-    Filter the DataFrame to include only the following allowed asset types.
-    - "CS"   (Common Stock)
-    - "ADRC" (American Depository Receipt - Common)
-    - "OS"   (Ordinary Shares)
+    Tags each security in the DataFrame with its asset type, then filters to include only
+    allowed stock asset types.
+
+    ⚠️ This function will raise an error if a non-stock (e.g., crypto) symbol is provided.
 
     :param df: Pandas DataFrame containing at least the `COL_SYMBOL` column.
-    :return: A new DataFrame containing only rows with allowed asset types,
-             reindexed from 0.
+    :return: DataFrame filtered to only rows with allowed asset types, with `COL_TYPE` added
+         and the index reset to start at 0.
 
     Note:
         This function will make an API call once per symbol if it cannot find the stored information on disk.
     """
+    df = df.copy()
+    df[COL_TYPE] = df[COL_SYMBOL].map(lambda sym: get_stock(sym).type)
+    mask = df[COL_TYPE].isin(ASSET_TYPES)
+    pruned = df.loc[~mask, COL_SYMBOL].tolist()
+    print(f"\t...pruned {(~mask).sum()} assets by type:")
+    print("\n".join(f"\t\t{sym}" for sym in pruned))
 
-    def _is_allowed(symbol: str) -> bool:
-        td = get_stock(symbol)
-        if td.type in {"CS", "ADRC", "OS"}:
-            return True
-        else:
-            print(f"\t...pruned {symbol} in exchange {td.type}")
-            return False
-
-    mask = df[COL_SYMBOL].map(_is_allowed)
-    print(f"\tPruned {(~mask).sum()} assets by type")
     return df[mask].reset_index(drop=True)
 
 

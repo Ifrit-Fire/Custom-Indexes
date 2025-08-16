@@ -7,6 +7,7 @@ COL_SYMBOL = "symbol"
 COL_WEIGHT = "weighted"
 COL_PRICE = "price"
 COL_VOLUME = "volume"
+COL_TYPE = "type"
 
 MIN_ULTRA_CAP = 1_000_000_000_000
 MIN_MEGA_CAP = 200_000_000_000
@@ -31,3 +32,9 @@ PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_DATA_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_DATA_SYMBOLS_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
+
+ASSET_ADR_COMMON = "ADRC"
+ASSET_COMMON_STOCK = "CS"
+ASSET_CRYPTO = "CC"
+ASSET_ORD_STOCK = "OS"
+ASSET_TYPES = {ASSET_ADR_COMMON, ASSET_COMMON_STOCK, ASSET_CRYPTO, ASSET_ORD_STOCK}

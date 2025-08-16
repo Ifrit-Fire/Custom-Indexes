@@ -6,9 +6,9 @@ from pandas import DataFrame
 
 from src import data_processing
 from src.clients import cache
-from src.config_handler import KEY_INDEX_TOP, config
+from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, COL_PRICE, MIN_LARGE_CAP, MIN_MID_CAP, \
-    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP
+    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP, COL_TYPE
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
 _BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
@@ -41,11 +41,11 @@ def get_stock(criteria: dict) -> DataFrame:
         df = pd.DataFrame(response.json())
         df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
         df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
-        df = data_processing.prune_asset_type(df)
+        df = data_processing.tag_prune_stock_asset_type(df)
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
-    print(f"\t...Retrieved {len(df)} stocks from {source}")
-    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME]]
+    print(f"\t...retrieved {len(df)} stocks from {source}")
+    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE]]
 
 
 def _get_cap_restriction(top: int):
