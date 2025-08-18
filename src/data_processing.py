@@ -7,9 +7,9 @@ from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 
 
-def normalize_symbols(series: pd.Series) -> pd.Series:
+def standardize_symbols(series: pd.Series) -> pd.Series:
     """
-    Normalize ticker symbols to a standard format.
+    Transform ticker symbols into a standard format.
 
     Args:
         series (pd.Series): Pandas Series of ticker symbols.

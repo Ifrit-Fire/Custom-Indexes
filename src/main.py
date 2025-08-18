@@ -4,7 +4,6 @@ from src.clients import fmp, cmc
 from src.config_handler import config
 from src.consts import COL_WEIGHT
 
-# TODO: Remove stablecoin for crypto
 # TODO: Switch all/most prints to logging
 # TODO: Add ability to clean old cache
 # TODO: Can we run main loop in parallel?
