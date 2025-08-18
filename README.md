@@ -50,7 +50,7 @@ POLY_API_TOKEN=your_polygon_api_key
 
 ## Running
 
-1. Run `build.sh` to setup the virtual environment.
+1. Run `build.sh` to setup the virtual environment with installed dependencies.
 2. Then run `main.py` to build the latest index outputs.
 3. Built indexes are placed in `/indexes`
 
