@@ -11,8 +11,9 @@ This project generates multiple index variants, each defined by:
 - Minimum weighting per constituent (_weight_min_)
 - Sort criteria (_currently market_cap_)
 
-All indexes are generated from combined stock + crypto market data and treat both asset classes equivalently during
-index construction.
+All indexes are composed of both stock + crypto. Both asset classes are treated equivalently during
+index construction. Constituents are filtered by liquidity, listing age, and asset type restrictions, then ranked by
+market capitalization.
 
 For detailed construction rules, see the [Index Methodology](docs/methodology.md).
 
@@ -24,9 +25,6 @@ For detailed construction rules, see the [Index Methodology](docs/methodology.md
 | top100-min1   | 100          | 1%             |
 | top250-min0.4 | 250          | 0.4%           |
 | top500-min0.2 | 500          | 0.2%           |
-
-The configuration also supports symbol consolidation (_e.g., merging BRK.A into BRK.B_) and a global minimum daily
-volume threshold.
 
 ## Requirements
 
@@ -53,7 +51,8 @@ POLY_API_TOKEN=your_polygon_api_key
 ## Running
 
 1. Run `build.sh` to setup the virtual environment.
-2. Then run `main.py` to start.
+2. Then run `main.py` to build the latest index outputs.
+3. Built indexes are placed in `/indexes`
 
 - Each run fetches fresh data from the APIs if no cache is available.
 - Cached data is stored in the `data/` directory and is refreshed daily.
