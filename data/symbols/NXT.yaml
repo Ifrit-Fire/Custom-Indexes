@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 6200 PASEO PADRE PARKWAY
+    city: FREMONT
+    postal_code: '94555'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/bmV4dHJhY2tlci5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/bmV4dHJhY2tlci5jb20/images/2025-04-04_logo.png
+cik: 0001852131
+composite_figi: BBG00835TPZ2
+currency_name: usd
+description: Nextracker (and its subsidiaries) is a leading provider of intelligent,
+    integrated solar tracker and software solutions used in utility-scale and distributed
+    generation solar projects around the world. Nextracker's products enable solar
+    panels in utility-scale power plants to follow the sun's movement across the sky
+    and optimize plant performance. Nextracker has operations in the United States,
+    Mexico, Spain and other countries in Europe, India, Australia, the Middle East,
+    Africa, and Brazil.
+homepage_url: https://www.nextracker.com
+list_date: '2023-02-09'
+locale: us
+market: stocks
+market_cap: 8963657544.92
+name: Nextracker Inc. Class A Common Stock
+phone_number: 510-270-2500
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG00835TQ17
+share_class_shares_outstanding: 147963974
+sic_code: '3812'
+sic_description: SEARCH, DETECTION, NAVAGATION, GUIDANCE, AERONAUTICAL SYS
+ticker: NXT
+ticker_root: NXT
+total_employees: 1300
+type: CS
+weighted_shares_outstanding: 147963974

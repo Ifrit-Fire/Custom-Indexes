@@ -1,0 +1,39 @@
+active: true
+address:
+    address1: 3311 EAST OLD SHAKOPEE ROAD
+    city: MINNEAPOLIS
+    postal_code: '55425'
+    state: MN
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZGF5Zm9yY2UuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZGF5Zm9yY2UuY29t/images/2025-04-04_logo.png
+cik: '0001725057'
+composite_figi: BBG005D7PF34
+currency_name: usd
+description: Dayforce is a global technology company providing cloud-based human capital
+    management solutions for large businesses looking to manage their payroll, tax,
+    benefits, and talent intelligence. The company primarily services customers in
+    the US with its flagship Dayforce platform but also services customers in select
+    European countries as well as Australia and New Zealand. Dayforce services the
+    Canadian HCM market with its Powerpay platform that specifically targets customers
+    with less than 100 employees. As of fiscal 2024, the Dayforce platform accounted
+    for almost 80% of companywide revenue and had 6,876 clients representing approximately
+    7.62 million employees.
+homepage_url: https://www.dayforce.com
+list_date: '2018-04-26'
+locale: us
+market: stocks
+market_cap: 8444540986.400001
+name: Dayforce, Inc.
+phone_number: 952-853-8100
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG005D7PF43
+share_class_shares_outstanding: 159692530
+sic_code: '7372'
+sic_description: SERVICES-PREPACKAGED SOFTWARE
+ticker: DAY
+ticker_root: DAY
+total_employees: 9600
+type: CS
+weighted_shares_outstanding: 159692530
