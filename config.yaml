@@ -7,6 +7,10 @@ default:
     volume:
         limit_min: 10000
 
+    age_min:
+        stock: { years: 1 }
+        crypto: { years: 3 }
+
 indexes:
     top10-min10:
         sort_by: market_cap

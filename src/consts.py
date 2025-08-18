@@ -8,6 +8,7 @@ COL_WEIGHT = "weighted"
 COL_PRICE = "price"
 COL_VOLUME = "volume"
 COL_TYPE = "type"
+COL_LIST_DATE = "list_date"
 
 MIN_ULTRA_CAP = 1_000_000_000_000
 MIN_MEGA_CAP = 200_000_000_000

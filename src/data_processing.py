@@ -1,10 +1,10 @@
 import pandas as pd
-from pandas import DataFrame
+from pandas import DataFrame, Timestamp, Series
 
 from src import transform
 from src.clients.polygon import get_stock
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES
+from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 
 
 def normalize_symbols(series: pd.Series) -> pd.Series:
@@ -74,12 +74,63 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     print(f"\t...removed {count - len(df)} securities for having no market cap.")
 
     count = len(df)
-    df = df[df[COL_VOLUME] > config.volume_limit_min()]
+    df = df[df[COL_VOLUME] > config.volume_limit_min]
     print(f"\t...removed {count - len(df)} securities for volume limit restriction.")
+
+    count = len(df)
+    df = _prune_by_list_date(df)
+    print(f"\t...removed {count - len(df)} securities for list-date restriction.")
 
     df = df.head(using[KEY_INDEX_TOP])
     print(f"\t...trimmed down to {len(df)} securities")
     return df
+
+
+def _prune_by_list_date(df: DataFrame) -> DataFrame:
+    """
+    Prune securities based on their list date, applying different minimum age
+    requirements for crypto and stocks.
+
+    The function:
+      1. Normalizes all list dates into timezone-aware midnight datetimes.
+      2. Computes cutoffs for crypto and stocks based on configuration rules.
+      3. Removes any securities that fail the minimum age requirements.
+
+    Args:
+        df (DataFrame): DataFrame containing security data with at least `COL_LIST_DATE` and `COL_TYPE`.
+
+    Returns:
+        DataFrame: Filtered DataFrame containing only securities that meet the minimum age restrictions.
+
+    Raises:
+        Exception: If `COL_LIST_DATE` cannot be fully converted to datetime with `pandas.to_datetime`.
+    """
+    df = df.copy()
+    df[COL_LIST_DATE] = pd.to_datetime(df[COL_LIST_DATE], format="mixed", utc=True, errors="raise").dt.normalize()
+    today_utc = pd.Timestamp.now(tz="UTC").normalize()
+    crypto_mask = _prune_by_date_mask(df, {ASSET_CRYPTO}, today_utc - config.crypto_age_min)
+    stock_mask = _prune_by_date_mask(df, ASSET_TYPES - {ASSET_CRYPTO}, today_utc - config.stock_age_min)
+    df = df[crypto_mask | stock_mask].reset_index(drop=True)
+    return df
+
+
+def _prune_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp) -> Series:
+    """
+    Build a boolean mask for filtering securities of specific asset types that meet a minimum list-date cutoff.
+
+    Args:
+        df (DataFrame): DataFrame containing security data, including `COL_TYPE` and `COL_LIST_DATE`.
+        asset_types (set[str]): Set of asset type identifiers to check.
+        cutoff (pd.Timestamp): Datetime cutoff; only securities listed on or before this date are kept.
+
+    Returns:
+        pd.Series: Boolean mask aligned with `df` indicating which rows should be kept.
+    """
+    mask = df[COL_TYPE].isin(asset_types)
+    filtered = mask & df[COL_LIST_DATE].le(cutoff)
+    removed = mask.sum() - filtered.sum()
+    print(f"\t...removed {removed} for type(s) {str(asset_types)} based on min list-date restriction {cutoff.date()}.")
+    return filtered
 
 
 def _merge_symbols(df: DataFrame) -> DataFrame:

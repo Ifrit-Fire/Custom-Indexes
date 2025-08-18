@@ -7,7 +7,8 @@ from pandas import DataFrame
 from src import data_processing
 from src.clients import cache
 from src.config_handler import KEY_INDEX_TOP
-from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, ASSET_CRYPTO
+from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, ASSET_CRYPTO, \
+    COL_LIST_DATE
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
@@ -27,7 +28,7 @@ def get_crypto(criteria: dict) -> DataFrame:
 
     Returns:
         DataFrame: DataFrame containing standardized columns:
-            `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`.
+            `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`, `COL_LIST_DATE`.
     """
 
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
@@ -44,11 +45,11 @@ def get_crypto(criteria: dict) -> DataFrame:
 
         df = pd.json_normalize(response.json()["data"])
         df.rename(
-            columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME},
-            inplace=True)
+            columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME,
+                     "date_added": COL_LIST_DATE}, inplace=True)
         df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = ASSET_CRYPTO
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
     print(f"\tRetrieved {len(df)} crypto from {source}")
-    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE]]
+    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE]]
