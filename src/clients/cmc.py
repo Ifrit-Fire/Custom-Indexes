@@ -28,7 +28,7 @@ def get_crypto(criteria: dict) -> DataFrame:
 
     Returns:
         DataFrame: DataFrame containing standardized columns:
-            `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`.
+            `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`, `COL_LIST_DATE`.
     """
 
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
