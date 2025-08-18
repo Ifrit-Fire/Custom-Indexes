@@ -54,6 +54,20 @@ def get_stock(criteria: dict) -> DataFrame:
 
 
 def _get_type_date_info(sym: str) -> Series:
+    """
+    Retrieve the asset type and listing date for a given symbol.
+
+    Args:
+        sym (str): Ticker symbol to query.
+
+    Returns:
+        Series: A Series containing:
+            - COL_TYPE: Asset type of the security.
+            - COL_LIST_DATE: Listing date in YYYY-MM-DD format.
+
+    Notes:
+        Falls back to a Polygon API call if the symbol’s data is not found on disk.
+    """
     ticker = polygon.get_stock(sym)
     return pd.Series({COL_TYPE: ticker.type, COL_LIST_DATE: ticker.list_date, })
 
