@@ -2,13 +2,13 @@ from pathlib import Path
 
 import pandas as pd
 import requests
-from pandas import DataFrame
+from pandas import DataFrame, Series
 
 from src import data_processing
-from src.clients import cache
+from src.clients import cache, polygon
 from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, COL_PRICE, MIN_LARGE_CAP, MIN_MID_CAP, \
-    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP, COL_TYPE, COL_LIST_DATE
+    MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP, COL_TYPE, COL_LIST_DATE, ASSET_TYPES
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
 _BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
@@ -44,13 +44,32 @@ def get_stock(criteria: dict) -> DataFrame:
 
         df = pd.DataFrame(response.json())
         df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
-        df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
-        df = data_processing.tag_prune_stock_asset_type(df)
-        df[COL_LIST_DATE] = df[COL_SYMBOL].map(lambda sym: data_processing.get_stock(sym).list_date)
+        df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
+        df[[COL_TYPE, COL_LIST_DATE]] = df[COL_SYMBOL].apply(_get_type_date_info)
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
+    df = data_processing.exclude_asset_types(from_df=df, not_in=ASSET_TYPES)
     print(f"\t...retrieved {len(df)} stocks from {source}")
     return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE]]
+
+
+def _get_type_date_info(sym: str) -> Series:
+    """
+    Retrieve the asset type and listing date for a given symbol.
+
+    Args:
+        sym (str): Ticker symbol to query.
+
+    Returns:
+        Series: A Series containing:
+            - COL_TYPE: Asset type of the security.
+            - COL_LIST_DATE: Listing date in YYYY-MM-DD format.
+
+    Notes:
+        Falls back to a Polygon API call if the symbol’s data is not found on disk.
+    """
+    ticker = polygon.get_stock(sym)
+    return pd.Series({COL_TYPE: ticker.type, COL_LIST_DATE: ticker.list_date, })
 
 
 def _get_cap_restriction(top: int):

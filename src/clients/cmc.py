@@ -16,6 +16,13 @@ BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 _BASE_FILENAME = Path(__file__).name
 
 
+def _exclude_stablecoins(df: DataFrame) -> DataFrame:
+    mask = df["tags"].apply(lambda tags: "stablecoin" in tags)
+    removed = df.loc[mask, COL_SYMBOL]
+    for item in removed.tolist(): print(f"\t...removed stablecoin {item}")
+    return df[~mask]
+
+
 def get_crypto(criteria: dict) -> DataFrame:
     """
     Retrieve a DataFrame of cryptocurrencies matching the given index criteria.
@@ -31,6 +38,7 @@ def get_crypto(criteria: dict) -> DataFrame:
             `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`, `COL_LIST_DATE`.
     """
 
+    print(f"\tRetrieving crypto...")
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -47,9 +55,10 @@ def get_crypto(criteria: dict) -> DataFrame:
         df.rename(
             columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME,
                      "date_added": COL_LIST_DATE}, inplace=True)
-        df[COL_SYMBOL] = data_processing.normalize_symbols(df[COL_SYMBOL])
+        df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = ASSET_CRYPTO
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
-    print(f"\tRetrieved {len(df)} crypto from {source}")
+    df = _exclude_stablecoins(df)
+    print(f"\t...retrieved {len(df)} crypto from {source}")
     return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE]]

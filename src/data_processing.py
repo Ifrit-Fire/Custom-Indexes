@@ -2,14 +2,13 @@ import pandas as pd
 from pandas import DataFrame, Timestamp, Series
 
 from src import transform
-from src.clients.polygon import get_stock
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 
 
-def normalize_symbols(series: pd.Series) -> pd.Series:
+def standardize_symbols(series: pd.Series) -> pd.Series:
     """
-    Normalize ticker symbols to a standard format.
+    Transform ticker symbols into a standard format.
 
     Args:
         series (pd.Series): Pandas Series of ticker symbols.
@@ -20,31 +19,23 @@ def normalize_symbols(series: pd.Series) -> pd.Series:
     return series.str.upper().str.replace("-", ".", regex=False)
 
 
-def tag_prune_stock_asset_type(df: DataFrame) -> DataFrame:
+def exclude_asset_types(from_df: DataFrame, not_in: set[str]) -> DataFrame:
     """
-    Tags each security in the DataFrame with its asset type, then filters to include only allowed stock asset types.
-
-    ⚠️ This function will raise an error if a non-stock (e.g., crypto) symbol is provided.
+    Exclude securities from the DataFrame whose asset type is not in a given set.
 
     Args:
-        df (pd.DataFrame): Pandas DataFrame containing at least the `COL_SYMBOL` column.
+        from_df (DataFrame): Input DataFrame containing at least the columns `COL_SYMBOL` and `COL_TYPE`.
+        not_in (set[str]): Set of asset types to retain in the DataFrame. All others are excluded.
 
     Returns:
-        pd.DataFrame: DataFrame filtered to only rows with allowed asset types, with `COL_TYPE`
-        added and the index reset to start at 0.
-
-    Notes:
-        This function will make an API call once per symbol if it cannot find the stored
-        information on disk.
+        DataFrame: Filtered DataFrame containing only rows with allowed asset types. The index is reset to start at 0.
     """
-    df = df.copy()
-    df[COL_TYPE] = df[COL_SYMBOL].map(lambda sym: get_stock(sym).type)
-    mask = df[COL_TYPE].isin(ASSET_TYPES)
-    pruned = df.loc[~mask, COL_SYMBOL].tolist()
+    mask = from_df[COL_TYPE].isin(not_in)
+    pruned = from_df.loc[~mask, COL_SYMBOL].tolist()
     print(f"\t...pruned {(~mask).sum()} assets by type:")
     print("\n".join(f"\t\t{sym}" for sym in pruned))
 
-    return df[mask].reset_index(drop=True)
+    return from_df[mask].reset_index(drop=True)
 
 
 def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
