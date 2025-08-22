@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 from pandas import DataFrame
 
-from src import data_processing
+from src import data_processing, timber
 from src.clients import cache
 from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, ASSET_CRYPTO, \
@@ -14,22 +14,6 @@ from src.consts import COL_NAME, COL_SYMBOL, COL_MC, CMC_API_TOKEN, COL_PRICE, C
 
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 _BASE_FILENAME = Path(__file__).name
-
-
-def _exclude_stablecoins(df: DataFrame) -> DataFrame:
-    """
-    Remove stablecoins from the DataFrame based on the `tags` column.
-
-    Args:
-        df (pd.DataFrame): Input DataFrame containing at least `tags` and `COL_SYMBOL` columns.
-
-    Returns:
-        pd.DataFrame: A filtered DataFrame with all stablecoins removed.
-    """
-    mask = df["tags"].apply(lambda tags: "stablecoin" in tags)
-    removed = df.loc[mask, COL_SYMBOL]
-    for item in removed.tolist(): print(f"\t...removed stablecoin {item}")
-    return df[~mask]
 
 
 def get_crypto(criteria: dict) -> DataFrame:
@@ -47,7 +31,8 @@ def get_crypto(criteria: dict) -> DataFrame:
             `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`, `COL_LIST_DATE`.
     """
 
-    print(f"\tRetrieving crypto...")
+    log = timber.plant()
+    log.info("Phase starts", fetch="crypto")
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -69,5 +54,25 @@ def get_crypto(criteria: dict) -> DataFrame:
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
     df = _exclude_stablecoins(df)
-    print(f"\t...retrieved {len(df)} crypto from {source}")
+    log.info("Phase ends", fetch="crypto", count=len(df), source=source)
     return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE]]
+
+
+def _exclude_stablecoins(df: DataFrame) -> DataFrame:
+    """
+    Remove stablecoins from the DataFrame based on the `tags` column.
+
+    Args:
+        df (pd.DataFrame): Input DataFrame containing at least `tags` and `COL_SYMBOL` columns.
+
+    Returns:
+        pd.DataFrame: A filtered DataFrame with all stablecoins removed.
+    """
+    log = timber.plant()
+    mask = df["tags"].apply(lambda tags: "stablecoin" in tags)
+
+    for symbol in df.loc[mask, COL_SYMBOL]:
+        log.debug("Excluded", symbol=symbol, reason="stablecoin")
+    log.info("Excluded", items="symbols", count=int((mask).sum()), reason="stablecoin")
+
+    return df[~mask]

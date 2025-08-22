@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas import DataFrame, Timestamp, Series
 
-from src import transform, timber
+from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 
@@ -19,26 +19,7 @@ def standardize_symbols(series: pd.Series) -> pd.Series:
     return series.str.upper().str.replace("-", ".", regex=False)
 
 
-def exclude_asset_types(from_df: DataFrame, not_in: set[str]) -> DataFrame:
-    """
-    Exclude securities from the DataFrame whose asset type is not in a given set.
 
-    Args:
-        from_df (DataFrame): Input DataFrame containing at least the columns `COL_SYMBOL` and `COL_TYPE`.
-        not_in (set[str]): Set of asset types to retain in the DataFrame. All others are excluded.
-
-    Returns:
-        DataFrame: Filtered DataFrame containing only rows with allowed asset types. The index is reset to start at 0.
-    """
-    log = timber.plant()
-    mask = from_df[COL_TYPE].isin(not_in)
-    excluded_df = from_df.loc[~mask, [COL_SYMBOL, COL_TYPE]]
-
-    for _, row in excluded_df.iterrows():
-        log.debug("Excluded", symbol=row[COL_SYMBOL], reason=row[COL_TYPE])
-    log.info("Excluded", items="symbols", count=int((~mask).sum()), reason="Asset Type")
-
-    return from_df[mask].reset_index(drop=True)
 
 
 def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
