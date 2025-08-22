@@ -3,8 +3,9 @@ from decimal import Decimal
 import numpy as np
 from pandas import DataFrame
 
+from src import timber
 from src.config_handler import KEY_INDEX_WEIGHT_MIN
-from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL
+from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL, COL_TYPE
 
 
 def add_weightings(df: DataFrame, criteria: dict) -> DataFrame:
@@ -25,20 +26,29 @@ def add_weightings(df: DataFrame, criteria: dict) -> DataFrame:
     Returns:
         DataFrame: A new DataFrame with the `COL_WEIGHT` column added, meeting the weight constraints.
     """
+    log = timber.plant()
+    log.info("Phase starts", create="weights")
     min_weight = criteria[KEY_INDEX_WEIGHT_MIN]
     precision = _decimal_places(min_weight) + 2
+    log.debug("Calculate", precision=precision)
 
-    print("\tCreating weighted column...")
     df_index = df.copy()
     df_index[COL_WEIGHT] = round(df_index[COL_MC] / df_index[COL_MC].sum() * 100, precision)
     while df_index[COL_WEIGHT].min() < min_weight:
         symbol = df_index.iloc[-1][COL_SYMBOL]
         weight = df_index.iloc[-1][COL_WEIGHT]
-        print(f"\t...dropping {symbol} with {weight:.{precision}f}%")
+        type = df_index.iloc[-1][COL_TYPE]
+        log.info("Removed", symbol=symbol, weight=f"{weight:.{precision}f}", type=type)
 
         df_index = df_index.iloc[:-1]
         df_index[COL_WEIGHT] = round(df_index[COL_MC] / df_index[COL_MC].sum() * 100, precision)
-    return _fix_rounding(df_index, precision)
+    df_index = _fix_rounding(df_index, precision)
+
+    final_count = len(df_index)
+    removed_count = len(df) - final_count
+    weight_sum = f"{df_index[COL_WEIGHT].sum():.2f}"
+    log.info("Phase ends", create="weights", sum=weight_sum, dropped=removed_count, remaining=final_count)
+    return df_index
 
 
 def _fix_rounding(df: DataFrame, precision: int) -> DataFrame:
@@ -58,6 +68,7 @@ def _fix_rounding(df: DataFrame, precision: int) -> DataFrame:
     Returns:
         DataFrame: `COL_WEIGHT` column with corrected weights.
     """
+    log = timber.plant()
     scale = 10 ** (precision - 1)
     s_exact_units = df[COL_MC] / df[COL_MC].sum() * 100 * scale  # Scale moves exact % to integer space
     s_base_units = np.floor(s_exact_units).astype(int)  # What we'll increase to fix rounding errors
@@ -65,7 +76,7 @@ def _fix_rounding(df: DataFrame, precision: int) -> DataFrame:
 
     # how many 1-unit bumps we still need to reach exactly 100%
     units_to_add = int(round(100 * scale - s_base_units.sum()))
-
+    log.debug("Fix rounding", units=units_to_add)
     if units_to_add > 0:
         # Now that we have a series representing all remainders we want to
         # 1) Sort by largest first
