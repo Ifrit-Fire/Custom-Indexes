@@ -1,0 +1,31 @@
+active: true
+address:
+    address1: 6100 N WESTERN AVE
+    city: OKLAHOMA CITY
+    postal_code: '73118'
+    state: OK
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXhwYW5kZW5lcmd5LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXhwYW5kZW5lcmd5LmNvbQ/images/2025-04-04_logo.svg
+cik: 0000895126
+composite_figi: BBG00Z6RFN18
+currency_name: usd
+description: Expand Energy Corp independent natural gas producer in the United States.
+    It is fueling a more affordable, reliable and lower-carbon future. The group focused
+    on developing abundant natural gas, oil, and gas liquids to expand energy access.
+homepage_url: https://www.expandenergy.com
+list_date: '2021-02-10'
+locale: us
+market: stocks
+name: Expand Energy Corporation Class B Warrants
+phone_number: (405) 848-8000
+primary_exchange: XNAS
+round_lot: 100
+share_class_shares_outstanding: 12290669
+sic_code: '1311'
+sic_description: CRUDE PETROLEUM & NATURAL GAS
+ticker: EXEEZ
+ticker_root: EXEE
+ticker_suffix: Z
+total_employees: 1700
+type: WARRANT

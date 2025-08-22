@@ -1,0 +1,36 @@
+active: true
+address:
+    address1: 41 UNIVERSITY DRIVE
+    address2: SUITE 202
+    city: NEWTOWN
+    postal_code: '18940'
+    state: PA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/ZXBhbS5jb20/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/ZXBhbS5jb20/images/2025-04-04_logo.svg
+cik: '0001352010'
+composite_figi: BBG000MHTV89
+currency_name: usd
+description: EPAM Systems is a global IT services firm that offers platform engineering,
+    software development, and consulting services. EPAM's largest market is North
+    America, which represents approximately 60% of revenue. Offerings span assisting
+    companies with new technologies, such as artificial intelligence, virtual reality,
+    and robotics.
+homepage_url: https://www.epam.com
+list_date: '2012-02-08'
+locale: us
+market: stocks
+market_cap: 9270193533.96
+name: EPAM SYSTEMS, INC.
+phone_number: (267) 759-9000
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SKDJH8
+share_class_shares_outstanding: 55696909
+sic_code: '7371'
+sic_description: SERVICES-COMPUTER PROGRAMMING SERVICES
+ticker: EPAM
+ticker_root: EPAM
+total_employees: 61200
+type: CS
+weighted_shares_outstanding: 55696909

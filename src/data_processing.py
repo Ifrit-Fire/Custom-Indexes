@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas import DataFrame, Timestamp, Series
 
-from src import transform
+from src import transform, timber
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 
@@ -19,28 +19,9 @@ def standardize_symbols(series: pd.Series) -> pd.Series:
     return series.str.upper().str.replace("-", ".", regex=False)
 
 
-def exclude_asset_types(from_df: DataFrame, not_in: set[str]) -> DataFrame:
-    """
-    Exclude securities from the DataFrame whose asset type is not in a given set.
-
-    Args:
-        from_df (DataFrame): Input DataFrame containing at least the columns `COL_SYMBOL` and `COL_TYPE`.
-        not_in (set[str]): Set of asset types to retain in the DataFrame. All others are excluded.
-
-    Returns:
-        DataFrame: Filtered DataFrame containing only rows with allowed asset types. The index is reset to start at 0.
-    """
-    mask = from_df[COL_TYPE].isin(not_in)
-    pruned = from_df.loc[~mask, COL_SYMBOL].tolist()
-    print(f"\t...pruned {(~mask).sum()} assets by type:")
-    print("\n".join(f"\t\t{sym}" for sym in pruned))
-
-    return from_df[mask].reset_index(drop=True)
-
-
 def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     """
-    Merge, sort, prune, and filter multiple security DataFrames into a final refined list
+    Merge, sort, and filter multiple security DataFrames into a final refined list
     based on configuration settings.
 
     Args:
@@ -51,36 +32,42 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     Returns:
         DataFrame: A new DataFrame meeting all filter and sorting criteria.
     """
-    print(f"\tRefining data based on configurations...")
-    print(f"\t...merging all security DataFrames...")
+    log = timber.plant()
+    log.info("Phase starts", data="refinement")
+
+    log.debug("Merging Dataframes", count=len(dfs))
     df = pd.concat(dfs, axis=0, ignore_index=True)
     df = _merge_symbols(df)
 
-    print(f"\t...sorting by {using[KEY_INDEX_SORTBY]}")
     col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
     df = df.sort_values(by=col, ascending=False)
+    log.info("Sorted", using=using[KEY_INDEX_SORTBY], column=col)
 
     count = len(df)
     df = df[df[COL_MC] > 0]
-    print(f"\t...removed {count - len(df)} securities for having no market cap.")
+    log.debug("Filtered", count=count - len(df), reason="no market cap")
 
     count = len(df)
     df = df[df[COL_VOLUME] > config.volume_limit_min]
-    print(f"\t...removed {count - len(df)} securities for volume limit restriction.")
+    log.info("Filtered", count=count - len(df), reason="volume", limit=config.volume_limit_min)
 
     count = len(df)
-    df = _prune_by_list_date(df)
-    print(f"\t...removed {count - len(df)} securities for list-date restriction.")
+    df = _filter_by_list_date(df)
 
     df = df.head(using[KEY_INDEX_TOP])
-    print(f"\t...trimmed down to {len(df)} securities")
+    count = len(df)
+    if count < using[KEY_INDEX_TOP]:
+        log.critical("ValueError", reason="Unable to satisfy criteria", top=using[KEY_INDEX_TOP])
+        raise ValueError(f"Not enough remaining securities for top {using[KEY_INDEX_TOP]} constraint")
+    log.info("Selected", count=count, reason="top")
+
+    log.info("Phase ends", data="refinement")
     return df
 
 
-def _prune_by_list_date(df: DataFrame) -> DataFrame:
+def _filter_by_list_date(df: DataFrame) -> DataFrame:
     """
-    Prune securities based on their list date, applying different minimum age
-    requirements for crypto and stocks.
+    Filter securities based on their list date, applying different minimum age requirements for crypto and stocks.
 
     The function:
       1. Normalizes all list dates into timezone-aware midnight datetimes.
@@ -96,16 +83,21 @@ def _prune_by_list_date(df: DataFrame) -> DataFrame:
     Raises:
         Exception: If `COL_LIST_DATE` cannot be fully converted to datetime with `pandas.to_datetime`.
     """
+    log = timber.plant()
+    count = len(df)
     df = df.copy()
+
     df[COL_LIST_DATE] = pd.to_datetime(df[COL_LIST_DATE], format="mixed", utc=True, errors="raise").dt.normalize()
     today_utc = pd.Timestamp.now(tz="UTC").normalize()
-    crypto_mask = _prune_by_date_mask(df, {ASSET_CRYPTO}, today_utc - config.crypto_age_min)
-    stock_mask = _prune_by_date_mask(df, ASSET_TYPES - {ASSET_CRYPTO}, today_utc - config.stock_age_min)
+    crypto_mask = _filter_by_date_mask(df, {ASSET_CRYPTO}, today_utc - config.crypto_age_min)
+    stock_mask = _filter_by_date_mask(df, ASSET_TYPES - {ASSET_CRYPTO}, today_utc - config.stock_age_min)
     df = df[crypto_mask | stock_mask].reset_index(drop=True)
+
+    log.info("Filtered", count=count - len(df), reason="list-date")
     return df
 
 
-def _prune_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp) -> Series:
+def _filter_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp) -> Series:
     """
     Build a boolean mask for filtering securities of specific asset types that meet a minimum list-date cutoff.
 
@@ -117,11 +109,15 @@ def _prune_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp)
     Returns:
         pd.Series: Boolean mask aligned with `df` indicating which rows should be kept.
     """
+    log = timber.plant()
     mask = df[COL_TYPE].isin(asset_types)
-    filtered = mask & df[COL_LIST_DATE].le(cutoff)
-    removed = mask.sum() - filtered.sum()
-    print(f"\t...removed {removed} for type(s) {str(asset_types)} based on min list-date restriction {cutoff.date()}.")
-    return filtered
+    filtered_mask = mask & df[COL_LIST_DATE].le(cutoff)
+    removed = df.loc[mask & ~filtered_mask, [COL_SYMBOL, COL_TYPE, COL_LIST_DATE]]
+    for _, row in removed.iterrows():
+        log.info("Filtered out", symbol=row[COL_SYMBOL], reason="list-date", asset_type=row[COL_TYPE],
+                 listdate=str(row[COL_LIST_DATE]), cutoff=str(cutoff))
+
+    return filtered_mask
 
 
 def _merge_symbols(df: DataFrame) -> DataFrame:
@@ -137,15 +133,23 @@ def _merge_symbols(df: DataFrame) -> DataFrame:
     Returns:
         DataFrame: A new DataFrame with merged symbols and adjusted market cap values.
     """
+    log = timber.plant()
     df = df.copy()
     for merge, into in config.symbol_merge.items():
-        merge_row = df.loc[df[COL_SYMBOL] == merge, COL_MC]
-        if merge_row.empty: continue
-        df = df[df[COL_SYMBOL] != merge]
-        print(f"\t...removed {merge} Symbol")
+        merge_mask = df[COL_SYMBOL].eq(merge)
+        if not merge_mask.any():
+            log.debug("Not Found", symbol=merge, action="merge", into=into)
+            continue
 
-        mask = df[COL_SYMBOL] == into
-        if mask.any():
-            df.loc[mask, COL_MC] += merge_row.iat[0]
-            print(f"\t...added {merge} market cap into {into}")
+        into_mask = df[COL_SYMBOL].eq(into)
+        if into_mask.any():
+            # We found both "merge" and "into" within the dataset, remove "merge" and add it's mc to "into"
+            market_cap = df.loc[merge_mask, COL_MC].iat[0]
+            df = df.loc[~merge_mask]
+            df.loc[into_mask, COL_MC] += market_cap
+        else:
+            # We only found "merge". The "into" symbol isn't in dataset. Just replace "merge" symbol with "into"
+            df.loc[merge_mask, COL_SYMBOL] = into
+        log.info("Merged", symbol=merge, into=into, method="market_cap")
+
     return df

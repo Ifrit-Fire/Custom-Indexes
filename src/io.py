@@ -4,10 +4,12 @@ from datetime import date
 
 from pandas import DataFrame
 
+from src import timber
 from src.consts import COL_MC, COL_WEIGHT, PATH_INDEXES_ROOT
 
 
 def save_index(name: str, df: DataFrame):
+    log = timber.plant()
     df_save = df.copy()
     df_save[COL_MC] = df_save[COL_MC] / 1_000_000_000
     df_save[COL_MC] = df_save[COL_MC].apply(lambda x: f"{x:.3f}")
@@ -17,7 +19,7 @@ def save_index(name: str, df: DataFrame):
     filepath = PATH_INDEXES_ROOT / name / f"{today_str}.csv"
     filepath.parent.mkdir(parents=True, exist_ok=True)
     df_save.to_csv(filepath)
-    print(f"\tSaved {filepath}")
+    log.debug("Saved", index=name, file=filepath.name, type="csv", count=len(df), path=str(filepath.parent))
 
 
 def console_countdown(msg: str, seconds: int):

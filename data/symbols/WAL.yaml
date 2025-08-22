@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: ONE E. WASHINGTON STREET
+    city: PHOENIX
+    postal_code: '85004'
+    state: AZ
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/d2VzdGVybmFsbGlhbmNlYmFuY29ycG9yYXRpb24uY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/d2VzdGVybmFsbGlhbmNlYmFuY29ycG9yYXRpb24uY29t/images/2025-04-04_logo.svg
+cik: '0001212545'
+composite_figi: BBG000Q1KFH4
+currency_name: usd
+description: Western Alliance Bancorporation is a Las Vegas-based holding company
+    with regional banks operating in Nevada, Arizona, and California. The bank offers
+    retail banking services and focuses on mortgages for retail customers and commercial
+    loans. The company's reportable segments are Commercial segment includes provides
+    commercial banking and treasury management products and services to small and
+    middle-market businesses, specialized banking services to sophisticated commercial
+    institutions and investors within niche industries, as well as financial services
+    to the real estate industry. Consumer Related segment offers both commercial banking
+    services to enterprises in consumer-related sectors and consumer banking services,
+    such as residential mortgage banking and Corporate & Other.
+homepage_url: https://www.westernalliancebancorporation.com
+list_date: '2005-06-30'
+locale: us
+market: stocks
+market_cap: 9103219943.68
+name: Western Alliance Bancorporation
+phone_number: 602-389-3500
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG001SLM522
+share_class_shares_outstanding: 110368816
+sic_code: '6022'
+sic_description: STATE COMMERCIAL BANKS
+ticker: WAL
+ticker_root: WAL
+total_employees: 3524
+type: CS
+weighted_shares_outstanding: 110368816

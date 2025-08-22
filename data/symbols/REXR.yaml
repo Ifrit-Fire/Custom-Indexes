@@ -1,0 +1,37 @@
+active: true
+address:
+    address1: 11620 WILSHIRE BOULEVARD, SUITE 1000
+    city: LOS ANGELES
+    postal_code: '90025'
+    state: CA
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cmV4Zm9yZGluZHVzdHJpYWwuY29t/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cmV4Zm9yZGluZHVzdHJpYWwuY29t/images/2025-04-04_logo.svg
+cik: 0001571283
+composite_figi: BBG004MB82R0
+currency_name: usd
+description: Rexford Industrial Realty Inc is a real estate investment trust engaged
+    in owning, operating, and acquiring industrial properties in Southern California
+    infill markets. The goal is to generate attractive risk-adjusted returns for stockholders
+    by providing superior access to industrial property investments in Southern California
+    infill markets. It has one operating segment business of investing in, operating,
+    and repositioning/redeveloping industrial real estate properties located in Southern
+    California infill markets.
+homepage_url: https://www.rexfordindustrial.com
+list_date: '2013-07-19'
+locale: us
+market: stocks
+market_cap: 9310677896.240002
+name: REXFORD INDUSTRIAL REALTY, INC.
+phone_number: 310-966-1680
+primary_exchange: XNYS
+round_lot: 100
+share_class_figi: BBG004MB82S9
+share_class_shares_outstanding: 236672036
+sic_code: '6798'
+sic_description: REAL ESTATE INVESTMENT TRUSTS
+ticker: REXR
+ticker_root: REXR
+total_employees: 271
+type: CS
+weighted_shares_outstanding: 236672036

@@ -1,0 +1,40 @@
+active: true
+address:
+    address1: 1515 BROADWAY
+    city: NEW YORK
+    postal_code: '10036'
+    state: NY
+branding:
+    icon_url: https://api.polygon.io/v1/reference/company-branding/cGFyYW1vdW50LmNvbQ/images/2025-04-04_icon.jpeg
+    logo_url: https://api.polygon.io/v1/reference/company-branding/cGFyYW1vdW50LmNvbQ/images/2025-04-04_logo.svg
+cik: '0002041610'
+composite_figi: BBG01VS5NK99
+currency_name: usd
+description: 'Paramount Global operates in three global business segments: TV media,
+    filmed entertainment, and direct to consumer. The TV media business includes television
+    production studios and various broadcast and cable networks, including CBS, 15
+    owned CBS affiliates, Paramount, Nickelodeon, MTV, BET, and VH1. Filmed entertainment
+    consists multiple film studios, most importantly Paramount Pictures. The film
+    studios produce and distribute movies that they license to movie theaters and
+    other media outlets. Direct to consumer includes the Paramount+, Pluto TV, and
+    BET+ streaming services. Much of the content on Paramount''s streaming platforms
+    is created by the production studios housed within the firm''s other two business
+    segments.'
+homepage_url: https://www.paramount.com
+list_date: '1937-08-02'
+locale: us
+market: stocks
+market_cap: 15324225902.04
+name: Paramount Skydance Corporation Class B Common Stock
+phone_number: 212-258-6000
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG01VS5NKB6
+share_class_shares_outstanding: 1064544631
+sic_code: '4833'
+sic_description: TELEVISION BROADCASTING STATIONS
+ticker: PSKY
+ticker_root: PSKY
+total_employees: 18600
+type: CS
+weighted_shares_outstanding: 1096153498
