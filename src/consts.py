@@ -21,19 +21,24 @@ FMP_API_TOKEN = os.getenv("FMP_API_TOKEN")
 POLY_API_TOKEN = os.getenv("POLY_API_TOKEN")
 
 PATH_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
 PATH_DATA_ROOT = PATH_PROJECT_ROOT / "data"
 PATH_DATA_CACHE_ROOT = PATH_DATA_ROOT / "cache"
 PATH_DATA_SYMBOLS_ROOT = PATH_DATA_ROOT / "symbols"
 PATH_INDEXES_ROOT = PATH_PROJECT_ROOT / "indexes"
-PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
+PATH_LOGS_ROOT = PATH_PROJECT_ROOT / "logs"
 
 PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_DATA_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_DATA_SYMBOLS_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
+PATH_LOGS_ROOT.mkdir(parents=True, exist_ok=True)
 
 ASSET_ADR_COMMON = "ADRC"
 ASSET_COMMON_STOCK = "CS"
 ASSET_CRYPTO = "CC"
 ASSET_ORD_STOCK = "OS"
 ASSET_TYPES = {ASSET_ADR_COMMON, ASSET_COMMON_STOCK, ASSET_CRYPTO, ASSET_ORD_STOCK}
+
+FORM_STRUCT = "structured"
+FORM_TEXT = "text"
