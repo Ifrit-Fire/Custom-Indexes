@@ -2,8 +2,7 @@ default:
     symbol_consolidate:
         -   merge: BRK.A  # Low volume trades, excessive pricing, normally excluded in most indexes
             into: BRK.B
-        -   merge: BRK-A  # Alt variation
-            into: BRK-B
+
     volume:
         limit_min: 10000
 
