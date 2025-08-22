@@ -1,10 +1,9 @@
 import src.data_processing as dp
-from src import allocations, io
+from src import allocations, io, timber
 from src.clients import fmp, cmc
 from src.config_handler import config
 from src.consts import COL_WEIGHT
 
-# TODO: Switch all/most prints to logging
 # TODO: Indexes - should always have a latest named file to act as an evergreen link.
 # TODO: Add ability to clean old cache
 # TODO: Can we run main loop in parallel?
@@ -16,7 +15,8 @@ from src.consts import COL_WEIGHT
 # TODO: Update Indexes with historical data to run performance metrics on
 
 for index, criteria in config.get_all_indexes().items():
-    print(f"{index} - Creating Index")
+    log = timber.plant(index)
+    log.info("Phase starts", create=index)
 
     df_stock = fmp.get_stock(criteria)
     df_crypto = cmc.get_crypto(criteria)

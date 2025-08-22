@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas import DataFrame, Timestamp, Series
 
-from src import transform
+from src import transform, timber
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 
@@ -30,10 +30,13 @@ def exclude_asset_types(from_df: DataFrame, not_in: set[str]) -> DataFrame:
     Returns:
         DataFrame: Filtered DataFrame containing only rows with allowed asset types. The index is reset to start at 0.
     """
+    log = timber.plant()
     mask = from_df[COL_TYPE].isin(not_in)
-    pruned = from_df.loc[~mask, COL_SYMBOL].tolist()
-    print(f"\t...pruned {(~mask).sum()} assets by type:")
-    print("\n".join(f"\t\t{sym}" for sym in pruned))
+    excluded_df = from_df.loc[~mask, [COL_SYMBOL, COL_TYPE]]
+
+    for _, row in excluded_df.iterrows():
+        log.debug("Excluded", symbol=row[COL_SYMBOL], reason=row[COL_TYPE])
+    log.info("Excluded", items="symbols", count=int((~mask).sum()), reason="Asset Type")
 
     return from_df[mask].reset_index(drop=True)
 

@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 from pandas import DataFrame, Series
 
-from src import data_processing
+from src import data_processing, timber
 from src.clients import cache, polygon
 from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, FMP_API_TOKEN, COL_PRICE, MIN_LARGE_CAP, MIN_MID_CAP, \
@@ -32,7 +32,8 @@ def get_stock(criteria: dict) -> DataFrame:
         DataFrame: DataFrame containing standardized columns: `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`,
         `COL_VOLUME`, `COL_TYPE`, `COL_LIST_DATE`.
     """
-    print(f"\tRetrieving stocks...")
+    log = timber.plant()
+    log.info("Phase starts", fetch="stocks")
     df = cache.grab_api_cache(_BASE_FILENAME, criteria)
     source = "cache"
 
@@ -49,7 +50,7 @@ def get_stock(criteria: dict) -> DataFrame:
         cache.store_api_cache(_BASE_FILENAME, criteria, df)
 
     df = data_processing.exclude_asset_types(from_df=df, not_in=ASSET_TYPES)
-    print(f"\t...retrieved {len(df)} stocks from {source}")
+    log.info("Phase ends", fetch="stocks", count=len(df), source=source)
     return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE]]
 
 

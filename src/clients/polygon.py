@@ -1,12 +1,13 @@
 import json
 import re
+import sys
 
 import yaml
 from polygon import RESTClient, BadResponse
 from polygon.rest.models import TickerDetails
 from urllib3.exceptions import MaxRetryError
 
-from src import io
+from src import io, timber
 from src.consts import POLY_API_TOKEN, PATH_DATA_SYMBOLS_ROOT
 
 # Codes used by polygon
@@ -74,8 +75,9 @@ def _fix_dot_p(symbol: str) -> str:
     Returns:
         str: Normalized ticker symbol.
     """
+    log = timber.plant()
     norm = re.sub(r'\.P', 'p', symbol)
-    if norm != symbol: print(f"\t...normalized {symbol} to {norm}")
+    if norm != symbol: log.debug("Polygon normalization", symbol=symbol, normalized=norm)
     return norm
 
 
@@ -100,10 +102,12 @@ def get_stock(symbol: str) -> TickerDetails:
         - On API failure due to rate limits or network issues, the function waits
           60 seconds between retries.
     """
-
     # Try loading from disk first
+    log = timber.plant()
     ticker = _load_ticker_details(symbol)
-    if ticker: return ticker
+    if ticker:
+        log.debug("Fetch", target="TickerDetails", source="disk", symbol=symbol)
+        return ticker
 
     # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
@@ -112,18 +116,19 @@ def get_stock(symbol: str) -> TickerDetails:
     for attempt in range(retries := 3):
         try:
             raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk
-            if attempt > 0: print("\tSuccess!")
+            if attempt > 0: log.info("Retry success", attempt=attempt + 1, retries=retries)
             attempt = 0
             break
-        except MaxRetryError as e:
-            print(f"\t{e.reason}")
-            print(f"\tPossibly exceeded your accounts API limit. Attempt {attempt + 1} of {retries}")
-            io.console_countdown("\tRetrying", 60)
+        except MaxRetryError:
+            log.warning("MaxRetryError", reason="exceeded API limit", attempt=attempt + 1, retries=retries)
+            io.console_countdown(msg="\tRetrying", seconds=60)
         except BadResponse as e:
+            log.critical("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym)
             print(f"\t{str(e)}")
-            print(f"\tBadResponse for ticker {symbol} normalized {norm_sym}")
+            sys.exit(1)
 
     if attempt >= retries - 1:
+        log.critical("Retry failed", reason="exceeded retries", symbol=symbol, attempt=attempt + 1, retries=retries)
         raise ConnectionError("Unknown issue with API end point.")
 
     # Save to disk

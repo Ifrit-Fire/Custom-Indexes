@@ -4,6 +4,7 @@ from pathlib import Path
 import pandas as pd
 from pandas import DataFrame
 
+from src import timber
 from src.consts import PATH_DATA_CACHE_ROOT
 
 
@@ -16,8 +17,10 @@ def store_api_cache(basename: str, criteria: dict, df: DataFrame):
         criteria (dict): Dictionary of criteria used to build a unique cache filename.
         df (DataFrame): DataFrame to be cached.
     """
+    log = timber.plant()
     filepath = _get_file_name(basename, criteria)
     df.to_pickle(filepath)
+    log.debug("Saved", file=filepath.name, type="pickle", count=len(df), path=str(filepath.parent))
 
 
 def grab_api_cache(basename: str, criteria: dict) -> DataFrame:
@@ -31,8 +34,14 @@ def grab_api_cache(basename: str, criteria: dict) -> DataFrame:
     Returns:
         DataFrame: Cached DataFrame if found, otherwise an empty DataFrame.
     """
+    log = timber.plant()
     filepath = _get_file_name(basename, criteria)
-    return pd.read_pickle(filepath) if filepath.exists() else DataFrame()
+    if filepath.exists():
+        df = pd.read_pickle(filepath)
+        log.debug("Load", file=filepath.name, type="pickle", count=len(df), path=str(filepath.parent))
+    else:
+        df = DataFrame()
+    return df
 
 
 def _get_file_name(basename: str, criteria: dict) -> Path:
