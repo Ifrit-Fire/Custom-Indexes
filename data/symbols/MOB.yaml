@@ -1,0 +1,25 @@
+active: true
+cik: 0001898643
+composite_figi: BBG017F91SX8
+currency_name: usd
+description: Mobilicom Ltd is a provider of cybersecurity and smart solutions for
+    drones, robotics & autonomous platforms. As a high-tech company, it designs, develops,
+    and delivers smart solutions targeting global drone, robotics, and autonomous
+    system manufacturers. Its products include OS3 Platform Software, ICE Cybersecurity
+    Software, MCU Mesh Networking, SkyHopper Datalinks, Mobile Ground Control Stations
+    and System Engineering Services.
+homepage_url: https://www.mobilicom.com
+list_date: '2022-08-25'
+locale: us
+market: stocks
+market_cap: 29908708.830000002
+name: Mobilicom Limited American Depositary Shares
+primary_exchange: XNAS
+round_lot: 100
+share_class_figi: BBG017F91TT1
+share_class_shares_outstanding: 7495917
+ticker: MOB
+ticker_root: MOB
+total_employees: 30
+type: ADRC
+weighted_shares_outstanding: 7495917
