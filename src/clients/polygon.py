@@ -117,6 +117,7 @@ def get_stock(symbol: str) -> TickerDetails:
         try:
             raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk
             if attempt > 0: log.info("Retry success", attempt=attempt + 1, retries=retries)
+            log.debug("Fetch", target="TickerDetails", source="API", symbol=symbol)
             attempt = 0
             break
         except MaxRetryError:
