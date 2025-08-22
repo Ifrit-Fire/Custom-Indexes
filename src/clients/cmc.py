@@ -17,6 +17,15 @@ _BASE_FILENAME = Path(__file__).name
 
 
 def _exclude_stablecoins(df: DataFrame) -> DataFrame:
+    """
+    Remove stablecoins from the DataFrame based on the `tags` column.
+
+    Args:
+        df (pd.DataFrame): Input DataFrame containing at least `tags` and `COL_SYMBOL` columns.
+
+    Returns:
+        pd.DataFrame: A filtered DataFrame with all stablecoins removed.
+    """
     mask = df["tags"].apply(lambda tags: "stablecoin" in tags)
     removed = df.loc[mask, COL_SYMBOL]
     for item in removed.tolist(): print(f"\t...removed stablecoin {item}")
