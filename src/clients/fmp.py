@@ -39,6 +39,10 @@ def get_stock(criteria: dict) -> DataFrame:
     source = "cache"
 
     if df.empty:
+        if API_FMP_CACHE_ONLY:
+            log.critical("Missing", env="FMP_API_TOKEN", cache="Not found")
+            raise RuntimeError("No FMP API token found.")
+
         source = "API"
         params = _DEFAULT_PARAM | {"marketCapMoreThan": _get_cap_restriction(criteria[KEY_INDEX_TOP])}
         response = requests.get(_BASE_URL, params=params)

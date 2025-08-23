@@ -39,6 +39,10 @@ def get_crypto(criteria: dict) -> DataFrame:
 
     if df.empty:
         source = "API"
+        if API_CMC_CACHE_ONLY:
+            log.critical("Missing", env="CMC_API_TOKEN", cache="Not found")
+            raise RuntimeError("No CMC API token found.")
+
         # API defaults to sort "market_cap"; sort_dir defaults to "desc". Specifying anyway for clarity
         params = {"start": "1", "limit": criteria[KEY_INDEX_TOP], "convert": "USD", "sort": "market_cap",
                   "sort_dir": "desc"}

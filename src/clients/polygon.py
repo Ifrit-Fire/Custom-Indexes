@@ -110,6 +110,10 @@ def get_stock(symbol: str) -> TickerDetails:
         log.debug("Fetch", target="TickerDetails", source="disk", symbol=symbol)
         return ticker
 
+    if API_POLY_CACHE_ONLY:
+        log.critical("Missing", env="POLY_API_TOKEN", cache="Not found")
+        raise RuntimeError("No CMC API token found.")
+
     # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
     norm_sym = _fix_dot_p(symbol)
