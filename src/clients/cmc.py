@@ -42,7 +42,7 @@ def get_crypto(criteria: dict) -> DataFrame:
         # API defaults to sort "market_cap"; sort_dir defaults to "desc". Specifying anyway for clarity
         params = {"start": "1", "limit": criteria[KEY_INDEX_TOP], "convert": "USD", "sort": "market_cap",
                   "sort_dir": "desc"}
-        headers = {"Accepts": "application/json", "X-CMC_PRO_API_KEY": CMC_API_TOKEN}
+        headers = {"Accepts": "application/json", "X-CMC_PRO_API_KEY": API_CMC_TOKEN}
         response = requests.get(BASE_URL, headers=headers, params=params)
         response.raise_for_status()
 

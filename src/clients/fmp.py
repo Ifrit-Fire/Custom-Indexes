@@ -15,7 +15,7 @@ from src.logging import timber
 _BASE_URL = "https://financialmodelingprep.com/api/v3/stock-screener"
 _BASE_FILENAME = Path(__file__).name
 _EXCHANGES = ["NYSE", "NASDAQ", "AMEX"]
-_DEFAULT_PARAM = {"isEtf": False, "isFund": False, "isActivelyTrading": True, "apikey": FMP_API_TOKEN,
+_DEFAULT_PARAM = {"isEtf": False, "isFund": False, "isActivelyTrading": True, "apikey": API_FMP_TOKEN,
                   "exchange": _EXCHANGES}
 
 

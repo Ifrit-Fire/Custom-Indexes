@@ -113,7 +113,7 @@ def get_stock(symbol: str) -> TickerDetails:
     # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
     norm_sym = _fix_dot_p(symbol)
-    client = RESTClient(api_key=POLY_API_TOKEN)
+    client = RESTClient(api_key=API_POLY_TOKEN)
     for attempt in range(retries := 3):
         try:
             raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk
