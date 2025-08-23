@@ -5,7 +5,7 @@ from datetime import date
 from pandas import DataFrame
 
 from src.consts import COL_MC, COL_WEIGHT, PATH_INDEXES_ROOT
-from src.logging import timber
+from src.logger import timber
 
 
 def save_index(name: str, df: DataFrame):

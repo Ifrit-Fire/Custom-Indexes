@@ -5,7 +5,7 @@ import pandas as pd
 from pandas import DataFrame
 
 from src.consts import PATH_DATA_CACHE_ROOT
-from src.logging import timber
+from src.logger import timber
 
 
 def save_api_cache(basename: str, criteria: dict, df: DataFrame):
@@ -55,7 +55,7 @@ def load_api_cache(basename: str, criteria: dict, allow_stale=False) -> DataFram
         return DataFrame()
 
     df = payload["data"]
-    log.debug("Load", file=filepath.name, type="pickle", count=len(df), created=created, path=str(filepath.parent))
+    log.debug("Load", file=filepath.name, type="pickle", count=len(df), created=str(created), path=str(filepath.parent))
     return df
 
 

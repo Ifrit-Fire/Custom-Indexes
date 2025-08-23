@@ -3,7 +3,7 @@ from src import allocations, io
 from src.clients import fmp, cmc
 from src.config_handler import config
 from src.consts import COL_WEIGHT
-from src.logging import timber
+from src.logger import timber
 
 # TODO: Fix logger can output two dupe keys "source".  One for index. One for other.
 # TODO: Indexes - should always have a latest named file to act as an evergreen link.

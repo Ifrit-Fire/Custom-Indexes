@@ -9,7 +9,7 @@ from urllib3.exceptions import MaxRetryError
 
 from src import io
 from src.consts import API_POLY_TOKEN, PATH_DATA_SYMBOLS_ROOT, API_POLY_CACHE_ONLY
-from src.logging import timber
+from src.logger import timber
 
 # Codes used by polygon
 _EXCHANGES = {"XNYS",  # NY stock exchange
@@ -111,8 +111,8 @@ def get_stock(symbol: str) -> TickerDetails:
         return ticker
 
     if API_POLY_CACHE_ONLY:
-        log.critical("Missing", env="POLY_API_TOKEN", cache="Not found")
-        raise RuntimeError("No CMC API token found.")
+        log.critical("Missing", env="POLY_API_TOKEN", cache="Not found", symbol=symbol)
+        raise RuntimeError("No Poly API token found.")
 
     # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
