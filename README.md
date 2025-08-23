@@ -17,14 +17,14 @@ market capitalization.
 
 For detailed construction rules, see the [Index Methodology](docs/methodology.md).
 
-| Name          | Constituents | Min Weight (%) | Latest Build                                       |
-|---------------|--------------|----------------|----------------------------------------------------|
-| top10-min10   | 10           | 10%            | [2025-08-22](indexes/top10-min10/2025-08-22.csv)   |
-| top20-min5    | 20           | 5%             | [2025-08-22](indexes/top20-min5/2025-08-22.csv)    |
-| top50-min2    | 50           | 2%             | [2025-08-22](indexes/top50-min2/2025-08-22.csv)    |
-| top100-min1   | 100          | 1%             | [2025-08-22](indexes/top100-min1/2025-08-22.csv)   |
-| top250-min0.4 | 250          | 0.4%           | [2025-08-22](indexes/top250-min0.4/2025-08-22.csv) |
-| top500-min0.2 | 500          | 0.2%           | [2025-08-22](indexes/top500-min0.2/2025-08-22.csv) |
+| Name          | Max Constituents | Min Weight (%) | Latest Build                                       |
+|---------------|------------------|----------------|----------------------------------------------------|
+| top10-min10   | 10               | 10%            | [2025-08-22](indexes/top10-min10/2025-08-22.csv)   |
+| top20-min5    | 20               | 5%             | [2025-08-22](indexes/top20-min5/2025-08-22.csv)    |
+| top50-min2    | 50               | 2%             | [2025-08-22](indexes/top50-min2/2025-08-22.csv)    |
+| top100-min1   | 100              | 1%             | [2025-08-22](indexes/top100-min1/2025-08-22.csv)   |
+| top250-min0.4 | 250              | 0.4%           | [2025-08-22](indexes/top250-min0.4/2025-08-22.csv) |
+| top500-min0.2 | 500              | 0.2%           | [2025-08-22](indexes/top500-min0.2/2025-08-22.csv) |
 
 ## Requirements
 

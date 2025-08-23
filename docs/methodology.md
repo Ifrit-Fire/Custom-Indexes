@@ -13,20 +13,20 @@
 
 The following indexes are maintained under this methodology. Each index defines a maximum fixed number of constituents
 ranked by market capitalization, with a proportional minimum weight rule applied to ensure meaningful representation.
-The naming convention combines the constituent count and the corresponding minimum weight percentage.
+The naming convention combines the maximum constituent count and the corresponding minimum weight percentage.
 
-| Name          | Constituents | Min Weight (%) |
-|---------------|--------------|----------------|
-| top10-min10   | 10           | 10%            |
-| top20-min5    | 20           | 5%             |
-| top50-min2    | 50           | 2%             |
-| top100-min1   | 100          | 1%             |
-| top250-min0.4 | 250          | 0.4%           |
-| top500-min0.2 | 500          | 0.2%           |
+| Name          | Max Constituents | Min Weight (%) |
+|---------------|------------------|----------------|
+| top10-min10   | 10               | 10%            |
+| top20-min5    | 20               | 5%             |
+| top50-min2    | 50               | 2%             |
+| top100-min1   | 100              | 1%             |
+| top250-min0.4 | 250              | 0.4%           |
+| top500-min0.2 | 500              | 0.2%           |
 
 ## Eligibility
 
-The index includes the following asset types:
+The index may include the following asset types:
 
 - Common Stock
 - ADR–Common
