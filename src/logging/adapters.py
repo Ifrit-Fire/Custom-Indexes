@@ -40,28 +40,3 @@ class TreeLoggerAdapter(logging.LoggerAdapter):
 
         std_kwargs["extra"] = extra
         return msg, std_kwargs
-
-
-def plant(name: str = None) -> TreeLoggerAdapter:
-    """
-    Retrieve a cached logger adapter, or create and cache a new one. On first call, a logger name must be provided.
-    That logger instance is cached for subsequent calls, allowing the function to return the same adapter without
-    requiring `name` again.
-
-    Args:
-        name (str, optional): Logger name. Required on the first call; ignored on later calls unless a new logger
-            is being set.
-
-    Returns:
-        TreeLoggerAdapter: Logger adapter bound to the cached logger.
-    """
-    cached = getattr(plant, "_cached_logger", None)
-
-    if name is None and cached is None:
-        raise ValueError("There is no cached logger available, you must pass a name.")
-
-    if name is not None:
-        cached = logging.getLogger(name)
-        setattr(plant, "_cached_logger", cached)
-
-    return TreeLoggerAdapter(cached, {})

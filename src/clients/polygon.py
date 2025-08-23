@@ -7,8 +7,9 @@ from polygon import RESTClient, BadResponse
 from polygon.rest.models import TickerDetails
 from urllib3.exceptions import MaxRetryError
 
-from src import io, timber
-from src.consts import POLY_API_TOKEN, PATH_DATA_SYMBOLS_ROOT
+from src import io
+from src.consts import API_POLY_TOKEN, PATH_DATA_SYMBOLS_ROOT, API_POLY_CACHE_ONLY
+from src.logging import timber
 
 # Codes used by polygon
 _EXCHANGES = {"XNYS",  # NY stock exchange

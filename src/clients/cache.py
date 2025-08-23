@@ -4,8 +4,8 @@ from pathlib import Path
 import pandas as pd
 from pandas import DataFrame
 
-from src import timber
 from src.consts import PATH_DATA_CACHE_ROOT
+from src.logging import timber
 
 
 def store_api_cache(basename: str, criteria: dict, df: DataFrame):

@@ -1,40 +1,8 @@
 import logging
-import sys
-from logging.handlers import TimedRotatingFileHandler
 
 from colorlog import ColoredFormatter
 
-from src.consts import PATH_LOGS_ROOT, FORM_STRUCT, FORM_TEXT
-
-_LOG_FILE_PATH = PATH_LOGS_ROOT / "index-builder.log"
-
-
-def _setup_logging():
-    """
-    Configure application logging with both console and file handlers.
-
-    This setup establishes two logging outputs:
-      - **Console handler**: logs messages at INFO level and above, formatted with color.
-      - **File handler**: logs all messages at DEBUG level and above, written to a
-        time-rotated log file. The file rotates at midnight and keeps up to 7 backups.
-    """
-
-    # Console handler — only INFO and up
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setLevel(logging.INFO)
-    console_handler.setFormatter(ColoredSafeFormatter())
-
-    # File handler — DEBUG and up
-    file_handler = TimedRotatingFileHandler(filename=_LOG_FILE_PATH, when="midnight", interval=1, backupCount=7)
-    file_handler.setLevel(logging.DEBUG)
-    file_handler.setFormatter(SafeFormatter())
-
-    # Root logger (collects everything)
-    root_logger = logging.getLogger()
-    root_logger.setLevel(logging.DEBUG)
-    root_logger.handlers.clear()
-    root_logger.addHandler(console_handler)
-    root_logger.addHandler(file_handler)
+from src.consts import FORM_TEXT, FORM_STRUCT
 
 
 class SafeFormatter(logging.Formatter):
@@ -101,6 +69,3 @@ class ColoredSafeFormatter(ColoredFormatter):
         if not hasattr(record, FORM_TEXT):
             setattr(record, FORM_TEXT, "")
         return super().format(record)
-
-
-_setup_logging()
