@@ -3,8 +3,8 @@ import sys
 from logging.handlers import TimedRotatingFileHandler
 
 from src.consts import PATH_LOGS_ROOT
-from src.logging.adapters import TreeLoggerAdapter
-from src.logging.formatters import SafeFormatter, ColoredSafeFormatter
+from src.logger.adapters import TreeLoggerAdapter
+from src.logger.formatters import SafeFormatter, ColoredSafeFormatter
 
 _LOG_FILE_PATH = PATH_LOGS_ROOT / "index-builder.log"
 
@@ -36,9 +36,9 @@ def plant(name: str = None) -> TreeLoggerAdapter:
 
 def till():
     """
-    Configure application logging with both console and file handlers.
+    Configure application logger with both console and file handlers.
 
-    This setup establishes two logging outputs:
+    This setup establishes two logger outputs:
       - **Console handler**: logs messages at INFO level and above, formatted with color.
       - **File handler**: logs all messages at DEBUG level and above, written to a
         time-rotated log file. The file rotates at midnight and keeps up to 7 backups.
