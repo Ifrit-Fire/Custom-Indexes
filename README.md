@@ -11,7 +11,7 @@ This project generates multiple index variants, each defined by:
 - Minimum weighting per constituent (_weight_min_)
 - Sort criteria (_currently market_cap_)
 
-All indexes are composed of both stock + crypto. Both asset classes are treated equivalently during
+All indexes can be composed of both stock + crypto. Both asset classes are treated equivalently during
 index construction. Constituents are filtered by liquidity, listing age, and asset type restrictions, then ranked by
 market capitalization.
 
@@ -30,9 +30,15 @@ For detailed construction rules, see the [Index Methodology](docs/methodology.md
 
 - Python 3.12+
 - macOS _(tested)_ or Linux _(untested)_
+
+## Optional (API Keys)
+
+You can run the project without API keys; it will fall back to bundled snapshot data so you can demo the tool and poke
+around immediately. To fetch fresh market data, add API keys:
+
 - API key from [CoinMarketCap](https://coinmarketcap.com/api/) _(free)_
 - API key from [Financial Modeling Prep](https://site.financialmodelingprep.com) _(free)_
-- API key from [Polygon.io](https://polygon.io/docs/rest/quickstart) _(free, optional)_
+- API key from [Polygon.io](https://polygon.io/docs/rest/quickstart) _(free)_
 
 ## Setup
 
@@ -45,18 +51,17 @@ FMP_API_TOKEN=your_financial_modeling_api_key
 POLY_API_TOKEN=your_polygon_api_key
 ```
 
-3. _(Optional)_ Add a Polygon API key to enable fetching detailed security information not already stored locally.
-4. _(Optional)_ Modify `config.yaml` to customize existing and/or create new indexes.
+3_(Optional)_ Modify `config.yaml` to customize existing and/or create new indexes.
 
 ## Running
 
 1. Run `build.sh` to setup the virtual environment with installed dependencies.
-2. Then run `main.py` to build the latest index outputs.
-3. Built indexes are placed in `/indexes`
+2. Run `main.py` to build the indexes defined in `config.yaml`.
+3. Results are written to `/indexes`
 
-- Each run fetches fresh data from the APIs if no cache is available.
-- Cached data is stored in the `data/` directory and is refreshed daily.
-- Results are printed to the console and written locally in the `indexes/` directory.
+- Cached data is stored in the `data/` directory.
+- If API tokens are available, the cache refreshes daily with market data.
+- Without tokens, the build uses the included snapshot data.
 
 ## Background
 
@@ -66,4 +71,8 @@ now supports multiple index definitions from a single YAML configuration.
 
 ## Future
 
+- I'm actively working this and have lots of features planned:
+  - Building a static website to display the index results with fancy graphs
+  - Research pulling in the index historical data to determine performance over time
+  - Hooking up GitHub actions to have this run and update itself regularly
 - I'm open to adding additional features or improvements — feel free to open an issue.
