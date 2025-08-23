@@ -34,7 +34,7 @@ def get_crypto(criteria: dict) -> DataFrame:
 
     log = timber.plant()
     log.info("Phase starts", fetch="crypto")
-    df = cache.grab_api_cache(_BASE_FILENAME, criteria)
+    df = cache.load_api_cache(_BASE_FILENAME, criteria, allow_stale=API_CMC_CACHE_ONLY)
     source = "cache"
 
     if df.empty:
@@ -56,7 +56,7 @@ def get_crypto(criteria: dict) -> DataFrame:
                      "date_added": COL_LIST_DATE}, inplace=True)
         df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = ASSET_CRYPTO
-        cache.store_api_cache(_BASE_FILENAME, criteria, df)
+        cache.save_api_cache(_BASE_FILENAME, criteria, df)
 
     df = _exclude_stablecoins(df)
     log.info("Phase ends", fetch="crypto", count=len(df), source=source)

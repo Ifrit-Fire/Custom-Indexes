@@ -35,7 +35,7 @@ def get_stock(criteria: dict) -> DataFrame:
     """
     log = timber.plant()
     log.info("Phase starts", fetch="stocks")
-    df = cache.grab_api_cache(_BASE_FILENAME, criteria)
+    df = cache.load_api_cache(_BASE_FILENAME, criteria, allow_stale=API_FMP_CACHE_ONLY)
     source = "cache"
 
     if df.empty:
@@ -52,7 +52,7 @@ def get_stock(criteria: dict) -> DataFrame:
         df.rename(columns={"companyName": COL_NAME, "marketCap": COL_MC}, inplace=True)
         df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
         df[[COL_TYPE, COL_LIST_DATE]] = df[COL_SYMBOL].apply(_get_type_date_info)
-        cache.store_api_cache(_BASE_FILENAME, criteria, df)
+        cache.save_api_cache(_BASE_FILENAME, criteria, df)
 
     df = _exclude_asset_types(from_df=df, not_in=ASSET_TYPES)
     log.info("Phase ends", fetch="stocks", count=len(df), source=source)
