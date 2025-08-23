@@ -3,9 +3,9 @@ from decimal import Decimal
 import numpy as np
 from pandas import DataFrame
 
-from src import timber
 from src.config_handler import KEY_INDEX_WEIGHT_MIN
 from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL, COL_TYPE
+from src.logger import timber
 
 
 def add_weightings(df: DataFrame, criteria: dict) -> DataFrame:

@@ -1,9 +1,10 @@
 import pandas as pd
 from pandas import DataFrame, Timestamp, Series
 
-from src import transform, timber
+from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
+from src.logger import timber
 
 
 def standardize_symbols(series: pd.Series) -> pd.Series:

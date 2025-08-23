@@ -7,8 +7,9 @@ from polygon import RESTClient, BadResponse
 from polygon.rest.models import TickerDetails
 from urllib3.exceptions import MaxRetryError
 
-from src import io, timber
-from src.consts import POLY_API_TOKEN, PATH_DATA_SYMBOLS_ROOT
+from src import io
+from src.consts import API_POLY_TOKEN, PATH_DATA_SYMBOLS_ROOT, API_POLY_CACHE_ONLY
+from src.logger import timber
 
 # Codes used by polygon
 _EXCHANGES = {"XNYS",  # NY stock exchange
@@ -109,10 +110,14 @@ def get_stock(symbol: str) -> TickerDetails:
         log.debug("Fetch", target="TickerDetails", source="disk", symbol=symbol)
         return ticker
 
+    if API_POLY_CACHE_ONLY:
+        log.critical("Missing", env="POLY_API_TOKEN", cache="Not found", symbol=symbol)
+        raise RuntimeError("No Poly API token found.")
+
     # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
     norm_sym = _fix_dot_p(symbol)
-    client = RESTClient(api_key=POLY_API_TOKEN)
+    client = RESTClient(api_key=API_POLY_TOKEN)
     for attempt in range(retries := 3):
         try:
             raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk

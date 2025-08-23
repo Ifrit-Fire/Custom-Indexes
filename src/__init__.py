@@ -1,1 +1,1 @@
-from .init import config_pd, load_env, logger_config
+from .init import load_env, config_pd  # Order matters!!...somewhat
