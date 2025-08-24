@@ -3,7 +3,7 @@
 - [Index Overview](#index-overview)
 - [Eligibility](#eligibility)
 - [Listing Requirement](#listing-requirement)
-  - [Rationale for the 3-year crypto horizon](#rationale-for-the-3-year-crypto-horizon)
+    - [Rationale for the 3-year crypto horizon](#rationale-for-the-3-year-crypto-horizon)
 - [Liquidity Requirement](#liquidity-requirement)
 - [Symbol Consolidation](#symbol-consolidation)
 - [Minimum Weight Threshold Rule](#minimum-weight-threshold-rule)
@@ -15,14 +15,14 @@ The following indexes are maintained under this methodology. Each index defines 
 ranked by market capitalization, with a proportional minimum weight rule applied to ensure meaningful representation.
 The naming convention combines the maximum constituent count and the corresponding minimum weight percentage.
 
-| Name          | Max Constituents | Min Weight (%) |
-|---------------|------------------|----------------|
-| top10-min10   | 10               | 10%            |
-| top20-min5    | 20               | 5%             |
-| top50-min2    | 50               | 2%             |
-| top100-min1   | 100              | 1%             |
-| top250-min0.4 | 250              | 0.4%           |
-| top500-min0.2 | 500              | 0.2%           |
+| Name          | Max Constituents | Min Weight (%) | Latest Build                                      |
+|---------------|------------------|----------------|---------------------------------------------------|
+| top10-min10   | 10               | 10%            | [top10-min10.csv](../indexes/top10-min10.csv)     |
+| top20-min5    | 20               | 5%             | [top20-min5.csv](../indexes/top20-min5.csv)       |
+| top50-min2    | 50               | 2%             | [top50-min2.csv](../indexes/top50-min2.csv)       |
+| top100-min1   | 100              | 1%             | [top100-min1.csv](../indexes/top100-min1.csv)     |
+| top250-min0.4 | 250              | 0.4%           | [top250-min0.4.csv](../indexes/top250-min0.4.csv) |
+| top500-min0.2 | 500              | 0.2%           | [top500-min0.2.csv](../indexes/top500-min0.2.csv) |
 
 ## Eligibility
 
