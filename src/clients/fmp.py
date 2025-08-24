@@ -120,6 +120,6 @@ def _exclude_asset_types(from_df: DataFrame, not_in: set[str]) -> DataFrame:
 
     for _, row in excluded_df.iterrows():
         log.debug("Excluded", symbol=row[COL_SYMBOL], reason=row[COL_TYPE])
-    log.info("Excluded", items="symbols", count=int((~mask).sum()), reason="Asset Type")
+    log.info("Excluded", items="symbols", count=(~mask).sum(), reason="Asset Type")
 
     return from_df[mask].reset_index(drop=True)

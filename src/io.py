@@ -19,7 +19,7 @@ def save_index(name: str, df: DataFrame):
     filepath = PATH_INDEXES_ROOT / name / f"{today_str}.csv"
     filepath.parent.mkdir(parents=True, exist_ok=True)
     df_save.to_csv(filepath)
-    log.debug("Saved", index=name, file=filepath.name, type="csv", count=len(df), path=str(filepath.parent))
+    log.debug("Saved", index=name, file=filepath.name, type="csv", count=len(df), path=filepath.parent)
 
 
 def console_countdown(msg: str, seconds: int):

@@ -1,4 +1,5 @@
 from src.consts import COL_MC
+from src.logger import timber
 
 
 def sort_by_to_df_column(sort_by: str) -> str:
@@ -14,7 +15,9 @@ def sort_by_to_df_column(sort_by: str) -> str:
     Raises:
         ValueError: If the provided `sort_by` value is not recognized.
     """
+    log = timber.plant()
     if sort_by == "market_cap":
         return COL_MC
     else:
+        log.critical("ValueError", reason=f"Undefined {sort_by} encountered")
         raise ValueError(f"Undefined {sort_by} sort by encountered.")

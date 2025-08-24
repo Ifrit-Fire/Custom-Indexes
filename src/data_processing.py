@@ -116,7 +116,7 @@ def _filter_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp
     removed = df.loc[mask & ~filtered_mask, [COL_SYMBOL, COL_TYPE, COL_LIST_DATE]]
     for _, row in removed.iterrows():
         log.info("Filtered out", symbol=row[COL_SYMBOL], reason="list-date", asset_type=row[COL_TYPE],
-                 listdate=str(row[COL_LIST_DATE]), cutoff=str(cutoff))
+                 listdate=row[COL_LIST_DATE], cutoff=cutoff)
 
     return filtered_mask
 
