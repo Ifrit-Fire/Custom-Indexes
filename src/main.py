@@ -5,16 +5,6 @@ from src.config_handler import config
 from src.consts import COL_WEIGHT
 from src.logger import timber
 
-# TODO: Fix logger can output two dupe keys "source".  One for index. One for other.
-# TODO: Indexes - should always have a latest named file to act as an evergreen link.
-# TODO: Can we run main loop in parallel?
-# TODO: Better way to execute running program....make?
-# TODO: Research including ETVs holding physical commodities
-# TODO: Setup GitHub actions to recurringly update indexes
-# TODO: Unit tests?
-# TODO: Make static page displaying performance and composition over time
-# TODO: Update Indexes with historical data to run performance metrics on
-
 timber.till()
 
 for index, criteria in config.get_all_indexes().items():
