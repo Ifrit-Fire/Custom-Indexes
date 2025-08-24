@@ -25,7 +25,7 @@ class SafeFormatter(logging.Formatter):
     """
 
     def __init__(self):
-        _fmt = ('{{ "timestamp": "{asctime}", "source": "{name}", '
+        _fmt = ('{{ "timestamp": "{asctime}", "logger": "{name}", '
                 '"level": "{levelname}", "event": "{message}", '
                 f'{{{FORM_STRUCT}}} }}}}')
         super().__init__(fmt=_fmt, datefmt="%Y-%m-%d %H:%M:%S", style="{")

@@ -23,7 +23,7 @@ def save_api_cache(basename: str, criteria: dict, df: DataFrame):
     payload = {"created": datetime.now(timezone.utc).date().isoformat(),  #
                "data": df}
     pd.to_pickle(payload, filepath)
-    log.debug("Saved", file=filepath.name, type="pickle", count=len(df), path=str(filepath.parent))
+    log.debug("Saved", file=filepath.name, type="pickle", count=len(df), path=filepath.parent)
 
 
 def load_api_cache(basename: str, criteria: dict, allow_stale=False) -> DataFrame:
@@ -55,7 +55,7 @@ def load_api_cache(basename: str, criteria: dict, allow_stale=False) -> DataFram
         return DataFrame()
 
     df = payload["data"]
-    log.debug("Load", file=filepath.name, type="pickle", count=len(df), created=str(created), path=str(filepath.parent))
+    log.debug("Load", file=filepath.name, type="pickle", count=len(df), created=created, path=filepath.parent)
     return df
 
 
