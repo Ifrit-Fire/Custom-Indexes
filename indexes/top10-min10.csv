@@ -1,5 +1,4 @@
-# snapshot_date=2025-08-24
-,name,symbol,market_cap,price,volume,type,list_date,weighted
+2025-08-24,name,symbol,market_cap,price,volume,type,list_date,weighted
 0,NVIDIA Corporation,NVDA,4342.956,177.99,171147190.0,CS,1999-01-22 00:00:00+00:00,20.5
 1,Microsoft Corporation,MSFT,3770.327,507.23,24287463.0,CS,1986-03-13 00:00:00+00:00,17.8
 2,Apple Inc.,AAPL,3380.049,227.76,42162846.0,CS,1980-12-12 00:00:00+00:00,15.9
