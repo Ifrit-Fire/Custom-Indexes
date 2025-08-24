@@ -1,6 +1,6 @@
 import logging
 import sys
-from logging.handlers import TimedRotatingFileHandler
+from logging.handlers import RotatingFileHandler
 
 from src.consts import PATH_LOGS_ROOT
 from src.logger.adapters import TreeLoggerAdapter
@@ -50,7 +50,8 @@ def till():
     console_handler.setFormatter(ColoredSafeFormatter())
 
     # File handler — DEBUG and up
-    file_handler = TimedRotatingFileHandler(filename=_LOG_FILE_PATH, when="midnight", interval=1, backupCount=7)
+    file_handler = RotatingFileHandler(filename=_LOG_FILE_PATH, maxBytes=int(2.5 * 1024 * 1024), delay=True,
+                                       encoding="utf-8", backupCount=7)
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(SafeFormatter())
 
