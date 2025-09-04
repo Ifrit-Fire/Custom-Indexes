@@ -10,7 +10,7 @@ from src.logger import timber
 
 def save_api_cache(basename: str, criteria: dict, df: DataFrame):
     """
-    Save API query results to a local pickle file for caching. The cached file additionlly stores some metadata to
+    Save API query results to a local pickle file for caching. The cached file additionally stores some metadata to
     track creation date.
 
     Args:
