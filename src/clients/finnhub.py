@@ -17,6 +17,19 @@ _CLIENT = finnhub.Client(api_key=API_FINN_TOKEN)
 
 
 def get_all_stock() -> pd.DataFrame:
+    """
+    Retrieve the full list of active U.S. stocks from Finnhub, with caching.
+
+    Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
+    The results are normalized and cached for future use.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing stock data with columns:
+            - COL_FIGI: Financial Instrument Global Identifier (FIGI).
+            - COL_MIC: Market Identifier Code (exchange).
+            - COL_SYMBOL: Standardized ticker symbol.
+            - COL_TYPE: Security type.
+    """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="finnhub")
     df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=API_FINN_CACHE_ONLY)

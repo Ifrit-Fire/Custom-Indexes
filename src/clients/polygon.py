@@ -1,73 +1,24 @@
 import json
 import re
-import sys
+import time
+from pathlib import Path
+from typing import Iterator
 
 import pandas as pd
 import requests
-import yaml
 from polygon import RESTClient, BadResponse
-from polygon.rest.models import TickerDetails
 from urllib3.exceptions import MaxRetryError
 
 from src import data_processing
 from src.clients import cache
 from src.clients.providerpool import Provider
-from src.consts import API_POLY_TOKEN, PATH_DATA_SYMBOLS_ROOT, API_POLY_CACHE_ONLY, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, \
-    COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, MIC_CODES
+from src.consts import API_POLY_TOKEN, API_POLY_CACHE_ONLY, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, \
+    COL_NAME, COL_TYPE, MIC_CODES
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
 
-# Codes used by polygon
-_EXCHANGES = {"XNYS",  # NY stock exchange
-              "XNAS",  # NASDAQ
-              "XASE"}  # NYSE American (formerly AMEX)
 _BASE_FILENAME = Path(__file__).name
 _BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
-
-
-def _get_ticker_filename(symbol: str):
-    """
-    Construct the full file path for storing or retrieving ticker details.
-
-    Args:
-        symbol (str): Stock ticker symbol.
-
-    Returns:
-        Path: Path object pointing to the YAML file for the given symbol, located under `PATH_DATA_SYMBOLS_ROOT`.
-    """
-    return PATH_DATA_SYMBOLS_ROOT / f"{symbol}.yaml"
-
-
-def _load_ticker_details(symbol: str) -> TickerDetails | None:
-    """
-    Load ticker details for a given symbol from local YAML storage.
-
-    Args:
-        symbol (str): Stock ticker symbol to load.
-
-    Returns:
-        TickerDetails | None: A `TickerDetails` object if the file exists, otherwise None.
-    """
-    filename = _get_ticker_filename(symbol)
-    if filename.exists():
-        with open(filename, "r") as file:
-            data = yaml.safe_load(file)
-            return TickerDetails.from_dict(data)
-    else:
-        return None
-
-
-def _save_ticker_details(symbol: str, data: dict):
-    """
-    Save ticker details for a given symbol to local YAML storage.
-
-    Args:
-        symbol (str): Stock ticker symbol to save.
-        data (dict): Dictionary of ticker details to write.
-    """
-    filename = _get_ticker_filename(symbol)
-    with open(filename, "w") as file:
-        yaml.safe_dump(data, file, indent=4)  # Save as yaml to be more human-readable.
 
 
 def _fix_dot_p(symbol: str) -> str:
@@ -90,7 +41,21 @@ def _fix_dot_p(symbol: str) -> str:
     return norm
 
 
-def _iter_all_stock(params: dict[str, str]):
+def _iter_all_stock(params: dict[str, str]) -> Iterator[dict[str, object]]:
+    """
+    Generator that streams all stock ticker data from Polygon's `list_tickers` API. If a 429 rate-limit error is
+    encountered, waits 60 seconds before retrying.
+
+    Args:
+        params (dict[str, str]): Query parameters for the initial API request
+            (e.g., market, exchange MIC, type, limit).
+
+    Yields:
+        dict: Raw JSON objects for each stock ticker as returned by the API.
+
+    Notes:
+        - Retries after hitting rate limits; may block until calls are allowed.
+    """
     log = timber.plant()
     url = _BASE_ALL_TICKERS
 
@@ -113,6 +78,21 @@ def _iter_all_stock(params: dict[str, str]):
 
 
 def get_all_stock() -> pd.DataFrame:
+    """
+    Retrieve the full list of active U.S. stocks from Polygon, with caching.
+
+    Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
+    The results are normalized and cached for future use.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing standardized stock data with columns:
+            - COL_CIK: Central Index Key (CIK) if available.
+            - COL_FIGI: Financial Instrument Global Identifier (FIGI).
+            - COL_NAME: Company name.
+            - COL_MIC: Market Identifier Code (exchange).
+            - COL_SYMBOL: Standardized ticker symbol.
+            - COL_TYPE: Security type.
+    """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="polygon")
     df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=API_POLY_CACHE_ONLY)

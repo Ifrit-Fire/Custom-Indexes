@@ -21,7 +21,7 @@ def get_crypto(criteria: dict) -> DataFrame:
     """
     Retrieve a DataFrame of cryptocurrencies matching the given index criteria.
 
-    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API.
+    Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
     The results are normalized and cached for future use.
 
     Args:
