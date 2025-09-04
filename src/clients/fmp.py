@@ -23,7 +23,7 @@ def get_stock(criteria: dict) -> DataFrame:
     """
     Retrieve a DataFrame of stocks matching the given index criteria.
 
-    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API. The
+    Attempts to load from the local API cache if available and valid; otherwise queries the remote API. The
     results are normalized, filtered to allowed asset types, and cached for future use.
 
     Args:
