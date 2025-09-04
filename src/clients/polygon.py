@@ -2,19 +2,27 @@ import json
 import re
 import sys
 
+import pandas as pd
+import requests
 import yaml
 from polygon import RESTClient, BadResponse
 from polygon.rest.models import TickerDetails
 from urllib3.exceptions import MaxRetryError
 
-from src import io
-from src.consts import API_POLY_TOKEN, PATH_DATA_SYMBOLS_ROOT, API_POLY_CACHE_ONLY
+from src import data_processing
+from src.clients import cache
+from src.clients.providerpool import Provider
+from src.consts import API_POLY_TOKEN, PATH_DATA_SYMBOLS_ROOT, API_POLY_CACHE_ONLY, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, \
+    COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, MIC_CODES
+from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
 
 # Codes used by polygon
 _EXCHANGES = {"XNYS",  # NY stock exchange
               "XNAS",  # NASDAQ
               "XASE"}  # NYSE American (formerly AMEX)
+_BASE_FILENAME = Path(__file__).name
+_BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
 
 
 def _get_ticker_filename(symbol: str):
@@ -82,37 +90,51 @@ def _fix_dot_p(symbol: str) -> str:
     return norm
 
 
-def get_stock(symbol: str) -> TickerDetails:
-    """
-    Retrieve ticker details for a given stock symbol, using cached data if available.
-
-    This function first attempts to load ticker details from local storage. If not found,
-    it queries the Polygon.io API (up to three retries on failure) and saves the retrieved
-    data to disk for future use.
-
-    Args:
-        symbol (str): Stock ticker symbol to retrieve.
-
-    Returns:
-        TickerDetails: Object containing the symbol's details.
-
-    Raises:
-        ConnectionError: If the API call fails after the maximum number of retries.
-
-    Notes:
-        - On API failure due to rate limits or network issues, the function waits
-          60 seconds between retries.
-    """
-    # Try loading from disk first
+def _iter_all_stock(params: dict[str, str]):
     log = timber.plant()
-    ticker = _load_ticker_details(symbol)
-    if ticker:
-        log.debug("Fetch", target="TickerDetails", source="disk", symbol=symbol)
-        return ticker
+    url = _BASE_ALL_TICKERS
 
-    if API_POLY_CACHE_ONLY:
-        log.critical("Missing", env="POLY_API_TOKEN", cache="Not found", symbol=symbol)
-        raise RuntimeError("No Poly API token found.")
+    with requests.Session() as session:
+        while url:
+            final_param = {"apiKey": API_POLY_TOKEN}
+            if url == _BASE_ALL_TICKERS:
+                final_param |= {**params, "apiKey": API_POLY_TOKEN}
+
+            response = session.get(url, params=final_param)
+            if response.status_code == 429:
+                log.debug("MaxRetryError", reason="exceeded API limit", response="waiting")
+                time.sleep(60)
+                continue
+            response.raise_for_status()
+            data = response.json()
+            for row in data.get("results", []):
+                yield row
+            url = data.get("next_url")  # None when done
+
+
+def get_all_stock() -> pd.DataFrame:
+    log = timber.plant()
+    log.info("Phase starts", fetch="stock list", endpoint="polygon")
+    df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=API_POLY_CACHE_ONLY)
+    source = "cache"
+
+    if df.empty:
+        source = "API"
+
+        tickers = []
+        types = ["CS", "ADRC"]
+        for mic in MIC_CODES:
+            for tipe in types:
+                params = {"market": "stocks", "active": "true", "exchange": mic, "type": tipe, "limit": 1000}
+                tickers += _iter_all_stock(params)
+
+        df = pd.json_normalize(tickers)
+        df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
+        df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
+        cache.save_api_cache(_BASE_FILENAME, {}, df)
+
+    log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source=source)
+    return df[[COL_CIK, COL_FIGI, COL_NAME, COL_MIC, COL_SYMBOL, COL_TYPE]]
 
     # Gotta pull down from the API
     attempt = raw = None  # Suppresses references before bound warning
