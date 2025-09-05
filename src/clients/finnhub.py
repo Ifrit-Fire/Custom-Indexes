@@ -8,7 +8,7 @@ from src import data_processing
 from src.clients import cache
 from src.clients.providerpool import Provider
 from src.consts import API_FINN_TOKEN, API_FINN_CACHE_ONLY, COL_SYMBOL, STOCK_TYPES, COL_MC, COL_LIST_DATE, \
-    COL_OUT_SHARES, COL_FIGI, COL_MIC, COL_TYPE, MIC_CODES
+    COL_OUT_SHARES, COL_FIGI, COL_MIC, COL_TYPE, MIC_CODES, COL_COUNTRY, COL_NAME
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
 
@@ -66,8 +66,9 @@ class FinnhubProvider(Provider):
     @staticmethod
     def _get_company_profile2(symbol: str) -> pd.DataFrame:
         log = timber.plant()
-        df = cache.load_api_cache(basename=f"{_BASE_FILENAME}/{symbol[0]}", criteria={"company": symbol},
-                                  allow_stale=API_FINN_CACHE_ONLY)
+        filename = f"{_BASE_FILENAME}/{symbol[0]}"
+        criteria = {"company": symbol}
+        df = cache.load_api_cache(basename=filename, criteria=criteria, allow_stale=API_FINN_CACHE_ONLY)
 
         if df.empty:
             try:
@@ -87,11 +88,9 @@ class FinnhubProvider(Provider):
             df.rename(columns={"marketCapitalization": COL_MC, "ticker": COL_SYMBOL, "ipo": COL_LIST_DATE,
                                "shareOutstanding": COL_OUT_SHARES}, inplace=True)
             df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
-            cache.save_api_cache(basename=f"{_BASE_FILENAME}/{symbol[0]}", criteria={"company": symbol}, df=df)
+            cache.save_api_cache(basename=filename, criteria=criteria, df=df)
         else:
             log.debug("Fetch", target="CompanyProfile", source="disk", symbol=symbol)
 
-        df = df.drop(columns=["currency", "estimateCurrency", "exchange", "phone", "weburl", "logo", "finnhubIndustry"])
-        # Columns remaining:
-        #   country, list_date, market_cap, name, outstanding_shares, symbol
-        return df
+        df = df.drop(columns=["currency", "estimateCurrency", "exchange", "finnhubIndustry", "logo", "phone", "weburl"])
+        return df[[COL_COUNTRY, COL_MIC, COL_LIST_DATE, COL_MC, COL_NAME, COL_OUT_SHARES, COL_SYMBOL]]

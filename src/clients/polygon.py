@@ -13,7 +13,7 @@ from src import data_processing
 from src.clients import cache
 from src.clients.providerpool import Provider
 from src.consts import API_POLY_TOKEN, API_POLY_CACHE_ONLY, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, \
-    COL_NAME, COL_TYPE, MIC_CODES
+    COL_NAME, COL_TYPE, MIC_CODES, COL_MC, COL_LIST_DATE, COL_STATE, COL_ZIP
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
 
@@ -116,34 +116,50 @@ def get_all_stock() -> pd.DataFrame:
     log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source=source)
     return df[[COL_CIK, COL_FIGI, COL_NAME, COL_MIC, COL_SYMBOL, COL_TYPE]]
 
-    # Gotta pull down from the API
-    attempt = raw = None  # Suppresses references before bound warning
-    norm_sym = _fix_dot_p(symbol)
-    client = RESTClient(api_key=API_POLY_TOKEN)
-    for attempt in range(retries := 3):
-        try:
-            raw = client.get_ticker_details(ticker=norm_sym, raw=True)  # Grab raw so we can save json to disk
-            if attempt > 0: log.info("Retry success", attempt=attempt + 1, retries=retries)
-            log.debug("Fetch", target="TickerDetails", source="API", symbol=symbol)
-            attempt = 0
-            break
-        except MaxRetryError:
-            log.warning("MaxRetryError", reason="exceeded API limit", attempt=attempt + 1, retries=retries)
-            io.console_countdown(msg="\tRetrying", seconds=60)
-        except BadResponse as e:
-            log.critical("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym)
-            print(f"\t{str(e)}")
-            sys.exit(1)
 
-    if attempt >= retries - 1:
-        log.critical("Retry failed", reason="exceeded retries", symbol=symbol, attempt=attempt + 1, retries=retries)
-        raise ConnectionError("Unknown issue with API end point.")
+class PolygonProvider(Provider):
+    @property
+    def name(self) -> str:
+        return "polygon"
 
-    # Save to disk
-    raw = raw.data.decode("utf-8")
-    raw = json.loads(raw)["results"]
-    ticker = TickerDetails.from_dict(raw)
-    ticker.ticker = symbol  # Ensure our symbol is used so lookups remain consistent
-    _save_ticker_details(ticker.ticker, raw)
+    def fetch(self, symbol: str) -> pd.DataFrame:
+        return self._get_ticker_details(symbol)
 
-    return ticker
+    @staticmethod
+    def _get_ticker_details(symbol: str) -> pd.DataFrame:
+        log = timber.plant()
+        filename = f"{_BASE_FILENAME}/{symbol[0]}"
+        criteria = {"company": symbol}
+        df = cache.load_api_cache(basename=filename, criteria=criteria, allow_stale=API_POLY_CACHE_ONLY)
+
+        if df.empty:
+            norm_sym = _fix_dot_p(symbol)
+            client = RESTClient(api_key=API_POLY_TOKEN)
+            try:
+                result = client.get_ticker_details(ticker=norm_sym, raw=True)
+            except MaxRetryError:
+                log.warning("MaxRetryError", reason="exceeded API limit")
+                raise APILimitReachedError()
+            except BadResponse as e:
+                log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym)
+                raise NoResultsFoundError()
+
+            # Save to disk
+            result = result.data.decode("utf-8")
+            result = json.loads(result)["results"]
+            df = pd.json_normalize(result)
+            df.rename(columns={"ticker": COL_SYMBOL, "share_class_shares_outstanding": COL_OUT_SHARES,
+                               "primary_exchange": COL_MIC, "address.state": COL_STATE, "address.postal_code": COL_ZIP},
+                      inplace=True)
+            df[COL_SYMBOL].iloc[0] = symbol
+            cache.save_api_cache(basename=filename, criteria=criteria, df=df)
+        else:
+            pass
+
+        df = df.drop(
+            columns=["market", "locale", "active", "currency_name", "share_class_figi", "phone_number", "description",
+                     "sic_code", "sic_description", "ticker_root", "homepage_url", "total_employees",
+                     "weighted_shares_outstanding", "round_lot", "address.address1", "address.city",
+                     "branding.logo_url"])
+        return df[[COL_SYMBOL, COL_NAME, COL_MIC, COL_TYPE, COL_CIK, COL_FIGI, COL_MC, COL_LIST_DATE, COL_OUT_SHARES,
+                   COL_STATE, COL_ZIP]]
