@@ -1,3 +1,4 @@
+import sys
 from pathlib import Path
 
 import finnhub
@@ -25,10 +26,11 @@ def get_all_stock() -> pd.DataFrame:
 
     Returns:
         pd.DataFrame: A DataFrame containing stock data with columns:
-            - COL_FIGI: Financial Instrument Global Identifier (FIGI).
-            - COL_MIC: Market Identifier Code (exchange).
-            - COL_SYMBOL: Standardized ticker symbol.
-            - COL_TYPE: Security type.
+
+            - `COL_FIGI`: Financial Instrument Global Identifier (FIGI).
+            - `COL_MIC`: Market Identifier Code (exchange).
+            - `COL_SYMBOL`: Standardized ticker symbol.
+            - `COL_TYPE`: Security type.
     """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="finnhub")
@@ -65,6 +67,30 @@ class FinnhubProvider(Provider):
 
     @staticmethod
     def _get_company_profile2(symbol: str) -> pd.DataFrame:
+        """
+        Retrieve detailed company profile information for a given symbol, with caching.
+
+        Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
+        The results are normalized and cached for future use.
+
+        Args:
+            symbol (str): The ticker symbol to query.
+
+        Returns:
+            pd.DataFrame: A single-row DataFrame with the following columns:
+
+                - `COL_COUNTRY`: Country of the issuer.
+                - `COL_MIC`: Market Identifier Code (exchange).
+                - `COL_LIST_DATE`: IPO/listing date.
+                - `COL_MC`: Market capitalization.
+                - `COL_NAME`: Company name.
+                - `COL_OUT_SHARES`: Shares outstanding.
+                - `COL_SYMBOL`: Standardized ticker symbol.
+
+        Raises:
+            APILimitReachedError: When Finnhub API rate limits are exceeded.
+            NoResultsFoundError: When the symbol returns no results from Finnhub.
+        """
         log = timber.plant()
         filename = f"{_BASE_FILENAME}/{symbol[0]}"
         criteria = {"company": symbol}
@@ -78,7 +104,8 @@ class FinnhubProvider(Provider):
                     log.warning("FinnhubAPIException", reason="exceeded API limit")
                     raise APILimitReachedError()
                 else:
-                    raise e
+                    log.critical("FinnhubAPIException", reason=e.response.text)
+                    sys.exit(1)
 
             if not result:
                 log.error("NoResultsFoundError", reason=symbol)

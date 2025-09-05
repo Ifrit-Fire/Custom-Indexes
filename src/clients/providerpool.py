@@ -4,7 +4,7 @@ import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
-from typing import Sequence
+from typing import Sequence, Iterator
 
 import pandas as pd
 
@@ -35,11 +35,31 @@ class Provider(ABC):
 
 
 class ProviderPool:
+    """
+    Manage multiple API providers with automatic failover and cooldowns.
+
+    The pool cycles through a list of Provider objects in round-robin order, selecting the
+    next available provider for each request. If a provider exceeds its rate limit, it is
+    temporarily marked unavailable and skipped until its cooldown expires. If a provider
+    returns no results, the pool tries the remaining providers; if all providers return
+    no results, the pool stops and returns an empty DataFrame.
+
+    Args:
+        providers (Sequence[Provider]): A sequence of Provider objects.
+    """
+
     def __init__(self, providers: Sequence[Provider]):
         self._providers = list(providers)
         self._index = 0
 
     def _next(self) -> Provider | None:
+        """
+        Select the next available provider in round-robin order.
+
+        Returns:
+            Provider | None: The next available provider, or None if all are
+            currently rate-limited.
+        """
         n = len(self._providers)
         for i in range(n):
             p = self._providers[(self._index + i) % n]
@@ -49,12 +69,22 @@ class ProviderPool:
         return None
 
     def _wait(self):
+        """
+        Block until the earliest provider cooldown has expired.
+        """
         now = datetime.now(timezone.utc)
         soonest = min(self._iter_cooldowns())
         sleep_for = max(0.0, (soonest - now).total_seconds() + 1)
         time.sleep(sleep_for)
 
-    def _iter_cooldowns(self):
+    def _iter_cooldowns(self) -> Iterator[datetime]:
+        """
+        Yield all non-None provider cooldown expiry times.
+
+        Yields:
+            datetime: The `cooldown_until` values for providers currently
+            marked unavailable.
+        """
         for p in self._providers:
             if p.cooldown_until is not None:
                 yield p.cooldown_until

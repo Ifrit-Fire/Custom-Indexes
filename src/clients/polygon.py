@@ -86,12 +86,13 @@ def get_all_stock() -> pd.DataFrame:
 
     Returns:
         pd.DataFrame: A DataFrame containing standardized stock data with columns:
-            - COL_CIK: Central Index Key (CIK) if available.
-            - COL_FIGI: Financial Instrument Global Identifier (FIGI).
-            - COL_NAME: Company name.
-            - COL_MIC: Market Identifier Code (exchange).
-            - COL_SYMBOL: Standardized ticker symbol.
-            - COL_TYPE: Security type.
+
+            - `COL_CIK`: Central Index Key (CIK) if available.
+            - `COL_FIGI`: Financial Instrument Global Identifier (FIGI).
+            - `COL_NAME`: Company name.
+            - `COL_MIC`: Market Identifier Code (exchange).
+            - `COL_SYMBOL`: Standardized ticker symbol.
+            - `COL_TYPE`: Security type.
     """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="polygon")
@@ -127,6 +128,34 @@ class PolygonProvider(Provider):
 
     @staticmethod
     def _get_ticker_details(symbol: str) -> pd.DataFrame:
+        """
+        Retrieve detailed ticker information for a given symbol, with caching.
+
+        Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
+        The results are normalized and cached for future use.
+
+        Args:
+            symbol (str): The ticker symbol to query.
+
+        Returns:
+            pd.DataFrame: A single-row DataFrame with the following columns:
+
+                - `COL_SYMBOL`: Standardized ticker symbol.
+                - `COL_NAME`: Company name.
+                - `COL_MIC`: Market Identifier Code (exchange).
+                - `COL_TYPE`: Security type.
+                - `COL_CIK`: Central Index Key (CIK).
+                - `COL_FIGI`: Financial Instrument Global Identifier (FIGI).
+                - `COL_MC`: Market capitalization.
+                - `COL_LIST_DATE`: IPO/listing date.
+                - `COL_OUT_SHARES`: Shares outstanding.
+                - `COL_STATE`: State of incorporation.
+                - `COL_ZIP`: ZIP/postal code.
+
+        Raises:
+            APILimitReachedError: If Polygon API rate limits are exceeded.
+            NoResultsFoundError: If the ticker is invalid or Polygon returns no results.
+        """
         log = timber.plant()
         filename = f"{_BASE_FILENAME}/{symbol[0]}"
         criteria = {"company": symbol}
