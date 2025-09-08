@@ -1,10 +1,87 @@
+import sys
+
+import datacompy
 import pandas as pd
 from pandas import DataFrame, Timestamp, Series
 
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
+from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO, COL_FIGI
 from src.logger import timber
+
+
+def _fillna(found_in: DataFrame, with_df: DataFrame, on_column: str) -> DataFrame:
+    """
+    Fill NaN values in one DataFrame with values from another DataFrame. Both DataFrames need to be aligned on the
+    global `COL_SYMBOL` index.
+
+    Args:
+        found_in (DataFrame): The DataFrame in which NaN values should be filled.
+        with_df (DataFrame): The DataFrame providing replacement values.
+        on_column (str): The column name in which to fill missing values.
+
+    Returns:
+        DataFrame: A copy of `found_in` with NaN values in `on_column` filled from `with_df`, and the index reset
+        back to `COL_SYMBOL`.
+    """
+    found_in = found_in.set_index(COL_SYMBOL)
+    with_df = with_df.set_index(COL_SYMBOL)
+    found_in[on_column] = found_in[on_column].fillna(with_df[on_column])
+    return found_in.reset_index()
+
+
+def merge_all_stock(df_finn: DataFrame, df_poly: DataFrame) -> DataFrame:
+    """
+    Compares two stock datasets (`df_finn` and `df_poly`) on their shared `COL_SYMBOL`, cleans and aligns them to
+    ensure one-for-one matching, and then merges the non-overlapping columns into a consolidated result. Unique rows to
+    either DataFrame are dropped. Polygon is known to contain missing values for `COL_FIGI`.  Finnhub is default value
+    used for discrepancies on datasets. In testing of
+
+    Args:
+        df_finn (DataFrame): Stock data from the "finnhub" client.
+        df_poly (DataFrame): Stock data from the "polygon" client.
+
+    Returns:
+        DataFrame: A merged DataFrame containing all rows that overlap on `COL_SYMBOL` between `df_finn` and `df_poly`
+
+    Raises:
+        SystemExit: If, after reconciliation, the DataFrames still do not have all rows overlapping on `COL_SYMBOL`.
+
+    Notes:
+        - In hand testing of some of the data discrepancies, Finnhub was always correct. Polygon was always wrong.
+    """
+    log = timber.plant()
+    log.info("Phase starts", merge="all stock")
+    cmp = datacompy.Compare(df_finn, df_poly, COL_SYMBOL)
+    if not cmp.all_rows_overlap():
+        log.debug("All rows overlap", result=False)
+        print(cmp.report())
+
+    if len(cmp.df1_unq_rows) > 0 or len(cmp.df2_unq_rows) > 0:
+        log.info("Unique Rows Detected", action="remove")
+        common = pd.Index(df_finn[COL_SYMBOL]).intersection(df_poly[COL_SYMBOL])
+        mask1 = df_finn[COL_SYMBOL].isin(common)
+        mask2 = df_poly[COL_SYMBOL].isin(common)
+        df_finn = df_finn.loc[mask1].copy()
+        df_poly = df_poly.loc[mask2].copy()
+
+    if df_poly[COL_FIGI].hasnans:
+        log.info("Nan detected", action="fill in", using="Other dataframe")
+        df_poly = _fillna(found_in=df_poly, with_df=df_finn, on_column=COL_FIGI)
+
+    log.info("Mismatched Types", action="Pick one")
+    df_poly[COL_TYPE] = df_poly[COL_SYMBOL].map(df_finn.set_index(COL_SYMBOL)[COL_TYPE])
+
+    cmp = datacompy.Compare(df_finn, df_poly, COL_SYMBOL)
+    if not cmp.all_rows_overlap():
+        log.critical("All rows overlap", result="fail", reason="not expected")
+        sys.exit()
+
+    log.info("All rows overlap", result="success")
+    df2_unique = cmp.df2[cmp.df2_unq_columns() | {COL_SYMBOL}]
+    df_merge = cmp.df1.merge(df2_unique, on=COL_SYMBOL, how='inner')
+    log.info("Phase ends", merge="all stock", count=len(df_merge))
+    return df_merge
 
 
 def standardize_symbols(series: pd.Series) -> pd.Series:
