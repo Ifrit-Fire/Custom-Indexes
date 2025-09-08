@@ -10,6 +10,7 @@ from polygon import RESTClient, BadResponse
 from urllib3.exceptions import MaxRetryError
 
 from src import data_processing
+from src.SecurityTypes import StockTypes
 from src.clients import cache
 from src.clients.providerpool import Provider
 from src.consts import API_POLY_TOKEN, API_POLY_CACHE_ONLY, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, \
@@ -19,6 +20,7 @@ from src.logger import timber
 
 _BASE_FILENAME = Path(__file__).name
 _BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
+_TYPE_TO_STANDARD = {"CS": StockTypes.COMMON_STOCK.value, "ADRC": StockTypes.ADR.value}
 
 
 def _fix_dot_p(symbol: str) -> str:
@@ -112,6 +114,7 @@ def get_all_stock() -> pd.DataFrame:
         df = pd.json_normalize(tickers)
         df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
         df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
+        df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
         cache.save_api_cache(_BASE_FILENAME, {}, df)
 
     log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source=source)
