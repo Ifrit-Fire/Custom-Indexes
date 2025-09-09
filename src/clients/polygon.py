@@ -13,8 +13,8 @@ from src import data_processing
 from src.SecurityTypes import StockTypes
 from src.clients import cache
 from src.clients.providerpool import Provider
-from src.consts import API_POLY_TOKEN, API_POLY_CACHE_ONLY, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, \
-    COL_NAME, COL_TYPE, MIC_CODES, COL_MC, COL_LIST_DATE, COL_STATE, COL_ZIP
+from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, \
+    MIC_CODES, COL_MC, COL_LIST_DATE, COL_STATE, COL_POSTAL_CODE
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
 
@@ -69,7 +69,7 @@ def _iter_all_stock(params: dict[str, str]) -> Iterator[dict[str, object]]:
 
             response = session.get(url, params=final_param)
             if response.status_code == 429:
-                log.debug("MaxRetryError", reason="exceeded API limit", response="waiting")
+                log.warning("MaxRetryError", reason="exceeded API limit", response="waiting")
                 time.sleep(60)
                 continue
             response.raise_for_status()
@@ -98,7 +98,7 @@ def get_all_stock() -> pd.DataFrame:
     """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="polygon")
-    df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=API_POLY_CACHE_ONLY)
+    df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=True)
     source = "cache"
 
     if df.empty:
@@ -129,8 +129,7 @@ class PolygonProvider(Provider):
     def fetch(self, symbol: str) -> pd.DataFrame:
         return self._get_ticker_details(symbol)
 
-    @staticmethod
-    def _get_ticker_details(symbol: str) -> pd.DataFrame:
+    def _get_ticker_details(self, symbol: str) -> pd.DataFrame:
         """
         Retrieve detailed ticker information for a given symbol, with caching.
 
@@ -162,7 +161,7 @@ class PolygonProvider(Provider):
         log = timber.plant()
         filename = f"{_BASE_FILENAME}/{symbol[0]}"
         criteria = {"company": symbol}
-        df = cache.load_api_cache(basename=filename, criteria=criteria, allow_stale=API_POLY_CACHE_ONLY)
+        df = cache.load_api_cache(basename=filename, criteria=criteria, allow_stale=True)
 
         if df.empty:
             norm_sym = _fix_dot_p(symbol)
@@ -170,10 +169,11 @@ class PolygonProvider(Provider):
             try:
                 result = client.get_ticker_details(ticker=norm_sym, raw=True)
             except MaxRetryError:
-                log.warning("MaxRetryError", reason="exceeded API limit")
+                log.warning("MaxRetryError", reason="exceeded API limit", provider=self.name)
                 raise APILimitReachedError()
             except BadResponse as e:
-                log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym)
+                log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym,
+                          provider=self.name)
                 raise NoResultsFoundError()
 
             # Save to disk
@@ -181,17 +181,24 @@ class PolygonProvider(Provider):
             result = json.loads(result)["results"]
             df = pd.json_normalize(result)
             df.rename(columns={"ticker": COL_SYMBOL, "share_class_shares_outstanding": COL_OUT_SHARES,
-                               "primary_exchange": COL_MIC, "address.state": COL_STATE, "address.postal_code": COL_ZIP},
-                      inplace=True)
-            df[COL_SYMBOL].iloc[0] = symbol
+                               "primary_exchange": COL_MIC, "address.state": COL_STATE,
+                               "address.postal_code": COL_POSTAL_CODE}, inplace=True)
+            df.loc[0, COL_SYMBOL] = symbol
             cache.save_api_cache(basename=filename, criteria=criteria, df=df)
         else:
             pass
 
-        df = df.drop(
-            columns=["market", "locale", "active", "currency_name", "share_class_figi", "phone_number", "description",
-                     "sic_code", "sic_description", "ticker_root", "homepage_url", "total_employees",
-                     "weighted_shares_outstanding", "round_lot", "address.address1", "address.city",
-                     "branding.logo_url"])
-        return df[[COL_SYMBOL, COL_NAME, COL_MIC, COL_TYPE, COL_CIK, COL_FIGI, COL_MC, COL_LIST_DATE, COL_OUT_SHARES,
-                   COL_STATE, COL_ZIP]]
+        # Not all tickers contain all possible columns in response. Explicitly define everything for readability.
+        optional_col = ["phone_number", "sic_code", "sic_description", "total_employees", "address.address1",
+                        "address.city", "branding.logo_url", "share_class_figi", "homepage_url", "description",
+                        "weighted_shares_outstanding", "round_lot"]
+        drop_col = ["market", "locale", "active", "currency_name", "ticker_root"]
+        keep_col = [COL_SYMBOL, COL_NAME, COL_MIC, COL_TYPE, COL_CIK, COL_FIGI, COL_MC, COL_LIST_DATE, COL_OUT_SHARES,
+                    COL_STATE, COL_POSTAL_CODE]
+        df = df.drop(optional_col, errors="ignore")
+        df = df.drop(columns=drop_col)
+        for col in keep_col:
+            if col not in df.columns:
+                log.debug("Missing required column", symbol=symbol, column=col)
+                df[col] = pd.NA
+        return df[keep_col]
