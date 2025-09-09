@@ -52,29 +52,32 @@ class ProviderPool:
         self._providers = list(providers)
         self._index = 0
 
-    def _next(self) -> Provider | None:
+    def _next(self) -> Provider:
         """
-        Select the next available provider in round-robin order.
+        Select the next available provider in round-robin order. If no providers are currently available, will wait and
+        retry until one becomes available.
 
         Returns:
-            Provider | None: The next available provider, or None if all are
-            currently rate-limited.
+            Provider: The next available provider.
         """
-        n = len(self._providers)
-        for i in range(n):
-            p = self._providers[(self._index + i) % n]
-            if p.is_available():
-                self._index = (self._index + i + 1) % n
-                return p
-        return None
+        while True:
+            n = len(self._providers)
+            for i in range(n):
+                p = self._providers[(self._index + i) % n]
+                if p.is_available():
+                    self._index = (self._index + i + 1) % n
+                    return p
+            self._wait()
 
     def _wait(self):
         """
         Block until the earliest provider cooldown has expired.
         """
+        log = timber.plant()
         now = datetime.now(timezone.utc)
         soonest = min(self._iter_cooldowns())
         sleep_for = max(0.0, (soonest - now).total_seconds() + 1)
+        log.warning("Providers waiting", reason="limits reached, cooling off", duration=sleep_for, units="seconds")
         time.sleep(sleep_for)
 
     def _iter_cooldowns(self) -> Iterator[datetime]:
@@ -95,8 +98,8 @@ class ProviderPool:
         no_results: set[str] = set()
         while True:
             p = self._next()
-            if p is None:
-                self._wait()
+            if p.name in no_results:
+                p.mark_unavailable()
                 continue
             try:
                 return p.fetch(symbol)
