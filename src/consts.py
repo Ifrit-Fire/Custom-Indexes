@@ -32,7 +32,7 @@ COL_SYMBOL = "symbol"
 COL_TYPE = "type"
 COL_VOLUME = "volume"
 COL_WEIGHT = "weighted"
-COL_ZIP = "zipcode"
+COL_POSTAL_CODE = "zipcode"
 
 FORM_STRUCT = "structured"
 FORM_TEXT = "text"
