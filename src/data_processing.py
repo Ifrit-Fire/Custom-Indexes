@@ -55,7 +55,6 @@ def merge_all_stock(df_finn: DataFrame, df_poly: DataFrame) -> DataFrame:
     cmp = datacompy.Compare(df_finn, df_poly, COL_SYMBOL)
     if not cmp.all_rows_overlap():
         log.debug("All rows overlap", result=False)
-        print(cmp.report())
 
     if len(cmp.df1_unq_rows) > 0 or len(cmp.df2_unq_rows) > 0:
         log.info("Unique Rows Detected", action="remove")
@@ -66,7 +65,7 @@ def merge_all_stock(df_finn: DataFrame, df_poly: DataFrame) -> DataFrame:
         df_poly = df_poly.loc[mask2].copy()
 
     if df_poly[COL_FIGI].hasnans:
-        log.info("Nan detected", action="fill in", using="Other dataframe")
+        log.info("Nan detected", action="fill in", using="default to Finnhub")
         df_poly = _fillna(found_in=df_poly, with_df=df_finn, on_column=COL_FIGI)
 
     log.info("Mismatched Types", action="Pick one")
