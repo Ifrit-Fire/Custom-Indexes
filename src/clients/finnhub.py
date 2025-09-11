@@ -1,5 +1,4 @@
 import sys
-from pathlib import Path
 
 import finnhub
 import pandas as pd
@@ -13,7 +12,6 @@ from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.io import cache
 from src.logger import timber
 
-_BASE_FILENAME = Path(__file__).name
 _CLIENT = finnhub.Client(api_key=API_FINN_TOKEN)
 
 
@@ -34,7 +32,7 @@ def get_all_stock() -> pd.DataFrame:
     """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="finnhub")
-    df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=True)
+    df = cache.load_stock_list(provider="finnhub", filters=MIC_CODES)
     source = "cache"
 
     if df.empty:
@@ -50,7 +48,7 @@ def get_all_stock() -> pd.DataFrame:
         df = pd.concat(frames, ignore_index=True)
         df.rename(columns={"figi": COL_FIGI}, inplace=True)
         df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
-        cache.save_api_cache(_BASE_FILENAME, {}, df)
+        cache.save_stock_list(df=df, provider="finnhub", filters=MIC_CODES)
 
     df = df[df["type"].isin(STOCK_TYPES)]
     log.info("Phase ends", fetch="stock list", endpoint="finnhub", count=len(df), source=source)
@@ -91,9 +89,7 @@ class FinnhubProvider(Provider):
             NoResultsFoundError: When the symbol returns no results from Finnhub.
         """
         log = timber.plant()
-        filename = f"{_BASE_FILENAME}/{symbol[0]}"
-        criteria = {"company": symbol}
-        df = cache.load_api_cache(basename=filename, criteria=criteria, allow_stale=True)
+        df = cache.load_symbol_details(provider=self.name, symbol=symbol)
 
         if df.empty:
             try:
@@ -114,7 +110,7 @@ class FinnhubProvider(Provider):
             df.rename(columns={"marketCapitalization": COL_MC, "ticker": COL_SYMBOL, "ipo": COL_LIST_DATE,
                                "shareOutstanding": COL_OUT_SHARES}, inplace=True)
             df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
-            cache.save_api_cache(basename=filename, criteria=criteria, df=df)
+            cache.save_symbol_details(df=df, provider=self.name, symbol=symbol)
         else:
             log.debug("Fetch", target="CompanyProfile", source="disk", symbol=symbol, provider=self.name)
 

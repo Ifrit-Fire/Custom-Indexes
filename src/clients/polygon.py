@@ -98,14 +98,13 @@ def get_all_stock() -> pd.DataFrame:
     """
     log = timber.plant()
     log.info("Phase starts", fetch="stock list", endpoint="polygon")
-    df = cache.load_api_cache(_BASE_FILENAME, {}, allow_stale=True)
+    types = {"CS", "ADRC"}
+    df = cache.load_stock_list(provider="polygon", filters=types | MIC_CODES)
     source = "cache"
 
     if df.empty:
         source = "API"
-
         tickers = []
-        types = ["CS", "ADRC"]
         for mic in MIC_CODES:
             for tipe in types:
                 params = {"market": "stocks", "active": "true", "exchange": mic, "type": tipe, "limit": 1000}
@@ -115,7 +114,7 @@ def get_all_stock() -> pd.DataFrame:
         df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
         df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
-        cache.save_api_cache(_BASE_FILENAME, {}, df)
+        cache.save_stock_list(df=df, provider="polygon", filters=types | MIC_CODES)
 
     log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source=source)
     return df[[COL_CIK, COL_FIGI, COL_NAME, COL_MIC, COL_SYMBOL, COL_TYPE]]
@@ -159,9 +158,7 @@ class PolygonProvider(Provider):
             NoResultsFoundError: If the ticker is invalid or Polygon returns no results.
         """
         log = timber.plant()
-        filename = f"{_BASE_FILENAME}/{symbol[0]}"
-        criteria = {"company": symbol}
-        df = cache.load_api_cache(basename=filename, criteria=criteria, allow_stale=True)
+        df = cache.load_symbol_details(provider=self.name, symbol=symbol)
 
         if df.empty:
             norm_sym = _fix_dot_p(symbol)
@@ -184,7 +181,7 @@ class PolygonProvider(Provider):
                                "primary_exchange": COL_MIC, "address.state": COL_STATE,
                                "address.postal_code": COL_POSTAL_CODE}, inplace=True)
             df.loc[0, COL_SYMBOL] = symbol
-            cache.save_api_cache(basename=filename, criteria=criteria, df=df)
+            cache.save_symbol_details(df=df, provider=self.name, symbol=symbol)
         else:
             pass
 
