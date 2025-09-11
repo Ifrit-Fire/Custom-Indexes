@@ -5,10 +5,11 @@ import requests
 from pandas import DataFrame, Series
 
 from src import data_processing
-from src.clients import cache, polygon
+from src.clients import polygon
 from src.config_handler import KEY_INDEX_TOP
 from src.consts import COL_NAME, COL_MC, COL_SYMBOL, MIN_MEGA_CAP, API_FMP_TOKEN, COL_PRICE, MIN_LARGE_CAP, MIN_MID_CAP, \
     MIN_SMALL_CAP, COL_VOLUME, MIN_ULTRA_CAP, COL_TYPE, COL_LIST_DATE, ASSET_TYPES, API_FMP_CACHE_ONLY
+from src.io import cache
 from src.logger import timber
 
 # Financial Model Prep: https://intelligence.financialmodelingprep.com/developer/docs/stock-screener-api
