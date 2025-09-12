@@ -10,9 +10,10 @@ from urllib3.exceptions import MaxRetryError
 
 from src.clients.providerpool import Provider
 from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, \
-    MIC_CODES, COL_MC, COL_LIST_DATE, COL_STATE, COL_POSTAL_CODE
-from src.data.providers import ProviderSource
+    MIC_CODES, COL_STATE, COL_POSTAL_CODE
+from src.data import processing
 from src.data.security_types import StockTypes
+from src.data.source import ProviderSource
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.io import cache
 from src.logger import timber
@@ -71,10 +72,10 @@ def _iter_all_stock(params: dict[str, str]) -> Iterator[dict[str, object]]:
                 time.sleep(60)
                 continue
             response.raise_for_status()
-            data = response.json()
-            for row in data.get("results", []):
+            result = response.json()
+            for row in result.get("results", []):
                 yield row
-            url = data.get("next_url")  # None when done
+            url = result.get("next_url")  # None when done
 
 
 def get_all_stock() -> pd.DataFrame:
@@ -110,7 +111,7 @@ def get_all_stock() -> pd.DataFrame:
 
         df = pd.json_normalize(tickers)
         df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
-        df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
+        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
         cache.save_stock_list(df=df, provider="polygon", filters=types | MIC_CODES)
 
@@ -128,72 +129,36 @@ class PolygonProvider(Provider):
 
     def _get_ticker_details(self, symbol: str) -> pd.DataFrame:
         """
-        Retrieve detailed ticker information for a given symbol, with caching.
-
-        Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
-        The results are normalized and cached for future use.
+        Retrieves and normalizes detailed ticker information for a given symbol.
 
         Args:
             symbol (str): The ticker symbol to query.
 
         Returns:
-            pd.DataFrame: A single-row DataFrame with the following columns:
-
-                - `COL_SYMBOL`: Standardized ticker symbol.
-                - `COL_NAME`: Company name.
-                - `COL_MIC`: Market Identifier Code (exchange).
-                - `COL_TYPE`: Security type.
-                - `COL_CIK`: Central Index Key (CIK).
-                - `COL_FIGI`: Financial Instrument Global Identifier (FIGI).
-                - `COL_MC`: Market capitalization.
-                - `COL_LIST_DATE`: IPO/listing date.
-                - `COL_OUT_SHARES`: Shares outstanding.
-                - `COL_STATE`: State of incorporation.
-                - `COL_ZIP`: ZIP/postal code.
+            pd.DataFrame: A single-row DataFrame with normalized ticker data, including standardized
+            `COL_SYMBOL`, `COL_OUT_SHARES`, `COL_MIC`, `COL_STATE`, and `COL_POSTAL_CODE`.
 
         Raises:
-            APILimitReachedError: If Polygon API rate limits are exceeded.
-            NoResultsFoundError: If the ticker is invalid or Polygon returns no results.
+            APILimitReachedError: When API rate limits are exceeded.
+            NoResultsFoundError: When the symbol returns no results from provider.
         """
         log = timber.plant()
-        df = cache.load_symbol_details(provider=self.name, symbol=symbol)
+        norm_sym = _fix_dot_p(symbol)
+        client = RESTClient(api_key=API_POLY_TOKEN)
+        try:
+            result = client.get_ticker_details(ticker=norm_sym, raw=True)
+        except MaxRetryError:
+            log.warning("MaxRetryError", reason="exceeded API limit", provider=self.name)
+            raise APILimitReachedError()
+        except BadResponse as e:
+            log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym, provider=self.name)
+            raise NoResultsFoundError()
 
-        if df.empty:
-            norm_sym = _fix_dot_p(symbol)
-            client = RESTClient(api_key=API_POLY_TOKEN)
-            try:
-                result = client.get_ticker_details(ticker=norm_sym, raw=True)
-            except MaxRetryError:
-                log.warning("MaxRetryError", reason="exceeded API limit", provider=self.name)
-                raise APILimitReachedError()
-            except BadResponse as e:
-                log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym,
-                          provider=self.name)
-                raise NoResultsFoundError()
-
-            # Save to disk
-            result = result.data.decode("utf-8")
-            result = json.loads(result)["results"]
-            df = pd.json_normalize(result)
-            df.rename(columns={"ticker": COL_SYMBOL, "share_class_shares_outstanding": COL_OUT_SHARES,
-                               "primary_exchange": COL_MIC, "address.state": COL_STATE,
-                               "address.postal_code": COL_POSTAL_CODE}, inplace=True)
-            df.loc[0, COL_SYMBOL] = symbol
-            cache.save_symbol_details(df=df, provider=self.name, symbol=symbol)
-        else:
-            pass
-
-        # Not all tickers contain all possible columns in response. Explicitly define everything for readability.
-        optional_col = ["phone_number", "sic_code", "sic_description", "total_employees", "address.address1",
-                        "address.city", "branding.logo_url", "share_class_figi", "homepage_url", "description",
-                        "weighted_shares_outstanding", "round_lot"]
-        drop_col = ["market", "locale", "active", "currency_name", "ticker_root"]
-        keep_col = [COL_SYMBOL, COL_NAME, COL_MIC, COL_TYPE, COL_CIK, COL_FIGI, COL_MC, COL_LIST_DATE, COL_OUT_SHARES,
-                    COL_STATE, COL_POSTAL_CODE]
-        df = df.drop(optional_col, errors="ignore")
-        df = df.drop(columns=drop_col)
-        for col in keep_col:
-            if col not in df.columns:
-                log.debug("Missing required column", symbol=symbol, column=col)
-                df[col] = pd.NA
-        return df[keep_col]
+        result = result.data.decode("utf-8")
+        result = json.loads(result)["results"]
+        df = pd.json_normalize(result)
+        df.rename(columns={"ticker": COL_SYMBOL, "share_class_shares_outstanding": COL_OUT_SHARES,
+                           "primary_exchange": COL_MIC, "address.state": COL_STATE,
+                           "address.postal_code": COL_POSTAL_CODE}, inplace=True)
+        df.loc[0, COL_SYMBOL] = symbol
+        return df

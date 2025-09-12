@@ -6,8 +6,9 @@ from finnhub import FinnhubAPIException
 
 from src.clients.providerpool import Provider
 from src.consts import API_FINN_TOKEN, COL_SYMBOL, STOCK_TYPES, COL_MC, COL_LIST_DATE, COL_OUT_SHARES, COL_FIGI, \
-    COL_MIC, COL_TYPE, MIC_CODES, COL_COUNTRY, COL_NAME
-from src.data.providers import ProviderSource
+    COL_MIC, COL_TYPE, MIC_CODES
+from src.data import processing
+from src.data.source import ProviderSource
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.io import cache
 from src.logger import timber
@@ -47,7 +48,7 @@ def get_all_stock() -> pd.DataFrame:
 
         df = pd.concat(frames, ignore_index=True)
         df.rename(columns={"figi": COL_FIGI}, inplace=True)
-        df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
+        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
         cache.save_stock_list(df=df, provider="finnhub", filters=MIC_CODES)
 
     df = df[df["type"].isin(STOCK_TYPES)]
@@ -65,54 +66,38 @@ class FinnhubProvider(Provider):
 
     def _get_company_profile2(self, symbol: str) -> pd.DataFrame:
         """
-        Retrieve detailed company profile information for a given symbol, with caching.
-
-        Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
-        The results are normalized and cached for future use.
+        Retrieves and normalizes detailed company profile information for a given symbol.
 
         Args:
             symbol (str): The ticker symbol to query.
 
         Returns:
-            pd.DataFrame: A single-row DataFrame with the following columns:
-
-                - `COL_COUNTRY`: Country of the issuer.
-                - `COL_MIC`: Market Identifier Code (exchange).
-                - `COL_LIST_DATE`: IPO/listing date.
-                - `COL_MC`: Market capitalization.
-                - `COL_NAME`: Company name.
-                - `COL_OUT_SHARES`: Shares outstanding.
-                - `COL_SYMBOL`: Standardized ticker symbol.
+            pd.DataFrame: A single-row DataFrame with normalized company profile data, including
+                standardized `COL_SYMBOL`, `COL_MC` (market cap), `COL_LIST_DATE`, and `COL_OUT_SHARES`.
 
         Raises:
-            APILimitReachedError: When Finnhub API rate limits are exceeded.
-            NoResultsFoundError: When the symbol returns no results from Finnhub.
+            APILimitReachedError: When API rate limits are exceeded.
+            NoResultsFoundError: When the symbol returns no results from provider.
         """
         log = timber.plant()
-        df = cache.load_symbol_details(provider=self.name, symbol=symbol)
+        try:
+            result = _CLIENT.company_profile2(**{"symbol": symbol})
+        except FinnhubAPIException as e:
+            if e.status_code == 429:
+                log.warning("FinnhubAPIException", reason="exceeded API limit", provider=self.name)
+                raise APILimitReachedError()
+            else:
+                log.critical("FinnhubAPIException", reason=e.response.text, provider=self.name)
+                sys.exit(1)
 
-        if df.empty:
-            try:
-                result = _CLIENT.company_profile2(**{"symbol": symbol})
-            except FinnhubAPIException as e:
-                if e.status_code == 429:
-                    log.warning("FinnhubAPIException", reason="exceeded API limit", provider=self.name)
-                    raise APILimitReachedError()
-                else:
-                    log.critical("FinnhubAPIException", reason=e.response.text, provider=self.name)
-                    sys.exit(1)
+        if not result:
+            log.error("NoResultsFoundError", symbol=symbol, provider=self.name)
+            raise NoResultsFoundError()
 
-            if not result:
-                log.error("NoResultsFoundError", symbol=symbol, provider=self.name)
-                raise NoResultsFoundError()
-
-            df = pd.json_normalize(result)
-            df.rename(columns={"marketCapitalization": COL_MC, "ticker": COL_SYMBOL, "ipo": COL_LIST_DATE,
-                               "shareOutstanding": COL_OUT_SHARES}, inplace=True)
-            df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
-            cache.save_symbol_details(df=df, provider=self.name, symbol=symbol)
-        else:
-            log.debug("Fetch", target="CompanyProfile", source="disk", symbol=symbol, provider=self.name)
-
-        df = df.drop(columns=["currency", "estimateCurrency", "exchange", "finnhubIndustry", "logo", "phone", "weburl"])
-        return df[[COL_COUNTRY, COL_LIST_DATE, COL_MC, COL_NAME, COL_OUT_SHARES, COL_SYMBOL]]
+        df = pd.json_normalize(result)
+        df.rename(columns={"marketCapitalization": COL_MC, "ticker": COL_SYMBOL, "ipo": COL_LIST_DATE,
+                           "shareOutstanding": COL_OUT_SHARES}, inplace=True)
+        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
+        df[COL_MC] *= 1_000_000
+        df[COL_OUT_SHARES] *= 1_000_000
+        return df

@@ -5,7 +5,7 @@ import pandas as pd
 from dateutil.relativedelta import relativedelta
 
 from src.consts import PATH_DATA_CACHE_ROOT
-from src.data.providers import ProviderSource
+from src.data.source import ProviderSource
 from src.logger import timber
 
 _KEY_EXPIRES = "expires"
@@ -86,18 +86,25 @@ def load_stock_list(provider: str, filters: set) -> pd.DataFrame:
     return load(namespace="lists", name=provider, identifier=ids, by_sharding=False, allow_stale=False)
 
 
-def load_symbol_details(provider: ProviderSource, symbol: str) -> pd.DataFrame:
+def load_symbol_details(symbol: str, provider: ProviderSource = None) -> pd.DataFrame:
     """
-    Load cached ticker detail data. This data never expire in practice.
+    Load cached ticker detail data for a symbol. If `provider` is given, load from that source. If not, check
+    providers in preferred order and return the first result found. Cached data is effectively non-expiring.
 
     Args:
-        provider (ProviderSource): The provider that supplied the data.
-        symbol (str): The ticker the data represents.
+        symbol (str): The ticker symbol to load.
+        provider (ProviderSource, optional): The provider to load from. If None, precedence rules apply.
 
     Returns:
-        pd.DataFrame: The cached ticker detail data if available, otherwise an empty DataFrame.
+        pd.DataFrame: Cached ticker details if available, otherwise an empty DataFrame.
     """
-    return load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
+    if provider:
+        return load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
+
+    for provider in [ProviderSource.POLYGON, ProviderSource.FINNHUB]:  # In preferred order
+        df = load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
+        if not df.empty: return df
+    return pd.DataFrame()
 
 
 def load(name: str, identifier: str, by_sharding: bool = False, namespace: str = "snapshot",

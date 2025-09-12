@@ -4,10 +4,11 @@ import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
-from typing import Sequence, Iterator
+from typing import Sequence, Iterator, Tuple
 
 import pandas as pd
 
+from src.data.source import ProviderSource
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
 
@@ -19,7 +20,7 @@ class Provider(ABC):
 
     @property
     @abstractmethod
-    def name(self) -> str:
+    def name(self) -> ProviderSource:
         pass
 
     @abstractmethod
@@ -93,7 +94,18 @@ class ProviderPool:
                 yield p.cooldown_until
 
     # noinspection PyTypeChecker
-    def fetch_data(self, symbol: str) -> pd.DataFrame:
+    def fetch_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
+        """
+        Fetch detailed data for a symbol using available providers with round-robin selection. If all providers are
+        exhausted with no results, an empty DataFrame is returned.
+
+        Args:
+            symbol (str): The ticker symbol to query.
+
+        Returns:
+            Tuple[pd.DataFrame, ProviderSource]: A normalized DataFrame with symbol details (empty if no results),
+                and the provider that supplied the result.
+        """
         log = timber.plant()
         no_results: set[str] = set()
         while True:
@@ -102,7 +114,7 @@ class ProviderPool:
                 p.mark_unavailable()
                 continue
             try:
-                return p.fetch(symbol)
+                return p.fetch(symbol), p.name
             except APILimitReachedError:
                 log.debug("APILimitReachedError", response="switch providers")
                 p.mark_unavailable()
@@ -113,5 +125,5 @@ class ProviderPool:
                 no_results.add(p.name)
                 if len(no_results) >= len(self._providers):
                     log.error("Providers Exhausted", reason="NoResultsFoundError", response="skipping", symbol=symbol)
-                    return pd.DataFrame()
+                    return pd.DataFrame(), p.name
                 continue
