@@ -2,15 +2,15 @@ import sys
 
 import datacompy
 import pandas as pd
-from pandas import DataFrame, Timestamp, Series
 
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO, COL_FIGI
+from src.data.source import ProviderSource
 from src.logger import timber
 
 
-def _fillna(found_in: DataFrame, with_df: DataFrame, on_column: str) -> DataFrame:
+def _fillna(found_in: pd.DataFrame, with_df: pd.DataFrame, on_column: str) -> pd.DataFrame:
     """
     Fill NaN values in one DataFrame with values from another DataFrame. Both DataFrames need to be aligned on the
     global `COL_SYMBOL` index.
@@ -96,7 +96,7 @@ def standardize_symbols(series: pd.Series) -> pd.Series:
     return series.str.upper().str.replace("-", ".", regex=False)
 
 
-def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
+def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
     """
     Merge, sort, and filter multiple security DataFrames into a final refined list
     based on configuration settings.
@@ -142,7 +142,7 @@ def refine_data(using: dict, dfs: list[DataFrame]) -> DataFrame:
     return df
 
 
-def _filter_by_list_date(df: DataFrame) -> DataFrame:
+def _filter_by_list_date(df: pd.DataFrame) -> pd.DataFrame:
     """
     Filter securities based on their list date, applying different minimum age requirements for crypto and stocks.
 
@@ -174,7 +174,7 @@ def _filter_by_list_date(df: DataFrame) -> DataFrame:
     return df
 
 
-def _filter_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp) -> Series:
+def _filter_by_date_mask(df: pd.DataFrame, asset_types: set[str], cutoff: pd.Timestamp) -> pd.Series:
     """
     Build a boolean mask for filtering securities of specific asset types that meet a minimum list-date cutoff.
 
@@ -197,7 +197,7 @@ def _filter_by_date_mask(df: DataFrame, asset_types: set[str], cutoff: Timestamp
     return filtered_mask
 
 
-def _merge_symbols(df: DataFrame) -> DataFrame:
+def _merge_symbols(df: pd.DataFrame) -> pd.DataFrame:
     """
     Merge market capitalization values for equivalent or alternate ticker symbols
     defined in `config.symbol_merge`.

@@ -8,31 +8,10 @@ from typing import Sequence, Iterator, Tuple
 
 import pandas as pd
 
+from src.clients.provider import Provider
 from src.data.source import ProviderSource
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.logger import timber
-
-
-@dataclass(slots=True)
-class Provider(ABC):
-    cooldown_seconds: timedelta = timedelta(seconds=60)
-    cooldown_until: datetime | None = field(default=None)
-
-    @property
-    @abstractmethod
-    def name(self) -> ProviderSource:
-        pass
-
-    @abstractmethod
-    def fetch(self, symbol: str) -> pd.DataFrame:
-        pass
-
-    def is_available(self) -> bool:
-        now = datetime.now(timezone.utc)
-        return (self.cooldown_until is None) or (now >= self.cooldown_until)
-
-    def mark_unavailable(self) -> None:
-        self.cooldown_until = datetime.now(timezone.utc) + self.cooldown_seconds
 
 
 class ProviderPool:
@@ -127,3 +106,43 @@ class ProviderPool:
                     log.error("Providers Exhausted", reason="NoResultsFoundError", response="skipping", symbol=symbol)
                     return pd.DataFrame(), p.name
                 continue
+
+    def _next(self) -> Provider:
+        """
+        Select the next available provider in round-robin order. If no providers are currently available, will wait and
+        retry until one becomes available.
+
+        Returns:
+            Provider: The next available provider.
+        """
+        while True:
+            n = len(self._providers)
+            for i in range(n):
+                p = self._providers[(self._index + i) % n]
+                if p.is_available():
+                    self._index = (self._index + i + 1) % n
+                    return p
+            self._wait()
+
+    def _wait(self):
+        """
+        Block until the earliest provider cooldown has expired.
+        """
+        log = timber.plant()
+        now = datetime.now(timezone.utc)
+        soonest = min(self._iter_cooldowns())
+        sleep_for = max(0.0, (soonest - now).total_seconds() + 1)
+        log.warning("Providers waiting", reason="limits reached, cooling off", duration=sleep_for, units="seconds")
+        time.sleep(sleep_for)
+
+    def _iter_cooldowns(self) -> Iterator[datetime]:
+        """
+        Yield all non-None provider cooldown expiry times.
+
+        Yields:
+            datetime: The `cooldown_until` values for providers currently
+            marked unavailable.
+        """
+        for p in self._providers:
+            if p.cooldown_until is not None:
+                yield p.cooldown_until

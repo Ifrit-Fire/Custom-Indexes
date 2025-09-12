@@ -3,7 +3,7 @@ import pandas as pd
 from src.clients.finnhub import FinnhubProvider
 from src.clients.polygon import PolygonProvider
 from src.clients.providerpool import ProviderPool
-from src.data import projection
+from src.data import projection, processing
 from src.io import cache
 from src.logger import timber
 
