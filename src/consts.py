@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from src.SecurityTypes import CryptoTypes, StockTypes, CommoditiesType
+from src.data.security_types import CryptoTypes, StockTypes, CommoditiesType
 
 ASSET_ADR_COMMON = "ADRC"
 ASSET_COMMON_STOCK = "CS"

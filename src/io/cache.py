@@ -4,8 +4,8 @@ from pathlib import Path
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 
-from src.clients.providers import ProviderSource
 from src.consts import PATH_DATA_CACHE_ROOT
+from src.data.providers import ProviderSource
 from src.logger import timber
 
 _KEY_EXPIRES = "expires"

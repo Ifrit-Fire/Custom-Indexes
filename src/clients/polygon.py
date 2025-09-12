@@ -8,12 +8,11 @@ import requests
 from polygon import RESTClient, BadResponse
 from urllib3.exceptions import MaxRetryError
 
-from src import data_processing
-from src.SecurityTypes import StockTypes
 from src.clients.providerpool import Provider
-from src.clients.providers import ProviderSource
 from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, \
     MIC_CODES, COL_MC, COL_LIST_DATE, COL_STATE, COL_POSTAL_CODE
+from src.data.providers import ProviderSource
+from src.data.security_types import StockTypes
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.io import cache
 from src.logger import timber

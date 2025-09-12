@@ -4,11 +4,10 @@ import finnhub
 import pandas as pd
 from finnhub import FinnhubAPIException
 
-from src import data_processing
 from src.clients.providerpool import Provider
-from src.clients.providers import ProviderSource
 from src.consts import API_FINN_TOKEN, COL_SYMBOL, STOCK_TYPES, COL_MC, COL_LIST_DATE, COL_OUT_SHARES, COL_FIGI, \
     COL_MIC, COL_TYPE, MIC_CODES, COL_COUNTRY, COL_NAME
+from src.data.providers import ProviderSource
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.io import cache
 from src.logger import timber
