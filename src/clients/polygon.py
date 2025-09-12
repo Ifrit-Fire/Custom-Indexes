@@ -1,7 +1,6 @@
 import json
 import re
 import time
-from pathlib import Path
 from typing import Iterator
 
 import pandas as pd
@@ -12,13 +11,13 @@ from urllib3.exceptions import MaxRetryError
 from src import data_processing
 from src.SecurityTypes import StockTypes
 from src.clients.providerpool import Provider
+from src.clients.providers import ProviderSource
 from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, \
     MIC_CODES, COL_MC, COL_LIST_DATE, COL_STATE, COL_POSTAL_CODE
 from src.exceptions import APILimitReachedError, NoResultsFoundError
 from src.io import cache
 from src.logger import timber
 
-_BASE_FILENAME = Path(__file__).name
 _BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
 _TYPE_TO_STANDARD = {"CS": StockTypes.COMMON_STOCK.value, "ADRC": StockTypes.ADR.value}
 
@@ -122,8 +121,8 @@ def get_all_stock() -> pd.DataFrame:
 
 class PolygonProvider(Provider):
     @property
-    def name(self) -> str:
-        return "polygon"
+    def name(self) -> ProviderSource:
+        return ProviderSource.POLYGON
 
     def fetch(self, symbol: str) -> pd.DataFrame:
         return self._get_ticker_details(symbol)

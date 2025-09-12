@@ -2,6 +2,7 @@ import datetime
 import json
 import logging
 import pathlib
+from enum import Enum
 from typing import Any
 
 from numpy import int64
@@ -74,4 +75,5 @@ def _to_json_safe(obj) -> Any:
     if isinstance(obj, datetime.date): return str(obj)
     if isinstance(obj, pathlib.Path): return str(obj)
     if isinstance(obj, int64): return int(obj)
+    if isinstance(obj, Enum): return str(obj.value)
     return obj

@@ -4,11 +4,13 @@ from pathlib import Path
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 
+from src.clients.providers import ProviderSource
 from src.consts import PATH_DATA_CACHE_ROOT
 from src.logger import timber
 
 _KEY_EXPIRES = "expires"
 _KEY_DATA = "data"
+
 
 def save_stock_list(df: pd.DataFrame, provider: str, filters: set):
     """
@@ -25,17 +27,17 @@ def save_stock_list(df: pd.DataFrame, provider: str, filters: set):
          expires_on=datetime.now(timezone.utc) + relativedelta(months=3))
 
 
-def save_symbol_details(df: pd.DataFrame, provider: str, symbol: str):
+def save_symbol_details(df: pd.DataFrame, provider: ProviderSource, symbol: str):
     """
     Save ticker detail data to the cache with sharding enabled. The file is placed under the `symbols` namespace and
     stored in a sharded folder based upon the ticker symbol. No data expiration is set.
 
     Args:
         df (pd.DataFrame): The ticker detail DataFrame to persist.
-        provider (str): The provider that supplied the data.
+        provider (ProviderSource): The provider that supplied the data.
         symbol (str): The ticker the data represents.
     """
-    save(data=df, namespace="symbols", name=symbol, identifier=provider, by_sharding=True)
+    save(data=df, namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True)
 
 
 def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = False, expires_on: datetime = None,
@@ -84,18 +86,18 @@ def load_stock_list(provider: str, filters: set) -> pd.DataFrame:
     return load(namespace="lists", name=provider, identifier=ids, by_sharding=False, allow_stale=False)
 
 
-def load_symbol_details(provider: str, symbol: str) -> pd.DataFrame:
+def load_symbol_details(provider: ProviderSource, symbol: str) -> pd.DataFrame:
     """
     Load cached ticker detail data. This data never expire in practice.
 
     Args:
-        provider (str): The provider that supplied the data.
+        provider (ProviderSource): The provider that supplied the data.
         symbol (str): The ticker the data represents.
 
     Returns:
         pd.DataFrame: The cached ticker detail data if available, otherwise an empty DataFrame.
     """
-    return load(namespace="symbols", name=symbol, identifier=provider, by_sharding=True, allow_stale=True)
+    return load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
 
 
 def load(name: str, identifier: str, by_sharding: bool = False, namespace: str = "snapshot",
