@@ -31,7 +31,7 @@ def get_symbol_details(symbols: pd.Series) -> pd.DataFrame:
     for symbol in symbols:
         df = cache.load_symbol_details(symbol=symbol)
         if df.empty:
-            df, provider = _POOL.fetch_data(symbol)
+            df, provider = _POOL.fetch_symbol_data(symbol)
             if df.empty: continue  # rare but can happen if none of the providers support the given symbol
             cache.save_symbol_details(df=df, provider=provider, symbol=symbol)
         df_proj = projection.view_symbol_details(df)

@@ -1,9 +1,7 @@
 from __future__ import annotations
 
 import time
-from abc import ABC, abstractmethod
-from dataclasses import dataclass, field
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from typing import Sequence, Iterator, Tuple
 
 import pandas as pd
@@ -73,7 +71,7 @@ class ProviderPool:
                 yield p.cooldown_until
 
     # noinspection PyTypeChecker
-    def fetch_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
+    def fetch_symbol_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
         """
         Fetch detailed data for a symbol using available providers with round-robin selection. If all providers are
         exhausted with no results, an empty DataFrame is returned.
