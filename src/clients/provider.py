@@ -18,7 +18,11 @@ class Provider(ABC):
         pass
 
     @abstractmethod
-    def fetch(self, symbol: str) -> pd.DataFrame:
+    def fetch_all_stock(self) -> pd.DataFrame:
+       return pd.DataFrame()
+
+    @abstractmethod
+    def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         pass
 
     def is_available(self) -> bool:
