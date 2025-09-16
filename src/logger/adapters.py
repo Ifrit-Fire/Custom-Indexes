@@ -5,6 +5,7 @@ import pathlib
 from enum import Enum
 from typing import Any
 
+import numpy
 from numpy import int64
 
 from src.consts import FORM_TEXT, FORM_STRUCT
@@ -76,4 +77,5 @@ def _to_json_safe(obj) -> Any:
     if isinstance(obj, pathlib.Path): return str(obj)
     if isinstance(obj, int64): return int(obj)
     if isinstance(obj, Enum): return str(obj.value)
+    if isinstance(obj, numpy.bool_): return bool(obj)
     return obj
