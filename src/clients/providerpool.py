@@ -91,7 +91,7 @@ class ProviderPool:
                 p.mark_unavailable()
                 continue
             try:
-                return p.fetch(symbol), p.name
+                return p.fetch_symbol_data(symbol), p.name
             except APILimitReachedError:
                 log.debug("APILimitReachedError", response="switch providers")
                 p.mark_unavailable()
