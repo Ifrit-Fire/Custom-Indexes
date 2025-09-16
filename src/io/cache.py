@@ -12,18 +12,16 @@ _KEY_EXPIRES = "expires"
 _KEY_DATA = "data"
 
 
-def save_stock_list(df: pd.DataFrame, provider: str, filters: set):
+def save_stock_list(df: pd.DataFrame, provider: ProviderSource):
     """
     Save a snapshot of a stock list to the cache with a quarterly expiration. The file is placed under the `lists`
-    namespace and identified by the provider name combined with the given filters.
+    namespace and identified by the provider name.
 
     Args:
-        df (pd.DataFrame): The stock list DataFrame to persist.
-        provider (str): The provider that supplied the data.
-        filters (set): The set of filters used when pulling the data from the provider.
+        df: The stock list DataFrame to persist.
+        provider: The provider that supplied the data.
     """
-    ids = "__".join(sorted(filters))
-    save(data=df, namespace="lists", name=provider, identifier=ids, by_sharding=False,
+    save(data=df, namespace="lists", name=provider.value, identifier="", by_sharding=False,
          expires_on=datetime.now(timezone.utc) + relativedelta(months=3))
 
 
@@ -33,9 +31,9 @@ def save_symbol_details(df: pd.DataFrame, provider: ProviderSource, symbol: str)
     stored in a sharded folder based upon the ticker symbol. No data expiration is set.
 
     Args:
-        df (pd.DataFrame): The ticker detail DataFrame to persist.
-        provider (ProviderSource): The provider that supplied the data.
-        symbol (str): The ticker the data represents.
+        df: The ticker detail DataFrame to persist.
+        provider: The provider that supplied the data.
+        symbol: The ticker the data represents.
     """
     save(data=df, namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True)
 
@@ -50,15 +48,15 @@ def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = Fal
     of `name`.
 
     Args:
-        data (pd.DataFrame): The DataFrame to persist.
-        name (str): Main component of the filename.
-        identifier (str): A unique identifier appended to the filename.
-        by_sharding (bool, optional): If True, places the file under a folder with the first letter of `name`.
-            Defaults to False.
-        expires_on (datetime, optional): The expiration date for the saved data.
-            Defaults to 30 years if not provided.
-        namespace (str, optional): Parent folder for grouping saved data.
-            Defaults to "snapshot".
+        data: The DataFrame to persist.
+        name: Main component of the filename.
+        identifier: A unique identifier appended to the filename.
+        by_sharding: Optional. If True, places the file under a folder with the first letter of `name`.
+                     Defaults to False.
+        expires_on: Optional. The expiration date for the saved data.
+                    Defaults to 30 years if not provided.
+        namespace: Optional. Parent folder for grouping saved data.
+                    Defaults to "snapshot".
     """
     log = timber.plant()
     filepath = _get_filepath(namespace=namespace, name=name, identifier=identifier, sharding=by_sharding)
@@ -70,20 +68,28 @@ def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = Fal
     log.debug("Saved", file=filepath.name, type="pickle", count=len(data), path=filepath.parent)
 
 
-def load_stock_list(provider: str, filters: set) -> pd.DataFrame:
+def load_stock_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:
     """
-    Load a snapshot of a stock list. The cache entry is identified by the provider name combined with the given
-    filters. Expired data is ignored.
+    Loads one or more cached stock list snapshots for the given provider(s). Expired entries are ignored.
 
     Args:
-        provider (str): The provider that supplied the data.
-        filters (set): The filters used when pulling the data from the provider.
+        provider: Optional. If specified, loads only that provider's stock list.
+                  If None, attempts to load all known providers.
 
     Returns:
-        pd.DataFrame: The cached stock list if available and valid, otherwise an empty DataFrame.
+        A dictionary mapping each provider to its stock list DataFrame.
+        Providers with no valid cached data are omitted.
+        Returns an empty dictionary if nothing is found.
     """
-    ids = "__".join(sorted(filters))
-    return load(namespace="lists", name=provider, identifier=ids, by_sharding=False, allow_stale=False)
+    if provider:
+        df = load(namespace="lists", name=provider.value, identifier="", by_sharding=False, allow_stale=False)
+        return {provider: df}
+
+    frames = {}
+    for provider in ProviderSource:
+        df = load(namespace="lists", name=provider.value, identifier="", by_sharding=False, allow_stale=False)
+        if not df.empty: frames |= {provider: df}
+    return frames
 
 
 def load_symbol_details(symbol: str, provider: ProviderSource = None) -> pd.DataFrame:
@@ -92,11 +98,11 @@ def load_symbol_details(symbol: str, provider: ProviderSource = None) -> pd.Data
     providers in preferred order and return the first result found. Cached data is effectively non-expiring.
 
     Args:
-        symbol (str): The ticker symbol to load.
-        provider (ProviderSource, optional): The provider to load from. If None, precedence rules apply.
+        symbol: The ticker symbol to load.
+        provider: Optional. The provider to load from. If None, precedence rules apply.
 
     Returns:
-        pd.DataFrame: Cached ticker details if available, otherwise an empty DataFrame.
+        Cached ticker details if available, otherwise an empty DataFrame.
     """
     if provider:
         return load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
@@ -114,17 +120,17 @@ def load(name: str, identifier: str, by_sharding: bool = False, namespace: str =
     returned. Expired data is also ignored unless `allow_stale` is set to True.
 
     Args:
-        name (str): Main component of the filename.
-        identifier (str): Unique identifier appended to the filename.
-        by_sharding (bool, optional): If True, load the file from a folder with the first letter of `name`.
-            Defaults to False.
-        namespace (str, optional): Parent folder grouping cached data.
-            Defaults to "snapshot".
-        allow_stale (bool, optional): If True, expired cache entries are returned instead of being ignored.
-            Defaults to False.
+        name: Main component of the filename.
+        identifier: Unique identifier appended to the filename.
+        by_sharding: Optional. If True, load the file from a folder with the first letter of `name`.
+                     Defaults to False.
+        namespace: Optional. Parent folder grouping cached data.
+                   Defaults to "snapshot".
+        allow_stale: Optional. If True, expired cache entries are returned instead of being ignored.
+                     Defaults to False.
 
     Returns:
-        pd.DataFrame: The cached DataFrame if available and valid, otherwise an empty DataFrame.
+        The cached DataFrame if available and valid, otherwise an empty DataFrame.
     """
     log = timber.plant()
     filepath = _get_filepath(namespace=namespace, name=name, identifier=identifier, sharding=by_sharding)
@@ -149,13 +155,13 @@ def _get_filepath(namespace: str, name: str, identifier: str, sharding: bool) ->
     using `name` and `identifier` joined with `__` and saved as a pickle file.
 
     Args:
-        namespace (str): Parent folder grouping the cached data.
-        name (str): Main component of the filename.
-        identifier (str): Unique identifier appended to the filename.
-        sharding (bool): If True, place the file under a folder with the first letter of `name`.
+        namespace: Parent folder grouping the cached data.
+        name: Main component of the filename.
+        identifier: Unique identifier appended to the filename.
+        sharding: If True, place the file under a folder with the first letter of `name`.
 
     Returns:
-        Path: The full file path for the cache entry.
+        The full file path for the cache entry.
     """
     shard = name[0] if sharding else ""
     filepath = PATH_DATA_CACHE_ROOT / namespace / shard / f"{name}__{identifier}.pkl"
