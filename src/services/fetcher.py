@@ -10,6 +10,35 @@ from src.logger import timber
 _POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider()])
 
 
+def get_all_stock() -> pd.DataFrame:
+    """
+    Retrieves a stock list derived from all known providers.
+
+    Loads cached stock lists where available, fetches fresh data from remaining providers,
+    and saves newly fetched results to cache. All data is projected into a canonical schema
+    and combined using provider precedence.
+
+    Returns:
+        A single DataFrame containing the standardized stock list across all providers.
+    """
+    log = timber.plant()
+    log.info("Phase starts", fetch="stock list")
+
+    frames_cache = cache.load_stock_lists()
+    frames_api = _POOL.fetch_all_stock(except_from=list(frames_cache.keys()))
+    if len(frames_api) > 0:
+        for k, v in frames_api.items():
+            cache.save_stock_list(df=v, provider=k)
+
+    frames = frames_cache | frames_api
+    for p in frames.keys():
+        frames[p] = projection.view_all_stock(frames[p])
+    df = processing.merge_all_stock(frames)
+
+    log.info("Phase ends", fetch="stock list", count=len(df))
+    return df
+
+
 def get_symbol_details(symbols: pd.Series) -> pd.DataFrame:
     """
     Retrieve all the detailed information for a list of symbols.
@@ -19,10 +48,10 @@ def get_symbol_details(symbols: pd.Series) -> pd.DataFrame:
     are combined into a single DataFrame.
 
     Args:
-        symbols (pd.Series): Series of ticker symbols to query.
+        symbols: Series of ticker symbols to query.
 
     Returns:
-        pd.DataFrame: DataFrame containing standardized symbol details for all requested symbols.
+        DataFrame containing standardized symbol details for all requested symbols.
     """
     log = timber.plant()
     log.info("Phase starts", fetch="Symbol details")
