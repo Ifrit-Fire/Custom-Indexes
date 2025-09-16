@@ -30,45 +30,27 @@ class ProviderPool:
         self._providers = list(providers)
         self._index = 0
 
-    def _next(self) -> Provider:
+    def fetch_all_stock(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
         """
-        Select the next available provider in round-robin order. If no providers are currently available, will wait and
-        retry until one becomes available.
+        Fetches stock lists from all available providers in the pool, excluding any specified.
+
+        Args:
+            except_from: Optional. A list of providers to skip during fetch. Providers not in the pool are
+                         ignored silently.
 
         Returns:
-            Provider: The next available provider.
+            A dictionary mapping each provider to its fetched stock list DataFrame.
+            Providers returning empty data are excluded from the result.
+            Returns an empty dictionary if nothing is found.
         """
-        while True:
-            n = len(self._providers)
-            for i in range(n):
-                p = self._providers[(self._index + i) % n]
-                if p.is_available():
-                    self._index = (self._index + i + 1) % n
-                    return p
-            self._wait()
+        frames = {}
+        providers = [val for val in self._providers if val.name not in except_from]
+        for provider in providers:
+            df = provider.fetch_all_stock()
+            if df.empty: continue
+            frames |= {provider.name: df}
 
-    def _wait(self):
-        """
-        Block until the earliest provider cooldown has expired.
-        """
-        log = timber.plant()
-        now = datetime.now(timezone.utc)
-        soonest = min(self._iter_cooldowns())
-        sleep_for = max(0.0, (soonest - now).total_seconds() + 1)
-        log.warning("Providers waiting", reason="limits reached, cooling off", duration=sleep_for, units="seconds")
-        time.sleep(sleep_for)
-
-    def _iter_cooldowns(self) -> Iterator[datetime]:
-        """
-        Yield all non-None provider cooldown expiry times.
-
-        Yields:
-            datetime: The `cooldown_until` values for providers currently
-            marked unavailable.
-        """
-        for p in self._providers:
-            if p.cooldown_until is not None:
-                yield p.cooldown_until
+        return frames
 
     # noinspection PyTypeChecker
     def fetch_symbol_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
@@ -77,11 +59,10 @@ class ProviderPool:
         exhausted with no results, an empty DataFrame is returned.
 
         Args:
-            symbol (str): The ticker symbol to query.
+            symbol: The ticker symbol to query.
 
         Returns:
-            Tuple[pd.DataFrame, ProviderSource]: A normalized DataFrame with symbol details (empty if no results),
-                and the provider that supplied the result.
+            A normalized DataFrame with symbol details (empty if no results), and the provider that supplied the result.
         """
         log = timber.plant()
         no_results: set[str] = set()
@@ -111,7 +92,7 @@ class ProviderPool:
         retry until one becomes available.
 
         Returns:
-            Provider: The next available provider.
+            The next available provider.
         """
         while True:
             n = len(self._providers)
@@ -138,8 +119,7 @@ class ProviderPool:
         Yield all non-None provider cooldown expiry times.
 
         Yields:
-            datetime: The `cooldown_until` values for providers currently
-            marked unavailable.
+            The `cooldown_until` values for providers currently marked unavailable.
         """
         for p in self._providers:
             if p.cooldown_until is not None:
