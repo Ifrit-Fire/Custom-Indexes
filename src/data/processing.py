@@ -1,86 +1,58 @@
-import sys
-
 import datacompy
 import pandas as pd
 
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO, COL_FIGI
+from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, ASSET_TYPES, COL_LIST_DATE, ASSET_CRYPTO
 from src.data.source import ProviderSource
 from src.logger import timber
 
 
-def _fillna(found_in: pd.DataFrame, with_df: pd.DataFrame, on_column: str) -> pd.DataFrame:
+def merge_all_stock(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataFrame:
     """
-    Fill NaN values in one DataFrame with values from another DataFrame. Both DataFrames need to be aligned on the
-    global `COL_SYMBOL` index.
+    Merges multiple provider-sourced DataFrames of all market stock into a single consolidated DataFrame.
+
+    Starts with the highest-precedence provider, then merges in additional sources on `COL_SYMBOL`. For overlapping
+    columns, values from the higher-precedence provider take priority. Columns missing
+    from one source are forward-filled from the other where possible. Only symbols found in all sources are kept.
 
     Args:
-        found_in (DataFrame): The DataFrame in which NaN values should be filled.
-        with_df (DataFrame): The DataFrame providing replacement values.
-        on_column (str): The column name in which to fill missing values.
+        frames: A dictionary mapping providers to their projected stock DataFrames.
 
     Returns:
-        DataFrame: A copy of `found_in` with NaN values in `on_column` filled from `with_df`, and the index reset
-        back to `COL_SYMBOL`.
-    """
-    found_in = found_in.set_index(COL_SYMBOL)
-    with_df = with_df.set_index(COL_SYMBOL)
-    found_in[on_column] = found_in[on_column].fillna(with_df[on_column])
-    return found_in.reset_index()
-
-
-def merge_all_stock(df_finn: DataFrame, df_poly: DataFrame) -> DataFrame:
-    """
-    Compares two stock datasets (`df_finn` and `df_poly`) on their shared `COL_SYMBOL`, cleans and aligns them to
-    ensure one-for-one matching, and then merges the non-overlapping columns into a consolidated result. Unique rows to
-    either DataFrame are dropped. Polygon is known to contain missing values for `COL_FIGI`.  Finnhub is default value
-    used for discrepancies on datasets. In testing of
-
-    Args:
-        df_finn (DataFrame): Stock data from the "finnhub" client.
-        df_poly (DataFrame): Stock data from the "polygon" client.
-
-    Returns:
-        DataFrame: A merged DataFrame containing all rows that overlap on `COL_SYMBOL` between `df_finn` and `df_poly`
-
-    Raises:
-        SystemExit: If, after reconciliation, the DataFrames still do not have all rows overlapping on `COL_SYMBOL`.
+        A merged DataFrame containing the combined stock listings from all providers.
 
     Notes:
-        - In hand testing of some of the data discrepancies, Finnhub was always correct. Polygon was always wrong.
+        - In hand-testing of discrepancies, Finnhub data was consistently correct — it's trusted more.
+        - Provider precedence is hardcoded.
+        - A post-merge warning logs any columns that still contain NaNs.
     """
     log = timber.plant()
     log.info("Phase starts", merge="all stock")
-    cmp = datacompy.Compare(df_finn, df_poly, COL_SYMBOL)
-    if not cmp.all_rows_overlap():
-        log.debug("All rows overlap", result=False)
+    precedence = [ProviderSource.FINNHUB, ProviderSource.POLYGON]
+    rcol_name = "_right"
 
-    if len(cmp.df1_unq_rows) > 0 or len(cmp.df2_unq_rows) > 0:
-        log.info("Unique Rows Detected", action="remove")
-        common = pd.Index(df_finn[COL_SYMBOL]).intersection(df_poly[COL_SYMBOL])
-        mask1 = df_finn[COL_SYMBOL].isin(common)
-        mask2 = df_poly[COL_SYMBOL].isin(common)
-        df_finn = df_finn.loc[mask1].copy()
-        df_poly = df_poly.loc[mask2].copy()
+    order = [p for p in precedence if p in frames]
+    log.info("Merging in provider", provider=order[0])
+    df_accum = frames[order[0]]
+    cols = df_accum.columns
+    for provider in order[1:]:
+        df_curr = frames[provider]
+        log.info("Merging in provider", provider=provider)
+        datacompy.Compare(df1=df_accum, df2=df_curr, join_columns=COL_SYMBOL)
 
-    if df_poly[COL_FIGI].hasnans:
-        log.info("Nan detected", action="fill in", using="default to Finnhub")
-        df_poly = _fillna(found_in=df_poly, with_df=df_finn, on_column=COL_FIGI)
+        df_accum = pd.merge(left=df_accum, right=df_curr, on=COL_SYMBOL, how="left", suffixes=("", rcol_name))
+        for col in cols:
+            if col == COL_SYMBOL: continue
+            rcol = f"{col}{rcol_name}"
+            df_accum.loc[:, col] = df_accum[col].combine_first(df_accum[rcol])  # Mismatch tends to happen with `type`.
+            df_accum.drop(labels=[rcol], axis=1, inplace=True)
 
-    log.info("Mismatched Types", action="Pick one")
-    df_poly[COL_TYPE] = df_poly[COL_SYMBOL].map(df_finn.set_index(COL_SYMBOL)[COL_TYPE])
-
-    cmp = datacompy.Compare(df_finn, df_poly, COL_SYMBOL)
-    if not cmp.all_rows_overlap():
-        log.critical("All rows overlap", result="fail", reason="not expected")
-        sys.exit()
-
-    log.info("All rows overlap", result="success")
-    df2_unique = cmp.df2[cmp.df2_unq_columns() | {COL_SYMBOL}]
-    df_merge = cmp.df1.merge(df2_unique, on=COL_SYMBOL, how='inner')
-    log.info("Phase ends", merge="all stock", count=len(df_merge))
-    return df_merge
+    col_nans = df_accum.columns[df_accum.isna().any()].tolist()
+    log_call = log.warning if len(col_nans) > 0 else log.debug
+    log_call("Post Merge NaN", hasnan=col_nans)
+    log.info("Phase ends", merge="all stock", count=len(df_accum))
+    return df_accum
 
 
 def standardize_symbols(series: pd.Series) -> pd.Series:
@@ -88,10 +60,10 @@ def standardize_symbols(series: pd.Series) -> pd.Series:
     Transform ticker symbols into a standard format.
 
     Args:
-        series (pd.Series): Pandas Series of ticker symbols.
+        series: Pandas Series of ticker symbols.
 
     Returns:
-        pd.Series: Series with normalized ticker symbols.
+        Series with normalized ticker symbols.
     """
     return series.str.upper().str.replace("-", ".", regex=False)
 
@@ -102,12 +74,11 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
     based on configuration settings.
 
     Args:
-        using (dict): Configuration dictionary containing at least
-            `KEY_INDEX_SORTBY` and `KEY_INDEX_TOP`.
-        dfs (list[DataFrame]): List of Pandas DataFrames containing security data.
+        using: Configuration dictionary containing at least `KEY_INDEX_SORTBY` and `KEY_INDEX_TOP`.
+        dfs: List of Pandas DataFrames containing security data.
 
     Returns:
-        DataFrame: A new DataFrame meeting all filter and sorting criteria.
+        A new DataFrame meeting all filter and sorting criteria.
     """
     log = timber.plant()
     log.info("Phase starts", data="refinement")
@@ -152,10 +123,10 @@ def _filter_by_list_date(df: pd.DataFrame) -> pd.DataFrame:
       3. Removes any securities that fail the minimum age requirements.
 
     Args:
-        df (DataFrame): DataFrame containing security data with at least `COL_LIST_DATE` and `COL_TYPE`.
+        df: DataFrame containing security data with at least `COL_LIST_DATE` and `COL_TYPE`.
 
     Returns:
-        DataFrame: Filtered DataFrame containing only securities that meet the minimum age restrictions.
+        Filtered DataFrame containing only securities that meet the minimum age restrictions.
 
     Raises:
         Exception: If `COL_LIST_DATE` cannot be fully converted to datetime with `pandas.to_datetime`.
@@ -179,12 +150,12 @@ def _filter_by_date_mask(df: pd.DataFrame, asset_types: set[str], cutoff: pd.Tim
     Build a boolean mask for filtering securities of specific asset types that meet a minimum list-date cutoff.
 
     Args:
-        df (DataFrame): DataFrame containing security data, including `COL_TYPE` and `COL_LIST_DATE`.
-        asset_types (set[str]): Set of asset type identifiers to check.
-        cutoff (pd.Timestamp): Datetime cutoff; only securities listed on or before this date are kept.
+        df: DataFrame containing security data, including `COL_TYPE` and `COL_LIST_DATE`.
+        asset_types: Set of asset type identifiers to check.
+        cutoff: Datetime cutoff; only securities listed on or before this date are kept.
 
     Returns:
-        pd.Series: Boolean mask aligned with `df` indicating which rows should be kept.
+        Boolean mask aligned with `df` indicating which rows should be kept.
     """
     log = timber.plant()
     mask = df[COL_TYPE].isin(asset_types)
@@ -199,16 +170,15 @@ def _filter_by_date_mask(df: pd.DataFrame, asset_types: set[str], cutoff: pd.Tim
 
 def _merge_symbols(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Merge market capitalization values for equivalent or alternate ticker symbols
-    defined in `config.symbol_merge`.
+    Merge market capitalization values for equivalent or alternate ticker symbols defined in `config.symbol_merge`.
 
     Works on a copy of `df` and returns the merged result.
 
     Args:
-        df (DataFrame): Pandas DataFrame containing at least the `COL_SYMBOL` and `COL_MC` columns.
+        df: Pandas DataFrame containing at least the `COL_SYMBOL` and `COL_MC` columns.
 
     Returns:
-        DataFrame: A new DataFrame with merged symbols and adjusted market cap values.
+        A new DataFrame with merged symbols and adjusted market cap values.
     """
     log = timber.plant()
     df = df.copy()
