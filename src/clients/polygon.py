@@ -15,7 +15,6 @@ from src.data import processing
 from src.data.security_types import StockTypes
 from src.data.source import ProviderSource
 from src.exceptions import APILimitReachedError, NoResultsFoundError
-from src.io import cache
 from src.logger import timber
 
 _BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
@@ -84,14 +83,21 @@ class PolygonProvider(Provider):
         return ProviderSource.POLYGON
 
     def fetch_all_stock(self) -> pd.DataFrame:
+        """
+        Retrieves and normalizes all active stock listings. Focuses strictly on common stock, preferred stock, ADRs,
+        REITs from the `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.
+
+        Returns:
+            A DataFrame containing active stock listings with standardized symbol, type, and MIC.
+        """
         log = timber.plant()
         log.info("Phase starts", fetch="stock list", endpoint="polygon")
 
         types = {"CS", "ADRC"}
         tickers = []
         for mic in MIC_CODES:
-            for tipe in types:
-                params = {"market": "stocks", "active": "true", "exchange": mic, "type": tipe, "limit": 1000}
+            for ty in types:
+                params = {"market": "stocks", "active": "true", "exchange": mic, "type": ty, "limit": 1000}
                 tickers += _iter_all_stock(params)
 
         df = pd.json_normalize(tickers)
@@ -104,18 +110,14 @@ class PolygonProvider(Provider):
 
 
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
-        return self._get_ticker_details(symbol)
-
-    def _get_ticker_details(self, symbol: str) -> pd.DataFrame:
         """
         Retrieves and normalizes detailed ticker information for a given symbol.
 
         Args:
-            symbol (str): The ticker symbol to query.
+            symbol: The ticker symbol to query.
 
         Returns:
-            pd.DataFrame: A single-row DataFrame with normalized ticker data, including standardized
-            `COL_SYMBOL`, `COL_OUT_SHARES`, `COL_MIC`, `COL_STATE`, and `COL_POSTAL_CODE`.
+            A single-row DataFrame containing standardized ticker information.
 
         Raises:
             APILimitReachedError: When API rate limits are exceeded.
