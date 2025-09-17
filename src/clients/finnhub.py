@@ -21,6 +21,13 @@ class FinnhubProvider(Provider):
         return ProviderSource.FINNHUB
 
     def fetch_all_stock(self) -> pd.DataFrame:
+        """
+        Retrieves and normalizes all active stock listings. Focuses strictly on common stocks and ADRs from the
+        `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.
+
+        Returns:
+            A DataFrame containing active stock listings with standardized symbol, type, and figi.
+        """
         log = timber.plant()
         log.info("Phase starts", fetch="stock list", endpoint="finnhub")
 
@@ -41,21 +48,17 @@ class FinnhubProvider(Provider):
 
 
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
-        return self._get_company_profile2(symbol)
-
-    def _get_company_profile2(self, symbol: str) -> pd.DataFrame:
         """
-        Retrieves and normalizes detailed company profile information for a given symbol.
+        Retrieves and normalizes detailed ticker information for a given symbol.
 
         Args:
-            symbol (str): The ticker symbol to query.
+            symbol: The ticker symbol to query.
 
         Returns:
-            pd.DataFrame: A single-row DataFrame with normalized company profile data, including
-                standardized `COL_SYMBOL`, `COL_MC` (market cap), `COL_LIST_DATE`, and `COL_OUT_SHARES`.
+            A single-row DataFrame containing standardized ticker information.
 
         Raises:
-            APILimitReachedError: When API rate limits are exceeded.
+            FinnhubAPIException: When API rate limits are exceeded.
             NoResultsFoundError: When the symbol returns no results from provider.
         """
         log = timber.plant()

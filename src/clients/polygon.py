@@ -30,10 +30,10 @@ def _fix_dot_p(symbol: str) -> str:
         - Lowercase the 'P'
 
     Args:
-        symbol (str): Ticker symbol string to normalize.
+        symbol: Ticker symbol string to normalize.
 
     Returns:
-        str: Normalized ticker symbol.
+        Normalized ticker symbol.
     """
     log = timber.plant()
     norm = re.sub(r'\.P', 'p', symbol)
