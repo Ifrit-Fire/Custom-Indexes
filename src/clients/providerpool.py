@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import sys
 import time
 from datetime import datetime, timezone
 from typing import Sequence, Iterator, Tuple
@@ -52,7 +53,28 @@ class ProviderPool:
 
         return frames
 
-    # noinspection PyTypeChecker
+    def fetch_crypto_market(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
+        """
+        Fetches crypto market data from all available providers in the pool, excluding any specified.
+
+        Args:
+            except_from: Optional. A list of providers to skip during fetch. Providers not in the pool are
+                         ignored silently.
+
+        Returns:
+            A dictionary mapping each provider to its fetched crypto list DataFrame.
+            Providers returning empty data are excluded from the result.
+            Returns an empty dictionary if nothing is found.
+        """
+        frames = {}
+        providers = [val for val in self._providers if val.name not in except_from]
+        for provider in providers:
+            df = provider.fetch_crypto_market()
+            if df.empty: continue
+            frames |= {provider.name: df}
+
+        return frames
+
     def fetch_symbol_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
         """
         Fetch detailed data for a symbol using available providers with round-robin selection. If all providers are
@@ -65,7 +87,7 @@ class ProviderPool:
             A normalized DataFrame with symbol details (empty if no results), and the provider that supplied the result.
         """
         log = timber.plant()
-        no_results: set[str] = set()
+        no_results: set[ProviderSource] = set()
         while True:
             p = self._next()
             if p.name in no_results:
@@ -85,6 +107,8 @@ class ProviderPool:
                     log.error("Providers Exhausted", reason="NoResultsFoundError", response="skipping", symbol=symbol)
                     return pd.DataFrame(), p.name
                 continue
+        log.critical("Reached the unreachable", reason="perplexed", response="quitting")
+        sys.exit()
 
     def _next(self) -> Provider:
         """

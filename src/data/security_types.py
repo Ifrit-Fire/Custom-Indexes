@@ -3,6 +3,7 @@ from enum import Enum
 
 class CryptoTypes(Enum):
     CRYPTO = "Crypto"
+    STABLECOINS = "Stablecoins"
 
 
 class StockTypes(Enum):
