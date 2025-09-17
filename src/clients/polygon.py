@@ -9,8 +9,8 @@ from polygon import RESTClient, BadResponse
 from urllib3.exceptions import MaxRetryError
 
 from src.clients.providerpool import Provider
-from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_CIK, COL_FIGI, COL_NAME, COL_TYPE, \
-    MIC_CODES, COL_STATE, COL_POSTAL_CODE
+from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_TYPE, MIC_CODES, COL_STATE, \
+    COL_POSTAL_CODE
 from src.data import processing
 from src.data.security_types import StockTypes
 from src.data.source import ProviderSource
@@ -78,31 +78,16 @@ def _iter_all_stock(params: dict[str, str]) -> Iterator[dict[str, object]]:
             url = result.get("next_url")  # None when done
 
 
-def get_all_stock() -> pd.DataFrame:
-    """
-    Retrieve the full list of active U.S. stocks from Polygon, with caching.
+class PolygonProvider(Provider):
+    @property
+    def name(self) -> ProviderSource:
+        return ProviderSource.POLYGON
 
-    Attempts to load from the local API cache if available and valid; otherwise queries the remote API.
-    The results are normalized and cached for future use.
+    def fetch_all_stock(self) -> pd.DataFrame:
+        log = timber.plant()
+        log.info("Phase starts", fetch="stock list", endpoint="polygon")
 
-    Returns:
-        pd.DataFrame: A DataFrame containing standardized stock data with columns:
-
-            - `COL_CIK`: Central Index Key (CIK) if available.
-            - `COL_FIGI`: Financial Instrument Global Identifier (FIGI).
-            - `COL_NAME`: Company name.
-            - `COL_MIC`: Market Identifier Code (exchange).
-            - `COL_SYMBOL`: Standardized ticker symbol.
-            - `COL_TYPE`: Security type.
-    """
-    log = timber.plant()
-    log.info("Phase starts", fetch="stock list", endpoint="polygon")
-    types = {"CS", "ADRC"}
-    df = cache.load_stock_list(provider="polygon", filters=types | MIC_CODES)
-    source = "cache"
-
-    if df.empty:
-        source = "API"
+        types = {"CS", "ADRC"}
         tickers = []
         for mic in MIC_CODES:
             for tipe in types:
@@ -113,18 +98,12 @@ def get_all_stock() -> pd.DataFrame:
         df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
         df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
-        cache.save_stock_list(df=df, provider="polygon", filters=types | MIC_CODES)
 
-    log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source=source)
-    return df[[COL_CIK, COL_FIGI, COL_NAME, COL_MIC, COL_SYMBOL, COL_TYPE]]
+        log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source="API")
+        return df
 
 
-class PolygonProvider(Provider):
-    @property
-    def name(self) -> ProviderSource:
-        return ProviderSource.POLYGON
-
-    def fetch(self, symbol: str) -> pd.DataFrame:
+    def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         return self._get_ticker_details(symbol)
 
     def _get_ticker_details(self, symbol: str) -> pd.DataFrame:
