@@ -8,8 +8,26 @@ from src.consts import PATH_DATA_CACHE_ROOT
 from src.data.source import ProviderSource
 from src.logger import timber
 
-_KEY_EXPIRES = "expires"
+_ID_CRYPTO = "crypto"
+_ID_STOCK = "stocks"
 _KEY_DATA = "data"
+_KEY_EXPIRES = "expires"
+_NS_DEFAULT = "snapshot"
+_NS_LIST = "lists"
+_NS_SYMBOLS = "symbols"
+
+
+def save_crypto_list(df: pd.DataFrame, provider: ProviderSource):
+    """
+    Save a snapshot of a crypto list to the cache with weekly expiration. The file is placed under the `lists`
+    namespace and identified by the provider name.
+
+    Args:
+        df: The crypto list DataFrame to persist.
+        provider: The provider that supplied the data.
+    """
+    save(data=df, namespace=_NS_LIST, name=provider.value, identifier=_ID_CRYPTO, by_sharding=False,
+         expires_on=datetime.now(timezone.utc) + relativedelta(weeks=1))
 
 
 def save_stock_list(df: pd.DataFrame, provider: ProviderSource):
@@ -21,7 +39,7 @@ def save_stock_list(df: pd.DataFrame, provider: ProviderSource):
         df: The stock list DataFrame to persist.
         provider: The provider that supplied the data.
     """
-    save(data=df, namespace="lists", name=provider.value, identifier="", by_sharding=False,
+    save(data=df, namespace=_NS_LIST, name=provider.value, identifier=_ID_STOCK, by_sharding=False,
          expires_on=datetime.now(timezone.utc) + relativedelta(months=3))
 
 
@@ -35,11 +53,11 @@ def save_symbol_details(df: pd.DataFrame, provider: ProviderSource, symbol: str)
         provider: The provider that supplied the data.
         symbol: The ticker the data represents.
     """
-    save(data=df, namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True)
+    save(data=df, namespace=_NS_SYMBOLS, name=symbol, identifier=provider.value, by_sharding=True)
 
 
 def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = False, expires_on: datetime = None,
-         namespace: str = "snapshot"):
+         namespace: str = _NS_DEFAULT):
     """
     Save a DataFrame snapshot to a pickle file with optional sharding and expiration settings.
 
@@ -56,7 +74,7 @@ def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = Fal
         expires_on: Optional. The expiration date for the saved data.
                     Defaults to 30 years if not provided.
         namespace: Optional. Parent folder for grouping saved data.
-                    Defaults to "snapshot".
+                    Defaults to `_NS_DEFAULT`.
     """
     log = timber.plant()
     filepath = _get_filepath(namespace=namespace, name=name, identifier=identifier, sharding=by_sharding)
@@ -68,9 +86,33 @@ def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = Fal
     log.debug("Saved", file=filepath.name, type="pickle", count=len(data), path=filepath.parent)
 
 
+def load_crypto_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:
+    """
+    Loads one or more cached crypto list snapshots for the given provider(s).
+
+    Args:
+        provider: Optional. If specified, loads only that provider's crypto list.
+                  If None, attempts to load all known providers.
+
+    Returns:
+        A dictionary mapping each provider to its crypto list DataFrame.
+        Providers with no valid cached data are omitted.
+        Returns an empty dictionary if nothing is found.
+    """
+    if provider:
+        df = load(namespace=_NS_LIST, name=provider.value, identifier=_ID_CRYPTO, by_sharding=False, allow_stale=False)
+        return {provider: df}
+
+    frames = {}
+    for provider in ProviderSource:
+        df = load(namespace=_NS_LIST, name=provider.value, identifier=_ID_CRYPTO, by_sharding=False, allow_stale=False)
+        if not df.empty: frames |= {provider: df}
+    return frames
+
+
 def load_stock_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:
     """
-    Loads one or more cached stock list snapshots for the given provider(s). Expired entries are ignored.
+    Loads one or more cached stock list snapshots for the given provider(s).
 
     Args:
         provider: Optional. If specified, loads only that provider's stock list.
@@ -82,12 +124,12 @@ def load_stock_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd
         Returns an empty dictionary if nothing is found.
     """
     if provider:
-        df = load(namespace="lists", name=provider.value, identifier="", by_sharding=False, allow_stale=False)
+        df = load(namespace=_NS_LIST, name=provider.value, identifier=_ID_STOCK, by_sharding=False, allow_stale=False)
         return {provider: df}
 
     frames = {}
     for provider in ProviderSource:
-        df = load(namespace="lists", name=provider.value, identifier="", by_sharding=False, allow_stale=False)
+        df = load(namespace=_NS_LIST, name=provider.value, identifier=_ID_STOCK, by_sharding=False, allow_stale=False)
         if not df.empty: frames |= {provider: df}
     return frames
 
@@ -105,15 +147,15 @@ def load_symbol_details(symbol: str, provider: ProviderSource = None) -> pd.Data
         Cached ticker details if available, otherwise an empty DataFrame.
     """
     if provider:
-        return load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
+        return load(namespace=_NS_SYMBOLS, name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
 
     for provider in [ProviderSource.POLYGON, ProviderSource.FINNHUB]:  # In preferred order
-        df = load(namespace="symbols", name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
+        df = load(namespace=_NS_SYMBOLS, name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)
         if not df.empty: return df
     return pd.DataFrame()
 
 
-def load(name: str, identifier: str, by_sharding: bool = False, namespace: str = "snapshot",
+def load(name: str, identifier: str, by_sharding: bool = False, namespace: str = _NS_DEFAULT,
          allow_stale: bool = False) -> pd.DataFrame:
     """
     Load a cached DataFrame snapshot from a pickle file. If the cache file does not exist, an empty DataFrame is
@@ -125,7 +167,7 @@ def load(name: str, identifier: str, by_sharding: bool = False, namespace: str =
         by_sharding: Optional. If True, load the file from a folder with the first letter of `name`.
                      Defaults to False.
         namespace: Optional. Parent folder grouping cached data.
-                   Defaults to "snapshot".
+                   Defaults to `_NS_DEFAULT`.
         allow_stale: Optional. If True, expired cache entries are returned instead of being ignored.
                      Defaults to False.
 
