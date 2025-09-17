@@ -1,7 +1,7 @@
 colorlog>=6.9.0,<6.10.0
 datacompy>=0.18.0,<1.0.0
 finnhub-python>=2.4.24,<2.5
-numpy>=2.3.2,<2.4
+numpy>=2.3.3,<2.4
 pandas>=2.3.2,<2.4
 polygon-api-client>=1.15.3,<1.16
 python-dotenv>=1.1.1,<1.2.0
