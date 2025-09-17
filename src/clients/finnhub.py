@@ -46,6 +46,8 @@ class FinnhubProvider(Provider):
         log.info("Phase ends", fetch="stock list", endpoint="finnhub", count=len(df), source="API")
         return df
 
+    def fetch_crypto_market(self) -> pd.DataFrame:
+        return pd.DataFrame()
 
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         """

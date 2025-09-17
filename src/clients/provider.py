@@ -19,7 +19,11 @@ class Provider(ABC):
 
     @abstractmethod
     def fetch_all_stock(self) -> pd.DataFrame:
-       return pd.DataFrame()
+       pass
+
+    @abstractmethod
+    def fetch_crypto_market(self) -> pd.DataFrame:
+        pass
 
     @abstractmethod
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:

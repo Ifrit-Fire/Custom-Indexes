@@ -47,11 +47,11 @@ def _iter_all_stock(params: dict[str, str]) -> Iterator[dict[str, object]]:
     encountered, waits 60 seconds before retrying.
 
     Args:
-        params (dict[str, str]): Query parameters for the initial API request
+        params: Query parameters for the initial API request
             (e.g., market, exchange MIC, type, limit).
 
     Yields:
-        dict: Raw JSON objects for each stock ticker as returned by the API.
+        Raw JSON objects for each stock ticker as returned by the API.
 
     Notes:
         - Retries after hitting rate limits; may block until calls are allowed.
@@ -108,6 +108,8 @@ class PolygonProvider(Provider):
         log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source="API")
         return df
 
+    def fetch_crypto_market(self) -> pd.DataFrame:
+        return pd.DataFrame()
 
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         """

@@ -67,5 +67,5 @@ def get_symbol_details(symbols: pd.Series) -> pd.DataFrame:
         details.append(df_proj)
 
     log.info("Phase ends", fetch="Symbol details")
-    df = pd.concat(details, ignore_index=True)
+    df = pd.concat(details, ignore_index=True).copy()
     return df

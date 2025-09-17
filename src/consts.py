@@ -3,12 +3,6 @@ from pathlib import Path
 
 from src.data.security_types import CryptoTypes, StockTypes, CommoditiesType
 
-ASSET_ADR_COMMON = "ADRC"
-ASSET_COMMON_STOCK = "CS"
-ASSET_CRYPTO = "CC"
-ASSET_ORD_STOCK = "OS"
-ASSET_TYPES = {ASSET_ADR_COMMON, ASSET_COMMON_STOCK, ASSET_CRYPTO, ASSET_ORD_STOCK}
-
 API_CMC_TOKEN = os.getenv("CMC_API_TOKEN")
 API_CMC_CACHE_ONLY = API_CMC_TOKEN is None
 API_FINN_TOKEN = os.getenv("FINN_API_TOKEN")
