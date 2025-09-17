@@ -17,16 +17,15 @@ _NS_LIST = "lists"
 _NS_SYMBOLS = "symbols"
 
 
-def save_crypto_list(df: pd.DataFrame, provider: ProviderSource):
+def save_crypto_list(df: pd.DataFrame):
     """
     Save a snapshot of a crypto list to the cache with weekly expiration. The file is placed under the `lists`
-    namespace and identified by the provider name.
+    namespace and identified by a hardcoded provider name.
 
     Args:
         df: The crypto list DataFrame to persist.
-        provider: The provider that supplied the data.
     """
-    save(data=df, namespace=_NS_LIST, name=provider.value, identifier=_ID_CRYPTO, by_sharding=False,
+    save(data=df, namespace=_NS_LIST, name=ProviderSource.COIN_MC.value, identifier=_ID_CRYPTO, by_sharding=False,
          expires_on=datetime.now(timezone.utc) + relativedelta(weeks=1))
 
 
@@ -86,28 +85,15 @@ def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = Fal
     log.debug("Saved", file=filepath.name, type="pickle", count=len(data), path=filepath.parent)
 
 
-def load_crypto_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:
+def load_crypto_lists() -> pd.DataFrame:
     """
-    Loads one or more cached crypto list snapshots for the given provider(s).
-
-    Args:
-        provider: Optional. If specified, loads only that provider's crypto list.
-                  If None, attempts to load all known providers.
+    Loads cached crypto list snapshot for a hardcoded provider.
 
     Returns:
-        A dictionary mapping each provider to its crypto list DataFrame.
-        Providers with no valid cached data are omitted.
-        Returns an empty dictionary if nothing is found.
+        The cached DataFrame if available and valid, otherwise an empty DataFrame.
     """
-    if provider:
-        df = load(namespace=_NS_LIST, name=provider.value, identifier=_ID_CRYPTO, by_sharding=False, allow_stale=False)
-        return {provider: df}
-
-    frames = {}
-    for provider in ProviderSource:
-        df = load(namespace=_NS_LIST, name=provider.value, identifier=_ID_CRYPTO, by_sharding=False, allow_stale=False)
-        if not df.empty: frames |= {provider: df}
-    return frames
+    return load(namespace=_NS_LIST, name=ProviderSource.COIN_MC.value, identifier=_ID_CRYPTO, by_sharding=False,
+                allow_stale=False)
 
 
 def load_stock_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:

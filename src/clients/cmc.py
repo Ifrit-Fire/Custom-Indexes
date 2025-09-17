@@ -1,37 +1,17 @@
+from typing import Sequence
+
 import pandas as pd
 import requests
-from pandas import DataFrame
 
 from src.clients.provider import Provider
 from src.consts import COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE, COL_OUT_SHARES
 from src.data import processing
 from src.data.security_types import CryptoTypes
 from src.data.source import ProviderSource
-from src.logger import timber
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
-
-
-def _exclude_stablecoins(df: DataFrame) -> DataFrame:
-    """
-    Remove stablecoins from the DataFrame based on the `tags` column.
-
-    Args:
-        df (pd.DataFrame): Input DataFrame containing at least `tags` and `COL_SYMBOL` columns.
-
-    Returns:
-        pd.DataFrame: A filtered DataFrame with all stablecoins removed.
-    """
-    log = timber.plant()
-    mask = df["tags"].apply(lambda tags: "stablecoin" in tags)
-
-    for symbol in df.loc[mask, COL_SYMBOL]:
-        log.debug("Excluded", symbol=symbol, reason="stablecoin")
-    log.info("Excluded", items="symbols", count=int((mask).sum()), reason="stablecoin")
-
-    return df[~mask]
 
 
 class CMCProvider(Provider):
@@ -57,9 +37,13 @@ class CMCProvider(Provider):
                       "date_added": COL_LIST_DATE, "circulating_supply": COL_OUT_SHARES}
         df.rename(columns=col_rename, inplace=True)
         df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
-        df[COL_TYPE] = CryptoTypes.CRYPTO.value
+        df[COL_TYPE] = df["tags"].apply(CMCProvider.tag_to_type)
 
         return df
+
+    @staticmethod
+    def tag_to_type(tags: Sequence[str]):
+        return CryptoTypes.STABLECOIN.value if "stablecoin" in tags else CryptoTypes.CRYPTO.value
 
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         return pd.DataFrame()

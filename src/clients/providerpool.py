@@ -53,13 +53,9 @@ class ProviderPool:
 
         return frames
 
-    def fetch_crypto_market(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
+    def fetch_crypto_market(self) -> dict[ProviderSource, pd.DataFrame]:
         """
-        Fetches crypto market data from all available providers in the pool, excluding any specified.
-
-        Args:
-            except_from: Optional. A list of providers to skip during fetch. Providers not in the pool are
-                         ignored silently.
+        Fetches crypto market data from all available providers in the pool.
 
         Returns:
             A dictionary mapping each provider to its fetched crypto list DataFrame.
@@ -67,7 +63,7 @@ class ProviderPool:
             Returns an empty dictionary if nothing is found.
         """
         frames = {}
-        providers = [val for val in self._providers if val.name not in except_from]
+        providers = [val for val in self._providers]
         for provider in providers:
             df = provider.fetch_crypto_market()
             if df.empty: continue
