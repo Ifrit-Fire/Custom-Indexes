@@ -4,6 +4,7 @@ import pandas as pd
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, COL_LIST_DATE
+from src.data.security_types import CryptoTypes
 from src.data.source import ProviderSource
 from src.logger import timber
 
@@ -53,6 +54,19 @@ def merge_all_stock(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataFrame:
     log_call("Post Merge NaN", hasnan=col_nans)
     log.info("Phase ends", merge="all stock", count=len(df_accum))
     return df_accum
+
+
+def remove_stablecoin(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Removes all stablecoin entries from the given DataFrame.
+
+    Args:
+        df: A DataFrame containing crypto asset listings with a `COL_TYPE` column.
+
+    Returns:
+        A new DataFrame excluding rows classified as stablecoins.
+    """
+    return df[df[COL_TYPE] != CryptoTypes.STABLECOIN.value].copy()
 
 
 def standardize_symbols(series: pd.Series) -> pd.Series:

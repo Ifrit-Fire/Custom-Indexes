@@ -1,13 +1,37 @@
 import pandas as pd
 
+from src.clients.cmc import CMCProvider
 from src.clients.finnhub import FinnhubProvider
 from src.clients.polygon import PolygonProvider
 from src.clients.providerpool import ProviderPool
 from src.data import projection, processing
+from src.data.source import ProviderSource
 from src.io import cache
 from src.logger import timber
 
-_POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider()])
+_POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider(), CMCProvider()])
+
+
+def get_crypto_market() -> pd.DataFrame:
+    """
+    Retrieves a list of crypto assets across the market.
+
+    Loads cached crypto listings if available. Otherwise, fetches fresh data from the provider,
+    saves it to cache, and projects it into the canonical schema.
+
+    Returns:
+        A DataFrame containing standardized crypto asset listings.
+    """
+    log = timber.plant()
+    log.info("Phase starts", fetch="crypto")
+    df = cache.load_crypto_lists()
+    if df.empty:
+        df = _POOL.fetch_crypto_market()[ProviderSource.COIN_MC]
+        cache.save_crypto_list(df)
+    df = processing.remove_stablecoin(df)
+    df = projection.view_crypto_market(df)
+    log.info("Phase ends", fetch="crypto", count=len(df))
+    return df
 
 
 def get_all_stock() -> pd.DataFrame:
