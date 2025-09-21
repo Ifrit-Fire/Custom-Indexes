@@ -9,7 +9,7 @@ import pandas as pd
 
 from src.clients.provider import Provider
 from src.data.source import ProviderSource
-from src.exceptions import APILimitReachedError, NoResultsFoundError
+from src.exceptions import APILimitReachedError
 from src.logger import timber
 
 
@@ -90,19 +90,18 @@ class ProviderPool:
                 p.mark_unavailable()
                 continue
             try:
-                return p.fetch_symbol_data(symbol), p.name
+                df = p.fetch_symbol_data(symbol)
+                if df.empty:
+                    log.debug("NoResultsFoundError", response="switch providers")
+                    no_results.add(p.name)
+                    if len(no_results) < len(self._providers): continue
+                    log.error("Providers Exhausted", reason="NoResultsFoundError", response="skipping", symbol=symbol)
+                return df, p.name
             except APILimitReachedError:
                 log.debug("APILimitReachedError", response="switch providers")
                 p.mark_unavailable()
                 continue
-            except NoResultsFoundError:
-                # Just continue on, next provider may have the results
-                log.debug("NoResultsFoundError", response="switch providers")
-                no_results.add(p.name)
-                if len(no_results) >= len(self._providers):
-                    log.error("Providers Exhausted", reason="NoResultsFoundError", response="skipping", symbol=symbol)
-                    return pd.DataFrame(), p.name
-                continue
+
         log.critical("Reached the unreachable", reason="perplexed", response="quitting")
         sys.exit()
 

@@ -14,7 +14,7 @@ from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_
 from src.data import processing
 from src.data.security_types import StockTypes
 from src.data.source import ProviderSource
-from src.exceptions import APILimitReachedError, NoResultsFoundError
+from src.exceptions import APILimitReachedError
 from src.logger import timber
 
 _BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
@@ -108,9 +108,6 @@ class PolygonProvider(Provider):
         log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source="API")
         return df
 
-    def fetch_crypto_market(self) -> pd.DataFrame:
-        return pd.DataFrame()
-
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         """
         Retrieves and normalizes detailed ticker information for a given symbol.
@@ -133,9 +130,9 @@ class PolygonProvider(Provider):
         except MaxRetryError:
             log.warning("MaxRetryError", reason="exceeded API limit", provider=self.name)
             raise APILimitReachedError()
-        except BadResponse as e:
+        except BadResponse:
             log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym, provider=self.name)
-            raise NoResultsFoundError()
+            return pd.DataFrame()
 
         result = result.data.decode("utf-8")
         result = json.loads(result)["results"]
@@ -145,3 +142,6 @@ class PolygonProvider(Provider):
                            "address.postal_code": COL_POSTAL_CODE}, inplace=True)
         df.loc[0, COL_SYMBOL] = symbol
         return df
+
+    def fetch_crypto_market(self) -> pd.DataFrame:
+        return pd.DataFrame()

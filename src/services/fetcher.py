@@ -85,11 +85,13 @@ def get_symbol_details(symbols: pd.Series) -> pd.DataFrame:
         df = cache.load_symbol_details(symbol=symbol)
         if df.empty:
             df, provider = _POOL.fetch_symbol_data(symbol)
-            if df.empty: continue  # rare but can happen if none of the providers support the given symbol
+            if df.empty:
+                log.warning("No results from Pool", reason="unknown", symbol=symbol, action="manual investigation")
+                continue  # rare but can happen if none of the providers support the given symbol
             cache.save_symbol_details(df=df, provider=provider, symbol=symbol)
         df_proj = projection.view_symbol_details(df)
         details.append(df_proj)
 
     log.info("Phase ends", fetch="Symbol details")
-    df = pd.concat(details, ignore_index=True).copy()
+    df = pd.concat(details, ignore_index=True)
     return df

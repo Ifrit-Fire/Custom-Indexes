@@ -9,7 +9,7 @@ from src.consts import API_FINN_TOKEN, COL_SYMBOL, STOCK_TYPES, COL_MC, COL_LIST
     COL_TYPE, MIC_CODES
 from src.data import processing
 from src.data.source import ProviderSource
-from src.exceptions import APILimitReachedError, NoResultsFoundError
+from src.exceptions import APILimitReachedError
 from src.logger import timber
 
 _CLIENT = finnhub.Client(api_key=API_FINN_TOKEN)
@@ -76,7 +76,7 @@ class FinnhubProvider(Provider):
 
         if not result:
             log.error("NoResultsFoundError", symbol=symbol, provider=self.name)
-            raise NoResultsFoundError()
+            return pd.DataFrame()
 
         df = pd.json_normalize(result)
         df.rename(columns={"marketCapitalization": COL_MC, "ticker": COL_SYMBOL, "ipo": COL_LIST_DATE,
