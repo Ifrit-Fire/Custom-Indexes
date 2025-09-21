@@ -34,7 +34,7 @@ def get_crypto_market() -> pd.DataFrame:
     return df
 
 
-def get_all_stock() -> pd.DataFrame:
+def get_stock_listing() -> pd.DataFrame:
     """
     Retrieves a stock list derived from all known providers.
 
@@ -48,16 +48,16 @@ def get_all_stock() -> pd.DataFrame:
     log = timber.plant()
     log.info("Phase starts", fetch="stock list")
 
-    frames_cache = cache.load_stock_lists()
-    frames_api = _POOL.fetch_all_stock(except_from=list(frames_cache.keys()))
+    frames_cache = cache.load_stock_listings()
+    frames_api = _POOL.fetch_stock_listings(except_from=list(frames_cache.keys()))
     if len(frames_api) > 0:
         for k, v in frames_api.items():
             cache.save_stock_list(df=v, provider=k)
 
     frames = frames_cache | frames_api
     for p in frames.keys():
-        frames[p] = projection.view_all_stock(frames[p])
-    df = processing.merge_all_stock(frames)
+        frames[p] = projection.view_stock_listing(frames[p])
+    df = processing.merge_stock_listings(frames)
 
     log.info("Phase ends", fetch="stock list", count=len(df))
     return df

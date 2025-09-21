@@ -96,7 +96,7 @@ def load_crypto_lists() -> pd.DataFrame:
                 allow_stale=False)
 
 
-def load_stock_lists(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:
+def load_stock_listings(provider: ProviderSource = None) -> dict[ProviderSource, pd.DataFrame]:
     """
     Loads one or more cached stock list snapshots for the given provider(s).
 

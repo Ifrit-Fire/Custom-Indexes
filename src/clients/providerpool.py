@@ -31,7 +31,7 @@ class ProviderPool:
         self._providers = list(providers)
         self._index = 0
 
-    def fetch_all_stock(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
+    def fetch_stock_listings(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
         """
         Fetches stock lists from all available providers in the pool, excluding any specified.
 

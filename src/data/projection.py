@@ -6,7 +6,7 @@ from src.consts import COL_SYMBOL, COL_NAME, COL_MIC, COL_CIK, COL_FIGI, COL_MC,
     COL_STATE, COL_POSTAL_CODE, COL_COUNTRY, COL_TYPE, COL_PRICE, COL_VOLUME
 
 
-def view_all_stock(df: pd.DataFrame) -> pd.DataFrame:
+def view_stock_listing(df: pd.DataFrame) -> pd.DataFrame:
     """
     Projects a DataFrame into the canonical stock list view. Ensures all expected columns exist, fills missing
     ones with NA, and reorders columns into the standard schema.

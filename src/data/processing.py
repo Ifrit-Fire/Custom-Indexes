@@ -9,7 +9,7 @@ from src.data.source import ProviderSource
 from src.logger import timber
 
 
-def merge_all_stock(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataFrame:
+def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataFrame:
     """
     Merges multiple provider-sourced DataFrames of all market stock into a single consolidated DataFrame.
 
