@@ -18,7 +18,7 @@ class Provider(ABC):
         pass
 
     @abstractmethod
-    def fetch_all_stock(self) -> pd.DataFrame:
+    def fetch_stock_listing(self) -> pd.DataFrame:
        pass
 
     @abstractmethod

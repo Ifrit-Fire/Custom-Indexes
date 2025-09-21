@@ -48,5 +48,5 @@ class CMCProvider(Provider):
     def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         return pd.DataFrame()
 
-    def fetch_all_stock(self) -> pd.DataFrame:
+    def fetch_stock_listing(self) -> pd.DataFrame:
         return pd.DataFrame()

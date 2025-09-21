@@ -82,7 +82,7 @@ class PolygonProvider(Provider):
     def name(self) -> ProviderSource:
         return ProviderSource.POLYGON
 
-    def fetch_all_stock(self) -> pd.DataFrame:
+    def fetch_stock_listing(self) -> pd.DataFrame:
         """
         Retrieves and normalizes all active stock listings. Focuses strictly on common stock, preferred stock, ADRs,
         REITs from the `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.

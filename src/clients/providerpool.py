@@ -47,7 +47,7 @@ class ProviderPool:
         frames = {}
         providers = [val for val in self._providers if val.name not in except_from]
         for provider in providers:
-            df = provider.fetch_all_stock()
+            df = provider.fetch_stock_listing()
             if df.empty: continue
             frames |= {provider.name: df}
 
