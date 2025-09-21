@@ -42,15 +42,15 @@ def save_stock_list(df: pd.DataFrame, provider: ProviderSource):
          expires_on=datetime.now(timezone.utc) + relativedelta(months=3))
 
 
-def save_symbol_details(df: pd.DataFrame, provider: ProviderSource, symbol: str):
+def save_stock_details(df: pd.DataFrame, provider: ProviderSource, symbol: str):
     """
-    Save ticker detail data to the cache with sharding enabled. The file is placed under the `symbols` namespace and
+    Save stock details data to the cache with sharding enabled. The file is placed under the `symbols` namespace and
     stored in a sharded folder based upon the ticker symbol. No data expiration is set.
 
     Args:
-        df: The ticker detail DataFrame to persist.
+        df: The stock detailed DataFrame to persist.
         provider: The provider that supplied the data.
-        symbol: The ticker the data represents.
+        symbol: The stock symbol the data represents.
     """
     save(data=df, namespace=_NS_SYMBOLS, name=symbol, identifier=provider.value, by_sharding=True)
 
@@ -120,17 +120,17 @@ def load_stock_listings(provider: ProviderSource = None) -> dict[ProviderSource,
     return frames
 
 
-def load_symbol_details(symbol: str, provider: ProviderSource = None) -> pd.DataFrame:
+def load_stock_details(symbol: str, provider: ProviderSource = None) -> pd.DataFrame:
     """
-    Load cached ticker detail data for a symbol. If `provider` is given, load from that source. If not, check
+    Load cached stock detailed data for a symbol. If `provider` is given, load from that source. If not, check
     providers in preferred order and return the first result found. Cached data is effectively non-expiring.
 
     Args:
-        symbol: The ticker symbol to load.
+        symbol: The stock symbol to load.
         provider: Optional. The provider to load from. If None, precedence rules apply.
 
     Returns:
-        Cached ticker details if available, otherwise an empty DataFrame.
+        Cached stock details if available, otherwise an empty DataFrame.
     """
     if provider:
         return load(namespace=_NS_SYMBOLS, name=symbol, identifier=provider.value, by_sharding=True, allow_stale=True)

@@ -36,16 +36,16 @@ def view_crypto_market(df: pd.DataFrame) -> pd.DataFrame:
     return _view(df, columns)
 
 
-def view_symbol_details(df: pd.DataFrame) -> pd.DataFrame:
+def view_stock_details(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Projects a DataFrame into the canonical symbol details view. Ensures all expected columns exist, fills missing
+    Projects a DataFrame into the canonical stock details view. Ensures all expected columns exist, fills missing
     ones with NA, and reorders columns into the standard schema.
 
     Args:
-        df: Input DataFrame with symbol details (Provider-agnostic).
+        df: Input DataFrame with stock details (Provider-agnostic).
 
     Returns:
-        DataFrame with standardized symbol details columns.
+        DataFrame with standardized stock details columns.
     """
     columns = [COL_SYMBOL, COL_NAME, COL_MC, COL_MIC, COL_LIST_DATE, COL_CIK, COL_FIGI, COL_OUT_SHARES, COL_POSTAL_CODE,
                COL_STATE, COL_COUNTRY]

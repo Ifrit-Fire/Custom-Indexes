@@ -71,16 +71,16 @@ class ProviderPool:
 
         return frames
 
-    def fetch_symbol_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
+    def fetch_stock_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
         """
-        Fetch detailed data for a symbol using available providers with round-robin selection. If all providers are
-        exhausted with no results, an empty DataFrame is returned.
+        Fetch detailed data for a stock symbol using available providers with round-robin selection. If all providers
+        are exhausted with no results, an empty DataFrame is returned.
 
         Args:
-            symbol: The ticker symbol to query.
+            symbol: The stock symbol to query.
 
         Returns:
-            A normalized DataFrame with symbol details (empty if no results), and the provider that supplied the result.
+            A normalized DataFrame with stock details (empty if no results), and the provider that supplied the result.
         """
         log = timber.plant()
         no_results: set[ProviderSource] = set()
