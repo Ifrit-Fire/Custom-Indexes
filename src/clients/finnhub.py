@@ -42,6 +42,7 @@ class FinnhubProvider(Provider):
         df.rename(columns={"figi": COL_FIGI}, inplace=True)
         df = df[df[COL_TYPE].isin(STOCK_TYPES)]
         df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
+        df = processing.set_column_types(df)
 
         log.info("Phase ends", fetch="stock list", endpoint="finnhub", count=len(df), source="API")
         return df
@@ -81,7 +82,14 @@ class FinnhubProvider(Provider):
         df = pd.json_normalize(result)
         df.rename(columns={"marketCapitalization": COL_MC, "ticker": COL_SYMBOL, "ipo": COL_LIST_DATE,
                            "shareOutstanding": COL_OUT_SHARES}, inplace=True)
-        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
+        ticker = df.loc[0, COL_SYMBOL]
+        if ticker != symbol:
+            # CompanyProfile2 API returns the primary listing symbol (e.g., international exchange), which does not
+            # always align with the US exchange symbols we track. Overwrite it to preserve consistency.
+            log.warning("Different symbol returned", queried=symbol, returned=ticker, action="ignoring returned",
+                        provider=self.name)
+            df.loc[0, COL_SYMBOL] = symbol
+        df = processing.set_column_types(df)
         df[COL_MC] *= 1_000_000
         df[COL_OUT_SHARES] *= 1_000_000
         return df

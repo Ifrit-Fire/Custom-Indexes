@@ -104,6 +104,7 @@ class PolygonProvider(Provider):
         df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
         df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
+        df = processing.set_column_types(df)
 
         log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source="API")
         return df
@@ -141,6 +142,7 @@ class PolygonProvider(Provider):
                            "primary_exchange": COL_MIC, "address.state": COL_STATE,
                            "address.postal_code": COL_POSTAL_CODE}, inplace=True)
         df.loc[0, COL_SYMBOL] = symbol
+        df = processing.set_column_types(df)
         return df
 
     def fetch_crypto_market(self) -> pd.DataFrame:

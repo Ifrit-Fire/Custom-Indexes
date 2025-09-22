@@ -1,12 +1,77 @@
+import sys
+import unicodedata
+
 import datacompy
 import pandas as pd
 
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, COL_LIST_DATE
+from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, COL_LIST_DATE, COL_COUNTRY, COL_NAME, COL_OUT_SHARES, \
+    COL_MIC, COL_CIK, COL_FIGI, COL_STATE, COL_POSTAL_CODE
 from src.data.security_types import CryptoTypes
 from src.data.source import ProviderSource
 from src.logger import timber
+
+
+def merge_stock(listing: pd.DataFrame, with_details: pd.DataFrame) -> pd.DataFrame:
+    log = timber.plant()
+    log.info("Phase starts", merge="listing with details")
+    rcol_name = "_right"
+
+    datacompy.Compare(df1=listing, df2=with_details, join_columns=COL_SYMBOL)
+    df = pd.merge(left=listing, right=with_details, on=COL_SYMBOL, how="left", suffixes=("", rcol_name))
+    df = df.sort_values(COL_SYMBOL)
+    listing = listing.sort_values(COL_SYMBOL)
+    with_details = with_details.sort_values(COL_SYMBOL)
+
+    def normalize(sym):
+        return unicodedata.normalize("NFKC", str(sym)).strip().upper()
+
+    def clean_symbol(s: str) -> str:
+        return unicodedata.normalize("NFKC", s).strip()
+
+    # listing[COL_SYMBOL] = listing[COL_SYMBOL].astype("string")
+    # with_details[COL_SYMBOL] = with_details[COL_SYMBOL].astype("string")
+    # listing[COL_SYMBOL] = listing[COL_SYMBOL].str.strip()
+    # with_details[COL_SYMBOL] = with_details[COL_SYMBOL].str.strip()
+    # listing_syms = set(listing[COL_SYMBOL].astype(str).map(normalize))
+    # details_syms = set(with_details[COL_SYMBOL].astype(str).map(normalize))
+    # missing = listing_syms - details_syms
+    # print(f"Missing after normalization: {len(missing)}")
+    # print("set norm: ", len(listing_syms))
+    # print("set norm: ",len(details_syms))
+
+    print("norm", len(listing[COL_SYMBOL]))
+    print("norm", len(with_details[COL_SYMBOL]))
+    print("unique", len(listing[COL_SYMBOL].unique()))
+    print("unique", len(with_details[COL_SYMBOL].unique()))
+    print(len(set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL])))
+    print(with_details[with_details[COL_SYMBOL] == "RELX"])
+    print(listing[COL_SYMBOL].dtype)
+    print(with_details[COL_SYMBOL].dtype)
+    bad_syms = [s for s in set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL]) if "RELX" in s]
+    print(bad_syms)
+    bad_syms = sorted([s for s in set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL])])
+    # for s in bad_syms:
+    #     print(repr(s))
+
+    dupes = listing[listing.duplicated(subset=[COL_SYMBOL], keep=False)]
+    print(f"Duplicate symbols: {dupes[COL_SYMBOL].nunique()} unique, {len(dupes)} total rows")
+    print(dupes.sort_values(COL_SYMBOL).head(10))
+
+    dupes = with_details[with_details.duplicated(subset=[COL_SYMBOL], keep=False)]
+    print(f"Duplicate symbols: {dupes[COL_SYMBOL].nunique()} unique, {len(dupes)} total rows")
+    # print(dupes.sort_values(COL_SYMBOL).head(10))
+
+    matches = with_details[with_details[COL_SYMBOL].str.contains("RELX", regex=True)]
+    print(matches[COL_SYMBOL].apply(lambda x: (x, list(map(ord, x)))))
+
+    for sym in with_details[COL_SYMBOL].unique():
+        if "RELX" in sym and sym != "RELX":
+            print(f"Found weird RELX variant: {repr(sym)} → {[ord(c) for c in sym]}")
+
+    log.info("Phase ends", merge="listing with details", count=len(df))
+    return df
 
 
 def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataFrame:
@@ -29,7 +94,7 @@ def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataF
         - A post-merge warning logs any columns that still contain NaNs.
     """
     log = timber.plant()
-    log.info("Phase starts", merge="all stock")
+    log.info("Phase starts", merge="stock listings")
     precedence = [ProviderSource.FINNHUB, ProviderSource.POLYGON]
     rcol_name = "_right"
 
@@ -52,7 +117,7 @@ def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataF
     col_nans = df_accum.columns[df_accum.isna().any()].tolist()
     log_call = log.warning if len(col_nans) > 0 else log.debug
     log_call("Post Merge NaN", hasnan=col_nans)
-    log.info("Phase ends", merge="all stock", count=len(df_accum))
+    log.info("Phase ends", merge="stock listings", count=len(df_accum))
     return df_accum
 
 
@@ -67,6 +132,50 @@ def remove_stablecoin(df: pd.DataFrame) -> pd.DataFrame:
         A new DataFrame excluding rows classified as stablecoins.
     """
     return df[df[COL_TYPE] != CryptoTypes.STABLECOIN.value].copy()
+
+
+def set_column_types(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Applies standardized pandas extension dtypes to known columns in the given DataFrame.
+
+    If any column remains with 'object' dtype after conversion, logs a critical error and exits the program.
+
+    Args:
+        df: Input DataFrame with potentially mixed or uncoerced column types.
+
+    Returns:
+        A new DataFrame with standardized column types applied where recognized.
+    """
+    log = timber.plant()
+    schema = {"active": pd.StringDtype(), "address.address1": pd.StringDtype(), "address.address2": pd.StringDtype(),
+              "address.city": pd.StringDtype(), "branding.icon_url": pd.StringDtype(),
+              "branding.logo_url": pd.StringDtype(), COL_CIK: pd.StringDtype(), COL_FIGI: pd.StringDtype(),
+              COL_COUNTRY: pd.StringDtype(), "currency": pd.StringDtype(), "currency_name": pd.StringDtype(),
+              "description": pd.StringDtype(), "displaySymbol": pd.StringDtype(), "estimateCurrency": pd.StringDtype(),
+              "exchange": pd.StringDtype(), "finnhubIndustry": pd.StringDtype(), "homepage_url": pd.StringDtype(),
+              "last_updated_utc": pd.StringDtype(), "isin": pd.StringDtype(), "locale": pd.StringDtype(),
+              "logo": pd.StringDtype(), "market": pd.StringDtype(), COL_MC: pd.Float64Dtype(),
+              COL_MIC: pd.StringDtype(), COL_NAME: pd.StringDtype(), COL_OUT_SHARES: pd.Float64Dtype(),
+              "phone": pd.StringDtype(), "phone_number": pd.StringDtype(), COL_POSTAL_CODE: pd.StringDtype(),
+              "round_lot": pd.UInt16Dtype(), "share_class_figi": pd.StringDtype(), "shareClassFIGI": pd.StringDtype(),
+              "sic_code": pd.StringDtype(), "sic_description": pd.StringDtype(), COL_STATE: pd.StringDtype(),
+              COL_SYMBOL: pd.StringDtype(), "symbol2": pd.StringDtype(), "total_employees": pd.UInt64Dtype(),
+              "ticker_root": pd.StringDtype(), "ticker_suffix": pd.StringDtype(), COL_TYPE: pd.StringDtype(),
+              "weburl": pd.StringDtype(), "weighted_shares_outstanding": pd.Float64Dtype()}
+
+    # Apply dtype conversions for existing columns
+    found_types = {col: dtype for col, dtype in schema.items() if col in df.columns}
+    df = df.astype(found_types)
+
+    if COL_LIST_DATE in df.columns:
+        df[COL_LIST_DATE] = pd.to_datetime(df[COL_LIST_DATE], errors="coerce")
+
+    bad_cols = df.columns[df.dtypes == "object"]
+    if not bad_cols.empty:
+        log.critical("Detected object dtype", columns=df.columns[df.dtypes == "object"].tolist())
+        sys.exit()
+
+    return df
 
 
 def standardize_symbols(series: pd.Series) -> pd.Series:
