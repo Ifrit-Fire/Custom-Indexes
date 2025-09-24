@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import sys
 import time
 from datetime import datetime, timezone
 from typing import Sequence, Iterator, Tuple
@@ -8,6 +7,7 @@ from typing import Sequence, Iterator, Tuple
 import pandas as pd
 
 from src.clients.provider import Provider
+from src.data.reconciler import Reconciler
 from src.data.source import ProviderSource
 from src.exceptions import APILimitReachedError
 from src.logger import timber
@@ -83,27 +83,27 @@ class ProviderPool:
             A normalized DataFrame with stock details (empty if no results), and the provider that supplied the result.
         """
         log = timber.plant()
-        no_results: set[ProviderSource] = set()
-        while True:
-            p = self._next()
-            if p.name in no_results:
-                p.mark_unavailable()
+        reconciler = Reconciler()
+        tried: set[ProviderSource] = set()
+
+        while len(tried) < len(self._providers):
+            provider = self._next()
+            if provider.name in tried:
+                provider.mark_unavailable()
                 continue
             try:
-                df = p.fetch_symbol_data(symbol)
-                if df.empty:
-                    log.debug("NoResultsFoundError", response="switch providers")
-                    no_results.add(p.name)
-                    if len(no_results) < len(self._providers): continue
-                    log.error("Providers Exhausted", reason="NoResultsFoundError", response="skipping", symbol=symbol)
-                return df, p.name
+                df = provider.fetch_symbol_data(symbol)
+                tried.add(provider.name)
+                reconciler.add(data=df, source=provider.name)
+                if reconciler.is_ready:
+                    return reconciler.data, reconciler.source
             except APILimitReachedError:
                 log.debug("APILimitReachedError", response="switch providers")
-                p.mark_unavailable()
+                provider.mark_unavailable()
                 continue
 
-        log.critical("Reached the unreachable", reason="perplexed", response="quitting")
-        sys.exit()
+        log.error("Providers Exhausted", reason="data retrieval unsuccessful", response="skipping", symbol=symbol)
+        return reconciler.data, reconciler.source
 
     def _next(self) -> Provider:
         """
