@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from dataclasses import dataclass, field
 from datetime import timedelta, datetime, timezone
 
 import pandas as pd
@@ -7,10 +6,10 @@ import pandas as pd
 from src.data.source import ProviderSource
 
 
-@dataclass(slots=True)
 class Provider(ABC):
-    cooldown_seconds: timedelta = timedelta(seconds=60)
-    cooldown_until: datetime | None = field(default=None)
+    def __init__(self):
+        self.cooldown_seconds = timedelta(seconds=60)
+        self.cooldown_until = datetime.now(timezone.utc) - self.cooldown_seconds
 
     @property
     @abstractmethod
@@ -19,7 +18,7 @@ class Provider(ABC):
 
     @abstractmethod
     def fetch_stock_listing(self) -> pd.DataFrame:
-       pass
+        pass
 
     @abstractmethod
     def fetch_crypto_market(self) -> pd.DataFrame:
@@ -31,7 +30,7 @@ class Provider(ABC):
 
     def is_available(self) -> bool:
         now = datetime.now(timezone.utc)
-        return (self.cooldown_until is None) or (now >= self.cooldown_until)
+        return now >= self.cooldown_until
 
     def mark_unavailable(self) -> None:
         self.cooldown_until = datetime.now(timezone.utc) + self.cooldown_seconds
