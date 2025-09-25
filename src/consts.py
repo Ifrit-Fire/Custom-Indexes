@@ -28,6 +28,8 @@ COL_TYPE = "type"
 COL_VOLUME = "volume"
 COL_WEIGHT = "weighted"
 
+CRITICAL_COLUMNS = {COL_LIST_DATE, COL_MC, COL_SYMBOL, COL_TYPE, COL_VOLUME}
+
 FORM_STRUCT = "structured"
 FORM_TEXT = "text"
 

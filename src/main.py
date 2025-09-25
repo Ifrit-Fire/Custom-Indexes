@@ -1,25 +1,29 @@
 import sys
 
-from src.clients import finnhub, polygon
 from src.config_handler import config
 from src.consts import COL_SYMBOL
 from src.data import processing
 from src.logger import timber
 from src.services import fetcher
 
+# TODO: Grab and normalize volume data
+
 timber.till()
+log = timber.plant("ETL")
+log.info("Phase starts", perform="ETL")
+df_listing = fetcher.get_stock_listing()
+df_details = fetcher.get_stock_details(df_listing[COL_SYMBOL])
+df_list_details = processing.merge_stock(listing=df_listing, with_details=df_details)
+df_crypto = fetcher.get_crypto_market()
+log.info("Phase ends", perform="ETL", df_stock=len(df_listing), df_crypto=len(df_crypto))
+
 for index, criteria in config.get_all_indexes().items():
     log = timber.plant(index)
     log.info("Phase starts", create=index)
-    df_all_finn = finnhub.get_all_stock()
-    df_all_poly = polygon.get_all_stock()
-    df_merge = processing.merge_all_stock(df_finn=df_all_finn, df_poly=df_all_poly)
-    df_final = fetcher.get_symbol_details(df_merge[COL_SYMBOL])
 
-    # df_stock = fmp.get_stock(criteria)
     sys.exit()
-    df_crypto = cmc.get_crypto(criteria)
-    df_refined = dp.refine_data(using=criteria, dfs=[df_stock, df_crypto])
+
+    df_refined = dp.refine_data(using=criteria, dfs=[df_listing, df_crypto])
     df_weights = allocations.add_weightings(df_refined, criteria).reset_index(drop=True)
 
     io.save_index(index, df_weights)

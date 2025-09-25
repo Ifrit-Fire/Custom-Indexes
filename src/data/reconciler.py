@@ -1,6 +1,6 @@
 import pandas as pd
 
-from src.consts import COL_MC, COL_LIST_DATE, COL_TYPE, COL_VOLUME
+from src.consts import COL_MC, CRITICAL_COLUMNS
 from src.data.source import ProviderSource
 from src.logger import timber
 
@@ -15,7 +15,7 @@ class Reconciler:
     """
 
     def __init__(self):
-        self._col_ready = {COL_LIST_DATE: False, COL_MC: False, COL_TYPE: False, COL_VOLUME: False}
+        self._col_ready = self._col_ready = {col: False for col in CRITICAL_COLUMNS}
         self._data = pd.DataFrame()
         self._source = None
         self._is_ready = False

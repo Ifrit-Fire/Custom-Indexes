@@ -1,5 +1,5 @@
 import sys
-import unicodedata
+from typing import Literal
 
 import datacompy
 import pandas as pd
@@ -7,68 +7,45 @@ import pandas as pd
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, COL_LIST_DATE, COL_COUNTRY, COL_NAME, COL_OUT_SHARES, \
-    COL_MIC, COL_CIK, COL_FIGI, COL_STATE, COL_POSTAL_CODE
+    COL_MIC, COL_CIK, COL_FIGI, COL_STATE, COL_POSTAL_CODE, CRITICAL_COLUMNS
 from src.data.security_types import CryptoTypes
 from src.data.source import ProviderSource
 from src.logger import timber
 
 
 def merge_stock(listing: pd.DataFrame, with_details: pd.DataFrame) -> pd.DataFrame:
+    """
+    Merges two DataFrame objects representing stock listings and detailed stock information.
+    This function ensures that all critical data columns are validated and free of missing and duplicate data.
+
+    Args:
+        listing: A DataFrame containing stock listing information, including symbols to be merged.
+        with_details: A DataFrame containing detailed stock information that corresponds to the symbols
+            in the listing DataFrame.
+
+    Returns:
+       A new DataFrame resulting from merging the `listing` DataFrame with the `with_details` DataFrame.
+
+    Raises:
+        RuntimeError: If duplicate symbols are detected in the resulting DataFrame after the merge.
+    """
     log = timber.plant()
-    log.info("Phase starts", merge="listing with details")
-    rcol_name = "_right"
+    log.info("Phase starts", merge="listing with details", count=len(listing))
 
     datacompy.Compare(df1=listing, df2=with_details, join_columns=COL_SYMBOL)
-    df = pd.merge(left=listing, right=with_details, on=COL_SYMBOL, how="left", suffixes=("", rcol_name))
+    df = _merge_combine_first(left=listing, right=with_details, how="right")
     df = df.sort_values(COL_SYMBOL)
-    listing = listing.sort_values(COL_SYMBOL)
-    with_details = with_details.sort_values(COL_SYMBOL)
+    # TODO: To solve ISNA...delete cache, retry fetch. Still ISNA, try special providers. Still ISNA, remove symbol
+    for col in CRITICAL_COLUMNS:
+        _check_isna(df, col)
 
-    def normalize(sym):
-        return unicodedata.normalize("NFKC", str(sym)).strip().upper()
+    count = df[COL_SYMBOL].duplicated().sum()
+    if count > 0:
+        log.error("Dupe Symbol(s) Detected", column=COL_SYMBOL, symbols=df[df[COL_SYMBOL].duplicated()])
+        raise RuntimeError("Dupe Symbol(s) Detected")
 
-    def clean_symbol(s: str) -> str:
-        return unicodedata.normalize("NFKC", s).strip()
-
-    # listing[COL_SYMBOL] = listing[COL_SYMBOL].astype("string")
-    # with_details[COL_SYMBOL] = with_details[COL_SYMBOL].astype("string")
-    # listing[COL_SYMBOL] = listing[COL_SYMBOL].str.strip()
-    # with_details[COL_SYMBOL] = with_details[COL_SYMBOL].str.strip()
-    # listing_syms = set(listing[COL_SYMBOL].astype(str).map(normalize))
-    # details_syms = set(with_details[COL_SYMBOL].astype(str).map(normalize))
-    # missing = listing_syms - details_syms
-    # print(f"Missing after normalization: {len(missing)}")
-    # print("set norm: ", len(listing_syms))
-    # print("set norm: ",len(details_syms))
-
-    print("norm", len(listing[COL_SYMBOL]))
-    print("norm", len(with_details[COL_SYMBOL]))
-    print("unique", len(listing[COL_SYMBOL].unique()))
-    print("unique", len(with_details[COL_SYMBOL].unique()))
-    print(len(set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL])))
-    print(with_details[with_details[COL_SYMBOL] == "RELX"])
-    print(listing[COL_SYMBOL].dtype)
-    print(with_details[COL_SYMBOL].dtype)
-    bad_syms = [s for s in set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL]) if "RELX" in s]
-    print(bad_syms)
-    bad_syms = sorted([s for s in set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL])])
-    # for s in bad_syms:
-    #     print(repr(s))
-
-    dupes = listing[listing.duplicated(subset=[COL_SYMBOL], keep=False)]
-    print(f"Duplicate symbols: {dupes[COL_SYMBOL].nunique()} unique, {len(dupes)} total rows")
-    print(dupes.sort_values(COL_SYMBOL).head(10))
-
-    dupes = with_details[with_details.duplicated(subset=[COL_SYMBOL], keep=False)]
-    print(f"Duplicate symbols: {dupes[COL_SYMBOL].nunique()} unique, {len(dupes)} total rows")
-    # print(dupes.sort_values(COL_SYMBOL).head(10))
-
-    matches = with_details[with_details[COL_SYMBOL].str.contains("RELX", regex=True)]
-    print(matches[COL_SYMBOL].apply(lambda x: (x, list(map(ord, x)))))
-
-    for sym in with_details[COL_SYMBOL].unique():
-        if "RELX" in sym and sym != "RELX":
-            print(f"Found weird RELX variant: {repr(sym)} → {[ord(c) for c in sym]}")
+    missing = set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL])
+    log.info("Not in details", symbols=sorted(missing), count=len(missing), action="removed")
 
     log.info("Phase ends", merge="listing with details", count=len(df))
     return df
@@ -101,18 +78,11 @@ def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataF
     order = [p for p in precedence if p in frames]
     log.info("Merging in provider", provider=order[0])
     df_accum = frames[order[0]]
-    cols = df_accum.columns
     for provider in order[1:]:
         df_curr = frames[provider]
         log.info("Merging in provider", provider=provider)
         datacompy.Compare(df1=df_accum, df2=df_curr, join_columns=COL_SYMBOL)
-
-        df_accum = pd.merge(left=df_accum, right=df_curr, on=COL_SYMBOL, how="left", suffixes=("", rcol_name))
-        for col in cols:
-            if col == COL_SYMBOL: continue
-            rcol = f"{col}{rcol_name}"
-            df_accum.loc[:, col] = df_accum[col].combine_first(df_accum[rcol])  # Mismatch tends to happen with `type`.
-            df_accum.drop(labels=[rcol], axis=1, inplace=True)
+        df_accum = _merge_combine_first(left=df_accum, right=df_curr, how="left")
 
     col_nans = df_accum.columns[df_accum.isna().any()].tolist()
     log_call = log.warning if len(col_nans) > 0 else log.debug
@@ -289,6 +259,53 @@ def _filter_by_date_mask(df: pd.DataFrame, asset_types: set[str], cutoff: pd.Tim
                  listdate=row[COL_LIST_DATE], cutoff=cutoff)
 
     return filtered_mask
+
+
+def _check_isna(df: pd.DataFrame, col: str):
+    """
+    Checks for missing values (NaN) in the specified column of a DataFrame.
+
+    This function inspects the provided DataFrame for missing values in the specified
+    column. If the column exists and contains missing values, it logs an explanation.
+
+    Args:
+        df: The DataFrame to inspect for missing values.
+        col: The name of the column to check for missing values.
+    """
+    if col not in df.columns: return
+    count = df[col].isna().sum()
+    if count > 0:
+        log = timber.plant()
+        symbols = df.loc[df[COL_LIST_DATE].isna(), COL_SYMBOL].tolist()
+        log.warning("Nan Detected", column=col, symbols=symbols)
+
+
+def _merge_combine_first(left: pd.DataFrame, right: pd.DataFrame,
+                         how: Literal["left", "right", "inner", "outer", "cross"] = "inner") -> pd.DataFrame:
+    """
+    Merges two DataFrames on `COL_SYMBOL`. Overlapping columns combines their data by prioritizing non-null values from
+    the first DataFrame over the second DataFrame.
+
+    Args:
+        left The primary DataFrame for the merge operation. Its non-null values take precedence during the
+            combination process.
+        right: The secondary DataFrame for the merge operation. Its values are used when corresponding values are null
+            in the first DataFrame.
+        how: Specifies the type of join operation to be performed. Defaults to "inner".
+
+    Returns:
+        A DataFrame that results from merging and combining the two input DataFrames, with preference given to values from the first DataFrame. Any
+            overlapping columns from the second DataFrame are merged or removed.
+    """
+    rcol_name = "_right"
+    df = pd.merge(left=left, right=right, on=COL_SYMBOL, how=how, suffixes=("", rcol_name))
+    for col in df.columns:
+        if col == COL_SYMBOL: continue
+        rcol = f"{col}{rcol_name}"
+        if rcol in df.columns:
+            df.loc[:, col] = df[col].combine_first(df[rcol])
+            df.drop(labels=[rcol], axis=1, inplace=True)
+    return df
 
 
 def _merge_symbols(df: pd.DataFrame) -> pd.DataFrame:

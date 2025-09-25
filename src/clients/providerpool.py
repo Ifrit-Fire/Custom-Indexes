@@ -71,7 +71,7 @@ class ProviderPool:
 
         return frames
 
-    def fetch_stock_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource]:
+    def fetch_stock_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource | None]:
         """
         Fetch detailed data for a stock symbol using available providers with round-robin selection. If all providers
         are exhausted with no results, an empty DataFrame is returned.
@@ -101,9 +101,9 @@ class ProviderPool:
                 log.debug("APILimitReachedError", response="switch providers")
                 provider.mark_unavailable()
                 continue
-
+        #TODO: Add special case provider for checking? When partial data is available
         log.error("Providers Exhausted", reason="data retrieval unsuccessful", response="skipping", symbol=symbol)
-        return reconciler.data, reconciler.source
+        return pd.DataFrame(), None
 
     def _next(self) -> Provider:
         """
