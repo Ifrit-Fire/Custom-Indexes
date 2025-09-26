@@ -3,7 +3,22 @@ from typing import Sequence
 import pandas as pd
 
 from src.consts import COL_SYMBOL, COL_NAME, COL_MIC, COL_CIK, COL_FIGI, COL_MC, COL_LIST_DATE, COL_OUT_SHARES, \
-    COL_STATE, COL_POSTAL_CODE, COL_COUNTRY, COL_TYPE, COL_PRICE, COL_VOLUME
+    COL_STATE, COL_POSTAL_CODE, COL_COUNTRY, COL_TYPE, COL_PRICE, COL_VOLUME, COL_TIMESTAMP
+
+
+def view_ohlcv(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Projects a DataFrame into the canonical OHLCV list view. Ensures all expected columns exist, fills missing
+    ones with NA, and reorders columns into the standard schema.
+
+    Args:
+        df: Input DataFrame with OHLCV data
+
+    Returns:
+        Dataframe with standardized OHLCV columns.
+    """
+    columns = [COL_TIMESTAMP, COL_SYMBOL, COL_VOLUME, COL_PRICE]
+    return _view(df, columns)
 
 
 def view_stock_listing(df: pd.DataFrame) -> pd.DataFrame:
