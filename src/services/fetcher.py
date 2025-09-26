@@ -92,6 +92,26 @@ def get_stock_details(symbols: pd.Series) -> pd.DataFrame:
         df_proj = projection.view_stock_details(df)
         details.append(df_proj)
 
-    log.info("Phase ends", fetch="Symbol details")
     df = pd.concat(details, ignore_index=True)
+    log.info("Phase ends", fetch="Symbol details", count=len(df))
     return df
+
+
+def _get_last_trading(days: int) -> list[pd.Timestamp]:
+    """
+    Gets the last trading days for the specified number of days. The return list of dates is ordered from the most
+    recent backward.
+
+    Args:
+        days: The number of recent trading days to retrieve.
+
+    Returns:
+        A list of trading days as Pandas Timestamps, ordered from the most recent backward.
+    """
+    today = pd.Timestamp.today().normalize()
+    calendar = xcals.get_calendar("XNYS")
+    lookback = today - pd.Timedelta(days=days * 3)
+    sessions = calendar.sessions_in_range(lookback, today)
+    sessions = sessions[-days:].to_list()
+    sessions.reverse()
+    return sessions
