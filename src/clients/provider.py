@@ -17,15 +17,19 @@ class Provider(ABC):
         pass
 
     @abstractmethod
+    def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
+        pass
+
+    @abstractmethod
+    def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
+        pass
+
+    @abstractmethod
     def fetch_stock_listing(self) -> pd.DataFrame:
         pass
 
     @abstractmethod
     def fetch_crypto_market(self) -> pd.DataFrame:
-        pass
-
-    @abstractmethod
-    def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
         pass
 
     def is_available(self) -> bool:

@@ -92,7 +92,7 @@ class ProviderPool:
                 provider.mark_unavailable()
                 continue
             try:
-                df = provider.fetch_symbol_data(symbol)
+                df = provider.fetch_stock_details(symbol)
                 tried.add(provider.name)
                 reconciler.add(data=df, source=provider.name)
                 if reconciler.is_ready:

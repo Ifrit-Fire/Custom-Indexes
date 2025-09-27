@@ -41,12 +41,15 @@ class CMCProvider(Provider):
 
         return df
 
-    @staticmethod
-    def tag_to_type(tags: Sequence[str]):
-        return CryptoTypes.STABLECOIN.value if "stablecoin" in tags else CryptoTypes.CRYPTO.value
+    def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
+        return pd.DataFrame()
 
-    def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
+    def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
         return pd.DataFrame()
 
     def fetch_stock_listing(self) -> pd.DataFrame:
         return pd.DataFrame()
+
+    @staticmethod
+    def tag_to_type(tags: Sequence[str]):
+        return CryptoTypes.STABLECOIN.value if "stablecoin" in tags else CryptoTypes.CRYPTO.value

@@ -82,34 +82,13 @@ class PolygonProvider(Provider):
     def name(self) -> ProviderSource:
         return ProviderSource.POLYGON
 
-    def fetch_stock_listing(self) -> pd.DataFrame:
-        """
-        Retrieves and normalizes all active stock listings. Focuses strictly on common stock, preferred stock, ADRs,
-        REITs from the `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.
+    def fetch_crypto_market(self) -> pd.DataFrame:
+        return pd.DataFrame()
 
-        Returns:
-            A DataFrame containing active stock listings with standardized symbol, type, and MIC.
-        """
-        log = timber.plant()
-        log.info("Phase starts", fetch="stock list", endpoint="polygon")
+    def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
+        return pd.DataFrame()
 
-        types = {"CS", "ADRC"}
-        tickers = []
-        for mic in MIC_CODES:
-            for ty in types:
-                params = {"market": "stocks", "active": "true", "exchange": mic, "type": ty, "limit": 1000}
-                tickers += _iter_all_stock(params)
-
-        df = pd.json_normalize(tickers)
-        df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
-        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
-        df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
-        df = processing.set_column_types(df)
-
-        log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source="API")
-        return df
-
-    def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
+    def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
         """
         Retrieves and normalizes detailed ticker information for a given symbol.
 
@@ -145,5 +124,29 @@ class PolygonProvider(Provider):
         df = processing.set_column_types(df)
         return df
 
-    def fetch_crypto_market(self) -> pd.DataFrame:
-        return pd.DataFrame()
+    def fetch_stock_listing(self) -> pd.DataFrame:
+        """
+        Retrieves and normalizes all active stock listings. Focuses strictly on common stock, preferred stock, ADRs,
+        REITs from the `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.
+
+        Returns:
+            A DataFrame containing active stock listings with standardized symbol, type, and MIC.
+        """
+        log = timber.plant()
+        log.info("Phase starts", fetch="stock list", endpoint="polygon")
+
+        types = {"CS", "ADRC"}
+        tickers = []
+        for mic in MIC_CODES:
+            for ty in types:
+                params = {"market": "stocks", "active": "true", "exchange": mic, "type": ty, "limit": 1000}
+                tickers += _iter_all_stock(params)
+
+        df = pd.json_normalize(tickers)
+        df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
+        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
+        df[COL_TYPE] = df[COL_TYPE].replace(_TYPE_TO_STANDARD)
+        df = processing.set_column_types(df)
+
+        log.info("Phase ends", fetch="stock list", endpoint="polygon", count=len(df), source="API")
+        return df

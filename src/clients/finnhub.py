@@ -20,37 +20,13 @@ class FinnhubProvider(Provider):
     def name(self) -> ProviderSource:
         return ProviderSource.FINNHUB
 
-    def fetch_stock_listing(self) -> pd.DataFrame:
-        """
-        Retrieves and normalizes all active stock listings. Focuses strictly on common stocks and ADRs from the
-        `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.
-
-        Returns:
-            A DataFrame containing active stock listings with standardized symbol, type, and figi.
-        """
-        log = timber.plant()
-        log.info("Phase starts", fetch="stock list", endpoint="finnhub")
-
-        base_param = {"exchange": "US"}
-        frames = []
-        for mic in MIC_CODES:
-            param = base_param | {"mic": mic}
-            result = _CLIENT.stock_symbol(**param)
-            frames.append(pd.DataFrame(result))
-
-        df = pd.concat(frames, ignore_index=True)
-        df.rename(columns={"figi": COL_FIGI}, inplace=True)
-        df = df[df[COL_TYPE].isin(STOCK_TYPES)]
-        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
-        df = processing.set_column_types(df)
-
-        log.info("Phase ends", fetch="stock list", endpoint="finnhub", count=len(df), source="API")
-        return df
-
     def fetch_crypto_market(self) -> pd.DataFrame:
         return pd.DataFrame()
 
-    def fetch_symbol_data(self, symbol: str) -> pd.DataFrame:
+    def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
+        return pd.DataFrame()
+
+    def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
         """
         Retrieves and normalizes detailed ticker information for a given symbol.
 
@@ -92,4 +68,31 @@ class FinnhubProvider(Provider):
         df = processing.set_column_types(df)
         df[COL_MC] *= 1_000_000
         df[COL_OUT_SHARES] *= 1_000_000
+        return df
+
+    def fetch_stock_listing(self) -> pd.DataFrame:
+        """
+        Retrieves and normalizes all active stock listings. Focuses strictly on common stocks and ADRs from the
+        `XNYS`, `XNAS`, `XASE`, and `BATS` exchanges.
+
+        Returns:
+            A DataFrame containing active stock listings with standardized symbol, type, and figi.
+        """
+        log = timber.plant()
+        log.info("Phase starts", fetch="stock list", endpoint="finnhub")
+
+        base_param = {"exchange": "US"}
+        frames = []
+        for mic in MIC_CODES:
+            param = base_param | {"mic": mic}
+            result = _CLIENT.stock_symbol(**param)
+            frames.append(pd.DataFrame(result))
+
+        df = pd.concat(frames, ignore_index=True)
+        df.rename(columns={"figi": COL_FIGI}, inplace=True)
+        df = df[df[COL_TYPE].isin(STOCK_TYPES)]
+        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
+        df = processing.set_column_types(df)
+
+        log.info("Phase ends", fetch="stock list", endpoint="finnhub", count=len(df), source="API")
         return df
