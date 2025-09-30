@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import time
 from datetime import datetime, timezone
-from typing import Sequence, Iterator, Tuple
+from typing import Sequence, Iterator, Tuple, Callable
 
 import pandas as pd
 
@@ -31,27 +31,19 @@ class ProviderPool:
         self._providers = list(providers)
         self._index = 0
 
-    def fetch_stock_listings(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
+    def fetch_ohlcv(self, date: pd.Timestamp) -> Tuple[pd.DataFrame, ProviderSource | None]:
         """
-        Fetches stock lists from all available providers in the pool, excluding any specified.
+        Fetches OHLCV (Open, High, Low, Close, Volume) data for the specified date from available providers.  If all
+        providers are exhausted with no results, an empty DataFrame is returned.
+
 
         Args:
-            except_from: Optional. A list of providers to skip during fetch. Providers not in the pool are
-                         ignored silently.
+            date: The specific date for which OHLCV data needs to be fetched.
 
         Returns:
-            A dictionary mapping each provider to its fetched stock list DataFrame.
-            Providers returning empty data are excluded from the result.
-            Returns an empty dictionary if nothing is found.
+            A tuple containing the fetched OHLCV data as a DataFrame and the source provider, or None if no data is available.
         """
-        frames = {}
-        providers = [val for val in self._providers if val.name not in except_from]
-        for provider in providers:
-            df = provider.fetch_stock_listing()
-            if df.empty: continue
-            frames |= {provider.name: df}
-
-        return frames
+        return self._fetch(func=lambda provider: provider.fetch_ohlcv(date))
 
     def fetch_crypto_market(self) -> dict[ProviderSource, pd.DataFrame]:
         """
@@ -82,6 +74,49 @@ class ProviderPool:
         Returns:
             A normalized DataFrame with stock details (empty if no results), and the provider that supplied the result.
         """
+        return self._fetch(lambda provider: provider.fetch_stock_details(symbol))
+
+    def fetch_stock_listings(self, except_from: list[ProviderSource] = None) -> dict[ProviderSource, pd.DataFrame]:
+        """
+        Fetches stock lists from all available providers in the pool, excluding any specified.
+
+        Args:
+            except_from: Optional. A list of providers to skip during fetch. Providers not in the pool are
+                         ignored silently.
+
+        Returns:
+            A dictionary mapping each provider to its fetched stock list DataFrame.
+            Providers returning empty data are excluded from the result.
+            Returns an empty dictionary if nothing is found.
+        """
+        frames = {}
+        providers = [val for val in self._providers if val.name not in except_from]
+        for provider in providers:
+            df = provider.fetch_stock_listing()
+            if df.empty: continue
+            frames |= {provider.name: df}
+
+        return frames
+
+    def _fetch(self, func: Callable[[Provider], pd.DataFrame]) -> Tuple[pd.DataFrame, ProviderSource | None]:
+        """
+        Fetches data using the provided function by iterating through available providers.
+
+        Attempts to retrieve data from a list of providers in sequence. Maintains a reconciler to combine and validate data
+        from multiple sources. If an error occurs or a provider is unavailable, it switches to the next provider in the list.
+        Returns the reconciled data and its source once the data is ready or returns an empty DataFrame with None if all
+        providers are exhausted.
+
+        Recommended and example invocation:
+            `self._fetch(lambda provider: provider.fetch_*(my_arg))`
+
+        Args:
+            func: A callable that takes a Provider instance and returns a DataFrame.
+
+        Returns:
+            Tuple containing the reconciled DataFrame and the name of the provider source, or an empty DataFrame and None
+            if all providers are exhausted.
+        """
         log = timber.plant()
         reconciler = Reconciler()
         tried: set[ProviderSource] = set()
@@ -92,7 +127,7 @@ class ProviderPool:
                 provider.mark_unavailable()
                 continue
             try:
-                df = provider.fetch_stock_details(symbol)
+                df = func(provider)
                 tried.add(provider.name)
                 reconciler.add(data=df, source=provider.name)
                 if reconciler.is_ready:
@@ -101,9 +136,20 @@ class ProviderPool:
                 log.debug("APILimitReachedError", response="switch providers")
                 provider.mark_unavailable()
                 continue
-        #TODO: Add special case provider for checking? When partial data is available
-        log.error("Providers Exhausted", reason="data retrieval unsuccessful", response="skipping", symbol=symbol)
+        # TODO: Add special case provider for checking? When partial data is available
+        log.error("Providers Exhausted", reason="data retrieval unsuccessful", response="skipping")
         return pd.DataFrame(), None
+
+    def _iter_cooldowns(self) -> Iterator[datetime]:
+        """
+        Yield all non-None provider cooldown expiry times.
+
+        Yields:
+            The `cooldown_until` values for providers currently marked unavailable.
+        """
+        for p in self._providers:
+            if p.cooldown_until is not None:
+                yield p.cooldown_until
 
     def _next(self) -> Provider:
         """
@@ -132,14 +178,3 @@ class ProviderPool:
         sleep_for = max(0.0, (soonest - now).total_seconds() + 1)
         log.warning("Providers waiting", reason="limits reached, cooling off", duration=sleep_for, units="seconds")
         time.sleep(sleep_for)
-
-    def _iter_cooldowns(self) -> Iterator[datetime]:
-        """
-        Yield all non-None provider cooldown expiry times.
-
-        Yields:
-            The `cooldown_until` values for providers currently marked unavailable.
-        """
-        for p in self._providers:
-            if p.cooldown_until is not None:
-                yield p.cooldown_until
