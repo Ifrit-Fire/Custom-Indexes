@@ -4,6 +4,7 @@ from typing import Literal
 import datacompy
 import pandas as pd
 
+from consts import COL_C_PRICE, COL_TIMESTAMP
 from src import transform
 from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
 from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, COL_LIST_DATE, COL_COUNTRY, COL_NAME, COL_OUT_SHARES, \
@@ -119,19 +120,21 @@ def set_column_types(df: pd.DataFrame) -> pd.DataFrame:
     log = timber.plant()
     schema = {"active": pd.StringDtype(), "address.address1": pd.StringDtype(), "address.address2": pd.StringDtype(),
               "address.city": pd.StringDtype(), "branding.icon_url": pd.StringDtype(),
-              "branding.logo_url": pd.StringDtype(), COL_CIK: pd.StringDtype(), COL_FIGI: pd.StringDtype(),
-              COL_COUNTRY: pd.StringDtype(), "currency": pd.StringDtype(), "currency_name": pd.StringDtype(),
-              "description": pd.StringDtype(), "displaySymbol": pd.StringDtype(), "estimateCurrency": pd.StringDtype(),
-              "exchange": pd.StringDtype(), "finnhubIndustry": pd.StringDtype(), "homepage_url": pd.StringDtype(),
-              "last_updated_utc": pd.StringDtype(), "isin": pd.StringDtype(), "locale": pd.StringDtype(),
-              "logo": pd.StringDtype(), "market": pd.StringDtype(), COL_MC: pd.Float64Dtype(),
-              COL_MIC: pd.StringDtype(), COL_NAME: pd.StringDtype(), COL_OUT_SHARES: pd.Float64Dtype(),
-              "phone": pd.StringDtype(), "phone_number": pd.StringDtype(), COL_POSTAL_CODE: pd.StringDtype(),
-              "round_lot": pd.UInt16Dtype(), "share_class_figi": pd.StringDtype(), "shareClassFIGI": pd.StringDtype(),
-              "sic_code": pd.StringDtype(), "sic_description": pd.StringDtype(), COL_STATE: pd.StringDtype(),
-              COL_SYMBOL: pd.StringDtype(), "symbol2": pd.StringDtype(), "total_employees": pd.UInt64Dtype(),
-              "ticker_root": pd.StringDtype(), "ticker_suffix": pd.StringDtype(), COL_TYPE: pd.StringDtype(),
-              "weburl": pd.StringDtype(), "weighted_shares_outstanding": pd.Float64Dtype()}
+              "branding.logo_url": pd.StringDtype(), COL_CIK: pd.StringDtype(), COL_C_PRICE: pd.Float64Dtype(),
+              COL_FIGI: pd.StringDtype(), COL_COUNTRY: pd.StringDtype(), "currency": pd.StringDtype(),
+              "currency_name": pd.StringDtype(), "description": pd.StringDtype(), "displaySymbol": pd.StringDtype(),
+              "estimateCurrency": pd.StringDtype(), "exchange": pd.StringDtype(), "finnhubIndustry": pd.StringDtype(),
+              "high": pd.Float64Dtype(), "homepage_url": pd.StringDtype(), "last_updated_utc": pd.StringDtype(),
+              "isin": pd.StringDtype(), "locale": pd.StringDtype(), "logo": pd.StringDtype(), "low": pd.Float64Dtype(),
+              "market": pd.StringDtype(), COL_MC: pd.Float64Dtype(), COL_MIC: pd.StringDtype(),
+              COL_NAME: pd.StringDtype(), COL_OUT_SHARES: pd.Float64Dtype(), "phone": pd.StringDtype(),
+              "phone_number": pd.StringDtype(), COL_POSTAL_CODE: pd.StringDtype(), "open": pd.Float64Dtype(),
+              "otc": pd.BooleanDtype(), "round_lot": pd.UInt16Dtype(), "share_class_figi": pd.StringDtype(),
+              "shareClassFIGI": pd.StringDtype(), "sic_code": pd.StringDtype(), "sic_description": pd.StringDtype(),
+              COL_STATE: pd.StringDtype(), COL_SYMBOL: pd.StringDtype(), "symbol2": pd.StringDtype(),
+              "ticker_root": pd.StringDtype(), "ticker_suffix": pd.StringDtype(), "total_employees": pd.UInt64Dtype(),
+              "transactions": pd.Float64Dtype(), COL_TYPE: pd.StringDtype(), COL_VOLUME: pd.Float64Dtype(),
+              "vwap": pd.Float64Dtype(), "weburl": pd.StringDtype(), "weighted_shares_outstanding": pd.Float64Dtype()}
 
     # Apply dtype conversions for existing columns
     found_types = {col: dtype for col, dtype in schema.items() if col in df.columns}
@@ -139,6 +142,8 @@ def set_column_types(df: pd.DataFrame) -> pd.DataFrame:
 
     if COL_LIST_DATE in df.columns:
         df[COL_LIST_DATE] = pd.to_datetime(df[COL_LIST_DATE], errors="coerce")
+    if COL_TIMESTAMP in df.columns:
+        df[COL_TIMESTAMP] = pd.to_datetime(df[COL_TIMESTAMP], unit="ms", utc=True)
 
     bad_cols = df.columns[df.dtypes == "object"]
     if not bad_cols.empty:
