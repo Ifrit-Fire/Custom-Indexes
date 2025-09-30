@@ -4,7 +4,8 @@ import pandas as pd
 import requests
 
 from src.clients.provider import Provider
-from src.consts import COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE, COL_OUT_SHARES
+from src.consts import COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_C_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE, \
+    COL_OUT_SHARES
 from src.data import processing
 from src.data.security_types import CryptoTypes
 from src.data.source import ProviderSource
@@ -33,7 +34,7 @@ class CMCProvider(Provider):
         response.raise_for_status()
 
         df = pd.json_normalize(response.json()["data"])
-        col_rename = {"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME,
+        col_rename = {"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_C_PRICE, "quote.USD.volume_24h": COL_VOLUME,
                       "date_added": COL_LIST_DATE, "circulating_supply": COL_OUT_SHARES}
         df.rename(columns=col_rename, inplace=True)
         df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
