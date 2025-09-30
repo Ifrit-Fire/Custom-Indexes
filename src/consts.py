@@ -13,6 +13,7 @@ API_POLY_TOKEN = os.getenv("POLY_API_TOKEN")
 API_POLY_CACHE_ONLY = API_POLY_TOKEN is None
 
 COL_CIK = "cik"
+COL_C_PRICE = "closing_price"
 COL_COUNTRY = "country"
 COL_FIGI = "composite_figi"
 COL_LIST_DATE = "list_date"
@@ -21,7 +22,6 @@ COL_MIC = "mic"
 COL_NAME = "name"
 COL_OUT_SHARES = "oustanding_shares"
 COL_POSTAL_CODE = "postal_code"
-COL_PRICE = "price"
 COL_STATE = "state"
 COL_SYMBOL = "symbol"
 COL_TIMESTAMP = "timestamp"

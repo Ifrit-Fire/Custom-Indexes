@@ -3,7 +3,7 @@ from typing import Sequence
 import pandas as pd
 
 from src.consts import COL_SYMBOL, COL_NAME, COL_MIC, COL_CIK, COL_FIGI, COL_MC, COL_LIST_DATE, COL_OUT_SHARES, \
-    COL_STATE, COL_POSTAL_CODE, COL_COUNTRY, COL_TYPE, COL_PRICE, COL_VOLUME, COL_TIMESTAMP
+    COL_STATE, COL_POSTAL_CODE, COL_COUNTRY, COL_TYPE, COL_C_PRICE, COL_VOLUME, COL_TIMESTAMP
 
 
 def view_crypto_market(df: pd.DataFrame) -> pd.DataFrame:
@@ -17,7 +17,7 @@ def view_crypto_market(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         DataFrame with standardized crypto market columns.
     """
-    columns = [COL_SYMBOL, COL_NAME, COL_MC, COL_PRICE, COL_TYPE, COL_VOLUME, COL_LIST_DATE, COL_OUT_SHARES]
+    columns = [COL_SYMBOL, COL_NAME, COL_MC, COL_C_PRICE, COL_TYPE, COL_VOLUME, COL_LIST_DATE, COL_OUT_SHARES]
     return _view(df, columns)
 
 
@@ -32,7 +32,7 @@ def view_ohlcv(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         Dataframe with standardized OHLCV columns.
     """
-    columns = [COL_TIMESTAMP, COL_SYMBOL, COL_VOLUME, COL_PRICE]
+    columns = [COL_TIMESTAMP, COL_SYMBOL, COL_VOLUME, COL_C_PRICE]
     return _view(df, columns)
 
 
