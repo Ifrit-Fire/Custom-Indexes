@@ -1,5 +1,4 @@
 import json
-import re
 import time
 from typing import Iterator
 
@@ -8,6 +7,7 @@ import requests
 from polygon import RESTClient, BadResponse
 from urllib3.exceptions import MaxRetryError
 
+from consts import COL_C_PRICE
 from src.clients.providerpool import Provider
 from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_TYPE, MIC_CODES, COL_STATE, \
     COL_POSTAL_CODE
@@ -21,30 +21,10 @@ _BASE_ALL_TICKERS = "https://api.polygon.io/v3/reference/tickers"
 _TYPE_TO_STANDARD = {"CS": StockTypes.COMMON_STOCK.value, "ADRC": StockTypes.ADR.value}
 
 
-def _fix_dot_p(symbol: str) -> str:
-    """
-    Convert patterns like 'MS.PQ' to 'MSpQ'.
-
-    Rules:
-        - Remove the dot before 'P'
-        - Lowercase the 'P'
-
-    Args:
-        symbol: Ticker symbol string to normalize.
-
-    Returns:
-        Normalized ticker symbol.
-    """
-    log = timber.plant()
-    norm = re.sub(r'\.P', 'p', symbol)
-    if norm != symbol: log.debug("Polygon normalization", symbol=symbol, normalized=norm)
-    return norm
-
-
-def _iter_all_stock(params: dict[str, str]) -> Iterator[dict[str, object]]:
+def _iter_stock_listing(params: dict[str, str]) -> Iterator[dict[str, object]]:
     """
     Generator that streams all stock ticker data from Polygon's `list_tickers` API. If a 429 rate-limit error is
-    encountered, waits 60 seconds before retrying.
+    encountered, wait 60 seconds before retrying.
 
     Args:
         params: Query parameters for the initial API request
@@ -86,7 +66,39 @@ class PolygonProvider(Provider):
         return pd.DataFrame()
 
     def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
-        return pd.DataFrame()
+        """
+        Fetches OHLCV data for the entire market on a specific date from the data provider. Adjusted for splits.
+        OTC data is excluded.
+
+        Args:
+            date: The date for which to fetch OHLCV data.
+
+        Returns:
+            A DataFrame containing the processed OHLCV data.
+
+        Raises:
+            APILimitReachedError: If the API rate limit is reached.
+        """
+        log = timber.plant()
+        client = RESTClient(api_key=API_POLY_TOKEN)
+        date = pd.Timestamp(date).strftime("%Y-%m-%d")
+
+        try:
+            result = client.get_grouped_daily_aggs(date=date, adjusted=True, include_otc=False)
+        except MaxRetryError:
+            log.warning("MaxRetryError", reason="exceeded API limit", provider=self.name)
+            raise APILimitReachedError()
+        except BadResponse as e:
+            log.error("BadResponse", reason=json.loads(e.args[0])["status"], date=date, provider=self.name)
+            return pd.DataFrame()
+
+        df = pd.DataFrame(result)
+        df.rename(columns={"ticker": COL_SYMBOL, "close": COL_C_PRICE}, inplace=True)
+        df[COL_SYMBOL] = df[COL_SYMBOL].str.replace(pat="p", repl=".P")  # Convert to standard notation
+        df["otc"] = df["otc"].fillna(False)
+        df = processing.set_column_types(df)
+
+        return df
 
     def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
         """
@@ -103,15 +115,15 @@ class PolygonProvider(Provider):
             NoResultsFoundError: When the symbol returns no results from provider.
         """
         log = timber.plant()
-        norm_sym = _fix_dot_p(symbol)
+        poly_sym = symbol.replace(".P", "p")  # Convert to polygon notation
         client = RESTClient(api_key=API_POLY_TOKEN)
         try:
-            result = client.get_ticker_details(ticker=norm_sym, raw=True)
+            result = client.get_ticker_details(ticker=poly_sym, raw=True)
         except MaxRetryError:
             log.warning("MaxRetryError", reason="exceeded API limit", provider=self.name)
             raise APILimitReachedError()
         except BadResponse:
-            log.error("BadResponse", reason="unknown ticker", symbol=symbol, normalized=norm_sym, provider=self.name)
+            log.error("BadResponse", reason="unknown ticker", symbol=symbol, polygon=poly_sym, provider=self.name)
             return pd.DataFrame()
 
         result = result.data.decode("utf-8")
@@ -140,7 +152,7 @@ class PolygonProvider(Provider):
         for mic in MIC_CODES:
             for ty in types:
                 params = {"market": "stocks", "active": "true", "exchange": mic, "type": ty, "limit": 1000}
-                tickers += _iter_all_stock(params)
+                tickers += _iter_stock_listing(params)
 
         df = pd.json_normalize(tickers)
         df.rename(columns={"ticker": COL_SYMBOL, "primary_exchange": COL_MIC}, inplace=True)
