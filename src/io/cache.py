@@ -87,7 +87,7 @@ def save(data: pd.DataFrame, name: str, identifier: str, by_sharding: bool = Fal
 
 def load_crypto_lists() -> pd.DataFrame:
     """
-    Loads cached crypto list snapshot for a hardcoded provider.
+    Loads a cached crypto list snapshot for a hardcoded provider.
 
     Returns:
         The cached DataFrame if available and valid, otherwise an empty DataFrame.

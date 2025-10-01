@@ -31,20 +31,6 @@ class ProviderPool:
         self._providers = list(providers)
         self._index = 0
 
-    def fetch_ohlcv(self, date: pd.Timestamp) -> Tuple[pd.DataFrame, ProviderSource | None]:
-        """
-        Fetches OHLCV (Open, High, Low, Close, Volume) data for the specified date from available providers.  If all
-        providers are exhausted with no results, an empty DataFrame is returned.
-
-
-        Args:
-            date: The specific date for which OHLCV data needs to be fetched.
-
-        Returns:
-            A tuple containing the fetched OHLCV data as a DataFrame and the source provider, or None if no data is available.
-        """
-        return self._fetch(func=lambda provider: provider.fetch_ohlcv(date))
-
     def fetch_crypto_market(self) -> dict[ProviderSource, pd.DataFrame]:
         """
         Fetches crypto market data from all available providers in the pool.
@@ -62,6 +48,20 @@ class ProviderPool:
             frames |= {provider.name: df}
 
         return frames
+
+    def fetch_ohlcv(self, date: pd.Timestamp) -> Tuple[pd.DataFrame, ProviderSource | None]:
+        """
+        Fetches OHLCV (Open, High, Low, Close, Volume) data for the specified date from available providers.  If all
+        providers are exhausted with no results, an empty DataFrame is returned.
+
+
+        Args:
+            date: The specific date for which OHLCV data needs to be fetched.
+
+        Returns:
+            A tuple containing the fetched OHLCV data as a DataFrame and the source provider, or None if no data is available.
+        """
+        return self._fetch(func=lambda provider: provider.fetch_ohlcv(date))
 
     def fetch_stock_data(self, symbol: str) -> Tuple[pd.DataFrame, ProviderSource | None]:
         """
