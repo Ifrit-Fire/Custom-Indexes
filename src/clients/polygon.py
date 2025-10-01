@@ -95,7 +95,7 @@ class PolygonProvider(Provider):
         df = pd.DataFrame(result)
         df.rename(columns={"ticker": COL_SYMBOL, "close": COL_C_PRICE}, inplace=True)
         df[COL_SYMBOL] = df[COL_SYMBOL].str.replace(pat="p", repl=".P")  # Convert to standard notation
-        df["otc"] = df["otc"].fillna(False)
+        df["otc"] = df["otc"].astype("boolean").fillna(False)
         df = processing.set_column_types(df)
 
         return df
