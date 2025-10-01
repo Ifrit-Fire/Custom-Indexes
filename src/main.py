@@ -14,6 +14,8 @@ log.info("Phase starts", perform="ETL")
 df_listing = fetcher.get_stock_listing()
 df_details = fetcher.get_stock_details(df_listing[COL_SYMBOL])
 df_list_details = processing.merge_stock(listing=df_listing, with_details=df_details)
+df_market = fetcher.get_ohlcv()
+
 df_crypto = fetcher.get_crypto_market()
 log.info("Phase ends", perform="ETL", df_stock=len(df_listing), df_crypto=len(df_crypto))
 

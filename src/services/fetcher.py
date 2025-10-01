@@ -1,12 +1,14 @@
+import exchange_calendars as xcals
 import pandas as pd
 
 from src.clients.cmc import CMCProvider
 from src.clients.finnhub import FinnhubProvider
 from src.clients.polygon import PolygonProvider
 from src.clients.providerpool import ProviderPool
+from src.consts import COL_TIMESTAMP
 from src.data import projection, processing
 from src.data.source import ProviderSource
-from src.io import cache
+from src.io import store, cache
 from src.logger import timber
 
 _POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider(), CMCProvider()])
@@ -31,6 +33,40 @@ def get_crypto_market() -> pd.DataFrame:
     df = processing.remove_stablecoin(df)
     df = projection.view_crypto_market(df)
     log.info("Phase ends", fetch="crypto", count=len(df))
+    return df
+
+
+def get_ohlcv() -> pd.DataFrame:
+    """
+    Retrieve OHLCV (Open, High, Low, Close, Volume) data for the last 30 trading days. Not including today.
+
+    Checks the local store for stored data, determines which trading days are missing, and fetches those days from the
+    provider pool.  Newly fetched data is appended to the store, ensuring the dataset remains complete.
+
+    Returns:
+        A DataFrame containing OHLCV data for the last 30 trading days.
+    """
+    log = timber.plant()
+    log.info("Phase starts", fetch="ohlcv")
+    exchange_dates = _get_last_trading(days=30)
+    df = store.load_ohlcv(exchange_dates)
+
+    if df.empty:
+        missing = exchange_dates
+    else:
+        actual = pd.DatetimeIndex(df[COL_TIMESTAMP]).unique()
+        missing = exchange_dates.difference(actual)
+
+    if len(missing) > 0:
+        frames = []
+        for date in missing:
+            df, provider = _POOL.fetch_ohlcv(date)
+            frames.append(df)
+        df = pd.concat(frames, ignore_index=True)
+        store.save_ohlcv(df=df)
+
+    df = projection.view_ohlcv(df)
+    log.info("Phase ends", fetch="ohlcv", count=len(df))
     return df
 
 
@@ -78,7 +114,7 @@ def get_stock_details(symbols: pd.Series) -> pd.DataFrame:
         DataFrame containing standardized symbol details for all requested symbols.
     """
     log = timber.plant()
-    log.info("Phase starts", fetch="Symbol details")
+    log.info("Phase starts", fetch="stock details")
 
     details = []
     for symbol in symbols:
@@ -93,11 +129,11 @@ def get_stock_details(symbols: pd.Series) -> pd.DataFrame:
         details.append(df_proj)
 
     df = pd.concat(details, ignore_index=True)
-    log.info("Phase ends", fetch="Symbol details", count=len(df))
+    log.info("Phase ends", fetch="stock details", count=len(df))
     return df
 
 
-def _get_last_trading(days: int) -> list[pd.Timestamp]:
+def _get_last_trading(days: int) -> pd.DatetimeIndex:
     """
     Gets the last trading days for the specified number of days. The return list of dates is ordered from the most
     recent backward.
@@ -108,10 +144,10 @@ def _get_last_trading(days: int) -> list[pd.Timestamp]:
     Returns:
         A list of trading days as Pandas Timestamps, ordered from the most recent backward.
     """
-    today = pd.Timestamp.today().normalize()
-    calendar = xcals.get_calendar("XNYS")
-    lookback = today - pd.Timedelta(days=days * 3)
-    sessions = calendar.sessions_in_range(lookback, today)
+    yesterday = pd.Timestamp.today().normalize() - pd.Timedelta(days=1)  # Free tier doesn't support today
+    calendar = xcals.get_calendar("XNYS")  # Most exchanges in US follow same calendar
+    lookback = yesterday - pd.Timedelta(days=days * 3)
+    sessions = calendar.sessions_in_range(lookback, yesterday)
     sessions = sessions[-days:].to_list()
     sessions.reverse()
-    return sessions
+    return pd.DatetimeIndex(sessions)
