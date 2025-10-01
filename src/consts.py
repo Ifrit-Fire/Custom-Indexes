@@ -46,13 +46,13 @@ PATH_PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PATH_CONFIG = PATH_PROJECT_ROOT / "config.yaml"
 PATH_DATA_ROOT = PATH_PROJECT_ROOT / "data"
 PATH_DATA_CACHE_ROOT = PATH_DATA_ROOT / "cache"
-PATH_DATA_SYMBOLS_ROOT = PATH_DATA_ROOT / "symbols"
+PATH_DATA_STORE_ROOT = PATH_DATA_ROOT / "store"
 PATH_INDEXES_ROOT = PATH_PROJECT_ROOT / "indexes"
 PATH_LOGS_ROOT = PATH_PROJECT_ROOT / "logs"
 
 PATH_DATA_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_DATA_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
-PATH_DATA_SYMBOLS_ROOT.mkdir(parents=True, exist_ok=True)
+PATH_DATA_STORE_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_INDEXES_ROOT.mkdir(parents=True, exist_ok=True)
 PATH_LOGS_ROOT.mkdir(parents=True, exist_ok=True)
 
