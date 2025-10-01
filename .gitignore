@@ -1,5 +1,6 @@
 ### Custom ###
-data/cache/symbols/*
+data/cache/*
+data/store/*
 logs/*
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,python,windows,visualstudiocode,pycharm+all
