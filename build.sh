@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 
 readonly PYTHON="/usr/local/bin/python3"
-readonly ENV="venv"
+readonly ENV=".venv"
 readonly ACTIVATE="${ENV}/bin/activate"
 
 if [[ -e "${ENV}" ]]; then

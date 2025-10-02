@@ -1,7 +1,6 @@
 import sys
 from typing import Literal
 
-import datacompy
 import pandas as pd
 
 from consts import COL_C_PRICE, COL_TIMESTAMP
@@ -33,7 +32,6 @@ def merge_stock(listing: pd.DataFrame, with_details: pd.DataFrame) -> pd.DataFra
     log = timber.plant()
     log.info("Phase starts", merge="listing with details", count=len(listing))
 
-    datacompy.Compare(df1=listing, df2=with_details, join_columns=COL_SYMBOL)
     df = _merge_combine_first(left=listing, right=with_details, how="right")
     df = df.sort_values(COL_SYMBOL)
     # TODO: To solve ISNA...delete cache, retry fetch. Still ISNA, try special providers. Still ISNA, remove symbol
@@ -82,7 +80,6 @@ def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataF
     for provider in order[1:]:
         df_curr = frames[provider]
         log.info("Merging in provider", provider=provider)
-        datacompy.Compare(df1=df_accum, df2=df_curr, join_columns=COL_SYMBOL)
         df_accum = _merge_combine_first(left=df_accum, right=df_curr, how="left")
 
     col_nans = df_accum.columns[df_accum.isna().any()].tolist()
