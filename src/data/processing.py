@@ -3,11 +3,10 @@ from typing import Literal
 
 import pandas as pd
 
-from consts import COL_C_PRICE, COL_TIMESTAMP
+from consts import COL_C_PRICE, COL_TIMESTAMP, COL_SYMBOL, CRITICAL_COLUMNS, COL_TYPE, COL_FIGI, COL_CIK, COL_COUNTRY, \
+    COL_MC, COL_NAME, COL_POSTAL_CODE, COL_OUT_SHARES, COL_MIC, COL_VOLUME, COL_STATE, COL_LIST_DATE
 from src import transform
-from src.config_handler import KEY_INDEX_TOP, KEY_INDEX_SORTBY, config
-from src.consts import COL_SYMBOL, COL_MC, COL_VOLUME, COL_TYPE, COL_LIST_DATE, COL_COUNTRY, COL_NAME, COL_OUT_SHARES, \
-    COL_MIC, COL_CIK, COL_FIGI, COL_STATE, COL_POSTAL_CODE, CRITICAL_COLUMNS
+from src.config_handler import KEY_INDEX_SORTBY, KEY_INDEX_TOP, config
 from src.data.security_types import CryptoTypes
 from src.data.source import ProviderSource
 from src.logger import timber
@@ -72,7 +71,6 @@ def merge_stock_listings(frames: dict[ProviderSource, pd.DataFrame]) -> pd.DataF
     log = timber.plant()
     log.info("Phase starts", merge="stock listings")
     precedence = [ProviderSource.FINNHUB, ProviderSource.POLYGON]
-    rcol_name = "_right"
 
     order = [p for p in precedence if p in frames]
     log.info("Merging in provider", provider=order[0])
@@ -231,10 +229,10 @@ def _filter_by_list_date(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     df[COL_LIST_DATE] = pd.to_datetime(df[COL_LIST_DATE], format="mixed", utc=True, errors="raise").dt.normalize()
-    today_utc = pd.Timestamp.now(tz="UTC").normalize()
-    crypto_mask = _filter_by_date_mask(df, {ASSET_CRYPTO}, today_utc - config.crypto_age_min)
-    stock_mask = _filter_by_date_mask(df, ASSET_TYPES - {ASSET_CRYPTO}, today_utc - config.stock_age_min)
-    df = df[crypto_mask | stock_mask].reset_index(drop=True)
+    # today_utc = pd.Timestamp.now(tz="UTC").normalize()
+    # crypto_mask = _filter_by_date_mask(df, {ASSET_CRYPTO}, today_utc - config.crypto_age_min)
+    # stock_mask = _filter_by_date_mask(df, ASSET_TYPES - {ASSET_CRYPTO}, today_utc - config.stock_age_min)
+    # df = df[crypto_mask | stock_mask].reset_index(drop=True)
 
     log.info("Filtered", count=count - len(df), reason="list-date")
     return df
@@ -296,8 +294,8 @@ def _merge_combine_first(left: pd.DataFrame, right: pd.DataFrame,
         how: Specifies the type of join operation to be performed. Defaults to "inner".
 
     Returns:
-        A DataFrame that results from merging and combining the two input DataFrames, with preference given to values from the first DataFrame. Any
-            overlapping columns from the second DataFrame are merged or removed.
+        A DataFrame that results from merging and combining the two input DataFrames, with preference given to values
+            from the first DataFrame. Any overlapping columns from the second DataFrame are merged or removed.
     """
     rcol_name = "_right"
     df = pd.merge(left=left, right=right, on=COL_SYMBOL, how=how, suffixes=("", rcol_name))

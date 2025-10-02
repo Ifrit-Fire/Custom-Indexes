@@ -4,7 +4,7 @@ import numpy as np
 from pandas import DataFrame
 
 from src.config_handler import KEY_INDEX_WEIGHT_MIN
-from src.consts import COL_WEIGHT, COL_MC, COL_SYMBOL, COL_TYPE
+from src.consts import COL_MC, COL_SYMBOL, COL_TYPE, COL_WEIGHT
 from src.logger import timber
 
 
@@ -20,11 +20,11 @@ def add_weightings(df: DataFrame, criteria: dict) -> DataFrame:
       4. Applies rounding adjustments using the Largest Remainder Method.
 
     Args:
-        df (DataFrame): DataFrame containing security data, including `COL_MC` (market cap) and `COL_SYMBOL`.
-        criteria (dict): Dictionary containing at least `KEY_INDEX_WEIGHT_MIN` (minimum allowed weight).
+        df: DataFrame containing security data, including `COL_MC` (market cap) and `COL_SYMBOL`.
+        criteria: Dictionary containing at least `KEY_INDEX_WEIGHT_MIN` (minimum allowed weight).
 
     Returns:
-        DataFrame: A new DataFrame with the `COL_WEIGHT` column added, meeting the weight constraints.
+        A new DataFrame with the `COL_WEIGHT` column added, meeting the weight constraints.
     """
     log = timber.plant()
     log.info("Phase starts", create="weights")
@@ -62,11 +62,12 @@ def _fix_rounding(df: DataFrame, precision: int) -> DataFrame:
       4. Converts back to a decimal percentage with minimal floating-point error.
 
     Args:
-        df (DataFrame): DataFrame containing at least the `COL_MC` (market cap) and `COL_WEIGHT` column.
-        precision (int): Number of decimal places to preserve; actual calculation uses `precision - 1` to determine scaling.
+        df: DataFrame containing at least the `COL_MC` (market cap) and `COL_WEIGHT` column.
+        precision: Number of decimal places to preserve; actual calculation uses `precision - 1` to determine
+        scaling.
 
     Returns:
-        DataFrame: `COL_WEIGHT` column with corrected weights.
+        `COL_WEIGHT` column with corrected weights.
     """
     log = timber.plant()
     scale = 10 ** (precision - 1)
@@ -97,10 +98,10 @@ def _decimal_places(num: float) -> int:
     correctly count decimal places, even for values like `1.2300`.
 
     Args:
-        num (float): The number to evaluate.
+        num: The number to evaluate.
 
     Returns:
-        int: The count of decimal places (0 if the number is integral).
+        The count of decimal places (0 if the number is integral).
     """
     d = Decimal(str(num)).normalize()
     if d == d.to_integral():

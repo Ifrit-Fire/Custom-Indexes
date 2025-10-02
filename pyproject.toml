@@ -1,0 +1,15 @@
+[tool.ruff]
+src = ["src", "tests"]
+lint.ignore = ["E701"]   # Allow multiple statements on one line
+line-length = 120
+lint.select = [
+    "E", # pycodestyle (PEP8 errors)
+    "F", # pyflakes
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
