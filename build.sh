@@ -9,7 +9,7 @@ readonly ACTIVATE="${ENV}/bin/activate"
 
 if [[ -e "${ENV}" ]]; then
     echo "Found old virtual environment folder. Deleting"
-    # rm -rf "${ENV}"
+     rm -rf "${ENV}"
 fi
 
 echo "Activate venv and install wheels"

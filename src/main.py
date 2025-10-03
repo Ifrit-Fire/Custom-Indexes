@@ -6,7 +6,7 @@ from src.data import processing
 from src.logger import timber
 from src.services import fetcher
 
-# TODO: Grab and normalize volume data
+# TODO: Merge in OHLCV Data
 
 timber.till()
 log = timber.plant("ETL")
