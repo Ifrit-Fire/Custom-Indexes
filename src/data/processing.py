@@ -12,40 +12,43 @@ from src.data.source import ProviderSource
 from src.logger import timber
 
 
-def merge_stock(listing: pd.DataFrame, with_details: pd.DataFrame) -> pd.DataFrame:
+def merge_on_symbols(df_canonical: pd.DataFrame, df_data: pd.DataFrame) -> pd.DataFrame:
     """
-    Merges two DataFrame objects representing stock listings and detailed stock information.
-    This function ensures that all critical data columns are validated and free of missing and duplicate data.
+    Merge and enrich canonical rows with additional data, keyed on COL_SYMBOL.
+
+    Ensures that only rows present in df_canonical are retained. New columns from df_data are added, and existing
+    columns in df_canonical are updated only where values are missing (NaN). Symbols found in df_data but not in
+    df_canonical are ignored. Duplicate symbols in the result raise a RuntimeError. Critical columns with missing
+    values are dropped.
 
     Args:
-        listing: A DataFrame containing stock listing information, including symbols to be merged.
-        with_details: A DataFrame containing detailed stock information that corresponds to the symbols
-            in the listing DataFrame.
+        df_canonical: The authoritative DataFrame containing the set of rows to preserve.
+        df_data: A DataFrame containing new values or additional columns, keyed by COL_SYMBOL, to enrich df_canonical.
 
     Returns:
-       A new DataFrame resulting from merging the `listing` DataFrame with the `with_details` DataFrame.
+        A DataFrame with df_canonical rows preserved and selectively enriched from df_data.
 
     Raises:
-        RuntimeError: If duplicate symbols are detected in the resulting DataFrame after the merge.
+        RuntimeError: If duplicate symbols are detected in the merged result.
     """
     log = timber.plant()
-    log.info("Phase starts", merge="listing with details", count=len(listing))
+    log.info("Phase starts", merge="canonical with new data", count=len(df_canonical))
 
-    df = _merge_combine_first(left=listing, right=with_details, how="right")
+    df = _merge_combine_first(left=df_canonical, right=df_data, how="left")
     df = df.sort_values(COL_SYMBOL)
     # TODO: To solve ISNA...delete cache, retry fetch. Still ISNA, try special providers. Still ISNA, remove symbol
-    for col in CRITICAL_COLUMNS:
-        _check_isna(df, col)
+    df = _drop_critical_isna(df)
 
     count = df[COL_SYMBOL].duplicated().sum()
     if count > 0:
         log.error("Dupe Symbol(s) Detected", column=COL_SYMBOL, symbols=df[df[COL_SYMBOL].duplicated()])
         raise RuntimeError("Dupe Symbol(s) Detected")
 
-    missing = set(listing[COL_SYMBOL]) - set(with_details[COL_SYMBOL])
-    log.info("Not in details", symbols=sorted(missing), count=len(missing), action="removed")
-
-    log.info("Phase ends", merge="listing with details", count=len(df))
+    missing = sorted(set(df_data[COL_SYMBOL]) - set(df_canonical[COL_SYMBOL]))
+    if len(missing) > 8:
+        missing = list(missing)[:8] + ["..."]
+    log.info("Not in canonical", symbols=missing, count=len(missing), action="removed")
+    log.info("Phase ends", merge="canonical with new data", count=len(df))
     return df
 
 
@@ -206,6 +209,30 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
     return df
 
 
+def _drop_critical_isna(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Removes rows from the DataFrame with missing values found in critical columns.
+
+    Args:
+        df: The original DataFrame to be checked and cleaned.
+        col: A string used for identifying the symbol column in the DataFrame for logging purposes.
+
+    Returns:
+        A new DataFrame with rows containing missing values in critical columns removed.
+    """
+    log = timber.plant()
+    df_clean = df.copy()
+    for col in CRITICAL_COLUMNS:
+        if col not in df.columns: continue
+        count = df[col].isna().sum()
+        if count == 0: continue
+
+        symbols = df.loc[df[col].isna(), COL_SYMBOL].tolist()
+        log.warning("Nan Detected", column=col, symbols=symbols, action="dropping")
+        df_clean = df_clean.dropna(subset=[col])
+    return df_clean
+
+
 def _filter_by_list_date(df: pd.DataFrame) -> pd.DataFrame:
     """
     Filter securities based on their list date, applying different minimum age requirements for crypto and stocks.
@@ -261,29 +288,10 @@ def _filter_by_date_mask(df: pd.DataFrame, asset_types: set[str], cutoff: pd.Tim
     return filtered_mask
 
 
-def _check_isna(df: pd.DataFrame, col: str):
-    """
-    Checks for missing values (NaN) in the specified column of a DataFrame.
-
-    This function inspects the provided DataFrame for missing values in the specified
-    column. If the column exists and contains missing values, it logs an explanation.
-
-    Args:
-        df: The DataFrame to inspect for missing values.
-        col: The name of the column to check for missing values.
-    """
-    if col not in df.columns: return
-    count = df[col].isna().sum()
-    if count > 0:
-        log = timber.plant()
-        symbols = df.loc[df[COL_LIST_DATE].isna(), COL_SYMBOL].tolist()
-        log.warning("Nan Detected", column=col, symbols=symbols)
-
-
 def _merge_combine_first(left: pd.DataFrame, right: pd.DataFrame,
                          how: Literal["left", "right", "inner", "outer", "cross"] = "inner") -> pd.DataFrame:
     """
-    Merges two DataFrames on `COL_SYMBOL`. Overlapping columns combines their data by prioritizing non-null values from
+    Merges two DataFrames on `COL_SYMBOL`. Overlapping columns combine their data by prioritizing non-null values from
     the first DataFrame over the second DataFrame.
 
     Args:

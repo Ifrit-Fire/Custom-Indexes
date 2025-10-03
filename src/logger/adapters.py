@@ -71,7 +71,7 @@ def _to_json_safe(obj) -> Any:
         obj (Any): Object to convert.
 
     Returns:
-        Any: A JSON-serializable equivalent if recognized, otherwise the original object unchanged.
+        Any: A JSON-serializable equivalent if recognized, otherwise the original object is unchanged.
     """
     if isinstance(obj, datetime.date): return str(obj)
     if isinstance(obj, pathlib.Path): return str(obj)
