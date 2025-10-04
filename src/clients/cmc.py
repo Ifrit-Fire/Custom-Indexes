@@ -28,14 +28,16 @@ class CMCProvider(Provider):
             A DataFrame containing active crypto listings with market data, standardized symbols and types.
         """
         # API defaults to sort "market_cap"; sort_dir defaults to "desc". Specifying anyway for clarity
-        params = {"start": "1", "limit": "2000", "convert": "USD", "sort": "market_cap", "sort_dir": "desc"}
+        params = {"start": "1", "limit": "2000", "convert": "USD", "sort": "market_cap", "sort_dir": "desc",
+                  "aux": "circulating_supply,date_added,tags,volume_30d"}
         headers = {"Accepts": "application/json", "X-CMC_PRO_API_KEY": API_CMC_TOKEN}
         response = requests.get(BASE_URL, headers=headers, params=params)
         response.raise_for_status()
 
         df = pd.json_normalize(response.json()["data"])
-        col_rename = {"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_C_PRICE, "quote.USD.volume_24h": COL_VOLUME,
-                      "date_added": COL_LIST_DATE, "circulating_supply": COL_OUT_SHARES}
+        col_rename = {"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_C_PRICE,
+                      "quote.USD.volume_30d": COL_VOLUME, "date_added": COL_LIST_DATE,
+                      "circulating_supply": COL_OUT_SHARES}
         df.rename(columns=col_rename, inplace=True)
         df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
         df[COL_TYPE] = df["tags"].apply(CMCProvider.tag_to_type)
