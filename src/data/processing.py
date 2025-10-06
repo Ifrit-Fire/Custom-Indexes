@@ -256,10 +256,10 @@ def _filter_by_list_date(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     df[COL_LIST_DATE] = pd.to_datetime(df[COL_LIST_DATE], format="mixed", utc=True, errors="raise").dt.normalize()
-    # today_utc = pd.Timestamp.now(tz="UTC").normalize()
-    # crypto_mask = _filter_by_date_mask(df, {ASSET_CRYPTO}, today_utc - config.crypto_age_min)
-    # stock_mask = _filter_by_date_mask(df, ASSET_TYPES - {ASSET_CRYPTO}, today_utc - config.stock_age_min)
-    # df = df[crypto_mask | stock_mask].reset_index(drop=True)
+    today_utc = pd.Timestamp.now(tz="UTC").normalize()
+    crypto_mask = _filter_by_date_mask(df, CRYPTO_TYPES, today_utc - config.crypto_age_min)
+    stock_mask = _filter_by_date_mask(df, STOCK_TYPES, today_utc - config.stock_age_min)
+    df = df[crypto_mask | stock_mask].reset_index(drop=True)
 
     log.info("Filtered", count=count - len(df), reason="list-date")
     return df

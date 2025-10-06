@@ -4,13 +4,10 @@ from pathlib import Path
 from src.data.security_types import CryptoTypes, StockTypes, CommoditiesType
 
 API_CMC_TOKEN = os.getenv("CMC_API_TOKEN")
-API_CMC_CACHE_ONLY = API_CMC_TOKEN is None
 API_FINN_TOKEN = os.getenv("FINN_API_TOKEN")
-API_FINN_CACHE_ONLY = API_CMC_TOKEN is None
 API_FMP_TOKEN = os.getenv("FMP_API_TOKEN")
 API_FMP_CACHE_ONLY = API_FMP_TOKEN is None
 API_POLY_TOKEN = os.getenv("POLY_API_TOKEN")
-API_POLY_CACHE_ONLY = API_POLY_TOKEN is None
 
 COL_CIK = "cik"
 COL_C_PRICE = "closing_price"
@@ -58,3 +55,4 @@ PATH_LOGS_ROOT.mkdir(parents=True, exist_ok=True)
 
 SECURITY_TYPES = {t.value for t in (*CryptoTypes, *StockTypes, *CommoditiesType)}
 STOCK_TYPES = {t.value for t in StockTypes}
+CRYPTO_TYPES = {t.value for t in CryptoTypes}
