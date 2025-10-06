@@ -3,7 +3,8 @@ from typing import Sequence
 import pandas as pd
 import requests
 
-from src.clients.provider import Provider
+from clients.provider import MixinCryptoMarket
+from src.clients.provider import BaseProvider
 from src.consts import COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_C_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE, \
     COL_OUT_SHARES
 from src.data import processing
@@ -15,7 +16,7 @@ from src.data.source import ProviderSource
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 
 
-class CMCProvider(Provider):
+class CMCProvider(BaseProvider, MixinCryptoMarket):
     @property
     def name(self) -> ProviderSource:
         return ProviderSource.COIN_MC
@@ -43,15 +44,6 @@ class CMCProvider(Provider):
         df[COL_TYPE] = df["tags"].apply(CMCProvider.tag_to_type)
 
         return df
-
-    def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
-        return pd.DataFrame()
-
-    def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
-        return pd.DataFrame()
-
-    def fetch_stock_listing(self) -> pd.DataFrame:
-        return pd.DataFrame()
 
     @staticmethod
     def tag_to_type(tags: Sequence[str]):

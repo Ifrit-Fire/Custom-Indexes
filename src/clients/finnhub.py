@@ -4,7 +4,8 @@ import finnhub
 import pandas as pd
 from finnhub import FinnhubAPIException
 
-from src.clients.providerpool import Provider
+from clients.provider import MixinStockDetails, MixinStockListing
+from src.clients.providerpool import BaseProvider
 from src.consts import API_FINN_TOKEN, COL_SYMBOL, STOCK_TYPES, COL_MC, COL_LIST_DATE, COL_OUT_SHARES, COL_FIGI, \
     COL_TYPE, MIC_CODES
 from src.data import processing
@@ -15,16 +16,10 @@ from src.logger import timber
 _CLIENT = finnhub.Client(api_key=API_FINN_TOKEN)
 
 
-class FinnhubProvider(Provider):
+class FinnhubProvider(BaseProvider, MixinStockDetails, MixinStockListing):
     @property
     def name(self) -> ProviderSource:
         return ProviderSource.FINNHUB
-
-    def fetch_crypto_market(self) -> pd.DataFrame:
-        return pd.DataFrame()
-
-    def fetch_ohlcv(self, date: pd.Timestamp) -> pd.DataFrame:
-        return pd.DataFrame()
 
     def fetch_stock_details(self, symbol: str) -> pd.DataFrame:
         """
