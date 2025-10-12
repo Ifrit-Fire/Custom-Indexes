@@ -22,11 +22,9 @@ for index, criteria in config.get_all_indexes().items():
     log = timber.plant(index)
     log.info("Phase starts", create=index)
 
-    sys.exit()
-
-    df_refined = dp.refine_data(using=criteria, dfs=[df_listing, df_crypto])
+    df_refined = processing.refine_data(using=criteria, dfs=[df_market, df_crypto])
     df_weights = allocations.add_weightings(df_refined, criteria).reset_index(drop=True)
-
+    sys.exit()
     io.save_index(index, df_weights)
     log.info("Phase ends", create=index, max_weight=df_weights[COL_WEIGHT].max(),
              min_weight=df_weights[COL_WEIGHT].min(), median_weight=df_weights[COL_WEIGHT].median(),

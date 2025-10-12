@@ -179,24 +179,31 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
     log = timber.plant()
     log.info("Phase starts", data="refinement")
 
+    col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
+    dfs_new = []
+    for df in dfs:
+        dfs_new.append(df.sort_values(by=col, ascending=False))
+    log.info("Sorted", using=using[KEY_INDEX_SORTBY], column=col)
+    dfs = dfs_new.copy()
+
+    dfs_new = []
+    for df in dfs:
+        count = len(df)
+        df = df[df[COL_VOLUME] > config.volume_limit_min]
+        dfs_new.append(df)
+        log.info("Filtered", count=count - len(df), reason="volume", limit=config.volume_limit_min)
+    dfs = dfs_new.copy()
+
+    dfs_new = []
+    for df in dfs:
+        count = len(df)
+        df = _filter_by_list_date(df)
+        dfs_new.append(df)
+        log.info("Filtered", count=count - len(df), reason="list-date")
+
     log.debug("Merging Dataframes", count=len(dfs))
     df = pd.concat(dfs, axis=0, ignore_index=True)
     df = _merge_symbols(df)
-
-    col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
-    df = df.sort_values(by=col, ascending=False)
-    log.info("Sorted", using=using[KEY_INDEX_SORTBY], column=col)
-
-    count = len(df)
-    df = df[df[COL_MC] > 0]
-    log.debug("Filtered", count=count - len(df), reason="no market cap")
-
-    count = len(df)
-    df = df[df[COL_VOLUME] > config.volume_limit_min]
-    log.info("Filtered", count=count - len(df), reason="volume", limit=config.volume_limit_min)
-
-    count = len(df)
-    df = _filter_by_list_date(df)
 
     df = df.head(using[KEY_INDEX_TOP])
     count = len(df)

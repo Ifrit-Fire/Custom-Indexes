@@ -13,7 +13,7 @@ from src.data.source import ProviderSource
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
-BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
+_BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 
 
 class CMCProvider(BaseProvider, MixinCryptoMarket):
@@ -32,7 +32,7 @@ class CMCProvider(BaseProvider, MixinCryptoMarket):
         params = {"start": "1", "limit": "2000", "convert": "USD", "sort": "market_cap", "sort_dir": "desc",
                   "aux": "circulating_supply,date_added,tags,volume_30d"}
         headers = {"Accepts": "application/json", "X-CMC_PRO_API_KEY": API_CMC_TOKEN}
-        response = requests.get(BASE_URL, headers=headers, params=params)
+        response = requests.get(_BASE_URL, headers=headers, params=params)
         response.raise_for_status()
 
         df = pd.json_normalize(response.json()["data"])

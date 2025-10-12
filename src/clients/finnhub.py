@@ -60,6 +60,9 @@ class FinnhubProvider(BaseProvider, MixinStockDetails, MixinStockListing):
             log.warning("Different symbol returned", queried=symbol, returned=ticker, action="ignoring returned",
                         provider=self.name)
             df.loc[0, COL_SYMBOL] = symbol
+            return pd.DataFrame()
+            # TODO It seems on this event, the market cap is actually listed in currency_name dollars.
+            # TODO Even if currency name is not USD...it's market cap data appears to still be USD. I think its the symbol difference i can key off
         df = processing.set_column_types(df)
         df[COL_MC] *= 1_000_000
         df[COL_OUT_SHARES] *= 1_000_000
