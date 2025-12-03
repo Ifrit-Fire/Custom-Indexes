@@ -11,8 +11,8 @@ _LOG_FILE_PATH = PATH_LOGS_ROOT / "index-builder.log"
 
 def plant(name: str = None) -> TreeLoggerAdapter:
     """
-    Retrieve a cached logger adapter, or create and cache a new one. On first call, a logger name must be provided.
-    That logger instance is cached for subsequent calls, allowing the function to return the same adapter without
+    Retrieve a cached logger adapter or create and cache a new one. On the first call, a logger name must be provided.
+    That logger instance is cached for later calls, allowing the function to return the same adapter without
     requiring `name` again.
 
     Args:
@@ -36,7 +36,7 @@ def plant(name: str = None) -> TreeLoggerAdapter:
 
 def till():
     """
-    Configure application logger with both console and file handlers.
+    Configure the application logger with both console and file handlers.
 
     This setup establishes two logger outputs:
       - **Console handler**: logs messages at INFO level and above, formatted with color.

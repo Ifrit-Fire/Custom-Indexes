@@ -4,12 +4,12 @@ set -o errexit
 set -o nounset
 
 readonly PYTHON="/usr/local/bin/python3"
-readonly ENV="venv"
+readonly ENV=".venv"
 readonly ACTIVATE="${ENV}/bin/activate"
 
 if [[ -e "${ENV}" ]]; then
     echo "Found old virtual environment folder. Deleting"
-    # rm -rf "${ENV}"
+     rm -rf "${ENV}"
 fi
 
 echo "Activate venv and install wheels"

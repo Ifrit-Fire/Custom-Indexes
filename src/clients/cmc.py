@@ -1,83 +1,50 @@
-from pathlib import Path
+from typing import Sequence
 
 import pandas as pd
 import requests
-from pandas import DataFrame
 
-from src import data_processing
-from src.clients import cache
-from src.config_handler import KEY_INDEX_TOP
-from src.consts import COL_NAME, COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_PRICE, COL_VOLUME, COL_TYPE, ASSET_CRYPTO, \
-    COL_LIST_DATE, API_CMC_CACHE_ONLY
-from src.logger import timber
+from clients.provider import MixinCryptoMarket
+from src.clients.provider import BaseProvider
+from src.consts import COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_C_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE, \
+    COL_OUT_SHARES
+from src.data import processing
+from src.data.security_types import CryptoTypes
+from src.data.source import ProviderSource
 
 # Coin Market Cap: https://coinmarketcap.com/api/
 
-BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
-_BASE_FILENAME = Path(__file__).name
+_BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 
 
-def get_crypto(criteria: dict) -> DataFrame:
-    """
-    Retrieve a DataFrame of cryptocurrencies matching the given index criteria.
+class CMCProvider(BaseProvider, MixinCryptoMarket):
+    @property
+    def name(self) -> ProviderSource:
+        return ProviderSource.COIN_MC
 
-    Attempts to load from the local API cache if available and up-to-date; otherwise queries the remote API.
-    The results are normalized and cached for future use.
+    def fetch_crypto_market(self):
+        """
+        Retrieve all cryptocurrency market data. The results are normalized.
 
-    Args:
-        criteria (dict): Dictionary of configuration values for the index, must include at least `KEY_INDEX_TOP`.
-
-    Returns:
-        DataFrame: DataFrame containing standardized columns:
-            `COL_NAME`, `COL_SYMBOL`, `COL_MC`, `COL_PRICE`, `COL_VOLUME`, `COL_TYPE`, `COL_LIST_DATE`.
-    """
-
-    log = timber.plant()
-    log.info("Phase starts", fetch="crypto")
-    df = cache.load_api_cache(_BASE_FILENAME, criteria, allow_stale=API_CMC_CACHE_ONLY)
-    source = "cache"
-
-    if df.empty:
-        source = "API"
-        if API_CMC_CACHE_ONLY:
-            log.critical("Missing", env="CMC_API_TOKEN", cache="Not found")
-            raise RuntimeError("No CMC API token found.")
-
+        Returns:
+            A DataFrame containing active crypto listings with market data, standardized symbols and types.
+        """
         # API defaults to sort "market_cap"; sort_dir defaults to "desc". Specifying anyway for clarity
-        params = {"start": "1", "limit": criteria[KEY_INDEX_TOP], "convert": "USD", "sort": "market_cap",
-                  "sort_dir": "desc"}
+        params = {"start": "1", "limit": "2000", "convert": "USD", "sort": "market_cap", "sort_dir": "desc",
+                  "aux": "circulating_supply,date_added,tags,volume_30d"}
         headers = {"Accepts": "application/json", "X-CMC_PRO_API_KEY": API_CMC_TOKEN}
-        response = requests.get(BASE_URL, headers=headers, params=params)
+        response = requests.get(_BASE_URL, headers=headers, params=params)
         response.raise_for_status()
 
         df = pd.json_normalize(response.json()["data"])
-        df.rename(
-            columns={"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_PRICE, "quote.USD.volume_24h": COL_VOLUME,
-                     "date_added": COL_LIST_DATE}, inplace=True)
-        df[COL_SYMBOL] = data_processing.standardize_symbols(df[COL_SYMBOL])
-        df[COL_TYPE] = ASSET_CRYPTO
-        cache.save_api_cache(_BASE_FILENAME, criteria, df)
+        col_rename = {"quote.USD.market_cap": COL_MC, "quote.USD.price": COL_C_PRICE,
+                      "quote.USD.volume_30d": COL_VOLUME, "date_added": COL_LIST_DATE,
+                      "circulating_supply": COL_OUT_SHARES}
+        df.rename(columns=col_rename, inplace=True)
+        df[COL_SYMBOL] = processing.standardize_symbols(df[COL_SYMBOL])
+        df[COL_TYPE] = df["tags"].apply(CMCProvider.tag_to_type)
 
-    df = _exclude_stablecoins(df)
-    log.info("Phase ends", fetch="crypto", count=len(df), source=source)
-    return df[[COL_NAME, COL_SYMBOL, COL_MC, COL_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE]]
+        return df
 
-
-def _exclude_stablecoins(df: DataFrame) -> DataFrame:
-    """
-    Remove stablecoins from the DataFrame based on the `tags` column.
-
-    Args:
-        df (pd.DataFrame): Input DataFrame containing at least `tags` and `COL_SYMBOL` columns.
-
-    Returns:
-        pd.DataFrame: A filtered DataFrame with all stablecoins removed.
-    """
-    log = timber.plant()
-    mask = df["tags"].apply(lambda tags: "stablecoin" in tags)
-
-    for symbol in df.loc[mask, COL_SYMBOL]:
-        log.debug("Excluded", symbol=symbol, reason="stablecoin")
-    log.info("Excluded", items="symbols", count=int((mask).sum()), reason="stablecoin")
-
-    return df[~mask]
+    @staticmethod
+    def tag_to_type(tags: Sequence[str]):
+        return CryptoTypes.STABLECOIN.value if "stablecoin" in tags else CryptoTypes.CRYPTO.value
