@@ -1,4 +1,4 @@
-built_2025-12-02,symbol,name,market_cap,mic,list_date,cik,composite_figi,outstanding_shares,postal_code,state,country,type,volume,closing_price,weighted
+,symbol,name,market_cap,mic,list_date,cik,composite_figi,outstanding_shares,postal_code,state,country,type,volume,closing_price,weighted
 0,NVDA,NVIDIA Corp,4450.788,XNAS,1999-01-22 00:00:00,0001045810,BBG000BBJQV0,24300000000.0,,,US,Common Stock,204132699.13333333,,8.0
 1,MSFT,Microsoft Corp,3798.051,XNAS,1986-03-13 00:00:00,0000789019,BBG000BPH459,7433170000.0,,,US,Common Stock,24732950.7,,6.8
 2,AAPL,Apple Inc,3639.902,XNAS,1980-12-12 00:00:00,0000320193,BBG000B9XRY4,14840390000.0,,,US,Common Stock,49007295.233333334,,6.5
