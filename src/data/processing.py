@@ -4,7 +4,8 @@ from typing import Literal
 import pandas as pd
 
 from consts import COL_C_PRICE, COL_TIMESTAMP, COL_SYMBOL, CRITICAL_COLUMNS, COL_TYPE, COL_FIGI, COL_CIK, COL_COUNTRY, \
-    COL_MC, COL_NAME, COL_POSTAL_CODE, COL_OUT_SHARES, COL_MIC, COL_VOLUME, COL_STATE, COL_LIST_DATE
+    COL_MC, COL_NAME, COL_POSTAL_CODE, COL_OUT_SHARES, COL_MIC, COL_VOLUME, COL_STATE, COL_LIST_DATE, CRYPTO_TYPES, \
+    STOCK_TYPES
 from src import transform
 from src.config_handler import KEY_INDEX_SORTBY, KEY_INDEX_TOP, config
 from src.data.security_types import CryptoTypes
@@ -179,13 +180,7 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
     log = timber.plant()
     log.info("Phase starts", data="refinement")
 
-    col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
-    dfs_new = []
-    for df in dfs:
-        dfs_new.append(df.sort_values(by=col, ascending=False))
-    log.info("Sorted", using=using[KEY_INDEX_SORTBY], column=col)
-    dfs = dfs_new.copy()
-
+    # Filter out by volume
     dfs_new = []
     for df in dfs:
         count = len(df)
@@ -194,17 +189,22 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
         log.info("Filtered", count=count - len(df), reason="volume", limit=config.volume_limit_min)
     dfs = dfs_new.copy()
 
+    # Filter out by list date
     dfs_new = []
     for df in dfs:
-        count = len(df)
         df = _filter_by_list_date(df)
         dfs_new.append(df)
-        log.info("Filtered", count=count - len(df), reason="list-date")
 
     log.debug("Merging Dataframes", count=len(dfs))
     df = pd.concat(dfs, axis=0, ignore_index=True)
     df = _merge_symbols(df)
 
+    # Sort now that the Dataframes are merged
+    col = transform.sort_by_to_df_column(using[KEY_INDEX_SORTBY])
+    df = df.sort_values(by=col, ascending=False)
+    log.info("Sorted", using=using[KEY_INDEX_SORTBY], column=col)
+
+    # Grap the max possible for the index
     df = df.head(using[KEY_INDEX_TOP])
     count = len(df)
     if count < using[KEY_INDEX_TOP]:

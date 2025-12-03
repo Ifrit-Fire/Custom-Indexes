@@ -12,6 +12,7 @@ API_POLY_TOKEN = os.getenv("POLY_API_TOKEN")
 COL_CIK = "cik"
 COL_C_PRICE = "closing_price"
 COL_COUNTRY = "country"
+COL_CURRENCY = "currency"
 COL_FIGI = "composite_figi"
 COL_LIST_DATE = "list_date"
 COL_MC = "market_cap"

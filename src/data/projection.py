@@ -49,6 +49,7 @@ def view_stock_details(df: pd.DataFrame) -> pd.DataFrame:
     """
     columns = [COL_SYMBOL, COL_NAME, COL_MC, COL_MIC, COL_LIST_DATE, COL_CIK, COL_FIGI, COL_OUT_SHARES, COL_POSTAL_CODE,
                COL_STATE, COL_COUNTRY]
+
     return _view(df, columns)
 
 
