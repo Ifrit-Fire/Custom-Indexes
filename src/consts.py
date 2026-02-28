@@ -6,7 +6,7 @@ from src.data.security_types import CryptoTypes, StockTypes, CommoditiesType
 API_CMC_TOKEN = os.getenv("CMC_API_TOKEN")
 API_FINN_TOKEN = os.getenv("FINN_API_TOKEN")
 API_FMP_TOKEN = os.getenv("FMP_API_TOKEN")
-API_FMP_CACHE_ONLY = API_FMP_TOKEN is None
+API_FRED_TOKEN = os.getenv("FRED_API_TOKEN")
 API_POLY_TOKEN = os.getenv("POLY_API_TOKEN")
 
 COL_CIK = "cik"

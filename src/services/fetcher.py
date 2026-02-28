@@ -1,6 +1,7 @@
 import exchange_calendars as xcals
 import pandas as pd
 
+from clients.fred import FredProvider
 from src.clients.cmc import CMCProvider
 from src.clients.finnhub import FinnhubProvider
 from src.clients.polygon import PolygonProvider
@@ -11,7 +12,7 @@ from src.data.source import ProviderSource
 from src.io import store, cache
 from src.logger import timber
 
-_POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider(), CMCProvider()])
+_POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider(), CMCProvider(), FredProvider()])
 
 
 def get_crypto_market() -> pd.DataFrame:
@@ -33,6 +34,16 @@ def get_crypto_market() -> pd.DataFrame:
     df = processing.remove_stablecoin(df)
     df = projection.view_crypto_market(df)
     log.info("Phase ends", fetch="crypto", count=len(df))
+    return df
+
+def get_forex(iso_code: str) -> pd.DataFrame:
+    log = timber.plant()
+    log.info("Phase starts", fetch="ohlcv")
+    df = store.load_forex(iso_code)
+    if df.empty:
+        df = _POOL.fetch_forex(iso_code)
+
+
     return df
 
 
