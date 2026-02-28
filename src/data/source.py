@@ -5,4 +5,5 @@ class ProviderSource(Enum):
     COIN_MC = "coin-market-cap"
     FINN_MOD_PREP = "financial-model-prep"
     FINNHUB = "finnhub"
+    FRED = "federal-reserve-economic-data"
     POLYGON = "polygon"
