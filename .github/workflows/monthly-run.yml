@@ -34,6 +34,7 @@ jobs:
         run: python -m src.main
 
       - name: Commit updated indexes
+        if: github.ref == 'refs/heads/master'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
