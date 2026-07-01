@@ -1,4 +1,12 @@
-import allocations
+import sys
+from pathlib import Path
+
+if __package__ in {None, ""}:
+    project_root = Path(__file__).resolve().parent.parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+
+from src import allocations
 from src.config_handler import config
 from src.consts import COL_SYMBOL, COL_VOLUME, COL_WEIGHT
 from src.data import processing
