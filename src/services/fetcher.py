@@ -1,7 +1,6 @@
 import exchange_calendars as xcals
 import pandas as pd
 
-from clients.fred import FredProvider
 from src.clients.cmc import CMCProvider
 from src.clients.finnhub import FinnhubProvider
 from src.clients.polygon import PolygonProvider
@@ -12,7 +11,7 @@ from src.data.source import ProviderSource
 from src.io import store, cache
 from src.logger import timber
 
-_POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider(), CMCProvider(), FredProvider()])
+_POOL = ProviderPool(providers=[FinnhubProvider(), PolygonProvider(), CMCProvider()])
 
 
 def get_crypto_market() -> pd.DataFrame:
