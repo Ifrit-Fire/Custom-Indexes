@@ -27,6 +27,11 @@ for index, criteria in config.get_all_indexes().items():
     df_weights = allocations.add_weightings(df_refined, criteria).reset_index(drop=True)
 
     io.save_index(index, df_weights)
-    log.info("Phase ends", create=index, max_weight=df_weights[COL_WEIGHT].max(),
-             min_weight=df_weights[COL_WEIGHT].min(), median_weight=df_weights[COL_WEIGHT].median(),
-             count=len(df_weights))
+    log.info(
+        "Phase ends",
+        create=index,
+        max_weight=df_weights[COL_WEIGHT].max(),
+        min_weight=df_weights[COL_WEIGHT].min(),
+        median_weight=df_weights[COL_WEIGHT].median(),
+        count=len(df_weights),
+    )
