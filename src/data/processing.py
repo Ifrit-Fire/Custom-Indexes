@@ -194,6 +194,7 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
     for df in dfs:
         df = _filter_by_list_date(df)
         dfs_new.append(df)
+    dfs = dfs_new.copy()
 
     # Merge
     log.debug("Merging Dataframes", count=len(dfs))
