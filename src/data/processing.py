@@ -195,8 +195,13 @@ def refine_data(using: dict, dfs: list[pd.DataFrame]) -> pd.DataFrame:
         df = _filter_by_list_date(df)
         dfs_new.append(df)
 
+    # Merge
     log.debug("Merging Dataframes", count=len(dfs))
     df = pd.concat(dfs, axis=0, ignore_index=True)
+    conflicts = df.loc[df[COL_SYMBOL].duplicated(keep=False), COL_SYMBOL].unique().tolist()
+    if conflicts:
+        log.debug("Symbol Conflicts Detected", count=len(conflicts))
+        log.info("Symbol Conflicts", symbols=conflicts)
     df = _merge_symbols(df)
 
     # Sort now that the Dataframes are merged
@@ -318,7 +323,7 @@ def _merge_combine_first(left: pd.DataFrame, right: pd.DataFrame,
         if col == COL_SYMBOL: continue
         rcol = f"{col}{rcol_name}"
         if rcol in df.columns:
-            df.loc[:, col] = df[col].combine_first(df[rcol])
+            df.loc[:, col] = df[col].combine_first(df[rcol]) # FutureWarning: The behavior of array concatenation with empty entries is deprecated. In a future version, this will no longer exclude empty items when determining the result dtype. To retain the old behavior, exclude the empty entries before the concat operation. df.loc[:, col] = df[col].combine_first(df[rcol])
             df.drop(labels=[rcol], axis=1, inplace=True)
     return df
 

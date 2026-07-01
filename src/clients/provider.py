@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from datetime import timedelta, datetime, timezone
+from datetime import timedelta, datetime, timezone, date
 
 import pandas as pd
 
@@ -50,5 +50,5 @@ class MixinStockListing(ABC):
 
 class MixinForexRates(ABC):
     @abstractmethod
-    def fetch_forex_rates(self, currency: str) -> pd.DataFrame:
+    def fetch_forex_rates(self, iso_code: str, start: date = None, end: date = None) -> pd.DataFrame:
         pass

@@ -11,6 +11,9 @@ _COL_DAY = "day"
 _NS_OHLCV = "ohlcv"
 
 
+def load_forex(iso_code: str) -> pd.DataFrame:
+    return pd.DataFrame()
+
 def load_ohlcv(date_range: pd.DatetimeIndex) -> pd.DataFrame:
     """
     Loads OHLCV data from a Parquet file based on the specified date range.  If the file is not found, an empty

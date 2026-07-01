@@ -35,6 +35,16 @@ def get_crypto_market() -> pd.DataFrame:
     log.info("Phase ends", fetch="crypto", count=len(df))
     return df
 
+def get_forex(iso_code: str) -> pd.DataFrame:
+    log = timber.plant()
+    log.info("Phase starts", fetch="ohlcv")
+    df = store.load_forex(iso_code)
+    if df.empty:
+        df = _POOL.fetch_forex(iso_code)
+
+
+    return df
+
 
 def get_ohlcv() -> pd.DataFrame:
     """

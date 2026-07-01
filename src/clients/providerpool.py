@@ -51,6 +51,9 @@ class ProviderPool:
 
         return frames
 
+    def fetch_forex(self, iso_code: str) -> Tuple[pd.DataFrame, ProviderSource | None]:
+        return self._fetch(ptype=MixinForexRates, func=lambda mixin: mixin.fetch_forex_rates(iso_code))
+
     def fetch_ohlcv(self, date: pd.Timestamp) -> Tuple[pd.DataFrame, ProviderSource | None]:
         """
         Fetches OHLCV (Open, High, Low, Close, Volume) data for the specified date from available providers.  If all
@@ -61,7 +64,8 @@ class ProviderPool:
             date: The specific date for which OHLCV data needs to be fetched.
 
         Returns:
-            A tuple containing the fetched OHLCV data as a DataFrame and the source provider, or None if no data is available.
+            A tuple containing the fetched OHLCV data as a DataFrame and the source provider, or None if no data is
+            available.
         """
         return self._fetch(ptype=MixinOhlcv, func=lambda mixin: mixin.fetch_ohlcv(date))
 
