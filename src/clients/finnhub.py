@@ -4,7 +4,7 @@ import finnhub
 import pandas as pd
 from finnhub import FinnhubAPIException
 
-from clients.provider import MixinStockDetails, MixinStockListing
+from src.clients.provider import MixinStockDetails, MixinStockListing
 from src.clients.providerpool import BaseProvider
 from src.consts import API_FINN_TOKEN, COL_SYMBOL, STOCK_TYPES, COL_MC, COL_LIST_DATE, COL_OUT_SHARES, COL_FIGI, \
     COL_TYPE, MIC_CODES

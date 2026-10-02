@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from consts import COL_TIMESTAMP, PATH_DATA_STORE_ROOT
+from src.consts import COL_TIMESTAMP, PATH_DATA_STORE_ROOT
 from src.logger import timber
 
 _COL_YEAR = "year"

@@ -5,22 +5,14 @@ set -o nounset
 
 readonly PYTHON="/usr/local/bin/python3"
 readonly ENV=".venv"
-readonly ACTIVATE="${ENV}/bin/activate"
+readonly ENV_PYTHON="${ENV}/bin/python"
 
-if [[ -e "${ENV}" ]]; then
-    echo "Found old virtual environment folder. Deleting"
-     rm -rf "${ENV}"
-fi
-
-echo "Activate venv and install wheels"
-${PYTHON} -m venv ${ENV}
-source ${ACTIVATE}
+echo "Creating fresh virtual environment"
+${PYTHON} -m venv --clear ${ENV}
 
 echo "Updating and installing requirements"
-python -m pip install pip wheel setuptools --upgrade
-pip install -r "requirements.txt" --upgrade
+${ENV_PYTHON} -m pip install pip --upgrade
+${ENV_PYTHON} -m pip install -r "requirements.txt" --upgrade
 echo "Using:"
-python --version
-pip --version
-
-deactivate
+${ENV_PYTHON} --version
+${ENV_PYTHON} -m pip --version

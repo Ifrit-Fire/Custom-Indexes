@@ -6,7 +6,7 @@ from typing import Sequence, Iterator, Tuple, Callable, TypeVar
 
 import pandas as pd
 
-from clients.provider import MixinStockDetails, MixinCryptoMarket, MixinStockListing, MixinOhlcv, MixinForexRates
+from src.clients.provider import MixinStockDetails, MixinCryptoMarket, MixinStockListing, MixinOhlcv, MixinForexRates
 from src.clients.provider import BaseProvider
 from src.data.reconciler import Reconciler
 from src.data.source import ProviderSource
