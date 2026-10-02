@@ -3,7 +3,7 @@ from typing import Sequence
 import pandas as pd
 import requests
 
-from clients.provider import MixinCryptoMarket
+from src.clients.provider import MixinCryptoMarket
 from src.clients.provider import BaseProvider
 from src.consts import COL_SYMBOL, COL_MC, API_CMC_TOKEN, COL_C_PRICE, COL_VOLUME, COL_TYPE, COL_LIST_DATE, \
     COL_OUT_SHARES

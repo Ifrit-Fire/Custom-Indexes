@@ -7,8 +7,8 @@ import requests
 from polygon import RESTClient, BadResponse
 from urllib3.exceptions import MaxRetryError
 
-from clients.provider import MixinOhlcv, MixinStockDetails, MixinStockListing
-from consts import COL_C_PRICE
+from src.clients.provider import MixinOhlcv, MixinStockDetails, MixinStockListing
+from src.consts import COL_C_PRICE
 from src.clients.providerpool import BaseProvider
 from src.consts import API_POLY_TOKEN, COL_SYMBOL, COL_OUT_SHARES, COL_MIC, COL_TYPE, MIC_CODES, COL_STATE, \
     COL_POSTAL_CODE

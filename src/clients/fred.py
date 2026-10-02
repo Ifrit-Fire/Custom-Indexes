@@ -3,9 +3,9 @@ from datetime import date
 import pandas as pd
 import requests
 
-from clients.provider import BaseProvider, MixinForexRates
-from consts import API_FRED_TOKEN
-from data.source import ProviderSource
+from src.clients.provider import BaseProvider, MixinForexRates
+from src.consts import API_FRED_TOKEN
+from src.data.source import ProviderSource
 from src.logger import timber
 
 _BASE_URL = "https://api.stlouisfed.org/fred/"
