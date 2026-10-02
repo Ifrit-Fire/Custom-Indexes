@@ -3,15 +3,15 @@ export PATH="/usr/bin:/bin:/usr/sbin:/usr/local/bin"
 set -o errexit
 set -o nounset
 
-readonly PYTHON="python3"
 readonly ENV=".venv"
-readonly ACTIVATE="${ENV}/bin/activate"
-readonly MAIN="./src/main.py"
+readonly ENV_PYTHON="${ENV}/bin/python"
+readonly MAIN="src.main"
 
-if [[ ! -x "${ENV}/bin/${PYTHON}" ]]; then
+cd "${0:A:h}"
+
+if [[ ! -x "${ENV_PYTHON}" ]]; then
     echo "Virtual environment not found at ${ENV}. Run build.sh first." >&2
     exit 1
 fi
 
-source "${ACTIVATE}"
-exec ${PYTHON} ${MAIN}
+exec ${ENV_PYTHON} -m ${MAIN}
